@@ -1,0 +1,187 @@
+/* España en datos: tokens y base.
+   Colores de serie validados con el validador de la skill dataviz (CVD y contraste, claro y oscuro). */
+
+:root {
+  color-scheme: light;
+
+  /* Piel de bocal.online: ink, paper, line, body, brand */
+  --paper: #f5f6f8;
+  --paper-raised: #ffffff;
+  --ink: #151826;
+  --ink-2: #4a5163;
+  --ink-3: #6b7285;
+  --rule: #dcdfe6;
+  --rule-strong: #b8bdc9;
+  --wash: #eceef3;
+  --brand: #6b5be2;
+  --brand-ink: #4b3cc0;      /* enlaces y texto de marca (contraste AA sobre paper) */
+
+  /* Comparaciones territoriales */
+  --es: #6b5be2;             /* España */
+  --eu: #3a4157;             /* UE */
+  --focus: #c98a00;          /* comunidad destacada: siempre con etiqueta directa */
+  --context: #a7adbb;
+  --context-strong: #7f869a;
+
+  /* Partidos (validados con el validador dataviz, todos los pares, claro). Vox y SALF quedan bajo 3:1
+     de contraste o en el suelo de daltonismo: siempre con etiqueta directa y tabla. */
+  --p-pp: #1e6fd0;
+  --p-psoe: #c41e2a;
+  --p-vox: #6dbe3e;
+  --p-sumar: #e063a8;
+  --p-podemos: #6a3994;
+  --p-salf: #b07a12;
+  /* Nacionalistas: validados frente a sus rivales en su territorio (Euskadi: PP, PSOE, PNV, Bildu;
+     Navarra: PP, PSOE, Bildu, UPN; Cataluña: PP, PSOE, Sumar, Junts, ERC; Galicia: PP, PSOE, Sumar, BNG;
+     Canarias: PP, PSOE, Vox, CC). PNV/Bildu y Junts/ERC quedan en el suelo de daltonismo: llevan nombre en leyenda y tooltip. */
+  --p-pnv: #248160;
+  --p-bildu: #4ab9b2;
+  --p-upn: #a0459a;
+  --p-junts: #51b3d0;
+  --p-erc: #d28937;
+  --p-bng: #05abd7;
+  --p-cc: #a1863a;
+  --p-other: #a7adbb;
+
+  --seq-0: #dcd7fa;
+  --seq-1: #2a1f8a;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-semi: "Inter", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+
+  --measure: 40rem;
+  --wide: 70rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #12141f;
+    --paper-raised: #1a1d2b;
+    --ink: #eef0f6;
+    --ink-2: #b7bccb;
+    --ink-3: #8c92a5;
+    --rule: #2a2e40;
+    --rule-strong: #3d4259;
+    --wash: #1f2333;
+    --brand: #8b7ef0;
+    --brand-ink: #a89ef7;
+    --es: #8b7ef0;
+    --eu: #c3c8d6;
+    --focus: #b8860b;
+    --context: #4b5166;
+    --context-strong: #6a7086;
+    --p-pp: #3e96ea;
+    --p-psoe: #b32130;
+    --p-vox: #55aa2b;
+    --p-sumar: #e45992;
+    --p-podemos: #853aab;
+    --p-salf: #a56d0e;
+    --p-pnv: #117555;
+    --p-bildu: #38a391;
+    --p-upn: #75528e;
+    --p-junts: #136b94;
+    --p-erc: #a76c12;
+    --p-bng: #2266a4;
+    --p-cc: #9d712d;
+    --p-other: #5a6075;
+    --seq-0: #2a2550;
+    --seq-1: #c9c2ff;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #12141f;
+  --paper-raised: #1a1d2b;
+  --ink: #eef0f6;
+  --ink-2: #b7bccb;
+  --ink-3: #8c92a5;
+  --rule: #2a2e40;
+  --rule-strong: #3d4259;
+  --wash: #1f2333;
+  --brand: #8b7ef0;
+  --brand-ink: #a89ef7;
+  --es: #8b7ef0;
+  --eu: #c3c8d6;
+  --focus: #b8860b;
+  --context: #4b5166;
+  --context-strong: #6a7086;
+  --p-pp: #3e96ea;
+  --p-psoe: #b32130;
+  --p-vox: #55aa2b;
+  --p-sumar: #e45992;
+  --p-podemos: #853aab;
+  --p-salf: #a56d0e;
+  --p-pnv: #117555;
+  --p-bildu: #38a391;
+  --p-upn: #75528e;
+  --p-junts: #136b94;
+  --p-erc: #a76c12;
+  --p-bng: #2266a4;
+  --p-cc: #9d712d;
+  --p-other: #5a6075;
+  --seq-0: #2a2550;
+  --seq-1: #c9c2ff;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 9.5rem;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--brand-ink); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+
+.wrap {
+  width: 100%;
+  max-width: calc(var(--wide) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.prose { max-width: var(--measure); }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.num { font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

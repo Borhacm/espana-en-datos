@@ -1,0 +1,156 @@
+---
+import Base from "../layouts/Base.astro";
+import LinkList from "../components/LinkList.astro";
+import { LENSES, NOTES, figuresOf, lensById, published, themeById, upcoming } from "../lib/themes";
+import { formatDate, lensPath, notePath, paths, themePath, ui, type Lang } from "../lib/i18n";
+// El especial electoral va arriba, destacado; los temas se listan aparte
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+
+const copy = {
+  es: {
+    h1: ["España, contada", "con datos abiertos."],
+    dek: "Economía, vivienda, empleo, política y territorio. Comparados con Europa, entre comunidades y con el pasado, siempre con la fuente a un clic.",
+    themesTitle: "Temas",
+    allThemes: "Todos los temas",
+    charts: "gráficos",
+    notesTitle: "Notas",
+    notesIntro: "Piezas breves sobre un dato concreto, con uno o dos gráficos.",
+    allNotes: "Todas las notas",
+    lensesTitle: "Tres miradas",
+    lensesIntro: "Cada mirada recorre todos los temas. Elige una y síguela de principio a fin.",
+    aboutTitle: "Sobre este proyecto",
+    about: [
+      "España en datos cuenta con datos abiertos cómo está España, cómo se compara con Europa y qué diferencias hay entre sus comunidades.",
+      "Cada gráfico enlaza a su fuente original, explica sus límites y permite descargar los datos. Las fuentes principales son el INE, Eurostat, el Ministerio del Interior, el Banco de España y el CIS.",
+    ],
+  },
+}[lang];
+
+// En portada caben los últimos temas; el resto, en el índice
+const MAX_HOME = 4;
+const latest = [...published().filter((t) => !t.hub)].sort((a, b) => (b.published ?? "").localeCompare(a.published ?? ""));
+const shown = latest.slice(0, MAX_HOME);
+const next = upcoming().slice(0, Math.max(0, MAX_HOME - shown.length));
+const latestNotes = NOTES.slice(0, 3);
+---
+<Base lang={lang} path={paths.home} section="home">
+  <a class="special" href={paths.elections[lang]}>
+    <span class="wrap special-in">
+      <span class="sp-kicker">Especial</span>
+      <span class="sp-title">Elecciones generales del 29 de noviembre</span>
+      <span class="sp-dek">Seguimiento de encuestas, el mapa de 2023 y quién gobierna en cada comunidad.</span>
+    </span>
+  </a>
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>{copy.h1.map((l) => <span>{l}</span>)}</h1>
+      <p class="dek">{copy.dek}</p>
+    </div>
+    <div class="hero-themes" aria-labelledby="themes-h">
+      <h2 id="themes-h">{copy.themesTitle}</h2>
+      <LinkList
+        items={[
+          ...shown.map((th) => ({
+            href: themePath(th.slug)[lang],
+            title: th.title[lang],
+            dek: th.dek?.[lang],
+            meta: `${formatDate(th.published!, lang)}. ${figuresOf(th).length} ${copy.charts}.`,
+          })),
+          ...next.map((th) => ({ title: th.title[lang], meta: t.comingSoon, muted: true })),
+        ]}
+      />
+      <a class="all" href={paths.themes[lang]}>{copy.allThemes}</a>
+    </div>
+  </section>
+
+  {latestNotes.length > 0 && (
+    <section class="wrap block" aria-labelledby="notes-h">
+      <div class="block-head">
+        <h2 id="notes-h">{copy.notesTitle}</h2>
+        <p>{copy.notesIntro}</p>
+      </div>
+      <div>
+        <LinkList
+          items={latestNotes.map((n) => ({
+            href: notePath(n.slug)[lang],
+            title: n.title[lang],
+            dek: n.dek[lang],
+            meta: [formatDate(n.published, lang), themeById(n.theme)?.title[lang], lensById(n.lens).name[lang]].filter(Boolean).join(". ") + ".",
+          }))}
+        />
+        <a class="all" href={paths.notes[lang]}>{copy.allNotes}</a>
+      </div>
+    </section>
+  )}
+
+  <section class="wrap block" aria-labelledby="lenses-h">
+    <div class="block-head">
+      <h2 id="lenses-h">{copy.lensesTitle}</h2>
+      <p>{copy.lensesIntro}</p>
+    </div>
+    <ul class="lenses">
+      {LENSES.map((l) => (
+        <li>
+          <a href={lensPath(l.slug)[lang]}>
+            <span class="l-name">{l.name[lang]}</span>
+            <span class="l-short">{l.short[lang]}</span>
+            <span class="l-about">{l.about[lang]}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap block about" aria-labelledby="about-h">
+    <div class="block-head">
+      <h2 id="about-h">{copy.aboutTitle}</h2>
+    </div>
+    <div class="prose">
+      {copy.about.map((p) => <p>{p}</p>)}
+      <p><a href={paths.method[lang]}>{t.navMethod}</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .special { display: block; background: #151826; color: #f5f6f8; text-decoration: none; }
+  .special-in { display: grid; gap: 0.35rem; padding-block: 1.75rem 2rem; }
+  .sp-kicker { font-weight: 600; font-size: 0.85rem; color: #a89ef7; text-transform: uppercase; letter-spacing: 0.08em; }
+  .sp-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.02; letter-spacing: -0.02em; }
+  .sp-dek { color: #c9cdd8; max-width: 40rem; }
+  .special:hover .sp-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: start;
+    padding-block: clamp(3rem, 7vw, 6rem) 1rem;
+  }
+  h1 { font-size: clamp(2.8rem, 6.4vw, 5.4rem); line-height: 0.98; letter-spacing: -0.03em; }
+  h1 span { display: block; }
+  .dek { margin-top: 1.75rem; max-width: 32rem; font-size: clamp(1.15rem, 1.6vw, 1.35rem); line-height: 1.45; color: var(--ink-2); }
+
+  .hero-themes { padding-top: 0.6rem; }
+  .hero-themes h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; line-height: 1; color: var(--ink-2); margin-bottom: 0.6rem; }
+  .all { display: inline-block; margin-top: 1rem; font-family: var(--font-semi); font-weight: 600; }
+
+  .block { padding-top: clamp(3.5rem, 7vw, 5.5rem); display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: 1.5rem clamp(2rem, 5vw, 4rem); }
+  .block-head h2 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 0.92; }
+  .block-head p { margin-top: 1rem; color: var(--ink-2); font-size: 1rem; }
+
+  .lenses { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 1.5rem; border-top: 2px solid var(--ink); }
+  .lenses a { display: grid; align-content: start; gap: 0.35rem; padding-block: 1.1rem 1.5rem; text-decoration: none; color: var(--ink); height: 100%; }
+  .lenses a:hover .l-name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+  .l-name { font-family: var(--font-display); font-weight: 700; font-size: 1.85rem; line-height: 0.98; }
+  .l-short { font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-3); }
+  .l-about { margin-top: 0.6rem; color: var(--ink-2); font-size: 1.02rem; line-height: 1.45; }
+
+  @media (max-width: 860px) {
+    .hero, .block { grid-template-columns: 1fr; }
+    .lenses { grid-template-columns: 1fr; }
+    .lenses li + li { border-top: 1px solid var(--rule); }
+  }
+</style>

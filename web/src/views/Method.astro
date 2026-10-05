@@ -1,0 +1,127 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadChart } from "../lib/data";
+import { NOTES, figuresOf, noteFigures, published } from "../lib/themes";
+import { notePath, paths, themePath, formatDate, type Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+// Gráficos agrupados por tema
+const groups = [
+  ...published().map((th) => ({
+    title: th.title[lang],
+    href: th.hub ? paths.elections[lang] : themePath(th.slug)[lang],
+    charts: figuresOf(th).map((f) => ({ ...f, href: `${th.hub ? paths.elections[lang] : themePath(th.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) })),
+  })),
+  ...(NOTES.length
+    ? [{
+        title: "Notas",
+        href: paths.notes[lang],
+        charts: NOTES.flatMap((n) => noteFigures(n).map((f) => ({ ...f, href: `${notePath(n.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) }))),
+      }]
+    : []),
+];
+
+const copy = {
+  es: {
+    title: "Metodología",
+    intro: "Cómo se han obtenido, tratado y presentado los datos de esta web.",
+    principles: "Principios",
+    list: [
+      "Solo datos abiertos y públicos. Priorizamos fuentes oficiales (INE, Eurostat, Ministerio del Interior, Banco de España, CIS). Cuando no cubren un tema, usamos fuentes académicas o independientes reconocidas y lo indicamos en cada gráfico.",
+      "Cada gráfico enlaza a su fuente, indica su licencia y la fecha de descarga, y permite ver y descargar los datos.",
+      "Los datos se descargan con un proceso automático y reproducible, sin retoques manuales. Las advertencias metodológicas se muestran junto a cada gráfico.",
+      "Describimos, no atribuimos. Que una comunidad gobernada por un partido tenga mejor o peor dato no demuestra que sea por ese partido: depende también de la renta, la demografía, el ciclo económico y de quién tiene la competencia. Cuando valoramos una política, comparamos con un grupo de control y citamos evaluaciones independientes.",
+      "Todos los partidos se tratan igual: mismo formato, mismas fuentes y mismo nivel de exigencia.",
+    ],
+    polls: "Encuestas",
+    pollsList: [
+      "Recogemos todas las encuestas de intención de voto publicadas desde las generales de 2023, con el enlace a su publicación original. La recopilación de partida es la de Wikipedia, que cita cada fuente.",
+      "La media se calcula cada semana con la última encuesta de cada empresa de los 45 días anteriores. Cada encuesta pesa según su antigüedad (núcleo gaussiano de 14 días) y la raíz de su tamaño muestral, con tope en 3.000 entrevistas. Solo se usan encuestas publicadas hasta esa fecha.",
+      "No entran en la media, aunque se muestran: los paneles online sin muestreo probabilístico, las encuestas encargadas por partidos y las reestimaciones de los barómetros del CIS hechas por otras empresas (repiten la misma muestra).",
+      "La ley electoral (LOREG, artículo 69.7) prohíbe publicar encuestas durante los cinco días anteriores a la votación. Del 24 al 28 de noviembre de 2026 el seguimiento se oculta.",
+    ],
+    colors: "Colores",
+    colorsText: "Cada partido tiene siempre el mismo color, cercano al que usa habitualmente. Los partidos nacionalistas tienen color propio, elegido para distinguirse de sus rivales directos en su territorio (por ejemplo, PNV y EH Bildu, o Junts y ERC). CiU, PDeCAT y Junts comparten color por ser el mismo espacio político; los partidos pequeños van en gris con su sigla. Como algunos pares se distinguen mal con daltonismo (el rojo del PSOE y el verde de Vox, o PNV y Bildu), los gráficos nombran cada serie y tienen su tabla. La paleta está comprobada en modo claro y oscuro.",
+    charts: "Gráficos y fuentes",
+    code: "Gráfico",
+    source: "Fuente",
+    license: "Licencia",
+    retrieved: "Descarga",
+    privacy: "Privacidad",
+    privacyText: "Contamos las visitas con Vercel Web Analytics, que no usa cookies, y con Google Analytics solo si lo aceptas en el aviso de cookies. Si eliges destacar una comunidad, esa preferencia se guarda solo en tu navegador.",
+    independent: "Independencia",
+    independentText: "Este es un proyecto independiente de Bocal. No está vinculado a ningún partido, administración ni empresa demoscópica, ni a ninguna de las fuentes citadas, y no representa sus opiniones.",
+  },
+}[lang];
+---
+<Base lang={lang} path={paths.method} section="method" title={copy.title} description={copy.intro}>
+  <article class="wrap method">
+    <h1>{copy.title}</h1>
+    <p class="dek">{copy.intro}</p>
+
+    <h2>{copy.principles}</h2>
+    <ul class="prose">{copy.list.map((i) => <li>{i}</li>)}</ul>
+
+    <h2>{copy.polls}</h2>
+    <ul class="prose">{copy.pollsList.map((i) => <li>{i}</li>)}</ul>
+
+    <h2>{copy.colors}</h2>
+    <p class="prose">{copy.colorsText}</p>
+    <div class="swatches" aria-hidden="true">
+      {[["PP", "--p-pp"], ["PSOE", "--p-psoe"], ["Vox", "--p-vox"], ["Sumar", "--p-sumar"], ["Podemos", "--p-podemos"], ["SALF", "--p-salf"], ["PNV", "--p-pnv"], ["EH Bildu", "--p-bildu"], ["UPN", "--p-upn"], ["Junts", "--p-junts"], ["ERC", "--p-erc"], ["BNG", "--p-bng"], ["CC", "--p-cc"], ["Otros", "--p-other"]].map(([name, v]) => (
+        <span><i style={`background:var(${v})`}></i>{name}</span>
+      ))}
+    </div>
+
+    <h2>{copy.charts}</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col">{copy.code}</th><th scope="col">{copy.source}</th><th scope="col">{copy.license}</th><th scope="col">{copy.retrieved}</th></tr></thead>
+        {groups.map((g) => (
+          <tbody>
+            <tr class="group"><th scope="rowgroup" colspan="4"><a href={g.href}>{g.title}</a></th></tr>
+            {g.charts.map((c) => (
+              <tr>
+                <th scope="row"><a href={c.href}>{c.code}</a> {c.chart.title[lang]}</th>
+                <td><a href={c.chart.source.url} rel="noopener">{c.chart.source.name}</a> <span class="ds">{c.chart.source.dataset}</span></td>
+                <td>{c.chart.source.license}</td>
+                <td class="num">{formatDate(c.chart.retrieved, lang)}</td>
+              </tr>
+            ))}
+          </tbody>
+        ))}
+      </table>
+    </div>
+
+    <h2>{copy.privacy}</h2>
+    <p class="prose">{copy.privacyText}</p>
+
+    <h2>{copy.independent}</h2>
+    <p class="prose">{copy.independentText}</p>
+    <p class="prose"><a href="https://bocal.online">bocal.online</a></p>
+  </article>
+</Base>
+
+<style>
+  .method { padding-top: clamp(3rem, 7vw, 5rem); }
+  h1 { font-size: clamp(3.2rem, 8vw, 6rem); line-height: 0.88; }
+  .dek { margin-top: 1.25rem; font-size: 1.25rem; color: var(--ink-2); max-width: 36rem; }
+  h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin: 3.5rem 0 1.25rem; }
+  ul.prose { padding-left: 1.2rem; }
+  ul.prose li { margin-bottom: 0.75rem; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; font-family: var(--font-semi); color: var(--ink-2); }
+  .swatches span { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .swatches i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  .table-scroll { overflow-x: auto; border-top: 2px solid var(--ink); }
+  table { border-collapse: collapse; width: 100%; font-family: var(--font-semi); font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.75rem 1rem 0.75rem 0; border-bottom: 1px solid var(--rule); }
+  thead th { font-weight: 600; color: var(--ink-3); }
+  tbody th { font-weight: 500; max-width: 28rem; }
+  tbody th a { font-weight: 700; margin-right: 0.3rem; }
+  .ds { display: block; color: var(--ink-3); font-size: 0.85rem; }
+  td.num { white-space: nowrap; }
+  .group th { padding-top: 1.75rem; font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; }
+  .group a { color: var(--ink); text-decoration: none; }
+</style>

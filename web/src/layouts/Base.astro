@@ -1,0 +1,172 @@
+---
+import "../styles/global.css";
+import Mark from "../components/Mark.astro";
+import Analytics from "@vercel/analytics/astro";
+import Consent from "../components/Consent.astro";
+import { ui, paths, type Lang, type Bi, type Section } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+  /** Ruta de esta página */
+  path: Bi;
+  section?: Section;
+  title?: string;
+  description?: string;
+}
+
+const { lang, path, section, title, description } = Astro.props;
+const t = ui[lang];
+const fullTitle = title ? `${title} | ${t.siteName}` : t.siteName;
+const desc = description ?? t.siteDescription;
+const site = Astro.site ?? new URL("https://espanaendatos.bocal.online");
+const canonical = new URL(path[lang], site);
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#151826" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#12141f" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <Analytics />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t.skip}</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href={paths.home[lang]}>
+          <Mark size={30} class="brand-mark" />
+          <span>{t.siteName}</span>
+        </a>
+        <nav aria-label="Principal">
+          <a class="hot" href={paths.elections[lang]} aria-current={section === "elections" ? "page" : undefined}>{t.navElections}</a>
+          <a href={paths.themes[lang]} aria-current={section === "themes" ? "page" : undefined}>{t.navThemes}</a>
+          <a href={paths.notes[lang]} aria-current={section === "notes" ? "page" : undefined}>{t.navNotes}</a>
+          <a class="secondary" href={paths.lenses[lang]} aria-current={section === "lenses" ? "page" : undefined}>{t.navLenses}</a>
+          <a class="secondary" href={paths.method[lang]} aria-current={section === "method" ? "page" : undefined}>{t.navMethod}</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap foot">
+        <a class="brand brand-small" href={paths.home[lang]}>
+          <Mark size={24} class="brand-mark" />
+          <span>{t.siteName}</span>
+        </a>
+        <p>{t.footerIndependent}</p>
+        <p>{t.footerData} <a href={paths.method[lang]}>{t.navMethod}</a>.</p>
+        <p><a href="https://bocal.online">bocal.online</a></p>
+        <p><button type="button" class="linklike" data-open-consent>Preferencias de cookies</button></p>
+      </div>
+    </footer>
+    <Consent lang={lang} />
+  </body>
+</html>
+
+<style>
+  .linklike {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .skip {
+    position: absolute;
+    left: var(--gutter);
+    top: -3rem;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.5rem 0.75rem;
+    z-index: 20;
+  }
+  .skip:focus { top: 0.75rem; }
+
+  /* Cabecera en banda ink, como bocal.online, en claro y en oscuro */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #151826;
+    border-bottom: 1px solid #2a2e40;
+    --h-ink: #f5f6f8;
+    --h-ink-2: #b7bccb;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 3.75rem;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--h-ink, var(--ink));
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .brand :global(.brand-mark) { color: #8b7ef0; flex: none; }
+  nav { display: flex; gap: clamp(0.9rem, 2.5vw, 1.75rem); align-items: center; }
+  nav a {
+    color: var(--h-ink-2);
+    text-decoration: none;
+    font-family: var(--font-semi);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding-block: 0.4rem;
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover { color: var(--h-ink); }
+  nav a[aria-current="page"] { color: var(--h-ink); border-bottom-color: #8b7ef0; }
+  nav .hot { color: var(--h-ink); font-weight: 600; }
+  nav .hot::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #8b7ef0; margin-right: 0.45rem; vertical-align: 0.12em; }
+
+  @media (max-width: 560px) {
+    .brand span { font-size: 1.2rem; }
+    nav .secondary { display: none; }
+  }
+
+  .site-footer {
+    margin-top: 6rem;
+    border-top: 1px solid var(--rule);
+    background: var(--paper-raised);
+  }
+  .foot {
+    padding-block: 2.5rem 3rem;
+    display: grid;
+    gap: 0.25rem;
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
+  .foot p { margin: 0; max-width: 46rem; }
+  .brand-small { font-size: 1.2rem; margin-bottom: 0.75rem; }
+</style>

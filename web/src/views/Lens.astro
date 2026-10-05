@@ -1,0 +1,64 @@
+---
+// Una mirada a través de todos los temas publicados: aquí es donde las historias se combinan.
+import Base from "../layouts/Base.astro";
+import PageHead from "../components/PageHead.astro";
+import SectionBar from "../components/SectionBar.astro";
+import LensSection from "../components/LensSection.astro";
+import LinkList from "../components/LinkList.astro";
+import { LENSES, NOTES, published, themeById, type Lens } from "../lib/themes";
+import { formatDate, lensPath, notePath, themePath, type Lang } from "../lib/i18n";
+import "../styles/charts.css";
+
+interface Props { lang: Lang; lens: Lens }
+const { lang, lens } = Astro.props;
+
+const copy = {
+  es: { themes: "Temas", fullStory: "Leer el tema completo, con las tres miradas", otherLenses: "Otras miradas", notes: "Notas con esta mirada" },
+  en: { themes: "Themes", fullStory: "Read the full theme, with all three lenses", otherLenses: "Other lenses", notes: "Notes through this lens" },
+}[lang];
+
+const themes = published().filter((th) => (th.lenses?.[lens.id]?.body.length ?? 0) > 0);
+const others = LENSES.filter((l) => l.id !== lens.id);
+const notes = NOTES.filter((n) => n.lens === lens.id);
+---
+<Base lang={lang} path={lensPath(lens.slug)} section="lenses" title={lens.name[lang]} description={lens.about[lang]}>
+  <PageHead title={lens.name[lang]} dek={lens.about[lang]} />
+
+  <SectionBar
+    lang={lang}
+    label={copy.themes}
+    items={themes.map((th) => ({ href: `#${th.slug[lang]}`, name: th.title[lang] }))}
+  />
+
+  {themes.map((th) => (
+    <LensSection
+      lang={lang}
+      anchor={th.slug[lang]}
+      heading={th.title[lang]}
+      content={th.lenses![lens.id]}
+      codePrefix={th.code}
+      crossLink={{ text: copy.fullStory, href: themePath(th.slug)[lang] }}
+    />
+  ))}
+
+  {notes.length > 0 && (
+    <section class="wrap others">
+      <h2>{copy.notes}</h2>
+      <LinkList items={notes.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], meta: `${formatDate(n.published, lang)}. ${themeById(n.theme)?.title[lang] ?? ""}.` }))} />
+    </section>
+  )}
+
+  <section class="wrap others">
+    <h2>{copy.otherLenses}</h2>
+    <LinkList items={others.map((o) => ({ href: lensPath(o.slug)[lang], title: o.name[lang], dek: o.about[lang] }))} />
+  </section>
+
+  <script>
+    import "../scripts/main.ts";
+  </script>
+</Base>
+
+<style>
+  .others { padding-top: 5rem; }
+  .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+</style>

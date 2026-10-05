@@ -1,0 +1,56 @@
+---
+// Barra fija bajo la cabecera: navegación por secciones de la página + "Destacar un país".
+import FocusSelect from "./FocusSelect.astro";
+import type { Lang } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+  label: string;
+  items: { href: string; name: string; short?: string }[];
+}
+const { lang, label, items } = Astro.props;
+---
+<div class="sectionbar">
+  <div class="wrap inner">
+    <nav aria-label={label}>
+      <ul>
+        {items.map((i) => (
+          <li><a href={i.href}><span class="sb-name">{i.name}</span>{i.short && <span class="sb-short">{i.short}</span>}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <FocusSelect lang={lang} />
+  </div>
+</div>
+
+<style>
+  .sectionbar {
+    position: sticky;
+    top: 3.75rem;
+    z-index: 9;
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+    backdrop-filter: blur(8px);
+    border-block: 1px solid var(--rule);
+  }
+  .inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+  /* Con muchas pestañas, la barra se desliza de lado; un degradado en el borde indica que hay más */
+  nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; }
+  nav::-webkit-scrollbar { display: none; }
+  nav:global(.more-right) { mask-image: linear-gradient(to right, #000 calc(100% - 4rem), transparent); }
+  nav:global(.more-left) { mask-image: linear-gradient(to right, transparent, #000 4rem); }
+  nav:global(.more-left.more-right) { mask-image: linear-gradient(to right, transparent, #000 4rem, #000 calc(100% - 4rem), transparent); }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(1rem, 3vw, 2.5rem); width: max-content; }
+  a { display: grid; padding-block: 0.7rem; text-decoration: none; color: var(--ink); border-bottom: 3px solid transparent; }
+  a:hover { border-bottom-color: var(--rule-strong); }
+  a:global(.active) { border-bottom-color: var(--brand); }
+  .sb-name { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; line-height: 1.05; white-space: nowrap; }
+  .sb-short { font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); }
+
+
+  @media (max-width: 760px) {
+    .inner { flex-direction: column; align-items: stretch; gap: 0; }
+    .sb-short { display: none; }
+    .sb-name { font-size: 1.1rem; }
+    a { padding-block: 0.55rem; }
+  }
+</style>

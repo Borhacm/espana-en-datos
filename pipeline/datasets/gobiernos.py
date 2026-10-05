@@ -143,9 +143,9 @@ def build() -> dict:
         "source": SOURCE,
         "also": [NACIONAL_SOURCE],
         "notes": [
-            "Partido del presidente. Los socios de coalición se recogen aparte.",
-            "Los partidos federados (PSC) cuentan como su partido estatal, y Alianza Popular como PP. La sigla original se conserva en party_label.",
-            "Se incluyen los presidentes en funciones que no fueron investidos (acting = true) para que la serie no tenga huecos.",
+            "El color es el partido del presidente o presidenta; no muestra los socios de coalición.",
+            "El PSC cuenta como PSOE y Alianza Popular como PP. Al pasar por encima se ve la sigla original.",
+            "Los tramos más claros son presidencias en funciones, que se incluyen para que no haya huecos.",
         ],
         "ccaa": geo.CCAA,
         "warnings": check(rows),

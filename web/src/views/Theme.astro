@@ -1,0 +1,81 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHead from "../components/PageHead.astro";
+import SectionBar from "../components/SectionBar.astro";
+import LensSection from "../components/LensSection.astro";
+import LinkList from "../components/LinkList.astro";
+import { LENSES, figuresOf, lensById, notesOf, published, type Theme } from "../lib/themes";
+import { formatDate, lensPath, notePath, themePath, type Lang } from "../lib/i18n";
+import "../styles/charts.css";
+
+interface Props { lang: Lang; theme: Theme }
+const { lang, theme } = Astro.props;
+
+const copy = {
+  es: { lenses: "Miradas", sameLens: "Esta mirada en todos los temas", notes: "Notas sobre este tema", sources: "Fuentes del texto", published: "Publicado el", charts: "gráficos", other: "Otros temas" },
+  en: { lenses: "Lenses", sameLens: "This lens across all themes", notes: "Notes on this theme", sources: "Sources for the text", published: "Published on", charts: "charts", other: "Other themes" },
+}[lang];
+
+const nFigs = figuresOf(theme).length;
+const others = published().filter((t) => t.id !== theme.id);
+const notes = notesOf(theme.id);
+---
+<Base lang={lang} path={themePath(theme.slug)} section="themes" title={theme.title[lang]} description={theme.dek?.[lang]}>
+  <PageHead
+    title={theme.title[lang]}
+    dek={theme.dek?.[lang]}
+    meta={`${copy.published} ${formatDate(theme.published!, lang)}. ${nFigs} ${copy.charts}.`}
+  />
+
+
+  <SectionBar
+    lang={lang}
+    label={copy.lenses}
+    items={LENSES.map((l) => ({ href: `#${l.slug[lang]}`, name: l.name[lang], short: l.short[lang] }))}
+  />
+
+  {LENSES.map((l) => (
+    <LensSection
+      lang={lang}
+      anchor={l.slug[lang]}
+      heading={l.name[lang]}
+      content={theme.lenses![l.id]}
+      codePrefix={theme.code}
+      crossLink={{ text: copy.sameLens, href: lensPath(l.slug)[lang] }}
+    />
+  ))}
+
+  {theme.sources && theme.sources.length > 0 && (
+    <section class="wrap sources" aria-label={copy.sources}>
+      <h2>{copy.sources}</h2>
+      <ul>{theme.sources.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a></li>)}</ul>
+    </section>
+  )}
+
+  {notes.length > 0 && (
+    <section class="wrap others">
+      <h2>{copy.notes}</h2>
+      <LinkList items={notes.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], meta: `${formatDate(n.published, lang)}. ${lensById(n.lens).name[lang]}.` }))} />
+    </section>
+  )}
+
+  {others.length > 0 && (
+    <section class="wrap others">
+      <h2>{copy.other}</h2>
+      <LinkList items={others.map((o) => ({ href: themePath(o.slug)[lang], title: o.title[lang], dek: o.dek?.[lang] }))} />
+    </section>
+  )}
+
+  <script>
+    import "../scripts/main.ts";
+  </script>
+</Base>
+
+<style>
+  .others { padding-top: 5rem; }
+  .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+  .sources { padding-top: 3rem; font-size: 0.95rem; color: var(--ink-2); }
+  .sources h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; }
+  .sources ul { margin: 0; padding-left: 1.1rem; max-width: 46rem; }
+  .sources li { margin-bottom: 0.3rem; }
+</style>

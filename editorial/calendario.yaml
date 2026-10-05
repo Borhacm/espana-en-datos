@@ -1,0 +1,93 @@
+# Calendario editorial hasta las generales del 29 de noviembre de 2026.
+# Gancho: las elecciones. Cada pieza enlaza al especial /elecciones-29n/.
+# Las piezas electorales se publican tras revisión humana (PR aprobado), no automáticamente.
+
+lanzamiento: 2026-10-20
+
+piezas:
+  # Precampaña (20 oct - 12 nov): dos por semana
+  - id: a01
+    tipo: articulo
+    tema: vivienda
+    titulo: "Vivienda: por qué es el tema de estas elecciones"
+    contenido: precio frente a salarios, alquiler, los decretos que cayeron, topes al alquiler en Cataluña (ficha de política)
+    fecha: 2026-10-20
+  - id: n01
+    tipo: nota
+    tema: legislatura
+    titulo: "La legislatura en datos, de julio de 2023 a hoy"
+    contenido: empleo, inflación, deuda y déficit
+    fecha: 2026-10-23
+  - id: a02
+    tipo: articulo
+    tema: empleo
+    titulo: "Reforma laboral, tres años después"
+    contenido: temporalidad por comunidades, antes y después (ficha de política)
+    fecha: 2026-10-27
+  - id: n02
+    tipo: nota
+    tema: empleo
+    titulo: "Salarios reales frente a inflación y SMI"
+    fecha: 2026-10-30
+  - id: n03
+    tipo: nota
+    tema: elecciones
+    titulo: "Quién gobierna dónde y qué se juega cada comunidad el 29N"
+    fecha: 2026-11-03
+  - id: n04
+    tipo: nota
+    tema: legislatura
+    titulo: "Financiación autonómica y deuda por comunidad"
+    fecha: 2026-11-06
+  - id: a03
+    tipo: articulo
+    tema: demografia
+    titulo: "Inmigración en datos"
+    contenido: rigor máximo; solo fuentes oficiales (INE, Eurostat, Interior)
+    fecha: 2026-11-10
+  - id: n05
+    tipo: nota
+    tema: demografia
+    titulo: "Pensiones y envejecimiento"
+    fecha: 2026-11-12
+
+  # Campaña (13 - 27 nov): programas frente a datos, mismo formato para todos los partidos
+  - id: c01
+    tipo: nota
+    tema: vivienda
+    titulo: "Lo que proponen los partidos en vivienda y lo que dicen los datos"
+    fecha: 2026-11-16
+  - id: c02
+    tipo: nota
+    tema: empleo
+    titulo: "Lo que proponen los partidos en empleo y salarios"
+    fecha: 2026-11-19
+  - id: c03
+    tipo: nota
+    tema: legislatura
+    titulo: "Impuestos y gasto: las cuentas de cada programa"
+    fecha: 2026-11-23
+
+  # Veda (24 - 28 nov): sin encuestas. Republicar el 24.
+  # Noche electoral y después
+  - id: r01
+    tipo: nota
+    tema: elecciones
+    titulo: "Resultados del 29N: qué ha cambiado respecto a 2023"
+    fecha: 2026-11-30
+  - id: r02
+    tipo: nota
+    tema: elecciones
+    titulo: "Participación y voto por provincias"
+    fecha: 2026-12-02
+  - id: r03
+    tipo: nota
+    tema: elecciones
+    titulo: "Las mayorías posibles en el nuevo Congreso"
+    fecha: 2026-12-04
+
+  # También en Europa en datos (enlace cruzado)
+  - id: europa-n
+    tipo: nota-europa
+    titulo: "España vota: cómo llega comparada con Europa"
+    fecha: 2026-11-17

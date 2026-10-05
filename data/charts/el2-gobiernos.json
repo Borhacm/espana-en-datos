@@ -1,0 +1,1590 @@
+{
+ "id": "el2-gobiernos",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "El PP gobierna hoy 11 de las 17 comunidades autónomas"
+ },
+ "subtitle": {
+  "es": "Partido del presidente o presidenta de cada comunidad desde 1980"
+ },
+ "unit": {
+  "es": "Partido"
+ },
+ "source": {
+  "name": "Wikipedia, Anexo:Presidencias autonómicas españolas",
+  "url": "https://es.wikipedia.org/wiki/Anexo:Presidencias_auton%C3%B3micas_espa%C3%B1olas",
+  "license": "CC BY-SA 4.0",
+  "also": [
+   {
+    "name": "Senado, cuadro de gobiernos autonómicos",
+    "url": "https://www.senado.es/web/conocersenado/biblioteca/dossieresareastematicas/detalle/index.html?id=Cuadro_gobiernos_autonomicos"
+   }
+  ],
+  "dataset": "Presidencias autonómicas"
+ },
+ "notes": {
+  "es": [
+   "El color es el partido del presidente o presidenta; no muestra los socios de coalición.",
+   "El PSC cuenta como PSOE y Alianza Popular como PP. Al pasar por encima se ve la sigla original.",
+   "Los tramos más claros son presidencias en funciones, que se incluyen para que no haya huecos.",
+   "Cataluña, de octubre de 2017 a mayo de 2018: gobierno intervenido por el Estado (artículo 155)."
+  ]
+ },
+ "retrieved": "2026-10-05",
+ "geos": {
+  "01": {
+   "es": "Andalucía"
+  },
+  "02": {
+   "es": "Aragón"
+  },
+  "03": {
+   "es": "Asturias"
+  },
+  "04": {
+   "es": "Baleares"
+  },
+  "05": {
+   "es": "Canarias"
+  },
+  "06": {
+   "es": "Cantabria"
+  },
+  "07": {
+   "es": "Castilla y León"
+  },
+  "08": {
+   "es": "Castilla-La Mancha"
+  },
+  "09": {
+   "es": "Cataluña"
+  },
+  "10": {
+   "es": "Comunidad Valenciana"
+  },
+  "11": {
+   "es": "Extremadura"
+  },
+  "12": {
+   "es": "Galicia"
+  },
+  "13": {
+   "es": "Madrid"
+  },
+  "14": {
+   "es": "Murcia"
+  },
+  "15": {
+   "es": "Navarra"
+  },
+  "16": {
+   "es": "País Vasco"
+  },
+  "17": {
+   "es": "La Rioja"
+  },
+  "18": {
+   "es": "Ceuta"
+  },
+  "19": {
+   "es": "Melilla"
+  },
+  "ES": {
+   "es": "Gobierno de España"
+  }
+ },
+ "today": "2026-10-05",
+ "rows": [
+  {
+   "ccaa": "01",
+   "president": "Rafael Escuredo",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1982-08-03",
+   "end": "1984-03-14",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "01",
+   "president": "José Rodríguez de la Borbolla",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1984-03-14",
+   "end": "1990-07-26",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "01",
+   "president": "Manuel Chaves",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1990-07-26",
+   "end": "2009-04-07",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "01",
+   "president": "José Antonio Griñán",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2009-04-07",
+   "end": "2013-09-07",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "01",
+   "president": "Susana Díaz",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2013-09-07",
+   "end": "2019-01-18",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "01",
+   "president": "Juanma Moreno",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2019-01-18",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Santiago Marraco",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-06",
+   "end": "1987-07-30",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Hipólito Gómez de las Roces",
+   "party_label": "PAR",
+   "party": "PAR",
+   "start": "1987-06-30",
+   "end": "1991-07-12",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Emilio Eiroa",
+   "party_label": "PAR",
+   "party": "PAR",
+   "start": "1991-07-12",
+   "end": "1993-09-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "José Marco Berges",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1993-09-17",
+   "end": "1995-01-18",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Ramón Tejedor",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1995-01-18",
+   "end": "1995-07-11",
+   "acting": true,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Santiago Lanzuela",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-07-11",
+   "end": "1999-08-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Marcelino Iglesias",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1999-08-02",
+   "end": "2011-07-14",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Luisa Fernanda Rudi",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2011-07-14",
+   "end": "2015-07-05",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Javier Lambán",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2015-07-05",
+   "end": "2023-08-11",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "02",
+   "president": "Jorge Azcón",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-08-11",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Pedro de Silva",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-21",
+   "end": "1991-07-11",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Juan Luis Rodríguez-Vigil",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1991-07-11",
+   "end": "1993-06-23",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Antonio Trevín",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1993-06-23",
+   "end": "1995-07-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Sergio Marqués",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-07-17",
+   "end": "1999-07-22",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Vicente Álvarez Areces",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1999-07-22",
+   "end": "2011-07-16",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Francisco Álvarez-Cascos",
+   "party_label": "Foro Asturias",
+   "party": "Foro Asturias",
+   "start": "2011-07-16",
+   "end": "2012-05-26",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Javier Fernández Fernández",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2012-05-26",
+   "end": "2019-07-20",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "03",
+   "president": "Adrián Barbón",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2019-07-20",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Gabriel Cañellas",
+   "party_label": "AP",
+   "party": "PP",
+   "start": "1983-06-10",
+   "end": "1995-08-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Cristòfol Soler",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-08-02",
+   "end": "1996-06-18",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Jaume Matas",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1996-06-18",
+   "end": "1999-07-27",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Francesc Antich",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1999-07-27",
+   "end": "2003-06-27",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Jaume Matas",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2003-06-27",
+   "end": "2007-07-06",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Francesc Antich",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2007-07-06",
+   "end": "2011-06-18",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "José Ramón Bauzá",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2011-06-18",
+   "end": "2015-07-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Francina Armengol",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2015-07-02",
+   "end": "2023-06-19",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "04",
+   "president": "Marga Prohens",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-07-07",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Jerónimo Saavedra",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-07-25",
+   "end": "1987-08-04",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Fernando Fernández Martín",
+   "party_label": "CDS",
+   "party": "CDS",
+   "start": "1987-08-04",
+   "end": "1989-01-04",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Lorenzo Olarte",
+   "party_label": "CDS",
+   "party": "CDS",
+   "start": "1989-01-04",
+   "end": "1991-07-25",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Jerónimo Saavedra",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1991-07-25",
+   "end": "1993-04-06",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Manuel Hermoso",
+   "party_label": "CC",
+   "party": "CC",
+   "start": "1993-04-06",
+   "end": "1999-07-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Román Rodríguez",
+   "party_label": "CC",
+   "party": "CC",
+   "start": "1999-07-17",
+   "end": "2003-07-08",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Adán Martín",
+   "party_label": "CC",
+   "party": "CC",
+   "start": "2003-07-08",
+   "end": "2007-07-13",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Paulino Rivero",
+   "party_label": "CC",
+   "party": "CC",
+   "start": "2007-07-13",
+   "end": "2015-07-09",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Fernando Clavijo Batlle",
+   "party_label": "CC",
+   "party": "CC",
+   "start": "2015-07-09",
+   "end": "2019-07-16",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Ángel Víctor Torres",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2019-07-16",
+   "end": "2023-07-14",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "05",
+   "president": "Fernando Clavijo Batlle",
+   "party_label": "CC",
+   "party": "CC",
+   "start": "2023-07-14",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "José Antonio Rodríguez Martínez",
+   "party_label": "Indep.",
+   "party": "Independiente",
+   "start": "1982-04-13",
+   "end": "1984-03-31",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Ángel Díaz de Entresotos",
+   "party_label": "AP",
+   "party": "PP",
+   "start": "1984-03-31",
+   "end": "1987-06-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Juan Hormaechea",
+   "party_label": "Indep.",
+   "party": "Independiente",
+   "start": "1987-06-29",
+   "end": "1990-12-13",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Jaime Blanco",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1990-12-13",
+   "end": "1991-07-08",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Juan Hormaechea",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1991-07-08",
+   "end": "1995-07-19",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "José Joaquín Martínez Sieso",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-07-19",
+   "end": "2003-07-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Miguel Ángel Revilla",
+   "party_label": "PRC",
+   "party": "PRC",
+   "start": "2003-07-02",
+   "end": "2011-06-27",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Ignacio Diego",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2011-06-27",
+   "end": "2015-07-07",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "Miguel Ángel Revilla",
+   "party_label": "PRC",
+   "party": "PRC",
+   "start": "2015-07-07",
+   "end": "2023-07-05",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "06",
+   "president": "María José Sáenz de Buruaga",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-07-05",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "Demetrio Madrid",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-03",
+   "end": "1986-11-24",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "José Constantino Nalda",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1986-11-24",
+   "end": "1987-07-28",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "José María Aznar",
+   "party_label": "AP",
+   "party": "PP",
+   "start": "1987-07-28",
+   "end": "1989-09-20",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "Jesús Posada Moreno",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1989-09-20",
+   "end": "1991-07-08",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "Juan José Lucas",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1991-07-08",
+   "end": "2001-02-28",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "Juan Vicente Herrera",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2001-03-19",
+   "end": "2019-07-12",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "07",
+   "president": "Alfonso Fernández Mañueco",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2019-07-12",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "08",
+   "president": "José Bono",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-07",
+   "end": "2004-04-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "08",
+   "president": "José María Barreda",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2004-04-17",
+   "end": "2011-06-22",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "08",
+   "president": "María Dolores de Cospedal",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2011-06-22",
+   "end": "2015-07-04",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "08",
+   "president": "Emiliano García-Page",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2015-07-04",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Jordi Pujol",
+   "party_label": "CiU",
+   "party": "CiU",
+   "start": "1980-05-08",
+   "end": "2003-12-20",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Pasqual Maragall",
+   "party_label": "PSC",
+   "party": "PSOE",
+   "start": "2003-12-20",
+   "end": "2006-11-28",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "José Montilla",
+   "party_label": "PSC",
+   "party": "PSOE",
+   "start": "2006-11-28",
+   "end": "2010-12-27",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Artur Mas",
+   "party_label": "CiU",
+   "party": "CiU",
+   "start": "2010-12-27",
+   "end": "2016-01-12",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Carles Puigdemont",
+   "party_label": "PDeCAT",
+   "party": "PDeCAT",
+   "start": "2016-01-12",
+   "end": "2017-10-28",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Intervención del Gobierno de España (art. 155)",
+   "party_label": "Art. 155",
+   "party": "Art. 155",
+   "start": "2017-10-28",
+   "end": "2018-05-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Quim Torra",
+   "party_label": "Indep.",
+   "party": "JxCat",
+   "start": "2018-05-17",
+   "end": "2020-09-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Pere Aragonès",
+   "party_label": "ERC",
+   "party": "ERC",
+   "start": "2020-09-29",
+   "end": "2021-05-24",
+   "acting": true,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Pere Aragonès",
+   "party_label": "ERC",
+   "party": "ERC",
+   "start": "2021-05-24",
+   "end": "2024-08-10",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "09",
+   "president": "Salvador Illa",
+   "party_label": "PSC",
+   "party": "PSOE",
+   "start": "2024-08-10",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Joan Lerma",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1982-11-26",
+   "end": "1995-07-04",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Eduardo Zaplana",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-07-04",
+   "end": "2002-07-10",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "José Luis Olivas",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2002-07-24",
+   "end": "2003-06-20",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Francisco Camps",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2003-06-20",
+   "end": "2011-07-28",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Alberto Fabra",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2011-07-28",
+   "end": "2015-06-26",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Ximo Puig",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2015-06-26",
+   "end": "2023-07-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Carlos Mazón",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-07-17",
+   "end": "2025-12-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "10",
+   "president": "Juanfran Pérez Llorca",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2025-12-02",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "11",
+   "president": "Juan Carlos Rodríguez Ibarra",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-13",
+   "end": "2007-06-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "11",
+   "president": "Guillermo Fernández Vara",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2007-06-29",
+   "end": "2011-07-08",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "11",
+   "president": "José Antonio Monago",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2011-07-08",
+   "end": "2015-07-04",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "11",
+   "president": "Guillermo Fernández Vara",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2015-07-04",
+   "end": "2023-07-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "11",
+   "president": "María Guardiola",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-07-17",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "12",
+   "president": "Gerardo Fernández Albor",
+   "party_label": "AP",
+   "party": "PP",
+   "start": "1982-01-21",
+   "end": "1987-09-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "12",
+   "president": "Fernando González Laxe",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1987-09-29",
+   "end": "1990-02-05",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "12",
+   "president": "Manuel Fraga",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1990-02-05",
+   "end": "2005-08-01",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "12",
+   "president": "Emilio Pérez Touriño",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2005-08-02",
+   "end": "2009-04-18",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "12",
+   "president": "Alberto Núñez Feijóo",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2009-04-18",
+   "end": "2022-05-14",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "12",
+   "president": "Alfonso Rueda",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2022-05-14",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Joaquín Leguina",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-15",
+   "end": "1995-06-30",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Alberto Ruiz-Gallardón",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-06-30",
+   "end": "2003-11-21",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Esperanza Aguirre",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2003-11-21",
+   "end": "2012-09-26",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Ignacio González González",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2012-09-26",
+   "end": "2015-06-25",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Cristina Cifuentes",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2015-06-25",
+   "end": "2018-04-25",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Ángel Garrido",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2018-04-25",
+   "end": "2018-05-21",
+   "acting": true,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Ángel Garrido",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2018-05-21",
+   "end": "2019-04-11",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Pedro Rollán Ojeda",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2019-04-11",
+   "end": "2019-08-19",
+   "acting": true,
+   "value": 1
+  },
+  {
+   "ccaa": "13",
+   "president": "Isabel Díaz Ayuso",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2019-08-14",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "Andrés Hernández Ros",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1982-08-07",
+   "end": "1984-03-09",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "María Antonia Martínez",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1984-03-09",
+   "end": "1984-03-31",
+   "acting": true,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "Carlos Collado",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1984-04-03",
+   "end": "1993-05-13",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "María Antonia Martínez",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1993-05-13",
+   "end": "1995-07-06",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "Ramón Luis Valcárcel",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-07-06",
+   "end": "2014-04-10",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "Alberto Garre",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2014-04-10",
+   "end": "2015-07-03",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "Pedro Antonio Sánchez",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2015-07-03",
+   "end": "2017-04-04",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "María Dolores Pagán",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2017-04-04",
+   "end": "2017-05-03",
+   "acting": true,
+   "value": 1
+  },
+  {
+   "ccaa": "14",
+   "president": "Fernando López Miras",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2017-05-03",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "Gabriel Urralburu",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1984-05-04",
+   "end": "1991-09-25",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "Juan Cruz Alli",
+   "party_label": "UPN",
+   "party": "UPN",
+   "start": "1991-09-25",
+   "end": "1995-07-27",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "Javier Otano",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1995-07-27",
+   "end": "1996-06-19",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "Miguel Sanz",
+   "party_label": "UPN",
+   "party": "UPN",
+   "start": "1996-06-19",
+   "end": "2011-07-01",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "Yolanda Barcina",
+   "party_label": "UPN",
+   "party": "UPN",
+   "start": "2011-07-01",
+   "end": "2015-07-22",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "Uxue Barkos",
+   "party_label": "Indep.",
+   "party": "Geroa Bai",
+   "start": "2015-07-22",
+   "end": "2019-08-06",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "15",
+   "president": "María Chivite",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2019-08-06",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "16",
+   "president": "Carlos Garaikoetxea",
+   "party_label": "PNV",
+   "party": "PNV",
+   "start": "1980-04-09",
+   "end": "1985-01-26",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "16",
+   "president": "José Antonio Ardanza",
+   "party_label": "PNV",
+   "party": "PNV",
+   "start": "1985-01-26",
+   "end": "1999-01-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "16",
+   "president": "Juan José Ibarretxe",
+   "party_label": "PNV",
+   "party": "PNV",
+   "start": "1999-01-02",
+   "end": "2009-05-07",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "16",
+   "president": "Patxi López",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2009-05-07",
+   "end": "2012-12-15",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "16",
+   "president": "Iñigo Urkullu",
+   "party_label": "PNV",
+   "party": "PNV",
+   "start": "2012-12-15",
+   "end": "2024-06-22",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "16",
+   "president": "Imanol Pradales",
+   "party_label": "PNV",
+   "party": "PNV",
+   "start": "2024-06-22",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "José María de Miguel",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1983-06-06",
+   "end": "1987-07-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "Joaquín Espert",
+   "party_label": "AP",
+   "party": "PP",
+   "start": "1987-07-29",
+   "end": "1990-01-13",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "José Ignacio Pérez Sáenz",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "1990-01-13",
+   "end": "1995-07-08",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "Pedro Sanz",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-07-08",
+   "end": "2015-07-08",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "José Ignacio Ceniceros",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2015-07-08",
+   "end": "2019-08-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "Concha Andreu",
+   "party_label": "PSOE",
+   "party": "PSOE",
+   "start": "2019-08-29",
+   "end": "2023-06-29",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "17",
+   "president": "Gonzalo Capellán",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-06-30",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "18",
+   "president": "Basilio Fernández",
+   "party_label": "PFC",
+   "party": "PFC",
+   "start": "1995-06-19",
+   "end": "1996-07-24",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "18",
+   "president": "Jesús Cayetano Fortes",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1996-07-24",
+   "end": "1999-08-23",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "18",
+   "president": "Antonio Sampietro",
+   "party_label": "GIL",
+   "party": "GIL",
+   "start": "1999-08-23",
+   "end": "2001-02-06",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "18",
+   "president": "Juan Jesús Vivas",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2001-02-06",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "19",
+   "president": "Ignacio Velázquez",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1995-03-14",
+   "end": "1998-03-03",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "19",
+   "president": "Enrique Palacios Hernández",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "1998-03-03",
+   "end": "1999-07-05",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "19",
+   "president": "Mustafá Aberchán",
+   "party_label": "CpM",
+   "party": "CpM",
+   "start": "1999-07-05",
+   "end": "2000-07-19",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "19",
+   "president": "Juan José Imbroda",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2000-07-20",
+   "end": "2019-06-15",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "19",
+   "president": "Eduardo de Castro",
+   "party_label": "Cs",
+   "party": "Cs",
+   "start": "2019-06-15",
+   "end": "2023-07-07",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "19",
+   "president": "Juan José Imbroda",
+   "party_label": "PP",
+   "party": "PP",
+   "start": "2023-07-07",
+   "end": null,
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "Adolfo Suárez",
+   "party": "UCD",
+   "party_label": "UCD",
+   "start": "1976-07-03",
+   "end": "1981-02-26",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "Leopoldo Calvo-Sotelo",
+   "party": "UCD",
+   "party_label": "UCD",
+   "start": "1981-02-26",
+   "end": "1982-12-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "Felipe González",
+   "party": "PSOE",
+   "party_label": "PSOE",
+   "start": "1982-12-02",
+   "end": "1996-05-05",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "José María Aznar",
+   "party": "PP",
+   "party_label": "PP",
+   "start": "1996-05-05",
+   "end": "2004-04-17",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "José Luis Rodríguez Zapatero",
+   "party": "PSOE",
+   "party_label": "PSOE",
+   "start": "2004-04-17",
+   "end": "2011-12-21",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "Mariano Rajoy",
+   "party": "PP",
+   "party_label": "PP",
+   "start": "2011-12-21",
+   "end": "2018-06-02",
+   "acting": false,
+   "value": 1
+  },
+  {
+   "ccaa": "ES",
+   "president": "Pedro Sánchez",
+   "party": "PSOE",
+   "party_label": "PSOE",
+   "start": "2018-06-02",
+   "end": null,
+   "acting": false,
+   "value": 1
+  }
+ ]
+}

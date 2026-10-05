@@ -1,0 +1,91 @@
+---
+// Una nota: uno o dos gráficos sobre un tema publicado, contados desde una sola mirada.
+import Base from "../layouts/Base.astro";
+import Blocks from "../components/Blocks.astro";
+import FocusSelect from "../components/FocusSelect.astro";
+import LinkList from "../components/LinkList.astro";
+import { NOTES, lensById, themeById, type Note } from "../lib/themes";
+import { formatDate, lensPath, notePath, paths, themePath, type Lang } from "../lib/i18n";
+import "../styles/charts.css";
+
+interface Props { lang: Lang; note: Note }
+const { lang, note } = Astro.props;
+const theme = themeById(note.theme);
+const lens = lensById(note.lens);
+
+const copy = {
+  es: { sources: "Fuentes del texto", note: "Nota", published: "Publicada el", theme: "Tema", lens: "Mirada", more: "Más notas", all: "Todas las notas", read: "Leer el tema completo" },
+  en: { sources: "Sources for the text", note: "Note", published: "Published on", theme: "Theme", lens: "Lens", more: "More notes", all: "All notes", read: "Read the full theme" },
+}[lang];
+
+const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
+const isAnalysis = note.kind === "analisis";
+const label = isAnalysis ? (lang === "es" ? "Análisis" : "Analysis") : copy.note;
+// Índice de un análisis: sus subtítulos
+const toc = note.body.filter((b): b is { h: { es: string; en: string }; id: string } => "h" in b);
+---
+<Base lang={lang} path={notePath(note.slug)} section="notes" title={note.title[lang]} description={note.dek[lang]}>
+  <article class="wrap note">
+    <header class="note-head">
+      <p class="kicker">
+        {label} {note.code}.
+        {" "}{copy.published} {formatDate(note.published, lang)}.
+        {theme && <>{" "}{copy.theme}: <a href={themePath(theme.slug)[lang]}>{theme.title[lang]}</a>.</>}
+        {" "}{copy.lens}: <a href={lensPath(lens.slug)[lang]}>{lens.name[lang]}</a>.
+      </p>
+      <h1>{note.title[lang]}</h1>
+      <p class="dek">{note.dek[lang]}</p>
+      <FocusSelect lang={lang} />
+    </header>
+
+    {isAnalysis && toc.length > 0 && (
+      <nav class="toc" aria-label={lang === "es" ? "Índice" : "Contents"}>
+        <p class="toc-title">{lang === "es" ? "En este análisis" : "In this analysis"}</p>
+        <ol>{toc.map((h) => <li><a href={`#${h.id}`}>{h.h[lang]}</a></li>)}</ol>
+      </nav>
+    )}
+
+    <Blocks lang={lang} blocks={note.body} codePrefix={note.code} />
+
+    {note.sources && note.sources.length > 0 && (
+      <section class="sources" aria-label={copy.sources}>
+        <h2>{copy.sources}</h2>
+        <ul>{note.sources.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a></li>)}</ul>
+      </section>
+    )}
+
+    {theme && <p class="cross"><a href={themePath(theme.slug)[lang]}>{copy.read}: {theme.title[lang]}</a></p>}
+  </article>
+
+  {others.length > 0 && (
+    <section class="wrap others">
+      <h2>{copy.more}</h2>
+      <LinkList items={others.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], meta: formatDate(n.published, lang) }))} />
+      <a class="all" href={paths.notes[lang]}>{copy.all}</a>
+    </section>
+  )}
+
+  <script>
+    import "../scripts/main.ts";
+  </script>
+</Base>
+
+<style>
+  .note { padding-top: clamp(3rem, 7vw, 5rem); }
+  .note-head { display: grid; gap: 1.25rem; justify-items: start; margin-bottom: 1rem; }
+  .kicker { margin: 0; font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-3); max-width: 46rem; }
+  h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 0.92; max-width: 22ch; }
+  .dek { margin: 0; max-width: 38rem; font-size: clamp(1.15rem, 1.7vw, 1.35rem); line-height: 1.45; color: var(--ink-2); }
+  .toc { margin: 1.5rem 0 1rem; padding: 1rem 1.25rem; max-width: 40rem; background: var(--paper-raised); border: 1px solid var(--rule); border-radius: 6px; }
+  .toc-title { margin: 0 0 0.5rem; font-family: var(--font-semi); font-weight: 700; font-size: 0.95rem; color: var(--ink-2); }
+  .toc ol { margin: 0; padding-left: 1.3rem; font-family: var(--font-semi); }
+  .toc li { margin-bottom: 0.3rem; }
+  .sources { margin-top: 2.5rem; max-width: 46rem; font-size: 0.95rem; color: var(--ink-2); }
+  .sources h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; }
+  .sources ul { margin: 0; padding-left: 1.1rem; }
+  .sources li { margin-bottom: 0.3rem; }
+  .cross { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--font-semi); font-weight: 600; }
+  .others { padding-top: 5rem; }
+  .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+  .all { display: inline-block; margin-top: 1rem; font-family: var(--font-semi); font-weight: 600; }
+</style>

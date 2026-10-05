@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHead from "../components/PageHead.astro";
+import LinkList from "../components/LinkList.astro";
+import { LENSES, figuresOf, published } from "../lib/themes";
+import { lensPath, paths, type Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+const copy = {
+  es: { title: "Miradas", dek: "Tres formas de leer los mismos datos. Cada mirada recorre todos los temas publicados, así que puedes seguir una sola pregunta de principio a fin.", charts: "gráficos en" , themes: "temas" },
+  en: { title: "Lenses", dek: "Three ways to read the same data. Each lens runs through every published theme, so you can follow a single question from start to finish.", charts: "charts across", themes: "themes" },
+}[lang];
+
+const themes = published();
+// Un tema sin gráficos en una mirada no cuenta para esa mirada
+---
+<Base lang={lang} path={paths.lenses} section="lenses" title={copy.title} description={copy.dek}>
+  <PageHead title={copy.title} dek={copy.dek} />
+  <section class="wrap">
+    <LinkList
+      size="large"
+      items={LENSES.map((l) => ({
+        href: lensPath(l.slug)[lang],
+        title: l.name[lang],
+        dek: l.about[lang],
+        meta: `${themes.reduce((n, th) => n + figuresOf(th, l.id).length, 0)} ${copy.charts} ${themes.length} ${copy.themes}.`,
+      }))}
+    />
+  </section>
+</Base>

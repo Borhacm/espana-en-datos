@@ -1,0 +1,10 @@
+---
+import View from "../views/Theme.astro";
+import { published } from "../lib/themes";
+
+export function getStaticPaths() {
+  return published().filter((t) => !t.hub).map((theme) => ({ params: { theme: theme.slug.es }, props: { theme } }));
+}
+const { theme } = Astro.props;
+---
+<View lang="es" theme={theme} />

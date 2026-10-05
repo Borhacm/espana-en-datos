@@ -1,0 +1,102 @@
+---
+import { loadChart } from "../lib/data";
+import { pivot } from "../lib/table";
+import { ui, formatDate, type Lang } from "../lib/i18n";
+
+interface Props { id: string; lang: Lang; code: string }
+const { id, lang, code } = Astro.props;
+const t = ui[lang];
+const chart = loadChart(id);
+const table = pivot(chart, lang, t.table);
+const notes = chart.notes[lang] ?? [];
+---
+<figure class="fig" id={id} data-chart={id} data-lang={lang} data-error={t.loadError}>
+  <figcaption class="fig-head">
+    <span class="code">{code}</span>
+    <h3>{chart.title[lang]}</h3>
+    <p class="sub">{chart.subtitle[lang]}</p>
+  </figcaption>
+
+  <div class="controls" data-controls></div>
+  <div class="legend" data-legend></div>
+  <div class="plot" data-plot role="img" aria-label={`${chart.title[lang]}. ${chart.subtitle[lang]}`}>
+    <p class="plot-status" data-status>{t.loading}</p>
+  </div>
+
+  <footer class="fig-foot">
+    <p class="source">
+      {t.source}: <a href={chart.source.url} rel="noopener">{chart.source.name}</a>
+      {chart.source.also?.map((a) => <>, <a href={a.url} rel="noopener">{a.name}</a></>)}.{" "}
+      {t.license} {chart.source.license}. {t.retrieved} {formatDate(chart.retrieved, lang)}.
+    </p>
+    {notes.length > 0 && (
+      <ul class="notes">{notes.map((n) => <li>{n}</li>)}</ul>
+    )}
+    <details class="table-view">
+      <summary>{t.showTable}</summary>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">{table.rowHeader}</th>{table.cols.map((c) => <th scope="col">{c.label}</th>)}</tr>
+          </thead>
+          <tbody>
+            {table.rows.map((r) => (
+              <tr><th scope="row">{r.label}</th>{r.cells.map((c) => <td class="num">{c ?? "–"}</td>)}</tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <a class="download" href={`/data/charts/${id}.json`} download>{t.download}</a>
+    </details>
+  </footer>
+</figure>
+
+<style>
+  .fig {
+    margin: 0;
+    padding-block: 2.5rem 0;
+    border-top: 1px solid var(--rule-strong);
+  }
+  .fig-head { display: grid; gap: 0.5rem; max-width: 46rem; }
+  .code {
+    font-family: var(--font-semi);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--brand-ink);
+  }
+  .fig-head h3 {
+    font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+    line-height: 1;
+  }
+  .sub { margin: 0; color: var(--ink-2); font-size: 1rem; line-height: 1.45; }
+
+  .controls:empty, .legend:empty { display: none; }
+  .controls { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; }
+  .legend { margin-top: 1rem; }
+
+  .plot { position: relative; margin-top: 1.25rem; min-height: 16rem; }
+  .plot-status { color: var(--ink-3); font-size: 0.95rem; padding-top: 5rem; text-align: center; }
+
+  .fig-foot { margin-top: 1rem; color: var(--ink-3); font-size: 0.88rem; line-height: 1.45; max-width: 52rem; }
+  .source { margin: 0 0 0.35rem; }
+  .source a { color: var(--ink-2); }
+  .notes { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+  .notes li { margin-bottom: 0.2rem; }
+
+  .table-view summary {
+    cursor: pointer;
+    color: var(--brand-ink);
+    font-family: var(--font-semi);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding-block: 0.35rem;
+    width: fit-content;
+  }
+  .table-scroll { overflow-x: auto; max-height: 26rem; margin-top: 0.5rem; border: 1px solid var(--rule); }
+  table { border-collapse: collapse; width: 100%; font-family: var(--font-semi); font-size: 0.92rem; color: var(--ink); }
+  th, td { padding: 0.35rem 0.75rem; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  th:first-child { text-align: left; }
+  thead th { position: sticky; top: 0; background: var(--paper-raised); font-weight: 600; }
+  tbody th { font-weight: 500; }
+  .download { display: inline-block; margin-top: 0.6rem; font-size: 0.92rem; }
+</style>

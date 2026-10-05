@@ -1,0 +1,64 @@
+---
+// Dibuja el cuerpo de un tema, una nota o un análisis: párrafos, gráficos, subtítulos, listas, pasos, citas y cronologías.
+import Figure from "./Figure.astro";
+import type { Block } from "../lib/content-types";
+import type { Lang } from "../lib/i18n";
+
+interface Props { lang: Lang; blocks: Block[]; codePrefix: string }
+const { lang, blocks, codePrefix } = Astro.props;
+
+// Un código corto ("1", "G1") se prefija con el de la pieza; uno completo ("N02-1") se muestra tal cual
+const figCode = (code: string) => (code.includes("-") ? code : `${codePrefix}-${code}`);
+---
+{blocks.map((b) =>
+  "p" in b ? <p class="prose body">{b.p[lang]}</p>
+  : "fig" in b ? <Figure id={b.fig} lang={lang} code={figCode(b.code)} />
+  : "h" in b ? <h2 class="sub-h" id={b.id}>{b.h[lang]}</h2>
+  : "list" in b ? <ul class="prose b-list">{b.list.map((i) => <li>{i[lang]}</li>)}</ul>
+  : "steps" in b ? (
+      <ol class="prose b-steps">
+        {b.steps.map((s) => <li><strong>{s.title[lang]}</strong> {s.text[lang]}</li>)}
+      </ol>
+    )
+  : "quote" in b ? (
+      <figure class="b-quote">
+        <blockquote><p>{b.quote[lang]}</p></blockquote>
+        <figcaption><a href={b.url} rel="noopener">{b.who[lang]}</a></figcaption>
+      </figure>
+    )
+  : "timeline" in b ? (
+      <ol class="b-timeline">
+        {b.timeline.map((t) => <li><span class="t-date">{t.date[lang]}</span><span class="t-text">{t.text[lang]}</span></li>)}
+      </ol>
+    )
+  : null
+)}
+
+<style>
+  .body { margin-block: 2rem 2.5rem; }
+  .sub-h {
+    margin-top: clamp(3rem, 6vw, 4.5rem);
+    padding-top: 1rem;
+    border-top: 2px solid var(--ink);
+    font-size: clamp(2rem, 4.2vw, 3rem);
+    line-height: 0.95;
+    max-width: 24ch;
+    scroll-margin-top: 5rem;
+  }
+  .b-list, .b-steps { margin-block: 1.5rem 2rem; padding-left: 1.3rem; }
+  .b-list li, .b-steps li { margin-bottom: 0.7rem; line-height: 1.5; }
+  .b-steps li::marker { font-family: var(--font-display); font-weight: 700; color: var(--brand); }
+  .b-quote { margin: 2rem 0 2.5rem; max-width: 40rem; border-left: 3px solid var(--brand); padding-left: 1.25rem; }
+  .b-quote blockquote { margin: 0; }
+  .b-quote p { margin: 0; font-size: clamp(1.25rem, 2vw, 1.5rem); line-height: 1.35; font-weight: 500; }
+  .b-quote figcaption { margin-top: 0.6rem; font-family: var(--font-semi); font-size: 0.95rem; }
+  .b-quote figcaption a { color: var(--ink-2); }
+  .b-timeline { list-style: none; margin: 1.5rem 0 2.5rem; padding: 0; max-width: 46rem; border-left: 2px solid var(--rule-strong); }
+  .b-timeline li { position: relative; display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; padding: 0.55rem 0 0.55rem 1.25rem; }
+  .b-timeline li::before { content: ""; position: absolute; left: -6px; top: 0.95rem; width: 10px; height: 10px; border-radius: 50%; background: var(--brand); }
+  .t-date { font-family: var(--font-semi); font-weight: 700; color: var(--ink); }
+  .t-text { color: var(--ink-2); line-height: 1.45; }
+  @media (max-width: 560px) {
+    .b-timeline li { grid-template-columns: 1fr; gap: 0.15rem; }
+  }
+</style>

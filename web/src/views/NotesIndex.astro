@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHead from "../components/PageHead.astro";
+import LinkList from "../components/LinkList.astro";
+import { NOTES, lensById, themeById } from "../lib/themes";
+import { formatDate, notePath, paths, type Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+const copy = {
+  es: { title: "Notas", dek: "Piezas breves, con uno o dos gráficos, sobre un dato concreto. Cada nota se cuenta desde una mirada y enlaza al tema al que pertenece.", empty: "Todavía no hay notas publicadas." },
+  en: { title: "Notes", dek: "Short pieces, with one or two charts, on a specific figure. Each note is told through one lens and links to the theme it belongs to.", empty: "No notes published yet." },
+}[lang];
+
+const meta = (n: (typeof NOTES)[number]) =>
+  [formatDate(n.published, lang), themeById(n.theme)?.title[lang], lensById(n.lens).name[lang]].filter(Boolean).join(". ") + ".";
+---
+<Base lang={lang} path={paths.notes} section="notes" title={copy.title} description={copy.dek}>
+  <PageHead title={copy.title} dek={copy.dek} />
+  <section class="wrap">
+    {NOTES.length > 0
+      ? <LinkList size="large" items={NOTES.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], meta: meta(n) }))} />
+      : <p class="prose">{copy.empty}</p>}
+  </section>
+</Base>

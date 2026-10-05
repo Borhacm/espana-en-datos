@@ -1,0 +1,118 @@
+/* Gráficos: marcas finas, rejilla recesiva, texto siempre en tinta (nunca del color de la serie). */
+
+.chart-svg { display: block; overflow: visible; font-family: var(--font-semi); }
+
+.gridline { stroke: var(--rule); stroke-width: 1; shape-rendering: crispEdges; }
+.baseline { stroke: var(--rule-strong); stroke-width: 1; shape-rendering: crispEdges; }
+.tick { fill: var(--ink-3); font-size: 13px; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
+
+.line { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.series.context .line { opacity: 0.9; }
+
+.end-label { font-size: 14px; }
+.end-name { fill: var(--ink-2); font-weight: 500; }
+.end-value { fill: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.crosshair { stroke: var(--ink-3); stroke-width: 1; }
+.overlay { cursor: crosshair; outline: none; }
+.overlay:focus-visible { outline: 2px solid var(--brand); }
+
+.row-name { fill: var(--ink-2); font-size: 14px; }
+.row-name.strong { fill: var(--ink); font-weight: 700; }
+.row-meta { fill: var(--ink-3); font-size: 12.5px; }
+.row-value { fill: var(--ink-3); font-size: 13px; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
+.row-value.strong { fill: var(--ink); font-weight: 700; }
+.bar-row { outline: none; }
+.bar-row:hover rect:first-child, .bar-row:focus-visible rect:first-child { fill: var(--wash); }
+.seg-label { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; pointer-events: none; }
+
+.target { stroke: var(--ink); stroke-width: 1.5; }
+.target-label { fill: var(--ink); font-size: 13px; font-weight: 600; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
+
+.map .land-nodata, .lg-nodata { fill: var(--wash); stroke: var(--paper); stroke-width: 0.5; }
+.map .region { stroke: var(--paper); stroke-width: 0.6; }
+.map .region:hover { stroke: var(--ink); stroke-width: 1.5; }
+.map .focus-outline { fill: none; stroke: var(--ink); stroke-width: 1.75; pointer-events: none; }
+.map .inset-box { fill: none; stroke: var(--rule-strong); stroke-width: 1; }
+
+/* Tooltip */
+.tip {
+  position: absolute;
+  display: none;
+  z-index: 5;
+  pointer-events: none;
+  min-width: 11rem;
+  max-width: 17rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--paper-raised);
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+  border-radius: 6px;
+  box-shadow: 0 6px 20px -8px rgb(14 26 51 / 0.35);
+  font-family: var(--font-semi);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+.tip-title { font-weight: 700; margin-bottom: 0.3rem; }
+.tip-note { color: var(--ink-3); font-size: 0.82rem; margin: -0.15rem 0 0.3rem; }
+.tip-row { display: grid; grid-template-columns: 10px 1fr auto; gap: 0.5rem; align-items: center; padding-block: 0.1rem; }
+.tip-row .key { width: 10px; height: 10px; border-radius: 2px; }
+.tip-row .v { font-variant-numeric: tabular-nums; font-weight: 600; }
+.tip-row.strong .v { font-weight: 700; }
+
+/* Leyenda */
+.legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-2); }
+.lg { display: inline-flex; align-items: center; gap: 0.45rem; }
+.lg .key { display: inline-block; flex: none; }
+.lg-line .key { width: 18px; height: 3px; border-radius: 2px; }
+.lg-swatch .key { width: 12px; height: 12px; border-radius: 3px; }
+.lg-dot .key { width: 10px; height: 10px; border-radius: 50%; background: var(--context-strong); }
+.lg-hollow .key { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--context-strong); }
+.lg-outline .key { width: 14px; height: 10px; border: 2px solid var(--ink); border-radius: 2px; }
+
+/* Controles segmentados */
+.seg {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+  background: var(--paper-raised);
+}
+.seg button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font: 500 0.92rem/1 var(--font-semi);
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  min-height: 34px;
+}
+.seg button:hover { color: var(--ink); background: var(--wash); }
+.seg button[aria-checked="true"] { background: var(--ink); color: var(--paper); }
+
+.refline { stroke: var(--ink-2); stroke-width: 1; }
+.ref-label { fill: var(--ink-2); font-size: 12.5px; font-weight: 600; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
+
+/* Encuestas */
+.future { fill: var(--wash); opacity: 0.6; }
+.election-line { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.election-label { fill: var(--ink); font-size: 13px; font-weight: 700; }
+.poll-dot { opacity: 0.45; }
+.poll-dot:hover { opacity: 1; }
+.result-mark { stroke: var(--paper); stroke-width: 1.5; }
+.chart-svg .line, .chart-svg .hover { pointer-events: none; }
+
+/* Gobiernos */
+.gov-bar { stroke: var(--paper); stroke-width: 1; }
+.gov-label { font-size: 11.5px; font-weight: 600; pointer-events: none; }
+.today-line { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; }
+
+/* Veda electoral */
+.veda-note { padding: 1.25rem 1.5rem; background: var(--wash); border-left: 3px solid var(--brand); max-width: 46rem; font-size: 1rem; }
+figure.veda .plot, figure.veda .legend, figure.veda .controls, figure.veda .table-view { display: none; }
+.map .prov-mesh { fill: none; stroke: var(--paper); stroke-width: 1.2; pointer-events: none; }
+.map .region { stroke-width: 0.3; }

@@ -29,15 +29,17 @@ def chart(*, id, lens, theme, title, subtitle, unit, source, rows, geos=None, no
     for r in rows:
         v = r["value"]
         assert isinstance(v, (int, float)) and not math.isnan(v), f"{id}: valor no numérico {r}"
+    # La web lee textos como {"es": ...} para admitir otro idioma más adelante
+    es = lambda v: {"es": v} if isinstance(v, str) else v
     return {
         "id": id,
         "lens": lens,
         "theme": theme,
-        "title": title,
-        "subtitle": subtitle,
-        "unit": unit,
+        "title": es(title),
+        "subtitle": es(subtitle),
+        "unit": es(unit),
         "source": source,
-        "notes": notes or [],
+        "notes": {"es": notes or []} if not isinstance(notes, dict) else notes,
         "retrieved": dt.date.today().isoformat(),
         "geos": geos or {},
         **(extra or {}),
@@ -49,7 +51,10 @@ def write(charts: list[dict]) -> None:
     """Escribe solo los gráficos generados: una ejecución parcial no toca los demás."""
     CHARTS_DIR.mkdir(parents=True, exist_ok=True)
     for c in charts:
-        (CHARTS_DIR / f"{c['id']}.json").write_text(json.dumps(c, ensure_ascii=False, indent=1))
+        # Los gráficos con muchas filas (encuestas, mapas municipales) se escriben compactos
+        indent = 1 if len(c["rows"]) < 2000 else None
+        sep = None if indent else (",", ":")
+        (CHARTS_DIR / f"{c['id']}.json").write_text(json.dumps(c, ensure_ascii=False, indent=indent, separators=sep))
 
 
 def write_base(d: dict, compact: bool = False) -> Path:

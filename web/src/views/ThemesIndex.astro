@@ -1,0 +1,41 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHead from "../components/PageHead.astro";
+import LinkList from "../components/LinkList.astro";
+import { figuresOf, published, upcoming } from "../lib/themes";
+import { formatDate, paths, themePath, ui, type Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+
+const copy = {
+  es: { title: "Temas", dek: "Cada tema se cuenta con tres miradas: la UE frente a Estados Unidos y China, lo que Europa gana y lo que cede, y las diferencias entre sus 27 países.", charts: "gráficos", next: "En preparación" },
+  en: { title: "Themes", dek: "Each theme is told through three lenses: the EU against the United States and China, what Europe gains and gives up, and the differences among its 27 countries.", charts: "charts", next: "In preparation" },
+}[lang];
+---
+<Base lang={lang} path={paths.themes} section="themes" title={copy.title} description={copy.dek}>
+  <PageHead title={copy.title} dek={copy.dek} />
+  <section class="wrap">
+    <LinkList
+      size="large"
+      items={published().map((th) => ({
+        href: themePath(th.slug)[lang],
+        title: th.title[lang],
+        dek: th.dek?.[lang],
+        meta: `${formatDate(th.published!, lang)}. ${figuresOf(th).length} ${copy.charts}.`,
+      }))}
+    />
+  </section>
+  {upcoming().length > 0 && (
+    <section class="wrap next">
+      <h2>{copy.next}</h2>
+      <LinkList items={upcoming().map((th) => ({ title: th.title[lang], meta: t.comingSoon, muted: true }))} />
+    </section>
+  )}
+</Base>
+
+<style>
+  .next { padding-top: 4rem; }
+  .next h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: 1rem; }
+</style>

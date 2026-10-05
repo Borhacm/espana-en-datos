@@ -1,0 +1,40 @@
+---
+// Una mirada dentro de un tema: titular, entradilla, texto y gráficos.
+// En la página del tema el titular es la mirada; en la página de la mirada, el tema.
+import Blocks from "./Blocks.astro";
+import type { ThemeLens } from "../lib/themes";
+import type { Lang } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+  anchor: string;
+  heading: string;
+  content: ThemeLens;
+  codePrefix: string;
+  crossLink: { text: string; href: string };
+}
+const { lang, anchor, heading, content, codePrefix, crossLink } = Astro.props;
+---
+<section class="lens wrap" id={anchor} aria-labelledby={`${anchor}-h`}>
+  <header class="lens-head">
+    <h2 id={`${anchor}-h`}>{heading}</h2>
+    <p class="lede">{content.lede[lang]}</p>
+  </header>
+  <Blocks lang={lang} blocks={content.body} codePrefix={codePrefix} />
+  <p class="cross"><a href={crossLink.href}>{crossLink.text}</a></p>
+</section>
+
+<style>
+  .lens { padding-top: clamp(3.5rem, 7vw, 6rem); }
+  .lens-head { margin-bottom: 2rem; display: grid; justify-items: start; }
+  h2 { font-size: clamp(2.8rem, 6.5vw, 5rem); line-height: 0.9; }
+  .lede { margin-top: 1rem; max-width: 34rem; font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.35; font-weight: 500; }
+  .body { margin-block: 2rem 2.5rem; }
+  .cross {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--font-semi);
+    font-weight: 600;
+  }
+</style>

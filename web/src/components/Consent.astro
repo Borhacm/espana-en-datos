@@ -1,0 +1,143 @@
+---
+/*
+ * Google Analytics (propiedad común de bocal.online) + banner de cookies.
+ * El consentimiento se comparte con bocal.online y sus subdominios: cookie `bocalma_consent`
+ * en .bocal.online (misma lógica que Bocalma-V0/lib/cookie-consent.ts). Con el consentimiento
+ * denegado, GA solo recibe mediciones sin cookies (Consent Mode v2).
+ * Vercel Web Analytics (sin cookies) sigue funcionando aparte.
+ */
+import type { Lang } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const GA_ID = "G-X1TPZH5MKQ";
+const copy = {
+  es: {
+    message:
+      "Usamos cookies propias necesarias y, si nos das tu consentimiento, cookies de Google Analytics para entender cómo se usa la web.",
+    more: "Más información",
+    reject: "Solo esenciales",
+    accept: "Aceptar todas",
+  },
+  en: {
+    message:
+      "We use necessary cookies and, with your consent, Google Analytics cookies to understand how the site is used.",
+    more: "More info",
+    reject: "Essential only",
+    accept: "Accept all",
+  },
+}[lang];
+const privacyHref = lang === "es" ? "https://www.bocal.online/es/privacy" : "https://www.bocal.online/en/privacy";
+---
+
+<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+<script is:inline define:vars={{ GA_ID }}>
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  var m = document.cookie.match(/(?:^|; )bocalma_consent=(granted|denied)/);
+  var consent = m ? m[1] : null;
+  var internal = false;
+  try {
+    var flag = new URLSearchParams(window.location.search).get("internal");
+    if (flag === "on") window.localStorage.setItem("bocalma_internal_traffic", "1");
+    if (flag === "off") window.localStorage.removeItem("bocalma_internal_traffic");
+    internal = window.localStorage.getItem("bocalma_internal_traffic") === "1";
+  } catch (e) {}
+  window.gtag("consent", "default", {
+    analytics_storage: consent === "granted" ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    wait_for_update: 500,
+  });
+  window.gtag("js", new Date());
+  if (internal) window.gtag("set", { traffic_type: "internal" });
+  window.gtag("config", GA_ID);
+</script>
+
+<div class="consent" role="region" aria-label="Cookies" hidden data-consent-banner>
+  <p>
+    {copy.message} <a href={privacyHref}>{copy.more}</a>
+  </p>
+  <div class="actions">
+    <button type="button" data-consent="denied">{copy.reject}</button>
+    <button type="button" class="primary" data-consent="granted">{copy.accept}</button>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var banner = document.querySelector("[data-consent-banner]");
+    if (!banner) return;
+    var decided = /(?:^|; )bocalma_consent=(granted|denied)/.test(document.cookie);
+    if (!decided) banner.hidden = false;
+    banner.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-consent]");
+      if (!btn) return;
+      var value = btn.getAttribute("data-consent");
+      var domain = /(^|\.)bocal\.online$/.test(location.hostname) ? "; domain=.bocal.online" : "";
+      document.cookie =
+        "bocalma_consent=" + value + "; path=/; max-age=" + 60 * 60 * 24 * 180 + "; SameSite=Lax; Secure" + domain;
+      window.gtag && window.gtag("consent", "update", { analytics_storage: value });
+      banner.hidden = true;
+    });
+    document.addEventListener("click", function (e) {
+      if (e.target.closest("[data-open-consent]")) banner.hidden = false;
+    });
+  })();
+</script>
+
+<style>
+  .consent {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 30;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem var(--gutter);
+    background: var(--paper-raised);
+    border-top: 1px solid var(--rule-strong);
+    font-family: var(--font-sans);
+    color: var(--ink);
+  }
+  .consent[hidden] {
+    display: none;
+  }
+  .consent p {
+    margin: 0;
+    max-width: var(--measure);
+    font-size: 0.95rem;
+  }
+  .actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .actions button {
+    font: inherit;
+    font-weight: 600;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule-strong);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .actions button.primary {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+  }
+  .actions button:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+</style>

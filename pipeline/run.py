@@ -11,7 +11,7 @@ Una ejecución con --only no modifica lo demás.
 import sys
 import traceback
 
-from datasets import elecciones, encuestas, gobiernos
+from datasets import elecciones, encuestas, escanos, gobiernos
 from lib import http
 from lib.output import write, write_base
 
@@ -20,7 +20,10 @@ BASE = [
     ("gobiernos", gobiernos.build, False),
     ("encuestas", encuestas.build, False),
     ("congreso-202307", lambda: elecciones.build("202307"), True),
+    ("escanos-2026", escanos.build, False),
 ]
+# Datasets que dependen de los gráficos (se escriben después de ellos)
+LATE = [("simulador", lambda: __import__("charts.elecciones", fromlist=["simulador"]).simulador(), True)]
 
 
 def main(args: list[str]) -> int:
@@ -59,6 +62,16 @@ def main(args: list[str]) -> int:
         built.append(c)
         print(f"ok  {c['id']:<32} {len(c['rows']):>6} filas")
     write(built)
+
+    for name, build, compact in LATE:
+        if only and only not in name and only not in "charts.elecciones":
+            continue
+        try:
+            path = write_base(build(), compact)
+            print(f"ok  base/{path.name:<28} {path.stat().st_size // 1024:>6} KB")
+        except Exception:
+            failed.append(name)
+            traceback.print_exc()
 
     for name in failed:
         print(f"ERR {name}")

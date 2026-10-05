@@ -1,0 +1,38 @@
+---
+// Lista de temas o miradas: titular grande, descripción y, si hace falta, un estado.
+interface Item { href?: string; title: string; dek?: string; meta?: string; muted?: boolean }
+interface Props { items: Item[]; size?: "large" | "medium" }
+const { items, size = "medium" } = Astro.props;
+---
+<ul class={`links ${size}`}>
+  {items.map((i) => (
+    <li class={i.muted ? "muted" : undefined}>
+      {i.href ? (
+        <a href={i.href}>
+          <span class="l-title">{i.title}</span>
+          {i.dek && <span class="l-dek">{i.dek}</span>}
+          {i.meta && <span class="l-meta">{i.meta}</span>}
+        </a>
+      ) : (
+        <div>
+          <span class="l-title">{i.title}</span>
+          {i.dek && <span class="l-dek">{i.dek}</span>}
+          {i.meta && <span class="l-meta">{i.meta}</span>}
+        </div>
+      )}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .links { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  li { border-bottom: 1px solid var(--rule); }
+  a, li > div { display: grid; gap: 0.35rem; padding-block: 1.1rem 1.2rem; text-decoration: none; color: var(--ink); max-width: 48rem; }
+  a:hover .l-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+  .l-title { font-family: var(--font-display); font-weight: 700; font-size: 1.8rem; line-height: 1; }
+  .large .l-title { font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 0.95; }
+  .l-dek { color: var(--ink-2); font-size: 1.02rem; line-height: 1.45; }
+  .large .l-dek { font-size: 1.12rem; }
+  .l-meta { font-family: var(--font-semi); font-size: 0.9rem; color: var(--ink-3); }
+  .muted .l-title { color: var(--ink-3); }
+</style>

@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/espana", "destination": "/", "permanent": true },
+    { "source": "/historias", "destination": "/notas/", "permanent": true }
+  ]
+}
