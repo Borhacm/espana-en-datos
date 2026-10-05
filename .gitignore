@@ -1,0 +1,9 @@
+data/raw/
+.venv/
+__pycache__/
+node_modules/
+.DS_Store
+web/public/data/
+web/dist/
+.astro/
+pipeline/.venv/
