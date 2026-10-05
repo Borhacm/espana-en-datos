@@ -82,9 +82,27 @@ export function renderLine(ctx: RenderContext) {
   }
   const [x0, x1] = x.domain();
   const step = Math.max(1, Math.ceil((x1 - x0) / (narrow ? 4 : 8)));
-  for (let v = x1; v >= x0; v -= step) {
+  // Series trimestrales (time = año + (trimestre - 1) / 4): marcas solo en años enteros
+  for (let v = Math.floor(x1); v >= x0; v -= step) {
     const txt = svg("text", { x: x(v), y: height - 8, class: "tick", "text-anchor": v === x0 ? "start" : "middle" }, grid);
     txt.textContent = String(v);
+  }
+
+  // Fechas clave (p. ej. entrada en vigor de una norma): línea discontinua y etiqueta numerada arriba
+  const events: { time: number; label: { es: string } }[] = chart.events ?? [];
+  events.forEach((ev, i) => {
+    if (ev.time < x0 || ev.time > x1) return;
+    svg("line", { x1: x(ev.time), x2: x(ev.time), y1: m.top - 6, y2: height - m.bottom, class: "event-line" }, grid);
+    const t = svg("text", { x: x(ev.time) + 4, y: m.top + 4, class: "event-num" }, grid);
+    t.textContent = String(i + 1);
+  });
+  // Cada redibujado (cambio de tamaño, de control) sustituye la lista, no la duplica
+  ctx.legend.parentElement?.querySelector(":scope > .event-list")?.remove();
+  if (events.length) {
+    const note = document.createElement("ol");
+    note.className = "event-list";
+    note.innerHTML = events.map((ev) => `<li>${ev.label.es}</li>`).join("");
+    ctx.legend.after(note);
   }
 
   // Líneas: contexto debajo, después las principales
@@ -106,12 +124,15 @@ export function renderLine(ctx: RenderContext) {
       const last = s.points[s.points.length - 1];
       return { s, y: y(last.y), x: x(last.x), value: last.y };
     }).sort((a, b) => a.y - b.y);
+    // Si dos líneas acaban casi en el mismo valor, las etiquetas se separan en vertical (no se omite ninguna)
     let prev = -Infinity;
     for (const l of labels) {
-      if (l.y - prev < MIN_LABEL_GAP) continue; // la leyenda y el tooltip cubren la etiqueta omitida
-      prev = l.y;
-      const txt = svg("text", { x: l.x + 10, y: l.y + 4, class: "end-label" }, root);
-      txt.innerHTML = `<tspan class="end-name">${l.s.label}</tspan> <tspan class="end-value">${fmt(l.value)}</tspan>`;
+      const yy = Math.max(l.y, prev + MIN_LABEL_GAP);
+      prev = yy;
+      const txt = svg("text", { x: l.x + 10, y: yy + 4, class: "end-label" }, root);
+      // Etiqueta corta al final de la línea si el gráfico la define (la leyenda lleva el nombre completo)
+      const name = chart.short_labels?.[l.s.key] ?? l.s.label;
+      txt.innerHTML = `<tspan class="end-name">${name}</tspan> <tspan class="end-value">${fmt(l.value)}</tspan>`;
     }
   }
 
@@ -144,7 +165,8 @@ export function renderLine(ctx: RenderContext) {
       lines.push({ color: s.color, label: s.label, v: p.y });
     }
     lines.sort((a, b) => b.v - a.v);
-    tip.show(x(yr), m.top + 10, `<div class="tip-title">${yr}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
+    const when = chart.quarterly ? `${["Primer", "Segundo", "Tercer", "Cuarto"][Math.round((yr % 1) * 4)]} trimestre de ${Math.floor(yr)}` : String(yr);
+    tip.show(x(yr), m.top + 10, `<div class="tip-title">${when}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
   };
   const hide = () => { hover.style.display = "none"; tip.hide(); };
   overlay.addEventListener("pointermove", (e) => {

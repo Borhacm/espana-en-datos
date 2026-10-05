@@ -1,0 +1,612 @@
+{
+ "id": "vid3-cataluna-contratos",
+ "lens": "dentro",
+ "theme": "vivienda",
+ "title": {
+  "es": "Con tope, se firman un 20 % menos de contratos de alquiler que en 2023; sin tope, un 2 % menos"
+ },
+ "subtitle": {
+  "es": "Contratos de alquiler registrados cada trimestre, índice 2023 = 100 (media trimestral), hasta el primer trimestre de 2026"
+ },
+ "unit": {
+  "es": "Índice (2023 = 100)"
+ },
+ "source": {
+  "name": "Generalitat de Catalunya, fianzas de alquiler depositadas en el INCASÒL",
+  "dataset": "qww9-bvhh y fftm-v9b6",
+  "url": "https://analisi.transparenciacatalunya.cat/d/qww9-bvhh",
+  "license": "Llicència oberta d'ús d'informació (Catalunya)",
+  "also": [
+   {
+    "name": "Zonas de mercado residencial tensionado",
+    "url": "https://analisi.transparenciacatalunya.cat/d/fftm-v9b6"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Contratos de alquiler de vivienda habitual con fianza depositada en el INCASÒL. No incluye los alquileres de temporada ni los contratos sin fianza depositada.",
+   "Titular: media de los últimos cuatro trimestres frente a la de 2023. «Con tope»: municipios con tope desde marzo de 2024.",
+   "Índice: 2023 = 100 en cada grupo (último año completo antes de los topes). Los grupos parten de niveles distintos: importa cómo cambian, no su nivel.",
+   "Es una comparación descriptiva: los municipios con tope son más urbanos y caros que los demás, así que la diferencia no se puede atribuir solo a la norma.",
+   "Menos contratos nuevos puede significar menos oferta, pero también que los inquilinos se mudan menos. Este dato no permite distinguirlo."
+  ]
+ },
+ "retrieved": "2026-10-06",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "zmrt1": {
+    "es": "Con tope desde marzo de 2024 (140 municipios)"
+   },
+   "zmrt2": {
+    "es": "Con tope desde octubre de 2024 (131 municipios)"
+   },
+   "sin": {
+    "es": "Sin tope"
+   }
+  }
+ },
+ "short_labels": {
+  "zmrt1": "Tope mar. 2024",
+  "zmrt2": "Tope oct. 2024",
+  "sin": "Sin tope"
+ },
+ "events": [
+  {
+   "time": 2020.72,
+   "label": {
+    "es": "Ley catalana de contención de rentas (septiembre de 2020)"
+   }
+  },
+  {
+   "time": 2022.19,
+   "label": {
+    "es": "El Constitucional la anula (marzo de 2022)"
+   }
+  },
+  {
+   "time": 2024.2,
+   "label": {
+    "es": "Tope en los primeros 140 municipios (marzo de 2024)"
+   }
+  },
+  {
+   "time": 2024.77,
+   "label": {
+    "es": "Tope en 131 municipios más (octubre de 2024)"
+   }
+  }
+ ],
+ "quarterly": true,
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "2023"
+  }
+ },
+ "rows": [
+  {
+   "time": 2019.0,
+   "series": "sin",
+   "value": 131.4,
+   "contracts": 1467
+  },
+  {
+   "time": 2019.25,
+   "series": "sin",
+   "value": 121.5,
+   "contracts": 1357
+  },
+  {
+   "time": 2019.5,
+   "series": "sin",
+   "value": 113.1,
+   "contracts": 1263
+  },
+  {
+   "time": 2019.75,
+   "series": "sin",
+   "value": 116.9,
+   "contracts": 1306
+  },
+  {
+   "time": 2020.0,
+   "series": "sin",
+   "value": 116.7,
+   "contracts": 1303
+  },
+  {
+   "time": 2020.25,
+   "series": "sin",
+   "value": 55.9,
+   "contracts": 624
+  },
+  {
+   "time": 2020.5,
+   "series": "sin",
+   "value": 124.0,
+   "contracts": 1385
+  },
+  {
+   "time": 2020.75,
+   "series": "sin",
+   "value": 116.9,
+   "contracts": 1305
+  },
+  {
+   "time": 2021.0,
+   "series": "sin",
+   "value": 122.7,
+   "contracts": 1370
+  },
+  {
+   "time": 2021.25,
+   "series": "sin",
+   "value": 119.9,
+   "contracts": 1339
+  },
+  {
+   "time": 2021.5,
+   "series": "sin",
+   "value": 110.5,
+   "contracts": 1234
+  },
+  {
+   "time": 2021.75,
+   "series": "sin",
+   "value": 118.6,
+   "contracts": 1324
+  },
+  {
+   "time": 2022.0,
+   "series": "sin",
+   "value": 126.3,
+   "contracts": 1411
+  },
+  {
+   "time": 2022.25,
+   "series": "sin",
+   "value": 114.8,
+   "contracts": 1282
+  },
+  {
+   "time": 2022.5,
+   "series": "sin",
+   "value": 104.1,
+   "contracts": 1163
+  },
+  {
+   "time": 2022.75,
+   "series": "sin",
+   "value": 122.8,
+   "contracts": 1371
+  },
+  {
+   "time": 2023.0,
+   "series": "sin",
+   "value": 110.9,
+   "contracts": 1238
+  },
+  {
+   "time": 2023.25,
+   "series": "sin",
+   "value": 102.0,
+   "contracts": 1139
+  },
+  {
+   "time": 2023.5,
+   "series": "sin",
+   "value": 88.3,
+   "contracts": 986
+  },
+  {
+   "time": 2023.75,
+   "series": "sin",
+   "value": 98.9,
+   "contracts": 1104
+  },
+  {
+   "time": 2024.0,
+   "series": "sin",
+   "value": 131.9,
+   "contracts": 1473
+  },
+  {
+   "time": 2024.25,
+   "series": "sin",
+   "value": 120.8,
+   "contracts": 1349
+  },
+  {
+   "time": 2024.5,
+   "series": "sin",
+   "value": 107.5,
+   "contracts": 1200
+  },
+  {
+   "time": 2024.75,
+   "series": "sin",
+   "value": 94.2,
+   "contracts": 1052
+  },
+  {
+   "time": 2025.0,
+   "series": "sin",
+   "value": 114.0,
+   "contracts": 1273
+  },
+  {
+   "time": 2025.25,
+   "series": "sin",
+   "value": 98.1,
+   "contracts": 1096
+  },
+  {
+   "time": 2025.5,
+   "series": "sin",
+   "value": 94.8,
+   "contracts": 1059
+  },
+  {
+   "time": 2025.75,
+   "series": "sin",
+   "value": 99.6,
+   "contracts": 1112
+  },
+  {
+   "time": 2026.0,
+   "series": "sin",
+   "value": 98.6,
+   "contracts": 1101
+  },
+  {
+   "time": 2019.0,
+   "series": "zmrt1",
+   "value": 125.5,
+   "contracts": 36277
+  },
+  {
+   "time": 2019.25,
+   "series": "zmrt1",
+   "value": 121.1,
+   "contracts": 34986
+  },
+  {
+   "time": 2019.5,
+   "series": "zmrt1",
+   "value": 119.1,
+   "contracts": 34414
+  },
+  {
+   "time": 2019.75,
+   "series": "zmrt1",
+   "value": 125.8,
+   "contracts": 36362
+  },
+  {
+   "time": 2020.0,
+   "series": "zmrt1",
+   "value": 109.2,
+   "contracts": 31540
+  },
+  {
+   "time": 2020.25,
+   "series": "zmrt1",
+   "value": 62.5,
+   "contracts": 18065
+  },
+  {
+   "time": 2020.5,
+   "series": "zmrt1",
+   "value": 117.1,
+   "contracts": 33848
+  },
+  {
+   "time": 2020.75,
+   "series": "zmrt1",
+   "value": 118.0,
+   "contracts": 34102
+  },
+  {
+   "time": 2021.0,
+   "series": "zmrt1",
+   "value": 131.6,
+   "contracts": 38031
+  },
+  {
+   "time": 2021.25,
+   "series": "zmrt1",
+   "value": 129.0,
+   "contracts": 37279
+  },
+  {
+   "time": 2021.5,
+   "series": "zmrt1",
+   "value": 125.6,
+   "contracts": 36282
+  },
+  {
+   "time": 2021.75,
+   "series": "zmrt1",
+   "value": 126.1,
+   "contracts": 36429
+  },
+  {
+   "time": 2022.0,
+   "series": "zmrt1",
+   "value": 115.3,
+   "contracts": 33303
+  },
+  {
+   "time": 2022.25,
+   "series": "zmrt1",
+   "value": 113.2,
+   "contracts": 32700
+  },
+  {
+   "time": 2022.5,
+   "series": "zmrt1",
+   "value": 116.6,
+   "contracts": 33697
+  },
+  {
+   "time": 2022.75,
+   "series": "zmrt1",
+   "value": 117.5,
+   "contracts": 33951
+  },
+  {
+   "time": 2023.0,
+   "series": "zmrt1",
+   "value": 109.9,
+   "contracts": 31769
+  },
+  {
+   "time": 2023.25,
+   "series": "zmrt1",
+   "value": 105.5,
+   "contracts": 30499
+  },
+  {
+   "time": 2023.5,
+   "series": "zmrt1",
+   "value": 94.2,
+   "contracts": 27214
+  },
+  {
+   "time": 2023.75,
+   "series": "zmrt1",
+   "value": 90.3,
+   "contracts": 26101
+  },
+  {
+   "time": 2024.0,
+   "series": "zmrt1",
+   "value": 102.6,
+   "contracts": 29643
+  },
+  {
+   "time": 2024.25,
+   "series": "zmrt1",
+   "value": 84.9,
+   "contracts": 24526
+  },
+  {
+   "time": 2024.5,
+   "series": "zmrt1",
+   "value": 79.5,
+   "contracts": 22974
+  },
+  {
+   "time": 2024.75,
+   "series": "zmrt1",
+   "value": 81.2,
+   "contracts": 23457
+  },
+  {
+   "time": 2025.0,
+   "series": "zmrt1",
+   "value": 81.1,
+   "contracts": 23436
+  },
+  {
+   "time": 2025.25,
+   "series": "zmrt1",
+   "value": 77.5,
+   "contracts": 22406
+  },
+  {
+   "time": 2025.5,
+   "series": "zmrt1",
+   "value": 79.8,
+   "contracts": 23073
+  },
+  {
+   "time": 2025.75,
+   "series": "zmrt1",
+   "value": 78.9,
+   "contracts": 22787
+  },
+  {
+   "time": 2026.0,
+   "series": "zmrt1",
+   "value": 82.8,
+   "contracts": 23919
+  },
+  {
+   "time": 2019.0,
+   "series": "zmrt2",
+   "value": 126.7,
+   "contracts": 3154
+  },
+  {
+   "time": 2019.25,
+   "series": "zmrt2",
+   "value": 132.1,
+   "contracts": 3289
+  },
+  {
+   "time": 2019.5,
+   "series": "zmrt2",
+   "value": 105.3,
+   "contracts": 2621
+  },
+  {
+   "time": 2019.75,
+   "series": "zmrt2",
+   "value": 120.8,
+   "contracts": 3007
+  },
+  {
+   "time": 2020.0,
+   "series": "zmrt2",
+   "value": 111.2,
+   "contracts": 2767
+  },
+  {
+   "time": 2020.25,
+   "series": "zmrt2",
+   "value": 67.0,
+   "contracts": 1667
+  },
+  {
+   "time": 2020.5,
+   "series": "zmrt2",
+   "value": 117.3,
+   "contracts": 2919
+  },
+  {
+   "time": 2020.75,
+   "series": "zmrt2",
+   "value": 117.5,
+   "contracts": 2924
+  },
+  {
+   "time": 2021.0,
+   "series": "zmrt2",
+   "value": 123.0,
+   "contracts": 3062
+  },
+  {
+   "time": 2021.25,
+   "series": "zmrt2",
+   "value": 112.3,
+   "contracts": 2794
+  },
+  {
+   "time": 2021.5,
+   "series": "zmrt2",
+   "value": 105.7,
+   "contracts": 2630
+  },
+  {
+   "time": 2021.75,
+   "series": "zmrt2",
+   "value": 119.6,
+   "contracts": 2977
+  },
+  {
+   "time": 2022.0,
+   "series": "zmrt2",
+   "value": 122.2,
+   "contracts": 3042
+  },
+  {
+   "time": 2022.25,
+   "series": "zmrt2",
+   "value": 105.6,
+   "contracts": 2629
+  },
+  {
+   "time": 2022.5,
+   "series": "zmrt2",
+   "value": 97.3,
+   "contracts": 2423
+  },
+  {
+   "time": 2022.75,
+   "series": "zmrt2",
+   "value": 115.6,
+   "contracts": 2878
+  },
+  {
+   "time": 2023.0,
+   "series": "zmrt2",
+   "value": 109.4,
+   "contracts": 2723
+  },
+  {
+   "time": 2023.25,
+   "series": "zmrt2",
+   "value": 102.7,
+   "contracts": 2555
+  },
+  {
+   "time": 2023.5,
+   "series": "zmrt2",
+   "value": 87.1,
+   "contracts": 2167
+  },
+  {
+   "time": 2023.75,
+   "series": "zmrt2",
+   "value": 100.9,
+   "contracts": 2511
+  },
+  {
+   "time": 2024.0,
+   "series": "zmrt2",
+   "value": 105.7,
+   "contracts": 2632
+  },
+  {
+   "time": 2024.25,
+   "series": "zmrt2",
+   "value": 106.2,
+   "contracts": 2644
+  },
+  {
+   "time": 2024.5,
+   "series": "zmrt2",
+   "value": 89.0,
+   "contracts": 2216
+  },
+  {
+   "time": 2024.75,
+   "series": "zmrt2",
+   "value": 99.8,
+   "contracts": 2485
+  },
+  {
+   "time": 2025.0,
+   "series": "zmrt2",
+   "value": 92.4,
+   "contracts": 2300
+  },
+  {
+   "time": 2025.25,
+   "series": "zmrt2",
+   "value": 87.2,
+   "contracts": 2170
+  },
+  {
+   "time": 2025.5,
+   "series": "zmrt2",
+   "value": 82.3,
+   "contracts": 2049
+  },
+  {
+   "time": 2025.75,
+   "series": "zmrt2",
+   "value": 90.0,
+   "contracts": 2241
+  },
+  {
+   "time": 2026.0,
+   "series": "zmrt2",
+   "value": 91.4,
+   "contracts": 2276
+  }
+ ]
+}

@@ -54,13 +54,15 @@ def main(args: list[str]) -> int:
         if only and only not in build.__module__:
             continue
         try:
-            c = build()
+            result = build()
         except Exception:
             failed.append(f"{build.__module__}.{build.__name__}")
             traceback.print_exc()
             continue
-        built.append(c)
-        print(f"ok  {c['id']:<32} {len(c['rows']):>6} filas")
+        # Un constructor puede devolver un gráfico o varios (si comparten el cálculo)
+        for c in result if isinstance(result, list) else [result]:
+            built.append(c)
+            print(f"ok  {c['id']:<32} {len(c['rows']):>6} filas")
     write(built)
 
     for name, build, compact in LATE:

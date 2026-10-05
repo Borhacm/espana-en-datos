@@ -116,3 +116,8 @@
 figure.veda .plot, figure.veda .legend, figure.veda .controls, figure.veda .table-view { display: none; }
 .map .prov-mesh { fill: none; stroke: var(--paper); stroke-width: 1.2; pointer-events: none; }
 .map .region { stroke-width: 0.3; }
+
+/* Fechas clave en gráficos de líneas */
+.event-line { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 3; }
+.event-num { fill: var(--ink-2); font-size: 12px; font-weight: 700; }
+.event-list { margin: 0.5rem 0 0; padding-left: 1.3rem; font-size: 0.88rem; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 0.2rem 1.6rem; }

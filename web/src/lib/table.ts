@@ -16,6 +16,9 @@ const EU_STATS = {
 const n = (v: number | null | undefined, d = 1) => (v === null || v === undefined ? null : formatNumber(v, "es", d));
 const day = (iso: string | null) => (iso ? new Intl.DateTimeFormat("es-ES", { dateStyle: "medium" }).format(new Date(iso)) : "en el cargo");
 
+/** 2025.25 -> "T2 2025" (series trimestrales: time = año + (trimestre - 1) / 4). */
+const quarterLabel = (t: number) => `T${Math.round((t % 1) * 4) + 1} ${Math.floor(t)}`;
+
 /** Tablas de gráficos que no son una matriz fila x columna. */
 const CUSTOM: Record<string, (chart: ChartData) => Pivot> = {
   polls(chart) {
@@ -107,7 +110,7 @@ export function pivot(chart: ChartData, lang: Lang, headers: { country: string; 
   const index = new Map(data.map((r) => [`${r[rowDim]}|${r[colDim]}`, r.value as number]));
   return {
     rowHeader: rowDim === "geo" ? headers.country : "Serie",
-    cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? k : label(chart, colDim, k, lang) })),
+    cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? (chart.quarterly ? quarterLabel(+k) : k) : label(chart, colDim, k, lang) })),
     rows: rowKeys.map((k) => ({
       key: k,
       label: rowLabel(k),

@@ -1,0 +1,231 @@
+{
+ "id": "vid1-comunidades",
+ "lens": "dentro",
+ "theme": "vivienda",
+ "title": {
+  "es": "La vivienda ha subido un 80 % desde 2015: del 100 % de Madrid al 40 % de Extremadura"
+ },
+ "subtitle": {
+  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %"
+ },
+ "unit": {
+  "es": "% de subida"
+ },
+ "source": {
+  "name": "INE, Índice de Precios de Vivienda",
+  "dataset": "Tabla 79563",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=79563",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Índice de Precios de Vivienda, medias anuales. Precios nominales, sin descontar la inflación.",
+   "Ceuta y Melilla tienen pocas compraventas, así que su índice varía mucho de un año a otro."
+  ]
+ },
+ "retrieved": "2026-10-06",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2025",
+   "value": 79.2
+  },
+  {
+   "geo": "02",
+   "time": "2025",
+   "value": 72.2
+  },
+  {
+   "geo": "03",
+   "time": "2025",
+   "value": 60.2
+  },
+  {
+   "geo": "04",
+   "time": "2025",
+   "value": 95.1
+  },
+  {
+   "geo": "05",
+   "time": "2025",
+   "value": 74.5
+  },
+  {
+   "geo": "06",
+   "time": "2025",
+   "value": 74.8
+  },
+  {
+   "geo": "07",
+   "time": "2025",
+   "value": 59.2
+  },
+  {
+   "geo": "08",
+   "time": "2025",
+   "value": 42.8
+  },
+  {
+   "geo": "09",
+   "time": "2025",
+   "value": 87.7
+  },
+  {
+   "geo": "10",
+   "time": "2025",
+   "value": 67.4
+  },
+  {
+   "geo": "11",
+   "time": "2025",
+   "value": 40.2
+  },
+  {
+   "geo": "12",
+   "time": "2025",
+   "value": 60.5
+  },
+  {
+   "geo": "13",
+   "time": "2025",
+   "value": 99.5
+  },
+  {
+   "geo": "14",
+   "time": "2025",
+   "value": 64.4
+  },
+  {
+   "geo": "15",
+   "time": "2025",
+   "value": 63.1
+  },
+  {
+   "geo": "16",
+   "time": "2025",
+   "value": 65.9
+  },
+  {
+   "geo": "17",
+   "time": "2025",
+   "value": 66.3
+  },
+  {
+   "geo": "18",
+   "time": "2025",
+   "value": 101.4
+  },
+  {
+   "geo": "19",
+   "time": "2025",
+   "value": 95.9
+  },
+  {
+   "geo": "ES",
+   "time": "2025",
+   "value": 79.9
+  }
+ ]
+}

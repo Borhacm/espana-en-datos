@@ -72,3 +72,46 @@ def wikipedia(page: str, lang: str = "es", prop: str = "wikitext") -> str:
     if "error" in d:
         raise RuntimeError(f"Wikipedia {page}: {d['error']}")
     return d["parse"][prop]
+
+
+INE_API = "https://servicios.ine.es/wstempus/js/ES"
+# FK_Periodo del INE: meses 1-12, trimestres 19-22, año 28
+INE_QUARTER = {19: 1, 20: 2, 21: 3, 22: 4}
+
+
+def ine_table(table: int, last: int | None = None) -> list[dict]:
+    """Tabla del INE (API JSON Tempus). Una fila por observación: serie, año, periodo y valor.
+
+    'period' es "2026Q2", "2026-09" o "2026" según la periodicidad.
+    """
+    url = f"{INE_API}/DATOS_TABLA/{table}" + (f"?nult={last}" if last else "")
+    series = json.loads(fetch(url, ".json").read_text())
+    out = []
+    for s in series:
+        for d in s["Data"]:
+            if d.get("Valor") is None or d.get("Secreto"):
+                continue
+            fk, year = d["FK_Periodo"], d["Anyo"]
+            if fk in INE_QUARTER:
+                period = f"{year}Q{INE_QUARTER[fk]}"
+            elif 1 <= fk <= 12:
+                period = f"{year}-{fk:02d}"
+            else:
+                period = str(year)
+            out.append({"series": s["Nombre"].strip().rstrip("."), "period": period, "year": year, "value": d["Valor"]})
+    return out
+
+
+SOCRATA = "https://analisi.transparenciacatalunya.cat/resource/{id}.json"
+
+
+def socrata_cat(dataset: str, **params) -> list[dict]:
+    """Conjunto de datos del portal de transparencia de Cataluña (API Socrata), todas las filas."""
+    out, offset, page = [], 0, 50000
+    while True:
+        q = {"$limit": page, "$offset": offset, **params}
+        rows = json.loads(fetch(f"{SOCRATA.format(id=dataset)}?{urllib.parse.urlencode(q)}", ".json").read_text())
+        out += rows
+        if len(rows) < page:
+            return out
+        offset += page

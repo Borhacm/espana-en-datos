@@ -4,13 +4,18 @@ import Base from "../layouts/Base.astro";
 import Blocks from "../components/Blocks.astro";
 import LinkList from "../components/LinkList.astro";
 import SeatSimulator from "../components/SeatSimulator.astro";
-import { notesOf, themeById } from "../lib/themes";
-import { formatDate, notePath, paths } from "../lib/i18n";
+import { notesOf, published, themeById } from "../lib/themes";
+import { formatDate, notePath, paths, themePath } from "../lib/i18n";
 import "../styles/charts.css";
 
 const theme = themeById("elecciones")!;
 const lenses = theme.lenses!;
 const notes = notesOf("elecciones");
+// Piezas de campaña: los temas publicados (con el gancho electoral) y las notas del especial, de la más reciente a la más antigua
+const pieces = [
+  ...published().filter((t) => !t.hub).map((t) => ({ href: themePath(t.slug).es, title: t.title.es, dek: t.dek?.es, date: t.published! })),
+  ...notes.map((n) => ({ href: notePath(n.slug).es, title: n.title.es, dek: n.dek.es, date: n.published })),
+].sort((a, b) => b.date.localeCompare(a.date));
 
 // Calendario electoral (LOREG): convocatoria en el BOE el 6 de octubre, votación 54 días después
 const DATES = [
@@ -56,10 +61,10 @@ const PRINCIPLES = [
     <Blocks lang="es" blocks={lenses.dentro.body} codePrefix={theme.code} />
   </section>
 
-  {notes.length > 0 && (
-    <section class="wrap part" aria-labelledby="notes-h">
-      <h2 id="notes-h">Notas de campaña</h2>
-      <LinkList items={notes.map((n) => ({ href: notePath(n.slug).es, title: n.title.es, dek: n.dek.es, meta: formatDate(n.published) }))} />
+  {pieces.length > 0 && (
+    <section class="wrap part" id="piezas" aria-labelledby="notes-h">
+      <h2 id="notes-h">Análisis de campaña</h2>
+      <LinkList items={pieces.map((x) => ({ href: x.href, title: x.title, dek: x.dek, meta: formatDate(x.date) }))} />
     </section>
   )}
 

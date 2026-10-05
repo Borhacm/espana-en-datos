@@ -1,0 +1,310 @@
+{
+ "id": "vie2-europa-sobrecarga",
+ "lens": "europa",
+ "theme": "vivienda",
+ "title": {
+  "es": "El 27 % de los inquilinos que pagan alquiler de mercado en España dedica más del 40 % de su renta a la vivienda; en la UE, el 19 %"
+ },
+ "subtitle": {
+  "es": "Inquilinos a precio de mercado con sobrecarga de gastos de vivienda, 2025, en %. España es el 8.º de 27"
+ },
+ "unit": {
+  "es": "% de inquilinos"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ilc_lvho07c",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho07c/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Sobrecarga: los gastos de vivienda (alquiler, suministros, comunidad) superan el 40 % de la renta disponible del hogar, descontadas las ayudas a la vivienda. Encuesta de Condiciones de Vida (EU-SILC)."
+  ]
+ },
+ "retrieved": "2026-10-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 14.5
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 25.4
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 31.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 13.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 26.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 13.2
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 23.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 26.8
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 37.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 18.6
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 12.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 18.7
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 26.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 19.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 38.4
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 24.0
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 22.3
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 27.4
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 23.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 18.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 21.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 39.5
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 14.4
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 27.2
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 56.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 16.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 19.7
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 18.4
+  }
+ ]
+}

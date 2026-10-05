@@ -1,0 +1,331 @@
+{
+ "id": "vit1-precios-salarios",
+ "lens": "tiempo",
+ "theme": "vivienda",
+ "title": {
+  "es": "Desde 2015, la vivienda ha subido un 80 % y los salarios, un 25 %"
+ },
+ "subtitle": {
+  "es": "Índices, 2015 = 100. Precio de la vivienda, salario medio por trabajador y precios de consumo"
+ },
+ "unit": {
+  "es": "Índice (2015 = 100)"
+ },
+ "source": {
+  "name": "INE, Índice de Precios de Vivienda",
+  "dataset": "Tabla 79563",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=79563",
+  "license": "Reutilización libre citando la fuente",
+  "also": [
+   {
+    "name": "INE, Encuesta Trimestral de Coste Laboral",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=6061"
+   },
+   {
+    "name": "INE, Índice de Precios de Consumo",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=24077"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Vivienda: Índice de Precios de Vivienda (compraventas de vivienda nueva y usada), media anual.",
+   "Salarios: coste salarial total por trabajador y mes (industria, construcción y servicios), media anual. Incluye pagas extra.",
+   "Precios: IPC general, media anual. Entre 2015 y 2025 subió un 27 %.",
+   "Solo años completos."
+  ]
+ },
+ "retrieved": "2026-10-06",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "vivienda": {
+    "es": "Vivienda"
+   },
+   "salarios": {
+    "es": "Salarios"
+   },
+   "precios": {
+    "es": "Precios (IPC)"
+   }
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "2015"
+  }
+ },
+ "rows": [
+  {
+   "time": "2008",
+   "series": "vivienda",
+   "value": 147.3
+  },
+  {
+   "time": "2009",
+   "series": "vivienda",
+   "value": 137.5
+  },
+  {
+   "time": "2010",
+   "series": "vivienda",
+   "value": 134.7
+  },
+  {
+   "time": "2011",
+   "series": "vivienda",
+   "value": 124.8
+  },
+  {
+   "time": "2012",
+   "series": "vivienda",
+   "value": 107.7
+  },
+  {
+   "time": "2013",
+   "series": "vivienda",
+   "value": 96.3
+  },
+  {
+   "time": "2014",
+   "series": "vivienda",
+   "value": 96.6
+  },
+  {
+   "time": "2015",
+   "series": "vivienda",
+   "value": 100.0
+  },
+  {
+   "time": "2016",
+   "series": "vivienda",
+   "value": 104.7
+  },
+  {
+   "time": "2017",
+   "series": "vivienda",
+   "value": 111.1
+  },
+  {
+   "time": "2018",
+   "series": "vivienda",
+   "value": 118.6
+  },
+  {
+   "time": "2019",
+   "series": "vivienda",
+   "value": 124.6
+  },
+  {
+   "time": "2020",
+   "series": "vivienda",
+   "value": 127.2
+  },
+  {
+   "time": "2021",
+   "series": "vivienda",
+   "value": 131.9
+  },
+  {
+   "time": "2022",
+   "series": "vivienda",
+   "value": 141.7
+  },
+  {
+   "time": "2023",
+   "series": "vivienda",
+   "value": 147.3
+  },
+  {
+   "time": "2024",
+   "series": "vivienda",
+   "value": 159.7
+  },
+  {
+   "time": "2025",
+   "series": "vivienda",
+   "value": 179.9
+  },
+  {
+   "time": "2008",
+   "series": "salarios",
+   "value": 94.6
+  },
+  {
+   "time": "2009",
+   "series": "salarios",
+   "value": 97.7
+  },
+  {
+   "time": "2010",
+   "series": "salarios",
+   "value": 98.6
+  },
+  {
+   "time": "2011",
+   "series": "salarios",
+   "value": 99.6
+  },
+  {
+   "time": "2012",
+   "series": "salarios",
+   "value": 99.0
+  },
+  {
+   "time": "2013",
+   "series": "salarios",
+   "value": 99.0
+  },
+  {
+   "time": "2014",
+   "series": "salarios",
+   "value": 98.9
+  },
+  {
+   "time": "2015",
+   "series": "salarios",
+   "value": 100.0
+  },
+  {
+   "time": "2016",
+   "series": "salarios",
+   "value": 99.7
+  },
+  {
+   "time": "2017",
+   "series": "salarios",
+   "value": 99.9
+  },
+  {
+   "time": "2018",
+   "series": "salarios",
+   "value": 100.9
+  },
+  {
+   "time": "2019",
+   "series": "salarios",
+   "value": 102.8
+  },
+  {
+   "time": "2020",
+   "series": "salarios",
+   "value": 100.1
+  },
+  {
+   "time": "2021",
+   "series": "salarios",
+   "value": 106.3
+  },
+  {
+   "time": "2022",
+   "series": "salarios",
+   "value": 111.2
+  },
+  {
+   "time": "2023",
+   "series": "salarios",
+   "value": 116.5
+  },
+  {
+   "time": "2024",
+   "series": "salarios",
+   "value": 121.0
+  },
+  {
+   "time": "2025",
+   "series": "salarios",
+   "value": 124.9
+  },
+  {
+   "time": "2008",
+   "series": "precios",
+   "value": 92.5
+  },
+  {
+   "time": "2009",
+   "series": "precios",
+   "value": 92.2
+  },
+  {
+   "time": "2010",
+   "series": "precios",
+   "value": 93.9
+  },
+  {
+   "time": "2011",
+   "series": "precios",
+   "value": 96.9
+  },
+  {
+   "time": "2012",
+   "series": "precios",
+   "value": 99.3
+  },
+  {
+   "time": "2013",
+   "series": "precios",
+   "value": 100.7
+  },
+  {
+   "time": "2014",
+   "series": "precios",
+   "value": 100.5
+  },
+  {
+   "time": "2015",
+   "series": "precios",
+   "value": 100.0
+  },
+  {
+   "time": "2016",
+   "series": "precios",
+   "value": 99.8
+  },
+  {
+   "time": "2017",
+   "series": "precios",
+   "value": 101.7
+  },
+  {
+   "time": "2018",
+   "series": "precios",
+   "value": 103.5
+  },
+  {
+   "time": "2019",
+   "series": "precios",
+   "value": 104.2
+  },
+  {
+   "time": "2020",
+   "series": "precios",
+   "value": 103.8
+  },
+  {
+   "time": "2021",
+   "series": "precios",
+   "value": 107.1
+  },
+  {
+   "time": "2022",
+   "series": "precios",
+   "value": 116.0
+  },
+  {
+   "time": "2023",
+   "series": "precios",
+   "value": 120.1
+  },
+  {
+   "time": "2024",
+   "series": "precios",
+   "value": 123.5
+  },
+  {
+   "time": "2025",
+   "series": "precios",
+   "value": 126.8
+  }
+ ]
+}

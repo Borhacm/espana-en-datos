@@ -1,5 +1,5 @@
 """Registro de gráficos: cada módulo expone BUILDERS."""
 
-from . import elecciones
+from . import elecciones, vivienda
 
-BUILDERS = [*elecciones.BUILDERS]
+BUILDERS = [*elecciones.BUILDERS, *vivienda.BUILDERS]

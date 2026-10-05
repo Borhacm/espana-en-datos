@@ -29,7 +29,8 @@ function pctSuffix(ctx: RenderContext): string {
 
 function euRows(ctx: RenderContext, rows: Row[]): Row[] {
   const extra = ctx.cfg.extraGeos ?? [];
-  return rows.filter((r) => ctx.chart.geos[r.geo]?.eu || extra.includes(r.geo));
+  // Rankings de países de la UE o de comunidades autónomas (y el total de España)
+  return rows.filter((r) => ctx.chart.geos[r.geo]?.eu || ctx.chart.geos[r.geo]?.ccaa || ctx.chart.geos[r.geo]?.aggregate || extra.includes(r.geo));
 }
 
 /** Ranking de países: d3 (IA generativa) y d4 (competencias digitales). */
@@ -68,7 +69,7 @@ export function renderRank(ctx: RenderContext) {
   const tip = tooltip(plot);
   rows.forEach((r, i) => {
     const y = m.top + i * ROW;
-    const hl = r.geo === "EU27" || r.geo === focus || (ctx.cfg.extraGeos ?? []).includes(r.geo);
+    const hl = r.geo === "EU27" || r.geo === "ES" || r.geo === "ESP" || r.geo === focus || (ctx.cfg.extraGeos ?? []).includes(r.geo);
     const g = svg("g", { class: `bar-row${hl ? " hl" : ""}`, tabindex: 0 }, root);
     svg("rect", { x: 0, y, width, height: ROW, fill: "transparent" }, g);
     const name = svg("text", { x: left - 10, y: y + ROW / 2 + 5, class: `row-name${hl ? " strong" : ""}`, "text-anchor": "end" }, g);
@@ -171,7 +172,7 @@ export function renderDumbbell(ctx: RenderContext) {
   const paper = cssVar("--paper");
   data.forEach((d, i) => {
     const cy = m.top + i * ROW + ROW / 2;
-    const hl = d.g === "EU27" || d.g === focus;
+    const hl = d.g === "EU27" || d.g === "ES" || d.g === "ESP" || d.g === focus;
     const color = colorFor(d.g, focus);
     const g = svg("g", { class: `bar-row${hl ? " hl" : ""}`, tabindex: 0 }, root);
     svg("rect", { x: 0, y: cy - ROW / 2, width, height: ROW, fill: "transparent" }, g);

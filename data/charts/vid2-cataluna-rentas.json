@@ -1,0 +1,612 @@
+{
+ "id": "vid2-cataluna-rentas",
+ "lens": "dentro",
+ "theme": "vivienda",
+ "title": {
+  "es": "Con tope, la renta de los nuevos alquileres está un 4 % por encima de 2023; sin tope, un 12 %"
+ },
+ "subtitle": {
+  "es": "Renta media de los contratos firmados cada trimestre, índice 2023 = 100, hasta el primer trimestre de 2026"
+ },
+ "unit": {
+  "es": "Índice (2023 = 100)"
+ },
+ "source": {
+  "name": "Generalitat de Catalunya, fianzas de alquiler depositadas en el INCASÒL",
+  "dataset": "qww9-bvhh y fftm-v9b6",
+  "url": "https://analisi.transparenciacatalunya.cat/d/qww9-bvhh",
+  "license": "Llicència oberta d'ús d'informació (Catalunya)",
+  "also": [
+   {
+    "name": "Zonas de mercado residencial tensionado",
+    "url": "https://analisi.transparenciacatalunya.cat/d/fftm-v9b6"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Contratos de alquiler de vivienda habitual con fianza depositada en el INCASÒL. No incluye los alquileres de temporada ni los contratos sin fianza depositada.",
+   "Titular: media de los últimos cuatro trimestres frente a la de 2023. «Con tope»: municipios con tope desde marzo de 2024.",
+   "Índice: 2023 = 100 en cada grupo (último año completo antes de los topes). Los grupos parten de niveles distintos: importa cómo cambian, no su nivel.",
+   "Es una comparación descriptiva: los municipios con tope son más urbanos y caros que los demás, así que la diferencia no se puede atribuir solo a la norma.",
+   "Renta media ponderada por el número de contratos de cada municipio: si cambia el tipo de vivienda que se alquila (más pequeña, por ejemplo), cambia la media aunque no cambien los precios."
+  ]
+ },
+ "retrieved": "2026-10-06",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "zmrt1": {
+    "es": "Con tope desde marzo de 2024 (140 municipios)"
+   },
+   "zmrt2": {
+    "es": "Con tope desde octubre de 2024 (131 municipios)"
+   },
+   "sin": {
+    "es": "Sin tope"
+   }
+  }
+ },
+ "short_labels": {
+  "zmrt1": "Tope mar. 2024",
+  "zmrt2": "Tope oct. 2024",
+  "sin": "Sin tope"
+ },
+ "events": [
+  {
+   "time": 2020.72,
+   "label": {
+    "es": "Ley catalana de contención de rentas (septiembre de 2020)"
+   }
+  },
+  {
+   "time": 2022.19,
+   "label": {
+    "es": "El Constitucional la anula (marzo de 2022)"
+   }
+  },
+  {
+   "time": 2024.2,
+   "label": {
+    "es": "Tope en los primeros 140 municipios (marzo de 2024)"
+   }
+  },
+  {
+   "time": 2024.77,
+   "label": {
+    "es": "Tope en 131 municipios más (octubre de 2024)"
+   }
+  }
+ ],
+ "quarterly": true,
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "2023"
+  }
+ },
+ "rows": [
+  {
+   "time": 2019.0,
+   "series": "sin",
+   "value": 84.7,
+   "euros": 479
+  },
+  {
+   "time": 2019.25,
+   "series": "sin",
+   "value": 88.0,
+   "euros": 497
+  },
+  {
+   "time": 2019.5,
+   "series": "sin",
+   "value": 87.6,
+   "euros": 495
+  },
+  {
+   "time": 2019.75,
+   "series": "sin",
+   "value": 89.5,
+   "euros": 506
+  },
+  {
+   "time": 2020.0,
+   "series": "sin",
+   "value": 86.8,
+   "euros": 491
+  },
+  {
+   "time": 2020.25,
+   "series": "sin",
+   "value": 89.3,
+   "euros": 505
+  },
+  {
+   "time": 2020.5,
+   "series": "sin",
+   "value": 90.8,
+   "euros": 513
+  },
+  {
+   "time": 2020.75,
+   "series": "sin",
+   "value": 90.2,
+   "euros": 510
+  },
+  {
+   "time": 2021.0,
+   "series": "sin",
+   "value": 88.6,
+   "euros": 501
+  },
+  {
+   "time": 2021.25,
+   "series": "sin",
+   "value": 88.8,
+   "euros": 502
+  },
+  {
+   "time": 2021.5,
+   "series": "sin",
+   "value": 91.3,
+   "euros": 516
+  },
+  {
+   "time": 2021.75,
+   "series": "sin",
+   "value": 87.9,
+   "euros": 497
+  },
+  {
+   "time": 2022.0,
+   "series": "sin",
+   "value": 90.9,
+   "euros": 514
+  },
+  {
+   "time": 2022.25,
+   "series": "sin",
+   "value": 90.2,
+   "euros": 510
+  },
+  {
+   "time": 2022.5,
+   "series": "sin",
+   "value": 95.2,
+   "euros": 538
+  },
+  {
+   "time": 2022.75,
+   "series": "sin",
+   "value": 96.9,
+   "euros": 547
+  },
+  {
+   "time": 2023.0,
+   "series": "sin",
+   "value": 100.9,
+   "euros": 570
+  },
+  {
+   "time": 2023.25,
+   "series": "sin",
+   "value": 100.2,
+   "euros": 566
+  },
+  {
+   "time": 2023.5,
+   "series": "sin",
+   "value": 99.6,
+   "euros": 563
+  },
+  {
+   "time": 2023.75,
+   "series": "sin",
+   "value": 99.1,
+   "euros": 560
+  },
+  {
+   "time": 2024.0,
+   "series": "sin",
+   "value": 102.1,
+   "euros": 577
+  },
+  {
+   "time": 2024.25,
+   "series": "sin",
+   "value": 98.9,
+   "euros": 559
+  },
+  {
+   "time": 2024.5,
+   "series": "sin",
+   "value": 105.6,
+   "euros": 597
+  },
+  {
+   "time": 2024.75,
+   "series": "sin",
+   "value": 106.5,
+   "euros": 602
+  },
+  {
+   "time": 2025.0,
+   "series": "sin",
+   "value": 104.9,
+   "euros": 593
+  },
+  {
+   "time": 2025.25,
+   "series": "sin",
+   "value": 110.9,
+   "euros": 627
+  },
+  {
+   "time": 2025.5,
+   "series": "sin",
+   "value": 109.1,
+   "euros": 616
+  },
+  {
+   "time": 2025.75,
+   "series": "sin",
+   "value": 114.8,
+   "euros": 649
+  },
+  {
+   "time": 2026.0,
+   "series": "sin",
+   "value": 114.6,
+   "euros": 647
+  },
+  {
+   "time": 2019.0,
+   "series": "zmrt1",
+   "value": 85.0,
+   "euros": 741
+  },
+  {
+   "time": 2019.25,
+   "series": "zmrt1",
+   "value": 86.7,
+   "euros": 756
+  },
+  {
+   "time": 2019.5,
+   "series": "zmrt1",
+   "value": 90.2,
+   "euros": 787
+  },
+  {
+   "time": 2019.75,
+   "series": "zmrt1",
+   "value": 89.7,
+   "euros": 782
+  },
+  {
+   "time": 2020.0,
+   "series": "zmrt1",
+   "value": 88.5,
+   "euros": 772
+  },
+  {
+   "time": 2020.25,
+   "series": "zmrt1",
+   "value": 86.8,
+   "euros": 757
+  },
+  {
+   "time": 2020.5,
+   "series": "zmrt1",
+   "value": 89.1,
+   "euros": 777
+  },
+  {
+   "time": 2020.75,
+   "series": "zmrt1",
+   "value": 86.5,
+   "euros": 754
+  },
+  {
+   "time": 2021.0,
+   "series": "zmrt1",
+   "value": 84.7,
+   "euros": 738
+  },
+  {
+   "time": 2021.25,
+   "series": "zmrt1",
+   "value": 84.5,
+   "euros": 737
+  },
+  {
+   "time": 2021.5,
+   "series": "zmrt1",
+   "value": 87.6,
+   "euros": 764
+  },
+  {
+   "time": 2021.75,
+   "series": "zmrt1",
+   "value": 87.3,
+   "euros": 761
+  },
+  {
+   "time": 2022.0,
+   "series": "zmrt1",
+   "value": 88.3,
+   "euros": 770
+  },
+  {
+   "time": 2022.25,
+   "series": "zmrt1",
+   "value": 90.7,
+   "euros": 790
+  },
+  {
+   "time": 2022.5,
+   "series": "zmrt1",
+   "value": 95.9,
+   "euros": 836
+  },
+  {
+   "time": 2022.75,
+   "series": "zmrt1",
+   "value": 97.4,
+   "euros": 849
+  },
+  {
+   "time": 2023.0,
+   "series": "zmrt1",
+   "value": 97.1,
+   "euros": 846
+  },
+  {
+   "time": 2023.25,
+   "series": "zmrt1",
+   "value": 99.2,
+   "euros": 865
+  },
+  {
+   "time": 2023.5,
+   "series": "zmrt1",
+   "value": 101.6,
+   "euros": 886
+  },
+  {
+   "time": 2023.75,
+   "series": "zmrt1",
+   "value": 102.8,
+   "euros": 896
+  },
+  {
+   "time": 2024.0,
+   "series": "zmrt1",
+   "value": 104.6,
+   "euros": 912
+  },
+  {
+   "time": 2024.25,
+   "series": "zmrt1",
+   "value": 99.3,
+   "euros": 866
+  },
+  {
+   "time": 2024.5,
+   "series": "zmrt1",
+   "value": 100.7,
+   "euros": 878
+  },
+  {
+   "time": 2024.75,
+   "series": "zmrt1",
+   "value": 100.7,
+   "euros": 878
+  },
+  {
+   "time": 2025.0,
+   "series": "zmrt1",
+   "value": 99.4,
+   "euros": 867
+  },
+  {
+   "time": 2025.25,
+   "series": "zmrt1",
+   "value": 102.6,
+   "euros": 895
+  },
+  {
+   "time": 2025.5,
+   "series": "zmrt1",
+   "value": 105.4,
+   "euros": 919
+  },
+  {
+   "time": 2025.75,
+   "series": "zmrt1",
+   "value": 106.3,
+   "euros": 927
+  },
+  {
+   "time": 2026.0,
+   "series": "zmrt1",
+   "value": 103.2,
+   "euros": 900
+  },
+  {
+   "time": 2019.0,
+   "series": "zmrt2",
+   "value": 87.3,
+   "euros": 532
+  },
+  {
+   "time": 2019.25,
+   "series": "zmrt2",
+   "value": 89.4,
+   "euros": 546
+  },
+  {
+   "time": 2019.5,
+   "series": "zmrt2",
+   "value": 88.8,
+   "euros": 542
+  },
+  {
+   "time": 2019.75,
+   "series": "zmrt2",
+   "value": 89.2,
+   "euros": 544
+  },
+  {
+   "time": 2020.0,
+   "series": "zmrt2",
+   "value": 87.7,
+   "euros": 535
+  },
+  {
+   "time": 2020.25,
+   "series": "zmrt2",
+   "value": 87.8,
+   "euros": 536
+  },
+  {
+   "time": 2020.5,
+   "series": "zmrt2",
+   "value": 90.5,
+   "euros": 552
+  },
+  {
+   "time": 2020.75,
+   "series": "zmrt2",
+   "value": 89.4,
+   "euros": 545
+  },
+  {
+   "time": 2021.0,
+   "series": "zmrt2",
+   "value": 89.8,
+   "euros": 548
+  },
+  {
+   "time": 2021.25,
+   "series": "zmrt2",
+   "value": 90.7,
+   "euros": 553
+  },
+  {
+   "time": 2021.5,
+   "series": "zmrt2",
+   "value": 89.4,
+   "euros": 546
+  },
+  {
+   "time": 2021.75,
+   "series": "zmrt2",
+   "value": 90.0,
+   "euros": 549
+  },
+  {
+   "time": 2022.0,
+   "series": "zmrt2",
+   "value": 91.0,
+   "euros": 555
+  },
+  {
+   "time": 2022.25,
+   "series": "zmrt2",
+   "value": 93.2,
+   "euros": 568
+  },
+  {
+   "time": 2022.5,
+   "series": "zmrt2",
+   "value": 96.1,
+   "euros": 586
+  },
+  {
+   "time": 2022.75,
+   "series": "zmrt2",
+   "value": 97.9,
+   "euros": 597
+  },
+  {
+   "time": 2023.0,
+   "series": "zmrt2",
+   "value": 98.8,
+   "euros": 603
+  },
+  {
+   "time": 2023.25,
+   "series": "zmrt2",
+   "value": 101.1,
+   "euros": 617
+  },
+  {
+   "time": 2023.5,
+   "series": "zmrt2",
+   "value": 98.6,
+   "euros": 602
+  },
+  {
+   "time": 2023.75,
+   "series": "zmrt2",
+   "value": 101.3,
+   "euros": 618
+  },
+  {
+   "time": 2024.0,
+   "series": "zmrt2",
+   "value": 102.2,
+   "euros": 624
+  },
+  {
+   "time": 2024.25,
+   "series": "zmrt2",
+   "value": 104.0,
+   "euros": 634
+  },
+  {
+   "time": 2024.5,
+   "series": "zmrt2",
+   "value": 106.3,
+   "euros": 648
+  },
+  {
+   "time": 2024.75,
+   "series": "zmrt2",
+   "value": 106.4,
+   "euros": 649
+  },
+  {
+   "time": 2025.0,
+   "series": "zmrt2",
+   "value": 102.9,
+   "euros": 628
+  },
+  {
+   "time": 2025.25,
+   "series": "zmrt2",
+   "value": 104.2,
+   "euros": 635
+  },
+  {
+   "time": 2025.5,
+   "series": "zmrt2",
+   "value": 102.5,
+   "euros": 626
+  },
+  {
+   "time": 2025.75,
+   "series": "zmrt2",
+   "value": 107.1,
+   "euros": 654
+  },
+  {
+   "time": 2026.0,
+   "series": "zmrt2",
+   "value": 103.7,
+   "euros": 632
+  }
+ ]
+}
