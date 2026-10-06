@@ -6,7 +6,7 @@
   "url": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177011&menu=resultados&idp=1254734710990",
   "license": "Reutilización libre citando la fuente"
  },
- "verified": false,
+ "verified": true,
  "population_year": 2025,
  "notes": [
   "Cálculo según el artículo 162 de la LOREG. El reparto oficial lo fija el decreto de convocatoria."
@@ -325,5 +325,5 @@
    "seats": 1
   }
  ],
- "retrieved": "2026-10-05"
+ "retrieved": "2026-10-06"
 }

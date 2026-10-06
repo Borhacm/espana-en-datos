@@ -26,8 +26,16 @@ SOURCE = {
 ALIASES = {"araba/alava": "01", "alicante/alacant": "03", "balears, illes": "07", "castellon/castello": "12",
            "coruna, a": "15", "rioja, la": "26", "palmas, las": "35", "valencia/valencia": "46"}
 
-# Reparto oficial del Real Decreto de convocatoria, para contrastar el cálculo. Vacío hasta comprobarlo en el BOE.
-CHECK_2026: dict[str, int] = {}
+# Reparto oficial del Real Decreto 806/2026, de 5 de octubre (BOE-A-2026-20742, BOE núm. 248 de 6 de octubre de 2026),
+# anexo de diputados por circunscripción. Contrasta el cálculo.
+CHECK_2026: dict[str, int] = {
+    "01": 4, "02": 4, "03": 12, "04": 6, "05": 3, "06": 5, "07": 8, "08": 32, "09": 4, "10": 4,
+    "11": 8, "12": 5, "13": 5, "14": 6, "15": 8, "16": 3, "17": 6, "18": 7, "19": 3, "20": 6,
+    "21": 5, "22": 3, "23": 5, "24": 4, "25": 4, "26": 4, "27": 4, "28": 38, "29": 11, "30": 10,
+    "31": 5, "32": 4, "33": 7, "34": 3, "35": 8, "36": 7, "37": 4, "38": 7, "39": 5, "40": 3,
+    "41": 12, "42": 2, "43": 6, "44": 3, "45": 6, "46": 16, "47": 5, "48": 8, "49": 3, "50": 7,
+    "51": 1, "52": 1,
+}
 
 
 def _norm(s: str) -> str:
