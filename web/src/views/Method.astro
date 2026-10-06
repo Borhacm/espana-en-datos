@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { loadChart } from "../lib/data";
+import { inVedaAt } from "../lib/veda";
 import { NOTES, figuresOf, noteFigures, published } from "../lib/themes";
 import { notePath, paths, themePath, formatDate, type Lang } from "../lib/i18n";
 
@@ -12,7 +13,8 @@ const groups = [
   ...published().map((th) => ({
     title: th.title[lang],
     href: th.hub ? paths.elections[lang] : themePath(th.slug)[lang],
-    charts: figuresOf(th).map((f) => ({ ...f, href: `${th.hub ? paths.elections[lang] : themePath(th.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) })),
+    // En veda el gráfico de encuestas no tiene datos publicados (ver lib/veda.ts)
+    charts: figuresOf(th).filter((f) => !(f.fig === "el1-encuestas" && inVedaAt())).map((f) => ({ ...f, href: `${th.hub ? paths.elections[lang] : themePath(th.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) })),
   })),
   ...(NOTES.length
     ? [{

@@ -3,8 +3,12 @@
 // El modelo está en scripts/simulator-model.ts y se comprueba con `npm run check:sim`.
 import { loadBase } from "../lib/data";
 import { formatDate } from "../lib/i18n";
+import { inVedaAt } from "../lib/veda";
 
 const data = loadBase("simulador");
+// Veda electoral: si se compila durante la veda, el simulador no lleva la media de encuestas; parte de 2023
+const veda = inVedaAt();
+if (veda) { data.defaults = Object.fromEntries(data.parties.map((p: string) => [p, data.national_2023[p] ?? 0])); data.defaults_date = null; }
 const seatsData = loadBase("escanos-2026");
 const parties: string[] = data.parties;
 const changed = seatsData.rows.filter((r: any) => {
@@ -20,7 +24,7 @@ const changed = seatsData.rows.filter((r: any) => {
   <h3 id="sim-h">Simulador de escaños</h3>
   <p class="sub">
     Mueve el voto de cada partido y mira cuántos diputados saldrían.{" "}
-    <span data-poll-ref>Empieza con la media de encuestas del {formatDate(data.defaults_date)}.</span>
+    {veda ? <span>Empieza con el resultado de 2023.</span> : <span data-poll-ref>Empieza con la media de encuestas del {formatDate(data.defaults_date)}.</span>}
   </p>
 
   <div class="sim-grid">
@@ -34,7 +38,7 @@ const changed = seatsData.rows.filter((r: any) => {
       ))}
       <p class="fixed">ERC, Junts, EH Bildu, PNV, BNG, CC y UPN mantienen su voto de 2023 en sus provincias.</p>
       <div class="buttons">
-        <button type="button" data-preset="defaults" data-poll-ref>Media de encuestas</button>
+        {!veda && <button type="button" data-preset="defaults" data-poll-ref>Media de encuestas</button>}
         <button type="button" data-preset="2023">Resultado de 2023</button>
       </div>
     </form>

@@ -1,15 +1,29 @@
 ---
 import { loadChart } from "../lib/data";
 import { pivot } from "../lib/table";
+import { inVedaAt } from "../lib/veda";
 import { ui, formatDate, type Lang } from "../lib/i18n";
 
 interface Props { id: string; lang: Lang; code: string }
 const { id, lang, code } = Astro.props;
 const t = ui[lang];
-const chart = loadChart(id);
-const table = pivot(chart, lang, t.table);
-const notes = chart.notes[lang] ?? [];
+// Veda electoral (LOREG art. 69.7): si se compila durante la veda, el gráfico de encuestas no lleva datos en el HTML
+// (ni tabla ni descarga; sync-data también retira su JSON). Solo el aviso.
+const veda = id === "el1-encuestas" && inVedaAt();
+const chart = veda ? null : loadChart(id);
+const table = chart ? pivot(chart, lang, t.table) : null;
+const notes = chart ? chart.notes[lang] ?? [] : [];
 ---
+{veda && (
+  <figure class="fig" id={id}>
+    <figcaption class="fig-head">
+      <span class="code">{code}</span>
+      <h3>Encuestas de intención de voto</h3>
+    </figcaption>
+    <p class="veda-note">La ley electoral prohíbe publicar encuestas durante los cinco días anteriores a la votación. Este gráfico volverá a mostrarse cuando cierren los colegios electorales, el 29 de noviembre.</p>
+  </figure>
+)}
+{chart && table && (
 <figure class="fig" id={id} data-chart={id} data-lang={lang} data-error={t.loadError}>
   <figcaption class="fig-head">
     <span class="code">{code}</span>
@@ -50,6 +64,7 @@ const notes = chart.notes[lang] ?? [];
     </details>
   </footer>
 </figure>
+)}
 
 <style>
   .fig {

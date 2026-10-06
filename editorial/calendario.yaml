@@ -1,93 +1,212 @@
-# Calendario editorial hasta las generales del 29 de noviembre de 2026.
-# Gancho: las elecciones. Cada pieza enlaza al especial /elecciones-29n/.
-# Las piezas electorales se publican tras revisión humana (PR aprobado), no automáticamente.
-
-lanzamiento: 2026-10-20
+# Calendario editorial de España en datos hasta después de las generales del 29 de noviembre de 2026.
+#
+# Ritmo: lunes NOTA (1-2 gráficos, una mirada) y miércoles y viernes ARTÍCULO (tema nuevo con las tres miradas).
+# Lo publica la rutina «espana-publicacion» siguiendo editorial/MANUAL.md: toma la primera entrada con
+# estado: pendiente cuya fecha sea hoy o anterior, la publica y la marca como hecha.
+#
+# Gancho: las elecciones. Cada pieza explica por qué el tema importa el 29N y enlaza al especial.
+# Fechas especiales:
+#   - 13 nov: empieza la campaña.
+#   - 24-28 nov: VEDA de encuestas (LOREG art. 69.7). Ninguna pieza puede mostrar ni citar encuestas de voto.
+#   - 28 nov (viernes): jornada de reflexión. NO se publica.
+#   - 29 nov: elecciones.
+#
+# tipo: nota | articulo
+# tema: id del tema (web/src/content/themes/<id>.ts). Si no existe, el artículo lo crea; una nota debe ir a un tema publicado.
+# estado: hecha | pendiente
 
 piezas:
-  # Precampaña (20 oct - 12 nov): dos por semana
-  - id: a01
+  - id: vi
     tipo: articulo
+    fecha: 2026-10-06
     tema: vivienda
     titulo: "Vivienda: por qué es el tema de estas elecciones"
-    contenido: precio frente a salarios, alquiler, los decretos que cayeron, topes al alquiler en Cataluña (ficha de política)
-    fecha: 2026-10-20
-  - id: n01
-    tipo: nota
+    estado: hecha
+
+  - id: a01
+    tipo: articulo
+    fecha: 2026-10-08
     tema: legislatura
-    titulo: "La legislatura en datos, de julio de 2023 a hoy"
-    contenido: empleo, inflación, deuda y déficit
-    fecha: 2026-10-23
+    titulo: "La legislatura en datos: cómo ha cambiado España desde julio de 2023"
+    idea: empleo, paro, inflación, salarios reales, deuda y déficit públicos, comparados con la UE y por comunidades. Balance descriptivo, sin atribuir mérito o culpa.
+
   - id: a02
     tipo: articulo
+    fecha: 2026-10-10
     tema: empleo
-    titulo: "Reforma laboral, tres años después"
-    contenido: temporalidad por comunidades, antes y después (ficha de política)
-    fecha: 2026-10-27
-  - id: n02
+    titulo: "Empleo: la reforma laboral, tres años después"
+    idea: temporalidad y contratos indefinidos (EPA, afiliación), paro juvenil y de larga duración. Ficha de política de la reforma laboral de 2022 con su grupo de comparación y evaluaciones independientes (Banco de España, AIReF, académicas).
+
+  - id: n01
     tipo: nota
-    tema: empleo
-    titulo: "Salarios reales frente a inflación y SMI"
-    fecha: 2026-10-30
-  - id: n03
-    tipo: nota
+    fecha: 2026-10-13
     tema: elecciones
+    mirada: dentro
     titulo: "Quién gobierna dónde y qué se juega cada comunidad el 29N"
-    fecha: 2026-11-03
-  - id: n04
-    tipo: nota
-    tema: legislatura
-    titulo: "Financiación autonómica y deuda por comunidad"
-    fecha: 2026-11-06
+    idea: mapa de gobiernos autonómicos (dataset gobiernos) y escaños de cada comunidad en 2026.
+
   - id: a03
     tipo: articulo
+    fecha: 2026-10-15
     tema: demografia
+    titulo: "Demografía y pensiones: un país que envejece"
+    idea: natalidad, esperanza de vida, población por edades, gasto en pensiones frente a la UE, tasa de dependencia por comunidades.
+
+  - id: a04
+    tipo: articulo
+    fecha: 2026-10-17
+    tema: inmigracion
     titulo: "Inmigración en datos"
-    contenido: rigor máximo; solo fuentes oficiales (INE, Eurostat, Interior)
-    fecha: 2026-11-10
+    idea: población extranjera y nacida fuera, empleo y afiliación, comparación europea. Solo fuentes oficiales (INE, Eurostat, Seguridad Social, Interior). Máxima prudencia: nada de relacionar inmigración con delincuencia sin datos oficiales comparables.
+
+  - id: n02
+    tipo: nota
+    fecha: 2026-10-20
+    tema: empleo
+    mirada: tiempo
+    titulo: "Salarios reales y salario mínimo"
+    idea: salario medio descontada la inflación y evolución del SMI.
+
+  - id: a05
+    tipo: articulo
+    fecha: 2026-10-22
+    tema: autonomias
+    titulo: "Financiación autonómica y deuda de las comunidades"
+    idea: deuda por comunidad (Banco de España), financiación por habitante ajustado (Hacienda, Fedea), gasto por habitante.
+
+  - id: a06
+    tipo: articulo
+    fecha: 2026-10-24
+    tema: sanidad
+    titulo: "Sanidad: listas de espera y gasto por comunidad"
+    idea: listas de espera (Ministerio de Sanidad, SISLE), gasto sanitario público por habitante, médicos por habitante frente a la UE.
+
+  - id: n03
+    tipo: nota
+    fecha: 2026-10-27
+    tema: elecciones
+    mirada: tiempo
+    titulo: "Quién vota y quién no: la participación desde 1977"
+    idea: participación en generales por año y por provincia (Infoelectoral).
+
+  - id: a07
+    tipo: articulo
+    fecha: 2026-10-29
+    tema: educacion
+    titulo: "Educación: abandono escolar, resultados y gasto"
+    idea: abandono temprano (EPA/Eurostat), resultados PISA, gasto público frente a la UE y por comunidades.
+
+  - id: a08
+    tipo: articulo
+    fecha: 2026-10-31
+    tema: fiscalidad
+    titulo: "Impuestos y gasto público: España frente a Europa"
+    idea: presión fiscal, estructura de impuestos, gasto por funciones (Eurostat COFOG), por comunidades (impuestos cedidos).
+
+  - id: n04
+    tipo: nota
+    fecha: 2026-11-03
+    tema: elecciones
+    mirada: tiempo
+    titulo: "Un Congreso cada vez más fragmentado"
+    idea: número efectivo de partidos y escaños de los dos mayores desde 1977 (Infoelectoral).
+
+  - id: a09
+    tipo: articulo
+    fecha: 2026-11-05
+    tema: energia
+    titulo: "Energía: precio de la luz, renovables y dependencia"
+    idea: precio de la electricidad para hogares frente a la UE, peso de las renovables, dependencia energética.
+
+  - id: a10
+    tipo: articulo
+    fecha: 2026-11-07
+    tema: productividad
+    titulo: "Productividad y empresa: por qué España crece pero no converge"
+    idea: PIB por habitante y por hora frente a la UE, tamaño de empresa, I+D.
+
   - id: n05
     tipo: nota
-    tema: demografia
-    titulo: "Pensiones y envejecimiento"
+    fecha: 2026-11-10
+    tema: elecciones
+    mirada: dentro
+    titulo: "Cuánto cuesta un escaño en cada provincia"
+    idea: votos por escaño en 2023 por provincia y efecto de la ley D'Hondt (dataset congreso-202307 y escanos-2026).
+
+  - id: a11
+    tipo: articulo
     fecha: 2026-11-12
+    tema: jovenes
+    titulo: "Jóvenes: emancipación, paro y vivienda"
+    idea: edad de emancipación frente a la UE, paro juvenil, coste de la vivienda para menores de 30.
 
-  # Campaña (13 - 27 nov): programas frente a datos, mismo formato para todos los partidos
-  - id: c01
-    tipo: nota
-    tema: vivienda
-    titulo: "Lo que proponen los partidos en vivienda y lo que dicen los datos"
-    fecha: 2026-11-16
-  - id: c02
-    tipo: nota
-    tema: empleo
-    titulo: "Lo que proponen los partidos en empleo y salarios"
-    fecha: 2026-11-19
-  - id: c03
-    tipo: nota
-    tema: legislatura
-    titulo: "Impuestos y gasto: las cuentas de cada programa"
-    fecha: 2026-11-23
+  # Campaña (13-27 nov): programas frente a datos
+  - id: a12
+    tipo: articulo
+    fecha: 2026-11-14
+    tema: programas-vivienda-empleo
+    titulo: "Los programas frente a los datos: vivienda y empleo"
+    idea: ver reglas de programas en MANUAL.md.
 
-  # Veda (24 - 28 nov): sin encuestas. Republicar el 24.
-  # Noche electoral y después
-  - id: r01
+  - id: n06
     tipo: nota
-    tema: elecciones
-    titulo: "Resultados del 29N: qué ha cambiado respecto a 2023"
-    fecha: 2026-11-30
-  - id: r02
-    tipo: nota
-    tema: elecciones
-    titulo: "Participación y voto por provincias"
-    fecha: 2026-12-02
-  - id: r03
-    tipo: nota
-    tema: elecciones
-    titulo: "Las mayorías posibles en el nuevo Congreso"
-    fecha: 2026-12-04
-
-  # También en Europa en datos (enlace cruzado)
-  - id: europa-n
-    tipo: nota-europa
-    titulo: "España vota: cómo llega comparada con Europa"
     fecha: 2026-11-17
+    tema: elecciones
+    mirada: tiempo
+    titulo: "Qué preocupa a los españoles: los problemas según el CIS"
+    idea: principales problemas del barómetro del CIS desde 2023 (pregunta abierta, microdatos o informes del CIS).
+
+  - id: a13
+    tipo: articulo
+    fecha: 2026-11-19
+    tema: programas-impuestos
+    titulo: "Los programas frente a los datos: impuestos y gasto"
+    idea: ver reglas de programas en MANUAL.md.
+
+  - id: a14
+    tipo: articulo
+    fecha: 2026-11-21
+    tema: programas-pensiones
+    titulo: "Los programas frente a los datos: pensiones y sanidad"
+    idea: ver reglas de programas en MANUAL.md.
+
+  # Veda (24-28 nov): sin encuestas
+  - id: n07
+    tipo: nota
+    fecha: 2026-11-24
+    tema: elecciones
+    mirada: dentro
+    titulo: "Cómo se convierten los votos en escaños"
+    idea: explicación con datos de la ley D'Hondt, el umbral del 3 % y el tamaño de las circunscripciones. SIN encuestas (veda).
+
+  - id: a15
+    tipo: articulo
+    fecha: 2026-11-26
+    tema: territorio
+    titulo: "Territorio: la España que se vacía y la que crece"
+    idea: población por municipio y provincia, despoblación, servicios. SIN encuestas (veda).
+
+  # 28 nov: jornada de reflexión, no se publica
+
+  # Después de las elecciones
+  - id: n08
+    tipo: nota
+    fecha: 2026-12-01
+    tema: elecciones
+    mirada: dentro
+    titulo: "Resultados del 29N: qué ha cambiado respecto a 2023"
+    idea: resultados oficiales del Ministerio del Interior; comparar con 2023 por partido y provincia.
+
+  - id: a16
+    tipo: articulo
+    fecha: 2026-12-03
+    tema: resultados-29n
+    titulo: "El 29N en detalle: participación, provincias y voto"
+    idea: participación, cambios por provincia y municipio, voto exterior.
+
+  - id: a17
+    tipo: articulo
+    fecha: 2026-12-05
+    tema: mayorias-29n
+    titulo: "Las mayorías posibles en el nuevo Congreso"
+    idea: aritmética de escaños, sin presentar ninguna combinación como probable.

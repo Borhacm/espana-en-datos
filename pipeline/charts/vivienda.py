@@ -1,12 +1,11 @@
 """Tema Vivienda (código VI): precios frente a salarios, comunidades, Europa y la ficha de los topes al alquiler en Cataluña."""
 
-import datetime as dt
-import re
-import unicodedata
 from collections import defaultdict
 
 from lib import geo, sources
 from lib.output import THEMES, chart
+
+from .common import annual, es_num, ine_ccaa, pct
 
 THEMES["vivienda"] = {"code": "VI", "title": "Vivienda"}
 
@@ -20,42 +19,6 @@ INE_WAGE = {"name": "INE, Encuesta Trimestral de Coste Laboral", "url": f"https:
 INE_CPI = {"name": "INE, Índice de Precios de Consumo", "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={CPI_TABLE}"}
 
 
-def _norm(s: str) -> str:
-    return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
-
-
-# Nombres del INE ("Madrid, Comunidad de", "Castilla - La Mancha"...) -> código de comunidad
-def ine_ccaa(name: str) -> str | None:
-    n = _norm(name)
-    if n.startswith("nacional") or n.startswith("total nacional"):
-        return "ES"
-    keys = {"andalucia": "01", "aragon": "02", "asturias": "03", "balears": "04", "canarias": "05", "cantabria": "06",
-            "castilla y leon": "07", "castilla - la mancha": "08", "castilla-la mancha": "08", "cataluna": "09",
-            "comunitat valenciana": "10", "extremadura": "11", "galicia": "12", "madrid": "13", "murcia": "14",
-            "navarra": "15", "pais vasco": "16", "rioja": "17", "ceuta": "18", "melilla": "19"}
-    for k, code in keys.items():
-        if n.startswith(k):
-            return code
-    return None
-
-
-def _annual(rows: list[dict]) -> dict[int, float]:
-    """Media anual de una serie trimestral o mensual, solo con años completos."""
-    by_year = defaultdict(list)
-    for r in rows:
-        by_year[r["year"]].append(r["value"])
-    full = 4 if "Q" in rows[0]["period"] else 12
-    return {y: sum(v) / len(v) for y, v in by_year.items() if len(v) == full}
-
-
-def _pct(a: float, b: float) -> float:
-    return round(100 * (b / a - 1), 1)
-
-
-def _es(v: float) -> str:
-    return f"{v:.0f}".replace(".", ",")
-
-
 # ---------- España en el tiempo ----------
 
 def precios_salarios():
@@ -66,24 +29,24 @@ def precios_salarios():
     cpi = [r for r in sources.ine_table(CPI_TABLE) if r["series"].startswith("Índice general. Índice")
            or r["series"].startswith("Nacional. Índice general. Índice")]
     assert ipv and wage and cpi, (len(ipv), len(wage), len(cpi))
-    series = {"vivienda": _annual(ipv), "salarios": _annual(wage), "precios": _annual(cpi)}
+    series = {"vivienda": annual(ipv), "salarios": annual(wage), "precios": annual(cpi)}
     years = sorted(set.intersection(*(set(s) for s in series.values())))
     years = [y for y in years if y >= 2008]
     BASE = 2015
     rows = [{"time": str(y), "series": k, "value": round(100 * s[y] / s[BASE], 1)} for k, s in series.items() for y in years]
     last = years[-1]
-    h, w, p = (_pct(series[k][BASE], series[k][last]) for k in ("vivienda", "salarios", "precios"))
+    h, w, p = (pct(series[k][BASE], series[k][last]) for k in ("vivienda", "salarios", "precios"))
     return chart(
         id="vit1-precios-salarios",
         lens="tiempo", theme="vivienda",
-        title=f"Desde {BASE}, la vivienda ha subido un {_es(h)} % y los salarios, un {_es(w)} %",
+        title=f"Desde {BASE}, la vivienda ha subido un {es_num(h)} % y los salarios, un {es_num(w)} %",
         subtitle=f"Índices, {BASE} = 100. Precio de la vivienda, salario medio por trabajador y precios de consumo",
         unit="Índice (2015 = 100)",
         source={**INE_IPV, "also": [INE_WAGE, INE_CPI]},
         notes=[
             "Vivienda: Índice de Precios de Vivienda (compraventas de vivienda nueva y usada), media anual.",
             "Salarios: coste salarial total por trabajador y mes (industria, construcción y servicios), media anual. Incluye pagas extra.",
-            f"Precios: IPC general, media anual. Entre {BASE} y {last} subió un {_es(p)} %.",
+            f"Precios: IPC general, media anual. Entre {BASE} y {last} subió un {es_num(p)} %.",
             "Solo años completos.",
         ],
         rows=rows,
@@ -104,9 +67,9 @@ def comunidades():
     BASE = 2015
     out, last = [], None
     for code, rs in by_geo.items():
-        a = _annual(rs)
+        a = annual(rs)
         last = max(a)
-        out.append({"geo": code, "time": str(last), "value": _pct(a[BASE], a[last])})
+        out.append({"geo": code, "time": str(last), "value": pct(a[BASE], a[last])})
     es = next(r["value"] for r in out if r["geo"] == "ES")
     # Ceuta y Melilla tienen muy pocas compraventas y un índice muy volátil: no protagonizan el titular
     main = [r for r in out if r["geo"] not in ("ES", "18", "19")]
@@ -115,8 +78,8 @@ def comunidades():
     return chart(
         id="vid1-comunidades",
         lens="dentro", theme="vivienda",
-        title=f"La vivienda ha subido un {_es(es)} % desde {BASE}: del {_es(top['value'])} % de {geo.CCAA[top['geo']]} "
-              f"al {_es(low['value'])} % de {geo.CCAA[low['geo']]}",
+        title=f"La vivienda ha subido un {es_num(es)} % desde {BASE}: del {es_num(top['value'])} % de {geo.CCAA[top['geo']]} "
+              f"al {es_num(low['value'])} % de {geo.CCAA[low['geo']]}",
         subtitle=f"Subida del precio de la vivienda entre {BASE} y {last}, en %",
         unit="% de subida",
         source=INE_IPV,
@@ -223,8 +186,8 @@ def cataluna_topes():
     rent = chart(
         id="vid2-cataluna-rentas",
         lens="dentro", theme="vivienda",
-        title=f"Con tope, la renta de los nuevos alquileres está un {_es(lv['zmrt1'] - 100)} % por encima de {INDEX_YEAR}; "
-              f"sin tope, un {_es(lv['sin'] - 100)} %",
+        title=f"Con tope, la renta de los nuevos alquileres está un {es_num(lv['zmrt1'] - 100)} % por encima de {INDEX_YEAR}; "
+              f"sin tope, un {es_num(lv['sin'] - 100)} %",
         subtitle=f"Renta media de los contratos firmados cada trimestre, índice {INDEX_YEAR} = 100, hasta el {period}",
         unit=f"Índice ({INDEX_YEAR} = 100)",
         source=CAT_SOURCE,
@@ -237,8 +200,8 @@ def cataluna_topes():
     contracts = chart(
         id="vid3-cataluna-contratos",
         lens="dentro", theme="vivienda",
-        title=f"Con tope, se firman un {_es(100 - ln['zmrt1'])} % menos de contratos de alquiler que en {INDEX_YEAR}; "
-              f"sin tope, un {_es(100 - ln['sin'])} % menos",
+        title=f"Con tope, se firman un {es_num(100 - ln['zmrt1'])} % menos de contratos de alquiler que en {INDEX_YEAR}; "
+              f"sin tope, un {es_num(100 - ln['sin'])} % menos",
         subtitle=f"Contratos de alquiler registrados cada trimestre, índice {INDEX_YEAR} = 100 (media trimestral), hasta el {period}",
         unit=f"Índice ({INDEX_YEAR} = 100)",
         source=CAT_SOURCE,
@@ -269,7 +232,7 @@ def europa_precios():
     return chart(
         id="vie1-europa-precios",
         lens="europa", theme="vivienda",
-        title=f"La vivienda ha subido un {_es(es)} % en España desde {BASE}, frente al {_es(eu)} % de la UE",
+        title=f"La vivienda ha subido un {es_num(es)} % en España desde {BASE}, frente al {es_num(eu)} % de la UE",
         subtitle=f"Subida del precio de la vivienda entre {BASE} y {LAST}, en %. España es el {rank}.º de {len(out) - 1} países",
         unit="% de subida",
         source={"name": "Eurostat", "dataset": "prc_hpi_a", "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hpi_a/default/table",
@@ -296,8 +259,8 @@ def europa_sobrecarga():
     return chart(
         id="vie2-europa-sobrecarga",
         lens="europa", theme="vivienda",
-        title=f"El {_es(es)} % de los inquilinos que pagan alquiler de mercado en España dedica más del 40 % de su renta a la vivienda; "
-              f"en la UE, el {_es(eu)} %",
+        title=f"El {es_num(es)} % de los inquilinos que pagan alquiler de mercado en España dedica más del 40 % de su renta a la vivienda; "
+              f"en la UE, el {es_num(eu)} %",
         subtitle=f"Inquilinos a precio de mercado con sobrecarga de gastos de vivienda, {LAST}, en %. España es el {rank}.º de {len(out) - 1}",
         unit="% de inquilinos",
         source={"name": "Eurostat", "dataset": "ilc_lvho07c", "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho07c/default/table",
