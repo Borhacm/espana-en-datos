@@ -47,6 +47,10 @@ Desde `web/`: `npm run dev`, `npm run build`, `npm run check` (dibuja todos los 
 - Describir, no atribuir: que una comunidad gobernada por un partido tenga un dato mejor o peor no prueba que sea por ese partido. Las fichas de política comparan con grupo de control y citan evaluaciones independientes.
 - Mismo formato y exigencia para todos los partidos.
 - Cada cifra del texto, comprobada contra el JSON del gráfico antes de publicar.
-- Piezas electorales: **revisión humana antes de publicar** (PR que aprueba Borja).
+- Publicación automática sin revisión previa (decisión de Borja, 6 de octubre de 2026): por eso las comprobaciones de `editorial/MANUAL.md` son obligatorias.
+
+## Publicación editorial
+
+La rutina «espana-publicacion» de la app de Claude (lunes, miércoles y viernes a las 8.30) actualiza las encuestas y publica la pieza del día de [editorial/calendario.yaml](editorial/calendario.yaml) siguiendo [editorial/MANUAL.md](editorial/MANUAL.md): nota los lunes, artículo con tres miradas los miércoles y viernes. Cada pieza deja su tabla de verificación en `editorial/registro/<id>.md`. Dos tareas puntuales republican la web al empezar la veda (24 de noviembre, 00.05) y al cerrar los colegios (29 de noviembre, 21.05).
 
 Proyecto independiente de [Bocal](https://bocal.online).
