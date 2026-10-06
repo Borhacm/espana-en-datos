@@ -28,7 +28,8 @@ const changed = seatsData.rows.filter((r: any) => {
   </p>
 
   <div class="sim-grid">
-    <form class="inputs" aria-label="Voto nacional de cada partido" onsubmit="return false">
+    <!-- No es un <form>: la medición automática de GA contaría «form_start», que en bocal.online es el formulario de contacto -->
+    <div class="inputs" role="group" aria-label="Voto nacional de cada partido">
       {parties.map((p) => (
         <label class="row" style={`--c: var(--p-${p.toLowerCase()})`}>
           <span class="name"><i></i>{p}</span>
@@ -41,7 +42,7 @@ const changed = seatsData.rows.filter((r: any) => {
         {!veda && <button type="button" data-preset="defaults" data-poll-ref>Media de encuestas</button>}
         <button type="button" data-preset="2023">Resultado de 2023</button>
       </div>
-    </form>
+    </div>
 
     <div class="results" aria-live="polite">
       <div class="bar-wrap">
