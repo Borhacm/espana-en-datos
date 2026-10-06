@@ -8,7 +8,7 @@
 # Fechas especiales:
 #   - 13 nov: empieza la campaña.
 #   - 24-28 nov: VEDA de encuestas (LOREG art. 69.7). Ninguna pieza puede mostrar ni citar encuestas de voto.
-#   - 28 nov (viernes): jornada de reflexión. NO se publica.
+#   - 28 nov (sábado): jornada de reflexión. No hay pieza ese día.
 #   - 29 nov: elecciones.
 #
 # tipo: nota | articulo
@@ -25,21 +25,21 @@ piezas:
 
   - id: a01
     tipo: articulo
-    fecha: 2026-10-08
+    fecha: 2026-10-07
     tema: legislatura
     titulo: "La legislatura en datos: cómo ha cambiado España desde julio de 2023"
     idea: empleo, paro, inflación, salarios reales, deuda y déficit públicos, comparados con la UE y por comunidades. Balance descriptivo, sin atribuir mérito o culpa.
 
   - id: a02
     tipo: articulo
-    fecha: 2026-10-10
+    fecha: 2026-10-09
     tema: empleo
     titulo: "Empleo: la reforma laboral, tres años después"
     idea: temporalidad y contratos indefinidos (EPA, afiliación), paro juvenil y de larga duración. Ficha de política de la reforma laboral de 2022 con su grupo de comparación y evaluaciones independientes (Banco de España, AIReF, académicas).
 
   - id: n01
     tipo: nota
-    fecha: 2026-10-13
+    fecha: 2026-10-12
     tema: elecciones
     mirada: dentro
     titulo: "Quién gobierna dónde y qué se juega cada comunidad el 29N"
@@ -47,21 +47,21 @@ piezas:
 
   - id: a03
     tipo: articulo
-    fecha: 2026-10-15
+    fecha: 2026-10-14
     tema: demografia
     titulo: "Demografía y pensiones: un país que envejece"
     idea: natalidad, esperanza de vida, población por edades, gasto en pensiones frente a la UE, tasa de dependencia por comunidades.
 
   - id: a04
     tipo: articulo
-    fecha: 2026-10-17
+    fecha: 2026-10-16
     tema: inmigracion
     titulo: "Inmigración en datos"
     idea: población extranjera y nacida fuera, empleo y afiliación, comparación europea. Solo fuentes oficiales (INE, Eurostat, Seguridad Social, Interior). Máxima prudencia: nada de relacionar inmigración con delincuencia sin datos oficiales comparables.
 
   - id: n02
     tipo: nota
-    fecha: 2026-10-20
+    fecha: 2026-10-19
     tema: empleo
     mirada: tiempo
     titulo: "Salarios reales y salario mínimo"
@@ -69,21 +69,21 @@ piezas:
 
   - id: a05
     tipo: articulo
-    fecha: 2026-10-22
+    fecha: 2026-10-21
     tema: autonomias
     titulo: "Financiación autonómica y deuda de las comunidades"
     idea: deuda por comunidad (Banco de España), financiación por habitante ajustado (Hacienda, Fedea), gasto por habitante.
 
   - id: a06
     tipo: articulo
-    fecha: 2026-10-24
+    fecha: 2026-10-23
     tema: sanidad
     titulo: "Sanidad: listas de espera y gasto por comunidad"
     idea: listas de espera (Ministerio de Sanidad, SISLE), gasto sanitario público por habitante, médicos por habitante frente a la UE.
 
   - id: n03
     tipo: nota
-    fecha: 2026-10-27
+    fecha: 2026-10-26
     tema: elecciones
     mirada: tiempo
     titulo: "Quién vota y quién no: la participación desde 1977"
@@ -91,21 +91,21 @@ piezas:
 
   - id: a07
     tipo: articulo
-    fecha: 2026-10-29
+    fecha: 2026-10-28
     tema: educacion
     titulo: "Educación: abandono escolar, resultados y gasto"
     idea: abandono temprano (EPA/Eurostat), resultados PISA, gasto público frente a la UE y por comunidades.
 
   - id: a08
     tipo: articulo
-    fecha: 2026-10-31
+    fecha: 2026-10-30
     tema: fiscalidad
     titulo: "Impuestos y gasto público: España frente a Europa"
     idea: presión fiscal, estructura de impuestos, gasto por funciones (Eurostat COFOG), por comunidades (impuestos cedidos).
 
   - id: n04
     tipo: nota
-    fecha: 2026-11-03
+    fecha: 2026-11-02
     tema: elecciones
     mirada: tiempo
     titulo: "Un Congreso cada vez más fragmentado"
@@ -113,21 +113,21 @@ piezas:
 
   - id: a09
     tipo: articulo
-    fecha: 2026-11-05
+    fecha: 2026-11-04
     tema: energia
     titulo: "Energía: precio de la luz, renovables y dependencia"
     idea: precio de la electricidad para hogares frente a la UE, peso de las renovables, dependencia energética.
 
   - id: a10
     tipo: articulo
-    fecha: 2026-11-07
+    fecha: 2026-11-06
     tema: productividad
     titulo: "Productividad y empresa: por qué España crece pero no converge"
     idea: PIB por habitante y por hora frente a la UE, tamaño de empresa, I+D.
 
   - id: n05
     tipo: nota
-    fecha: 2026-11-10
+    fecha: 2026-11-09
     tema: elecciones
     mirada: dentro
     titulo: "Cuánto cuesta un escaño en cada provincia"
@@ -135,7 +135,7 @@ piezas:
 
   - id: a11
     tipo: articulo
-    fecha: 2026-11-12
+    fecha: 2026-11-11
     tema: jovenes
     titulo: "Jóvenes: emancipación, paro y vivienda"
     idea: edad de emancipación frente a la UE, paro juvenil, coste de la vivienda para menores de 30.
@@ -143,14 +143,14 @@ piezas:
   # Campaña (13-27 nov): programas frente a datos
   - id: a12
     tipo: articulo
-    fecha: 2026-11-14
+    fecha: 2026-11-13
     tema: programas-vivienda-empleo
     titulo: "Los programas frente a los datos: vivienda y empleo"
     idea: ver reglas de programas en MANUAL.md.
 
   - id: n06
     tipo: nota
-    fecha: 2026-11-17
+    fecha: 2026-11-16
     tema: elecciones
     mirada: tiempo
     titulo: "Qué preocupa a los españoles: los problemas según el CIS"
@@ -158,14 +158,14 @@ piezas:
 
   - id: a13
     tipo: articulo
-    fecha: 2026-11-19
+    fecha: 2026-11-18
     tema: programas-impuestos
     titulo: "Los programas frente a los datos: impuestos y gasto"
     idea: ver reglas de programas en MANUAL.md.
 
   - id: a14
     tipo: articulo
-    fecha: 2026-11-21
+    fecha: 2026-11-20
     tema: programas-pensiones
     titulo: "Los programas frente a los datos: pensiones y sanidad"
     idea: ver reglas de programas en MANUAL.md.
@@ -173,25 +173,32 @@ piezas:
   # Veda (24-28 nov): sin encuestas
   - id: n07
     tipo: nota
-    fecha: 2026-11-24
+    fecha: 2026-11-23
     tema: elecciones
     mirada: dentro
     titulo: "Cómo se convierten los votos en escaños"
-    idea: explicación con datos de la ley D'Hondt, el umbral del 3 % y el tamaño de las circunscripciones. SIN encuestas (veda).
+    idea: explicación con datos de la ley D'Hondt, el umbral del 3 % y el tamaño de las circunscripciones. Último día antes de la veda: puede citar la media de encuestas, pero no es necesario.
 
   - id: a15
     tipo: articulo
-    fecha: 2026-11-26
+    fecha: 2026-11-25
     tema: territorio
     titulo: "Territorio: la España que se vacía y la que crece"
     idea: población por municipio y provincia, despoblación, servicios. SIN encuestas (veda).
 
-  # 28 nov: jornada de reflexión, no se publica
+  # 28 nov (sábado): jornada de reflexión, no se publica
+
+  - id: a18
+    tipo: articulo
+    fecha: 2026-11-27
+    tema: clima
+    titulo: "Clima: temperaturas, sequía y emisiones"
+    idea: temperaturas y precipitación (AEMET), emisiones frente a la UE (Eurostat), por comunidades. SIN encuestas (veda).
 
   # Después de las elecciones
   - id: n08
     tipo: nota
-    fecha: 2026-12-01
+    fecha: 2026-11-30
     tema: elecciones
     mirada: dentro
     titulo: "Resultados del 29N: qué ha cambiado respecto a 2023"
@@ -199,14 +206,14 @@ piezas:
 
   - id: a16
     tipo: articulo
-    fecha: 2026-12-03
+    fecha: 2026-12-02
     tema: resultados-29n
     titulo: "El 29N en detalle: participación, provincias y voto"
     idea: participación, cambios por provincia y municipio, voto exterior.
 
   - id: a17
     tipo: articulo
-    fecha: 2026-12-05
+    fecha: 2026-12-04
     tema: mayorias-29n
     titulo: "Las mayorías posibles en el nuevo Congreso"
     idea: aritmética de escaños, sin presentar ninguna combinación como probable.
