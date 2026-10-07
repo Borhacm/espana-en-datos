@@ -1,0 +1,1262 @@
+{
+ "id": "cg3-decretos-derogados",
+ "lens": "tiempo",
+ "theme": "congreso",
+ "title": {
+  "es": "El Congreso ha tumbado 13 decretos-ley del Gobierno esta legislatura"
+ },
+ "subtitle": {
+  "es": "Voto de cada partido en los decretos-ley derogados (11 con votación publicada en los datos abiertos)"
+ },
+ "unit": {
+  "es": "Voto"
+ },
+ "source": {
+  "name": "Congreso de los Diputados, datos abiertos de votaciones",
+  "url": "https://www.congreso.es/es/opendata/votaciones",
+  "license": "Reutilización libre citando la fuente (aviso legal del Congreso)",
+  "dataset": "Convalidación o derogación de reales decretos-leyes",
+  "also": [
+   {
+    "name": "RDL 26/2026 (derogado el 2026-10-02)",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20526"
+   },
+   {
+    "name": "RDL 27/2026 (derogado el 2026-10-02)",
+    "url": "https://www.ocu.org/fincas-y-casas/gestion/alquiler/analisis/2026/10/derogados-los-decretos-de-alquileres"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "De 54 decretos-ley votados con datos publicados, 11 fueron derogados. Se suman 2 derogados el 2 de octubre de 2026 cuya votación aún no está en los datos abiertos.",
+   "Un decreto-ley se convalida si tiene más votos a favor que en contra.",
+   "Empate a 171 en la primera votación; convalidado en la segunda por 172 a 171. No figura entre los derogados.",
+   "Celda vacía: ese partido no tuvo posición (no votó o sus diputados se dividieron a partes iguales)."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "blocs": [
+  "PP",
+  "PSOE",
+  "Vox",
+  "Sumar",
+  "ERC",
+  "Junts",
+  "EH Bildu",
+  "PNV",
+  "Podemos",
+  "BNG",
+  "CC",
+  "UPN"
+ ],
+ "labels": {
+  "7/2023": "por el que se adoptan medidas urgentes, para completar la transposición de la Directiva (UE) 2019/1158, del Parlamento Europeo y del Consejo",
+  "9/2024": "por el que se adoptan medidas urgentes en materia económica, tributaria, de transporte, y de Seguridad Social, y se prorrogan determinadas m",
+  "10/2024": "para el establecimiento de un gravamen temporal energético durante el año 2025.",
+  "7/2025": "por el que se aprueban medidas urgentes para el refuerzo del sistema eléctrico.",
+  "16/2025": "por el que se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social, y se adoptan medidas urgentes en mate",
+  "2/2026": "por el que se adoptan medidas urgentes para hacer frente a situaciones de vulnerabilidad social, en materia tributaria y relativas a los rec",
+  "4/2026": "por el que se garantiza la accesibilidad equitativa a bienes y servicios en situaciones de emergencia.",
+  "8/2026": "de medidas en el alquiler en respuesta a las consecuencias económicas y sociales de la Guerra de Irán.",
+  "15/2026": "de autorización de operaciones de crédito extraordinarias a organismos y entidades integrantes del sector público institucional estatal.",
+  "16/2026": "de medidas para garantizar la prestación del servicio público encomendado a la Corporación Radio Televisión Española, S.A., S.M.E.",
+  "21/2026": "de transparencia e integridad de las actividades de los grupos de interés."
+ },
+ "late": [
+  {
+   "decree": "26/2026",
+   "date": "2026-10-02",
+   "text": "Real Decreto-ley 26/2026, de 29 de septiembre, de medidas urgentes para la protección de la función social de la vivienda",
+   "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20526"
+  },
+  {
+   "decree": "27/2026",
+   "date": "2026-10-02",
+   "text": "Real Decreto-ley 27/2026 (contratos de alquiler: prórrogas e indemnizaciones)",
+   "url": "https://www.ocu.org/fincas-y-casas/gestion/alquiler/analisis/2026/10/derogados-los-decretos-de-alquileres"
+  }
+ ],
+ "rows": [
+  {
+   "row": "7/2023",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "Podemos",
+   "value": -1,
+   "vote": "no",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "7/2023",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2024-01-10",
+   "yes": 167,
+   "no": 176
+  },
+  {
+   "row": "9/2024",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "9/2024",
+   "col": "UPN",
+   "value": 0,
+   "vote": "abst",
+   "date": "2025-01-22",
+   "yes": 171,
+   "no": 177
+  },
+  {
+   "row": "10/2024",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "PNV",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "CC",
+   "value": 0,
+   "vote": "abst",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "10/2024",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-01-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "Podemos",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "BNG",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "7/2025",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2025-07-22",
+   "yes": 165,
+   "no": 183
+  },
+  {
+   "row": "16/2025",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "16/2025",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-01-27",
+   "yes": 171,
+   "no": 178
+  },
+  {
+   "row": "2/2026",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "2/2026",
+   "col": "UPN",
+   "value": 0,
+   "vote": "abst",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "4/2026",
+   "col": "UPN",
+   "value": 0,
+   "vote": "abst",
+   "date": "2026-02-26",
+   "yes": 172,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "PNV",
+   "value": 0,
+   "vote": "abst",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "8/2026",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-04-28",
+   "yes": 166,
+   "no": 177
+  },
+  {
+   "row": "15/2026",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "15/2026",
+   "col": "UPN",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-06-25",
+   "yes": 173,
+   "no": 176
+  },
+  {
+   "row": "16/2026",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "PNV",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "Podemos",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "16/2026",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-07-14",
+   "yes": 172,
+   "no": 178
+  },
+  {
+   "row": "21/2026",
+   "col": "PP",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "PSOE",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "Vox",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "Sumar",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "ERC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "Junts",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "EH Bildu",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "PNV",
+   "value": 0,
+   "vote": "abst",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "Podemos",
+   "value": 0,
+   "vote": "abst",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "BNG",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "CC",
+   "value": 1,
+   "vote": "si",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  },
+  {
+   "row": "21/2026",
+   "col": "UPN",
+   "value": -1,
+   "vote": "no",
+   "date": "2026-09-16",
+   "yes": 155,
+   "no": 179
+  }
+ ]
+}

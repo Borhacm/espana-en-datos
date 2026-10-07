@@ -11,7 +11,7 @@ Una ejecución con --only no modifica lo demás.
 import sys
 import traceback
 
-from datasets import elecciones, encuestas, escanos, gobiernos
+from datasets import congreso, elecciones, encuestas, escanos, gobiernos
 from lib import http
 from lib.output import write, write_base
 
@@ -21,6 +21,7 @@ BASE = [
     ("encuestas", encuestas.build, False),
     ("congreso-202307", lambda: elecciones.build("202307"), True),
     ("escanos-2026", escanos.build, False),
+    ("congreso-xv", congreso.build, True),
 ]
 # Datasets que dependen de los gráficos (se escriben después de ellos)
 LATE = [("simulador", lambda: __import__("charts.elecciones", fromlist=["simulador"]).simulador(), True)]

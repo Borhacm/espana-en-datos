@@ -1,6 +1,6 @@
 // Cómo se dibuja cada gráfico. Lo comparten el servidor (tabla accesible) y el navegador (gráfico).
 
-export type Renderer = "line" | "rank" | "paired" | "dumbbell" | "stack" | "map" | "polls" | "govtimeline" | "spainmap";
+export type Renderer = "line" | "rank" | "paired" | "dumbbell" | "stack" | "map" | "polls" | "govtimeline" | "spainmap" | "matrix";
 
 export interface Control {
   dim: string;
@@ -24,7 +24,9 @@ export interface ChartConfig {
   /** Tabla accesible: pivot de filas x columnas */
   table: { rows: string; cols: string; lastCols?: number };
   /** Tabla propia (ver lib/table.ts) para gráficos cuyos datos no son una matriz fila x columna */
-  customTable?: "polls" | "govtimeline" | "spainmap";
+  customTable?: "polls" | "govtimeline" | "spainmap" | "matrix";
+  /** Matriz: porcentajes con rampa secuencial ("heat") o votos sí/no/abstención ("votes") */
+  matrixMode?: "heat" | "votes";
   /** Dimensión alternativa del valor (p. ej. per_million) según un control */
   valueFrom?: { control: string; map: Record<string, string> };
   yLabel?: { es: string; en: string };

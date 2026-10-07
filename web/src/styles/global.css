@@ -43,6 +43,10 @@
   --p-cc: #a1863a;
   --p-other: #a7adbb;
 
+  /* Votaciones (escala divergente: a favor / abstención / en contra). Violeta y naranja validados; gris en el centro */
+  --vote-yes: #6b5be2;
+  --vote-no: #c4661f;
+  --vote-abst: #cfd3db;
   --seq-0: #dcd7fa;
   --seq-1: #2a1f8a;
 
@@ -87,7 +91,13 @@
     --p-bng: #2266a4;
     --p-cc: #9d712d;
     --p-other: #5a6075;
-    --seq-0: #2a2550;
+    --vote-yes: #8476ea;
+    --vote-no: #cc7a35;
+    --vote-abst: #3d4259;
+    --vote-yes: #8476ea;
+  --vote-no: #cc7a35;
+  --vote-abst: #3d4259;
+  --seq-0: #2a2550;
     --seq-1: #c9c2ff;
   }
 }

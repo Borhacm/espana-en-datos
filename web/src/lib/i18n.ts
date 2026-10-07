@@ -9,6 +9,7 @@ export const ui = {
     siteDescription:
       "España contada con datos abiertos: economía, vivienda, empleo, política y territorio, comparados con Europa y entre comunidades.",
     navElections: "Elecciones 29N",
+    navCongress: "Congreso",
     navThemes: "Temas",
     navNotes: "Notas",
     navLenses: "Miradas",
@@ -38,13 +39,14 @@ export type Bi = { es: string };
 export const paths = {
   home: { es: "/" },
   elections: { es: "/elecciones-29n/" },
+  congress: { es: "/congreso/" },
   themes: { es: "/temas/" },
   notes: { es: "/notas/" },
   lenses: { es: "/miradas/" },
   method: { es: "/metodologia/" },
 } as const;
 
-export type Section = "home" | "elections" | "themes" | "notes" | "lenses" | "method";
+export type Section = "home" | "elections" | "congress" | "themes" | "notes" | "lenses" | "method";
 
 /** Rutas de un tema, una mirada o una nota a partir de su slug. */
 export const themePath = (slug: Bi): Bi => ({ es: `/${slug.es}/` });

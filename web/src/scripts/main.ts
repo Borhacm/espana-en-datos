@@ -7,6 +7,7 @@ import { renderMap } from "./charts/map";
 import { renderPolls, inVeda } from "./charts/polls";
 import { renderGovTimeline } from "./charts/govtimeline";
 import { renderSpainMap } from "./charts/spainmap";
+import { renderMatrix } from "./charts/matrix";
 
 const RENDERERS = {
   line: renderLine,
@@ -18,6 +19,7 @@ const RENDERERS = {
   polls: renderPolls,
   govtimeline: renderGovTimeline,
   spainmap: renderSpainMap,
+  matrix: renderMatrix,
 } as const;
 
 // ---------- Comunidad destacada (preferencia del lector, solo en este navegador) ----------

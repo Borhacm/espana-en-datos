@@ -33,6 +33,15 @@ uv run run.py --refresh --only encuestas
 uv run run.py --only charts.elecciones
 ```
 
+Los lunes, actualiza también las votaciones del Congreso (solo descarga los plenos nuevos) y su sección:
+
+```bash
+uv run run.py --only congreso-xv
+uv run run.py --only charts.congreso
+```
+
+Si hay votaciones nuevas, revisa que los textos de `web/src/content/themes/congreso.ts` siguen cuadrando con los JSON (porcentajes y número de decretos derogados) y corrígelos. Si un decreto que figuraba en `LATE_DECREES` (`pipeline/charts/congreso.py`) ya aparece en los datos abiertos, quítalo de esa lista para no contarlo dos veces.
+
 Comprueba que `data/base/encuestas.json` no ha perdido encuestas (el número de filas no baja) y que el título de `data/charts/el1-encuestas.json` tiene sentido. Si la página de Wikipedia ha cambiado de formato y el lector falla, no toques las encuestas en esta ejecución y dilo en el resumen.
 
 ## 3. Elegir la entrada
@@ -42,7 +51,7 @@ Lee `editorial/calendario.yaml` y toma la **primera** entrada con `estado` disti
 ## 4. Buscar y comprobar los datos
 
 - Empieza por la `idea` del calendario, pero compruébala: que la fuente existe, qué dimensiones tiene y cuál es el último periodo completo.
-- Lectores en `pipeline/lib/sources.py`: `ine_table` (API del INE: busca tablas con `https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/<id>`), `eurostat`, `oecd`, `worldbank`, `socrata_cat` (datos abiertos de Cataluña), `wikipedia`. Resultados electorales: `pipeline/datasets/elecciones.py` (Infoelectoral, ficheros MUNI; necesita la cabecera de navegador de `lib/http.py`). Gobiernos autonómicos: `datasets/gobiernos.py`. Escaños 2026: `datasets/escanos.py`.
+- Lectores en `pipeline/lib/sources.py`: `ine_table` (API del INE: busca tablas con `https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/<id>`), `eurostat`, `oecd`, `worldbank`, `socrata_cat` (datos abiertos de Cataluña), `wikipedia`. Resultados electorales: `pipeline/datasets/elecciones.py` (Infoelectoral, ficheros MUNI; necesita la cabecera de navegador de `lib/http.py`). Gobiernos autonómicos: `datasets/gobiernos.py`. Escaños 2026: `datasets/escanos.py`. Votaciones del Congreso (XV legislatura, voto de cada partido en cada votación nominal): `datasets/congreso.py`, con la sección `/congreso/` (`charts/congreso.py`).
 - Geografía (`pipeline/lib/geo.py`): comunidades con código INE (`"01"`... `"19"`) y `"ES"` para el total; provincias `"01"`... `"52"`; países en ISO3 (`"ESP"`, `"DEU"`) y `"EU27"`. `geo.ccaa_table()` y `geo.country_table()` dan los nombres para el JSON.
 - Utilidades comunes en `pipeline/charts/common.py`: `ine_ccaa` (nombre del INE a código), `annual` (media anual con años completos), `pct`, `es_num`.
 
@@ -65,7 +74,7 @@ Abre los JSON y calcula todo lo que vas a escribir. Para cada número del texto,
 
 ## 7. Escribir la web
 
-- **Configuración de los gráficos:** `web/src/content/charts/<tema o id>.ts`. Renderizadores probados en este proyecto: `line` (series temporales; admite `series`, `seriesColors`, datos trimestrales con `quarterly`, fechas clave con `events`, etiquetas cortas con `short_labels`, línea de referencia con `ref_line`), `rank` (ranking de países de la UE o de comunidades; España se destaca sola), `spainmap` (mapa por provincia o municipio, preparado para resultados electorales), `govtimeline` y `polls` (solo del especial). `stack`, `paired`, `dumbbell` y `map` vienen de Europa en datos y no se han probado aquí: si los usas, comprueba que se ven bien. Opciones en `web/src/lib/charts-config.ts`. Colores: usa tokens de `web/src/styles/global.css` (`--es` España, `--eu` UE, `--focus`, `--context`, y los de partido `--p-*` solo para partidos).
+- **Configuración de los gráficos:** `web/src/content/charts/<tema o id>.ts`. Renderizadores probados en este proyecto: `line` (series temporales; admite `series`, `seriesColors`, datos trimestrales con `quarterly`, fechas clave con `events`, etiquetas cortas con `short_labels`, línea de referencia con `ref_line`), `rank` (ranking de países de la UE o de comunidades; España se destaca sola), `spainmap` (mapa por provincia o municipio, preparado para resultados electorales), `govtimeline` y `polls` (solo del especial), `matrix` (matriz fila x columna: porcentajes con `matrixMode: "heat"` o votos a favor/en contra/abstención con `matrixMode: "votes"`). `stack`, `paired`, `dumbbell` y `map` vienen de Europa en datos y no se han probado aquí: si los usas, comprueba que se ven bien. Opciones en `web/src/lib/charts-config.ts`. Colores: usa tokens de `web/src/styles/global.css` (`--es` España, `--eu` UE, `--focus`, `--context`, y los de partido `--p-*` solo para partidos).
 - **Artículo:** `web/src/content/themes/<tema>.ts` (si ya existe como `status: "upcoming"`, sustitúyelo) con `code`, `slug`, `title`, `status: "published"`, `published` (fecha de hoy), `dek`, `lenses` (`europa`, `dentro`, `tiempo`: entradilla y cuerpo con párrafos `p("...")` y gráficos `{ fig, code: "E1" }`) y `sources` (fuentes de lo que no sale de los gráficos). Modelo: `web/src/content/themes/vivienda.ts`. Explica en la entradilla o el primer párrafo por qué el tema importa el 29N.
 - **Nota:** `web/src/content/notes/<id>.ts` con `id`, `code` (`N01`...), `slug`, `title`, `dek`, `published` (hoy), `lens`, `theme` (un tema publicado; las notas electorales van al tema `elecciones`) y `body`. Unas 250 palabras.
 - Las piezas aparecen solas en la portada, los índices, la metodología y en «Análisis de campaña» del especial.

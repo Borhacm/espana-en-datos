@@ -37,4 +37,8 @@ def pct(a: float, b: float) -> float:
 
 
 def es_num(v: float) -> str:
-    return f"{v:.0f}".replace(".", ",")
+    """Entero redondeando los empates hacia arriba (62,5 -> 63), igual que el navegador (Intl.NumberFormat).
+    El redondeo por defecto de Python lleva los empates al par (62,5 -> 62) y el texto no cuadraría con el gráfico."""
+    from decimal import ROUND_HALF_UP, Decimal
+
+    return str(Decimal(str(v)).quantize(Decimal("1"), rounding=ROUND_HALF_UP))

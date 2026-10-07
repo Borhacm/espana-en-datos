@@ -61,6 +61,26 @@ const CUSTOM: Record<string, (chart: ChartData) => Pivot> = {
       })),
     };
   },
+  matrix(chart) {
+    const cols: string[] = chart.blocs;
+    const votes = chart.rows.some((r) => r.vote);
+    const VOTE: Record<string, string> = { si: "A favor", no: "En contra", abst: "Abstención" };
+    const rowKeys: string[] = votes ? [...new Set(chart.rows.map((r) => r.row as string))] : cols;
+    const cell = new Map(chart.rows.map((r) => [`${r.row}|${r.col}`, r]));
+    return {
+      rowHeader: votes ? "Decreto-ley" : "Partido",
+      cols: cols.map((c) => ({ key: c, label: c })),
+      rows: rowKeys.map((rk) => ({
+        key: rk,
+        label: votes ? `RDL ${rk} (${cell.get(`${rk}|${cols[0]}`)?.date ?? ""})` : rk,
+        cells: cols.map((c) => {
+          const r = cell.get(`${rk}|${c}`);
+          if (!r) return votes ? "–" : rk === c ? "–" : null;
+          return votes ? VOTE[r.vote] : n(r.value);
+        }),
+      })),
+    };
+  },
   spainmap(chart) {
     const rows = chart.rows.filter((r) => r.level === "provincia").sort((a, b) => a.name.localeCompare(b.name, "es"));
     return {

@@ -1,0 +1,186 @@
+{
+ "id": "cg2-lado-ganador",
+ "lens": "tiempo",
+ "theme": "congreso",
+ "title": {
+  "es": "El PSOE ha quedado en el lado ganador en el 84 % de las votaciones; el PP, en el 68 %"
+ },
+ "subtitle": {
+  "es": "Porcentaje de votaciones en las que cada partido votó lo mismo que el resultado final, por trimestre"
+ },
+ "unit": {
+  "es": "% de votaciones"
+ },
+ "source": {
+  "name": "Congreso de los Diputados, datos abiertos de votaciones",
+  "url": "https://www.congreso.es/es/opendata/votaciones",
+  "license": "Reutilización libre citando la fuente (aviso legal del Congreso)",
+  "dataset": "Votaciones nominales del Pleno, XV legislatura"
+ },
+ "notes": {
+  "es": [
+   "Gana quien vota sí y la votación sale adelante, o vota no y no sale. Las abstenciones no cuentan.",
+   "Resultado por mayoría simple (más síes que noes). Las leyes orgánicas necesitan mayoría absoluta en la votación final; aquí se tratan igual, así que el dato es aproximado en esas votaciones.",
+   "Trimestres con al menos 10 votaciones."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "quarterly": true,
+ "short_labels": {
+  "PSOE": "PSOE",
+  "PP": "PP"
+ },
+ "ref_line": {
+  "value": 50,
+  "label": {
+   "es": "50 %"
+  }
+ },
+ "rows": [
+  {
+   "time": 2023.75,
+   "series": "PSOE",
+   "value": 100.0,
+   "n": 25
+  },
+  {
+   "time": 2023.75,
+   "series": "PP",
+   "value": 53.8,
+   "n": 26
+  },
+  {
+   "time": 2024.0,
+   "series": "PSOE",
+   "value": 91.2,
+   "n": 136
+  },
+  {
+   "time": 2024.0,
+   "series": "PP",
+   "value": 59.2,
+   "n": 125
+  },
+  {
+   "time": 2024.25,
+   "series": "PSOE",
+   "value": 87.4,
+   "n": 230
+  },
+  {
+   "time": 2024.25,
+   "series": "PP",
+   "value": 74.3,
+   "n": 230
+  },
+  {
+   "time": 2024.5,
+   "series": "PSOE",
+   "value": 94.4,
+   "n": 126
+  },
+  {
+   "time": 2024.5,
+   "series": "PP",
+   "value": 57.8,
+   "n": 109
+  },
+  {
+   "time": 2024.75,
+   "series": "PSOE",
+   "value": 84.2,
+   "n": 303
+  },
+  {
+   "time": 2024.75,
+   "series": "PP",
+   "value": 60.9,
+   "n": 299
+  },
+  {
+   "time": 2025.0,
+   "series": "PSOE",
+   "value": 85.5,
+   "n": 166
+  },
+  {
+   "time": 2025.0,
+   "series": "PP",
+   "value": 60.3,
+   "n": 151
+  },
+  {
+   "time": 2025.25,
+   "series": "PSOE",
+   "value": 78.5,
+   "n": 130
+  },
+  {
+   "time": 2025.25,
+   "series": "PP",
+   "value": 71.3,
+   "n": 115
+  },
+  {
+   "time": 2025.5,
+   "series": "PSOE",
+   "value": 80.9,
+   "n": 68
+  },
+  {
+   "time": 2025.5,
+   "series": "PP",
+   "value": 70.8,
+   "n": 72
+  },
+  {
+   "time": 2025.75,
+   "series": "PP",
+   "value": 64.1,
+   "n": 326
+  },
+  {
+   "time": 2025.75,
+   "series": "PSOE",
+   "value": 86.5,
+   "n": 333
+  },
+  {
+   "time": 2026.0,
+   "series": "PSOE",
+   "value": 73.9,
+   "n": 142
+  },
+  {
+   "time": 2026.0,
+   "series": "PP",
+   "value": 79.5,
+   "n": 132
+  },
+  {
+   "time": 2026.25,
+   "series": "PSOE",
+   "value": 71.1,
+   "n": 173
+  },
+  {
+   "time": 2026.25,
+   "series": "PP",
+   "value": 75.3,
+   "n": 174
+  },
+  {
+   "time": 2026.5,
+   "series": "PSOE",
+   "value": 81.1,
+   "n": 175
+  },
+  {
+   "time": 2026.5,
+   "series": "PP",
+   "value": 79.4,
+   "n": 180
+  }
+ ]
+}

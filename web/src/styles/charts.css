@@ -121,3 +121,10 @@ figure.veda .plot, figure.veda .legend, figure.veda .controls, figure.veda .tabl
 .event-line { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 3; }
 .event-num { fill: var(--ink-2); font-size: 12px; font-weight: 700; }
 .event-list { margin: 0.5rem 0 0; padding-left: 1.3rem; font-size: 0.88rem; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 0.2rem 1.6rem; }
+
+/* Matrices */
+.matrix .matrix-diag { fill: var(--wash); }
+.matrix .matrix-empty { fill: none; stroke: var(--rule); stroke-dasharray: 2 2; }
+.matrix .matrix-val { font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; pointer-events: none; }
+.matrix .matrix-cell { outline: none; }
+.matrix .matrix-cell:hover rect, .matrix .matrix-cell:focus-visible rect { stroke: var(--ink); stroke-width: 1.5; }

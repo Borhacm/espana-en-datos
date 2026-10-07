@@ -1,0 +1,927 @@
+{
+ "id": "cg1-coincidencias",
+ "lens": "tiempo",
+ "theme": "congreso",
+ "title": {
+  "es": "PP y PSOE votaron lo mismo en el 39 % de las votaciones de la legislatura"
+ },
+ "subtitle": {
+  "es": "Porcentaje de votaciones nominales del Pleno en que dos partidos votaron igual (2.173 votaciones, del 19 de septiembre de 2023 al 30 de septiembre de 2026)"
+ },
+ "unit": {
+  "es": "% de votaciones con el mismo voto"
+ },
+ "source": {
+  "name": "Congreso de los Diputados, datos abiertos de votaciones",
+  "url": "https://www.congreso.es/es/opendata/votaciones",
+  "license": "Reutilización libre citando la fuente (aviso legal del Congreso)",
+  "dataset": "Votaciones nominales del Pleno, XV legislatura"
+ },
+ "notes": {
+  "es": [
+   "Voto de un partido: la opción (sí, no o abstención) que eligió la mayoría de sus diputados presentes.",
+   "Cuentan las votaciones en las que los dos partidos votaron. Todas pesan igual: una moción pesa lo mismo que una ley.",
+   "Podemos formó parte del grupo de Sumar hasta diciembre de 2023: hasta entonces cuenta como Sumar.",
+   "BNG, CC, UPN y Podemos están en el Grupo Mixto: se separan por diputado."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "blocs": [
+  "PP",
+  "PSOE",
+  "Vox",
+  "Sumar",
+  "ERC",
+  "Junts",
+  "EH Bildu",
+  "PNV",
+  "Podemos",
+  "BNG",
+  "CC",
+  "UPN"
+ ],
+ "most": [
+  {
+   "a": "PP",
+   "b": "UPN",
+   "value": 91.1
+  },
+  {
+   "a": "EH Bildu",
+   "b": "ERC",
+   "value": 84.7
+  },
+  {
+   "a": "PSOE",
+   "b": "Sumar",
+   "value": 83.1
+  }
+ ],
+ "rows": [
+  {
+   "row": "PP",
+   "col": "PP",
+   "value": 100.0,
+   "n": 2171
+  },
+  {
+   "row": "PP",
+   "col": "PSOE",
+   "value": 38.8,
+   "n": 2171
+  },
+  {
+   "row": "PP",
+   "col": "Vox",
+   "value": 62.5,
+   "n": 2171
+  },
+  {
+   "row": "PP",
+   "col": "Sumar",
+   "value": 31.5,
+   "n": 2171
+  },
+  {
+   "row": "PP",
+   "col": "ERC",
+   "value": 26.1,
+   "n": 2167
+  },
+  {
+   "row": "PP",
+   "col": "Junts",
+   "value": 38.1,
+   "n": 2150
+  },
+  {
+   "row": "PP",
+   "col": "EH Bildu",
+   "value": 22.8,
+   "n": 2165
+  },
+  {
+   "row": "PP",
+   "col": "PNV",
+   "value": 37.6,
+   "n": 2145
+  },
+  {
+   "row": "PP",
+   "col": "Podemos",
+   "value": 27.3,
+   "n": 2158
+  },
+  {
+   "row": "PP",
+   "col": "BNG",
+   "value": 27.5,
+   "n": 2075
+  },
+  {
+   "row": "PP",
+   "col": "CC",
+   "value": 45.1,
+   "n": 2160
+  },
+  {
+   "row": "PP",
+   "col": "UPN",
+   "value": 91.1,
+   "n": 2123
+  },
+  {
+   "row": "PSOE",
+   "col": "PP",
+   "value": 38.8,
+   "n": 2171
+  },
+  {
+   "row": "PSOE",
+   "col": "PSOE",
+   "value": 100.0,
+   "n": 2173
+  },
+  {
+   "row": "PSOE",
+   "col": "Vox",
+   "value": 29.7,
+   "n": 2171
+  },
+  {
+   "row": "PSOE",
+   "col": "Sumar",
+   "value": 83.1,
+   "n": 2173
+  },
+  {
+   "row": "PSOE",
+   "col": "ERC",
+   "value": 64.8,
+   "n": 2169
+  },
+  {
+   "row": "PSOE",
+   "col": "Junts",
+   "value": 62.2,
+   "n": 2152
+  },
+  {
+   "row": "PSOE",
+   "col": "EH Bildu",
+   "value": 66.9,
+   "n": 2167
+  },
+  {
+   "row": "PSOE",
+   "col": "PNV",
+   "value": 74.8,
+   "n": 2147
+  },
+  {
+   "row": "PSOE",
+   "col": "Podemos",
+   "value": 67.4,
+   "n": 2160
+  },
+  {
+   "row": "PSOE",
+   "col": "BNG",
+   "value": 61.9,
+   "n": 2077
+  },
+  {
+   "row": "PSOE",
+   "col": "CC",
+   "value": 74.7,
+   "n": 2162
+  },
+  {
+   "row": "PSOE",
+   "col": "UPN",
+   "value": 41.8,
+   "n": 2123
+  },
+  {
+   "row": "Vox",
+   "col": "PP",
+   "value": 62.5,
+   "n": 2171
+  },
+  {
+   "row": "Vox",
+   "col": "PSOE",
+   "value": 29.7,
+   "n": 2171
+  },
+  {
+   "row": "Vox",
+   "col": "Vox",
+   "value": 100.0,
+   "n": 2171
+  },
+  {
+   "row": "Vox",
+   "col": "Sumar",
+   "value": 21.7,
+   "n": 2171
+  },
+  {
+   "row": "Vox",
+   "col": "ERC",
+   "value": 16.9,
+   "n": 2167
+  },
+  {
+   "row": "Vox",
+   "col": "Junts",
+   "value": 28.9,
+   "n": 2150
+  },
+  {
+   "row": "Vox",
+   "col": "EH Bildu",
+   "value": 15.3,
+   "n": 2165
+  },
+  {
+   "row": "Vox",
+   "col": "PNV",
+   "value": 27.5,
+   "n": 2145
+  },
+  {
+   "row": "Vox",
+   "col": "Podemos",
+   "value": 18.5,
+   "n": 2158
+  },
+  {
+   "row": "Vox",
+   "col": "BNG",
+   "value": 18.8,
+   "n": 2075
+  },
+  {
+   "row": "Vox",
+   "col": "CC",
+   "value": 33.9,
+   "n": 2160
+  },
+  {
+   "row": "Vox",
+   "col": "UPN",
+   "value": 61.2,
+   "n": 2123
+  },
+  {
+   "row": "Sumar",
+   "col": "PP",
+   "value": 31.5,
+   "n": 2171
+  },
+  {
+   "row": "Sumar",
+   "col": "PSOE",
+   "value": 83.1,
+   "n": 2173
+  },
+  {
+   "row": "Sumar",
+   "col": "Vox",
+   "value": 21.7,
+   "n": 2171
+  },
+  {
+   "row": "Sumar",
+   "col": "Sumar",
+   "value": 100.0,
+   "n": 2173
+  },
+  {
+   "row": "Sumar",
+   "col": "ERC",
+   "value": 73.0,
+   "n": 2169
+  },
+  {
+   "row": "Sumar",
+   "col": "Junts",
+   "value": 60.2,
+   "n": 2152
+  },
+  {
+   "row": "Sumar",
+   "col": "EH Bildu",
+   "value": 78.7,
+   "n": 2167
+  },
+  {
+   "row": "Sumar",
+   "col": "PNV",
+   "value": 70.0,
+   "n": 2147
+  },
+  {
+   "row": "Sumar",
+   "col": "Podemos",
+   "value": 78.7,
+   "n": 2160
+  },
+  {
+   "row": "Sumar",
+   "col": "BNG",
+   "value": 69.8,
+   "n": 2077
+  },
+  {
+   "row": "Sumar",
+   "col": "CC",
+   "value": 66.7,
+   "n": 2162
+  },
+  {
+   "row": "Sumar",
+   "col": "UPN",
+   "value": 33.8,
+   "n": 2123
+  },
+  {
+   "row": "ERC",
+   "col": "PP",
+   "value": 26.1,
+   "n": 2167
+  },
+  {
+   "row": "ERC",
+   "col": "PSOE",
+   "value": 64.8,
+   "n": 2169
+  },
+  {
+   "row": "ERC",
+   "col": "Vox",
+   "value": 16.9,
+   "n": 2167
+  },
+  {
+   "row": "ERC",
+   "col": "Sumar",
+   "value": 73.0,
+   "n": 2169
+  },
+  {
+   "row": "ERC",
+   "col": "ERC",
+   "value": 100.0,
+   "n": 2169
+  },
+  {
+   "row": "ERC",
+   "col": "Junts",
+   "value": 66.9,
+   "n": 2148
+  },
+  {
+   "row": "ERC",
+   "col": "EH Bildu",
+   "value": 84.7,
+   "n": 2167
+  },
+  {
+   "row": "ERC",
+   "col": "PNV",
+   "value": 64.1,
+   "n": 2143
+  },
+  {
+   "row": "ERC",
+   "col": "Podemos",
+   "value": 79.1,
+   "n": 2156
+  },
+  {
+   "row": "ERC",
+   "col": "BNG",
+   "value": 80.7,
+   "n": 2077
+  },
+  {
+   "row": "ERC",
+   "col": "CC",
+   "value": 59.4,
+   "n": 2158
+  },
+  {
+   "row": "ERC",
+   "col": "UPN",
+   "value": 29.0,
+   "n": 2119
+  },
+  {
+   "row": "Junts",
+   "col": "PP",
+   "value": 38.1,
+   "n": 2150
+  },
+  {
+   "row": "Junts",
+   "col": "PSOE",
+   "value": 62.2,
+   "n": 2152
+  },
+  {
+   "row": "Junts",
+   "col": "Vox",
+   "value": 28.9,
+   "n": 2150
+  },
+  {
+   "row": "Junts",
+   "col": "Sumar",
+   "value": 60.2,
+   "n": 2152
+  },
+  {
+   "row": "Junts",
+   "col": "ERC",
+   "value": 66.9,
+   "n": 2148
+  },
+  {
+   "row": "Junts",
+   "col": "Junts",
+   "value": 100.0,
+   "n": 2152
+  },
+  {
+   "row": "Junts",
+   "col": "EH Bildu",
+   "value": 64.1,
+   "n": 2147
+  },
+  {
+   "row": "Junts",
+   "col": "PNV",
+   "value": 67.1,
+   "n": 2126
+  },
+  {
+   "row": "Junts",
+   "col": "Podemos",
+   "value": 59.2,
+   "n": 2139
+  },
+  {
+   "row": "Junts",
+   "col": "BNG",
+   "value": 61.9,
+   "n": 2056
+  },
+  {
+   "row": "Junts",
+   "col": "CC",
+   "value": 60.3,
+   "n": 2141
+  },
+  {
+   "row": "Junts",
+   "col": "UPN",
+   "value": 39.6,
+   "n": 2102
+  },
+  {
+   "row": "EH Bildu",
+   "col": "PP",
+   "value": 22.8,
+   "n": 2165
+  },
+  {
+   "row": "EH Bildu",
+   "col": "PSOE",
+   "value": 66.9,
+   "n": 2167
+  },
+  {
+   "row": "EH Bildu",
+   "col": "Vox",
+   "value": 15.3,
+   "n": 2165
+  },
+  {
+   "row": "EH Bildu",
+   "col": "Sumar",
+   "value": 78.7,
+   "n": 2167
+  },
+  {
+   "row": "EH Bildu",
+   "col": "ERC",
+   "value": 84.7,
+   "n": 2167
+  },
+  {
+   "row": "EH Bildu",
+   "col": "Junts",
+   "value": 64.1,
+   "n": 2147
+  },
+  {
+   "row": "EH Bildu",
+   "col": "EH Bildu",
+   "value": 100.0,
+   "n": 2167
+  },
+  {
+   "row": "EH Bildu",
+   "col": "PNV",
+   "value": 64.1,
+   "n": 2141
+  },
+  {
+   "row": "EH Bildu",
+   "col": "Podemos",
+   "value": 80.7,
+   "n": 2154
+  },
+  {
+   "row": "EH Bildu",
+   "col": "BNG",
+   "value": 76.1,
+   "n": 2076
+  },
+  {
+   "row": "EH Bildu",
+   "col": "CC",
+   "value": 57.1,
+   "n": 2156
+  },
+  {
+   "row": "EH Bildu",
+   "col": "UPN",
+   "value": 25.7,
+   "n": 2117
+  },
+  {
+   "row": "PNV",
+   "col": "PP",
+   "value": 37.6,
+   "n": 2145
+  },
+  {
+   "row": "PNV",
+   "col": "PSOE",
+   "value": 74.8,
+   "n": 2147
+  },
+  {
+   "row": "PNV",
+   "col": "Vox",
+   "value": 27.5,
+   "n": 2145
+  },
+  {
+   "row": "PNV",
+   "col": "Sumar",
+   "value": 70.0,
+   "n": 2147
+  },
+  {
+   "row": "PNV",
+   "col": "ERC",
+   "value": 64.1,
+   "n": 2143
+  },
+  {
+   "row": "PNV",
+   "col": "Junts",
+   "value": 67.1,
+   "n": 2126
+  },
+  {
+   "row": "PNV",
+   "col": "EH Bildu",
+   "value": 64.1,
+   "n": 2141
+  },
+  {
+   "row": "PNV",
+   "col": "PNV",
+   "value": 100.0,
+   "n": 2147
+  },
+  {
+   "row": "PNV",
+   "col": "Podemos",
+   "value": 60.5,
+   "n": 2134
+  },
+  {
+   "row": "PNV",
+   "col": "BNG",
+   "value": 62.9,
+   "n": 2052
+  },
+  {
+   "row": "PNV",
+   "col": "CC",
+   "value": 71.5,
+   "n": 2137
+  },
+  {
+   "row": "PNV",
+   "col": "UPN",
+   "value": 41.1,
+   "n": 2097
+  },
+  {
+   "row": "Podemos",
+   "col": "PP",
+   "value": 27.3,
+   "n": 2158
+  },
+  {
+   "row": "Podemos",
+   "col": "PSOE",
+   "value": 67.4,
+   "n": 2160
+  },
+  {
+   "row": "Podemos",
+   "col": "Vox",
+   "value": 18.5,
+   "n": 2158
+  },
+  {
+   "row": "Podemos",
+   "col": "Sumar",
+   "value": 78.7,
+   "n": 2160
+  },
+  {
+   "row": "Podemos",
+   "col": "ERC",
+   "value": 79.1,
+   "n": 2156
+  },
+  {
+   "row": "Podemos",
+   "col": "Junts",
+   "value": 59.2,
+   "n": 2139
+  },
+  {
+   "row": "Podemos",
+   "col": "EH Bildu",
+   "value": 80.7,
+   "n": 2154
+  },
+  {
+   "row": "Podemos",
+   "col": "PNV",
+   "value": 60.5,
+   "n": 2134
+  },
+  {
+   "row": "Podemos",
+   "col": "Podemos",
+   "value": 100.0,
+   "n": 2160
+  },
+  {
+   "row": "Podemos",
+   "col": "BNG",
+   "value": 75.5,
+   "n": 2064
+  },
+  {
+   "row": "Podemos",
+   "col": "CC",
+   "value": 58.4,
+   "n": 2149
+  },
+  {
+   "row": "Podemos",
+   "col": "UPN",
+   "value": 29.9,
+   "n": 2110
+  },
+  {
+   "row": "BNG",
+   "col": "PP",
+   "value": 27.5,
+   "n": 2075
+  },
+  {
+   "row": "BNG",
+   "col": "PSOE",
+   "value": 61.9,
+   "n": 2077
+  },
+  {
+   "row": "BNG",
+   "col": "Vox",
+   "value": 18.8,
+   "n": 2075
+  },
+  {
+   "row": "BNG",
+   "col": "Sumar",
+   "value": 69.8,
+   "n": 2077
+  },
+  {
+   "row": "BNG",
+   "col": "ERC",
+   "value": 80.7,
+   "n": 2077
+  },
+  {
+   "row": "BNG",
+   "col": "Junts",
+   "value": 61.9,
+   "n": 2056
+  },
+  {
+   "row": "BNG",
+   "col": "EH Bildu",
+   "value": 76.1,
+   "n": 2076
+  },
+  {
+   "row": "BNG",
+   "col": "PNV",
+   "value": 62.9,
+   "n": 2052
+  },
+  {
+   "row": "BNG",
+   "col": "Podemos",
+   "value": 75.5,
+   "n": 2064
+  },
+  {
+   "row": "BNG",
+   "col": "BNG",
+   "value": 100.0,
+   "n": 2077
+  },
+  {
+   "row": "BNG",
+   "col": "CC",
+   "value": 59.2,
+   "n": 2066
+  },
+  {
+   "row": "BNG",
+   "col": "UPN",
+   "value": 31.3,
+   "n": 2030
+  },
+  {
+   "row": "CC",
+   "col": "PP",
+   "value": 45.1,
+   "n": 2160
+  },
+  {
+   "row": "CC",
+   "col": "PSOE",
+   "value": 74.7,
+   "n": 2162
+  },
+  {
+   "row": "CC",
+   "col": "Vox",
+   "value": 33.9,
+   "n": 2160
+  },
+  {
+   "row": "CC",
+   "col": "Sumar",
+   "value": 66.7,
+   "n": 2162
+  },
+  {
+   "row": "CC",
+   "col": "ERC",
+   "value": 59.4,
+   "n": 2158
+  },
+  {
+   "row": "CC",
+   "col": "Junts",
+   "value": 60.3,
+   "n": 2141
+  },
+  {
+   "row": "CC",
+   "col": "EH Bildu",
+   "value": 57.1,
+   "n": 2156
+  },
+  {
+   "row": "CC",
+   "col": "PNV",
+   "value": 71.5,
+   "n": 2137
+  },
+  {
+   "row": "CC",
+   "col": "Podemos",
+   "value": 58.4,
+   "n": 2149
+  },
+  {
+   "row": "CC",
+   "col": "BNG",
+   "value": 59.2,
+   "n": 2066
+  },
+  {
+   "row": "CC",
+   "col": "CC",
+   "value": 100.0,
+   "n": 2162
+  },
+  {
+   "row": "CC",
+   "col": "UPN",
+   "value": 50.2,
+   "n": 2112
+  },
+  {
+   "row": "UPN",
+   "col": "PP",
+   "value": 91.1,
+   "n": 2123
+  },
+  {
+   "row": "UPN",
+   "col": "PSOE",
+   "value": 41.8,
+   "n": 2123
+  },
+  {
+   "row": "UPN",
+   "col": "Vox",
+   "value": 61.2,
+   "n": 2123
+  },
+  {
+   "row": "UPN",
+   "col": "Sumar",
+   "value": 33.8,
+   "n": 2123
+  },
+  {
+   "row": "UPN",
+   "col": "ERC",
+   "value": 29.0,
+   "n": 2119
+  },
+  {
+   "row": "UPN",
+   "col": "Junts",
+   "value": 39.6,
+   "n": 2102
+  },
+  {
+   "row": "UPN",
+   "col": "EH Bildu",
+   "value": 25.7,
+   "n": 2117
+  },
+  {
+   "row": "UPN",
+   "col": "PNV",
+   "value": 41.1,
+   "n": 2097
+  },
+  {
+   "row": "UPN",
+   "col": "Podemos",
+   "value": 29.9,
+   "n": 2110
+  },
+  {
+   "row": "UPN",
+   "col": "BNG",
+   "value": 31.3,
+   "n": 2030
+  },
+  {
+   "row": "UPN",
+   "col": "CC",
+   "value": 50.2,
+   "n": 2112
+  },
+  {
+   "row": "UPN",
+   "col": "UPN",
+   "value": 100.0,
+   "n": 2123
+  }
+ ]
+}

@@ -61,6 +61,12 @@ const PRINCIPLES = [
     <Blocks lang="es" blocks={lenses.dentro.body} codePrefix={theme.code} />
   </section>
 
+  <section class="wrap part" aria-labelledby="cg-h">
+    <h2 id="cg-h">La legislatura en el Congreso</h2>
+    <p class="lede">Cómo han votado los partidos desde 2023: quién coincide con quién y qué decretos cayeron.</p>
+    <LinkList items={[{ href: paths.congress.es, title: "El Congreso en datos", dek: themeById("congreso")?.dek?.es }]} />
+  </section>
+
   {pieces.length > 0 && (
     <section class="wrap part" id="piezas" aria-labelledby="notes-h">
       <h2 id="notes-h">Análisis de campaña</h2>
