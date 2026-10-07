@@ -21,7 +21,7 @@ git status --short          # debe estar vacío; si no, para y explica qué hay
 git checkout main
 ```
 
-El repositorio es local (sin GitHub). La web se publica con la CLI de Vercel desde `web/` (paso 9).
+El repositorio tiene una copia privada en GitHub (`Borhacm/espana-en-datos`, rama `main`) que sirve solo de respaldo: GitHub no publica nada. La web se publica con la CLI de Vercel desde `web/` (paso 9).
 
 ## 2. Actualizar las encuestas (cada ejecución, salvo en veda)
 
@@ -97,7 +97,8 @@ cd web && npm run build && npm run check
 
 1. Marca la entrada como `estado: hecha` en `editorial/calendario.yaml`.
 2. Commit en `main`: `git add -A && git commit -m "<Nota|Artículo> <id>: <título>"` y, en una línea aparte al final del mensaje, `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Si solo has actualizado encuestas: `Encuestas: actualización del <fecha>`.
-3. Publica desde `web/` (el build sincroniza `../data`, por eso no se compila en remoto):
+3. Copia de seguridad: `git push origin main`. Si falla (por ejemplo, sin conexión con GitHub), sigue y dilo en el resumen.
+4. Publica desde `web/` (el build sincroniza `../data`, por eso no se compila en remoto):
 
 ```bash
 cd /Users/bcm/espana-en-datos/web
