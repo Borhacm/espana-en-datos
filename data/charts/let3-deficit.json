@@ -1,0 +1,227 @@
+{
+ "id": "let3-deficit",
+ "lens": "tiempo",
+ "theme": "legislatura",
+ "title": {
+  "es": "El déficit público baja al 2,4 % del PIB en 2025, por debajo de la media de la UE (3,1 %)"
+ },
+ "subtitle": {
+  "es": "Déficit de las administraciones públicas, en % del PIB, 2008-2025"
+ },
+ "unit": {
+  "es": "% del PIB"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10dd_edpt1",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Necesidad de financiación de las administraciones públicas (Estado, comunidades, ayuntamientos y Seguridad Social), según el Protocolo de Déficit Excesivo. Un valor negativo sería superávit.",
+   "Años con un déficit de España menor que el de la media de la UE: 2023, 2025.",
+   "El déficit de 2025 es el más bajo de España desde 2008, el primer año del gráfico."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España"
+   },
+   "ue": {
+    "es": "UE"
+   }
+  }
+ },
+ "ref_line": {
+  "value": 3,
+  "label": {
+   "es": "Referencia UE: 3 %"
+  }
+ },
+ "rows": [
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 4.6
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 11.2
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 9.5
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 9.7
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 11.5
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 7.5
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 6.0
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 5.3
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 4.2
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 3.1
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 2.6
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 3.1
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 9.9
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 6.7
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 4.6
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 3.3
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 3.2
+  },
+  {
+   "time": "2025",
+   "series": "espana",
+   "value": 2.4
+  },
+  {
+   "time": "2008",
+   "series": "ue",
+   "value": 2.1
+  },
+  {
+   "time": "2009",
+   "series": "ue",
+   "value": 6.1
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 6.0
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 4.1
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 3.7
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 3.1
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 2.4
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 1.9
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 1.4
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 0.9
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 0.4
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 0.5
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 6.7
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 4.6
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 3.2
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 3.4
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 3.1
+  },
+  {
+   "time": "2025",
+   "series": "ue",
+   "value": 3.1
+  }
+ ]
+}

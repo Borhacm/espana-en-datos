@@ -17317,7 +17317,7 @@
   },
   {
    "pollster": "Winston",
-   "commissioner": "Artículo 14",
+   "commissioner": "Artículo14",
    "fieldwork": "29 Sep–1 Oct",
    "date": "2026-10-01",
    "sample": 1201,
@@ -17477,5 +17477,5 @@
    }
   }
  ],
- "retrieved": "2026-10-05"
+ "retrieved": "2026-10-07"
 }

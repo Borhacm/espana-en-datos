@@ -1,0 +1,273 @@
+{
+ "id": "led2-empleo-comunidades",
+ "lens": "dentro",
+ "theme": "legislatura",
+ "title": {
+  "es": "El número de ocupados ha crecido un 6,1 % desde 2023: del 10,3 % de Asturias al 0,9 % del País Vasco"
+ },
+ "subtitle": {
+  "es": "Variación de los ocupados entre la media de 2023 y la de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 1,3 millones de ocupados más"
+ },
+ "unit": {
+  "es": "% de variación"
+ },
+ "source": {
+  "name": "INE, Encuesta de Población Activa",
+  "dataset": "Tablas 65334 y 65302",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65334",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa: personas de 16 años y más que trabajaron al menos una hora en la semana de referencia. Cuenta personas, no contratos ni afiliaciones a la Seguridad Social.",
+   "Media de los últimos cuatro trimestres frente a la media de 2023. «thousands» y «prev_thousands» en la descarga: ocupados en miles.",
+   "Parte de la diferencia entre comunidades se debe a cuánto crece su población: este dato no es una tasa.",
+   "La EPA es una encuesta: en las comunidades menos pobladas el error de muestreo es mayor, así que las diferencias pequeñas entre ellas no son significativas. Ceuta y Melilla tienen muestras muy pequeñas."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026Q2",
+   "value": 7.4,
+   "thousands": 3634.5,
+   "prev_thousands": 3383.8
+  },
+  {
+   "geo": "02",
+   "time": "2026Q2",
+   "value": 3.9,
+   "thousands": 635.3,
+   "prev_thousands": 611.3
+  },
+  {
+   "geo": "03",
+   "time": "2026Q2",
+   "value": 10.3,
+   "thousands": 432.8,
+   "prev_thousands": 392.5
+  },
+  {
+   "geo": "04",
+   "time": "2026Q2",
+   "value": 7.8,
+   "thousands": 635.7,
+   "prev_thousands": 589.6
+  },
+  {
+   "geo": "05",
+   "time": "2026Q2",
+   "value": 7.1,
+   "thousands": 1036.9,
+   "prev_thousands": 968.4
+  },
+  {
+   "geo": "06",
+   "time": "2026Q2",
+   "value": 4.7,
+   "thousands": 266.8,
+   "prev_thousands": 254.9
+  },
+  {
+   "geo": "07",
+   "time": "2026Q2",
+   "value": 3.8,
+   "thousands": 1049.8,
+   "prev_thousands": 1011.4
+  },
+  {
+   "geo": "08",
+   "time": "2026Q2",
+   "value": 5.8,
+   "thousands": 947.3,
+   "prev_thousands": 895.1
+  },
+  {
+   "geo": "09",
+   "time": "2026Q2",
+   "value": 5.3,
+   "thousands": 3932.2,
+   "prev_thousands": 3734.5
+  },
+  {
+   "geo": "10",
+   "time": "2026Q2",
+   "value": 7.2,
+   "thousands": 2469.8,
+   "prev_thousands": 2304.1
+  },
+  {
+   "geo": "11",
+   "time": "2026Q2",
+   "value": 4.7,
+   "thousands": 434.9,
+   "prev_thousands": 415.2
+  },
+  {
+   "geo": "12",
+   "time": "2026Q2",
+   "value": 4.5,
+   "thousands": 1179.1,
+   "prev_thousands": 1128.5
+  },
+  {
+   "geo": "13",
+   "time": "2026Q2",
+   "value": 7.4,
+   "thousands": 3575.2,
+   "prev_thousands": 3328.2
+  },
+  {
+   "geo": "14",
+   "time": "2026Q2",
+   "value": 7.4,
+   "thousands": 717.9,
+   "prev_thousands": 668.6
+  },
+  {
+   "geo": "15",
+   "time": "2026Q2",
+   "value": 5.3,
+   "thousands": 314.6,
+   "prev_thousands": 298.7
+  },
+  {
+   "geo": "16",
+   "time": "2026Q2",
+   "value": 0.9,
+   "thousands": 1004.5,
+   "prev_thousands": 995.7
+  },
+  {
+   "geo": "17",
+   "time": "2026Q2",
+   "value": 3.9,
+   "thousands": 152.3,
+   "prev_thousands": 146.6
+  },
+  {
+   "geo": "18",
+   "time": "2026Q2",
+   "value": 18.8,
+   "thousands": 33.2,
+   "prev_thousands": 27.9
+  },
+  {
+   "geo": "19",
+   "time": "2026Q2",
+   "value": 3.5,
+   "thousands": 27.8,
+   "prev_thousands": 26.9
+  },
+  {
+   "geo": "ES",
+   "time": "2026Q2",
+   "value": 6.1,
+   "thousands": 22480.6,
+   "prev_thousands": 21182.2
+  }
+ ]
+}

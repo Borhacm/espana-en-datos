@@ -1,0 +1,272 @@
+{
+ "id": "led1-paro-comunidades",
+ "lens": "dentro",
+ "theme": "legislatura",
+ "title": {
+  "es": "El paro ha bajado desde 2023 en las 17 comunidades, pero va del 7,3 % de Cantabria al 14,8 % de Andalucía"
+ },
+ "subtitle": {
+  "es": "Tasa de paro, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 10,3 % (12,2 % en 2023)"
+ },
+ "unit": {
+  "es": "% de la población activa"
+ },
+ "source": {
+  "name": "INE, Encuesta de Población Activa",
+  "dataset": "Tablas 65334 y 65302",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65334",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa, población de 16 años y más. Media de los últimos cuatro trimestres para evitar la estacionalidad (el paro sube en invierno y baja en verano).",
+   "«prev» en la descarga: media de 2023; «change»: diferencia en puntos.",
+   "Ceuta y Melilla tienen muestras pequeñas en la EPA y sus tasas varían mucho de un trimestre a otro."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026Q2",
+   "value": 14.8,
+   "prev": 18.2,
+   "change": -3.5
+  },
+  {
+   "geo": "02",
+   "time": "2026Q2",
+   "value": 8.2,
+   "prev": 8.6,
+   "change": -0.4
+  },
+  {
+   "geo": "03",
+   "time": "2026Q2",
+   "value": 8.9,
+   "prev": 12.1,
+   "change": -3.2
+  },
+  {
+   "geo": "04",
+   "time": "2026Q2",
+   "value": 8.4,
+   "prev": 10.5,
+   "change": -2.1
+  },
+  {
+   "geo": "05",
+   "time": "2026Q2",
+   "value": 12.6,
+   "prev": 16.1,
+   "change": -3.5
+  },
+  {
+   "geo": "06",
+   "time": "2026Q2",
+   "value": 7.3,
+   "prev": 8.1,
+   "change": -0.8
+  },
+  {
+   "geo": "07",
+   "time": "2026Q2",
+   "value": 8.6,
+   "prev": 9.7,
+   "change": -1.1
+  },
+  {
+   "geo": "08",
+   "time": "2026Q2",
+   "value": 12.3,
+   "prev": 13.2,
+   "change": -0.9
+  },
+  {
+   "geo": "09",
+   "time": "2026Q2",
+   "value": 8.6,
+   "prev": 9.3,
+   "change": -0.7
+  },
+  {
+   "geo": "10",
+   "time": "2026Q2",
+   "value": 11.2,
+   "prev": 12.8,
+   "change": -1.6
+  },
+  {
+   "geo": "11",
+   "time": "2026Q2",
+   "value": 13.4,
+   "prev": 17.4,
+   "change": -4.0
+  },
+  {
+   "geo": "12",
+   "time": "2026Q2",
+   "value": 8.3,
+   "prev": 9.7,
+   "change": -1.4
+  },
+  {
+   "geo": "13",
+   "time": "2026Q2",
+   "value": 7.6,
+   "prev": 10.0,
+   "change": -2.3
+  },
+  {
+   "geo": "14",
+   "time": "2026Q2",
+   "value": 11.4,
+   "prev": 12.8,
+   "change": -1.4
+  },
+  {
+   "geo": "15",
+   "time": "2026Q2",
+   "value": 8.1,
+   "prev": 9.9,
+   "change": -1.8
+  },
+  {
+   "geo": "16",
+   "time": "2026Q2",
+   "value": 7.5,
+   "prev": 7.7,
+   "change": -0.3
+  },
+  {
+   "geo": "17",
+   "time": "2026Q2",
+   "value": 8.5,
+   "prev": 9.4,
+   "change": -0.8
+  },
+  {
+   "geo": "18",
+   "time": "2026Q2",
+   "value": 24.0,
+   "prev": 30.0,
+   "change": -5.9
+  },
+  {
+   "geo": "19",
+   "time": "2026Q2",
+   "value": 22.2,
+   "prev": 26.6,
+   "change": -4.4
+  },
+  {
+   "geo": "ES",
+   "time": "2026Q2",
+   "value": 10.3,
+   "prev": 12.2,
+   "change": -1.9
+  }
+ ]
+}

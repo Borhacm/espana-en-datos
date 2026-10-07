@@ -1,0 +1,339 @@
+{
+ "id": "lee1-europa-paro",
+ "lens": "europa",
+ "theme": "legislatura",
+ "title": {
+  "es": "La tasa de paro de España baja del 12,2 % al 10,5 % entre 2023 y 2025, pero sigue siendo la más alta de la UE"
+ },
+ "subtitle": {
+  "es": "Tasa de paro de 15 a 74 años, 2025, en % de la población activa. Media de la UE: 6,0 %"
+ },
+ "unit": {
+  "es": "% de la población activa"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "une_rt_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Medias anuales de la Encuesta de Población Activa armonizada (para España, la EPA del INE). Compara 2025 con 2023, el año de las últimas generales.",
+   "«prev» en la descarga: tasa de 2023. En 2023 España también tenía la tasa más alta de los 27 países."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 5.7,
+   "prev": 5.1
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 6.2,
+   "prev": 5.5
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 3.5,
+   "prev": 4.3
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 4.4,
+   "prev": 5.8
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 2.8,
+   "prev": 2.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 3.8,
+   "prev": 3.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 6.4,
+   "prev": 5.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 10.5,
+   "prev": 12.2
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 7.5,
+   "prev": 6.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 6.0,
+   "prev": 6.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 9.7,
+   "prev": 7.2
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 7.7,
+   "prev": 7.4
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 8.9,
+   "prev": 11.1
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 4.9,
+   "prev": 6.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 4.4,
+   "prev": 4.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 4.7,
+   "prev": 4.3
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 6.1,
+   "prev": 7.7
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 6.9,
+   "prev": 6.9
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 6.5,
+   "prev": 5.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 6.9,
+   "prev": 6.5
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 3.1,
+   "prev": 3.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 3.9,
+   "prev": 3.6
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 3.1,
+   "prev": 2.8
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 6.0,
+   "prev": 6.5
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 6.1,
+   "prev": 5.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 5.4,
+   "prev": 5.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 3.9,
+   "prev": 3.7
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 8.8,
+   "prev": 7.7
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "id": "let2-salarios-precios",
+ "lens": "tiempo",
+ "theme": "legislatura",
+ "title": {
+  "es": "Entre 2023 y 2025, el salario medio sube un 7,2 % y los precios, un 5,5 %"
+ },
+ "subtitle": {
+  "es": "Índices, 2023 = 100. Salario medio por trabajador y precios de consumo, medias anuales desde 2015"
+ },
+ "unit": {
+  "es": "Índice (2023 = 100)"
+ },
+ "source": {
+  "name": "INE, Encuesta Trimestral de Coste Laboral",
+  "dataset": "Tabla 6061",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=6061",
+  "license": "Reutilización libre citando la fuente",
+  "also": [
+   {
+    "name": "INE, Índice de Precios de Consumo",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=24077"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Salario: coste salarial total por trabajador y mes (industria, construcción y servicios), media anual. Incluye pagas extra. Es una media: no dice cómo le ha ido al salario de cada persona.",
+   "Precios: IPC general, media anual.",
+   "Descontada la inflación, el salario medio de 2025 es un 1,6 % más alto que el de 2023.",
+   "Solo años completos."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "salarios": {
+    "es": "Salario medio"
+   },
+   "precios": {
+    "es": "Precios (IPC)"
+   }
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "2023"
+  }
+ },
+ "rows": [
+  {
+   "time": "2015",
+   "series": "salarios",
+   "value": 85.8
+  },
+  {
+   "time": "2016",
+   "series": "salarios",
+   "value": 85.6
+  },
+  {
+   "time": "2017",
+   "series": "salarios",
+   "value": 85.7
+  },
+  {
+   "time": "2018",
+   "series": "salarios",
+   "value": 86.6
+  },
+  {
+   "time": "2019",
+   "series": "salarios",
+   "value": 88.2
+  },
+  {
+   "time": "2020",
+   "series": "salarios",
+   "value": 85.9
+  },
+  {
+   "time": "2021",
+   "series": "salarios",
+   "value": 91.2
+  },
+  {
+   "time": "2022",
+   "series": "salarios",
+   "value": 95.4
+  },
+  {
+   "time": "2023",
+   "series": "salarios",
+   "value": 100.0
+  },
+  {
+   "time": "2024",
+   "series": "salarios",
+   "value": 103.8
+  },
+  {
+   "time": "2025",
+   "series": "salarios",
+   "value": 107.2
+  },
+  {
+   "time": "2015",
+   "series": "precios",
+   "value": 83.2
+  },
+  {
+   "time": "2016",
+   "series": "precios",
+   "value": 83.1
+  },
+  {
+   "time": "2017",
+   "series": "precios",
+   "value": 84.7
+  },
+  {
+   "time": "2018",
+   "series": "precios",
+   "value": 86.1
+  },
+  {
+   "time": "2019",
+   "series": "precios",
+   "value": 86.7
+  },
+  {
+   "time": "2020",
+   "series": "precios",
+   "value": 86.4
+  },
+  {
+   "time": "2021",
+   "series": "precios",
+   "value": 89.1
+  },
+  {
+   "time": "2022",
+   "series": "precios",
+   "value": 96.6
+  },
+  {
+   "time": "2023",
+   "series": "precios",
+   "value": 100.0
+  },
+  {
+   "time": "2024",
+   "series": "precios",
+   "value": 102.8
+  },
+  {
+   "time": "2025",
+   "series": "precios",
+   "value": 105.5
+  }
+ ]
+}

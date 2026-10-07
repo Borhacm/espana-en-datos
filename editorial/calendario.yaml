@@ -28,6 +28,7 @@ piezas:
     fecha: 2026-10-07
     tema: legislatura
     titulo: "La legislatura en datos: cómo ha cambiado España desde julio de 2023"
+    estado: hecha
     idea: empleo, paro, inflación, salarios reales, deuda y déficit públicos, comparados con la UE y por comunidades. Balance descriptivo, sin atribuir mérito o culpa.
 
   - id: a02

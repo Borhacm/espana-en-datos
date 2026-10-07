@@ -1,0 +1,340 @@
+{
+ "id": "lee2-europa-deuda",
+ "lens": "europa",
+ "theme": "legislatura",
+ "title": {
+  "es": "La deuda pública baja del 105,2 % al 100,7 % del PIB entre 2023 y 2025; en la UE pasa del 80,5 % al 81,7 %"
+ },
+ "subtitle": {
+  "es": "Deuda de las administraciones públicas, 2025, en % del PIB. España es la 5.ª más alta de 27"
+ },
+ "unit": {
+  "es": "% del PIB"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10dd_edpt1",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Deuda según el Protocolo de Déficit Excesivo (criterio de Maastricht): Estado, comunidades, ayuntamientos y Seguridad Social, a valor nominal y consolidada.",
+   "La ratio baja si la deuda crece menos que el PIB nominal: en euros, la deuda de España ha seguido subiendo.",
+   "«prev» en la descarga: deuda de 2023."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 81.5,
+   "prev": 77.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 107.9,
+   "prev": 102.5
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 29.9,
+   "prev": 22.9
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 55.0,
+   "prev": 71.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 44.3,
+   "prev": 42.2
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 63.5,
+   "prev": 62.3
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 27.9,
+   "prev": 33.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 100.7,
+   "prev": 105.2
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 24.1,
+   "prev": 20.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 81.7,
+   "prev": 80.5
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 88.5,
+   "prev": 77.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 115.6,
+   "prev": 109.5
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 146.1,
+   "prev": 164.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 56.3,
+   "prev": 60.9
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 74.6,
+   "prev": 73.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 32.9,
+   "prev": 41.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 137.1,
+   "prev": 133.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 39.5,
+   "prev": 37.1
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 26.5,
+   "prev": 24.7
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 46.9,
+   "prev": 44.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 46.4,
+   "prev": 46.9
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 44.4,
+   "prev": 45.8
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 59.7,
+   "prev": 49.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 89.7,
+   "prev": 96.9
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 59.3,
+   "prev": 49.3
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 61.4,
+   "prev": 55.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 65.7,
+   "prev": 68.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 35.1,
+   "prev": 32.2
+  }
+ ]
+}

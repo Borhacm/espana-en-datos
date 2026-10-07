@@ -1,0 +1,416 @@
+{
+ "id": "let1-paro",
+ "lens": "tiempo",
+ "theme": "legislatura",
+ "title": {
+  "es": "El paro, en el 10,3 % en el último año, está en su nivel más bajo desde 2008"
+ },
+ "subtitle": {
+  "es": "Tasa de paro trimestral desde 2008, en % de la población activa, hasta el segundo trimestre de 2026"
+ },
+ "unit": {
+  "es": "% de la población activa"
+ },
+ "source": {
+  "name": "INE, Encuesta de Población Activa",
+  "dataset": "Tablas 65334 y 65302",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65334",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa, población de 16 años y más. Datos trimestrales sin desestacionalizar: el paro sube cada primer trimestre y baja en verano.",
+   "Titular: media de los cuatro últimos trimestres (10,3 %), frente a la media de 2023 (12,2 %). La última vez que esa media estuvo igual o más baja fue en el periodo que acaba en el tercer trimestre de 2008."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "paro": {
+    "es": "Tasa de paro"
+   }
+  }
+ },
+ "quarterly": true,
+ "events": [
+  {
+   "time": 2023.5,
+   "label": {
+    "es": "Elecciones generales (23 de julio de 2023)"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "time": 2008.0,
+   "series": "paro",
+   "value": 9.6
+  },
+  {
+   "time": 2008.25,
+   "series": "paro",
+   "value": 10.36
+  },
+  {
+   "time": 2008.5,
+   "series": "paro",
+   "value": 11.23
+  },
+  {
+   "time": 2008.75,
+   "series": "paro",
+   "value": 13.79
+  },
+  {
+   "time": 2009.0,
+   "series": "paro",
+   "value": 17.24
+  },
+  {
+   "time": 2009.25,
+   "series": "paro",
+   "value": 17.77
+  },
+  {
+   "time": 2009.5,
+   "series": "paro",
+   "value": 17.75
+  },
+  {
+   "time": 2009.75,
+   "series": "paro",
+   "value": 18.66
+  },
+  {
+   "time": 2010.0,
+   "series": "paro",
+   "value": 19.84
+  },
+  {
+   "time": 2010.25,
+   "series": "paro",
+   "value": 19.89
+  },
+  {
+   "time": 2010.5,
+   "series": "paro",
+   "value": 19.59
+  },
+  {
+   "time": 2010.75,
+   "series": "paro",
+   "value": 20.11
+  },
+  {
+   "time": 2011.0,
+   "series": "paro",
+   "value": 21.08
+  },
+  {
+   "time": 2011.25,
+   "series": "paro",
+   "value": 20.64
+  },
+  {
+   "time": 2011.5,
+   "series": "paro",
+   "value": 21.28
+  },
+  {
+   "time": 2011.75,
+   "series": "paro",
+   "value": 22.56
+  },
+  {
+   "time": 2012.0,
+   "series": "paro",
+   "value": 24.19
+  },
+  {
+   "time": 2012.25,
+   "series": "paro",
+   "value": 24.4
+  },
+  {
+   "time": 2012.5,
+   "series": "paro",
+   "value": 24.79
+  },
+  {
+   "time": 2012.75,
+   "series": "paro",
+   "value": 25.77
+  },
+  {
+   "time": 2013.0,
+   "series": "paro",
+   "value": 26.94
+  },
+  {
+   "time": 2013.25,
+   "series": "paro",
+   "value": 26.06
+  },
+  {
+   "time": 2013.5,
+   "series": "paro",
+   "value": 25.65
+  },
+  {
+   "time": 2013.75,
+   "series": "paro",
+   "value": 25.73
+  },
+  {
+   "time": 2014.0,
+   "series": "paro",
+   "value": 25.93
+  },
+  {
+   "time": 2014.25,
+   "series": "paro",
+   "value": 24.47
+  },
+  {
+   "time": 2014.5,
+   "series": "paro",
+   "value": 23.67
+  },
+  {
+   "time": 2014.75,
+   "series": "paro",
+   "value": 23.7
+  },
+  {
+   "time": 2015.0,
+   "series": "paro",
+   "value": 23.78
+  },
+  {
+   "time": 2015.25,
+   "series": "paro",
+   "value": 22.37
+  },
+  {
+   "time": 2015.5,
+   "series": "paro",
+   "value": 21.18
+  },
+  {
+   "time": 2015.75,
+   "series": "paro",
+   "value": 20.9
+  },
+  {
+   "time": 2016.0,
+   "series": "paro",
+   "value": 21.0
+  },
+  {
+   "time": 2016.25,
+   "series": "paro",
+   "value": 20.0
+  },
+  {
+   "time": 2016.5,
+   "series": "paro",
+   "value": 18.91
+  },
+  {
+   "time": 2016.75,
+   "series": "paro",
+   "value": 18.63
+  },
+  {
+   "time": 2017.0,
+   "series": "paro",
+   "value": 18.75
+  },
+  {
+   "time": 2017.25,
+   "series": "paro",
+   "value": 17.22
+  },
+  {
+   "time": 2017.5,
+   "series": "paro",
+   "value": 16.38
+  },
+  {
+   "time": 2017.75,
+   "series": "paro",
+   "value": 16.55
+  },
+  {
+   "time": 2018.0,
+   "series": "paro",
+   "value": 16.74
+  },
+  {
+   "time": 2018.25,
+   "series": "paro",
+   "value": 15.28
+  },
+  {
+   "time": 2018.5,
+   "series": "paro",
+   "value": 14.55
+  },
+  {
+   "time": 2018.75,
+   "series": "paro",
+   "value": 14.45
+  },
+  {
+   "time": 2019.0,
+   "series": "paro",
+   "value": 14.7
+  },
+  {
+   "time": 2019.25,
+   "series": "paro",
+   "value": 14.02
+  },
+  {
+   "time": 2019.5,
+   "series": "paro",
+   "value": 13.92
+  },
+  {
+   "time": 2019.75,
+   "series": "paro",
+   "value": 13.78
+  },
+  {
+   "time": 2020.0,
+   "series": "paro",
+   "value": 14.41
+  },
+  {
+   "time": 2020.25,
+   "series": "paro",
+   "value": 15.33
+  },
+  {
+   "time": 2020.5,
+   "series": "paro",
+   "value": 16.26
+  },
+  {
+   "time": 2020.75,
+   "series": "paro",
+   "value": 16.13
+  },
+  {
+   "time": 2021.0,
+   "series": "paro",
+   "value": 16.14
+  },
+  {
+   "time": 2021.25,
+   "series": "paro",
+   "value": 15.39
+  },
+  {
+   "time": 2021.5,
+   "series": "paro",
+   "value": 14.71
+  },
+  {
+   "time": 2021.75,
+   "series": "paro",
+   "value": 13.44
+  },
+  {
+   "time": 2022.0,
+   "series": "paro",
+   "value": 13.73
+  },
+  {
+   "time": 2022.25,
+   "series": "paro",
+   "value": 12.69
+  },
+  {
+   "time": 2022.5,
+   "series": "paro",
+   "value": 12.73
+  },
+  {
+   "time": 2022.75,
+   "series": "paro",
+   "value": 12.99
+  },
+  {
+   "time": 2023.0,
+   "series": "paro",
+   "value": 13.38
+  },
+  {
+   "time": 2023.25,
+   "series": "paro",
+   "value": 11.67
+  },
+  {
+   "time": 2023.5,
+   "series": "paro",
+   "value": 11.89
+  },
+  {
+   "time": 2023.75,
+   "series": "paro",
+   "value": 11.8
+  },
+  {
+   "time": 2024.0,
+   "series": "paro",
+   "value": 12.29
+  },
+  {
+   "time": 2024.25,
+   "series": "paro",
+   "value": 11.27
+  },
+  {
+   "time": 2024.5,
+   "series": "paro",
+   "value": 11.21
+  },
+  {
+   "time": 2024.75,
+   "series": "paro",
+   "value": 10.61
+  },
+  {
+   "time": 2025.0,
+   "series": "paro",
+   "value": 11.36
+  },
+  {
+   "time": 2025.25,
+   "series": "paro",
+   "value": 10.29
+  },
+  {
+   "time": 2025.5,
+   "series": "paro",
+   "value": 10.45
+  },
+  {
+   "time": 2025.75,
+   "series": "paro",
+   "value": 9.93
+  },
+  {
+   "time": 2026.0,
+   "series": "paro",
+   "value": 10.83
+  },
+  {
+   "time": 2026.25,
+   "series": "paro",
+   "value": 9.87
+  }
+ ]
+}
