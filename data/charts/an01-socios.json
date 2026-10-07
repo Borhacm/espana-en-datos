@@ -19,7 +19,7 @@
  },
  "notes": {
   "es": [
-   "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos.",
+   "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos, incluido el principal de la oposición.",
    "Solo celdas con al menos 100 votaciones comparadas; los partidos que no estaban en el Congreso quedan vacíos.",
    "Grupo Mixto y Grupo Plural reúnen partidos distintos: su voto es el de la mayoría de sus miembros."
   ]
@@ -27,6 +27,8 @@
  "retrieved": "2026-10-07",
  "geos": {},
  "blocs": [
+  "PP",
+  "PSOE",
   "Vox",
   "Sumar",
   "Unidas Podemos",
@@ -57,6 +59,12 @@
  "rows": [
   {
    "row": "X · PP (2012-2015)",
+   "col": "PSOE",
+   "value": 33.6,
+   "n": 3230
+  },
+  {
+   "row": "X · PP (2012-2015)",
    "col": "Izquierda Plural",
    "value": 16.7,
    "n": 3198
@@ -84,6 +92,12 @@
    "col": "Grupo Mixto",
    "value": 16.0,
    "n": 3093
+  },
+  {
+   "row": "XII · PP (2016-2018)",
+   "col": "PSOE",
+   "value": 51.1,
+   "n": 765
   },
   {
    "row": "XII · PP (2016-2018)",
@@ -117,6 +131,12 @@
   },
   {
    "row": "XII · PSOE (2018-2019)",
+   "col": "PP",
+   "value": 44.7,
+   "n": 465
+  },
+  {
+   "row": "XII · PSOE (2018-2019)",
    "col": "Unidas Podemos",
    "value": 63.0,
    "n": 465
@@ -144,6 +164,12 @@
    "col": "Grupo Mixto",
    "value": 70.1,
    "n": 448
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "PP",
+   "value": 51.4,
+   "n": 4242
   },
   {
    "row": "XIV · PSOE (2020-2023)",
@@ -192,6 +218,12 @@
    "col": "Grupo Mixto",
    "value": 65.4,
    "n": 3867
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "PP",
+   "value": 38.8,
+   "n": 2171
   },
   {
    "row": "XV · PSOE (2023-2026)",

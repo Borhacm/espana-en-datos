@@ -151,11 +151,15 @@ def socios():
         vs = periods[(leg, g)]
         y0, y1 = vs[0]["date"][:4], vs[-1]["date"][:4]
         labels[(leg, g)] = f"{leg} · {g} ({y0}-{y1})" if y0 != y1 else f"{leg} · {g} ({y0})"
-    cols = [b for b in d["blocs"] if b not in ("PP", "PSOE")]
+    # Todas las columnas, también PP y PSOE: cada Gobierno frente al principal partido de la oposición.
+    # Solo se deja vacía la celda del propio partido del Gobierno.
+    cols = list(d["blocs"])
     rows = []
     for key in order:
         g = key[1]
         for b in cols:
+            if b == g:
+                continue
             both = [v for v in periods[key] if v["pos"].get(g) and v["pos"].get(b)]
             if len(both) >= 100:
                 rows.append({"row": labels[key], "col": b, "value": round(100 * sum(v["pos"][g] == v["pos"][b] for v in both) / len(both), 1),
@@ -169,7 +173,7 @@ def socios():
         unit="% de votaciones",
         source=SOURCE,
         notes=[
-            "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos.",
+            "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos, incluido el principal de la oposición.",
             "Solo celdas con al menos 100 votaciones comparadas; los partidos que no estaban en el Congreso quedan vacíos.",
             "Grupo Mixto y Grupo Plural reúnen partidos distintos: su voto es el de la mayoría de sus miembros.",
         ],

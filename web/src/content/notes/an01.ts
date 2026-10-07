@@ -31,8 +31,9 @@ const note: Note = {
     { fig: "an01-pp-psoe", code: "3" },
 
     { h: { es: "Con quién vota cada Gobierno" }, id: "socios" },
-    p("Con mayoría absoluta, el PP no necesitaba socios, y ningún grupo votó con él en más del 36 % de las votaciones (UPyD fue el que más). En minoría, entre 2016 y 2018, su apoyo principal fue Ciudadanos (66 %), seguido del PNV (47 %)."),
+    p("Con mayoría absoluta, el PP no necesitaba socios, y ningún grupo votó con él en más del 36 % de las votaciones (UPyD fue el que más; el PSOE, el 34 %). En minoría, entre 2016 y 2018, su apoyo principal fue Ciudadanos (66 %), seguido del PSOE (51 %) y el PNV (47 %)."),
     p("El PSOE de 2020 a 2023 tuvo en Unidas Podemos, su socio de coalición, a quien más coincidía con él (86 %), y después al PNV (57 %) y EH Bildu (52 %). En esta legislatura, Sumar ha votado con el PSOE en el 83 % de las votaciones, el PNV y Coalición Canaria en el 75 %. En esta legislatura el Grupo Mixto se separa por partido; la columna «Mixto (otros)» reúne a los pocos diputados del Mixto que no son de Podemos, BNG, CC, UPN ni Compromís, y no es comparable con un partido."),
+    p("Con los gobiernos del PSOE, el PP votó lo mismo que el PSOE en el 45 % de las votaciones de 2018 a 2019, en el 51 % de 2020 a 2023 y en el 39 % de esta legislatura, la cifra más baja de las tres."),
     { fig: "an01-socios", code: "4" },
 
     { h: { es: "Lo que estos datos no dicen" }, id: "limites" },
