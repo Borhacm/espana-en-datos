@@ -1810,6 +1810,31 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–7 Dec",
+   "date": "2023-12-07",
+   "sample": 4613,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3431marMT_a",
+   "values": {
+    "PP": 33.2,
+    "PSOE": 31.8,
+    "Vox": 8.5,
+    "Sumar": 11.8,
+    "ERC": 1.9,
+    "Junts": 1.3,
+    "EH Bildu": 1.1,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.2,
+    "UPN": 0.1
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "6–8 Dec",
@@ -2249,6 +2274,97 @@
     "UPN": 0,
     "Podemos": 1
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–5 Jan",
+   "date": "2024-01-05",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": "Jaime Miquel",
+   "partisan": false,
+   "url": null,
+   "values": {
+    "PP": 36.3,
+    "PSOE": 30.0,
+    "Vox": 11.1,
+    "Sumar": 9.5,
+    "ERC": 1.8,
+    "Junts": 1.5,
+    "EH Bildu": 1.1,
+    "PNV": 1.2,
+    "BNG": 0.9,
+    "CC": 0.4,
+    "UPN": 0.2,
+    "Podemos": 2.7
+   },
+   "seats": {
+    "PP": 155,
+    "PSOE": 121,
+    "Vox": 26,
+    "Sumar": 18,
+    "ERC": 7,
+    "Junts": 6,
+    "EH Bildu": 6,
+    "PNV": 6,
+    "BNG": 2,
+    "CC": 1,
+    "UPN": 1,
+    "Podemos": 1
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–5 Jan",
+   "date": "2024-01-05",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": "SocioMétrica",
+   "partisan": false,
+   "url": "https://twitter.com/SociometricaEs/status/1747868403665137943",
+   "values": {
+    "PP": 37.6,
+    "PSOE": 30.3,
+    "Vox": 12.0,
+    "Sumar": 8.2,
+    "ERC": 1.4,
+    "Junts": 1.7,
+    "EH Bildu": 1.0,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.3,
+    "UPN": 0.0,
+    "Podemos": 3.0
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–5 Jan",
+   "date": "2024-01-05",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3435mar_a",
+   "values": {
+    "PP": 32.1,
+    "PSOE": 34.0,
+    "Vox": 8.3,
+    "Sumar": 9.7,
+    "ERC": 1.4,
+    "Junts": 1.5,
+    "EH Bildu": 0.9,
+    "PNV": 0.8,
+    "BNG": 0.7,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 2.7
+   },
+   "seats": null
   },
   {
    "pollster": "EM-Analytics",
@@ -3052,6 +3168,32 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–5 Mar",
+   "date": "2024-03-05",
+   "sample": 3931,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3445marMT_a",
+   "values": {
+    "PP": 34.0,
+    "PSOE": 31.3,
+    "Vox": 9.9,
+    "Sumar": 9.2,
+    "ERC": 1.9,
+    "Junts": 1.2,
+    "EH Bildu": 1.1,
+    "PNV": 0.9,
+    "BNG": 0.9,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 2.2
+   },
+   "seats": null
+  },
+  {
    "pollster": "Celeste-Tel",
    "commissioner": "Onda Cero",
    "fieldwork": "1–6 Mar",
@@ -3577,6 +3719,32 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–4 Apr",
+   "date": "2024-04-04",
+   "sample": 4032,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3450mar_a",
+   "values": {
+    "PP": 33.5,
+    "PSOE": 32.5,
+    "Vox": 10.1,
+    "Sumar": 8.2,
+    "ERC": 1.4,
+    "Junts": 1.4,
+    "EH Bildu": 0.9,
+    "PNV": 1.0,
+    "BNG": 0.8,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 3.1
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "30 Mar–5 Apr",
@@ -3956,6 +4124,32 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "3–8 May",
+   "date": "2024-05-08",
+   "sample": 4013,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3457marMT_a",
+   "values": {
+    "PP": 30.4,
+    "PSOE": 35.5,
+    "Vox": 10.2,
+    "Sumar": 8.0,
+    "ERC": 1.1,
+    "Junts": 1.5,
+    "EH Bildu": 1.3,
+    "PNV": 0.8,
+    "BNG": 0.6,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 2.2
+   },
+   "seats": null
+  },
+  {
    "pollster": "Simple Lógica",
    "commissioner": "elDiario.es",
    "fieldwork": "1–9 May",
@@ -4297,6 +4491,60 @@
     "UPN": 0.1,
     "Podemos": 3.5,
     "SALF": 1.2
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "31 May–6 Jun",
+   "date": "2024-06-06",
+   "sample": 4011,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/cis-obsoleto-pp-retrocede-vox-aguanta-asoma-alvise_1_1823328.html",
+   "values": {
+    "PP": 32.9,
+    "PSOE": 30.0,
+    "Vox": 12.7,
+    "Sumar": 8.6,
+    "Podemos": 3.8,
+    "SALF": 1.4
+   },
+   "seats": {
+    "PP": 141,
+    "PSOE": 124,
+    "Vox": 39,
+    "Sumar": 15,
+    "Podemos": 3,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "31 May–6 Jun",
+   "date": "2024-06-06",
+   "sample": 4011,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3463mar_a",
+   "values": {
+    "PP": 30.7,
+    "PSOE": 31.7,
+    "Vox": 12.1,
+    "Sumar": 8.8,
+    "ERC": 1.8,
+    "Junts": 1.6,
+    "EH Bildu": 1.1,
+    "PNV": 0.9,
+    "BNG": 0.9,
+    "CC": 0.5,
+    "UPN": 0.1,
+    "Podemos": 3.6,
+    "SALF": 1.5
    },
    "seats": null
   },
@@ -4652,6 +4900,33 @@
     "Podemos": 3,
     "SALF": 1
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–4 Jul",
+   "date": "2024-07-04",
+   "sample": 4007,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3468mar_a",
+   "values": {
+    "PP": 30.2,
+    "PSOE": 32.9,
+    "Vox": 12.2,
+    "Sumar": 6.6,
+    "ERC": 1.7,
+    "Junts": 1.6,
+    "EH Bildu": 1.2,
+    "PNV": 1.1,
+    "BNG": 0.6,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 4.0,
+    "SALF": 2.7
+   },
+   "seats": null
   },
   {
    "pollster": "Hamalgama Métrica",
@@ -5463,6 +5738,33 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–6 Sep",
+   "date": "2024-09-06",
+   "sample": 4027,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3474mar_a",
+   "values": {
+    "PP": 28.5,
+    "PSOE": 33.0,
+    "Vox": 13.1,
+    "Sumar": 7.8,
+    "ERC": 1.4,
+    "Junts": 1.3,
+    "EH Bildu": 1.1,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 3.6,
+    "SALF": 2.9
+   },
+   "seats": null
+  },
+  {
    "pollster": "Celeste-Tel",
    "commissioner": "Onda Cero",
    "fieldwork": "2–6 Sep",
@@ -6014,6 +6316,33 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–11 Oct",
+   "date": "2024-10-11",
+   "sample": 4005,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3478mar_a",
+   "values": {
+    "PP": 31.5,
+    "PSOE": 34.0,
+    "Vox": 11.8,
+    "Sumar": 6.3,
+    "ERC": 1.6,
+    "Junts": 1.2,
+    "EH Bildu": 0.9,
+    "PNV": 1.0,
+    "BNG": 0.8,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 3.3,
+    "SALF": 1.7
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "5–11 Oct",
@@ -6419,6 +6748,33 @@
     "Podemos": 3,
     "SALF": 1
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–7 Nov",
+   "date": "2024-11-07",
+   "sample": 4010,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3485mar_a",
+   "values": {
+    "PP": 29.3,
+    "PSOE": 34.2,
+    "Vox": 11.8,
+    "Sumar": 7.0,
+    "ERC": 1.5,
+    "Junts": 1.7,
+    "EH Bildu": 1.0,
+    "PNV": 0.8,
+    "BNG": 0.8,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 3.4,
+    "SALF": 2.0
+   },
+   "seats": null
   },
   {
    "pollster": "EM-Analytics",
@@ -7621,6 +7977,97 @@
    "seats": null
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–9 Jan",
+   "date": "2025-01-09",
+   "sample": 4024,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/letra-pequena-cis-pp-vox-mantienen-ventaja-espera-izquierda-fragmentada_1_1930699.html",
+   "values": {
+    "PP": 33.0,
+    "PSOE": 29.5,
+    "Vox": 13.0,
+    "Sumar": 6.4,
+    "Podemos": 4.0,
+    "SALF": 2.5
+   },
+   "seats": {
+    "PP": 141,
+    "PSOE": 124,
+    "Vox": 40,
+    "Sumar": 9,
+    "Podemos": 4,
+    "SALF": 1
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–9 Jan",
+   "date": "2025-01-09",
+   "sample": 4024,
+   "panel": false,
+   "reestimate": "SocioMétrica",
+   "partisan": false,
+   "url": "https://www.elespanol.com/espana/politica/20250118/cis-sin-cocina-tezanos-pp-aventajaria-psoe-puntos-escanos-modelo-habitual-demoscopico/917158837_0.html",
+   "values": {
+    "PP": 33.5,
+    "PSOE": 29.5,
+    "Vox": 14.3,
+    "Sumar": 5.6,
+    "ERC": 1.3,
+    "Junts": 1.4,
+    "EH Bildu": 1.4,
+    "PNV": 1.0,
+    "BNG": 1.3,
+    "Podemos": 3.8,
+    "SALF": 2.9
+   },
+   "seats": {
+    "PP": 143,
+    "PSOE": 124,
+    "Vox": 43,
+    "Sumar": 6,
+    "ERC": 6,
+    "Junts": 7,
+    "EH Bildu": 8,
+    "PNV": 5,
+    "BNG": 4,
+    "Podemos": 3,
+    "SALF": 1
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–9 Jan",
+   "date": "2025-01-09",
+   "sample": 4024,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3492mar_a",
+   "values": {
+    "PP": 29.7,
+    "PSOE": 31.8,
+    "Vox": 12.4,
+    "Sumar": 6.5,
+    "ERC": 1.9,
+    "Junts": 1.4,
+    "EH Bildu": 1.2,
+    "PNV": 1.0,
+    "BNG": 1.4,
+    "CC": 0.1,
+    "UPN": 0.1,
+    "Podemos": 3.9,
+    "SALF": 2.4
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "27 Dec–10 Jan",
@@ -8036,6 +8483,101 @@
     "Vox": 15.0,
     "Sumar": 6.6,
     "Podemos": 4.3,
+    "SALF": 1.6
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "31 Jan–6 Feb",
+   "date": "2025-02-06",
+   "sample": 4042,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/psoe-pp-vox-izquierda_1_1945155.html",
+   "values": {
+    "PP": 31.0,
+    "PSOE": 30.8,
+    "Vox": 14.5,
+    "Sumar": 6.4,
+    "Podemos": 4.3,
+    "SALF": 1.7
+   },
+   "seats": {
+    "PP": 135,
+    "PSOE": 128,
+    "Vox": 45,
+    "Sumar": 8,
+    "Podemos": 3,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "31 Jan–6 Feb",
+   "date": "2025-02-06",
+   "sample": 4042,
+   "panel": false,
+   "reestimate": "SocioMétrica",
+   "partisan": false,
+   "url": "https://www.elespanol.com/espana/politica/20250214/cis-sin-cocina-tezanos-pp-aventaja-puntos-psoe-tocado-cesiones-junts-decreto-omnibus/923908239_0.html",
+   "values": {
+    "PP": 33.5,
+    "PSOE": 29.1,
+    "Vox": 14.2,
+    "Sumar": 6.2,
+    "ERC": 1.6,
+    "Junts": 1.5,
+    "EH Bildu": 1.0,
+    "PNV": 0.8,
+    "BNG": 1.5,
+    "CC": 0.4,
+    "UPN": 0.1,
+    "Podemos": 4.6,
+    "SALF": 1.8
+   },
+   "seats": {
+    "PP": 141,
+    "PSOE": 124,
+    "Vox": 43,
+    "Sumar": 8,
+    "ERC": 7,
+    "Junts": 6,
+    "EH Bildu": 6,
+    "PNV": 3,
+    "BNG": 6,
+    "CC": 1,
+    "UPN": 0,
+    "Podemos": 5,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "31 Jan–6 Feb",
+   "date": "2025-02-06",
+   "sample": 4042,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3496marMT_a",
+   "values": {
+    "PP": 28.1,
+    "PSOE": 33.4,
+    "Vox": 13.3,
+    "Sumar": 6.4,
+    "ERC": 1.6,
+    "Junts": 1.3,
+    "EH Bildu": 1.3,
+    "PNV": 1.0,
+    "BNG": 0.8,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 4.4,
     "SALF": 1.6
    },
    "seats": null
@@ -8539,6 +9081,33 @@
     "Sumar": 7.4,
     "Podemos": 3.8,
     "SALF": 2.2
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "28 Feb–7 Mar",
+   "date": "2025-03-07",
+   "sample": 4018,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3502marMT_a",
+   "values": {
+    "PP": 29.2,
+    "PSOE": 34.5,
+    "Vox": 11.7,
+    "Sumar": 7.6,
+    "ERC": 1.7,
+    "Junts": 1.4,
+    "EH Bildu": 1.1,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.1,
+    "UPN": 0.1,
+    "Podemos": 3.8,
+    "SALF": 1.9
    },
    "seats": null
   },
@@ -9072,6 +9641,60 @@
    "seats": null
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–8 Apr",
+   "date": "2025-04-08",
+   "sample": 4009,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/psoe-arana-votos-pp-sumar-no-logran-movilizar-cis-auge-vox_1_1979684.html",
+   "values": {
+    "PP": 29.5,
+    "PSOE": 30.5,
+    "Vox": 15.0,
+    "Sumar": 6.8,
+    "Podemos": 4.5,
+    "SALF": 1.9
+   },
+   "seats": {
+    "PP": 128,
+    "PSOE": 130,
+    "Vox": 49,
+    "Sumar": 9,
+    "Podemos": 5,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–8 Apr",
+   "date": "2025-04-08",
+   "sample": 4009,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3505mar_a",
+   "values": {
+    "PP": 26.1,
+    "PSOE": 32.6,
+    "Vox": 15.2,
+    "Sumar": 6.2,
+    "ERC": 1.7,
+    "Junts": 1.1,
+    "EH Bildu": 1.0,
+    "PNV": 0.7,
+    "BNG": 0.8,
+    "CC": 0.6,
+    "UPN": 0.1,
+    "Podemos": 4.0,
+    "SALF": 1.9
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "5–10 Apr",
@@ -9499,6 +10122,60 @@
     "Vox": 14.6,
     "Sumar": 6.3,
     "Podemos": 4.6,
+    "SALF": 1.5
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "5–8 May",
+   "date": "2025-05-08",
+   "sample": 4018,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/teoria-caos-revitaliza-pp_1_1995795.html",
+   "values": {
+    "PP": 32.0,
+    "PSOE": 29.4,
+    "Vox": 14.2,
+    "Sumar": 6.5,
+    "Podemos": 4.6,
+    "SALF": 1.5
+   },
+   "seats": {
+    "PP": 138,
+    "PSOE": 122,
+    "Vox": 44,
+    "Sumar": 10,
+    "Podemos": 5,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "5–8 May",
+   "date": "2025-05-08",
+   "sample": 4018,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3510mar_a",
+   "values": {
+    "PP": 29.3,
+    "PSOE": 32.0,
+    "Vox": 13.7,
+    "Sumar": 6.1,
+    "ERC": 1.6,
+    "Junts": 1.1,
+    "EH Bildu": 0.8,
+    "PNV": 1.1,
+    "BNG": 1.0,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 4.3,
     "SALF": 1.5
    },
    "seats": null
@@ -10043,6 +10720,60 @@
    "seats": null
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–7 Jun",
+   "date": "2025-06-07",
+   "sample": 4013,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/cis-obsoleto-minuto-publicarse-advierte-fragilidad-izquierda_1_2013159.html",
+   "values": {
+    "PP": 32.3,
+    "PSOE": 29.5,
+    "Vox": 14.1,
+    "Sumar": 6.5,
+    "Podemos": 4.4,
+    "SALF": 1.4
+   },
+   "seats": {
+    "PP": 138,
+    "PSOE": 122,
+    "Vox": 44,
+    "Sumar": 10,
+    "Podemos": 5,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–7 Jun",
+   "date": "2025-06-07",
+   "sample": 4013,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3514marMT_a",
+   "values": {
+    "PP": 27.3,
+    "PSOE": 34.3,
+    "Vox": 13.2,
+    "Sumar": 7.0,
+    "ERC": 1.4,
+    "Junts": 1.1,
+    "EH Bildu": 1.2,
+    "PNV": 0.6,
+    "BNG": 0.6,
+    "CC": 0.4,
+    "UPN": 0.1,
+    "Podemos": 4.2,
+    "SALF": 1.5
+   },
+   "seats": null
+  },
+  {
    "pollster": "GESOP",
    "commissioner": "Prensa Ibérica",
    "fieldwork": "10–12 Jun",
@@ -10511,6 +11242,60 @@
     "Sumar": 7.4,
     "Podemos": 4.5,
     "SALF": 1.4
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–7 Jul",
+   "date": "2025-07-07",
+   "sample": 4018,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/efecto-cerdan-hunde-psoe-cae-pp-dispara-vox_1_2030251.html",
+   "values": {
+    "PP": 30.5,
+    "PSOE": 24.6,
+    "Vox": 18.5,
+    "Sumar": 7.4,
+    "Podemos": 4.5,
+    "SALF": 1.7
+   },
+   "seats": {
+    "PP": 133,
+    "PSOE": 100,
+    "Vox": 67,
+    "Sumar": 12,
+    "Podemos": 5,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–7 Jul",
+   "date": "2025-07-07",
+   "sample": 4018,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3517mar_a",
+   "values": {
+    "PP": 26.5,
+    "PSOE": 27.0,
+    "Vox": 18.9,
+    "Sumar": 7.8,
+    "ERC": 2.1,
+    "Junts": 1.0,
+    "EH Bildu": 0.9,
+    "PNV": 0.8,
+    "BNG": 0.7,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 4.4,
+    "SALF": 1.7
    },
    "seats": null
   },
@@ -11304,6 +12089,60 @@
    "seats": null
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Sep",
+   "date": "2025-09-06",
+   "sample": 4122,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/pp-despena-vox-izquierda-frena-ultraderecha_1_2061507.html",
+   "values": {
+    "PP": 28.5,
+    "PSOE": 28.6,
+    "Vox": 17.3,
+    "Sumar": 7.1,
+    "Podemos": 4.0,
+    "SALF": 1.7
+   },
+   "seats": {
+    "PP": 122,
+    "PSOE": 118,
+    "Vox": 64,
+    "Sumar": 11,
+    "Podemos": 4,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Sep",
+   "date": "2025-09-06",
+   "sample": 4122,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3524marMT_a",
+   "values": {
+    "PP": 23.7,
+    "PSOE": 32.7,
+    "Vox": 17.3,
+    "Sumar": 7.9,
+    "ERC": 2.1,
+    "Junts": 0.8,
+    "EH Bildu": 1.1,
+    "PNV": 0.6,
+    "BNG": 0.7,
+    "CC": 0.1,
+    "UPN": 0.1,
+    "Podemos": 4.3,
+    "SALF": 1.6
+   },
+   "seats": null
+  },
+  {
    "pollster": "NC Report",
    "commissioner": "La Razón",
    "fieldwork": "1–6 Sep",
@@ -11867,6 +12706,60 @@
    "seats": null
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–7 Oct",
+   "date": "2025-10-07",
+   "sample": 4029,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/psoe-frena-recuperacion-vox-sigue-tocar-techo-claves-entender-mueve-electurado_1_2079533.html",
+   "values": {
+    "PP": 27.0,
+    "PSOE": 28.0,
+    "Vox": 19.5,
+    "Sumar": 7.1,
+    "Podemos": 4.7,
+    "SALF": 1.4
+   },
+   "seats": {
+    "PP": 115,
+    "PSOE": 115,
+    "Vox": 74,
+    "Sumar": 12,
+    "Podemos": 5,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–7 Oct",
+   "date": "2025-10-07",
+   "sample": 4029,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3528mar_a",
+   "values": {
+    "PP": 19.8,
+    "PSOE": 34.8,
+    "Vox": 17.7,
+    "Sumar": 7.7,
+    "ERC": 2.0,
+    "Junts": 1.0,
+    "EH Bildu": 1.0,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.1,
+    "UPN": 0.1,
+    "Podemos": 4.9,
+    "SALF": 1.3
+   },
+   "seats": null
+  },
+  {
    "pollster": "GESOP",
    "commissioner": "Prensa Ibérica",
    "fieldwork": "3–9 Oct",
@@ -12413,6 +13306,33 @@
    "seats": null
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "3–12 Nov",
+   "date": "2025-11-12",
+   "sample": 4028,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3530mar_a",
+   "values": {
+    "PP": 22.4,
+    "PSOE": 32.6,
+    "Vox": 18.8,
+    "Sumar": 7.1,
+    "ERC": 2.2,
+    "Junts": 1.1,
+    "EH Bildu": 1.2,
+    "PNV": 0.7,
+    "BNG": 1.1,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 4.0,
+    "SALF": 0.6
+   },
+   "seats": null
+  },
+  {
    "pollster": "DYM",
    "commissioner": "Henneo",
    "fieldwork": "12–14 Nov",
@@ -12693,6 +13613,34 @@
     "Podemos": 4,
     "SALF": 1
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–5 Dec",
+   "date": "2025-12-05",
+   "sample": 4017,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3536mar_a-pdf",
+   "values": {
+    "PP": 22.4,
+    "PSOE": 31.4,
+    "Vox": 17.6,
+    "Sumar": 7.8,
+    "ERC": 2.1,
+    "Junts": 0.8,
+    "EH Bildu": 1.5,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 4.1,
+    "SALF": 2.4,
+    "AC": 0.5
+   },
+   "seats": null
   },
   {
    "pollster": "EM-Analytics",
@@ -13165,6 +14113,33 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "5–10 Jan",
+   "date": "2026-01-10",
+   "sample": 4006,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3540mar_a-pdf",
+   "values": {
+    "PP": 23.0,
+    "PSOE": 31.7,
+    "Vox": 17.7,
+    "Sumar": 7.2,
+    "ERC": 2.6,
+    "Junts": 1.0,
+    "EH Bildu": 1.5,
+    "PNV": 1.0,
+    "BNG": 0.9,
+    "CC": 0.3,
+    "UPN": 0.1,
+    "Podemos": 3.5,
+    "SALF": 1.8
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "1–10 Jan",
@@ -13608,6 +14583,58 @@
     "Podemos": 4,
     "SALF": 0
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–6 Feb",
+   "date": "2026-02-06",
+   "sample": 4027,
+   "panel": false,
+   "reestimate": "Target Point",
+   "partisan": false,
+   "url": "https://www.eldebate.com/espana/20260217/datos-cis-analizados-sociologo-independiente-pp-sacaria-24-puntos-psoe-vox-superaria-20_385845.html",
+   "values": {
+    "PP": 29.1,
+    "PSOE": 26.7,
+    "Vox": 20.6,
+    "Sumar": 6.7,
+    "ERC": 2.1,
+    "Junts": 1.3,
+    "EH Bildu": 1.1,
+    "PNV": 1.2,
+    "BNG": 0.5,
+    "Podemos": 4.0,
+    "SALF": 2.7
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–6 Feb",
+   "date": "2026-02-06",
+   "sample": 4027,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3544marmt_a-pdf",
+   "values": {
+    "PP": 22.9,
+    "PSOE": 32.6,
+    "Vox": 18.9,
+    "Sumar": 7.0,
+    "ERC": 2.5,
+    "Junts": 1.2,
+    "EH Bildu": 1.0,
+    "PNV": 0.8,
+    "BNG": 0.8,
+    "CC": 0.1,
+    "UPN": 0.1,
+    "Podemos": 3.9,
+    "SALF": 2.4
+   },
+   "seats": null
   },
   {
    "pollster": "EM-Analytics",
@@ -14073,6 +15100,87 @@
     "BNG": 0.6,
     "Podemos": 3.2,
     "SALF": 2.4
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–6 Mar",
+   "date": "2026-03-06",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": "Ateneo del Dato",
+   "partisan": false,
+   "url": "https://x.com/Ateneodeldato/status/2034725876298825812",
+   "values": {
+    "PP": 29.1,
+    "PSOE": 25.5,
+    "Vox": 19.3,
+    "Sumar": 6.1,
+    "Podemos": 2.9,
+    "SALF": 1.9
+   },
+   "seats": {
+    "PP": 125,
+    "PSOE": 105,
+    "Vox": 74,
+    "Sumar": 11,
+    "Podemos": 2,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–6 Mar",
+   "date": "2026-03-06",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/barometro-cis-marzo-suben-psoe-pp-baja-vox_1_2164282.html",
+   "values": {
+    "PP": 28.8,
+    "PSOE": 28.4,
+    "Vox": 18.1,
+    "Sumar": 6.5,
+    "Podemos": 2.9,
+    "SALF": 2.4
+   },
+   "seats": {
+    "PP": 123,
+    "PSOE": 117,
+    "Vox": 67,
+    "Sumar": 9,
+    "Podemos": 2,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "2–6 Mar",
+   "date": "2026-03-06",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3546marmt_a-pdf",
+   "values": {
+    "PP": 23.3,
+    "PSOE": 31.8,
+    "Vox": 16.6,
+    "Sumar": 7.1,
+    "ERC": 2.4,
+    "Junts": 0.6,
+    "EH Bildu": 1.1,
+    "PNV": 0.5,
+    "BNG": 1.7,
+    "CC": 0.0,
+    "UPN": 0.0,
+    "Podemos": 2.9,
+    "SALF": 2.1
    },
    "seats": null
   },
@@ -14587,6 +15695,60 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "6–10 Apr",
+   "date": "2026-04-10",
+   "sample": 4020,
+   "panel": false,
+   "reestimate": "Logoslab",
+   "partisan": false,
+   "url": "https://www.infolibre.es/politica/bipartidismo-refuerza-costa-socios_1_2180657.html",
+   "values": {
+    "PP": 30.1,
+    "PSOE": 30.1,
+    "Vox": 16.9,
+    "Sumar": 5.8,
+    "Podemos": 2.1,
+    "SALF": 1.8
+   },
+   "seats": {
+    "PP": 127,
+    "PSOE": 121,
+    "Vox": 60,
+    "Sumar": 8,
+    "Podemos": 1,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "6–10 Apr",
+   "date": "2026-04-10",
+   "sample": 4020,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3557marmt_a-pdf",
+   "values": {
+    "PP": 23.6,
+    "PSOE": 36.4,
+    "Vox": 14.7,
+    "Sumar": 5.8,
+    "ERC": 2.9,
+    "Junts": 0.8,
+    "EH Bildu": 1.3,
+    "PNV": 0.8,
+    "BNG": 0.8,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 2.2,
+    "SALF": 1.7
+   },
+   "seats": null
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "5–10 Apr",
@@ -15070,6 +16232,60 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "4–18 May",
+   "date": "2026-05-18",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": "Ateneo del Dato",
+   "partisan": false,
+   "url": "https://x.com/Ateneodeldato/status/2060330718874497292",
+   "values": {
+    "PP": 30.7,
+    "PSOE": 30.3,
+    "Vox": 17.4,
+    "Sumar": 6.4,
+    "Podemos": 2.1,
+    "SALF": 1.8
+   },
+   "seats": {
+    "PP": 129,
+    "PSOE": 121,
+    "Vox": 60,
+    "Sumar": 11,
+    "Podemos": 0,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "4–18 May",
+   "date": "2026-05-18",
+   "sample": 4016,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3562marmt_a-pdf",
+   "values": {
+    "PP": 24.9,
+    "PSOE": 36.2,
+    "Vox": 16.2,
+    "Sumar": 5.7,
+    "ERC": 2.6,
+    "Junts": 0.8,
+    "EH Bildu": 0.9,
+    "PNV": 0.5,
+    "BNG": 0.7,
+    "CC": 0.1,
+    "UPN": 0.1,
+    "Podemos": 2.5,
+    "SALF": 2.4
+   },
+   "seats": null
+  },
+  {
    "pollster": "DYM",
    "commissioner": "Henneo",
    "fieldwork": "20–22 May",
@@ -15408,6 +16624,33 @@
     "Podemos": 0,
     "SALF": 0
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–4 Jun",
+   "date": "2026-06-04",
+   "sample": 4024,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3567mar_a-pdf",
+   "values": {
+    "PP": 27.1,
+    "PSOE": 31.3,
+    "Vox": 15.8,
+    "Sumar": 6.4,
+    "ERC": 1.9,
+    "Junts": 1.0,
+    "EH Bildu": 1.2,
+    "PNV": 0.6,
+    "BNG": 1.0,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 2.8,
+    "SALF": 1.9
+   },
+   "seats": null
   },
   {
    "pollster": "EM-Analytics",
@@ -15911,6 +17154,92 @@
     "UPN": 0.1,
     "Podemos": 2.3,
     "SALF": 2.8
+   },
+   "seats": null
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Jul",
+   "date": "2026-07-06",
+   "sample": 4020,
+   "panel": false,
+   "reestimate": "Target Point",
+   "partisan": false,
+   "url": "https://www.eldebate.com/espana/20260717/revision-independiente-cis-quita-34-escanos-psoe-anticipa-problemas-pnv_440404.html",
+   "values": {
+    "PP": 32.3,
+    "PSOE": 26.6,
+    "Vox": 16.3,
+    "Sumar": 7.4,
+    "ERC": 1.8,
+    "Junts": 1.2,
+    "EH Bildu": 1.2,
+    "PNV": 0.9,
+    "BNG": 0.5,
+    "Podemos": 2.7,
+    "SALF": 2.8
+   },
+   "seats": {
+    "PP": 141,
+    "PSOE": 112,
+    "Vox": 56,
+    "Sumar": 11,
+    "Podemos": 2,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Jul",
+   "date": "2026-07-06",
+   "sample": 4020,
+   "panel": false,
+   "reestimate": "Ateneo del Dato",
+   "partisan": false,
+   "url": "https://x.com/Ateneodeldato/status/2078049116286755273",
+   "values": {
+    "PP": 30.5,
+    "PSOE": 27.9,
+    "Vox": 16.2,
+    "Sumar": 7.4,
+    "Podemos": 2.9,
+    "SALF": 2.0
+   },
+   "seats": {
+    "PP": 135,
+    "PSOE": 114,
+    "Vox": 54,
+    "Sumar": 14,
+    "Podemos": 1,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Jul",
+   "date": "2026-07-06",
+   "sample": 4020,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3571mar_a-pdf",
+   "values": {
+    "PP": 25.1,
+    "PSOE": 33.0,
+    "Vox": 15.3,
+    "Sumar": 6.1,
+    "ERC": 2.7,
+    "Junts": 0.7,
+    "EH Bildu": 0.8,
+    "PNV": 1.0,
+    "BNG": 0.9,
+    "CC": 0.2,
+    "UPN": 0.2,
+    "Podemos": 2.5,
+    "SALF": 2.6
    },
    "seats": null
   },
@@ -16897,6 +18226,60 @@
     "Podemos": 2,
     "SALF": 0
    }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–4 Sep",
+   "date": "2026-09-04",
+   "sample": 4042,
+   "panel": false,
+   "reestimate": "Ateneo del Dato",
+   "partisan": false,
+   "url": "https://x.com/Ateneodeldato/status/2099566095224955252",
+   "values": {
+    "PP": 29.5,
+    "PSOE": 27.6,
+    "Vox": 17.6,
+    "Sumar": 6.8,
+    "Podemos": 3.9,
+    "SALF": 1.8
+   },
+   "seats": {
+    "PP": 127,
+    "PSOE": 112,
+    "Vox": 65,
+    "Sumar": 12,
+    "Podemos": 2,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–4 Sep",
+   "date": "2026-09-04",
+   "sample": 4042,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3577mar_a-pdf",
+   "values": {
+    "PP": 25.5,
+    "PSOE": 31.0,
+    "Vox": 16.6,
+    "Sumar": 5.7,
+    "ERC": 2.5,
+    "Junts": 0.7,
+    "EH Bildu": 1.3,
+    "PNV": 0.7,
+    "BNG": 0.7,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 3.7,
+    "SALF": 1.8
+   },
+   "seats": null
   },
   {
    "pollster": "Hamalgama Métrica",

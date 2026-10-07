@@ -87,9 +87,27 @@ def polls() -> list[dict]:
         table = section[section.index("{|"):]
         head, _, body = table.partition("\n|-\n|")
         parties = _parties(head)
+        width = 4 + len(parties)
+        # Celdas con rowspan (Wikipedia escribe una sola vez la fecha y la muestra que comparten, por ejemplo, el CIS y
+        # una reestimación de sus datos): se arrastran a las filas siguientes. Sin esto se perdían esas filas.
+        carry: dict[int, list] = {}
         for row in ("|" + body).split("\n|-"):
-            cells = [c for c in re.split(r"\n\|(?!\})", "\n" + row.strip()) if c.strip()]
-            if len(cells) < 4 + len(parties):
+            raw = [c for c in re.split(r"\n\|(?!\})", "\n" + row.strip()) if c.strip()]
+            cells, k = [], 0
+            for col in range(width + 1):
+                if col in carry and carry[col][0] > 0:
+                    carry[col][0] -= 1
+                    cells.append(carry[col][1])
+                    continue
+                if k >= len(raw):
+                    break
+                cell = raw[k]
+                k += 1
+                m = re.match(r"\s*[^|\[]*?rowspan=\"?(\d+)", cell)
+                if m and int(m.group(1)) > 1:
+                    carry[col] = [int(m.group(1)) - 1, cell]
+                cells.append(cell)
+            if len(cells) < width:
                 continue
             firm_raw = cells[0]
             firm = re.sub(r"\[\[(?:[^]|]*\|)?([^]]+)\]\]", r"\1", _clean(firm_raw)).strip()
@@ -130,8 +148,21 @@ def polls() -> list[dict]:
     return out
 
 
+def _dedupe(rows: list[dict]) -> list[dict]:
+    """Una misma encuesta publicada con varios escenarios (por ejemplo, con y sin un partido) aparece varias veces con el
+    mismo enlace: se queda la primera, que es el escenario principal."""
+    seen, out = set(), []
+    for r in rows:
+        key = (r["pollster"], r["commissioner"], r["date"], r["reestimate"], r["url"])
+        if r["url"] and key in seen:
+            continue
+        seen.add(key)
+        out.append(r)
+    return out
+
+
 def build() -> dict:
-    rows = sorted(polls(), key=lambda r: (r["date"], r["pollster"]))
+    rows = sorted(_dedupe(polls()), key=lambda r: (r["date"], r["pollster"]))
     return {
         "id": "encuestas",
         "title": "Encuestas de intención de voto al Congreso desde julio de 2023",
