@@ -3,14 +3,16 @@
 import Base from "../layouts/Base.astro";
 import Blocks from "../components/Blocks.astro";
 import CongressExplorer from "../components/CongressExplorer.astro";
-import { themeById } from "../lib/themes";
+import { notesOf, themeById } from "../lib/themes";
+import LinkList from "../components/LinkList.astro";
 import { loadBase } from "../lib/data";
-import { formatDate, paths } from "../lib/i18n";
+import { formatDate, notePath, paths } from "../lib/i18n";
 import "../styles/charts.css";
 
 const theme = themeById("congreso")!;
 const body = theme.lenses!.tiempo;
 const base = loadBase("congreso-xv");
+const analyses = notesOf("congreso");
 const first = base.rows[0].date;
 const last = base.rows[base.rows.length - 1].date;
 const STATS = [
@@ -31,6 +33,12 @@ const STATS = [
       <p class="period">Votaciones del {formatDate(first)} al {formatDate(last)}. Las del 1 y 2 de octubre de 2026 aún no están en los datos abiertos.</p>
     </div>
   </header>
+
+  {analyses.length > 0 && (
+    <section class="wrap part">
+      <LinkList items={analyses.map((n) => ({ href: notePath(n.slug).es, title: n.title.es, dek: n.dek.es, meta: `Análisis. ${formatDate(n.published)}.` }))} />
+    </section>
+  )}
 
   <section class="wrap part">
     <p class="lede">{body.lede.es}</p>

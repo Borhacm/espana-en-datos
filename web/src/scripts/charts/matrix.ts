@@ -19,7 +19,8 @@ export function renderMatrix(ctx: RenderContext) {
   const mode = cfg.matrixMode ?? "heat";
   const fmt = nf("es", 0);
   const cols: string[] = chart.blocs;
-  const rowKeys: string[] = mode === "heat" ? chart.blocs : [...new Set(chart.rows.map((r: Row) => r.row as string))];
+  // Filas: las que declare el gráfico (row_keys), los propios partidos (matriz cuadrada) o las que haya en los datos
+  const rowKeys: string[] = chart.row_keys ?? (mode === "heat" ? chart.blocs : [...new Set(chart.rows.map((r: Row) => r.row as string))]);
   const cell = new Map<string, Row>(chart.rows.map((r: Row) => [`${r.row}|${r.col}`, r]));
 
   const narrow = width < 560;
@@ -69,7 +70,7 @@ export function renderMatrix(ctx: RenderContext) {
           .textContent = fmt(r.value);
       }
       const html = mode === "heat"
-        ? `<div class="tip-title">${rk} y ${c}</div><div>Votaron lo mismo en el <strong>${fmt(r.value)} %</strong> de ${r.n.toLocaleString("es-ES")} votaciones</div>`
+        ? `<div class="tip-title">${chart.row_keys ? `${c} con el Gobierno` : `${rk} y ${c}`}</div>${chart.row_keys ? `<div class="tip-note">${rk}</div>` : ""}<div>Votaron lo mismo en el <strong>${fmt(r.value)} %</strong> de ${r.n.toLocaleString("es-ES")} votaciones</div>`
         : `<div class="tip-title">RDL ${rk}</div><div class="tip-note">${chart.labels?.[rk] ?? ""}</div>` +
           `<div class="tip-note">Votación del ${r.date}: ${r.yes} a favor, ${r.no} en contra</div>` +
           tipRow(fill, c, VOTE_LABEL[r.vote], true);

@@ -1,0 +1,131 @@
+{
+ "id": "an01-pp-psoe",
+ "lens": "tiempo",
+ "theme": "congreso",
+ "title": {
+  "es": "PP y PSOE han votado lo mismo entre el 30 % (2013) y el 61 % (2016) de las votaciones de cada año"
+ },
+ "subtitle": {
+  "es": "Porcentaje de votaciones nominales del Pleno en que PP y PSOE votaron igual, por año (sin Presupuestos)"
+ },
+ "unit": {
+  "es": "% de votaciones"
+ },
+ "source": {
+  "name": "Congreso de los Diputados, datos abiertos de votaciones",
+  "url": "https://www.congreso.es/es/opendata/votaciones",
+  "license": "Reutilización libre citando la fuente (aviso legal del Congreso)",
+  "dataset": "Votaciones nominales del Pleno, legislaturas X a XV"
+ },
+ "notes": {
+  "es": [
+   "Voto de un partido: la opción que eligió la mayoría de sus diputados presentes.",
+   "Sin las votaciones de Presupuestos Generales, que son miles de enmiendas en algunos años.",
+   "Años con al menos 50 votaciones. 2016 y 2019 tuvieron legislaturas breves y elecciones repetidas."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "pp-psoe": {
+    "es": "PP y PSOE"
+   }
+  }
+ },
+ "short_labels": {
+  "pp-psoe": "PP y PSOE"
+ },
+ "rows": [
+  {
+   "time": "2012",
+   "series": "pp-psoe",
+   "value": 39.4,
+   "n": 568
+  },
+  {
+   "time": "2013",
+   "series": "pp-psoe",
+   "value": 30.4,
+   "n": 958
+  },
+  {
+   "time": "2014",
+   "series": "pp-psoe",
+   "value": 30.4,
+   "n": 700
+  },
+  {
+   "time": "2015",
+   "series": "pp-psoe",
+   "value": 35.7,
+   "n": 1004
+  },
+  {
+   "time": "2016",
+   "series": "pp-psoe",
+   "value": 61.4,
+   "n": 236
+  },
+  {
+   "time": "2017",
+   "series": "pp-psoe",
+   "value": 50.4,
+   "n": 448
+  },
+  {
+   "time": "2018",
+   "series": "pp-psoe",
+   "value": 40.8,
+   "n": 490
+  },
+  {
+   "time": "2019",
+   "series": "pp-psoe",
+   "value": 49.5,
+   "n": 97
+  },
+  {
+   "time": "2020",
+   "series": "pp-psoe",
+   "value": 55.8,
+   "n": 860
+  },
+  {
+   "time": "2021",
+   "series": "pp-psoe",
+   "value": 46.3,
+   "n": 715
+  },
+  {
+   "time": "2022",
+   "series": "pp-psoe",
+   "value": 52.6,
+   "n": 1953
+  },
+  {
+   "time": "2023",
+   "series": "pp-psoe",
+   "value": 47.3,
+   "n": 746
+  },
+  {
+   "time": "2024",
+   "series": "pp-psoe",
+   "value": 39.0,
+   "n": 860
+  },
+  {
+   "time": "2025",
+   "series": "pp-psoe",
+   "value": 38.1,
+   "n": 740
+  },
+  {
+   "time": "2026",
+   "series": "pp-psoe",
+   "value": 39.3,
+   "n": 539
+  }
+ ]
+}

@@ -10,7 +10,8 @@ import "../styles/charts.css";
 
 const theme = themeById("elecciones")!;
 const lenses = theme.lenses!;
-const notes = notesOf("elecciones");
+// Notas del especial y análisis del Congreso
+const notes = [...notesOf("elecciones"), ...notesOf("congreso")];
 // Piezas de campaña: los temas publicados (con el gancho electoral) y las notas del especial, de la más reciente a la más antigua
 const pieces = [
   ...published().filter((t) => !t.hub).map((t) => ({ href: themePath(t.slug).es, title: t.title.es, dek: t.dek?.es, date: t.published! })),

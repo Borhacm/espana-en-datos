@@ -65,10 +65,10 @@ const CUSTOM: Record<string, (chart: ChartData) => Pivot> = {
     const cols: string[] = chart.blocs;
     const votes = chart.rows.some((r) => r.vote);
     const VOTE: Record<string, string> = { si: "A favor", no: "En contra", abst: "Abstención" };
-    const rowKeys: string[] = votes ? [...new Set(chart.rows.map((r) => r.row as string))] : cols;
+    const rowKeys: string[] = chart.row_keys ?? (votes ? [...new Set(chart.rows.map((r) => r.row as string))] : cols);
     const cell = new Map(chart.rows.map((r) => [`${r.row}|${r.col}`, r]));
     return {
-      rowHeader: votes ? "Decreto-ley" : "Partido",
+      rowHeader: votes ? "Decreto-ley" : chart.row_keys ? "Gobierno" : "Partido",
       cols: cols.map((c) => ({ key: c, label: c })),
       rows: rowKeys.map((rk) => ({
         key: rk,

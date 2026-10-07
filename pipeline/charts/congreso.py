@@ -21,7 +21,7 @@ BLOCS = ["PP", "PSOE", "Vox", "Sumar", "ERC", "Junts", "EH Bildu", "PNV", "Podem
 DECREE_TITLE = "Convalidación o derogación de Reales Decretos-leyes."
 
 # Votaciones con empate que se repitieron fuera de los datos abiertos: resultado oficial
-OUTCOMES = {
+OUTCOMES = {  # ver también congreso.DECREE_OUTCOMES (todas las legislaturas)
     "8/2023": {"result": "convalidado", "note": "Empate a 171 en la primera votación; convalidado en la segunda por 172 a 171.",
                "url": "https://www.mpr.gob.es/prencom/notas/Paginas/2024/100124-aprobados-decretos-leyes-prorroga-medidas.aspx"},
 }
@@ -143,7 +143,7 @@ def lado_ganador():
 # ---------- 3. Los decretos que cayeron ----------
 
 def decretos():
-    rows = [v for v in _rows() if v["title"] == DECREE_TITLE and not v["text"].startswith("Tramitación")]
+    rows = [v for v in _rows() if v["title"] == DECREE_TITLE and re.match(r"Real Decreto-[Ll]ey", v["text"])]
     out, total, derogated = [], 0, []
     for v in rows:
         m = re.match(r"Real Decreto-ley (\d+/\d{4})", v["text"])

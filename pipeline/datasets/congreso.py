@@ -206,6 +206,31 @@ def build() -> dict:
     }
 
 
+# Resultado oficial de convalidaciones con empate que se repitieron fuera de los datos abiertos (número de RDL -> resultado)
+DECREE_OUTCOMES = {
+    "8/2023": ("convalidado", "https://www.mpr.gob.es/prencom/notas/Paginas/2024/100124-aprobados-decretos-leyes-prorroga-medidas.aspx"),
+    "14/2021": ("convalidado", "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-12605"),
+}
+
+
+def decrees(rows: list[dict]) -> list[dict]:
+    """Votaciones de convalidación de reales decretos-leyes. El texto tiene que empezar por «Real Decreto-ley»: en la X hay
+    enmiendas a una reforma del Reglamento etiquetadas por error con el epígrafe de convalidación."""
+    out = []
+    for r in rows:
+        if not r["title"].startswith("Convalidación o derogación"):
+            continue
+        m = re.match(r"Real Decreto-[Ll]ey (\d+/\d{4})", r["text"])
+        if not m:
+            continue
+        num = m.group(1)
+        fix = DECREE_OUTCOMES.get(num)
+        out.append({"decree": num, "date": r["date"], "yes": r["yes"], "no": r["no"], "abst": r["abst"],
+                    "result": fix[0] if fix else ("convalidado" if r["yes"] > r["no"] else "derogado"),
+                    "fixed_by": fix[1] if fix else None, "text": r["text"][:160]})
+    return out
+
+
 # Orden de los partidos en el explorador: los estatales primero, después el resto por orden alfabético
 EXPLORER_ORDER = ["PP", "PSOE", "Vox", "Sumar", "Unidas Podemos", "Podemos", "Ciudadanos", "Izquierda Plural", "UPyD",
                   "ERC", "Junts", "CiU", "Democràcia i Llibertat", "EH Bildu", "PNV", "BNG", "CC", "UPN", "Compromís",
@@ -222,7 +247,8 @@ def build_explorer() -> dict:
                    key=lambda b: (EXPLORER_ORDER.index(b) if b in EXPLORER_ORDER else 99, b))
     code = {"si": "s", "no": "n", "abst": "a", None: "."}
     for i, (leg, rs) in enumerate(by_leg.items()):
-        legs.append({"id": leg, "label": LEGISLATURES[leg], "from": rs[0]["date"], "to": rs[-1]["date"], "n": len(rs)})
+        legs.append({"id": leg, "label": LEGISLATURES[leg], "from": rs[0]["date"], "to": rs[-1]["date"], "n": len(rs),
+                     "decrees": decrees(rs)})
         for r in rs:
             rows.append([i, r["date"].replace("-", ""), r["kind"], int(r["yes"] > r["no"]),
                          "".join(code[r["positions"].get(b)] for b in blocs)])

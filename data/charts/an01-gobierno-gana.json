@@ -1,0 +1,138 @@
+{
+ "id": "an01-gobierno-gana",
+ "lens": "tiempo",
+ "theme": "congreso",
+ "title": {
+  "es": "Con mayoría absoluta, el PP ganó todas las votaciones de 2012 a 2015; el PSOE ha pasado del 99 % en 2021 al 76 % en 2026"
+ },
+ "subtitle": {
+  "es": "Porcentaje de votaciones en las que el partido del presidente del Gobierno votó lo mismo que el resultado final, por año"
+ },
+ "unit": {
+  "es": "% de votaciones"
+ },
+ "source": {
+  "name": "Congreso de los Diputados, datos abiertos de votaciones",
+  "url": "https://www.congreso.es/es/opendata/votaciones",
+  "license": "Reutilización libre citando la fuente (aviso legal del Congreso)",
+  "dataset": "Votaciones nominales del Pleno, legislaturas X a XV",
+  "also": [
+   {
+    "name": "Presidentes del Gobierno (La Moncloa)",
+    "url": "https://www.lamoncloa.gob.es/presidente/presidentes/Paginas/index.aspx"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Gana quien vota sí y la votación sale adelante, o vota no y no sale. Las abstenciones no cuentan.",
+   "Partido del Gobierno en la fecha de cada votación: PP hasta el 1 de junio de 2018 (moción de censura) y PSOE desde entonces. En 2018 hay dos puntos, uno por partido.",
+   "Resultado por mayoría simple; las leyes orgánicas necesitan mayoría absoluta en la votación final, así que el dato es aproximado en esas votaciones.",
+   "Sin Presupuestos. Años con al menos 50 votaciones de cada partido."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "short_labels": {
+  "PP": "PP en el Gobierno",
+  "PSOE": "PSOE en el Gobierno"
+ },
+ "rows": [
+  {
+   "time": "2012",
+   "series": "PP",
+   "value": 100.0,
+   "n": 568
+  },
+  {
+   "time": "2013",
+   "series": "PP",
+   "value": 100.0,
+   "n": 958
+  },
+  {
+   "time": "2014",
+   "series": "PP",
+   "value": 100.0,
+   "n": 700
+  },
+  {
+   "time": "2015",
+   "series": "PP",
+   "value": 100.0,
+   "n": 1004
+  },
+  {
+   "time": "2016",
+   "series": "PP",
+   "value": 81.6,
+   "n": 223
+  },
+  {
+   "time": "2017",
+   "series": "PP",
+   "value": 73.0,
+   "n": 429
+  },
+  {
+   "time": "2018",
+   "series": "PP",
+   "value": 57.7,
+   "n": 97
+  },
+  {
+   "time": "2018",
+   "series": "PSOE",
+   "value": 81.0,
+   "n": 353
+  },
+  {
+   "time": "2019",
+   "series": "PSOE",
+   "value": 92.4,
+   "n": 92
+  },
+  {
+   "time": "2020",
+   "series": "PSOE",
+   "value": 98.6,
+   "n": 854
+  },
+  {
+   "time": "2021",
+   "series": "PSOE",
+   "value": 99.0,
+   "n": 713
+  },
+  {
+   "time": "2022",
+   "series": "PSOE",
+   "value": 97.9,
+   "n": 1932
+  },
+  {
+   "time": "2023",
+   "series": "PSOE",
+   "value": 96.8,
+   "n": 730
+  },
+  {
+   "time": "2024",
+   "series": "PSOE",
+   "value": 87.9,
+   "n": 795
+  },
+  {
+   "time": "2025",
+   "series": "PSOE",
+   "value": 84.2,
+   "n": 697
+  },
+  {
+   "time": "2026",
+   "series": "PSOE",
+   "value": 75.5,
+   "n": 490
+  }
+ ]
+}

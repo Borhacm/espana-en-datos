@@ -35,7 +35,8 @@ const toc = note.body.filter((b): b is { h: { es: string; en: string }; id: stri
       </p>
       <h1>{note.title[lang]}</h1>
       <p class="dek">{note.dek[lang]}</p>
-      <FocusSelect lang={lang} />
+      {/* Destacar una comunidad solo tiene sentido en la mirada «España por dentro» */}
+      {note.lens === "dentro" && <FocusSelect lang={lang} />}
     </header>
 
     {isAnalysis && toc.length > 0 && (

@@ -1,0 +1,269 @@
+{
+ "id": "an01-socios",
+ "lens": "tiempo",
+ "theme": "congreso",
+ "title": {
+  "es": "Con quién ha votado cada Gobierno"
+ },
+ "subtitle": {
+  "es": "Porcentaje de votaciones en que cada partido votó igual que el partido del Gobierno, por legislatura (sin Presupuestos)"
+ },
+ "unit": {
+  "es": "% de votaciones"
+ },
+ "source": {
+  "name": "Congreso de los Diputados, datos abiertos de votaciones",
+  "url": "https://www.congreso.es/es/opendata/votaciones",
+  "license": "Reutilización libre citando la fuente (aviso legal del Congreso)",
+  "dataset": "Votaciones nominales del Pleno, legislaturas X a XV"
+ },
+ "notes": {
+  "es": [
+   "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos.",
+   "Solo celdas con al menos 100 votaciones comparadas; los partidos que no estaban en el Congreso quedan vacíos.",
+   "Grupo Mixto y Grupo Plural reúnen partidos distintos: su voto es el de la mayoría de sus miembros."
+  ]
+ },
+ "retrieved": "2026-10-07",
+ "geos": {},
+ "blocs": [
+  "Vox",
+  "Sumar",
+  "Unidas Podemos",
+  "Podemos",
+  "Ciudadanos",
+  "Izquierda Plural",
+  "UPyD",
+  "ERC",
+  "Junts",
+  "CiU",
+  "EH Bildu",
+  "PNV",
+  "BNG",
+  "CC",
+  "UPN",
+  "Compromís",
+  "Grupo Plural",
+  "Grupo Mixto",
+  "Mixto (otros)"
+ ],
+ "row_keys": [
+  "X · PP (2012-2015)",
+  "XII · PP (2016-2018)",
+  "XII · PSOE (2018-2019)",
+  "XIV · PSOE (2020-2023)",
+  "XV · PSOE (2023-2026)"
+ ],
+ "rows": [
+  {
+   "row": "X · PP (2012-2015)",
+   "col": "Izquierda Plural",
+   "value": 16.7,
+   "n": 3198
+  },
+  {
+   "row": "X · PP (2012-2015)",
+   "col": "UPyD",
+   "value": 36.0,
+   "n": 3229
+  },
+  {
+   "row": "X · PP (2012-2015)",
+   "col": "CiU",
+   "value": 27.9,
+   "n": 3227
+  },
+  {
+   "row": "X · PP (2012-2015)",
+   "col": "PNV",
+   "value": 22.8,
+   "n": 3207
+  },
+  {
+   "row": "X · PP (2012-2015)",
+   "col": "Grupo Mixto",
+   "value": 16.0,
+   "n": 3093
+  },
+  {
+   "row": "XII · PP (2016-2018)",
+   "col": "Unidas Podemos",
+   "value": 29.0,
+   "n": 765
+  },
+  {
+   "row": "XII · PP (2016-2018)",
+   "col": "Ciudadanos",
+   "value": 65.5,
+   "n": 765
+  },
+  {
+   "row": "XII · PP (2016-2018)",
+   "col": "ERC",
+   "value": 25.6,
+   "n": 751
+  },
+  {
+   "row": "XII · PP (2016-2018)",
+   "col": "PNV",
+   "value": 46.5,
+   "n": 759
+  },
+  {
+   "row": "XII · PP (2016-2018)",
+   "col": "Grupo Mixto",
+   "value": 37.4,
+   "n": 754
+  },
+  {
+   "row": "XII · PSOE (2018-2019)",
+   "col": "Unidas Podemos",
+   "value": 63.0,
+   "n": 465
+  },
+  {
+   "row": "XII · PSOE (2018-2019)",
+   "col": "Ciudadanos",
+   "value": 45.8,
+   "n": 465
+  },
+  {
+   "row": "XII · PSOE (2018-2019)",
+   "col": "ERC",
+   "value": 56.7,
+   "n": 457
+  },
+  {
+   "row": "XII · PSOE (2018-2019)",
+   "col": "PNV",
+   "value": 69.7,
+   "n": 462
+  },
+  {
+   "row": "XII · PSOE (2018-2019)",
+   "col": "Grupo Mixto",
+   "value": 70.1,
+   "n": 448
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "Vox",
+   "value": 48.1,
+   "n": 4238
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "Unidas Podemos",
+   "value": 86.4,
+   "n": 4243
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "Ciudadanos",
+   "value": 48.2,
+   "n": 4223
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "ERC",
+   "value": 50.7,
+   "n": 4241
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "EH Bildu",
+   "value": 51.9,
+   "n": 4218
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "PNV",
+   "value": 57.0,
+   "n": 4197
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "Grupo Plural",
+   "value": 51.0,
+   "n": 4021
+  },
+  {
+   "row": "XIV · PSOE (2020-2023)",
+   "col": "Grupo Mixto",
+   "value": 65.4,
+   "n": 3867
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "Vox",
+   "value": 29.7,
+   "n": 2171
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "Sumar",
+   "value": 83.1,
+   "n": 2173
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "Podemos",
+   "value": 67.4,
+   "n": 2160
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "ERC",
+   "value": 64.8,
+   "n": 2169
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "Junts",
+   "value": 62.2,
+   "n": 2152
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "EH Bildu",
+   "value": 66.9,
+   "n": 2167
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "PNV",
+   "value": 74.8,
+   "n": 2147
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "BNG",
+   "value": 61.9,
+   "n": 2077
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "CC",
+   "value": 74.7,
+   "n": 2162
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "UPN",
+   "value": 41.8,
+   "n": 2123
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "Compromís",
+   "value": 66.3,
+   "n": 976
+  },
+  {
+   "row": "XV · PSOE (2023-2026)",
+   "col": "Mixto (otros)",
+   "value": 88.4,
+   "n": 1179
+  }
+ ]
+}
