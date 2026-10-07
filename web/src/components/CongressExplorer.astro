@@ -1,0 +1,82 @@
+---
+// Explorador de votaciones del Congreso (legislaturas X a XV). La lógica está en scripts/congress-explorer.ts.
+import { loadBase } from "../lib/data";
+
+const data = loadBase("congreso-explorador");
+const first = data.legislatures[0];
+const last = data.legislatures[data.legislatures.length - 1];
+---
+<section class="explorer" id="explorador" aria-labelledby="ex-h" data-explorer>
+  <p class="code">CG-EX</p>
+  <h3 id="ex-h">Explora las votaciones desde 2011</h3>
+  <p class="sub">
+    {data.votes.length.toLocaleString("es-ES")} votaciones nominales del Pleno, de la legislatura {first.label} a la {last.label}.
+    Elige una o varias legislaturas (se suman), el tipo de votación y cómo verlo. El enlace de la página guarda tu selección.
+  </p>
+
+  <div class="ex-controls">
+    <fieldset>
+      <legend>Legislaturas</legend>
+      <div class="chips" data-ex-legs></div>
+      <button type="button" class="linkbtn" data-ex-all>Todas</button>
+    </fieldset>
+    <div class="ctl"><span class="lbl">Tipo de votación</span><div class="seg" data-ex-type></div></div>
+    <div class="ctl"><span class="lbl">Vista</span><div class="seg" data-ex-view></div></div>
+    <label class="ctl" data-ex-party-wrap hidden><span class="lbl">Partido</span><select data-ex-party></select></label>
+  </div>
+
+  <p class="summary" data-ex-summary aria-live="polite"></p>
+  <div class="legend" data-ex-legend></div>
+  <div class="plot" data-ex-plot><p class="plot-status" data-ex-status>Cargando las votaciones</p></div>
+
+  <footer class="fig-foot">
+    <p>
+      Fuente: <a href="https://www.congreso.es/es/opendata/votaciones" rel="noopener">Congreso de los Diputados, datos abiertos de votaciones</a>.
+      Voto de un partido: la opción que eligió la mayoría de sus diputados presentes. Coincidencia: votaciones en que dos partidos votaron igual,
+      sobre las que ambos votaron. Cada votación pesa lo mismo. Solo aparecen los partidos con posición en al menos 30 votaciones de la selección.
+      Al sumar legislaturas se juntan los partidos con el mismo nombre; los grupos que cambiaron de nombre (por ejemplo, Unidas Podemos y Sumar) se cuentan aparte.
+    </p>
+    <ul class="notes" data-ex-notes></ul>
+    <details class="table-view">
+      <summary>Ver los datos en una tabla</summary>
+      <div class="table-scroll" data-ex-table></div>
+      <a class="download" href="/data/base/congreso-explorador.json" download>Descargar las votaciones (JSON)</a>
+    </details>
+  </footer>
+</section>
+
+<script>
+  import "../scripts/congress-explorer.ts";
+</script>
+
+<style>
+  .explorer { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--rule-strong); }
+  .code { margin: 0; font-weight: 700; font-size: 0.95rem; color: var(--brand-ink); }
+  h3 { font-size: clamp(1.75rem, 3.2vw, 2.4rem); margin-top: 0.5rem; }
+  .sub { margin: 0.5rem 0 0; color: var(--ink-2); max-width: 46rem; font-size: 1rem; }
+  .ex-controls { display: grid; gap: 1rem; margin-top: 1.5rem; }
+  fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+  legend, .lbl { font-size: 0.85rem; color: var(--ink-3); font-weight: 600; padding: 0; margin-bottom: 0.35rem; }
+  fieldset legend { width: 100%; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .chips :global(.chip) { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.3rem 0.7rem; border: 1px solid var(--rule-strong); border-radius: 999px; font-size: 0.9rem; cursor: pointer; }
+  .chips :global(.chip:has(input:checked)) { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .chips :global(input) { accent-color: var(--brand); }
+  .linkbtn { font: inherit; font-size: 0.9rem; background: none; border: 0; color: var(--brand-ink); text-decoration: underline; cursor: pointer; padding: 0; }
+  .ctl { display: grid; gap: 0.2rem; justify-items: start; }
+  .ctl[hidden] { display: none; }
+  .ctl select { font: 600 1rem var(--font-sans); color: var(--ink); background: var(--paper-raised); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 0.35rem 0.6rem; }
+  .summary { margin: 1.5rem 0 0.5rem; font-weight: 600; }
+  .legend:empty { display: none; }
+  .plot { position: relative; margin-top: 1rem; min-height: 16rem; overflow-x: auto; }
+  .plot-status { color: var(--ink-3); padding-top: 5rem; text-align: center; }
+  .fig-foot { margin-top: 1rem; color: var(--ink-3); font-size: 0.88rem; line-height: 1.45; max-width: 52rem; }
+  .notes { margin: 0.5rem 0; padding-left: 1.1rem; }
+  .table-view summary { cursor: pointer; color: var(--brand-ink); font-weight: 600; font-size: 0.95rem; padding-block: 0.35rem; width: fit-content; }
+  .table-scroll { overflow-x: auto; max-height: 26rem; margin-top: 0.5rem; border: 1px solid var(--rule); }
+  .table-scroll :global(table) { border-collapse: collapse; width: 100%; font-size: 0.9rem; color: var(--ink); }
+  .table-scroll :global(th), .table-scroll :global(td) { padding: 0.3rem 0.6rem; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+  .table-scroll :global(th:first-child) { text-align: left; }
+  .table-scroll :global(thead th) { position: sticky; top: 0; background: var(--paper-raised); }
+  .download { display: inline-block; margin-top: 0.6rem; font-size: 0.92rem; }
+</style>

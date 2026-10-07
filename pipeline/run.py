@@ -22,6 +22,7 @@ BASE = [
     ("congreso-202307", lambda: elecciones.build("202307"), True),
     ("escanos-2026", escanos.build, False),
     ("congreso-xv", congreso.build, True),
+    ("congreso-explorador", congreso.build_explorer, True),
 ]
 # Datasets que dependen de los gráficos (se escriben después de ellos)
 LATE = [("simulador", lambda: __import__("charts.elecciones", fromlist=["simulador"]).simulador(), True)]

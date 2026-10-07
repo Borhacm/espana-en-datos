@@ -23,7 +23,9 @@ export function renderMatrix(ctx: RenderContext) {
   const cell = new Map<string, Row>(chart.rows.map((r: Row) => [`${r.row}|${r.col}`, r]));
 
   const narrow = width < 560;
-  const left = mode === "heat" ? (narrow ? 76 : 84) : (narrow ? 78 : 104);
+  // Margen izquierdo según la etiqueta más larga (unos 7 px por carácter), con mínimo y máximo
+  const longest = Math.max(...rowKeys.map((k) => (mode === "heat" ? k : `RDL ${k}`).length));
+  const left = Math.min(Math.max(longest * 7.2 + 14, narrow ? 76 : 84), narrow ? 110 : 170);
   const top = narrow ? 64 : 76;
   const size = Math.max(Math.min(Math.floor((width - left - 4) / cols.length), mode === "heat" ? 54 : 46), 18);
   const rowH = mode === "heat" ? size : Math.min(size, 30);

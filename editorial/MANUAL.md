@@ -36,7 +36,7 @@ uv run run.py --only charts.elecciones
 Los lunes, actualiza también las votaciones del Congreso (solo descarga los plenos nuevos) y su sección:
 
 ```bash
-uv run run.py --only congreso-xv
+uv run run.py --only congreso          # congreso-xv y el explorador (legislaturas X a XV); tarda unos minutos
 uv run run.py --only charts.congreso
 ```
 
@@ -51,7 +51,7 @@ Lee `editorial/calendario.yaml` y toma la **primera** entrada con `estado` disti
 ## 4. Buscar y comprobar los datos
 
 - Empieza por la `idea` del calendario, pero compruébala: que la fuente existe, qué dimensiones tiene y cuál es el último periodo completo.
-- Lectores en `pipeline/lib/sources.py`: `ine_table` (API del INE: busca tablas con `https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/<id>`), `eurostat`, `oecd`, `worldbank`, `socrata_cat` (datos abiertos de Cataluña), `wikipedia`. Resultados electorales: `pipeline/datasets/elecciones.py` (Infoelectoral, ficheros MUNI; necesita la cabecera de navegador de `lib/http.py`). Gobiernos autonómicos: `datasets/gobiernos.py`. Escaños 2026: `datasets/escanos.py`. Votaciones del Congreso (XV legislatura, voto de cada partido en cada votación nominal): `datasets/congreso.py`, con la sección `/congreso/` (`charts/congreso.py`).
+- Lectores en `pipeline/lib/sources.py`: `ine_table` (API del INE: busca tablas con `https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/<id>`), `eurostat`, `oecd`, `worldbank`, `socrata_cat` (datos abiertos de Cataluña), `wikipedia`. Resultados electorales: `pipeline/datasets/elecciones.py` (Infoelectoral, ficheros MUNI; necesita la cabecera de navegador de `lib/http.py`). Gobiernos autonómicos: `datasets/gobiernos.py`. Escaños 2026: `datasets/escanos.py`. Votaciones del Congreso (XV legislatura, voto de cada partido en cada votación nominal): `datasets/congreso.py`, con la sección `/congreso/` (`charts/congreso.py`) y su explorador de todas las legislaturas desde 2011 (`build_explorer`, `data/base/congreso-explorador.json`).
 - Geografía (`pipeline/lib/geo.py`): comunidades con código INE (`"01"`... `"19"`) y `"ES"` para el total; provincias `"01"`... `"52"`; países en ISO3 (`"ESP"`, `"DEU"`) y `"EU27"`. `geo.ccaa_table()` y `geo.country_table()` dan los nombres para el JSON.
 - Utilidades comunes en `pipeline/charts/common.py`: `ine_ccaa` (nombre del INE a código), `annual` (media anual con años completos), `pct`, `es_num`.
 
