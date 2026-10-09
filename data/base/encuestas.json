@@ -17006,6 +17006,38 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "22–30 Jun",
+   "date": "2026-06-30",
+   "sample": 6019,
+   "panel": false,
+   "reestimate": "Demócrata",
+   "partisan": false,
+   "url": "https://www.democrata.es/encuestas/elecciones-generales/encuesta-elecciones-generales-recalculo-cis-situa-psoe-19-puntos-pp-da-194-escanos-pp-vox/",
+   "values": {
+    "PP": 32.3,
+    "PSOE": 30.4,
+    "Vox": 18.1,
+    "Sumar": 7.1,
+    "Podemos": 2.7
+   },
+   "seats": {
+    "PP": 132,
+    "PSOE": 121,
+    "Vox": 62,
+    "Sumar": 9,
+    "ERC": 6,
+    "Junts": 5,
+    "EH Bildu": 6,
+    "PNV": 4,
+    "BNG": 1,
+    "CC": 1,
+    "UPN": 1,
+    "Podemos": 2
+   }
+  },
+  {
    "pollster": "NC Report",
    "commissioner": "La Razón",
    "fieldwork": "25 Jun–1 Jul",
@@ -18858,7 +18890,106 @@
     "Podemos": 2,
     "SALF": 0
    }
+  },
+  {
+   "pollster": "NC Report",
+   "commissioner": "La Razón",
+   "fieldwork": "1–6 Oct",
+   "date": "2026-10-06",
+   "sample": 1000,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.larazon.es/espana/adelanto-electoral-refuerza-bloque-vox-junts_202610086ac69166b0108820e09b13b5.html",
+   "values": {
+    "PP": 34.1,
+    "PSOE": 25.0,
+    "Vox": 18.2,
+    "Sumar": 5.3,
+    "ERC": 1.8,
+    "Junts": 2.9,
+    "EH Bildu": 1.4,
+    "PNV": 0.9,
+    "BNG": 0.7,
+    "CC": 0.4,
+    "UPN": 0.2,
+    "Podemos": 3.9
+   },
+   "seats": {
+    "PP": 147.0,
+    "PSOE": 100.0,
+    "Vox": 62.5,
+    "Sumar": 7.0,
+    "ERC": 6.5,
+    "Junts": 10.5,
+    "EH Bildu": 6,
+    "PNV": 4.5,
+    "BNG": 1.5,
+    "CC": 1,
+    "UPN": 1,
+    "Podemos": 3.0
+   }
+  },
+  {
+   "pollster": "DYM",
+   "commissioner": "Henneo",
+   "fieldwork": "5–7 Oct",
+   "date": "2026-10-07",
+   "sample": 1011,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.20minutos.es/nacional/psoe-absorbe-intencion-votos-sumar-podemos-mientras-pp-vox-consolidan-su-mayoria_7046598_0.html",
+   "values": {
+    "PP": 34.0,
+    "PSOE": 28.2,
+    "Vox": 18.2,
+    "Sumar": 3.6,
+    "Podemos": 3.6
+   },
+   "seats": {
+    "PP": 141.0,
+    "PSOE": 109.0,
+    "Vox": 63.0,
+    "Sumar": 4.0,
+    "Podemos": 1.5
+   }
+  },
+  {
+   "pollster": "40dB",
+   "commissioner": "Prisa",
+   "fieldwork": "7–8 Oct",
+   "date": "2026-10-08",
+   "sample": 800,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://elpais.com/espana/2026-10-09/el-pp-y-vox-mantienen-la-mayoria-absoluta-tras-el-adelanto-electoral.html",
+   "values": {
+    "PP": 31.9,
+    "PSOE": 28.1,
+    "Vox": 18.9,
+    "Sumar": 5.3,
+    "Podemos": 2.3,
+    "SALF": 1.8
+   },
+   "seats": {
+    "PP": 131.5,
+    "PSOE": 111.0,
+    "Vox": 68.5,
+    "Sumar": 6.0,
+    "ERC": 8,
+    "Junts": 7,
+    "EH Bildu": 7,
+    "PNV": 6,
+    "BNG": 2,
+    "CC": 1,
+    "UPN": 1,
+    "AA": 1,
+    "Podemos": 2,
+    "SALF": 0
+   }
   }
  ],
- "retrieved": "2026-10-07"
+ "retrieved": "2026-10-09"
 }

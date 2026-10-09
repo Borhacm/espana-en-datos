@@ -1,0 +1,340 @@
+{
+ "id": "eme1-europa-temporalidad",
+ "lens": "europa",
+ "theme": "empleo",
+ "title": {
+  "es": "Los asalariados temporales bajan del 25,4 % al 15,4 % en España entre 2021 y 2025; en la UE, del 14,0 % al 12,6 %"
+ },
+ "subtitle": {
+  "es": "Asalariados con contrato temporal, de 15 a 64 años, 2025, en % de los asalariados. España tenía en 2021 el 2.º porcentaje más alto de 27 países; ahora, el 3.º"
+ },
+ "unit": {
+  "es": "% de los asalariados"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "lfsi_pt_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_pt_a/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa armonizada (para España, la EPA del INE), medias anuales.",
+   "Los fijos discontinuos cuentan como contratos indefinidos, no como temporales.",
+   "«prev» en la descarga: porcentaje de 2021, el último año completo antes de la reforma laboral."
+  ]
+ },
+ "retrieved": "2026-10-09",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 8.3,
+   "prev": 8.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 11.0,
+   "prev": 10.3
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 2.6,
+   "prev": 3.3
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 14.6,
+   "prev": 13.2
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 7.5,
+   "prev": 6.5
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 11.5,
+   "prev": 11.3
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 12.5,
+   "prev": 10.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 15.4,
+   "prev": 25.4
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 3.4,
+   "prev": 1.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 12.6,
+   "prev": 14.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 14.0,
+   "prev": 15.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 15.2,
+   "prev": 15.0
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 9.5,
+   "prev": 10.2
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 8.4,
+   "prev": 13.2
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 4.5,
+   "prev": 5.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 7.4,
+   "prev": 9.3
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 13.6,
+   "prev": 16.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 1.8,
+   "prev": 1.9
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 9.3,
+   "prev": 9.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 2.6,
+   "prev": 2.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 9.3,
+   "prev": 8.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 25.5,
+   "prev": 27.0
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 15.7,
+   "prev": 14.9
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 15.2,
+   "prev": 17.2
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 1.9,
+   "prev": 2.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 3.9,
+   "prev": 4.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 9.6,
+   "prev": 11.8
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 12.5,
+   "prev": 14.5
+  }
+ ]
+}

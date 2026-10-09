@@ -1,0 +1,1176 @@
+{
+ "id": "emt2-fijos-discontinuos",
+ "lens": "tiempo",
+ "theme": "empleo",
+ "title": {
+  "es": "Los fijos discontinuos pasan del 2,5 % al 4,1 % de los asalariados privados; sumados a los temporales, bajan del 26,2 % al 16,5 %"
+ },
+ "subtitle": {
+  "es": "Asalariados del sector privado con contrato temporal o fijo discontinuo, en %, trimestral desde 2008 hasta el segundo trimestre de 2026"
+ },
+ "unit": {
+  "es": "% de los asalariados del sector privado"
+ },
+ "source": {
+  "name": "INE, Encuesta de Población Activa",
+  "dataset": "Tabla 65195",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65195",
+  "license": "Reutilización libre citando la fuente",
+  "also": []
+ },
+ "notes": {
+  "es": [
+   "Fijo discontinuo: contrato indefinido para trabajos de temporada o intermitentes. Entre periodos de actividad el trabajador no cobra salario, pero conserva el contrato. Cuenta como indefinido.",
+   "La EPA pregunta a las personas por su contrato en la semana de referencia: un fijo discontinuo en un periodo sin actividad puede aparecer como ocupado ausente o como parado según su situación, de ahí parte de la estacionalidad.",
+   "Titular: media de 2021 frente a la media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026.",
+   "«suma»: temporales más fijos discontinuos, para ver cuánto de la caída de la temporalidad se explica por el paso a fijos discontinuos."
+  ]
+ },
+ "retrieved": "2026-10-09",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "temporal": {
+    "es": "Temporales"
+   },
+   "discontinuo": {
+    "es": "Fijos discontinuos"
+   },
+   "suma": {
+    "es": "Temporales + fijos discontinuos"
+   }
+  }
+ },
+ "short_labels": {
+  "temporal": "Temporales",
+  "discontinuo": "Fijos disc.",
+  "suma": "Suma"
+ },
+ "quarterly": true,
+ "events": [
+  {
+   "time": 2022.0,
+   "label": {
+    "es": "Reforma laboral: Real Decreto-ley 32/2021 (diciembre de 2021)"
+   }
+  },
+  {
+   "time": 2022.23,
+   "label": {
+    "es": "Rigen los nuevos contratos (30 de marzo de 2022)"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "time": 2008.0,
+   "series": "temporal",
+   "value": 30.9
+  },
+  {
+   "time": 2008.25,
+   "series": "temporal",
+   "value": 30.1
+  },
+  {
+   "time": 2008.5,
+   "series": "temporal",
+   "value": 29.9
+  },
+  {
+   "time": 2008.75,
+   "series": "temporal",
+   "value": 28.0
+  },
+  {
+   "time": 2009.0,
+   "series": "temporal",
+   "value": 25.3
+  },
+  {
+   "time": 2009.25,
+   "series": "temporal",
+   "value": 24.9
+  },
+  {
+   "time": 2009.5,
+   "series": "temporal",
+   "value": 25.5
+  },
+  {
+   "time": 2009.75,
+   "series": "temporal",
+   "value": 24.9
+  },
+  {
+   "time": 2010.0,
+   "series": "temporal",
+   "value": 24.3
+  },
+  {
+   "time": 2010.25,
+   "series": "temporal",
+   "value": 25.0
+  },
+  {
+   "time": 2010.5,
+   "series": "temporal",
+   "value": 25.5
+  },
+  {
+   "time": 2010.75,
+   "series": "temporal",
+   "value": 24.8
+  },
+  {
+   "time": 2011.0,
+   "series": "temporal",
+   "value": 24.7
+  },
+  {
+   "time": 2011.25,
+   "series": "temporal",
+   "value": 25.5
+  },
+  {
+   "time": 2011.5,
+   "series": "temporal",
+   "value": 26.2
+  },
+  {
+   "time": 2011.75,
+   "series": "temporal",
+   "value": 25.0
+  },
+  {
+   "time": 2012.0,
+   "series": "temporal",
+   "value": 23.9
+  },
+  {
+   "time": 2012.25,
+   "series": "temporal",
+   "value": 24.1
+  },
+  {
+   "time": 2012.5,
+   "series": "temporal",
+   "value": 24.7
+  },
+  {
+   "time": 2012.75,
+   "series": "temporal",
+   "value": 23.7
+  },
+  {
+   "time": 2013.0,
+   "series": "temporal",
+   "value": 22.7
+  },
+  {
+   "time": 2013.25,
+   "series": "temporal",
+   "value": 23.9
+  },
+  {
+   "time": 2013.5,
+   "series": "temporal",
+   "value": 25.1
+  },
+  {
+   "time": 2013.75,
+   "series": "temporal",
+   "value": 24.6
+  },
+  {
+   "time": 2014.0,
+   "series": "temporal",
+   "value": 24.0
+  },
+  {
+   "time": 2014.25,
+   "series": "temporal",
+   "value": 25.0
+  },
+  {
+   "time": 2014.5,
+   "series": "temporal",
+   "value": 25.7
+  },
+  {
+   "time": 2014.75,
+   "series": "temporal",
+   "value": 25.2
+  },
+  {
+   "time": 2015.0,
+   "series": "temporal",
+   "value": 24.3
+  },
+  {
+   "time": 2015.25,
+   "series": "temporal",
+   "value": 26.0
+  },
+  {
+   "time": 2015.5,
+   "series": "temporal",
+   "value": 27.2
+  },
+  {
+   "time": 2015.75,
+   "series": "temporal",
+   "value": 26.6
+  },
+  {
+   "time": 2016.0,
+   "series": "temporal",
+   "value": 25.8
+  },
+  {
+   "time": 2016.25,
+   "series": "temporal",
+   "value": 26.6
+  },
+  {
+   "time": 2016.5,
+   "series": "temporal",
+   "value": 27.9
+  },
+  {
+   "time": 2016.75,
+   "series": "temporal",
+   "value": 27.4
+  },
+  {
+   "time": 2017.0,
+   "series": "temporal",
+   "value": 26.4
+  },
+  {
+   "time": 2017.25,
+   "series": "temporal",
+   "value": 27.6
+  },
+  {
+   "time": 2017.5,
+   "series": "temporal",
+   "value": 28.2
+  },
+  {
+   "time": 2017.75,
+   "series": "temporal",
+   "value": 27.3
+  },
+  {
+   "time": 2018.0,
+   "series": "temporal",
+   "value": 26.5
+  },
+  {
+   "time": 2018.25,
+   "series": "temporal",
+   "value": 27.2
+  },
+  {
+   "time": 2018.5,
+   "series": "temporal",
+   "value": 27.8
+  },
+  {
+   "time": 2018.75,
+   "series": "temporal",
+   "value": 27.0
+  },
+  {
+   "time": 2019.0,
+   "series": "temporal",
+   "value": 25.6
+  },
+  {
+   "time": 2019.25,
+   "series": "temporal",
+   "value": 25.9
+  },
+  {
+   "time": 2019.5,
+   "series": "temporal",
+   "value": 26.4
+  },
+  {
+   "time": 2019.75,
+   "series": "temporal",
+   "value": 25.7
+  },
+  {
+   "time": 2020.0,
+   "series": "temporal",
+   "value": 24.4
+  },
+  {
+   "time": 2020.25,
+   "series": "temporal",
+   "value": 21.2
+  },
+  {
+   "time": 2020.5,
+   "series": "temporal",
+   "value": 23.2
+  },
+  {
+   "time": 2020.75,
+   "series": "temporal",
+   "value": 23.2
+  },
+  {
+   "time": 2021.0,
+   "series": "temporal",
+   "value": 22.2
+  },
+  {
+   "time": 2021.25,
+   "series": "temporal",
+   "value": 23.8
+  },
+  {
+   "time": 2021.5,
+   "series": "temporal",
+   "value": 24.7
+  },
+  {
+   "time": 2021.75,
+   "series": "temporal",
+   "value": 24.1
+  },
+  {
+   "time": 2022.0,
+   "series": "temporal",
+   "value": 22.2
+  },
+  {
+   "time": 2022.25,
+   "series": "temporal",
+   "value": 20.0
+  },
+  {
+   "time": 2022.5,
+   "series": "temporal",
+   "value": 17.9
+  },
+  {
+   "time": 2022.75,
+   "series": "temporal",
+   "value": 15.1
+  },
+  {
+   "time": 2023.0,
+   "series": "temporal",
+   "value": 14.0
+  },
+  {
+   "time": 2023.25,
+   "series": "temporal",
+   "value": 14.2
+  },
+  {
+   "time": 2023.5,
+   "series": "temporal",
+   "value": 14.4
+  },
+  {
+   "time": 2023.75,
+   "series": "temporal",
+   "value": 13.3
+  },
+  {
+   "time": 2024.0,
+   "series": "temporal",
+   "value": 12.3
+  },
+  {
+   "time": 2024.25,
+   "series": "temporal",
+   "value": 12.8
+  },
+  {
+   "time": 2024.5,
+   "series": "temporal",
+   "value": 13.6
+  },
+  {
+   "time": 2024.75,
+   "series": "temporal",
+   "value": 12.4
+  },
+  {
+   "time": 2025.0,
+   "series": "temporal",
+   "value": 12.1
+  },
+  {
+   "time": 2025.25,
+   "series": "temporal",
+   "value": 12.6
+  },
+  {
+   "time": 2025.5,
+   "series": "temporal",
+   "value": 13.0
+  },
+  {
+   "time": 2025.75,
+   "series": "temporal",
+   "value": 12.4
+  },
+  {
+   "time": 2026.0,
+   "series": "temporal",
+   "value": 11.9
+  },
+  {
+   "time": 2026.25,
+   "series": "temporal",
+   "value": 12.3
+  },
+  {
+   "time": 2008.0,
+   "series": "discontinuo",
+   "value": 1.5
+  },
+  {
+   "time": 2008.25,
+   "series": "discontinuo",
+   "value": 1.6
+  },
+  {
+   "time": 2008.5,
+   "series": "discontinuo",
+   "value": 1.4
+  },
+  {
+   "time": 2008.75,
+   "series": "discontinuo",
+   "value": 1.5
+  },
+  {
+   "time": 2009.0,
+   "series": "discontinuo",
+   "value": 1.5
+  },
+  {
+   "time": 2009.25,
+   "series": "discontinuo",
+   "value": 1.7
+  },
+  {
+   "time": 2009.5,
+   "series": "discontinuo",
+   "value": 1.6
+  },
+  {
+   "time": 2009.75,
+   "series": "discontinuo",
+   "value": 1.7
+  },
+  {
+   "time": 2010.0,
+   "series": "discontinuo",
+   "value": 1.8
+  },
+  {
+   "time": 2010.25,
+   "series": "discontinuo",
+   "value": 1.9
+  },
+  {
+   "time": 2010.5,
+   "series": "discontinuo",
+   "value": 1.7
+  },
+  {
+   "time": 2010.75,
+   "series": "discontinuo",
+   "value": 1.8
+  },
+  {
+   "time": 2011.0,
+   "series": "discontinuo",
+   "value": 1.9
+  },
+  {
+   "time": 2011.25,
+   "series": "discontinuo",
+   "value": 2.2
+  },
+  {
+   "time": 2011.5,
+   "series": "discontinuo",
+   "value": 1.8
+  },
+  {
+   "time": 2011.75,
+   "series": "discontinuo",
+   "value": 2.2
+  },
+  {
+   "time": 2012.0,
+   "series": "discontinuo",
+   "value": 2.1
+  },
+  {
+   "time": 2012.25,
+   "series": "discontinuo",
+   "value": 2.2
+  },
+  {
+   "time": 2012.5,
+   "series": "discontinuo",
+   "value": 1.9
+  },
+  {
+   "time": 2012.75,
+   "series": "discontinuo",
+   "value": 2.2
+  },
+  {
+   "time": 2013.0,
+   "series": "discontinuo",
+   "value": 2.2
+  },
+  {
+   "time": 2013.25,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2013.5,
+   "series": "discontinuo",
+   "value": 1.9
+  },
+  {
+   "time": 2013.75,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2014.0,
+   "series": "discontinuo",
+   "value": 2.2
+  },
+  {
+   "time": 2014.25,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2014.5,
+   "series": "discontinuo",
+   "value": 2.1
+  },
+  {
+   "time": 2014.75,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2015.0,
+   "series": "discontinuo",
+   "value": 2.1
+  },
+  {
+   "time": 2015.25,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2015.5,
+   "series": "discontinuo",
+   "value": 2.0
+  },
+  {
+   "time": 2015.75,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2016.0,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2016.25,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2016.5,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2016.75,
+   "series": "discontinuo",
+   "value": 2.6
+  },
+  {
+   "time": 2017.0,
+   "series": "discontinuo",
+   "value": 2.6
+  },
+  {
+   "time": 2017.25,
+   "series": "discontinuo",
+   "value": 2.7
+  },
+  {
+   "time": 2017.5,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2017.75,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2018.0,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2018.25,
+   "series": "discontinuo",
+   "value": 2.8
+  },
+  {
+   "time": 2018.5,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2018.75,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2019.0,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2019.25,
+   "series": "discontinuo",
+   "value": 2.9
+  },
+  {
+   "time": 2019.5,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2019.75,
+   "series": "discontinuo",
+   "value": 2.7
+  },
+  {
+   "time": 2020.0,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2020.25,
+   "series": "discontinuo",
+   "value": 2.6
+  },
+  {
+   "time": 2020.5,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2020.75,
+   "series": "discontinuo",
+   "value": 2.4
+  },
+  {
+   "time": 2021.0,
+   "series": "discontinuo",
+   "value": 2.5
+  },
+  {
+   "time": 2021.25,
+   "series": "discontinuo",
+   "value": 2.6
+  },
+  {
+   "time": 2021.5,
+   "series": "discontinuo",
+   "value": 2.3
+  },
+  {
+   "time": 2021.75,
+   "series": "discontinuo",
+   "value": 2.6
+  },
+  {
+   "time": 2022.0,
+   "series": "discontinuo",
+   "value": 2.6
+  },
+  {
+   "time": 2022.25,
+   "series": "discontinuo",
+   "value": 3.6
+  },
+  {
+   "time": 2022.5,
+   "series": "discontinuo",
+   "value": 3.6
+  },
+  {
+   "time": 2022.75,
+   "series": "discontinuo",
+   "value": 4.2
+  },
+  {
+   "time": 2023.0,
+   "series": "discontinuo",
+   "value": 3.9
+  },
+  {
+   "time": 2023.25,
+   "series": "discontinuo",
+   "value": 4.6
+  },
+  {
+   "time": 2023.5,
+   "series": "discontinuo",
+   "value": 4.3
+  },
+  {
+   "time": 2023.75,
+   "series": "discontinuo",
+   "value": 4.3
+  },
+  {
+   "time": 2024.0,
+   "series": "discontinuo",
+   "value": 4.0
+  },
+  {
+   "time": 2024.25,
+   "series": "discontinuo",
+   "value": 5.1
+  },
+  {
+   "time": 2024.5,
+   "series": "discontinuo",
+   "value": 4.3
+  },
+  {
+   "time": 2024.75,
+   "series": "discontinuo",
+   "value": 4.6
+  },
+  {
+   "time": 2025.0,
+   "series": "discontinuo",
+   "value": 4.0
+  },
+  {
+   "time": 2025.25,
+   "series": "discontinuo",
+   "value": 4.8
+  },
+  {
+   "time": 2025.5,
+   "series": "discontinuo",
+   "value": 4.1
+  },
+  {
+   "time": 2025.75,
+   "series": "discontinuo",
+   "value": 4.1
+  },
+  {
+   "time": 2026.0,
+   "series": "discontinuo",
+   "value": 3.8
+  },
+  {
+   "time": 2026.25,
+   "series": "discontinuo",
+   "value": 4.5
+  },
+  {
+   "time": 2008.0,
+   "series": "suma",
+   "value": 32.4
+  },
+  {
+   "time": 2008.25,
+   "series": "suma",
+   "value": 31.7
+  },
+  {
+   "time": 2008.5,
+   "series": "suma",
+   "value": 31.3
+  },
+  {
+   "time": 2008.75,
+   "series": "suma",
+   "value": 29.5
+  },
+  {
+   "time": 2009.0,
+   "series": "suma",
+   "value": 26.8
+  },
+  {
+   "time": 2009.25,
+   "series": "suma",
+   "value": 26.6
+  },
+  {
+   "time": 2009.5,
+   "series": "suma",
+   "value": 27.1
+  },
+  {
+   "time": 2009.75,
+   "series": "suma",
+   "value": 26.6
+  },
+  {
+   "time": 2010.0,
+   "series": "suma",
+   "value": 26.1
+  },
+  {
+   "time": 2010.25,
+   "series": "suma",
+   "value": 26.9
+  },
+  {
+   "time": 2010.5,
+   "series": "suma",
+   "value": 27.2
+  },
+  {
+   "time": 2010.75,
+   "series": "suma",
+   "value": 26.6
+  },
+  {
+   "time": 2011.0,
+   "series": "suma",
+   "value": 26.6
+  },
+  {
+   "time": 2011.25,
+   "series": "suma",
+   "value": 27.7
+  },
+  {
+   "time": 2011.5,
+   "series": "suma",
+   "value": 28.0
+  },
+  {
+   "time": 2011.75,
+   "series": "suma",
+   "value": 27.2
+  },
+  {
+   "time": 2012.0,
+   "series": "suma",
+   "value": 26.0
+  },
+  {
+   "time": 2012.25,
+   "series": "suma",
+   "value": 26.3
+  },
+  {
+   "time": 2012.5,
+   "series": "suma",
+   "value": 26.6
+  },
+  {
+   "time": 2012.75,
+   "series": "suma",
+   "value": 25.9
+  },
+  {
+   "time": 2013.0,
+   "series": "suma",
+   "value": 24.9
+  },
+  {
+   "time": 2013.25,
+   "series": "suma",
+   "value": 26.4
+  },
+  {
+   "time": 2013.5,
+   "series": "suma",
+   "value": 27.0
+  },
+  {
+   "time": 2013.75,
+   "series": "suma",
+   "value": 26.9
+  },
+  {
+   "time": 2014.0,
+   "series": "suma",
+   "value": 26.2
+  },
+  {
+   "time": 2014.25,
+   "series": "suma",
+   "value": 27.5
+  },
+  {
+   "time": 2014.5,
+   "series": "suma",
+   "value": 27.8
+  },
+  {
+   "time": 2014.75,
+   "series": "suma",
+   "value": 27.6
+  },
+  {
+   "time": 2015.0,
+   "series": "suma",
+   "value": 26.4
+  },
+  {
+   "time": 2015.25,
+   "series": "suma",
+   "value": 28.5
+  },
+  {
+   "time": 2015.5,
+   "series": "suma",
+   "value": 29.2
+  },
+  {
+   "time": 2015.75,
+   "series": "suma",
+   "value": 29.0
+  },
+  {
+   "time": 2016.0,
+   "series": "suma",
+   "value": 28.1
+  },
+  {
+   "time": 2016.25,
+   "series": "suma",
+   "value": 29.1
+  },
+  {
+   "time": 2016.5,
+   "series": "suma",
+   "value": 30.2
+  },
+  {
+   "time": 2016.75,
+   "series": "suma",
+   "value": 30.0
+  },
+  {
+   "time": 2017.0,
+   "series": "suma",
+   "value": 29.0
+  },
+  {
+   "time": 2017.25,
+   "series": "suma",
+   "value": 30.3
+  },
+  {
+   "time": 2017.5,
+   "series": "suma",
+   "value": 30.5
+  },
+  {
+   "time": 2017.75,
+   "series": "suma",
+   "value": 29.7
+  },
+  {
+   "time": 2018.0,
+   "series": "suma",
+   "value": 28.8
+  },
+  {
+   "time": 2018.25,
+   "series": "suma",
+   "value": 30.0
+  },
+  {
+   "time": 2018.5,
+   "series": "suma",
+   "value": 30.2
+  },
+  {
+   "time": 2018.75,
+   "series": "suma",
+   "value": 29.5
+  },
+  {
+   "time": 2019.0,
+   "series": "suma",
+   "value": 28.0
+  },
+  {
+   "time": 2019.25,
+   "series": "suma",
+   "value": 28.8
+  },
+  {
+   "time": 2019.5,
+   "series": "suma",
+   "value": 28.9
+  },
+  {
+   "time": 2019.75,
+   "series": "suma",
+   "value": 28.4
+  },
+  {
+   "time": 2020.0,
+   "series": "suma",
+   "value": 26.7
+  },
+  {
+   "time": 2020.25,
+   "series": "suma",
+   "value": 23.8
+  },
+  {
+   "time": 2020.5,
+   "series": "suma",
+   "value": 25.6
+  },
+  {
+   "time": 2020.75,
+   "series": "suma",
+   "value": 25.6
+  },
+  {
+   "time": 2021.0,
+   "series": "suma",
+   "value": 24.7
+  },
+  {
+   "time": 2021.25,
+   "series": "suma",
+   "value": 26.4
+  },
+  {
+   "time": 2021.5,
+   "series": "suma",
+   "value": 27.0
+  },
+  {
+   "time": 2021.75,
+   "series": "suma",
+   "value": 26.7
+  },
+  {
+   "time": 2022.0,
+   "series": "suma",
+   "value": 24.8
+  },
+  {
+   "time": 2022.25,
+   "series": "suma",
+   "value": 23.6
+  },
+  {
+   "time": 2022.5,
+   "series": "suma",
+   "value": 21.5
+  },
+  {
+   "time": 2022.75,
+   "series": "suma",
+   "value": 19.3
+  },
+  {
+   "time": 2023.0,
+   "series": "suma",
+   "value": 17.9
+  },
+  {
+   "time": 2023.25,
+   "series": "suma",
+   "value": 18.8
+  },
+  {
+   "time": 2023.5,
+   "series": "suma",
+   "value": 18.7
+  },
+  {
+   "time": 2023.75,
+   "series": "suma",
+   "value": 17.6
+  },
+  {
+   "time": 2024.0,
+   "series": "suma",
+   "value": 16.3
+  },
+  {
+   "time": 2024.25,
+   "series": "suma",
+   "value": 17.9
+  },
+  {
+   "time": 2024.5,
+   "series": "suma",
+   "value": 17.9
+  },
+  {
+   "time": 2024.75,
+   "series": "suma",
+   "value": 17.0
+  },
+  {
+   "time": 2025.0,
+   "series": "suma",
+   "value": 16.1
+  },
+  {
+   "time": 2025.25,
+   "series": "suma",
+   "value": 17.4
+  },
+  {
+   "time": 2025.5,
+   "series": "suma",
+   "value": 17.1
+  },
+  {
+   "time": 2025.75,
+   "series": "suma",
+   "value": 16.5
+  },
+  {
+   "time": 2026.0,
+   "series": "suma",
+   "value": 15.7
+  },
+  {
+   "time": 2026.25,
+   "series": "suma",
+   "value": 16.8
+  }
+ ]
+}

@@ -1,0 +1,803 @@
+{
+ "id": "emt1-temporalidad-sectores",
+ "lens": "tiempo",
+ "theme": "empleo",
+ "title": {
+  "es": "Entre 2021 y el último año, la temporalidad del sector privado baja del 23,7 % al 12,4 %; en el público, del 31,2 % al 27,0 %"
+ },
+ "subtitle": {
+  "es": "Asalariados con contrato temporal, en % de los asalariados de cada sector, trimestral desde 2008 hasta el segundo trimestre de 2026"
+ },
+ "unit": {
+  "es": "% de los asalariados"
+ },
+ "source": {
+  "name": "INE, Encuesta de Población Activa",
+  "dataset": "Tablas 65195 y 65196",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65195",
+  "license": "Reutilización libre citando la fuente",
+  "also": [
+   {
+    "name": "Sector público",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65196"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa, asalariados de 16 años y más. Datos trimestrales sin desestacionalizar.",
+   "Titular: media de 2021 frente a la media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026.",
+   "Los cambios de contratos de la reforma rigen para todos los empleadores, pero el empleo público temporal (interinos) sigue sobre todo sus propias normas: la Ley 20/2021 de estabilización del empleo público se aprobó a la vez. Por eso el sector público sirve de comparación, aunque imperfecta.",
+   "Los fijos discontinuos cuentan como contratos indefinidos."
+  ]
+ },
+ "retrieved": "2026-10-09",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "privado": {
+    "es": "Sector privado"
+   },
+   "publico": {
+    "es": "Sector público"
+   }
+  }
+ },
+ "quarterly": true,
+ "events": [
+  {
+   "time": 2022.0,
+   "label": {
+    "es": "Reforma laboral: Real Decreto-ley 32/2021 (diciembre de 2021)"
+   }
+  },
+  {
+   "time": 2022.23,
+   "label": {
+    "es": "Rigen los nuevos contratos (30 de marzo de 2022)"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "time": 2008.0,
+   "series": "privado",
+   "value": 30.9
+  },
+  {
+   "time": 2008.25,
+   "series": "privado",
+   "value": 30.1
+  },
+  {
+   "time": 2008.5,
+   "series": "privado",
+   "value": 29.9
+  },
+  {
+   "time": 2008.75,
+   "series": "privado",
+   "value": 28.0
+  },
+  {
+   "time": 2009.0,
+   "series": "privado",
+   "value": 25.3
+  },
+  {
+   "time": 2009.25,
+   "series": "privado",
+   "value": 24.9
+  },
+  {
+   "time": 2009.5,
+   "series": "privado",
+   "value": 25.5
+  },
+  {
+   "time": 2009.75,
+   "series": "privado",
+   "value": 24.9
+  },
+  {
+   "time": 2010.0,
+   "series": "privado",
+   "value": 24.3
+  },
+  {
+   "time": 2010.25,
+   "series": "privado",
+   "value": 25.0
+  },
+  {
+   "time": 2010.5,
+   "series": "privado",
+   "value": 25.5
+  },
+  {
+   "time": 2010.75,
+   "series": "privado",
+   "value": 24.8
+  },
+  {
+   "time": 2011.0,
+   "series": "privado",
+   "value": 24.7
+  },
+  {
+   "time": 2011.25,
+   "series": "privado",
+   "value": 25.5
+  },
+  {
+   "time": 2011.5,
+   "series": "privado",
+   "value": 26.2
+  },
+  {
+   "time": 2011.75,
+   "series": "privado",
+   "value": 25.0
+  },
+  {
+   "time": 2012.0,
+   "series": "privado",
+   "value": 23.9
+  },
+  {
+   "time": 2012.25,
+   "series": "privado",
+   "value": 24.1
+  },
+  {
+   "time": 2012.5,
+   "series": "privado",
+   "value": 24.7
+  },
+  {
+   "time": 2012.75,
+   "series": "privado",
+   "value": 23.7
+  },
+  {
+   "time": 2013.0,
+   "series": "privado",
+   "value": 22.7
+  },
+  {
+   "time": 2013.25,
+   "series": "privado",
+   "value": 23.9
+  },
+  {
+   "time": 2013.5,
+   "series": "privado",
+   "value": 25.1
+  },
+  {
+   "time": 2013.75,
+   "series": "privado",
+   "value": 24.6
+  },
+  {
+   "time": 2014.0,
+   "series": "privado",
+   "value": 24.0
+  },
+  {
+   "time": 2014.25,
+   "series": "privado",
+   "value": 25.0
+  },
+  {
+   "time": 2014.5,
+   "series": "privado",
+   "value": 25.7
+  },
+  {
+   "time": 2014.75,
+   "series": "privado",
+   "value": 25.2
+  },
+  {
+   "time": 2015.0,
+   "series": "privado",
+   "value": 24.3
+  },
+  {
+   "time": 2015.25,
+   "series": "privado",
+   "value": 26.0
+  },
+  {
+   "time": 2015.5,
+   "series": "privado",
+   "value": 27.2
+  },
+  {
+   "time": 2015.75,
+   "series": "privado",
+   "value": 26.6
+  },
+  {
+   "time": 2016.0,
+   "series": "privado",
+   "value": 25.8
+  },
+  {
+   "time": 2016.25,
+   "series": "privado",
+   "value": 26.6
+  },
+  {
+   "time": 2016.5,
+   "series": "privado",
+   "value": 27.9
+  },
+  {
+   "time": 2016.75,
+   "series": "privado",
+   "value": 27.4
+  },
+  {
+   "time": 2017.0,
+   "series": "privado",
+   "value": 26.4
+  },
+  {
+   "time": 2017.25,
+   "series": "privado",
+   "value": 27.6
+  },
+  {
+   "time": 2017.5,
+   "series": "privado",
+   "value": 28.2
+  },
+  {
+   "time": 2017.75,
+   "series": "privado",
+   "value": 27.3
+  },
+  {
+   "time": 2018.0,
+   "series": "privado",
+   "value": 26.5
+  },
+  {
+   "time": 2018.25,
+   "series": "privado",
+   "value": 27.2
+  },
+  {
+   "time": 2018.5,
+   "series": "privado",
+   "value": 27.8
+  },
+  {
+   "time": 2018.75,
+   "series": "privado",
+   "value": 27.0
+  },
+  {
+   "time": 2019.0,
+   "series": "privado",
+   "value": 25.6
+  },
+  {
+   "time": 2019.25,
+   "series": "privado",
+   "value": 25.9
+  },
+  {
+   "time": 2019.5,
+   "series": "privado",
+   "value": 26.4
+  },
+  {
+   "time": 2019.75,
+   "series": "privado",
+   "value": 25.7
+  },
+  {
+   "time": 2020.0,
+   "series": "privado",
+   "value": 24.4
+  },
+  {
+   "time": 2020.25,
+   "series": "privado",
+   "value": 21.2
+  },
+  {
+   "time": 2020.5,
+   "series": "privado",
+   "value": 23.2
+  },
+  {
+   "time": 2020.75,
+   "series": "privado",
+   "value": 23.2
+  },
+  {
+   "time": 2021.0,
+   "series": "privado",
+   "value": 22.2
+  },
+  {
+   "time": 2021.25,
+   "series": "privado",
+   "value": 23.8
+  },
+  {
+   "time": 2021.5,
+   "series": "privado",
+   "value": 24.7
+  },
+  {
+   "time": 2021.75,
+   "series": "privado",
+   "value": 24.1
+  },
+  {
+   "time": 2022.0,
+   "series": "privado",
+   "value": 22.2
+  },
+  {
+   "time": 2022.25,
+   "series": "privado",
+   "value": 20.0
+  },
+  {
+   "time": 2022.5,
+   "series": "privado",
+   "value": 17.9
+  },
+  {
+   "time": 2022.75,
+   "series": "privado",
+   "value": 15.1
+  },
+  {
+   "time": 2023.0,
+   "series": "privado",
+   "value": 14.0
+  },
+  {
+   "time": 2023.25,
+   "series": "privado",
+   "value": 14.2
+  },
+  {
+   "time": 2023.5,
+   "series": "privado",
+   "value": 14.4
+  },
+  {
+   "time": 2023.75,
+   "series": "privado",
+   "value": 13.3
+  },
+  {
+   "time": 2024.0,
+   "series": "privado",
+   "value": 12.3
+  },
+  {
+   "time": 2024.25,
+   "series": "privado",
+   "value": 12.8
+  },
+  {
+   "time": 2024.5,
+   "series": "privado",
+   "value": 13.6
+  },
+  {
+   "time": 2024.75,
+   "series": "privado",
+   "value": 12.4
+  },
+  {
+   "time": 2025.0,
+   "series": "privado",
+   "value": 12.1
+  },
+  {
+   "time": 2025.25,
+   "series": "privado",
+   "value": 12.6
+  },
+  {
+   "time": 2025.5,
+   "series": "privado",
+   "value": 13.0
+  },
+  {
+   "time": 2025.75,
+   "series": "privado",
+   "value": 12.4
+  },
+  {
+   "time": 2026.0,
+   "series": "privado",
+   "value": 11.9
+  },
+  {
+   "time": 2026.25,
+   "series": "privado",
+   "value": 12.3
+  },
+  {
+   "time": 2008.0,
+   "series": "publico",
+   "value": 25.7
+  },
+  {
+   "time": 2008.25,
+   "series": "publico",
+   "value": 25.5
+  },
+  {
+   "time": 2008.5,
+   "series": "publico",
+   "value": 26.8
+  },
+  {
+   "time": 2008.75,
+   "series": "publico",
+   "value": 26.5
+  },
+  {
+   "time": 2009.0,
+   "series": "publico",
+   "value": 24.7
+  },
+  {
+   "time": 2009.25,
+   "series": "publico",
+   "value": 25.7
+  },
+  {
+   "time": 2009.5,
+   "series": "publico",
+   "value": 26.5
+  },
+  {
+   "time": 2009.75,
+   "series": "publico",
+   "value": 25.0
+  },
+  {
+   "time": 2010.0,
+   "series": "publico",
+   "value": 24.0
+  },
+  {
+   "time": 2010.25,
+   "series": "publico",
+   "value": 23.6
+  },
+  {
+   "time": 2010.5,
+   "series": "publico",
+   "value": 24.7
+  },
+  {
+   "time": 2010.75,
+   "series": "publico",
+   "value": 24.0
+  },
+  {
+   "time": 2011.0,
+   "series": "publico",
+   "value": 24.0
+  },
+  {
+   "time": 2011.25,
+   "series": "publico",
+   "value": 24.6
+  },
+  {
+   "time": 2011.5,
+   "series": "publico",
+   "value": 24.6
+  },
+  {
+   "time": 2011.75,
+   "series": "publico",
+   "value": 23.9
+  },
+  {
+   "time": 2012.0,
+   "series": "publico",
+   "value": 22.2
+  },
+  {
+   "time": 2012.25,
+   "series": "publico",
+   "value": 21.0
+  },
+  {
+   "time": 2012.5,
+   "series": "publico",
+   "value": 20.7
+  },
+  {
+   "time": 2012.75,
+   "series": "publico",
+   "value": 19.6
+  },
+  {
+   "time": 2013.0,
+   "series": "publico",
+   "value": 19.0
+  },
+  {
+   "time": 2013.25,
+   "series": "publico",
+   "value": 19.2
+  },
+  {
+   "time": 2013.5,
+   "series": "publico",
+   "value": 20.2
+  },
+  {
+   "time": 2013.75,
+   "series": "publico",
+   "value": 19.9
+  },
+  {
+   "time": 2014.0,
+   "series": "publico",
+   "value": 19.8
+  },
+  {
+   "time": 2014.25,
+   "series": "publico",
+   "value": 19.9
+  },
+  {
+   "time": 2014.5,
+   "series": "publico",
+   "value": 20.3
+  },
+  {
+   "time": 2014.75,
+   "series": "publico",
+   "value": 20.6
+  },
+  {
+   "time": 2015.0,
+   "series": "publico",
+   "value": 21.1
+  },
+  {
+   "time": 2015.25,
+   "series": "publico",
+   "value": 21.6
+  },
+  {
+   "time": 2015.5,
+   "series": "publico",
+   "value": 22.0
+  },
+  {
+   "time": 2015.75,
+   "series": "publico",
+   "value": 21.9
+  },
+  {
+   "time": 2016.0,
+   "series": "publico",
+   "value": 21.9
+  },
+  {
+   "time": 2016.25,
+   "series": "publico",
+   "value": 22.3
+  },
+  {
+   "time": 2016.5,
+   "series": "publico",
+   "value": 22.9
+  },
+  {
+   "time": 2016.75,
+   "series": "publico",
+   "value": 22.8
+  },
+  {
+   "time": 2017.0,
+   "series": "publico",
+   "value": 23.1
+  },
+  {
+   "time": 2017.25,
+   "series": "publico",
+   "value": 23.4
+  },
+  {
+   "time": 2017.5,
+   "series": "publico",
+   "value": 24.1
+  },
+  {
+   "time": 2017.75,
+   "series": "publico",
+   "value": 24.1
+  },
+  {
+   "time": 2018.0,
+   "series": "publico",
+   "value": 24.5
+  },
+  {
+   "time": 2018.25,
+   "series": "publico",
+   "value": 24.9
+  },
+  {
+   "time": 2018.5,
+   "series": "publico",
+   "value": 25.9
+  },
+  {
+   "time": 2018.75,
+   "series": "publico",
+   "value": 26.3
+  },
+  {
+   "time": 2019.0,
+   "series": "publico",
+   "value": 26.8
+  },
+  {
+   "time": 2019.25,
+   "series": "publico",
+   "value": 28.2
+  },
+  {
+   "time": 2019.5,
+   "series": "publico",
+   "value": 27.8
+  },
+  {
+   "time": 2019.75,
+   "series": "publico",
+   "value": 27.8
+  },
+  {
+   "time": 2020.0,
+   "series": "publico",
+   "value": 27.5
+  },
+  {
+   "time": 2020.25,
+   "series": "publico",
+   "value": 26.9
+  },
+  {
+   "time": 2020.5,
+   "series": "publico",
+   "value": 27.9
+  },
+  {
+   "time": 2020.75,
+   "series": "publico",
+   "value": 29.9
+  },
+  {
+   "time": 2021.0,
+   "series": "publico",
+   "value": 30.7
+  },
+  {
+   "time": 2021.25,
+   "series": "publico",
+   "value": 30.9
+  },
+  {
+   "time": 2021.5,
+   "series": "publico",
+   "value": 32.0
+  },
+  {
+   "time": 2021.75,
+   "series": "publico",
+   "value": 31.2
+  },
+  {
+   "time": 2022.0,
+   "series": "publico",
+   "value": 32.7
+  },
+  {
+   "time": 2022.25,
+   "series": "publico",
+   "value": 32.7
+  },
+  {
+   "time": 2022.5,
+   "series": "publico",
+   "value": 30.8
+  },
+  {
+   "time": 2022.75,
+   "series": "publico",
+   "value": 30.4
+  },
+  {
+   "time": 2023.0,
+   "series": "publico",
+   "value": 31.5
+  },
+  {
+   "time": 2023.25,
+   "series": "publico",
+   "value": 31.3
+  },
+  {
+   "time": 2023.5,
+   "series": "publico",
+   "value": 29.9
+  },
+  {
+   "time": 2023.75,
+   "series": "publico",
+   "value": 29.9
+  },
+  {
+   "time": 2024.0,
+   "series": "publico",
+   "value": 29.5
+  },
+  {
+   "time": 2024.25,
+   "series": "publico",
+   "value": 29.0
+  },
+  {
+   "time": 2024.5,
+   "series": "publico",
+   "value": 28.6
+  },
+  {
+   "time": 2024.75,
+   "series": "publico",
+   "value": 28.3
+  },
+  {
+   "time": 2025.0,
+   "series": "publico",
+   "value": 28.0
+  },
+  {
+   "time": 2025.25,
+   "series": "publico",
+   "value": 27.8
+  },
+  {
+   "time": 2025.5,
+   "series": "publico",
+   "value": 27.0
+  },
+  {
+   "time": 2025.75,
+   "series": "publico",
+   "value": 26.8
+  },
+  {
+   "time": 2026.0,
+   "series": "publico",
+   "value": 26.8
+  },
+  {
+   "time": 2026.25,
+   "series": "publico",
+   "value": 27.3
+  }
+ ]
+}
