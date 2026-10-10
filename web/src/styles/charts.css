@@ -100,6 +100,8 @@
 /* Encuestas */
 .future { fill: var(--wash); opacity: 0.6; }
 .election-line { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.year-cursor line { stroke: var(--brand-ink); stroke-width: 2; }
+.year-cursor text { fill: var(--brand-ink); font-family: var(--font-semi); font-weight: 700; font-size: 13px; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
 .election-label { fill: var(--ink); font-size: 13px; font-weight: 700; }
 .poll-dot { opacity: 0.45; }
 .poll-dot:hover { opacity: 1; }

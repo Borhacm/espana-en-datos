@@ -64,10 +64,11 @@ export function renderPolls(ctx: RenderContext) {
   svg("text", { x: xe, y: m.top - 12, class: "election-label", "text-anchor": "end" }, root).textContent = "29N";
 
   // Resultados de 2023 (solo si el inicio del eje es la elección)
+  const marks: SVGElement[] = [];
   if (!days) {
     const x0 = x(d(chart.election_2023));
     for (const r of chart.results_2023) {
-      svg("rect", { x: x0 - 1, y: y(r.value) - 5, width: 10, height: 10, class: "result-mark", fill: partyColor(r.party), transform: `rotate(45 ${x0 + 4} ${y(r.value)})` }, root);
+      marks.push(svg("rect", { x: x0 - 1, y: y(r.value) - 5, width: 10, height: 10, class: "result-mark", fill: partyColor(r.party), transform: `rotate(45 ${x0 + 4} ${y(r.value)})` }, root));
     }
   }
 
@@ -90,19 +91,22 @@ export function renderPolls(ctx: RenderContext) {
   }
   const path = d3line<{ x: Date; y: number }>().x((p) => x(p.x)).y((p) => y(p.y)).curve(curveMonotoneX);
   const ends: { party: string; y: number; v: number }[] = [];
+  const lines: SVGPathElement[] = [];
+  const endDots: SVGCircleElement[] = [];
   for (const party of [...parties].reverse()) {
     const pts = byParty.get(party);
     if (!pts?.length) continue;
     pts.sort((a, b) => +a.x - +b.x);
-    svg("path", { d: path(pts) ?? "", stroke: cssVar("--paper"), class: "line", "stroke-width": 5 }, root);
-    svg("path", { d: path(pts) ?? "", stroke: partyColor(party), class: "line", "stroke-width": 2.25 }, root);
+    lines.push(svg("path", { d: path(pts) ?? "", stroke: cssVar("--paper"), class: "line", "stroke-width": 5 }, root) as SVGPathElement);
+    lines.push(svg("path", { d: path(pts) ?? "", stroke: partyColor(party), class: "line", "stroke-width": 2.25 }, root) as SVGPathElement);
     const last = pts[pts.length - 1];
-    svg("circle", { cx: x(last.x), cy: y(last.y), r: 4.5, fill: partyColor(party), stroke: cssVar("--paper"), "stroke-width": 2 }, root);
+    endDots.push(svg("circle", { cx: x(last.x), cy: y(last.y), r: 4.5, fill: partyColor(party), stroke: cssVar("--paper"), "stroke-width": 2 }, root) as SVGCircleElement);
     ends.push({ party, y: y(last.y), v: last.y });
   }
 
   // Etiquetas directas: siempre (los colores de Vox y SALF necesitan etiqueta por contraste)
   ends.sort((a, b) => a.y - b.y);
+  const values: { el: SVGTSpanElement; v: number }[] = [];
   let prev = -Infinity;
   const lx = narrow ? null : xl + 10;
   for (const e of ends) {
@@ -111,6 +115,7 @@ export function renderPolls(ctx: RenderContext) {
     if (lx === null) continue;
     const t = svg("text", { x: lx, y: yy + 4, class: "end-label" }, root);
     t.innerHTML = `<tspan class="end-name">${e.party}</tspan> <tspan class="end-value">${fmt(e.v)}</tspan>`;
+    values.push({ el: t.querySelector(".end-value") as SVGTSpanElement, v: e.v });
   }
 
   legend(ctx.legend, [
@@ -171,4 +176,12 @@ export function renderPolls(ctx: RenderContext) {
     e.stopPropagation();
   });
   dots.addEventListener("pointerleave", () => tip.hide());
+
+  // Entrada animada (GSAP, cargado solo para esta gráfica)
+  const span = Math.max(xl - m.left, 1);
+  import("./intros").then(({ introPolls }) => introPolls({
+    plot, lines, marks, ends: endDots, values, fmt,
+    dots: [...dots.querySelectorAll("circle")] as SVGCircleElement[],
+    dotAt: (c) => (Number(c.getAttribute("cx")) - m.left) / span,
+  }));
 }

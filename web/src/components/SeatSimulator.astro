@@ -80,6 +80,7 @@ const changed = seatsData.rows.filter((r: any) => {
 <script>
   import { simulate, type SimData } from "../scripts/simulator-model";
   import { inVeda } from "../scripts/charts/polls";
+  import { glideInputs, introSimulator, stopGlide } from "../scripts/charts/intros";
 
   const root = document.querySelector<HTMLElement>("[data-sim]");
   if (root) {
@@ -127,11 +128,10 @@ const changed = seatsData.rows.filter((r: any) => {
       }).join("");
     };
 
-    inputs.forEach((i) => i.addEventListener("input", update));
+    inputs.forEach((i) => i.addEventListener("input", (e) => { if (e.isTrusted) stopGlide(); update(); }));
     root.querySelectorAll<HTMLButtonElement>("[data-preset]").forEach((b) => b.addEventListener("click", () => {
       const preset = b.dataset.preset === "2023" ? { ...data.national_2023, Podemos: 0, SALF: 0 } : data.defaults;
-      inputs.forEach((i) => (i.value = String(preset[i.name] ?? 0)));
-      update();
+      glideInputs(inputs, preset, update);
     }));
     // Veda electoral: sin referencias a las encuestas; se parte del resultado de 2023
     if (inVeda({ from: "2026-11-24", to: "2026-11-29T21:00:00+01:00" })) {
@@ -139,6 +139,12 @@ const changed = seatsData.rows.filter((r: any) => {
       root.querySelector<HTMLButtonElement>('[data-preset="2023"]')!.click();
     }
     update();
+    introSimulator({
+      host: root.querySelector<HTMLElement>(".results")!,
+      segments: [...root.querySelectorAll<HTMLElement>("[data-bar] span")],
+      cells: [...root.querySelectorAll<HTMLElement>("[data-table] td:nth-child(2)")].map((el) => ({ el, v: +el.textContent! })),
+      combos: [...root.querySelectorAll<HTMLElement>("[data-combos] li")],
+    });
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", update);
   }
 </script>

@@ -44,12 +44,15 @@ export function renderGovTimeline(ctx: RenderContext) {
   }
 
   const tip = tooltip(plot);
+  const bars = svg("g", { class: "gov-bars" }, root);
+  const names: SVGTextElement[] = [];
   order.forEach((code, i) => {
     // El Gobierno de España va separado del resto por un hueco
     const y0 = m.top + i * (rowH + gap) + (i > 0 ? 10 : 0);
     const strong = code === "ES" || code === focus;
-    svg("text", { x: m.left - 8, y: y0 + rowH / 2 + 4, class: `row-name${strong ? " strong" : ""}`, "text-anchor": "end" }, root).textContent =
-      narrow && code === "ES" ? "España" : chart.geos[code].es;
+    const name = svg("text", { x: m.left - 8, y: y0 + rowH / 2 + 4, class: `row-name${strong ? " strong" : ""}`, "text-anchor": "end" }, root);
+    name.textContent = narrow && code === "ES" ? "España" : chart.geos[code].es;
+    names.push(name);
     const mine = chart.rows.filter((r: Row) => r.ccaa === code);
     for (const r of mine) {
       const start = new Date(r.start + "T00:00:00");
@@ -58,7 +61,7 @@ export function renderGovTimeline(ctx: RenderContext) {
       if (x1 <= m.left) continue;
       const w = Math.max(x1 - x0, 1);
       const fill = govColor(r.party);
-      const g = svg("g", { tabindex: 0, class: "gov" }, root);
+      const g = svg("g", { tabindex: 0, class: "gov" }, bars);
       svg("rect", { x: x0, y: y0, width: w, height: rowH, fill, class: "gov-bar", opacity: r.acting ? 0.6 : 1 }, g);
       // Sigla dentro del tramo si cabe
       if (w > r.party.length * 7.2 + 8 && r.party !== "Art. 155") {
@@ -89,4 +92,10 @@ export function renderGovTimeline(ctx: RenderContext) {
     label: LABEL[k] ?? k,
     kind: "swatch" as const,
   })));
+
+  // Entrada animada (GSAP, cargado aparte)
+  import("./intros").then(({ introGovTimeline }) => introGovTimeline({
+    plot, root, bars, names, x0: m.left, x1: width - m.right, top: m.top, bottom: height - m.bottom,
+    year0: 1980, year1: today.getFullYear(),
+  }));
 }

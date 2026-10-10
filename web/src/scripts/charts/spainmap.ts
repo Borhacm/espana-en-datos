@@ -55,6 +55,7 @@ export async function renderSpainMap(ctx: RenderContext) {
   plot.appendChild(root);
   const g = svg("g", {}, root);
   const tip = tooltip(plot);
+  const regions: { el: SVGPathElement; cx: number; cy: number }[] = [];
 
   for (const f of feats) {
     const r = byId.get(String(f.id));
@@ -62,6 +63,10 @@ export async function renderSpainMap(ctx: RenderContext) {
     const fill = r ? interpolateLab(paper, winnerColor(r.winner))(0.4 + 0.6 * t) : cssVar("--wash");
     const p = svg("path", { d: path(f) ?? "", fill, class: r ? "region" : "land-nodata", tabindex: level === "provincia" ? 0 : undefined }, g);
     if (!r) continue;
+    if (level === "provincia") {
+      const [cx, cy] = path.centroid(f);
+      regions.push({ el: p as SVGPathElement, cx, cy });
+    }
     const html = () => {
       const seats = r.seats ? Object.entries(r.seats as Record<string, number>).sort((a, b) => b[1] - a[1])
         .map(([k, v]) => `${k} ${v}`).join(", ") : "";
@@ -101,4 +106,10 @@ export async function renderSpainMap(ctx: RenderContext) {
     ...named.map(([party, n]) => ({ color: winnerColor(party), label: `${party} (${n.toLocaleString("es-ES")})`, kind: "swatch" as const })),
     ...(other.length ? [{ color: cssVar("--p-other"), label: `Otros (${list(other)})`, kind: "swatch" as const }] : []),
   ]);
+
+  // Entrada animada solo con provincias (miles de municipios serían demasiados elementos)
+  if (regions.length) {
+    const [cx, cy] = proj([-3.70, 40.42]) ?? [width / 2, height / 2];
+    import("./intros").then(({ introMap }) => introMap({ plot, regions, cx, cy }));
+  }
 }
