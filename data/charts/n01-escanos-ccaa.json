@@ -1,0 +1,270 @@
+{
+ "id": "n01-escanos-ccaa",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "Andalucía, Cataluña y Madrid eligen 146 de los 350 diputados"
+ },
+ "subtitle": {
+  "es": "Diputados que elige cada comunidad el 29 de noviembre de 2026"
+ },
+ "unit": {
+  "es": "Diputados"
+ },
+ "source": {
+  "name": "INE, cifras oficiales de población (revisión del padrón)",
+  "url": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177011&menu=resultados&idp=1254734710990",
+  "license": "Reutilización libre citando la fuente",
+  "dataset": "Cifras oficiales de población a 1 de enero de 2025",
+  "also": [
+   {
+    "name": "BOE, Real Decreto 806/2026 de convocatoria (diputados por circunscripción)",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20742"
+   },
+   {
+    "name": "Wikipedia, Anexo:Presidencias autonómicas españolas",
+    "url": "https://es.wikipedia.org/wiki/Anexo:Presidencias_auton%C3%B3micas_espa%C3%B1olas"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Los escaños se reparten por provincias (LOREG, art. 162): 2 fijos por provincia, 1 en Ceuta y en Melilla, y los 248 restantes según la población.",
+   "Cambios respecto a 2023: Andalucía pasa de 61 a 60; Madrid pasa de 37 a 38. Por provincias: Cádiz (9 a 8), Madrid (37 a 38).",
+   "En los datos, party es el partido del presidente o presidenta autonómico hoy (el PSC cuenta como PSOE), no de sus socios de coalición."
+  ]
+ },
+ "retrieved": "2026-10-12",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "C. y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "C.-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "C. Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026",
+   "value": 60,
+   "seats_2023": 61,
+   "party": "PP"
+  },
+  {
+   "geo": "02",
+   "time": "2026",
+   "value": 13,
+   "seats_2023": 13,
+   "party": "PP"
+  },
+  {
+   "geo": "03",
+   "time": "2026",
+   "value": 7,
+   "seats_2023": 7,
+   "party": "PSOE"
+  },
+  {
+   "geo": "04",
+   "time": "2026",
+   "value": 8,
+   "seats_2023": 8,
+   "party": "PP"
+  },
+  {
+   "geo": "05",
+   "time": "2026",
+   "value": 15,
+   "seats_2023": 15,
+   "party": "CC"
+  },
+  {
+   "geo": "06",
+   "time": "2026",
+   "value": 5,
+   "seats_2023": 5,
+   "party": "PP"
+  },
+  {
+   "geo": "07",
+   "time": "2026",
+   "value": 31,
+   "seats_2023": 31,
+   "party": "PP"
+  },
+  {
+   "geo": "08",
+   "time": "2026",
+   "value": 21,
+   "seats_2023": 21,
+   "party": "PSOE"
+  },
+  {
+   "geo": "09",
+   "time": "2026",
+   "value": 48,
+   "seats_2023": 48,
+   "party": "PSOE"
+  },
+  {
+   "geo": "10",
+   "time": "2026",
+   "value": 33,
+   "seats_2023": 33,
+   "party": "PP"
+  },
+  {
+   "geo": "11",
+   "time": "2026",
+   "value": 9,
+   "seats_2023": 9,
+   "party": "PP"
+  },
+  {
+   "geo": "12",
+   "time": "2026",
+   "value": 23,
+   "seats_2023": 23,
+   "party": "PP"
+  },
+  {
+   "geo": "13",
+   "time": "2026",
+   "value": 38,
+   "seats_2023": 37,
+   "party": "PP"
+  },
+  {
+   "geo": "14",
+   "time": "2026",
+   "value": 10,
+   "seats_2023": 10,
+   "party": "PP"
+  },
+  {
+   "geo": "15",
+   "time": "2026",
+   "value": 5,
+   "seats_2023": 5,
+   "party": "PSOE"
+  },
+  {
+   "geo": "16",
+   "time": "2026",
+   "value": 18,
+   "seats_2023": 18,
+   "party": "PNV"
+  },
+  {
+   "geo": "17",
+   "time": "2026",
+   "value": 4,
+   "seats_2023": 4,
+   "party": "PP"
+  },
+  {
+   "geo": "18",
+   "time": "2026",
+   "value": 1,
+   "seats_2023": 1,
+   "party": "PP"
+  },
+  {
+   "geo": "19",
+   "time": "2026",
+   "value": 1,
+   "seats_2023": 1,
+   "party": "PP"
+  }
+ ]
+}

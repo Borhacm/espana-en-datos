@@ -46,6 +46,7 @@ piezas:
     mirada: dentro
     titulo: "Quién gobierna dónde y qué se juega cada comunidad el 29N"
     idea: mapa de gobiernos autonómicos (dataset gobiernos) y escaños de cada comunidad en 2026.
+    estado: hecha
 
   - id: a03
     tipo: articulo

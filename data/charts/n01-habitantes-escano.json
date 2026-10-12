@@ -1,0 +1,278 @@
+{
+ "id": "n01-habitantes-escano",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "Cada diputado de Castilla y León representa a 77.371 habitantes; cada uno de Madrid, a 187.817"
+ },
+ "subtitle": {
+  "es": "Habitantes por diputado en cada comunidad, con la población oficial a 1 de enero de 2025 y el reparto de 2026"
+ },
+ "unit": {
+  "es": "Habitantes por diputado"
+ },
+ "source": {
+  "name": "INE, cifras oficiales de población (revisión del padrón)",
+  "url": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177011&menu=resultados&idp=1254734710990",
+  "license": "Reutilización libre citando la fuente",
+  "dataset": "Cifras oficiales de población a 1 de enero de 2025",
+  "also": [
+   {
+    "name": "BOE, Real Decreto 806/2026 de convocatoria (diputados por circunscripción)",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20742"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Población total empadronada, de todas las edades y nacionalidades, no censo electoral.",
+   "La diferencia viene de la ley electoral: cada provincia tiene 2 escaños fijos, así que las provincias poco pobladas eligen más diputados por habitante. Por provincias, el extremo es Soria y el contrario, Madrid.",
+   "Ceuta y Melilla eligen un diputado cada una."
+  ]
+ },
+ "retrieved": "2026-10-12",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "C. y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "C.-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "C. Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026",
+   "value": 144440,
+   "population": 8666412,
+   "seats": 60
+  },
+  {
+   "geo": "02",
+   "time": "2026",
+   "value": 104524,
+   "population": 1358812,
+   "seats": 13
+  },
+  {
+   "geo": "03",
+   "time": "2026",
+   "value": 144790,
+   "population": 1013529,
+   "seats": 7
+  },
+  {
+   "geo": "04",
+   "time": "2026",
+   "value": 154685,
+   "population": 1237480,
+   "seats": 8
+  },
+  {
+   "geo": "05",
+   "time": "2026",
+   "value": 149998,
+   "population": 2249976,
+   "seats": 15
+  },
+  {
+   "geo": "06",
+   "time": "2026",
+   "value": 118793,
+   "population": 593964,
+   "seats": 5
+  },
+  {
+   "geo": "07",
+   "time": "2026",
+   "value": 77371,
+   "population": 2398500,
+   "seats": 31
+  },
+  {
+   "geo": "08",
+   "time": "2026",
+   "value": 100916,
+   "population": 2119234,
+   "seats": 21
+  },
+  {
+   "geo": "09",
+   "time": "2026",
+   "value": 169714,
+   "population": 8146265,
+   "seats": 48
+  },
+  {
+   "geo": "10",
+   "time": "2026",
+   "value": 164116,
+   "population": 5415843,
+   "seats": 33
+  },
+  {
+   "geo": "11",
+   "time": "2026",
+   "value": 116849,
+   "population": 1051638,
+   "seats": 9
+  },
+  {
+   "geo": "12",
+   "time": "2026",
+   "value": 117964,
+   "population": 2713169,
+   "seats": 23
+  },
+  {
+   "geo": "13",
+   "time": "2026",
+   "value": 187817,
+   "population": 7137031,
+   "seats": 38
+  },
+  {
+   "geo": "14",
+   "time": "2026",
+   "value": 158914,
+   "population": 1589138,
+   "seats": 10
+  },
+  {
+   "geo": "15",
+   "time": "2026",
+   "value": 136700,
+   "population": 683500,
+   "seats": 5
+  },
+  {
+   "geo": "16",
+   "time": "2026",
+   "value": 124575,
+   "population": 2242342,
+   "seats": 18
+  },
+  {
+   "geo": "17",
+   "time": "2026",
+   "value": 81822,
+   "population": 327286,
+   "seats": 4
+  },
+  {
+   "geo": "18",
+   "time": "2026",
+   "value": 83595,
+   "population": 83595,
+   "seats": 1
+  },
+  {
+   "geo": "19",
+   "time": "2026",
+   "value": 86780,
+   "population": 86780,
+   "seats": 1
+  },
+  {
+   "geo": "ES",
+   "time": "2026",
+   "value": 140327,
+   "population": 49114494,
+   "seats": 350
+  }
+ ]
+}
