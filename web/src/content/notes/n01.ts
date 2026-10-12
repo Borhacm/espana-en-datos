@@ -21,6 +21,7 @@ const note: Note = {
     p("En 2023, el PP fue el partido con más escaños en 9 comunidades y el PSOE en 2, Cataluña y Navarra. PP y PSOE empataron en 5 (Baleares, Canarias, Cantabria, Extremadura y La Rioja), y en el País Vasco EH Bildu, PNV y PSOE sacaron 5 escaños cada uno."),
     p("No todos los escaños cuestan lo mismo. Cada provincia tiene dos fijos, así que las menos pobladas eligen más diputados por habitante: en Castilla y León hay uno por cada 77.371 habitantes y en Madrid, uno por cada 187.817, 2,4 veces más. La media de España es de 140.327. Por provincias, el extremo es Soria, con un diputado por cada 45.117 habitantes."),
     { fig: "n01-habitantes-escano", code: "2" },
+    p("Qué se juega en el mapa. Los datos dibujan tres frentes para cualquier partido. Las tres grandes comunidades reparten 146 escaños en circunscripciones grandes, donde el resultado se parece más al porcentaje de voto. En el extremo contrario, 29 de las 52 circunscripciones eligen 5 diputados o menos: suman 108 escaños, el 30,9 % del Congreso, con el 20,7 % de la población. Ahí el reparto favorece a los partidos más votados y pocos votos pueden mover un escaño. Y las 5 comunidades donde PP y PSOE empataron en 2023 eligen 41 diputados: es el terreno donde un cambio pequeño se nota más en el recuento final."),
     p("En el especial de las elecciones se puede ver quién ha gobernado cada comunidad desde 1980 y probar el reparto de escaños con el simulador."),
   ],
   sources: [
