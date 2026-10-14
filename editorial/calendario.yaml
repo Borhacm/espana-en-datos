@@ -54,6 +54,7 @@ piezas:
     tema: demografia
     titulo: "Demografía y pensiones: un país que envejece"
     idea: natalidad, esperanza de vida, población por edades, gasto en pensiones frente a la UE, tasa de dependencia por comunidades.
+    estado: hecha
 
   - id: a04
     tipo: articulo

@@ -1,0 +1,252 @@
+{
+ "id": "ded1-dependencia-comunidades",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "Por cada 100 personas de 16 a 64 años hay 31,7 mayores de 64: 46,5 en Asturias y 24,5 en Baleares"
+ },
+ "subtitle": {
+  "es": "Tasa de dependencia de la población mayor de 64 años, 1 de enero de 2025. En 1975, España tenía 16,8"
+ },
+ "unit": {
+  "es": "Mayores de 64 por cada 100 personas de 16 a 64"
+ },
+ "source": {
+  "name": "INE, Indicadores Demográficos Básicos",
+  "dataset": "Tabla 1455",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=1455",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Población de 65 años o más dividida por la población de 16 a 64 años, por 100. Es una medida demográfica: no tiene en cuenta cuántas personas de 16 a 64 años trabajan ni cuántas de 65 o más siguen trabajando.",
+   "«prev» en la descarga: dato de 1975.",
+   "Ceuta y Melilla tienen poblaciones pequeñas y muy jóvenes."
+  ]
+ },
+ "retrieved": "2026-10-14",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2025",
+   "value": 29.0,
+   "prev": 15.8
+  },
+  {
+   "geo": "02",
+   "time": "2025",
+   "value": 35.5,
+   "prev": 20.5
+  },
+  {
+   "geo": "03",
+   "time": "2025",
+   "value": 46.5,
+   "prev": 17.2
+  },
+  {
+   "geo": "04",
+   "time": "2025",
+   "value": 24.5,
+   "prev": 19.5
+  },
+  {
+   "geo": "05",
+   "time": "2025",
+   "value": 26.1,
+   "prev": 12.8
+  },
+  {
+   "geo": "06",
+   "time": "2025",
+   "value": 38.9,
+   "prev": 17.3
+  },
+  {
+   "geo": "07",
+   "time": "2025",
+   "value": 44.7,
+   "prev": 19.8
+  },
+  {
+   "geo": "08",
+   "time": "2025",
+   "value": 30.8,
+   "prev": 20.4
+  },
+  {
+   "geo": "09",
+   "time": "2025",
+   "value": 29.9,
+   "prev": 16.4
+  },
+  {
+   "geo": "10",
+   "time": "2025",
+   "value": 31.2,
+   "prev": 17.7
+  },
+  {
+   "geo": "11",
+   "time": "2025",
+   "value": 36.0,
+   "prev": 19.9
+  },
+  {
+   "geo": "12",
+   "time": "2025",
+   "value": 43.7,
+   "prev": 19.3
+  },
+  {
+   "geo": "13",
+   "time": "2025",
+   "value": 28.3,
+   "prev": 13.4
+  },
+  {
+   "geo": "14",
+   "time": "2025",
+   "value": 25.7,
+   "prev": 17.0
+  },
+  {
+   "geo": "15",
+   "time": "2025",
+   "value": 32.8,
+   "prev": 17.4
+  },
+  {
+   "geo": "16",
+   "time": "2025",
+   "value": 38.6,
+   "prev": 13.4
+  },
+  {
+   "geo": "17",
+   "time": "2025",
+   "value": 35.5,
+   "prev": 19.0
+  },
+  {
+   "geo": "18",
+   "time": "2025",
+   "value": 20.1,
+   "prev": 12.3
+  },
+  {
+   "geo": "19",
+   "time": "2025",
+   "value": 19.1,
+   "prev": 14.1
+  },
+  {
+   "geo": "ES",
+   "time": "2025",
+   "value": 31.7,
+   "prev": 16.8
+  }
+ ]
+}

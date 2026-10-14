@@ -1,0 +1,341 @@
+{
+ "id": "dee2-europa-pensiones",
+ "lens": "europa",
+ "theme": "demografia",
+ "title": {
+  "es": "España dedica a pensiones el 13,2 % del PIB, frente al 12,6 % de la UE: el 7.º más alto de 27 países"
+ },
+ "subtitle": {
+  "es": "Gasto en pensiones, 2024, en % del PIB. En 2008, España dedicaba el 9,2 % y la UE, el 11,8 %"
+ },
+ "unit": {
+  "es": "% del PIB"
+ },
+ "source": {
+  "name": "Eurostat, sistema europeo de estadísticas de protección social (SEEPROS)",
+  "dataset": "spr_exp_pens",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/spr_exp_pens/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Pensiones de jubilación, de jubilación anticipada, de viudedad y orfandad, de incapacidad y parciales, públicas y privadas obligatorias, con y sin cotización previa. Incluye las de clases pasivas de los funcionarios.",
+   "No es igual que el gasto del sistema de Seguridad Social que publica el Gobierno: la definición europea es más amplia y sirve para comparar países.",
+   "«prev» en la descarga: dato de 2008.",
+   "Datos provisionales de 2024: Alemania, la UE."
+  ]
+ },
+ "retrieved": "2026-10-14",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 15.6,
+   "prev": 13.5
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 13.5,
+   "prev": 11.1
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 9.6,
+   "prev": 6.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 7.6,
+   "prev": 6.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 9.0,
+   "prev": 7.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 11.8,
+   "prev": 11.8
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 11.4,
+   "prev": 11.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 13.2,
+   "prev": 9.2
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 8.7,
+   "prev": 6.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 12.6,
+   "prev": 11.8
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 14.5,
+   "prev": 10.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 15.1,
+   "prev": 13.4
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 14.1,
+   "prev": 13.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 9.4,
+   "prev": 9.2
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 7.0,
+   "prev": 10.7
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 4.0,
+   "prev": 6.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 15.9,
+   "prev": 14.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 7.4,
+   "prev": 7.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 10.4,
+   "prev": 8.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 9.0,
+   "prev": 5.9
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 5.1,
+   "prev": 8.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 11.2,
+   "prev": 10.7
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 11.6,
+   "prev": 11.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 13,
+   "prev": 12.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 9.1,
+   "prev": 7.2
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 9.4,
+   "prev": 7.0
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 10.0,
+   "prev": 9.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 10.8,
+   "prev": 11.3
+  }
+ ]
+}

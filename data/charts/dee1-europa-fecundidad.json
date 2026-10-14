@@ -1,0 +1,340 @@
+{
+ "id": "dee1-europa-fecundidad",
+ "lens": "europa",
+ "theme": "demografia",
+ "title": {
+  "es": "En España nacen 1,10 hijos por mujer, frente a 1,34 en la UE: el 2.º más bajo de 27 países"
+ },
+ "subtitle": {
+  "es": "Indicador coyuntural de fecundidad, 2024: hijos por mujer si se mantuvieran las tasas de ese año"
+ },
+ "unit": {
+  "es": "Hijos por mujer"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "demo_find",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Número medio de hijos que tendría una mujer a lo largo de su vida si se mantuvieran las tasas de fecundidad por edad de ese año.",
+   "Se considera que hacen falta unos 2,1 hijos por mujer para que una población se mantenga sin migraciones.",
+   "«prev» en la descarga: dato de 2008, último año antes de la crisis financiera. España tenía entonces 1,45 hijos por mujer y la UE, 1,57."
+  ]
+ },
+ "retrieved": "2026-10-14",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 1.31,
+   "prev": 1.42
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 1.44,
+   "prev": 1.85
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 1.72,
+   "prev": 1.56
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 1.38,
+   "prev": 1.48
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 1.36,
+   "prev": 1.51
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 1.36,
+   "prev": 1.38
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 1.47,
+   "prev": 1.89
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 1.1,
+   "prev": 1.45
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 1.18,
+   "prev": 1.72
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 1.34,
+   "prev": 1.57
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 1.25,
+   "prev": 1.85
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 1.61,
+   "prev": 2.01
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 1.24,
+   "prev": 1.5
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 1.46,
+   "prev": 1.55
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 1.41,
+   "prev": 1.35
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 1.47,
+   "prev": 2.06
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 1.18,
+   "prev": 1.44
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 1.11,
+   "prev": 1.45
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 1.25,
+   "prev": 1.61
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 1.24,
+   "prev": 1.58
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 1.01,
+   "prev": 1.43
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 1.43,
+   "prev": 1.77
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 1.14,
+   "prev": 1.39
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 1.41,
+   "prev": 1.39
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 1.39,
+   "prev": 1.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 1.46,
+   "prev": 1.34
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 1.52,
+   "prev": 1.53
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 1.43,
+   "prev": 1.91
+  }
+ ]
+}
