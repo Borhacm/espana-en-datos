@@ -1,0 +1,330 @@
+{
+ "id": "ine1-europa-nacidos-fuera",
+ "lens": "europa",
+ "theme": "inmigracion",
+ "title": {
+  "es": "El 19,3 % de los residentes en España nació en otro país, frente al 14,4 % de la UE: el 9.º porcentaje más alto de 26"
+ },
+ "subtitle": {
+  "es": "Población nacida en el extranjero, 1 de enero de 2025, en % de la población. En 2015, España tenía el 12,7 % y la UE, el 10,0 %"
+ },
+ "unit": {
+  "es": "% de la población"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "migr_pop3ctb",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_pop3ctb/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Personas residentes nacidas fuera del país, sea cual sea su nacionalidad: incluye a quienes han obtenido la nacionalidad del país donde viven y a los nacidos en otro país de la UE.",
+   "En la UE, los nacidos en otro país de la Unión también cuentan como nacidos en el extranjero.",
+   "«prev» en la descarga: dato de 2015.",
+   "Sin dato de 2025: Portugal."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 22.5,
+   "prev": 17.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 20.2,
+   "prev": 15.9
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 3.8,
+   "prev": 1.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 27.6,
+   "prev": 21.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 10.0,
+   "prev": 4.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 20.5,
+   "prev": 12.6
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 14.4,
+   "prev": 10.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 19.3,
+   "prev": 12.7
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 17.8,
+   "prev": 14.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 14.4,
+   "prev": 10.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 10.0,
+   "prev": 5.8
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 14.0,
+   "prev": 11.9
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 11.0,
+   "prev": 11.6
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 14.1,
+   "prev": 13.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 7.3,
+   "prev": 4.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 23.3,
+   "prev": 16.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 11.8,
+   "prev": 8.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 9.7,
+   "prev": 4.5
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 51.5,
+   "prev": 44.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 11.6,
+   "prev": 13.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 32.0,
+   "prev": 12.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 16.8,
+   "prev": 11.8
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 2.6,
+   "prev": 1.6
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 6.2,
+   "prev": 1.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 4.0,
+   "prev": 3.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 15.5,
+   "prev": 11.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 20.8,
+   "prev": 16.4
+  }
+ ]
+}

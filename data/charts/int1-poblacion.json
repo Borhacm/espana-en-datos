@@ -1,0 +1,388 @@
+{
+ "id": "int1-poblacion",
+ "lens": "tiempo",
+ "theme": "inmigracion",
+ "title": {
+  "es": "Los nacidos en el extranjero han pasado del 5,7 % de la población en 2002 al 20,2 % en 2026"
+ },
+ "subtitle": {
+  "es": "Población nacida en el extranjero y población de nacionalidad extranjera, 1 de enero de cada año, 2002-2026, en % de la población residente"
+ },
+ "unit": {
+  "es": "% de la población"
+ },
+ "source": {
+  "name": "INE, Estadística Continua de Población",
+  "dataset": "Tabla 56937",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=56937",
+  "license": "Reutilización libre citando la fuente",
+  "also": [
+   {
+    "name": "INE, Estadística Continua de Población",
+    "dataset": "Tabla 56936",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=56936",
+    "license": "Reutilización libre citando la fuente"
+   },
+   {
+    "name": "INE, Estadística Continua de Población",
+    "dataset": "Tabla 59586",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=59586",
+    "license": "Reutilización libre citando la fuente"
+   },
+   {
+    "name": "INE, Estadística Continua de Población",
+    "dataset": "Tabla 59585",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=59585",
+    "license": "Reutilización libre citando la fuente"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Nacidos en el extranjero: personas nacidas fuera de España, tengan o no la nacionalidad española. Extranjeros: personas sin nacionalidad española, hayan nacido donde hayan nacido.",
+   "La distancia entre las dos líneas corresponde a las personas nacidas fuera con nacionalidad española, descontadas las de nacionalidad extranjera nacidas en España.",
+   "La población extranjera tocó techo en 2009 (11,6 %) y bajó hasta 2017 (9,5 %).",
+   "La población nacida en España llegó a su máximo en 2013 (40,5 millones) y en 2026 era de 39,6 millones. Entre 2013 y 2026, la nacida fuera pasó de 6,2 a 10,0 millones.",
+   "Hasta 2025, cifras definitivas de la Estadística Continua de Población; después, provisionales. «people» en la descarga: número de personas; «total»: población residente."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "nacidos": {
+    "es": "Nacidos en el extranjero"
+   },
+   "extranjeros": {
+    "es": "Nacionalidad extranjera"
+   }
+  }
+ },
+ "rows": [
+  {
+   "time": "2002",
+   "series": "nacidos",
+   "value": 5.7,
+   "people": 2334098,
+   "total": 41035271
+  },
+  {
+   "time": "2003",
+   "series": "nacidos",
+   "value": 7.1,
+   "people": 2984094,
+   "total": 41827836
+  },
+  {
+   "time": "2004",
+   "series": "nacidos",
+   "value": 8.3,
+   "people": 3547669,
+   "total": 42547454
+  },
+  {
+   "time": "2005",
+   "series": "nacidos",
+   "value": 9.5,
+   "people": 4107226,
+   "total": 43296335
+  },
+  {
+   "time": "2006",
+   "series": "nacidos",
+   "value": 10.5,
+   "people": 4637971,
+   "total": 44009969
+  },
+  {
+   "time": "2007",
+   "series": "nacidos",
+   "value": 11.6,
+   "people": 5200061,
+   "total": 44784659
+  },
+  {
+   "time": "2008",
+   "series": "nacidos",
+   "value": 12.9,
+   "people": 5878919,
+   "total": 45668938
+  },
+  {
+   "time": "2009",
+   "series": "nacidos",
+   "value": 13.5,
+   "people": 6225513,
+   "total": 46239271
+  },
+  {
+   "time": "2010",
+   "series": "nacidos",
+   "value": 13.5,
+   "people": 6280064,
+   "total": 46486621
+  },
+  {
+   "time": "2011",
+   "series": "nacidos",
+   "value": 13.5,
+   "people": 6282208,
+   "total": 46667175
+  },
+  {
+   "time": "2012",
+   "series": "nacidos",
+   "value": 13.4,
+   "people": 6294952,
+   "total": 46818216
+  },
+  {
+   "time": "2013",
+   "series": "nacidos",
+   "value": 13.2,
+   "people": 6165635,
+   "total": 46712650
+  },
+  {
+   "time": "2014",
+   "series": "nacidos",
+   "value": 12.8,
+   "people": 5952770,
+   "total": 46495744
+  },
+  {
+   "time": "2015",
+   "series": "nacidos",
+   "value": 12.7,
+   "people": 5883891,
+   "total": 46425722
+  },
+  {
+   "time": "2016",
+   "series": "nacidos",
+   "value": 12.7,
+   "people": 5913165,
+   "total": 46418884
+  },
+  {
+   "time": "2017",
+   "series": "nacidos",
+   "value": 12.9,
+   "people": 6014708,
+   "total": 46497393
+  },
+  {
+   "time": "2018",
+   "series": "nacidos",
+   "value": 13.3,
+   "people": 6207509,
+   "total": 46645070
+  },
+  {
+   "time": "2019",
+   "series": "nacidos",
+   "value": 14.0,
+   "people": 6549309,
+   "total": 46918951
+  },
+  {
+   "time": "2020",
+   "series": "nacidos",
+   "value": 14.8,
+   "people": 7014753,
+   "total": 47318050
+  },
+  {
+   "time": "2021",
+   "series": "nacidos",
+   "value": 15.3,
+   "people": 7254797,
+   "total": 47400798
+  },
+  {
+   "time": "2022",
+   "series": "nacidos",
+   "value": 15.7,
+   "people": 7468116,
+   "total": 47486727
+  },
+  {
+   "time": "2023",
+   "series": "nacidos",
+   "value": 17.1,
+   "people": 8204206,
+   "total": 48085361
+  },
+  {
+   "time": "2024",
+   "series": "nacidos",
+   "value": 18.2,
+   "people": 8838234,
+   "total": 48619695
+  },
+  {
+   "time": "2025",
+   "series": "nacidos",
+   "value": 19.3,
+   "people": 9464210,
+   "total": 49128297
+  },
+  {
+   "time": "2026",
+   "series": "nacidos",
+   "value": 20.2,
+   "people": 10036888,
+   "total": 49596376
+  },
+  {
+   "time": "2002",
+   "series": "extranjeros",
+   "value": 4.2,
+   "people": 1737972
+  },
+  {
+   "time": "2003",
+   "series": "extranjeros",
+   "value": 5.6,
+   "people": 2362027
+  },
+  {
+   "time": "2004",
+   "series": "extranjeros",
+   "value": 6.8,
+   "people": 2900788
+  },
+  {
+   "time": "2005",
+   "series": "extranjeros",
+   "value": 7.9,
+   "people": 3430204
+  },
+  {
+   "time": "2006",
+   "series": "extranjeros",
+   "value": 8.9,
+   "people": 3930916
+  },
+  {
+   "time": "2007",
+   "series": "extranjeros",
+   "value": 9.9,
+   "people": 4449434
+  },
+  {
+   "time": "2008",
+   "series": "extranjeros",
+   "value": 11.1,
+   "people": 5086295
+  },
+  {
+   "time": "2009",
+   "series": "extranjeros",
+   "value": 11.6,
+   "people": 5386659
+  },
+  {
+   "time": "2010",
+   "series": "extranjeros",
+   "value": 11.6,
+   "people": 5402579
+  },
+  {
+   "time": "2011",
+   "series": "extranjeros",
+   "value": 11.4,
+   "people": 5312440
+  },
+  {
+   "time": "2012",
+   "series": "extranjeros",
+   "value": 11.2,
+   "people": 5236030
+  },
+  {
+   "time": "2013",
+   "series": "extranjeros",
+   "value": 10.8,
+   "people": 5064584
+  },
+  {
+   "time": "2014",
+   "series": "extranjeros",
+   "value": 10.1,
+   "people": 4676352
+  },
+  {
+   "time": "2015",
+   "series": "extranjeros",
+   "value": 9.6,
+   "people": 4453985
+  },
+  {
+   "time": "2016",
+   "series": "extranjeros",
+   "value": 9.5,
+   "people": 4419334
+  },
+  {
+   "time": "2017",
+   "series": "extranjeros",
+   "value": 9.5,
+   "people": 4417653
+  },
+  {
+   "time": "2018",
+   "series": "extranjeros",
+   "value": 9.8,
+   "people": 4577322
+  },
+  {
+   "time": "2019",
+   "series": "extranjeros",
+   "value": 10.3,
+   "people": 4850762
+  },
+  {
+   "time": "2020",
+   "series": "extranjeros",
+   "value": 11.1,
+   "people": 5241278
+  },
+  {
+   "time": "2021",
+   "series": "extranjeros",
+   "value": 11.4,
+   "people": 5402702
+  },
+  {
+   "time": "2022",
+   "series": "extranjeros",
+   "value": 11.6,
+   "people": 5509046
+  },
+  {
+   "time": "2023",
+   "series": "extranjeros",
+   "value": 12.7,
+   "people": 6089620
+  },
+  {
+   "time": "2024",
+   "series": "extranjeros",
+   "value": 13.4,
+   "people": 6502282
+  },
+  {
+   "time": "2025",
+   "series": "extranjeros",
+   "value": 14.1,
+   "people": 6911971
+  },
+  {
+   "time": "2026",
+   "series": "extranjeros",
+   "value": 14.6,
+   "people": 7256796
+  }
+ ]
+}

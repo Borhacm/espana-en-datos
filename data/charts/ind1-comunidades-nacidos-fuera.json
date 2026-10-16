@@ -1,0 +1,252 @@
+{
+ "id": "ind1-comunidades-nacidos-fuera",
+ "lens": "dentro",
+ "theme": "inmigracion",
+ "title": {
+  "es": "El 20,2 % de los residentes en España nació fuera: del 29,3 % de Baleares al 6,6 % de Extremadura"
+ },
+ "subtitle": {
+  "es": "Población nacida en el extranjero, 1 de enero de 2026, en % de la población de cada comunidad"
+ },
+ "unit": {
+  "es": "% de la población"
+ },
+ "source": {
+  "name": "INE, Estadística Continua de Población",
+  "dataset": "Tabla 59588",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=59588",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Nacidos fuera de España, tengan o no la nacionalidad española. Incluye, por ejemplo, a los hijos de emigrantes españoles nacidos en otro país.",
+   "Dato provisional. «people» en la descarga: número de personas.",
+   "Ceuta y Melilla tienen poblaciones pequeñas y no protagonizan el titular."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026",
+   "value": 13.9,
+   "people": 1219608
+  },
+  {
+   "geo": "02",
+   "time": "2026",
+   "value": 20.1,
+   "people": 277383
+  },
+  {
+   "geo": "03",
+   "time": "2026",
+   "value": 12.6,
+   "people": 128265
+  },
+  {
+   "geo": "04",
+   "time": "2026",
+   "value": 29.3,
+   "people": 369784
+  },
+  {
+   "geo": "05",
+   "time": "2026",
+   "value": 24.1,
+   "people": 548548
+  },
+  {
+   "geo": "06",
+   "time": "2026",
+   "value": 13.5,
+   "people": 80495
+  },
+  {
+   "geo": "07",
+   "time": "2026",
+   "value": 12.9,
+   "people": 312089
+  },
+  {
+   "geo": "08",
+   "time": "2026",
+   "value": 16.2,
+   "people": 350024
+  },
+  {
+   "geo": "09",
+   "time": "2026",
+   "value": 26.1,
+   "people": 2139979
+  },
+  {
+   "geo": "10",
+   "time": "2026",
+   "value": 25.5,
+   "people": 1412368
+  },
+  {
+   "geo": "11",
+   "time": "2026",
+   "value": 6.6,
+   "people": 69832
+  },
+  {
+   "geo": "12",
+   "time": "2026",
+   "value": 13.2,
+   "people": 360556
+  },
+  {
+   "geo": "13",
+   "time": "2026",
+   "value": 25.7,
+   "people": 1842948
+  },
+  {
+   "geo": "14",
+   "time": "2026",
+   "value": 21.3,
+   "people": 341895
+  },
+  {
+   "geo": "15",
+   "time": "2026",
+   "value": 20.8,
+   "people": 143338
+  },
+  {
+   "geo": "16",
+   "time": "2026",
+   "value": 15.2,
+   "people": 341506
+  },
+  {
+   "geo": "17",
+   "time": "2026",
+   "value": 19.8,
+   "people": 65217
+  },
+  {
+   "geo": "18",
+   "time": "2026",
+   "value": 14.1,
+   "people": 11883
+  },
+  {
+   "geo": "19",
+   "time": "2026",
+   "value": 24.4,
+   "people": 21170
+  },
+  {
+   "geo": "ES",
+   "time": "2026",
+   "value": 20.2,
+   "people": 10036888
+  }
+ ]
+}

@@ -1,0 +1,253 @@
+{
+ "id": "ind2-comunidades-paro",
+ "lens": "dentro",
+ "theme": "inmigracion",
+ "title": {
+  "es": "El paro de los extranjeros va del 21,0 % de Andalucía al 10,7 % de Madrid; en España, 15,3 %, frente al 9,2 % de los españoles"
+ },
+ "subtitle": {
+  "es": "Tasa de paro de la población de nacionalidad extranjera, media del tercer trimestre de 2025 al segundo de 2026, en %"
+ },
+ "unit": {
+  "es": "% de la población activa"
+ },
+ "source": {
+  "name": "INE, Encuesta de Población Activa",
+  "dataset": "Tabla 65336",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=65336",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Parados en % de los activos (personas que trabajan o buscan empleo) de 16 años o más con nacionalidad extranjera. Las personas nacidas fuera que tienen la nacionalidad española cuentan como españolas.",
+   "Media de los últimos cuatro trimestres publicados. «spanish» en la descarga: la tasa de los españoles en la misma comunidad.",
+   "En 17 de las 17 comunidades el paro de los extranjeros es más alto que el de los españoles.",
+   "La EPA es una encuesta: en las comunidades pequeñas, la muestra de extranjeros es reducida y el dato tiene más error. Ceuta y Melilla no protagonizan el titular."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026",
+   "value": 21.0,
+   "spanish": 13.9
+  },
+  {
+   "geo": "02",
+   "time": "2026",
+   "value": 13.4,
+   "spanish": 7.0
+  },
+  {
+   "geo": "03",
+   "time": "2026",
+   "value": 17.1,
+   "spanish": 8.0
+  },
+  {
+   "geo": "04",
+   "time": "2026",
+   "value": 13.8,
+   "spanish": 6.7
+  },
+  {
+   "geo": "05",
+   "time": "2026",
+   "value": 13.1,
+   "spanish": 12.4
+  },
+  {
+   "geo": "06",
+   "time": "2026",
+   "value": 11.4,
+   "spanish": 6.8
+  },
+  {
+   "geo": "07",
+   "time": "2026",
+   "value": 15.0,
+   "spanish": 7.8
+  },
+  {
+   "geo": "08",
+   "time": "2026",
+   "value": 19.0,
+   "spanish": 11.2
+  },
+  {
+   "geo": "09",
+   "time": "2026",
+   "value": 14.7,
+   "spanish": 6.9
+  },
+  {
+   "geo": "10",
+   "time": "2026",
+   "value": 17.3,
+   "spanish": 9.4
+  },
+  {
+   "geo": "11",
+   "time": "2026",
+   "value": 20.5,
+   "spanish": 13.0
+  },
+  {
+   "geo": "12",
+   "time": "2026",
+   "value": 13.7,
+   "spanish": 7.8
+  },
+  {
+   "geo": "13",
+   "time": "2026",
+   "value": 10.7,
+   "spanish": 6.8
+  },
+  {
+   "geo": "14",
+   "time": "2026",
+   "value": 15.9,
+   "spanish": 10.4
+  },
+  {
+   "geo": "15",
+   "time": "2026",
+   "value": 20.0,
+   "spanish": 5.9
+  },
+  {
+   "geo": "16",
+   "time": "2026",
+   "value": 15.3,
+   "spanish": 6.3
+  },
+  {
+   "geo": "17",
+   "time": "2026",
+   "value": 14.9,
+   "spanish": 7.1
+  },
+  {
+   "geo": "18",
+   "time": "2026",
+   "value": 50.2,
+   "spanish": 22.1
+  },
+  {
+   "geo": "19",
+   "time": "2026",
+   "value": 37.3,
+   "spanish": 19.7
+  },
+  {
+   "geo": "ES",
+   "time": "2026",
+   "value": 15.3,
+   "spanish": 9.2
+  }
+ ]
+}

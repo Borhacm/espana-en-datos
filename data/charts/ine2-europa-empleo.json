@@ -1,0 +1,357 @@
+{
+ "id": "ine2-europa-empleo",
+ "lens": "europa",
+ "theme": "inmigracion",
+ "title": {
+  "es": "En España trabaja el 69,6 % de los nacidos en el extranjero de 20 a 64 años, frente al 73,3 % de los nacidos en España"
+ },
+ "subtitle": {
+  "es": "Tasa de empleo de la población nacida en el extranjero de 20 a 64 años, 2025, en %. En la UE: 70,8 % de los nacidos fuera y 77,2 % de los nacidos en el país"
+ },
+ "unit": {
+  "es": "% de la población de 20 a 64 años"
+ },
+ "source": {
+  "name": "Eurostat, Encuesta de Población Activa de la UE",
+  "dataset": "lfsa_ergacob",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_ergacob/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Personas ocupadas de 20 a 64 años nacidas fuera del país, en % de toda la población nacida fuera de esa edad.",
+   "«native» en la descarga: tasa de empleo de los nacidos en el propio país, el mismo año. «prev»: tasa de los nacidos en el extranjero en 2015.",
+   "España es el 19.º de 26 países por la tasa de los nacidos fuera.",
+   "Eurostat marca los datos de 2025 de España y Francia como «definición distinta» de la armonizada.",
+   "Sin dato de 2025: Malta."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 71.7,
+   "prev": 66.3,
+   "native": 79.9
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 66.0,
+   "prev": 55.9,
+   "native": 75.0
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 60.7,
+   "prev": 55.8,
+   "native": 77.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 78.9,
+   "prev": 70.4,
+   "native": 82.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 82.9,
+   "prev": 72.9,
+   "native": 82.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 72.5,
+   "prev": 69.8,
+   "native": 84.0
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 74.8,
+   "prev": 61.4,
+   "native": 80.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 69.6,
+   "prev": 58.7,
+   "native": 73.3
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 79.5,
+   "prev": 70.2,
+   "native": 82.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 70.8,
+   "prev": 63.5,
+   "native": 77.2
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 64.4,
+   "prev": 61.7,
+   "native": 78.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 64.8,
+   "prev": 57.9,
+   "native": 77.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 68.5,
+   "prev": 54.2,
+   "native": 71.2
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 70.5,
+   "prev": 57.1,
+   "native": 74.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 81.6,
+   "prev": 72.3,
+   "native": 81.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 80.5,
+   "prev": 68.0,
+   "native": 80.1
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 66.9,
+   "prev": 61.6,
+   "native": 67.7
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 75.4,
+   "prev": 68.7,
+   "native": 80.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 76.6,
+   "prev": 72.2,
+   "native": 69.7
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 71.6,
+   "prev": 64.4,
+   "native": 78.9
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 72.9,
+   "prev": 62.1,
+   "native": 85.9
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 83.8,
+   "prev": 64.1,
+   "native": 78.7
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 80.7,
+   "prev": 71.3,
+   "native": 79.4
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 63.5,
+   "native": 69.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 78.9,
+   "prev": 59.6,
+   "native": 78.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 76.6,
+   "prev": 62.9,
+   "native": 78.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 74.0,
+   "prev": 67.5,
+   "native": 84.7
+  }
+ ]
+}

@@ -18892,6 +18892,87 @@
    }
   },
   {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Oct",
+   "date": "2026-10-06",
+   "sample": 5025,
+   "panel": false,
+   "reestimate": "Opina 360",
+   "partisan": false,
+   "url": "https://opina360.com/wp-content/uploads/2026/10/BMP-CIS-octubre.pdf",
+   "values": {
+    "PP": 28.0,
+    "PSOE": 28.0,
+    "Vox": 17.8,
+    "Sumar": 7.3,
+    "Podemos": 3.5,
+    "SALF": 1.6
+   },
+   "seats": {
+    "PP": 119,
+    "PSOE": 118,
+    "Vox": 67,
+    "Sumar": 13,
+    "Podemos": 1,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Oct",
+   "date": "2026-10-06",
+   "sample": 5025,
+   "panel": false,
+   "reestimate": "Ateneo del Dato",
+   "partisan": false,
+   "url": "https://x.com/Ateneodeldato/status/2110338816569401583",
+   "values": {
+    "PP": 28.3,
+    "PSOE": 28.6,
+    "Vox": 17.5,
+    "Sumar": 7.9,
+    "Podemos": 3.0,
+    "SALF": 2.4
+   },
+   "seats": {
+    "PP": 119,
+    "PSOE": 116,
+    "Vox": 66,
+    "Sumar": 15,
+    "Podemos": 2,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "CIS",
+   "commissioner": null,
+   "fieldwork": "1–6 Oct",
+   "date": "2026-10-06",
+   "sample": 5025,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.cis.es/documents/d/cis/es3582mar_a-pdf",
+   "values": {
+    "PP": 22.2,
+    "PSOE": 34.0,
+    "Vox": 17.1,
+    "Sumar": 6.1,
+    "ERC": 3.0,
+    "Junts": 1.1,
+    "EH Bildu": 1.6,
+    "PNV": 0.6,
+    "BNG": 0.9,
+    "CC": 0.2,
+    "UPN": 0.1,
+    "Podemos": 3.1,
+    "SALF": 1.8
+   },
+   "seats": null
+  },
+  {
    "pollster": "NC Report",
    "commissioner": "La Razón",
    "fieldwork": "1–6 Oct",
@@ -19335,5 +19416,5 @@
    }
   }
  ],
- "retrieved": "2026-10-14"
+ "retrieved": "2026-10-16"
 }

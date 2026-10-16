@@ -62,6 +62,7 @@ piezas:
     tema: inmigracion
     titulo: "Inmigración en datos"
     idea: población extranjera y nacida fuera, empleo y afiliación, comparación europea. Solo fuentes oficiales (INE, Eurostat, Seguridad Social, Interior). Máxima prudencia: nada de relacionar inmigración con delincuencia sin datos oficiales comparables.
+    estado: hecha
 
   - id: n02
     tipo: nota
