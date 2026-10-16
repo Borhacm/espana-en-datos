@@ -61,7 +61,7 @@ piezas:
     fecha: 2026-10-16
     tema: inmigracion
     titulo: "Inmigración en datos"
-    idea: población extranjera y nacida fuera, empleo y afiliación, comparación europea. Solo fuentes oficiales (INE, Eurostat, Seguridad Social, Interior). Máxima prudencia: nada de relacionar inmigración con delincuencia sin datos oficiales comparables.
+    idea: "población extranjera y nacida fuera, empleo y afiliación, comparación europea. Solo fuentes oficiales (INE, Eurostat, Seguridad Social, Interior). Máxima prudencia: nada de relacionar inmigración con delincuencia sin datos oficiales comparables."
     estado: hecha
 
   - id: n02
@@ -182,7 +182,7 @@ piezas:
     tema: elecciones
     mirada: dentro
     titulo: "Cómo se convierten los votos en escaños"
-    idea: explicación con datos de la ley D'Hondt, el umbral del 3 % y el tamaño de las circunscripciones. Último día antes de la veda: puede citar la media de encuestas, pero no es necesario.
+    idea: "explicación con datos de la ley D'Hondt, el umbral del 3 % y el tamaño de las circunscripciones. Último día antes de la veda: puede citar la media de encuestas, pero no es necesario."
 
   - id: a15
     tipo: articulo
