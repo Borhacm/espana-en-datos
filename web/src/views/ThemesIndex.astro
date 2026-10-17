@@ -10,8 +10,8 @@ const { lang } = Astro.props;
 const t = ui[lang];
 
 const copy = {
-  es: { title: "Temas", dek: "Cada tema se cuenta con tres miradas: la UE frente a Estados Unidos y China, lo que Europa gana y lo que cede, y las diferencias entre sus 27 países.", charts: "gráficos", next: "En preparación" },
-  en: { title: "Themes", dek: "Each theme is told through three lenses: the EU against the United States and China, what Europe gains and gives up, and the differences among its 27 countries.", charts: "charts", next: "In preparation" },
+  es: { title: "Temas", dek: "Cada tema se cuenta con tres miradas: España frente a Europa, las diferencias entre comunidades y cómo ha cambiado cada dato con el tiempo.", charts: "gráficos", next: "En preparación" },
+  en: { title: "Themes", dek: "Each theme is told through three lenses: Spain against Europe, the differences between regions and how each figure has changed over time.", charts: "charts", next: "In preparation" },
 }[lang];
 ---
 <Base lang={lang} path={paths.themes} section="themes" title={copy.title} description={copy.dek}>

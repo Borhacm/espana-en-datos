@@ -13,7 +13,7 @@ const theme: Theme = {
   dek: {
     es: "Encuestas, resultados de 2023 y quién gobierna en cada comunidad, actualizados hasta el día de la votación. Con la metodología a la vista.",
   },
-  published: "2026-10-20",
+  published: "2026-10-11",
   lenses: {
     tiempo: {
       lede: { es: "Cómo ha cambiado la intención de voto desde las elecciones de julio de 2023." },
