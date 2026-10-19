@@ -1,0 +1,136 @@
+{
+ "id": "n02-smi-salario-medio",
+ "lens": "tiempo",
+ "theme": "empleo",
+ "title": {
+  "es": "El salario mínimo pasa del 38,9 % al 58,1 % del salario medio entre 2008 y 2025"
+ },
+ "subtitle": {
+  "es": "Salario mínimo en % del salario medio por trabajador, 2008-2025"
+ },
+ "unit": {
+  "es": "% del salario medio"
+ },
+ "source": {
+  "name": "Eurostat, salarios mínimos mensuales",
+  "dataset": "earn_mw_cur",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/earn_mw_cur/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "INE, Encuesta Trimestral de Coste Laboral",
+    "dataset": "Tabla 6061",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=6061",
+    "license": "Reutilización libre citando la fuente"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Las dos cifras son mensuales y en 12 pagas: el salario mínimo vigente el 1 de julio (Eurostat) y el coste salarial total por trabajador de la ETCL (media anual, industria, construcción y servicios).",
+   "Es el salario medio, no la mediana ni el salario neto: no es la referencia de la Carta Social Europea (60 % del salario neto medio), que usa otra definición.",
+   "El salario medio baja en 2020 por los ERTE, y eso sube el porcentaje de ese año."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "ratio": {
+    "es": "Salario mínimo / salario medio"
+   }
+  }
+ },
+ "rows": [
+  {
+   "time": "2008",
+   "series": "ratio",
+   "value": 38.9
+  },
+  {
+   "time": "2009",
+   "series": "ratio",
+   "value": 39.2
+  },
+  {
+   "time": "2010",
+   "series": "ratio",
+   "value": 39.4
+  },
+  {
+   "time": "2011",
+   "series": "ratio",
+   "value": 39.5
+  },
+  {
+   "time": "2012",
+   "series": "ratio",
+   "value": 39.7
+  },
+  {
+   "time": "2013",
+   "series": "ratio",
+   "value": 40.0
+  },
+  {
+   "time": "2014",
+   "series": "ratio",
+   "value": 40.0
+  },
+  {
+   "time": "2015",
+   "series": "ratio",
+   "value": 39.8
+  },
+  {
+   "time": "2016",
+   "series": "ratio",
+   "value": 40.3
+  },
+  {
+   "time": "2017",
+   "series": "ratio",
+   "value": 43.5
+  },
+  {
+   "time": "2018",
+   "series": "ratio",
+   "value": 44.8
+  },
+  {
+   "time": "2019",
+   "series": "ratio",
+   "value": 53.7
+  },
+  {
+   "time": "2020",
+   "series": "ratio",
+   "value": 58.2
+  },
+  {
+   "time": "2021",
+   "series": "ratio",
+   "value": 54.8
+  },
+  {
+   "time": "2022",
+   "series": "ratio",
+   "value": 55.2
+  },
+  {
+   "time": "2023",
+   "series": "ratio",
+   "value": 56.8
+  },
+  {
+   "time": "2024",
+   "series": "ratio",
+   "value": 57.5
+  },
+  {
+   "time": "2025",
+   "series": "ratio",
+   "value": 58.1
+  }
+ ]
+}

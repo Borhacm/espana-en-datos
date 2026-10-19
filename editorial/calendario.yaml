@@ -71,6 +71,7 @@ piezas:
     mirada: tiempo
     titulo: "Salarios reales y salario mínimo"
     idea: salario medio descontada la inflación y evolución del SMI.
+    estado: hecha
 
   - id: a05
     tipo: articulo
