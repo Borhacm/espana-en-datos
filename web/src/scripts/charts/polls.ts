@@ -2,7 +2,7 @@
 // y la fecha de las elecciones marcada al final del eje.
 import { scaleLinear, scaleTime } from "d3-scale";
 import { line as d3line, curveMonotoneX } from "d3-shape";
-import { svg, cssVar, nf, partyColor, tooltip, tipRow, legend, niceTicks, type RenderContext, type Row } from "./core";
+import { svg, cssVar, nf, partyColor, partyLabel, tooltip, tipRow, legend, niceTicks, type RenderContext, type Row } from "./core";
 
 const ELECTION = new Date("2026-11-29");
 const RANGES: Record<string, number | null> = { all: null, year: 365, quarter: 92 };
@@ -114,12 +114,12 @@ export function renderPolls(ctx: RenderContext) {
     prev = yy;
     if (lx === null) continue;
     const t = svg("text", { x: lx, y: yy + 4, class: "end-label" }, root);
-    t.innerHTML = `<tspan class="end-name">${e.party}</tspan> <tspan class="end-value">${fmt(e.v)}</tspan>`;
+    t.innerHTML = `<tspan class="end-name">${partyLabel(e.party)}</tspan> <tspan class="end-value">${fmt(e.v)}</tspan>`;
     values.push({ el: t.querySelector(".end-value") as SVGTSpanElement, v: e.v });
   }
 
   legend(ctx.legend, [
-    ...parties.filter((p) => byParty.has(p)).map((p) => ({ color: partyColor(p), label: p })),
+    ...parties.filter((p) => byParty.has(p)).map((p) => ({ color: partyColor(p), label: partyLabel(p) })),
     ...(!days ? [{ color: cssVar("--ink-3"), label: "◆ Resultado de 2023", kind: "dot" as const }] : []),
     { color: cssVar("--ink-3"), label: "○ No entra en la media", kind: "dot" as const },
   ]);
@@ -144,7 +144,7 @@ export function renderPolls(ctx: RenderContext) {
     const week = polls.filter((r: Row) => Math.abs(+d(r.date) - +d(day)) <= 3.5 * 864e5);
     const firms = [...new Set(week.map((r: Row) => r.pollster))];
     const note = firms.length ? `<div class="tip-note">Encuestas de esa semana: ${firms.slice(0, 5).join(", ")}${firms.length > 5 ? "…" : ""}</div>` : "";
-    tip.show(xx, m.top + 10, `<div class="tip-title">Media a ${fmtDay(d(day))}</div>${note}${vals.map((r: Row) => tipRow(partyColor(r.party), r.party, `${fmt(r.value)} %`)).join("")}`);
+    tip.show(xx, m.top + 10, `<div class="tip-title">Media a ${fmtDay(d(day))}</div>${note}${vals.map((r: Row) => tipRow(partyColor(r.party), partyLabel(r.party), `${fmt(r.value)} %`)).join("")}`);
   };
   const hide = () => { hover.style.display = "none"; tip.hide(); };
   overlay.addEventListener("pointermove", (e) => {
@@ -172,7 +172,7 @@ export function renderPolls(ctx: RenderContext) {
     const who = r.commissioner ? `${r.pollster} para ${r.commissioner}` : r.pollster;
     const extra = KIND_NOTE[r.kind] ? `<div class="tip-note">${KIND_NOTE[r.kind]}</div>` : "";
     const rect = root.getBoundingClientRect();
-    tip.show(e.clientX - rect.left, e.clientY - rect.top, `<div class="tip-title">${who}</div><div class="tip-note">${fmtDay(d(r.date))}${r.sample ? `. ${r.sample.toLocaleString("es-ES")} entrevistas` : ""}</div>${extra}${tipRow(partyColor(r.party), r.party, `${fmt(r.value)} %`, true)}`);
+    tip.show(e.clientX - rect.left, e.clientY - rect.top, `<div class="tip-title">${who}</div><div class="tip-note">${fmtDay(d(r.date))}${r.sample ? `. ${r.sample.toLocaleString("es-ES")} entrevistas` : ""}</div>${extra}${tipRow(partyColor(r.party), partyLabel(r.party), `${fmt(r.value)} %`, true)}`);
     e.stopPropagation();
   });
   dots.addEventListener("pointerleave", () => tip.hide());

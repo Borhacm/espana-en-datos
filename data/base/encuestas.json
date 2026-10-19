@@ -11,7 +11,8 @@
   "La fecha es el último día del trabajo de campo.",
   "panel = true: panel online sin muestreo probabilístico. Se muestra, pero no entra en la media.",
   "reestimate: otra empresa reestima los microdatos de un barómetro del CIS. No cuenta como encuesta independiente.",
-  "partisan = true: encuesta de un partido. No entra en la media."
+  "partisan = true: encuesta de un partido. No entra en la media.",
+  "Sumar: desde las encuestas posteriores a su creación (septiembre de 2026), la columna es la de Frente Amplio, la alianza que sustituye a Sumar. No es exactamente el mismo espacio: en la Comunidad Valenciana, Compromís concurre con Podemos y EUPV en Compromís–Front Valencià (FV), que tiene su propia clave. Por eso, desde ese cambio, Sumar/FA y Podemos no incluyen el voto de esa candidatura."
  ],
  "rows": [
   {
@@ -19414,7 +19415,91 @@
     "Podemos": 2,
     "SALF": 0
    }
+  },
+  {
+   "pollster": "Sigma Dos",
+   "commissioner": "El Mundo",
+   "fieldwork": "1–14 Oct",
+   "date": "2026-10-14",
+   "sample": 3007,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.elmundo.es/espana/encuestas/2026/10/19/6ad4f168e9cf4a2c7a8b458b.html",
+   "values": {
+    "PP": 31.5,
+    "PSOE": 25.3,
+    "Vox": 19.5,
+    "Sumar": 7.2,
+    "FV": 0.9,
+    "ERC": 2.5,
+    "Junts": 1.2,
+    "EH Bildu": 1.2,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.5,
+    "AA": 0.8,
+    "Podemos": 2.8
+   },
+   "seats": {
+    "PP": 134.5,
+    "PSOE": 103.5,
+    "Vox": 66.5,
+    "Sumar": 9.5,
+    "FV": 3.5,
+    "ERC": 9,
+    "Junts": 6.5,
+    "EH Bildu": 6.5,
+    "PNV": 5.5,
+    "BNG": 2,
+    "CC": 1,
+    "AA": 1.5,
+    "Podemos": 1
+   }
+  },
+  {
+   "pollster": "EM-Analytics",
+   "commissioner": "Electomanía",
+   "fieldwork": "15–17 Oct",
+   "date": "2026-10-17",
+   "sample": 3141,
+   "panel": true,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://electomania.es/electopanel-18-oct-erc-y-frente-amplio-ceden-ante-el-psoe-podemos-en-el-limite-de-ser-extraparlamentario/",
+   "values": {
+    "PP": 31.8,
+    "PSOE": 27.1,
+    "Vox": 18.9,
+    "Sumar": 4.9,
+    "FV": 1.3,
+    "ERC": 2.1,
+    "Junts": 1.2,
+    "EH Bildu": 1.4,
+    "PNV": 1.0,
+    "BNG": 1.0,
+    "CC": 0.3,
+    "AA": 1.1,
+    "Podemos": 2.0,
+    "SALF": 1.7
+   },
+   "seats": {
+    "PP": 134,
+    "PSOE": 111,
+    "Vox": 62,
+    "Sumar": 7,
+    "FV": 3,
+    "ERC": 8,
+    "Junts": 5,
+    "EH Bildu": 7,
+    "PNV": 6,
+    "BNG": 3,
+    "CC": 0,
+    "AA": 3,
+    "Podemos": 1,
+    "SALF": 0
+   }
   }
  ],
- "retrieved": "2026-10-16"
+ "retrieved": "2026-10-19"
 }

@@ -54,6 +54,11 @@ export const PARTY_VAR: Record<string, string> = {
 };
 export const partyColor = (party: string) => cssVar(PARTY_VAR[party] ?? "--p-other");
 
+/** Nombre visible de cada partido cuando no coincide con su clave en los datos. Frente Amplio sustituye a Sumar desde
+ *  septiembre de 2026 y sigue su serie (ver la nota de datasets/encuestas.py). */
+export const PARTY_LABEL: Record<string, string> = { Sumar: "Sumar/FA" };
+export const partyLabel = (party: string) => PARTY_LABEL[party] ?? party;
+
 /** El color sigue a la entidad, nunca a su posición. */
 export function colorFor(geo: string, focus: string | null): string {
   if (geo === focus) return cssVar("--focus");

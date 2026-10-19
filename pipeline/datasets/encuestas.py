@@ -24,8 +24,11 @@ PANELS = ("Electomanía", "ElectoPanel")
 # Encuestas encargadas o hechas por un partido
 PARTIES_AS_POLLSTERS = {"Sumar", "PSOE", "PP", "Vox", "Podemos"}
 
-# Nombres de columna de Wikipedia -> siglas que usamos
-PARTY_ALIASES = {"CCa": "CC", "Aliança.cat": "AC", "Adelante Andalucía (2021)": "AA"}
+# Nombres de columna de Wikipedia -> siglas que usamos.
+# Frente Amplio (FA) sustituye a la alianza Sumar desde septiembre de 2026 (IU, Movimiento Sumar, Más Madrid y Comuns, entre
+# otros): sigue la misma serie, con la clave «Sumar», para que la media no empiece de cero con dos encuestas. Compromís–Front
+# Valencià (FV), con Compromís, Podemos y EUPV en la Comunidad Valenciana, va aparte. Ver la nota en build().
+PARTY_ALIASES = {"CCa": "CC", "Aliança.cat": "AC", "Adelante Andalucía (2021)": "AA", "FA": "Sumar"}
 
 
 def _clean(cell: str) -> str:
@@ -80,7 +83,8 @@ def polls() -> list[dict]:
     text = sources.wikipedia(PAGE, lang="en")
     estimates = text[text.index("====Voting intention estimates===="): text.index("====Voting preferences====")]
     out = []
-    for section in re.split(r"\n=====(\d{4})=====\n", estimates)[1:]:
+    # Secciones por año; desde octubre de 2026, «2026 (after Broad Front)» y «2026 (before Broad Front)»
+    for section in re.split(r"\n=====(\d{4})[^=\n]*=====\n", estimates)[1:]:
         if re.fullmatch(r"\d{4}", section):
             year = int(section)
             continue
@@ -173,6 +177,10 @@ def build() -> dict:
             "panel = true: panel online sin muestreo probabilístico. Se muestra, pero no entra en la media.",
             "reestimate: otra empresa reestima los microdatos de un barómetro del CIS. No cuenta como encuesta independiente.",
             "partisan = true: encuesta de un partido. No entra en la media.",
+            "Sumar: desde las encuestas posteriores a su creación (septiembre de 2026), la columna es la de Frente Amplio, la alianza "
+            "que sustituye a Sumar. No es exactamente el mismo espacio: en la Comunidad Valenciana, Compromís concurre con Podemos y "
+            "EUPV en Compromís–Front Valencià (FV), que tiene su propia clave. Por eso, desde ese cambio, Sumar/FA y Podemos no "
+            "incluyen el voto de esa candidatura.",
         ],
         "rows": rows,
     }

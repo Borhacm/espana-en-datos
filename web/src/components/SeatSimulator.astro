@@ -11,6 +11,8 @@ const veda = inVedaAt();
 if (veda) { data.defaults = Object.fromEntries(data.parties.map((p: string) => [p, data.national_2023[p] ?? 0])); data.defaults_date = null; }
 const seatsData = loadBase("escanos-2026");
 const parties: string[] = data.parties;
+// Frente Amplio sustituye a Sumar desde septiembre de 2026 y sigue su serie (ver datasets/encuestas.py)
+const LABEL: Record<string, string> = { Sumar: "Sumar/FA" };
 const changed = seatsData.rows.filter((r: any) => {
   const p = data.provinces.find((x: any) => x.geo === r.geo);
   return p && p.seats !== p.seats_2023;
@@ -32,7 +34,7 @@ const changed = seatsData.rows.filter((r: any) => {
     <div class="inputs" role="group" aria-label="Voto nacional de cada partido">
       {parties.map((p) => (
         <label class="row" style={`--c: var(--p-${p.toLowerCase()})`}>
-          <span class="name"><i></i>{p}</span>
+          <span class="name"><i></i>{LABEL[p] ?? p}</span>
           <input type="range" min="0" max="45" step="0.1" name={p} value={data.defaults[p] ?? 0} aria-describedby="sim-note" />
           <output class="pct" for={p}></output>
         </label>
@@ -93,6 +95,8 @@ const changed = seatsData.rows.filter((r: any) => {
       PP: "--p-pp", PSOE: "--p-psoe", Vox: "--p-vox", Sumar: "--p-sumar", Podemos: "--p-podemos", SALF: "--p-salf",
       PNV: "--p-pnv", "EH Bildu": "--p-bildu", UPN: "--p-upn", Junts: "--p-junts", ERC: "--p-erc", BNG: "--p-bng", CC: "--p-cc",
     };
+    const LABEL: Record<string, string> = { Sumar: "Sumar/FA" };
+    const L = (p: string) => LABEL[p] ?? p;
     const ORDER = ["Podemos", "Sumar", "PSOE", "ERC", "Junts", "EH Bildu", "PNV", "BNG", "CC", "UPN", "PP", "Vox", "SALF"];
     const COMBOS = [
       ["PP", "Vox"],
@@ -113,18 +117,18 @@ const changed = seatsData.rows.filter((r: any) => {
 
       const bar = root.querySelector<HTMLElement>("[data-bar]")!;
       bar.innerHTML = parties.map((p) =>
-        `<span style="flex:${total[p]};background:${css(VAR[p] ?? "--p-other")}" title="${p}: ${total[p]}"></span>`).join("");
+        `<span style="flex:${total[p]};background:${css(VAR[p] ?? "--p-other")}" title="${L(p)}: ${total[p]}"></span>`).join("");
 
       const sorted = [...parties].sort((a, b) => total[b] - total[a]);
       root.querySelector("[data-table]")!.innerHTML = sorted.map((p) => {
         const d = total[p] - (base2023[p] ?? 0);
-        return `<tr><th scope="row"><i style="background:${css(VAR[p] ?? "--p-other")}"></i>${p}</th><td>${total[p]}</td><td>${d > 0 ? "+" : ""}${d === 0 ? "=" : d}</td></tr>`;
+        return `<tr><th scope="row"><i style="background:${css(VAR[p] ?? "--p-other")}"></i>${L(p)}</th><td>${total[p]}</td><td>${d > 0 ? "+" : ""}${d === 0 ? "=" : d}</td></tr>`;
       }).join("");
 
       root.querySelector("[data-combos]")!.innerHTML = COMBOS.map((c) => {
         const n = c.reduce((a, p) => a + (total[p] ?? 0), 0);
         const ok = n >= 176;
-        return `<li class="${ok ? "ok" : ""}"><span>${c.join(" + ")}</span><strong>${n}</strong><em>${ok ? "mayoría absoluta" : `faltan ${176 - n}`}</em></li>`;
+        return `<li class="${ok ? "ok" : ""}"><span>${c.map(L).join(" + ")}</span><strong>${n}</strong><em>${ok ? "mayoría absoluta" : `faltan ${176 - n}`}</em></li>`;
       }).join("");
     };
 
