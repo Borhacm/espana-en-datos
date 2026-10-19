@@ -1,0 +1,231 @@
+{
+ "id": "let5-ingresos-gastos",
+ "lens": "tiempo",
+ "theme": "legislatura",
+ "title": {
+  "es": "El déficit baja del 3,3 % al 2,4 % del PIB entre 2023 y 2025: los ingresos suben del 42,1 % al 42,9 % y el gasto pasa del 45,4 % al 45,3 %"
+ },
+ "subtitle": {
+  "es": "Ingresos y gastos de las administraciones públicas, en % del PIB, 2008-2025. El déficit es la distancia entre las dos líneas"
+ },
+ "unit": {
+  "es": "% del PIB"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10a_main",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Estado, comunidades, ayuntamientos y Seguridad Social, en contabilidad nacional. Ingresos: impuestos, cotizaciones y otros ingresos; gastos: todos, también los intereses de la deuda.",
+   "El déficit de 2025 es el más bajo de la serie, que empieza en 2008.",
+   "Ingresos de 2025: el máximo de la serie.",
+   "Déficit de la media de la UE en 2025: 3,1 % del PIB.",
+   "Que suban los ingresos en % del PIB puede deberse a subidas de impuestos, a más empleo y beneficios o a que la inflación eleve lo recaudado; los datos no separan esos efectos."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "ingresos": {
+    "es": "Ingresos"
+   },
+   "gastos": {
+    "es": "Gastos"
+   }
+  }
+ },
+ "events": [
+  {
+   "time": 2023.5,
+   "label": {
+    "es": "Elecciones generales (23 de julio de 2023)"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "time": "2008",
+   "series": "ingresos",
+   "value": 36.8
+  },
+  {
+   "time": "2009",
+   "series": "ingresos",
+   "value": 34.8
+  },
+  {
+   "time": "2010",
+   "series": "ingresos",
+   "value": 36.4
+  },
+  {
+   "time": "2011",
+   "series": "ingresos",
+   "value": 36.2
+  },
+  {
+   "time": "2012",
+   "series": "ingresos",
+   "value": 37.7
+  },
+  {
+   "time": "2013",
+   "series": "ingresos",
+   "value": 38.7
+  },
+  {
+   "time": "2014",
+   "series": "ingresos",
+   "value": 39.0
+  },
+  {
+   "time": "2015",
+   "series": "ingresos",
+   "value": 38.4
+  },
+  {
+   "time": "2016",
+   "series": "ingresos",
+   "value": 37.9
+  },
+  {
+   "time": "2017",
+   "series": "ingresos",
+   "value": 37.9
+  },
+  {
+   "time": "2018",
+   "series": "ingresos",
+   "value": 39.0
+  },
+  {
+   "time": "2019",
+   "series": "ingresos",
+   "value": 39.0
+  },
+  {
+   "time": "2020",
+   "series": "ingresos",
+   "value": 41.5
+  },
+  {
+   "time": "2021",
+   "series": "ingresos",
+   "value": 42.8
+  },
+  {
+   "time": "2022",
+   "series": "ingresos",
+   "value": 41.7
+  },
+  {
+   "time": "2023",
+   "series": "ingresos",
+   "value": 42.1
+  },
+  {
+   "time": "2024",
+   "series": "ingresos",
+   "value": 42.3
+  },
+  {
+   "time": "2025",
+   "series": "ingresos",
+   "value": 42.9
+  },
+  {
+   "time": "2008",
+   "series": "gastos",
+   "value": 41.3
+  },
+  {
+   "time": "2009",
+   "series": "gastos",
+   "value": 46.1
+  },
+  {
+   "time": "2010",
+   "series": "gastos",
+   "value": 45.8
+  },
+  {
+   "time": "2011",
+   "series": "gastos",
+   "value": 45.9
+  },
+  {
+   "time": "2012",
+   "series": "gastos",
+   "value": 49.2
+  },
+  {
+   "time": "2013",
+   "series": "gastos",
+   "value": 46.2
+  },
+  {
+   "time": "2014",
+   "series": "gastos",
+   "value": 45.0
+  },
+  {
+   "time": "2015",
+   "series": "gastos",
+   "value": 43.7
+  },
+  {
+   "time": "2016",
+   "series": "gastos",
+   "value": 42.1
+  },
+  {
+   "time": "2017",
+   "series": "gastos",
+   "value": 41.0
+  },
+  {
+   "time": "2018",
+   "series": "gastos",
+   "value": 41.5
+  },
+  {
+   "time": "2019",
+   "series": "gastos",
+   "value": 42.0
+  },
+  {
+   "time": "2020",
+   "series": "gastos",
+   "value": 51.4
+  },
+  {
+   "time": "2021",
+   "series": "gastos",
+   "value": 49.5
+  },
+  {
+   "time": "2022",
+   "series": "gastos",
+   "value": 46.3
+  },
+  {
+   "time": "2023",
+   "series": "gastos",
+   "value": 45.4
+  },
+  {
+   "time": "2024",
+   "series": "gastos",
+   "value": 45.5
+  },
+  {
+   "time": "2025",
+   "series": "gastos",
+   "value": 45.3
+  }
+ ]
+}

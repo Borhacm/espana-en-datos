@@ -7,6 +7,11 @@ const charts: Record<string, ChartConfig> = {
     digits: 1,
     table: { rows: "geo", cols: "time" },
   },
+  "lee3-europa-crecimiento": {
+    renderer: "rank",
+    digits: 1,
+    table: { rows: "geo", cols: "time" },
+  },
   "lee2-europa-deuda": {
     renderer: "rank",
     digits: 1,
@@ -18,16 +23,16 @@ const charts: Record<string, ChartConfig> = {
     digits: 1,
     table: { rows: "geo", cols: "time" },
   },
-  "led2-empleo-comunidades": {
+  "led3-tasa-empleo": {
     renderer: "rank",
     usesFocus: true,
     digits: 1,
     table: { rows: "geo", cols: "time" },
   },
-  "let1-paro": {
+  "let4-crecimiento": {
     renderer: "line",
-    series: ["paro"],
-    seriesColors: { paro: "--es" },
+    series: ["poblacion", "per_capita", "pib"],
+    seriesColors: { pib: "--es", per_capita: "--focus", poblacion: "--context-strong" },
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },
@@ -38,10 +43,10 @@ const charts: Record<string, ChartConfig> = {
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },
-  "let3-deficit": {
+  "let5-ingresos-gastos": {
     renderer: "line",
-    series: ["ue", "espana"],
-    seriesColors: { espana: "--es", ue: "--eu" },
+    series: ["ingresos", "gastos"],
+    seriesColors: { gastos: "--es", ingresos: "--focus" },
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },

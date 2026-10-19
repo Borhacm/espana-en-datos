@@ -3,10 +3,10 @@
  "lens": "dentro",
  "theme": "legislatura",
  "title": {
-  "es": "El paro ha bajado desde 2023 en las 17 comunidades, pero va del 7,3 % de Cantabria al 14,8 % de Andalucía"
+  "es": "El paro baja más donde era más alto: la distancia entre la comunidad con más paro y la de menos pasa de 10,5 a 7,5 puntos"
  },
  "subtitle": {
-  "es": "Tasa de paro, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 10,3 % (12,2 % en 2023)"
+  "es": "Tasa de paro, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 10,3 %"
  },
  "unit": {
   "es": "% de la población activa"
@@ -20,11 +20,12 @@
  "notes": {
   "es": [
    "Encuesta de Población Activa, población de 16 años y más. Media de los últimos cuatro trimestres para evitar la estacionalidad (el paro sube en invierno y baja en verano).",
-   "«prev» en la descarga: media de 2023; «change»: diferencia en puntos.",
+   "«prev» en la descarga: media de 2023; «change»: diferencia en puntos. El paro ha bajado en las 17 comunidades.",
+   "Distancia entre la comunidad con más paro y la de menos (sin Ceuta ni Melilla): 10,5 puntos en 2023 (Andalucía y País Vasco) y 7,5 en el último año (Andalucía y Cantabria). Correlación entre el paro de 2023 y su variación: −0,8.",
    "Ceuta y Melilla tienen muestras pequeñas en la EPA y sus tasas varían mucho de un trimestre a otro."
   ]
  },
- "retrieved": "2026-10-07",
+ "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",

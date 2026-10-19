@@ -1,8 +1,12 @@
-"""Tema La legislatura en datos (código LE): paro, empleo, salarios, precios, deuda y déficit desde las generales de julio de 2023.
+"""Tema La legislatura en datos (código LE): paro, crecimiento, deuda, empleo, salarios y cuentas públicas desde las generales
+de julio de 2023.
 
 Balance descriptivo: compara el último periodo disponible con 2023, el año de las últimas generales. No atribuye mérito ni culpa.
+Revisado el 19 de octubre de 2026: cada gráfico responde a una pregunta del guion (editorial/registro/a01.md), el paro ya no se
+repite en las tres miradas y tres gráficos explican el porqué (PIB por habitante, tasa de empleo, ingresos y gastos).
 """
 
+import math
 from collections import defaultdict
 
 from lib import geo, sources
@@ -15,11 +19,16 @@ THEMES["legislatura"] = {"code": "LE", "title": "La legislatura en datos"}
 START = 2023            # año de las últimas generales (23 de julio de 2023)
 PARO_TABLE = 65334      # INE, EPA: tasas de paro por edad, sexo y comunidad (trimestral)
 OCUP_TABLE = 65302      # INE, EPA: ocupados por edad, sexo y comunidad, miles (trimestral)
+EMP_RATE_TABLE = 14508  # INE, EPA: tasas de empleo por grupo de edad, sexo y comunidad (trimestral)
 WAGE_TABLE = 6061       # INE, ETCL: coste salarial por trabajador y comunidad (trimestral)
 CPI_TABLE = 24077       # INE, IPC: índice general nacional (mensual)
 
 INE_EPA = {"name": "INE, Encuesta de Población Activa", "dataset": f"Tablas {PARO_TABLE} y {OCUP_TABLE}",
            "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={PARO_TABLE}", "license": "Reutilización libre citando la fuente"}
+INE_EMP_RATE = {"name": "INE, Encuesta de Población Activa", "dataset": f"Tablas {EMP_RATE_TABLE} y {OCUP_TABLE}",
+                "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={EMP_RATE_TABLE}", "license": "Reutilización libre citando la fuente"}
+EUROSTAT_NA = {"name": "Eurostat, cuentas nacionales", "dataset": "nama_10_gdp y nama_10_pc",
+               "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table", "license": "CC BY 4.0"}
 INE_WAGE = {"name": "INE, Encuesta Trimestral de Coste Laboral", "dataset": f"Tabla {WAGE_TABLE}",
             "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={WAGE_TABLE}", "license": "Reutilización libre citando la fuente"}
 INE_CPI = {"name": "INE, Índice de Precios de Consumo", "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={CPI_TABLE}"}
@@ -97,6 +106,53 @@ def europa_paro():
         geos=geo.country_table(r["geo"] for r in out),
     )
 
+def _gdp() -> tuple[dict, dict]:
+    """PIB y PIB por habitante en volumen (euros encadenados de 2010), por país y año."""
+    gdp = {(r["geo"], r["time"]): r["value"] for r in sources.eurostat("nama_10_gdp", na_item="B1GQ", unit="CLV10_MEUR")}
+    pc = {(r["geo"], r["time"]): r["value"] for r in sources.eurostat("nama_10_pc", na_item="B1GQ", unit="CLV10_EUR_HAB")}
+    return gdp, pc
+
+
+def europa_crecimiento():
+    gdp, pc = _gdp()
+    last = max(t for g, t in gdp if g == "EU27_2020")
+    base = str(START)
+    out = []
+    for (g, t), v in gdp.items():
+        c = geo.from_eurostat(g)
+        if t != last or (g, base) not in gdp or (g, last) not in pc or (g, base) not in pc:
+            continue
+        if c and (c == "EU27" or geo.COUNTRIES.get(c, (0, 0, 0, False))[3]):
+            out.append({"geo": c, "time": last, "value": pct(gdp[(g, base)], v),
+                        "per_capita": pct(pc[(g, base)], pc[(g, last)]),
+                        "population": pct(gdp[(g, base)] / pc[(g, base)], v / pc[(g, last)])})
+    es = next(r for r in out if r["geo"] == "ESP")
+    eu = next(r for r in out if r["geo"] == "EU27")
+    place = _place(out, "ESP")
+    place_pc = _place([{**r, "value": r["per_capita"]} for r in out], "ESP")
+    n = len(out) - 1
+    share_pop = 100 * (1 - math.log(1 + es["per_capita"] / 100) / math.log(1 + es["value"] / 100))
+    place_pop = _place([{**r, "value": r["population"]} for r in out], "ESP")
+    return chart(
+        id="lee3-europa-crecimiento",
+        lens="europa", theme="legislatura",
+        title=f"El PIB de España crece un {es1(es['value'])} % entre {base} y {last}, el {place}.º de {n} países de la UE; "
+              f"por habitante, un {es1(es['per_capita'])} %, el {place_pc}.º",
+        subtitle=f"Crecimiento del PIB en volumen (descontada la inflación) entre {base} y {last}, en %. Media de la UE: "
+                 f"{es1(eu['value'])} % ({es1(eu['per_capita'])} % por habitante)",
+        unit="% de crecimiento",
+        source=EUROSTAT_NA,
+        notes=["PIB en volumen encadenado (euros de 2010): mide cuánto más se produce, sin el efecto de los precios.",
+               f"«per_capita» en la descarga: crecimiento del PIB por habitante en el mismo periodo. En España, el aumento de la "
+               f"población explica en torno al {share_pop:.0f} % del crecimiento del PIB (en escala logarítmica).",
+               f"«population» en la descarga: crecimiento de la población implícita (PIB / PIB por habitante). España: "
+               f"{es1(es['population'])} %, el {place_pop}.º de {n}; UE: {es1(eu['population'])} %.",
+               f"Datos de {last} provisionales en varios países, entre ellos España."],
+        rows=sorted(out, key=lambda r: r["geo"]),
+        geos=geo.country_table(r["geo"] for r in out),
+    )
+
+
 
 def europa_deuda():
     raw = sources.eurostat("gov_10dd_edpt1", na_item="GD", sector="S13", unit="PC_GDP")
@@ -150,32 +206,51 @@ def paro_comunidades():
     top = max(main, key=lambda r: r["value"])
     low = min(main, key=lambda r: r["value"])
     who = "las 17 comunidades" if len(down) == 17 else f"{len(down)} de las 17 comunidades"
+    top0 = max(main, key=lambda r: r["prev"])
+    low0 = min(main, key=lambda r: r["prev"])
+    gap0, gap1 = top0["prev"] - low0["prev"], top["value"] - low["value"]
+    # ¿Baja más donde era más alto? Correlación entre el paro de partida y su variación
+    n = len(main)
+    mx, my = sum(r["prev"] for r in main) / n, sum(r["change"] for r in main) / n
+    cov = sum((r["prev"] - mx) * (r["change"] - my) for r in main)
+    corr = cov / math.sqrt(sum((r["prev"] - mx) ** 2 for r in main) * sum((r["change"] - my) ** 2 for r in main))
+    title = (f"El paro baja más donde era más alto: la distancia entre la comunidad con más paro y la de menos pasa de "
+             f"{es1(gap0)} a {es1(gap1)} puntos" if corr < -0.5 and gap1 < gap0 else
+             f"El paro va del {es1(low['value'])} % {de(low['geo'])} al {es1(top['value'])} % {de(top['geo'])}")
     return chart(
         id="led1-paro-comunidades",
         lens="dentro", theme="legislatura",
-        title=f"El paro ha bajado desde {START} en {who}, pero va del {es1(low['value'])} % {de(low['geo'])} "
-              f"al {es1(top['value'])} % {de(top['geo'])}",
+        title=title,
         subtitle=f"Tasa de paro, media de los cuatro trimestres del {_qlabel(p0)} al {_qlabel(p1)}, en %. "
-                 f"España: {es1(es['value'])} % ({es1(es['prev'])} % en {START})",
+                 f"España: {es1(es['value'])} %",
         unit="% de la población activa",
         source=INE_EPA,
         notes=["Encuesta de Población Activa, población de 16 años y más. Media de los últimos cuatro trimestres para evitar la "
                "estacionalidad (el paro sube en invierno y baja en verano).",
-               f"«prev» en la descarga: media de {START}; «change»: diferencia en puntos.",
+               f"«prev» en la descarga: media de {START}; «change»: diferencia en puntos. El paro ha bajado en {who}.",
+               f"Distancia entre la comunidad con más paro y la de menos (sin Ceuta ni Melilla): {es1(gap0)} puntos en {START} "
+               f"({geo.CCAA[top0['geo']]} y {geo.CCAA[low0['geo']]}) y {es1(gap1)} en el último año ({geo.CCAA[top['geo']]} y "
+               f"{geo.CCAA[low['geo']]}). Correlación entre el paro de {START} y su variación: {es1(corr).replace('-', '−')}.",
                "Ceuta y Melilla tienen muestras pequeñas en la EPA y sus tasas varían mucho de un trimestre a otro."],
         rows=sorted(out, key=lambda r: r["geo"]),
         geos=geo.ccaa_table(r["geo"] for r in out),
     )
 
 
-def empleo_comunidades():
-    rows = sources.ine_table(OCUP_TABLE)
+def _ocupados_es() -> tuple[float, float]:
+    """Ocupados en España (miles): media de 2023 y de los cuatro últimos trimestres."""
+    rs = [r for r in sources.ine_table(OCUP_TABLE) if r["series"] == "Total Nacional. Ambos sexos. Total. Ocupados. Valor absoluto"]
+    assert rs
+    return annual(rs)[START], _last4(rs)[0]
+
+
+def tasa_empleo_comunidades():
     by = defaultdict(list)
-    for r in rows:
+    for r in sources.ine_table(EMP_RATE_TABLE):
         s = r["series"]
-        if s == "Total Nacional. Ambos sexos. Total. Ocupados. Valor absoluto":
+        if s == "Total Nacional. Tasa de empleo de la población. Ambos sexos. De 25 a 54 años":
             by["ES"].append(r)
-        elif s.startswith("Ambos sexos. ") and s.endswith(". Ocupados. Total. Valor absoluto"):
+        elif s.startswith("Tasa de empleo de la población. ") and s.endswith(". Ambos sexos. De 25 a 54 años"):
             code = ine_ccaa(s.split(". ")[1])
             if code and code != "ES":
                 by[code].append(r)
@@ -184,28 +259,32 @@ def empleo_comunidades():
     for code, rs in by.items():
         v, p0, p1 = _last4(rs)
         prev = annual(rs)[START]
-        out.append({"geo": code, "time": p1, "value": pct(prev, v), "thousands": round(v, 1), "prev_thousands": round(prev, 1)})
+        out.append({"geo": code, "time": p1, "value": round(v, 1), "prev": round(prev, 1), "change": round(v - prev, 1)})
     es = next(r for r in out if r["geo"] == "ES")
     main = [r for r in out if r["geo"] not in ("ES", "18", "19")]
+    up = [r for r in main if r["change"] > 0]
     top = max(main, key=lambda r: r["value"])
     low = min(main, key=lambda r: r["value"])
-    gain_txt = es1((es["thousands"] - es["prev_thousands"]) / 1000)
+    most = max(main, key=lambda r: r["change"])
+    o0, o1 = _ocupados_es()
+    who = "las 17 comunidades" if len(up) == 17 else f"{len(up)} de las 17 comunidades"
     return chart(
-        id="led2-empleo-comunidades",
+        id="led3-tasa-empleo",
         lens="dentro", theme="legislatura",
-        title=f"El número de ocupados ha crecido un {es1(es['value'])} % desde {START}: del {es1(top['value'])} % "
-              f"{de(top['geo'])} al {es1(low['value'])} % {de(low['geo'])}",
-        subtitle=f"Variación de los ocupados entre la media de {START} y la de los cuatro trimestres del {_qlabel(p0)} al "
-                 f"{_qlabel(p1)}, en %. España: {gain_txt} millones de ocupados más",
-        unit="% de variación",
-        source=INE_EPA,
-        notes=["Encuesta de Población Activa: personas de 16 años y más que trabajaron al menos una hora en la semana de referencia. "
-               "Cuenta personas, no contratos ni afiliaciones a la Seguridad Social.",
-               "Media de los últimos cuatro trimestres frente a la media de 2023. «thousands» y «prev_thousands» en la descarga: "
-               "ocupados en miles.",
-               "Parte de la diferencia entre comunidades se debe a cuánto crece su población: este dato no es una tasa.",
-               "La EPA es una encuesta: en las comunidades menos pobladas el error de muestreo es mayor, así que las diferencias "
-               "pequeñas entre ellas no son significativas. Ceuta y Melilla tienen muestras muy pequeñas."],
+        title=f"Trabaja una proporción mayor de la población de 25 a 54 años en {who}: en España, el {es1(es['value'])} %, "
+              f"{es1(es['change'])} puntos más que en {START}",
+        subtitle=f"Tasa de empleo de 25 a 54 años, media de los cuatro trimestres del {_qlabel(p0)} al {_qlabel(p1)}, en %",
+        unit="% de la población de 25 a 54 años",
+        source=INE_EMP_RATE,
+        notes=["Ocupados de 25 a 54 años en % de la población de esa edad (EPA). A diferencia del número de ocupados, no sube "
+               "solo porque haya más población, y al dejar fuera a los jóvenes y a los mayores tampoco depende del envejecimiento.",
+               f"«prev» en la descarga: media de {START}; «change»: diferencia en puntos.",
+               f"Número de ocupados de todas las edades en España: {es1(o0 / 1000)} millones de media en {START} y {es1(o1 / 1000)} "
+               f"en el último año ({es1(pct(o0, o1))} %).",
+               f"Extremos (sin Ceuta ni Melilla): {geo.CCAA[top['geo']]}, {es1(top['value'])} %; {geo.CCAA[low['geo']]}, "
+               f"{es1(low['value'])} %. Mayor subida: {geo.CCAA[most['geo']]} ({es1(most['change'])} puntos).",
+               "La EPA es una encuesta: en las comunidades menos pobladas el error de muestreo es mayor y las diferencias pequeñas "
+               "entre ellas no son significativas. Ceuta y Melilla tienen muestras muy pequeñas."],
         rows=sorted(out, key=lambda r: r["geo"]),
         geos=geo.ccaa_table(r["geo"] for r in out),
     )
@@ -213,29 +292,39 @@ def empleo_comunidades():
 
 # ---------- España en el tiempo ----------
 
-def paro_tiempo():
-    es = sorted(_paro_rows()["ES"], key=lambda r: r["period"])
-    rows = [{"time": _qtime(r["period"]), "series": "paro", "value": round(r["value"], 2)} for r in es if r["year"] >= 2008]
-    roll = [(es[i]["period"], sum(x["value"] for x in es[i - 3:i + 1]) / 4) for i in range(3, len(es))]
-    last_p, last_v = roll[-1]
-    # Último periodo de cuatro trimestres con un paro igual o más bajo que el actual
-    since = max((p for p, v in roll[:-1] if v <= last_v), default=None)
-    since_year = since[:4] if since else None
-    prev = annual(es)[START]
+def crecimiento_tiempo():
+    gdp, pc = _gdp()
+    years = sorted(int(t) for g, t in gdp if g == "ES" and int(t) >= 2015 and ("ES", t) in pc)
+    base = 2019
+    series = {"pib": {y: gdp[("ES", str(y))] for y in years}, "per_capita": {y: pc[("ES", str(y))] for y in years}}
+    series["poblacion"] = {y: series["pib"][y] * 1e6 / series["per_capita"][y] for y in years}
+    rows = [{"time": str(y), "series": k, "value": round(100 * v[y] / v[base], 1)} for k, v in series.items() for y in years]
+    last = years[-1]
+    g = {k: pct(v[base], v[last]) for k, v in series.items()}
+    g23 = {k: pct(v[START], v[last]) for k, v in series.items()}
     return chart(
-        id="let1-paro",
+        id="let4-crecimiento",
         lens="tiempo", theme="legislatura",
-        title=f"El paro, en el {es1(last_v)} % en el último año, está en su nivel más bajo desde {since_year}",
-        subtitle=f"Tasa de paro trimestral desde 2008, en % de la población activa, hasta el {_qlabel(last_p)}",
-        unit="% de la población activa",
-        source=INE_EPA,
-        notes=["Encuesta de Población Activa, población de 16 años y más. Datos trimestrales sin desestacionalizar: el paro sube "
-               "cada primer trimestre y baja en verano.",
-               f"Titular: media de los cuatro últimos trimestres ({es1(last_v)} %), frente a la media de {START} ({es1(prev)} %). "
-               f"La última vez que esa media estuvo igual o más baja fue en el periodo que acaba en el {_qlabel(since)}."],
+        title=f"Desde {base}, el PIB ha crecido un {es1(g['pib'])} %: la mitad por la población, que sube un {es1(g['poblacion'])} %, "
+              f"y la otra mitad por el PIB por habitante ({es1(g['per_capita'])} %)"
+              if abs(g["poblacion"] - g["per_capita"]) <= 1 else
+              f"Desde {base}, el PIB ha crecido un {es1(g['pib'])} %; la población, un {es1(g['poblacion'])} %, y el PIB por habitante, "
+              f"un {es1(g['per_capita'])} %",
+        subtitle=f"PIB en volumen, población y PIB por habitante en volumen. Índices, {base} = 100, {years[0]}-{last}",
+        unit=f"Índice ({base} = 100)",
+        source=EUROSTAT_NA,
+        notes=["PIB y PIB por habitante en volumen encadenado (euros de 2010); la población es el cociente de los dos, la que usa "
+               "Eurostat para el PIB por habitante.",
+               f"Base en {base}, el último año antes de la pandemia: la caída de 2020 y la recuperación posterior distorsionan las "
+               f"comparaciones con años intermedios.",
+               f"Desde {START}, año de las últimas generales: PIB {es1(g23['pib'])} %, población {es1(g23['poblacion'])} %, "
+               f"PIB por habitante {es1(g23['per_capita'])} %.",
+               f"Datos de {last} provisionales."],
         rows=rows,
-        extra={"dimensions": {"series": {"paro": {"es": "Tasa de paro"}}}, "quarterly": True,
-               "events": [{"time": 2023.5, "label": {"es": "Elecciones generales (23 de julio de 2023)"}}]},
+        extra={"dimensions": {"series": {"pib": {"es": "PIB"}, "poblacion": {"es": "Población"},
+                                         "per_capita": {"es": "PIB por habitante"}}},
+               "ref_line": {"value": 100, "label": {"es": str(base)}},
+               "events": [{"time": START + 0.5, "label": {"es": "Elecciones generales (23 de julio de 2023)"}}]},
     )
 
 
@@ -270,37 +359,40 @@ def salarios_precios():
     )
 
 
-def deficit_tiempo():
-    raw = sources.eurostat("gov_10dd_edpt1", na_item="B9", sector="S13", unit="PC_GDP", geo=["ES", "EU27_2020"])
-    key = {"ES": "espana", "EU27_2020": "ue"}
-    # Déficit en positivo: saldo con el signo cambiado (un superávit sale negativo)
-    rows = [{"time": r["time"], "series": key[r["geo"]], "value": round(-r["value"], 1)}
-            for r in raw if r["geo"] in key and int(r["time"]) >= 2008]
-    val = {(r["series"], r["time"]): r["value"] for r in rows}
-    years = sorted({r["time"] for r in rows if ("espana", r["time"]) in val and ("ue", r["time"]) in val})
+def ingresos_gastos():
+    key = {"TR": "ingresos", "TE": "gastos"}
+    raw = [r for na in key for r in sources.eurostat("gov_10a_main", na_item=na, sector="S13", unit="PC_GDP", geo="ES")]
+    val = {(key[r["na_item"]], int(r["time"])): r["value"] for r in raw}
+    years = sorted(y for (k, y) in val if k == "ingresos" and y >= 2008 and ("gastos", y) in val)
+    rows = [{"time": str(y), "series": k, "value": round(val[(k, y)], 1)} for k in ("ingresos", "gastos") for y in years]
     last = years[-1]
-    es, eu = val[("espana", last)], val[("ue", last)]
-    below = [y for y in years if val[("espana", y)] < val[("ue", y)]]
-    lowest_since = max((y for y in years[:-1] if val[("espana", y)] <= es), default=None)
-    title = (f"El déficit público baja al {es1(es)} % del PIB en {last}, por debajo de la media de la UE ({es1(eu)} %)"
-             if es < eu else f"El déficit público es del {es1(es)} % del PIB en {last}; en la UE, del {es1(eu)} %")
+    ing0, ing1, gas0, gas1 = val[("ingresos", START)], val[("ingresos", last)], val[("gastos", START)], val[("gastos", last)]
+    d0, d1 = gas0 - ing0, gas1 - ing1
+    lowest = min(years, key=lambda y: (val[("gastos", y)] - val[("ingresos", y)], -y))
+    eu = {int(r["time"]): r["value"] for r in sources.eurostat("gov_10dd_edpt1", na_item="B9", sector="S13", unit="PC_GDP", geo="EU27_2020")}
+    max_ing = max(years, key=lambda y: val[("ingresos", y)])
     return chart(
-        id="let3-deficit",
+        id="let5-ingresos-gastos",
         lens="tiempo", theme="legislatura",
-        title=title,
-        subtitle=f"Déficit de las administraciones públicas, en % del PIB, 2008-{last}",
+        title=f"El déficit baja del {es1(d0)} % al {es1(d1)} % del PIB entre {START} y {last}: los ingresos suben del "
+              f"{es1(ing0)} % al {es1(ing1)} % y el gasto pasa del {es1(gas0)} % al {es1(gas1)} %",
+        subtitle=f"Ingresos y gastos de las administraciones públicas, en % del PIB, 2008-{last}. El déficit es la distancia entre las dos líneas",
         unit="% del PIB",
-        source={"name": "Eurostat", "dataset": "gov_10dd_edpt1",
-                "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table", "license": "CC BY 4.0"},
-        notes=["Necesidad de financiación de las administraciones públicas (Estado, comunidades, ayuntamientos y Seguridad Social), "
-               "según el Protocolo de Déficit Excesivo. Un valor negativo sería superávit.",
-               f"Años con un déficit de España menor que el de la media de la UE: {', '.join(below) or 'ninguno'}.",
-               f"Último año anterior con un déficit igual o menor que el de {last}: {lowest_since}." if lowest_since
-               else f"El déficit de {last} es el más bajo de España desde 2008, el primer año del gráfico."],
+        source={"name": "Eurostat", "dataset": "gov_10a_main", "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table",
+                "license": "CC BY 4.0"},
+        notes=["Estado, comunidades, ayuntamientos y Seguridad Social, en contabilidad nacional. Ingresos: impuestos, cotizaciones "
+               "y otros ingresos; gastos: todos, también los intereses de la deuda.",
+               f"El déficit de {last} es el más bajo de la serie, que empieza en 2008." if lowest == last else
+               f"El déficit más bajo de la serie es el de {lowest}.",
+               f"Ingresos de {last}: {'el máximo de la serie' if max_ing == last else f'máximo de la serie en {max_ing}'}.",
+               f"Déficit de la media de la UE en {last}: {es1(-eu[last])} % del PIB.",
+               "Que suban los ingresos en % del PIB puede deberse a subidas de impuestos, a más empleo y beneficios o a que la "
+               "inflación eleve lo recaudado; los datos no separan esos efectos."],
         rows=rows,
-        extra={"dimensions": {"series": {"espana": {"es": "España"}, "ue": {"es": "UE"}}},
-               "ref_line": {"value": 3, "label": {"es": "Referencia UE: 3 %"}}},
+        extra={"dimensions": {"series": {"ingresos": {"es": "Ingresos"}, "gastos": {"es": "Gastos"}}},
+               "events": [{"time": START + 0.5, "label": {"es": "Elecciones generales (23 de julio de 2023)"}}]},
     )
 
 
-BUILDERS = [europa_paro, europa_deuda, paro_comunidades, empleo_comunidades, paro_tiempo, salarios_precios, deficit_tiempo]
+BUILDERS = [europa_paro, europa_crecimiento, europa_deuda, paro_comunidades, tasa_empleo_comunidades, crecimiento_tiempo,
+            salarios_precios, ingresos_gastos]
