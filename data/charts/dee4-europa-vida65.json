@@ -1,0 +1,312 @@
+{
+ "id": "dee4-europa-vida65",
+ "lens": "europa",
+ "theme": "demografia",
+ "title": {
+  "es": "A los 65 años, a un español le quedan de media 21,9 años de vida, igual que en Francia y más que en ningún otro país de la UE (media: 20,2)"
+ },
+ "subtitle": {
+  "es": "Esperanza de vida a los 65 años, ambos sexos, 2024, en años"
+ },
+ "unit": {
+  "es": "Años"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "demo_mlexpec",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Años que viviría de media una persona que cumple 65 años si se mantuvieran las tasas de mortalidad por edad de ese año.",
+   "España: 15,2 años en 1975, 20,2 en 2008.",
+   "Datos de la UE estimados o provisionales por Eurostat."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 20.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 20.6
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 16.9
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 21.2
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 18.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 19.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 20.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 21.9
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 19.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 20.2
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 20.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 21.9
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 20.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 18.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 16.9
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 21.0
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 21.4
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 18.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 21.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 17.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 20.8
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 19.9
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 18.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 21.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 17.3
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 18.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 20.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 21.3
+  }
+ ]
+}

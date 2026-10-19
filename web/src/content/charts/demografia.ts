@@ -2,12 +2,17 @@
 import type { ChartConfig } from "../../lib/charts-config";
 
 const charts: Record<string, ChartConfig> = {
-  "dee1-europa-fecundidad": {
+  "dee2-europa-pensiones": {
     renderer: "rank",
-    digits: 2,
+    digits: 1,
     table: { rows: "geo", cols: "time" },
   },
-  "dee2-europa-pensiones": {
+  "dee3-europa-sustitucion": {
+    renderer: "rank",
+    digits: 0,
+    table: { rows: "geo", cols: "time" },
+  },
+  "dee4-europa-vida65": {
     renderer: "rank",
     digits: 1,
     table: { rows: "geo", cols: "time" },
@@ -18,7 +23,7 @@ const charts: Record<string, ChartConfig> = {
     digits: 1,
     table: { rows: "geo", cols: "time" },
   },
-  "ded2-fecundidad-comunidades": {
+  "ded3-ocupados-mayores": {
     renderer: "rank",
     usesFocus: true,
     digits: 2,
@@ -31,17 +36,17 @@ const charts: Record<string, ChartConfig> = {
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 2,
   },
-  "det2-esperanza-vida": {
+  "det4-gasto-descomposicion": {
     renderer: "line",
-    series: ["esperanza"],
-    seriesColors: { esperanza: "--es" },
+    series: ["pensionistas", "media", "gasto"],
+    seriesColors: { gasto: "--es", media: "--focus", pensionistas: "--context-strong" },
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },
-  "det3-dependencia": {
+  "det5-dependencia-proyeccion": {
     renderer: "line",
-    series: ["dependencia"],
-    seriesColors: { dependencia: "--es" },
+    series: ["nulo", "central", "historico"],
+    seriesColors: { historico: "--es", central: "--focus", nulo: "--context-strong" },
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },

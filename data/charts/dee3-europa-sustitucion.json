@@ -1,30 +1,31 @@
 {
- "id": "dee1-europa-fecundidad",
+ "id": "dee3-europa-sustitucion",
  "lens": "europa",
  "theme": "demografia",
  "title": {
-  "es": "En España nacen 1,10 hijos por mujer, frente a 1,34 en la UE: el 2.º más bajo de 27 países"
+  "es": "La pensión mediana de los jubilados españoles equivale al 81 % del salario mediano de quienes están a punto de jubilarse; en la UE, al 60 %"
  },
  "subtitle": {
-  "es": "Indicador coyuntural de fecundidad, 2024: hijos por mujer si se mantuvieran las tasas de ese año"
+  "es": "Tasa de sustitución agregada, 2025: pensión mediana de 65 a 74 años en % de la renta del trabajo mediana de 50 a 59 años, en bruto"
  },
  "unit": {
-  "es": "Hijos por mujer"
+  "es": "%"
  },
  "source": {
-  "name": "Eurostat",
-  "dataset": "demo_find",
-  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table",
+  "name": "Eurostat, encuesta de condiciones de vida (EU-SILC)",
+  "dataset": "ilc_pnp3",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_pnp3/default/table",
   "license": "CC BY 4.0"
  },
  "notes": {
   "es": [
-   "Número medio de hijos que tendría una mujer a lo largo de su vida si se mantuvieran las tasas de fecundidad por edad de ese año.",
-   "Se considera que hacen falta unos 2,1 hijos por mujer para que una población se mantenga sin migraciones.",
-   "«prev» en la descarga: dato de 2008, último año antes de la crisis financiera. España tenía entonces 1,45 hijos por mujer y la UE, 1,57."
+   "Compara dos grupos distintos en el mismo año: las pensiones individuales de las personas de 65 a 74 años y las rentas del trabajo de las de 50 a 59. No es la pensión que cobrará cada trabajador sobre su último sueldo.",
+   "Cantidades brutas, sin descontar impuestos. Solo pensiones; no incluye otras prestaciones sociales.",
+   "Países con una tasa más alta que España: Luxemburgo.",
+   "España, 2010: 50 %."
   ]
  },
- "retrieved": "2026-10-14",
+ "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
@@ -170,171 +171,143 @@
  "rows": [
   {
    "geo": "AUT",
-   "time": "2024",
-   "value": 1.31,
-   "prev": 1.42
+   "time": "2025",
+   "value": 56.0
   },
   {
    "geo": "BEL",
-   "time": "2024",
-   "value": 1.44,
-   "prev": 1.85
+   "time": "2025",
+   "value": 48.0
   },
   {
    "geo": "BGR",
-   "time": "2024",
-   "value": 1.72,
-   "prev": 1.56
+   "time": "2025",
+   "value": 46.0
   },
   {
    "geo": "CYP",
-   "time": "2024",
-   "value": 1.38,
-   "prev": 1.48
+   "time": "2025",
+   "value": 41.0
   },
   {
    "geo": "CZE",
-   "time": "2024",
-   "value": 1.36,
-   "prev": 1.51
+   "time": "2025",
+   "value": 53.0
   },
   {
    "geo": "DEU",
-   "time": "2024",
-   "value": 1.36,
-   "prev": 1.38
+   "time": "2025",
+   "value": 48.0
   },
   {
    "geo": "DNK",
-   "time": "2024",
-   "value": 1.47,
-   "prev": 1.89
+   "time": "2025",
+   "value": 46.0
   },
   {
    "geo": "ESP",
-   "time": "2024",
-   "value": 1.1,
-   "prev": 1.45
+   "time": "2025",
+   "value": 81.0
   },
   {
    "geo": "EST",
-   "time": "2024",
-   "value": 1.18,
-   "prev": 1.72
+   "time": "2025",
+   "value": 49.0
   },
   {
    "geo": "EU27",
-   "time": "2024",
-   "value": 1.34,
-   "prev": 1.57
+   "time": "2025",
+   "value": 60.0
   },
   {
    "geo": "FIN",
-   "time": "2024",
-   "value": 1.25,
-   "prev": 1.85
+   "time": "2025",
+   "value": 53.0
   },
   {
    "geo": "FRA",
-   "time": "2024",
-   "value": 1.61,
-   "prev": 2.01
+   "time": "2025",
+   "value": 61.0
   },
   {
    "geo": "GRC",
-   "time": "2024",
-   "value": 1.24,
-   "prev": 1.5
+   "time": "2025",
+   "value": 77.0
   },
   {
    "geo": "HRV",
-   "time": "2024",
-   "value": 1.46,
-   "prev": 1.55
+   "time": "2025",
+   "value": 37.0
   },
   {
    "geo": "HUN",
-   "time": "2024",
-   "value": 1.41,
-   "prev": 1.35
+   "time": "2025",
+   "value": 49.0
   },
   {
    "geo": "IRL",
-   "time": "2024",
-   "value": 1.47,
-   "prev": 2.06
+   "time": "2025",
+   "value": 38.0
   },
   {
    "geo": "ITA",
-   "time": "2024",
-   "value": 1.18,
-   "prev": 1.44
+   "time": "2025",
+   "value": 80.0
   },
   {
    "geo": "LTU",
-   "time": "2024",
-   "value": 1.11,
-   "prev": 1.45
+   "time": "2025",
+   "value": 37.0
   },
   {
    "geo": "LUX",
-   "time": "2024",
-   "value": 1.25,
-   "prev": 1.61
+   "time": "2025",
+   "value": 88.0
   },
   {
    "geo": "LVA",
-   "time": "2024",
-   "value": 1.24,
-   "prev": 1.58
+   "time": "2025",
+   "value": 43.0
   },
   {
    "geo": "MLT",
-   "time": "2024",
-   "value": 1.01,
-   "prev": 1.43
+   "time": "2025",
+   "value": 47.0
   },
   {
    "geo": "NLD",
-   "time": "2024",
-   "value": 1.43,
-   "prev": 1.77
+   "time": "2025",
+   "value": 56.0
   },
   {
    "geo": "POL",
-   "time": "2024",
-   "value": 1.14,
-   "prev": 1.39
+   "time": "2025",
+   "value": 60.0
   },
   {
    "geo": "PRT",
-   "time": "2024",
-   "value": 1.41,
-   "prev": 1.39
+   "time": "2025",
+   "value": 68.0
   },
   {
    "geo": "ROU",
-   "time": "2024",
-   "value": 1.39,
-   "prev": 1.6
+   "time": "2025",
+   "value": 47.0
   },
   {
    "geo": "SVK",
-   "time": "2024",
-   "value": 1.46,
-   "prev": 1.34
+   "time": "2025",
+   "value": 62.0
   },
   {
    "geo": "SVN",
-   "time": "2024",
-   "value": 1.52,
-   "prev": 1.53
+   "time": "2025",
+   "value": 41.0
   },
   {
    "geo": "SWE",
-   "time": "2024",
-   "value": 1.43,
-   "prev": 1.91
+   "time": "2025",
+   "value": 59.0
   }
  ]
 }

@@ -1,0 +1,820 @@
+{
+ "id": "det5-dependencia-proyeccion",
+ "lens": "tiempo",
+ "theme": "demografia",
+ "title": {
+  "es": "El INE proyecta 51,8 mayores de 64 por cada 100 personas de 16 a 64 años en 2050; sin migración, serían 69,9"
+ },
+ "subtitle": {
+  "es": "Tasa de dependencia de los mayores de 64: observada, 1975-2025, y proyectada, 2026-2075, en dos escenarios del INE"
+ },
+ "unit": {
+  "es": "Mayores de 64 por cada 100 personas de 16 a 64"
+ },
+ "source": {
+  "name": "INE, Indicadores Demográficos Básicos",
+  "dataset": "Tabla 1455",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=1455",
+  "license": "Reutilización libre citando la fuente",
+  "also": [
+   {
+    "name": "INE, Proyecciones de Población 2026-2075",
+    "dataset": "Tabla 36652",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=36652",
+    "license": "Reutilización libre citando la fuente"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Población de 65 años o más dividida por la población de 16 a 64 años, por 100.",
+   "Escenario central del INE: fecundidad, esperanza de vida y saldo migratorio según las tendencias recientes. Escenario de saldo migratorio nulo: tantas entradas como salidas de población cada año.",
+   "En el escenario central, la tasa calculada con la población proyectada coincide con la que publica el INE (tabla 36670). Sube hasta 52,2 en 2054, baja hasta 50,9 en 2066 y vuelve a subir hasta 53,1 en 2075. Sin migración, llega a 90,4 en 2075.",
+   "Otros escenarios del INE en 2050 y 2075: fecundidad alta, 51,5 y 49,7; fecundidad baja, 52,1 y 56,9; saldo migratorio alto, 50,1 y 51,9; saldo migratorio bajo, 53,7 y 54,6.",
+   "Una proyección no es una predicción: muestra qué pasaría si se cumplieran sus supuestos.",
+   "La serie observada es del 1 de enero de cada año; la proyectada empieza en 2026."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "historico": {
+    "es": "Observada"
+   },
+   "central": {
+    "es": "Central"
+   },
+   "nulo": {
+    "es": "Sin migración"
+   }
+  }
+ },
+ "rows": [
+  {
+   "time": "1975",
+   "series": "historico",
+   "value": 16.8
+  },
+  {
+   "time": "1976",
+   "series": "historico",
+   "value": 17.1
+  },
+  {
+   "time": "1977",
+   "series": "historico",
+   "value": 17.4
+  },
+  {
+   "time": "1978",
+   "series": "historico",
+   "value": 17.6
+  },
+  {
+   "time": "1979",
+   "series": "historico",
+   "value": 17.9
+  },
+  {
+   "time": "1980",
+   "series": "historico",
+   "value": 18.1
+  },
+  {
+   "time": "1981",
+   "series": "historico",
+   "value": 18.3
+  },
+  {
+   "time": "1982",
+   "series": "historico",
+   "value": 18.5
+  },
+  {
+   "time": "1983",
+   "series": "historico",
+   "value": 18.6
+  },
+  {
+   "time": "1984",
+   "series": "historico",
+   "value": 18.7
+  },
+  {
+   "time": "1985",
+   "series": "historico",
+   "value": 18.8
+  },
+  {
+   "time": "1986",
+   "series": "historico",
+   "value": 19.1
+  },
+  {
+   "time": "1987",
+   "series": "historico",
+   "value": 19.5
+  },
+  {
+   "time": "1988",
+   "series": "historico",
+   "value": 19.9
+  },
+  {
+   "time": "1989",
+   "series": "historico",
+   "value": 20.3
+  },
+  {
+   "time": "1990",
+   "series": "historico",
+   "value": 20.8
+  },
+  {
+   "time": "1991",
+   "series": "historico",
+   "value": 21.2
+  },
+  {
+   "time": "1992",
+   "series": "historico",
+   "value": 21.5
+  },
+  {
+   "time": "1993",
+   "series": "historico",
+   "value": 21.8
+  },
+  {
+   "time": "1994",
+   "series": "historico",
+   "value": 22.1
+  },
+  {
+   "time": "1995",
+   "series": "historico",
+   "value": 22.5
+  },
+  {
+   "time": "1996",
+   "series": "historico",
+   "value": 22.9
+  },
+  {
+   "time": "1997",
+   "series": "historico",
+   "value": 23.3
+  },
+  {
+   "time": "1998",
+   "series": "historico",
+   "value": 23.7
+  },
+  {
+   "time": "1999",
+   "series": "historico",
+   "value": 24.2
+  },
+  {
+   "time": "2000",
+   "series": "historico",
+   "value": 24.5
+  },
+  {
+   "time": "2001",
+   "series": "historico",
+   "value": 24.9
+  },
+  {
+   "time": "2002",
+   "series": "historico",
+   "value": 25.2
+  },
+  {
+   "time": "2003",
+   "series": "historico",
+   "value": 25.1
+  },
+  {
+   "time": "2004",
+   "series": "historico",
+   "value": 24.8
+  },
+  {
+   "time": "2005",
+   "series": "historico",
+   "value": 24.4
+  },
+  {
+   "time": "2006",
+   "series": "historico",
+   "value": 24.5
+  },
+  {
+   "time": "2007",
+   "series": "historico",
+   "value": 24.4
+  },
+  {
+   "time": "2008",
+   "series": "historico",
+   "value": 24.2
+  },
+  {
+   "time": "2009",
+   "series": "historico",
+   "value": 24.5
+  },
+  {
+   "time": "2010",
+   "series": "historico",
+   "value": 24.9
+  },
+  {
+   "time": "2011",
+   "series": "historico",
+   "value": 25.6
+  },
+  {
+   "time": "2012",
+   "series": "historico",
+   "value": 26.1
+  },
+  {
+   "time": "2013",
+   "series": "historico",
+   "value": 26.7
+  },
+  {
+   "time": "2014",
+   "series": "historico",
+   "value": 27.5
+  },
+  {
+   "time": "2015",
+   "series": "historico",
+   "value": 28.2
+  },
+  {
+   "time": "2016",
+   "series": "historico",
+   "value": 28.6
+  },
+  {
+   "time": "2017",
+   "series": "historico",
+   "value": 29.0
+  },
+  {
+   "time": "2018",
+   "series": "historico",
+   "value": 29.4
+  },
+  {
+   "time": "2019",
+   "series": "historico",
+   "value": 29.7
+  },
+  {
+   "time": "2020",
+   "series": "historico",
+   "value": 29.9
+  },
+  {
+   "time": "2021",
+   "series": "historico",
+   "value": 30.1
+  },
+  {
+   "time": "2022",
+   "series": "historico",
+   "value": 30.7
+  },
+  {
+   "time": "2023",
+   "series": "historico",
+   "value": 30.9
+  },
+  {
+   "time": "2024",
+   "series": "historico",
+   "value": 31.3
+  },
+  {
+   "time": "2025",
+   "series": "historico",
+   "value": 31.7
+  },
+  {
+   "time": "2025",
+   "series": "central",
+   "value": 31.7
+  },
+  {
+   "time": "2026",
+   "series": "central",
+   "value": 32.2
+  },
+  {
+   "time": "2027",
+   "series": "central",
+   "value": 32.7
+  },
+  {
+   "time": "2028",
+   "series": "central",
+   "value": 33.2
+  },
+  {
+   "time": "2029",
+   "series": "central",
+   "value": 33.8
+  },
+  {
+   "time": "2030",
+   "series": "central",
+   "value": 34.6
+  },
+  {
+   "time": "2031",
+   "series": "central",
+   "value": 35.3
+  },
+  {
+   "time": "2032",
+   "series": "central",
+   "value": 36.0
+  },
+  {
+   "time": "2033",
+   "series": "central",
+   "value": 36.8
+  },
+  {
+   "time": "2034",
+   "series": "central",
+   "value": 37.6
+  },
+  {
+   "time": "2035",
+   "series": "central",
+   "value": 38.5
+  },
+  {
+   "time": "2036",
+   "series": "central",
+   "value": 39.4
+  },
+  {
+   "time": "2037",
+   "series": "central",
+   "value": 40.4
+  },
+  {
+   "time": "2038",
+   "series": "central",
+   "value": 41.4
+  },
+  {
+   "time": "2039",
+   "series": "central",
+   "value": 42.5
+  },
+  {
+   "time": "2040",
+   "series": "central",
+   "value": 43.6
+  },
+  {
+   "time": "2041",
+   "series": "central",
+   "value": 44.8
+  },
+  {
+   "time": "2042",
+   "series": "central",
+   "value": 46.0
+  },
+  {
+   "time": "2043",
+   "series": "central",
+   "value": 47.1
+  },
+  {
+   "time": "2044",
+   "series": "central",
+   "value": 48.1
+  },
+  {
+   "time": "2045",
+   "series": "central",
+   "value": 49.1
+  },
+  {
+   "time": "2046",
+   "series": "central",
+   "value": 49.9
+  },
+  {
+   "time": "2047",
+   "series": "central",
+   "value": 50.6
+  },
+  {
+   "time": "2048",
+   "series": "central",
+   "value": 51.1
+  },
+  {
+   "time": "2049",
+   "series": "central",
+   "value": 51.5
+  },
+  {
+   "time": "2050",
+   "series": "central",
+   "value": 51.8
+  },
+  {
+   "time": "2051",
+   "series": "central",
+   "value": 52.0
+  },
+  {
+   "time": "2052",
+   "series": "central",
+   "value": 52.1
+  },
+  {
+   "time": "2053",
+   "series": "central",
+   "value": 52.2
+  },
+  {
+   "time": "2054",
+   "series": "central",
+   "value": 52.2
+  },
+  {
+   "time": "2055",
+   "series": "central",
+   "value": 52.2
+  },
+  {
+   "time": "2056",
+   "series": "central",
+   "value": 52.1
+  },
+  {
+   "time": "2057",
+   "series": "central",
+   "value": 52.1
+  },
+  {
+   "time": "2058",
+   "series": "central",
+   "value": 52.0
+  },
+  {
+   "time": "2059",
+   "series": "central",
+   "value": 51.9
+  },
+  {
+   "time": "2060",
+   "series": "central",
+   "value": 51.7
+  },
+  {
+   "time": "2061",
+   "series": "central",
+   "value": 51.5
+  },
+  {
+   "time": "2062",
+   "series": "central",
+   "value": 51.3
+  },
+  {
+   "time": "2063",
+   "series": "central",
+   "value": 51.1
+  },
+  {
+   "time": "2064",
+   "series": "central",
+   "value": 51.0
+  },
+  {
+   "time": "2065",
+   "series": "central",
+   "value": 50.9
+  },
+  {
+   "time": "2066",
+   "series": "central",
+   "value": 50.9
+  },
+  {
+   "time": "2067",
+   "series": "central",
+   "value": 50.9
+  },
+  {
+   "time": "2068",
+   "series": "central",
+   "value": 50.9
+  },
+  {
+   "time": "2069",
+   "series": "central",
+   "value": 51.1
+  },
+  {
+   "time": "2070",
+   "series": "central",
+   "value": 51.3
+  },
+  {
+   "time": "2071",
+   "series": "central",
+   "value": 51.6
+  },
+  {
+   "time": "2072",
+   "series": "central",
+   "value": 51.9
+  },
+  {
+   "time": "2073",
+   "series": "central",
+   "value": 52.2
+  },
+  {
+   "time": "2074",
+   "series": "central",
+   "value": 52.7
+  },
+  {
+   "time": "2075",
+   "series": "central",
+   "value": 53.1
+  },
+  {
+   "time": "2025",
+   "series": "nulo",
+   "value": 31.7
+  },
+  {
+   "time": "2026",
+   "series": "nulo",
+   "value": 32.2
+  },
+  {
+   "time": "2027",
+   "series": "nulo",
+   "value": 33.1
+  },
+  {
+   "time": "2028",
+   "series": "nulo",
+   "value": 34.1
+  },
+  {
+   "time": "2029",
+   "series": "nulo",
+   "value": 35.2
+  },
+  {
+   "time": "2030",
+   "series": "nulo",
+   "value": 36.4
+  },
+  {
+   "time": "2031",
+   "series": "nulo",
+   "value": 37.6
+  },
+  {
+   "time": "2032",
+   "series": "nulo",
+   "value": 38.8
+  },
+  {
+   "time": "2033",
+   "series": "nulo",
+   "value": 40.2
+  },
+  {
+   "time": "2034",
+   "series": "nulo",
+   "value": 41.5
+  },
+  {
+   "time": "2035",
+   "series": "nulo",
+   "value": 43.0
+  },
+  {
+   "time": "2036",
+   "series": "nulo",
+   "value": 44.5
+  },
+  {
+   "time": "2037",
+   "series": "nulo",
+   "value": 46.1
+  },
+  {
+   "time": "2038",
+   "series": "nulo",
+   "value": 47.8
+  },
+  {
+   "time": "2039",
+   "series": "nulo",
+   "value": 49.6
+  },
+  {
+   "time": "2040",
+   "series": "nulo",
+   "value": 51.5
+  },
+  {
+   "time": "2041",
+   "series": "nulo",
+   "value": 53.5
+  },
+  {
+   "time": "2042",
+   "series": "nulo",
+   "value": 55.7
+  },
+  {
+   "time": "2043",
+   "series": "nulo",
+   "value": 57.8
+  },
+  {
+   "time": "2044",
+   "series": "nulo",
+   "value": 59.9
+  },
+  {
+   "time": "2045",
+   "series": "nulo",
+   "value": 61.9
+  },
+  {
+   "time": "2046",
+   "series": "nulo",
+   "value": 63.8
+  },
+  {
+   "time": "2047",
+   "series": "nulo",
+   "value": 65.5
+  },
+  {
+   "time": "2048",
+   "series": "nulo",
+   "value": 67.2
+  },
+  {
+   "time": "2049",
+   "series": "nulo",
+   "value": 68.6
+  },
+  {
+   "time": "2050",
+   "series": "nulo",
+   "value": 69.9
+  },
+  {
+   "time": "2051",
+   "series": "nulo",
+   "value": 71.1
+  },
+  {
+   "time": "2052",
+   "series": "nulo",
+   "value": 72.1
+  },
+  {
+   "time": "2053",
+   "series": "nulo",
+   "value": 73.1
+  },
+  {
+   "time": "2054",
+   "series": "nulo",
+   "value": 74.0
+  },
+  {
+   "time": "2055",
+   "series": "nulo",
+   "value": 74.8
+  },
+  {
+   "time": "2056",
+   "series": "nulo",
+   "value": 75.6
+  },
+  {
+   "time": "2057",
+   "series": "nulo",
+   "value": 76.4
+  },
+  {
+   "time": "2058",
+   "series": "nulo",
+   "value": 77.1
+  },
+  {
+   "time": "2059",
+   "series": "nulo",
+   "value": 77.8
+  },
+  {
+   "time": "2060",
+   "series": "nulo",
+   "value": 78.3
+  },
+  {
+   "time": "2061",
+   "series": "nulo",
+   "value": 78.8
+  },
+  {
+   "time": "2062",
+   "series": "nulo",
+   "value": 79.3
+  },
+  {
+   "time": "2063",
+   "series": "nulo",
+   "value": 79.8
+  },
+  {
+   "time": "2064",
+   "series": "nulo",
+   "value": 80.2
+  },
+  {
+   "time": "2065",
+   "series": "nulo",
+   "value": 80.8
+  },
+  {
+   "time": "2066",
+   "series": "nulo",
+   "value": 81.4
+  },
+  {
+   "time": "2067",
+   "series": "nulo",
+   "value": 82.1
+  },
+  {
+   "time": "2068",
+   "series": "nulo",
+   "value": 82.7
+  },
+  {
+   "time": "2069",
+   "series": "nulo",
+   "value": 83.5
+  },
+  {
+   "time": "2070",
+   "series": "nulo",
+   "value": 84.4
+  },
+  {
+   "time": "2071",
+   "series": "nulo",
+   "value": 85.4
+  },
+  {
+   "time": "2072",
+   "series": "nulo",
+   "value": 86.5
+  },
+  {
+   "time": "2073",
+   "series": "nulo",
+   "value": 87.7
+  },
+  {
+   "time": "2074",
+   "series": "nulo",
+   "value": 89.1
+  },
+  {
+   "time": "2075",
+   "series": "nulo",
+   "value": 90.4
+  }
+ ]
+}

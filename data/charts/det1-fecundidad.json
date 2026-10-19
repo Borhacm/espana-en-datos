@@ -21,10 +21,11 @@
   "es": [
    "Número medio de hijos que tendría una mujer a lo largo de su vida si se mantuvieran las tasas de fecundidad por edad de ese año. Madres de todas las nacionalidades.",
    "El dato más bajo de la serie es el de 2024 (1,10).",
-   "Línea de referencia: 2,1 hijos por mujer, el nivel con el que una población se mantiene sin migraciones."
+   "Línea de referencia: 2,1 hijos por mujer, el nivel con el que una población se mantiene sin migraciones.",
+   "En la UE (2024, Eurostat): media de 1,34 hijos por mujer; con menos que España, Malta. Ningún país de la UE llega a 2,1."
   ]
  },
- "retrieved": "2026-10-14",
+ "retrieved": "2026-10-19",
  "geos": {},
  "dimensions": {
   "series": {

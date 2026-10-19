@@ -1,0 +1,312 @@
+{
+ "id": "det4-gasto-descomposicion",
+ "lens": "tiempo",
+ "theme": "demografia",
+ "title": {
+  "es": "Entre 2008 y 2024, el gasto real en pensiones sube un 53,5 %: hay un 21,4 % más de pensionistas y cada uno cobra de media un 26,4 % más, descontada la inflación"
+ },
+ "subtitle": {
+  "es": "Gasto en pensiones descontada la inflación, número de pensionistas y gasto real por pensionista. Índices, 2008 = 100, 2008-2024"
+ },
+ "unit": {
+  "es": "Índice (2008 = 100)"
+ },
+ "source": {
+  "name": "Eurostat, SEEPROS",
+  "dataset": "spr_exp_pens y spr_pns_ben",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/spr_pns_ben/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "INE, Índice de Precios de Consumo",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=24077"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Gasto: todas las pensiones de la definición europea (jubilación, viudedad, orfandad, incapacidad; públicas y de funcionarios), en euros, deflactado con el IPC medio de cada año.",
+   "Pensionistas: personas que cobran al menos una pensión, contadas una sola vez aunque cobren dos.",
+   "El gasto real crece porque crecen las dos cosas: 121,4 x 126,4 / 100 = 153,5. En escala logarítmica, el número de pensionistas explica el 45 % de la subida y la pensión media, el resto.",
+   "La pensión media sube también porque los nuevos jubilados tuvieron salarios y carreras de cotización mayores que quienes fallecen (efecto sustitución), no solo por la revalorización de las pensiones ya existentes."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "gasto": {
+    "es": "Gasto real"
+   },
+   "pensionistas": {
+    "es": "Pensionistas"
+   },
+   "media": {
+    "es": "Por pensionista"
+   }
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "2008"
+  }
+ },
+ "rows": [
+  {
+   "time": "2008",
+   "series": "gasto",
+   "value": 100.0
+  },
+  {
+   "time": "2009",
+   "series": "gasto",
+   "value": 105.9
+  },
+  {
+   "time": "2010",
+   "series": "gasto",
+   "value": 109.1
+  },
+  {
+   "time": "2011",
+   "series": "gasto",
+   "value": 109.8
+  },
+  {
+   "time": "2012",
+   "series": "gasto",
+   "value": 111.0
+  },
+  {
+   "time": "2013",
+   "series": "gasto",
+   "value": 115.0
+  },
+  {
+   "time": "2014",
+   "series": "gasto",
+   "value": 118.4
+  },
+  {
+   "time": "2015",
+   "series": "gasto",
+   "value": 122.5
+  },
+  {
+   "time": "2016",
+   "series": "gasto",
+   "value": 126.6
+  },
+  {
+   "time": "2017",
+   "series": "gasto",
+   "value": 127.6
+  },
+  {
+   "time": "2018",
+   "series": "gasto",
+   "value": 131.3
+  },
+  {
+   "time": "2019",
+   "series": "gasto",
+   "value": 136.6
+  },
+  {
+   "time": "2020",
+   "series": "gasto",
+   "value": 140.6
+  },
+  {
+   "time": "2021",
+   "series": "gasto",
+   "value": 142.8
+  },
+  {
+   "time": "2022",
+   "series": "gasto",
+   "value": 138.3
+  },
+  {
+   "time": "2023",
+   "series": "gasto",
+   "value": 147.4
+  },
+  {
+   "time": "2024",
+   "series": "gasto",
+   "value": 153.5
+  },
+  {
+   "time": "2008",
+   "series": "pensionistas",
+   "value": 100.0
+  },
+  {
+   "time": "2009",
+   "series": "pensionistas",
+   "value": 102.4
+  },
+  {
+   "time": "2010",
+   "series": "pensionistas",
+   "value": 103.9
+  },
+  {
+   "time": "2011",
+   "series": "pensionistas",
+   "value": 105.2
+  },
+  {
+   "time": "2012",
+   "series": "pensionistas",
+   "value": 106.6
+  },
+  {
+   "time": "2013",
+   "series": "pensionistas",
+   "value": 108.2
+  },
+  {
+   "time": "2014",
+   "series": "pensionistas",
+   "value": 109.7
+  },
+  {
+   "time": "2015",
+   "series": "pensionistas",
+   "value": 110.5
+  },
+  {
+   "time": "2016",
+   "series": "pensionistas",
+   "value": 111.8
+  },
+  {
+   "time": "2017",
+   "series": "pensionistas",
+   "value": 113.1
+  },
+  {
+   "time": "2018",
+   "series": "pensionistas",
+   "value": 114.4
+  },
+  {
+   "time": "2019",
+   "series": "pensionistas",
+   "value": 115.7
+  },
+  {
+   "time": "2020",
+   "series": "pensionistas",
+   "value": 115.8
+  },
+  {
+   "time": "2021",
+   "series": "pensionistas",
+   "value": 117.1
+  },
+  {
+   "time": "2022",
+   "series": "pensionistas",
+   "value": 118.0
+  },
+  {
+   "time": "2023",
+   "series": "pensionistas",
+   "value": 119.5
+  },
+  {
+   "time": "2024",
+   "series": "pensionistas",
+   "value": 121.4
+  },
+  {
+   "time": "2008",
+   "series": "media",
+   "value": 100.0
+  },
+  {
+   "time": "2009",
+   "series": "media",
+   "value": 103.5
+  },
+  {
+   "time": "2010",
+   "series": "media",
+   "value": 105.0
+  },
+  {
+   "time": "2011",
+   "series": "media",
+   "value": 104.3
+  },
+  {
+   "time": "2012",
+   "series": "media",
+   "value": 104.1
+  },
+  {
+   "time": "2013",
+   "series": "media",
+   "value": 106.3
+  },
+  {
+   "time": "2014",
+   "series": "media",
+   "value": 107.9
+  },
+  {
+   "time": "2015",
+   "series": "media",
+   "value": 110.8
+  },
+  {
+   "time": "2016",
+   "series": "media",
+   "value": 113.2
+  },
+  {
+   "time": "2017",
+   "series": "media",
+   "value": 112.9
+  },
+  {
+   "time": "2018",
+   "series": "media",
+   "value": 114.7
+  },
+  {
+   "time": "2019",
+   "series": "media",
+   "value": 118.1
+  },
+  {
+   "time": "2020",
+   "series": "media",
+   "value": 121.4
+  },
+  {
+   "time": "2021",
+   "series": "media",
+   "value": 122.0
+  },
+  {
+   "time": "2022",
+   "series": "media",
+   "value": 117.1
+  },
+  {
+   "time": "2023",
+   "series": "media",
+   "value": 123.3
+  },
+  {
+   "time": "2024",
+   "series": "media",
+   "value": 126.4
+  }
+ ]
+}
