@@ -48,9 +48,22 @@ Comprueba que `data/base/encuestas.json` no ha perdido encuestas (el número de 
 
 Lee `editorial/calendario.yaml` y toma la **primera** entrada con `estado` distinto de `hecha` cuya `fecha` sea **hoy o anterior**. Si hoy es 28 de noviembre, no publiques. Si no queda ninguna entrada para hoy, publica solo la actualización de encuestas (pasos 8 a 10) y termina.
 
+## 3b. Guion antes de los datos (artículos)
+
+Antes de abrir ninguna fuente, escribe en `editorial/registro/<id>.md` un **guion**: entre 5 y 7 preguntas que se haría un lector informado sobre el tema (no solo «cuánto» y «dónde», también «quién», «por qué», «qué ha cambiado» y «qué dice la evidencia»). Luego:
+
+- **Inventario de fuentes:** al menos 10 conjuntos de datos candidatos (INE, Eurostat, OCDE, ministerios, Banco de España...) con qué pregunta respondería cada uno. Elige los gráficos por las preguntas, no por lo primero que encuentres.
+- **Una pregunta, un gráfico.** Cada gráfico responde a una pregunta distinta del guion. **Un mismo hallazgo no se repite en dos miradas** (si el paro por nacionalidad está en «por dentro», no vuelve como titular en «en el tiempo»). Ningún número de un titular se repite en el titular de otro gráfico.
+- **Mínimos de un artículo** (si no se cumplen, no se publica: ver paso 8b):
+  1. Seis gráficos o más, dos por mirada.
+  2. Al menos dos gráficos **explicativos**: composición (por origen, edad, sector...), descomposición de un cambio o relación entre dos variables. No basta con niveles y rankings.
+  3. Una **ficha de política** (como la de vivienda o empleo: qué es, quién y cuándo, qué debería pasar, con qué se compara) sobre una norma vigente relacionada, con su enlace al BOE. Si no hay ninguna relevante, al menos **dos evaluaciones o estudios independientes** citados (AIReF, Banco de España, Fedea, EsadeEcPol, IVIE, artículos académicos), diciendo dónde la evidencia no es concluyente.
+  4. Un párrafo de **«lo que no dicen estos datos»**: qué falta, qué no se puede comparar, qué no se puede atribuir.
+  5. Un enlace a otro tema publicado cuando estén conectados (por ejemplo, inmigración y demografía).
+
 ## 4. Buscar y comprobar los datos
 
-- Empieza por la `idea` del calendario, pero compruébala: que la fuente existe, qué dimensiones tiene y cuál es el último periodo completo.
+- Empieza por el guion y la `idea` del calendario, pero compruébala: que la fuente existe, qué dimensiones tiene y cuál es el último periodo completo.
 - Lectores en `pipeline/lib/sources.py`: `ine_table` (API del INE: busca tablas con `https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/<id>`), `eurostat`, `oecd`, `worldbank`, `socrata_cat` (datos abiertos de Cataluña), `wikipedia`. Resultados electorales: `pipeline/datasets/elecciones.py` (Infoelectoral, ficheros MUNI; necesita la cabecera de navegador de `lib/http.py`). Gobiernos autonómicos: `datasets/gobiernos.py`. Escaños 2026: `datasets/escanos.py`. Votaciones del Congreso (XV legislatura, voto de cada partido en cada votación nominal): `datasets/congreso.py`, con la sección `/congreso/` (`charts/congreso.py`) y su explorador de todas las legislaturas desde 2011 (`build_explorer`, `data/base/congreso-explorador.json`).
 - Geografía (`pipeline/lib/geo.py`): comunidades con código INE (`"01"`... `"19"`) y `"ES"` para el total; provincias `"01"`... `"52"`; países en ISO3 (`"ESP"`, `"DEU"`) y `"EU27"`. `geo.ccaa_table()` y `geo.country_table()` dan los nombres para el JSON.
 - Utilidades comunes en `pipeline/charts/common.py`: `ine_ccaa` (nombre del INE a código), `annual` (media anual con años completos), `pct`, `es_num`.
@@ -63,6 +76,9 @@ Ejemplo completo: `pipeline/charts/vivienda.py` (artículo con seis gráficos, i
 - **Nota:** un archivo `pipeline/charts/notas/<id>_<palabra>.py` con `BUILDERS` (se registra solo). Uno o dos gráficos.
 - Identificador de cada gráfico: `<código del tema en minúsculas><e|d|t><n>-<palabras>` (por ejemplo `vid2-cataluna-rentas`); en notas, `<id>-<palabras>` (por ejemplo `n02-salario-real`).
 - Cada gráfico: título (el hallazgo), subtítulo (qué se mide, unidad, periodo), unidad, fuente con licencia, notas metodológicas (qué mide, qué falta, qué no se puede comparar) y filas. Para titulares con datos trimestrales, usa medias de cuatro trimestres, no un trimestre suelto.
+- **Las notas son metodología, no texto.** No repitas en las notas lo que ya dice el título o el párrafo (posiciones en rankings, máximos que el texto ya cita). Una definición que se aplica a varios gráficos se explica una vez en el texto y, en las notas, en una frase corta.
+- Si un gráfico combina varias tablas de la misma operación, cita la fuente una vez con todas las tablas en `dataset` (no repitas el mismo `name` en `also`: la web lo mostraría varias veces).
+- Revisa las frases generadas con contadores: nada de «17 de las 17»; escribe «en todas las comunidades».
 
 ```bash
 cd pipeline && uv run run.py --only charts.<tema>      # o --only charts.notas
@@ -78,6 +94,8 @@ Abre los JSON y calcula todo lo que vas a escribir. Para cada número del texto,
 - **Artículo:** `web/src/content/themes/<tema>.ts` (si ya existe como `status: "upcoming"`, sustitúyelo) con `code`, `slug`, `title`, `status: "published"`, `published` (fecha de hoy), `dek`, `lenses` (`europa`, `dentro`, `tiempo`: entradilla y cuerpo con párrafos `p("...")` y gráficos `{ fig, code: "E1" }`) y `sources` (fuentes de lo que no sale de los gráficos). Modelo: `web/src/content/themes/vivienda.ts`. Explica en la entradilla o el primer párrafo por qué el tema importa el 29N.
 - **Nota:** `web/src/content/notes/<id>.ts` con `id`, `code` (`N01`...), `slug`, `title`, `dek`, `published` (hoy), `lens`, `theme` (un tema publicado; las notas electorales van al tema `elecciones`) y `body`. Unas 250 palabras.
 - Las piezas aparecen solas en la portada, los índices, la metodología y en «Análisis de campaña» del especial.
+- **El texto añade lo que el gráfico no enseña:** contexto, comparación, causas posibles con su evidencia, límites. No parafrasees el título del gráfico que viene después. La entradilla (`dek`) cuenta la idea principal del artículo, no la suma de los titulares de los gráficos.
+- **Corregir una pieza publicada:** mantén `slug` y `published`, añade `updated` con la fecha y anota los cambios al final de `editorial/registro/<id>.md`.
 
 ### Piezas sobre los programas electorales (a12, a13, a14)
 
@@ -91,7 +109,21 @@ Abre los JSON y calcula todo lo que vas a escribir. Para cada número del texto,
 cd web && npm run build && npm run check
 ```
 
-`npm run check` dibuja todos los gráficos en un navegador sin interfaz y prueba el simulador. Tiene que terminar sin errores. `git status` solo debe mostrar archivos de tu pieza, los datos de encuestas del paso 2 y el calendario.
+`npm run check` dibuja todos los gráficos en un navegador sin interfaz y prueba el simulador. Tiene que terminar sin errores. `git status` solo debe mostrar archivos de tu pieza, los datos de encuestas del paso 2 y el calendario. Si falta el navegador de Playwright, instálalo con `npx playwright install chromium-headless-shell` (desde `web/`).
+
+## 8b. Autoevaluación (artículos)
+
+Antes de publicar, rellena al final de `editorial/registro/<id>.md` esta lista y compárala con `vivienda` y `empleo`, los modelos:
+
+- [ ] Cada pregunta del guion tiene su gráfico o su párrafo con fuente.
+- [ ] Ningún hallazgo se repite en dos miradas ni ningún número de titular en dos gráficos.
+- [ ] Dos gráficos explicativos o más.
+- [ ] Ficha de política o dos estudios independientes citados en `sources`.
+- [ ] Párrafo de «lo que no dicen estos datos».
+- [ ] Las notas no repiten el texto.
+- [ ] Un lector que sigue la prensa aprende al menos tres cosas que no sabía.
+
+Si alguna casilla queda sin marcar y no se puede resolver en esta ejecución, **no publiques el artículo**: publica solo la actualización de encuestas, deja la pieza en una rama `borrador/<id>` y explica en el resumen qué falta.
 
 ## 9. Publicar
 

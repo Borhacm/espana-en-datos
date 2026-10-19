@@ -41,6 +41,8 @@ export interface Theme {
   hub?: boolean;
   dek?: Bi;
   published?: string;
+  /** Fecha de la última revisión de una pieza publicada (se muestra junto a la de publicación) */
+  updated?: string;
   /** Desempate si dos temas se publican el mismo día (menor = antes) */
   order?: number;
   lenses?: Record<LensId, ThemeLens>;

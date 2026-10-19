@@ -12,8 +12,8 @@ interface Props { lang: Lang; theme: Theme }
 const { lang, theme } = Astro.props;
 
 const copy = {
-  es: { lenses: "Miradas", sameLens: "Esta mirada en todos los temas", notes: "Notas sobre este tema", sources: "Fuentes del texto", published: "Publicado el", charts: "gráficos", other: "Otros temas" },
-  en: { lenses: "Lenses", sameLens: "This lens across all themes", notes: "Notes on this theme", sources: "Sources for the text", published: "Published on", charts: "charts", other: "Other themes" },
+  es: { lenses: "Miradas", sameLens: "Esta mirada en todos los temas", notes: "Notas sobre este tema", sources: "Fuentes del texto", published: "Publicado el", updated: "actualizado el", charts: "gráficos", other: "Otros temas" },
+  en: { lenses: "Lenses", sameLens: "This lens across all themes", notes: "Notes on this theme", sources: "Sources for the text", published: "Published on", updated: "updated on", charts: "charts", other: "Other themes" },
 }[lang];
 
 const nFigs = figuresOf(theme).length;
@@ -24,7 +24,7 @@ const notes = notesOf(theme.id);
   <PageHead
     title={theme.title[lang]}
     dek={theme.dek?.[lang]}
-    meta={`${copy.published} ${formatDate(theme.published!, lang)}. ${nFigs} ${copy.charts}.`}
+    meta={`${copy.published} ${formatDate(theme.published!, lang)}${theme.updated ? `, ${copy.updated} ${formatDate(theme.updated, lang)}` : ""}. ${nFigs} ${copy.charts}.`}
   />
 
 
