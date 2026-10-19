@@ -3,7 +3,7 @@
  "lens": "tiempo",
  "theme": "vivienda",
  "title": {
-  "es": "Desde 2015, la vivienda ha subido un 80 % y los salarios, un 25 %"
+  "es": "Descontada la inflación, la vivienda cuesta un 42 % más que en 2015; el salario medio compra un 1,5 % menos"
  },
  "subtitle": {
   "es": "Índices, 2015 = 100. Precio de la vivienda, salario medio por trabajador y precios de consumo"
@@ -32,10 +32,11 @@
    "Vivienda: Índice de Precios de Vivienda (compraventas de vivienda nueva y usada), media anual.",
    "Salarios: coste salarial total por trabajador y mes (industria, construcción y servicios), media anual. Incluye pagas extra.",
    "Precios: IPC general, media anual. Entre 2015 y 2025 subió un 27 %.",
+   "En términos nominales, entre 2015 y 2025 la vivienda sube un 80 % y el salario medio, un 25 %.",
    "Solo años completos."
   ]
  },
- "retrieved": "2026-10-06",
+ "retrieved": "2026-10-19",
  "geos": {},
  "dimensions": {
   "series": {

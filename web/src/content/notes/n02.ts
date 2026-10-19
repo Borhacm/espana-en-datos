@@ -21,6 +21,7 @@ const note: Note = {
     p("El resultado es que el salario mínimo se acerca al medio: era el 38,9 % del salario medio en 2008 y el 58,1 % en 2025."),
     { fig: "n02-smi-salario-medio", code: "2" },
     p("Un aviso sobre las medias. El salario medio también cambia según quién trabaja: cuando se pierde sobre todo empleo de sueldo bajo, como en la crisis que empezó en 2008, la media sube aunque ningún salario lo haga. Por eso la caída real desde 2008 no quiere decir que cada trabajador cobre hoy un 3,7 % menos. Los efectos del salario mínimo sobre el empleo quedan fuera de esta nota."),
+    { see: { es: "Empleo: la reforma laboral, tres años después" }, href: "/empleo/" },
   ],
   sources: [
     { name: "BOE, Real Decreto 126/2026, por el que se fija el salario mínimo interprofesional para 2026", url: "https://www.boe.es/eli/es/rd/2026/02/18/126/con" },

@@ -11,6 +11,7 @@ const theme: Theme = {
   title: { es: "Empleo: la reforma laboral, tres años después" },
   status: "published",
   published: "2026-10-09",
+  updated: "2026-10-19",
   order: 3,
   dek: {
     es: "La reforma laboral de diciembre de 2021 cambió los contratos de trabajo. Desde entonces, los asalariados temporales del sector privado han pasado del 23,7 % al 12,4 %. Parte de ese cambio se ha ido a los fijos discontinuos, y el paro juvenil sigue entre los más altos de la UE.",
@@ -53,6 +54,9 @@ const theme: Theme = {
         p("Lo que dicen las evaluaciones independientes. El Banco de España (Informe Anual 2023) concluyó que la estabilidad del empleo en su conjunto había aumentado ligeramente, porque pesan mucho más los contratos indefinidos, aunque los nuevos indefinidos, y en especial los fijos discontinuos, duran algo menos que antes. De los contratos firmados en marzo de 2022, el 16,1 % seguía activo un año después, frente al 11 % de los firmados en marzo de 2017 y 2018. Advierte de que la comparación no es causal."),
         p("La AIReF (documento técnico de septiembre de 2025) compara los sectores y ocupaciones más expuestos a la temporalidad con los demás. Encuentra que la reforma redujo un poco la probabilidad de perder el empleo y mejoró algo la de encontrarlo, y que aumentó el paso de contratos temporales a fijos discontinuos, pero no encuentra un efecto claro en el paso a indefinidos ordinarios ni en el crecimiento del empleo total. Pide cautela: son efectos medios, en pocos años y con muchos otros cambios a la vez."),
         p("En resumen: la temporalidad ha bajado mucho más en el sector privado que en el público y que en Europa, y las dos evaluaciones relacionan esa caída con la reforma. Lo que sigue en discusión es cuánto más estable es el empleo que la ha sustituido."),
+        p("Lo que no dicen estos datos. La EPA es una encuesta de personas, no un registro de contratos: dice cuántos asalariados tienen un contrato temporal, pero no cuántos contratos se firman ni cuánto duran. Para eso hacen falta los registros de afiliación a la Seguridad Social, que son los que usan el Banco de España y la AIReF. El sector público no es un grupo de comparación perfecto, porque a la vez tuvo su propia ley contra la temporalidad. Y la tasa de paro juvenil se calcula sobre los jóvenes que buscan trabajo, no sobre todos: muchos menores de 25 años estudian y no cuentan como activos."),
+        { see: { es: "Nota: salarios reales y salario mínimo desde 2008" }, href: "/notas/salarios-reales-salario-minimo/" },
+        { see: { es: "La legislatura en datos: paro, crecimiento y tasa de empleo desde 2023" }, href: "/la-legislatura-en-datos/" },
       ],
     },
   },

@@ -10,6 +10,7 @@ const theme: Theme = {
   title: { es: "Vivienda: por qué es el tema de estas elecciones" },
   status: "published",
   published: "2026-10-06",
+  updated: "2026-10-19",
   order: 1,
   dek: {
     es: "Las elecciones del 29N se convocaron después de que el Congreso rechazara dos decretos de alquiler. Los datos explican por qué la vivienda está en el centro: desde 2015 ha subido un 80 %, y los salarios, un 25 %.",
@@ -48,10 +49,13 @@ const theme: Theme = {
     tiempo: {
       lede: { es: "La vivienda se ha encarecido mucho más que los sueldos." },
       body: [
-        p("Entre 2015 y 2025, el precio de la vivienda subió un 80 %, el salario medio por trabajador un 25 % y los precios de consumo un 27 %. Descontada la inflación, comprar una casa cuesta un 42 % más que hace diez años, mientras que el salario medio compra algo menos que entonces."),
+        p("Entre 2015 y 2025, el precio de la vivienda subió un 80 %, el salario medio por trabajador un 25 % y los precios de consumo un 27 %. Descontada la inflación, comprar una casa cuesta un 42 % más que hace diez años, mientras que el salario medio compra un 1,5 % menos que entonces."),
         { fig: "vit1-precios-salarios", code: "T1" },
+        { see: { es: "Nota: salarios reales y salario mínimo desde 2008" }, href: "/notas/salarios-reales-salario-minimo/" },
         p("Mirado desde 2008, el ciclo es completo: tras la burbuja, la vivienda cayó un 35 % hasta 2013 y desde entonces casi ha duplicado su precio. En 2025 estaba un 22 % por encima de su máximo anterior, en euros corrientes."),
         p("A finales de septiembre el Gobierno aprobó dos decretos sobre alquiler: limitaban al 2 % la actualización anual de las rentas, permitían prorrogar los contratos y fijaban indemnizaciones si el propietario no los renovaba. El 2 de octubre el Congreso no los convalidó y quedaron derogados. Tres días después se convocaron las elecciones."),
+        p("Lo que no dicen estos datos. Los precios de los gráficos de España y de las comunidades son de compraventa. Para el alquiler solo usamos las fianzas que se depositan en la Generalitat, así que no se pueden comparar los alquileres de Cataluña con los de otras comunidades con la misma fuente. Las fianzas recogen los contratos de vivienda habitual con fianza depositada: no incluyen los alquileres de temporada ni los contratos sin fianza. La comparación entre municipios catalanes con y sin tope no es un experimento: los municipios con tope son más urbanos y más caros, así que la diferencia no se puede atribuir solo a la norma. Y la sobrecarga de los inquilinos sale de una encuesta europea, con su margen de error."),
+        { see: { es: "La legislatura en datos: salarios, empleo y cuentas públicas desde 2023" }, href: "/la-legislatura-en-datos/" },
       ],
     },
   },

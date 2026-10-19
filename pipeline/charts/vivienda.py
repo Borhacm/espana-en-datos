@@ -36,10 +36,13 @@ def precios_salarios():
     rows = [{"time": str(y), "series": k, "value": round(100 * s[y] / s[BASE], 1)} for k, s in series.items() for y in years]
     last = years[-1]
     h, w, p = (pct(series[k][BASE], series[k][last]) for k in ("vivienda", "salarios", "precios"))
+    # Titular en términos reales: la subida nominal ya está en los titulares de «frente a Europa» y «por dentro»
+    hr, wr = (pct(series[k][BASE] / series["precios"][BASE], series[k][last] / series["precios"][last]) for k in ("vivienda", "salarios"))
     return chart(
         id="vit1-precios-salarios",
         lens="tiempo", theme="vivienda",
-        title=f"Desde {BASE}, la vivienda ha subido un {es_num(h)} % y los salarios, un {es_num(w)} %",
+        title=f"Descontada la inflación, la vivienda cuesta un {es_num(hr)} % más que en {BASE}; el salario medio compra un "
+              f"{abs(wr):.1f} % {'menos' if wr < 0 else 'más'}".replace(".", ","),
         subtitle=f"Índices, {BASE} = 100. Precio de la vivienda, salario medio por trabajador y precios de consumo",
         unit="Índice (2015 = 100)",
         source={**INE_IPV, "also": [INE_WAGE, INE_CPI]},
@@ -47,6 +50,7 @@ def precios_salarios():
             "Vivienda: Índice de Precios de Vivienda (compraventas de vivienda nueva y usada), media anual.",
             "Salarios: coste salarial total por trabajador y mes (industria, construcción y servicios), media anual. Incluye pagas extra.",
             f"Precios: IPC general, media anual. Entre {BASE} y {last} subió un {es_num(p)} %.",
+            f"En términos nominales, entre {BASE} y {last} la vivienda sube un {es_num(h)} % y el salario medio, un {es_num(w)} %.",
             "Solo años completos.",
         ],
         rows=rows,
@@ -78,9 +82,9 @@ def comunidades():
     return chart(
         id="vid1-comunidades",
         lens="dentro", theme="vivienda",
-        title=f"La vivienda ha subido un {es_num(es)} % desde {BASE}: del {es_num(top['value'])} % de {geo.CCAA[top['geo']]} "
-              f"al {es_num(low['value'])} % de {geo.CCAA[low['geo']]}",
-        subtitle=f"Subida del precio de la vivienda entre {BASE} y {last}, en %",
+        title=f"Desde {BASE}, la vivienda sube un {es_num(top['value'])} % en {geo.CCAA[top['geo']]} y un {es_num(low['value'])} % "
+              f"en {geo.CCAA[low['geo']]}",
+        subtitle=f"Subida del precio de la vivienda entre {BASE} y {last}, en %. España: {es_num(es)} %",
         unit="% de subida",
         source=INE_IPV,
         notes=["Índice de Precios de Vivienda, medias anuales. Precios nominales, sin descontar la inflación.",

@@ -156,8 +156,9 @@ def tracker():
             "No entran en la media los paneles online sin muestreo probabilístico (ElectoPanel), las encuestas de partidos ni las "
             "reestimaciones del CIS hechas por otras empresas. Sí aparecen como puntos.",
             "Sumar/FA: Frente Amplio sustituye desde septiembre de 2026 a la alianza Sumar (IU, Movimiento Sumar, Más Madrid y Comuns, "
-            "entre otros) y continúa su serie. No es exactamente el mismo espacio: en la Comunidad Valenciana, Compromís concurre con "
-            "Podemos y EUPV en Compromís–Front Valencià, que no se incluye en Sumar/FA ni en Podemos. El resultado de 2023 es el de Sumar.",
+            "entre otros) y continúa su serie. Incluye también a Compromís–Front Valencià (Compromís, Podemos y EUPV en la Comunidad "
+            "Valenciana), igual que Sumar incluía a Compromís en 2023. Por eso, desde ese cambio, Podemos no incluye su voto en la "
+            "Comunidad Valenciana. El resultado de 2023 es el de Sumar.",
             "Resultados de 2023: % sobre voto válido (candidaturas + blanco), con voto exterior.",
             "Por ley (LOREG, art. 69.7), las encuestas no se pueden publicar del 24 al 28 de noviembre. Esos días este gráfico se oculta.",
         ],

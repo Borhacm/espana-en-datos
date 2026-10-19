@@ -3,10 +3,10 @@
  "lens": "dentro",
  "theme": "vivienda",
  "title": {
-  "es": "La vivienda ha subido un 80 % desde 2015: del 100 % de Madrid al 40 % de Extremadura"
+  "es": "Desde 2015, la vivienda sube un 100 % en Madrid y un 40 % en Extremadura"
  },
  "subtitle": {
-  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %"
+  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %. España: 80 %"
  },
  "unit": {
   "es": "% de subida"
@@ -23,7 +23,7 @@
    "Ceuta y Melilla tienen pocas compraventas, así que su índice varía mucho de un año a otro."
   ]
  },
- "retrieved": "2026-10-06",
+ "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",

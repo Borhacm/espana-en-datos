@@ -27,7 +27,8 @@ PARTIES_AS_POLLSTERS = {"Sumar", "PSOE", "PP", "Vox", "Podemos"}
 # Nombres de columna de Wikipedia -> siglas que usamos.
 # Frente Amplio (FA) sustituye a la alianza Sumar desde septiembre de 2026 (IU, Movimiento Sumar, Más Madrid y Comuns, entre
 # otros): sigue la misma serie, con la clave «Sumar», para que la media no empiece de cero con dos encuestas. Compromís–Front
-# Valencià (FV), con Compromís, Podemos y EUPV en la Comunidad Valenciana, va aparte. Ver la nota en build().
+# Valencià (FV, con Compromís, Podemos y EUPV en la Comunidad Valenciana) se suma a esa serie en polls(), como lo estaba
+# Compromís en Sumar en 2023 (decisión editorial del 19 de octubre de 2026). Ver la nota en build().
 PARTY_ALIASES = {"CCa": "CC", "Aliança.cat": "AC", "Adelante Andalucía (2021)": "AA", "FA": "Sumar"}
 
 
@@ -131,6 +132,10 @@ def polls() -> list[dict]:
                     seats[party] = s
             if len(values) < 3:
                 continue
+            # Compromís–Front Valencià se suma a Sumar/FA: el mismo espacio que Sumar en 2023 en la Comunidad Valenciana
+            for d in (values, seats):
+                if "FV" in d:
+                    d["Sumar"] = round(d.get("Sumar", 0) + d.pop("FV"), 1)
             # Reestimaciones de los microdatos del CIS hechas por otras empresas: «CIS {{smaller|(Logoslab)}}»
             alt = re.search(r"\{\{smaller\|\(([^)]+)\)\}\}", firm)
             firm = re.sub(r"\{\{[^}]*\}\}", "", firm).strip()
@@ -177,10 +182,10 @@ def build() -> dict:
             "panel = true: panel online sin muestreo probabilístico. Se muestra, pero no entra en la media.",
             "reestimate: otra empresa reestima los microdatos de un barómetro del CIS. No cuenta como encuesta independiente.",
             "partisan = true: encuesta de un partido. No entra en la media.",
-            "Sumar: desde las encuestas posteriores a su creación (septiembre de 2026), la columna es la de Frente Amplio, la alianza "
-            "que sustituye a Sumar. No es exactamente el mismo espacio: en la Comunidad Valenciana, Compromís concurre con Podemos y "
-            "EUPV en Compromís–Front Valencià (FV), que tiene su propia clave. Por eso, desde ese cambio, Sumar/FA y Podemos no "
-            "incluyen el voto de esa candidatura.",
+            "Sumar: desde las encuestas posteriores a su creación (septiembre de 2026), es la suma de Frente Amplio, la alianza "
+            "que sustituye a Sumar, y de Compromís–Front Valencià, que concurre en la Comunidad Valenciana con Compromís, Podemos y "
+            "EUPV. Así se mantiene el mismo ámbito que Sumar en 2023, que incluía a Compromís. Por la misma razón, la columna de "
+            "Podemos no incluye su voto en la Comunidad Valenciana desde ese cambio.",
         ],
         "rows": rows,
     }
