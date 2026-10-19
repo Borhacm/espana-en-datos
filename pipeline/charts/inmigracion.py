@@ -1,7 +1,8 @@
-"""Tema Inmigración (código IN): población nacida en el extranjero y de nacionalidad extranjera, empleo y paro por
-nacionalidad, España frente a la UE. Solo fuentes oficiales (INE y Eurostat)."""
+"""Tema Inmigración (código IN): cuántos residentes han nacido fuera y de dónde vienen, edad, empleo, sobrecualificación
+y paro, España frente a la UE. Solo fuentes oficiales (INE y Eurostat)."""
 
 from collections import defaultdict
+from functools import lru_cache
 
 from lib import geo, sources
 from lib.output import THEMES, chart
@@ -13,37 +14,46 @@ THEMES["inmigracion"] = {"code": "IN", "title": "Inmigración en datos"}
 
 # INE, Estadística Continua de Población (ECP). Las series definitivas llegan al 1 de enero de 2025; desde el 1 de abril
 # de 2025, tablas nuevas (provisionales). El INE fecha cada dato el primer día del trimestre: «2026Q1» es el 1 de enero.
-BIRTH_HIST = 56937      # población por país de nacimiento, total nacional, 2002-2025
-NAT_HIST = 56936        # población por nacionalidad, total nacional, 2002-2025
-BIRTH_NEW = 59586       # población por lugar de nacimiento (España/extranjero), total nacional, desde 2025
-NAT_NEW = 59585         # población por nacionalidad (española/extranjera), total nacional, desde 2025
-BIRTH_CCAA = 59588      # población por lugar de nacimiento (España/extranjero) y comunidad, desde 2025
+BIRTH_HIST = 56937      # población por edad y país de nacimiento, total nacional, 2002-2025
+NAT_HIST = 56936        # población por edad y nacionalidad, total nacional, 2002-2025
+BIRTH_NEW = 59586       # población por edad y lugar de nacimiento (España/extranjero), total nacional, desde 2025
+NAT_NEW = 59585         # población por edad y nacionalidad (española/extranjera), total nacional, desde 2025
+BIRTH_CCAA = 59588      # población por edad y lugar de nacimiento (España/extranjero) y comunidad, desde 2025
 UNEMP_TABLE = 65336     # INE, EPA: tasas de paro por nacionalidad, sexo y comunidad (trimestral)
 
+ALL_AGES = "Todas las edades"
+N = "Total Nacional"
 INE = {"license": "Reutilización libre citando la fuente"}
-
-
-def _ine_src(table: int, name: str) -> dict:
-    return {"name": name, "dataset": f"Tabla {table}", "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={table}", **INE}
-
-
 ECP = "INE, Estadística Continua de Población"
 EPA = "INE, Encuesta de Población Activa"
 
 
-def _ecp(table: int) -> dict[tuple[str, str], dict[str, float]]:
-    """(territorio, grupo) -> {periodo: personas}, todas las edades y ambos sexos.
-    Grupo: «Total», «España»/«Española» o «Extranjero»/«Extranjera». El orden de las partes cambia según la tabla."""
+def _ine_src(tables: list[int], name: str) -> dict:
+    ds = ", ".join(str(t) for t in tables)
+    return {"name": name, "dataset": f"Tabla{'s' if len(tables) > 1 else ''} {ds}",
+            "url": f"https://www.ine.es/jaxiT3/Tabla.htm?t={tables[0]}", **INE}
+
+
+@lru_cache(maxsize=None)
+def _ecp(table: int, age: str = ALL_AGES) -> dict[tuple[str, str], dict[str, float]]:
+    """(territorio, grupo) -> {periodo: personas} para un grupo de edad, ambos sexos.
+    Grupo: «Total», «España»/«Española», «Extranjero»/«Extranjera» o una región o país de nacimiento.
+    El orden de las partes del nombre de la serie cambia según la tabla."""
     out = defaultdict(dict)
     for r in sources.ine_table(table):
         parts = r["series"].split(". ")
-        if "Todas las edades" not in parts:
+        if age not in parts:
             continue
-        rest = [x for x in parts[1:] if x not in ("Todas las edades", "Población", "Número")]
+        rest = [x for x in parts[1:] if x not in (age, "Población", "Número")]
         if len(rest) != 2 or rest[1] != "Total":
             continue
         out[(parts[0], rest[0])][r["period"]] = r["value"]
     return out
+
+
+def _jan(series: dict[str, float]) -> dict[int, float]:
+    """Datos del 1 de enero de cada año."""
+    return {int(p[:4]): v for p, v in series.items() if p.endswith("Q1")}
 
 
 def _rank(raw: list[dict], year: str, prev: str) -> tuple[list[dict], list[str]]:
@@ -64,10 +74,18 @@ def _missing_note(missing: list[str], year: str) -> list[str]:
     return [f"Sin dato de {year}: {', '.join(missing)}."] if missing else []
 
 
+def _eurostat_code(iso3: str) -> str:
+    return "EU27_2020" if iso3 == "EU27" else geo.COUNTRIES[iso3][0]
+
+
 def _date(period: str) -> str:
     """«2026Q1» -> «1 de enero de 2026» (la ECP fecha cada dato el primer día del trimestre)."""
     y, q = period.split("Q")
     return f"1 de {['enero', 'abril', 'julio', 'octubre'][int(q) - 1]} de {y}"
+
+
+def mill(v: float) -> str:
+    return es1(v / 1e6)
 
 
 # ---------- España frente a Europa ----------
@@ -95,9 +113,7 @@ def europa_nacidos_fuera():
         unit="% de la población",
         source={"name": "Eurostat", "dataset": "migr_pop3ctb", "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_pop3ctb/default/table",
                 "license": "CC BY 4.0"},
-        notes=["Personas residentes nacidas fuera del país, sea cual sea su nacionalidad: incluye a quienes han obtenido la nacionalidad "
-               "del país donde viven y a los nacidos en otro país de la UE.",
-               "En la UE, los nacidos en otro país de la Unión también cuentan como nacidos en el extranjero.",
+        notes=["Incluye a quienes han obtenido la nacionalidad del país donde viven y a los nacidos en otro país de la UE.",
                f"«prev» en la descarga: dato de {PREV}."] + _missing_note(missing, last),
         rows=out,
         geos=geo.country_table(r["geo"] for r in out),
@@ -110,37 +126,63 @@ def europa_empleo():
     native = {(r["geo"], r["time"]): r["value"] for r in raw if r["c_birth"] == "NAT"}
     last = max(r["time"] for r in born if geo.from_eurostat(r["geo"]) == "EU27")
     PREV = "2015"
-    out = []
     ranked, missing = _rank(born, last, PREV)
-    for r in ranked:
-        code = "EU27_2020" if r["geo"] == "EU27" else geo.COUNTRIES[r["geo"]][0]
-        nat = native.get((code, last))
-        if nat is not None:
-            out.append({**r, "native": round(nat, 1)})
+    out = [{**r, "native": round(native[(_eurostat_code(r["geo"]), last)], 1)} for r in ranked
+           if (_eurostat_code(r["geo"]), last) in native]
     es = next(r for r in out if r["geo"] == "ESP")
     eu = next(r for r in out if r["geo"] == "EU27")
-    place = _place(out, "ESP")
-    n = len(out) - 1
-    unreliable = sorted(geo.COUNTRIES[geo.from_eurostat(r["geo"])][1] for r in born
-                        if r["time"] == last and "u" in r["flag"] and geo.from_eurostat(r["geo"]) in {o["geo"] for o in out})
+    gap_es, gap_eu = es["native"] - es["value"], eu["native"] - eu["value"]
     diff = sorted({geo.COUNTRIES[geo.from_eurostat(r["geo"])][1] for r in raw
                    if r["time"] == last and "d" in r["flag"] and geo.from_eurostat(r["geo"]) in geo.COUNTRIES})
     return chart(
         id="ine2-europa-empleo",
         lens="europa", theme="inmigracion",
-        title=f"En España trabaja el {es1(es['value'])} % de los nacidos en el extranjero de 20 a 64 años, "
-              f"frente al {es1(es['native'])} % de los nacidos en España",
-        subtitle=f"Tasa de empleo de la población nacida en el extranjero de 20 a 64 años, {last}, en %. En la UE: "
-                 f"{es1(eu['value'])} % de los nacidos fuera y {es1(eu['native'])} % de los nacidos en el país",
+        title=f"La tasa de empleo de los nacidos fuera está {es1(gap_es)} puntos por debajo de la de los nacidos en España; "
+              f"en la UE, {es1(gap_eu)} puntos",
+        subtitle=f"Tasa de empleo de la población de 20 a 64 años nacida en el extranjero, {last}, en %. "
+                 f"España: {es1(es['value'])} % (nacidos en España: {es1(es['native'])} %). UE: {es1(eu['value'])} % ({es1(eu['native'])} %)",
         unit="% de la población de 20 a 64 años",
         source={"name": "Eurostat, Encuesta de Población Activa de la UE", "dataset": "lfsa_ergacob",
                 "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_ergacob/default/table", "license": "CC BY 4.0"},
         notes=["Personas ocupadas de 20 a 64 años nacidas fuera del país, en % de toda la población nacida fuera de esa edad.",
-               "«native» en la descarga: tasa de empleo de los nacidos en el propio país, el mismo año. "
-               f"«prev»: tasa de los nacidos en el extranjero en {PREV}.",
-               f"España es el {place}.º de {n} países por la tasa de los nacidos fuera."]
-              + ([f"Dato poco fiable por tamaño de muestra en {last}: {', '.join(unreliable)}."] if unreliable else [])
+               f"«native» en la descarga: tasa de los nacidos en el propio país. «prev»: tasa de los nacidos fuera en {PREV}."]
               + ([f"Eurostat marca los datos de {last} de {' y '.join(diff)} como «definición distinta» de la armonizada."] if diff else [])
+              + _missing_note(missing, last),
+        rows=out,
+        geos=geo.country_table(r["geo"] for r in out),
+    )
+
+
+def europa_sobrecualificacion():
+    raw = sources.eurostat("lfsa_eoqgan", age="Y20-64", sex="T", unit="PC", citizen=["FOR", "NAT"])
+    foreign = [r for r in raw if r["citizen"] == "FOR"]
+    nat = {(r["geo"], r["time"]): r["value"] for r in raw if r["citizen"] == "NAT"}
+    last = max(r["time"] for r in foreign if geo.from_eurostat(r["geo"]) == "EU27")
+    ranked, missing = _rank(foreign, last, "2015")
+    out = [{"geo": r["geo"], "time": r["time"], "value": r["value"], "national": round(nat[(_eurostat_code(r["geo"]), last)], 1)}
+           for r in ranked if (_eurostat_code(r["geo"]), last) in nat]
+    es = next(r for r in out if r["geo"] == "ESP")
+    eu = next(r for r in out if r["geo"] == "EU27")
+    place = _place(out, "ESP")
+    n = len(out) - 1
+    place_nat = _place([{"geo": r["geo"], "value": r["national"]} for r in out], "ESP")
+    unreliable = sorted(geo.COUNTRIES[geo.from_eurostat(r["geo"])][1] for r in foreign
+                        if r["time"] == last and "u" in r["flag"] and geo.from_eurostat(r["geo"]) in {o["geo"] for o in out})
+    return chart(
+        id="ine3-europa-sobrecualificacion",
+        lens="europa", theme="inmigracion",
+        title=f"El {es1(es['value'])} % de los extranjeros con estudios superiores que trabajan en España lo hace en un empleo "
+              f"que no los requiere: el {place}.º porcentaje más alto de {n}",
+        subtitle=f"Tasa de sobrecualificación de los ocupados de 20 a 64 años con nacionalidad extranjera, {last}, en %. "
+                 f"Españoles: {es1(es['national'])} %. UE: {es1(eu['value'])} % de los extranjeros y {es1(eu['national'])} % de los nacionales",
+        unit="% de los ocupados con estudios superiores",
+        source={"name": "Eurostat, Encuesta de Población Activa de la UE", "dataset": "lfsa_eoqgan",
+                "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_eoqgan/default/table", "license": "CC BY 4.0"},
+        notes=["Ocupados con estudios superiores (CINE 5 a 8) que trabajan en ocupaciones que no los requieren (grupos 4 a 9 de la "
+               "clasificación internacional de ocupaciones), en % de todos los ocupados con estudios superiores.",
+               "Esta tabla de Eurostat clasifica por nacionalidad, no por lugar de nacimiento.",
+               f"«national» en la descarga: tasa de los nacionales del país. Por esa tasa, España es el {place_nat}.º de {n}."]
+              + ([f"Dato poco fiable por tamaño de muestra en {last}: {', '.join(unreliable)}."] if unreliable else [])
               + _missing_note(missing, last),
         rows=out,
         geos=geo.country_table(r["geo"] for r in out),
@@ -151,14 +193,11 @@ def europa_empleo():
 
 def comunidades_nacidos_fuera():
     ecp = _ecp(BIRTH_CCAA)
-    periods = sorted({p for (g, b), s in ecp.items() if b == "Total" for p in s})
-    jan = max(p for p in periods if p.endswith("Q1"))
+    jan = max(p for (g, b), s in ecp.items() if b == "Total" for p in s if p.endswith("Q1"))
     out = []
     for (name, b), s in ecp.items():
-        if b != "Extranjero":
-            continue
         code = ine_ccaa(name)
-        if code and jan in s:
+        if b == "Extranjero" and code and jan in s:
             out.append({"geo": code, "time": jan[:4], "value": round(100 * s[jan] / ecp[(name, "Total")][jan], 1),
                         "people": round(s[jan])})
     assert len(out) == 20, len(out)
@@ -169,18 +208,19 @@ def comunidades_nacidos_fuera():
     return chart(
         id="ind1-comunidades-nacidos-fuera",
         lens="dentro", theme="inmigracion",
-        title=f"El {es1(es['value'])} % de los residentes en España nació fuera: del {es1(top['value'])} % de {geo.CCAA[top['geo']]} "
-              f"al {es1(low['value'])} % de {geo.CCAA[low['geo']]}",
-        subtitle=f"Población nacida en el extranjero, {_date(jan)}, en % de la población de cada comunidad",
+        title=f"Del {es1(top['value'])} % de residentes nacidos fuera en {geo.CCAA[top['geo']]} al {es1(low['value'])} % "
+              f"en {geo.CCAA[low['geo']]}",
+        subtitle=f"Población nacida en el extranjero, {_date(jan)}, en % de la población de cada comunidad. España: {es1(es['value'])} %",
         unit="% de la población",
-        source=_ine_src(BIRTH_CCAA, ECP),
-        notes=["Nacidos fuera de España, tengan o no la nacionalidad española. Incluye, por ejemplo, a los hijos de emigrantes "
-               "españoles nacidos en otro país.",
-               "Dato provisional. «people» en la descarga: número de personas.",
+        source=_ine_src([BIRTH_CCAA], ECP),
+        notes=["Dato provisional. «people» en la descarga: número de personas.",
                "Ceuta y Melilla tienen poblaciones pequeñas y no protagonizan el titular."],
         rows=sorted(out, key=lambda r: r["geo"]),
         geos=geo.ccaa_table(r["geo"] for r in out),
     )
+
+
+FOREIGN, SPANISH = "Extranjera: Total", "Española"
 
 
 def _paro() -> dict[tuple[str, str], dict[str, float]]:
@@ -196,25 +236,12 @@ def _paro() -> dict[tuple[str, str], dict[str, float]]:
     return out
 
 
-def _last4(s: dict[str, float]) -> tuple[float, list[str]]:
-    qs = sorted(s)[-4:]
-    return sum(s[q] for q in qs) / 4, qs
-
-
 QWORDS = ["primer", "segundo", "tercer", "cuarto"]
-
-
-def _qlabel(p: str) -> str:
-    """«2013Q1» -> «primer trimestre de 2013»."""
-    return f"{QWORDS[int(p[-1]) - 1]} trimestre de {p[:4]}"
 
 
 def _quarters(qs: list[str]) -> str:
     a, b = qs[0], qs[-1]
-    return f"del {_qlabel(a)} al {QWORDS[int(b[-1]) - 1]} de {b[:4]}"
-
-
-FOREIGN, SPANISH = "Extranjera: Total", "Española"
+    return f"del {QWORDS[int(a[-1]) - 1]} trimestre de {a[:4]} al {QWORDS[int(b[-1]) - 1]} de {b[:4]}"
 
 
 def comunidades_paro():
@@ -223,29 +250,29 @@ def comunidades_paro():
     for (code, nat), s in by.items():
         if nat != FOREIGN:
             continue
-        v, qs_ = _last4(s)
-        qs = qs or qs_
-        assert qs_ == qs, (code, qs_)
-        sp, _ = _last4(by[(code, SPANISH)])
-        out.append({"geo": code, "time": qs[-1][:4], "value": round(v, 1), "spanish": round(sp, 1)})
+        last4 = sorted(s)[-4:]
+        qs = qs or last4
+        assert last4 == qs, (code, last4)
+        sp = by[(code, SPANISH)]
+        out.append({"geo": code, "time": qs[-1][:4], "value": round(sum(s[q] for q in qs) / 4, 1),
+                    "spanish": round(sum(sp[q] for q in qs) / 4, 1)})
     es = next(r for r in out if r["geo"] == "ES")
     main = [r for r in out if r["geo"] not in ("ES", "18", "19")]
     top = max(main, key=lambda r: r["value"])
     low = min(main, key=lambda r: r["value"])
-    higher = sum(1 for r in main if r["value"] > r["spanish"])
+    assert all(r["value"] > r["spanish"] for r in out), "el texto dice que es más alto en todas las comunidades"
     return chart(
         id="ind2-comunidades-paro",
         lens="dentro", theme="inmigracion",
-        title=f"El paro de los extranjeros va del {es1(top['value'])} % de {geo.CCAA[top['geo']]} al {es1(low['value'])} % de "
-              f"{geo.CCAA[low['geo']]}; en España, {es1(es['value'])} %, frente al {es1(es['spanish'])} % de los españoles",
-        subtitle=f"Tasa de paro de la población de nacionalidad extranjera, media {_quarters(qs)}, en %",
+        title=f"El paro de los extranjeros es más alto que el de los españoles en todas las comunidades: del {es1(top['value'])} % "
+              f"de {geo.CCAA[top['geo']]} al {es1(low['value'])} % de {geo.CCAA[low['geo']]}",
+        subtitle=f"Tasa de paro de la población de nacionalidad extranjera, media {_quarters(qs)}, en %. "
+                 f"España: {es1(es['value'])} % (españoles: {es1(es['spanish'])} %)",
         unit="% de la población activa",
-        source=_ine_src(UNEMP_TABLE, EPA),
-        notes=["Parados en % de los activos (personas que trabajan o buscan empleo) de 16 años o más con nacionalidad extranjera. "
-               "Las personas nacidas fuera que tienen la nacionalidad española cuentan como españolas.",
-               "Media de los últimos cuatro trimestres publicados. «spanish» en la descarga: la tasa de los españoles en la misma comunidad.",
-               f"En {higher} de las 17 comunidades el paro de los extranjeros es más alto que el de los españoles.",
-               "La EPA es una encuesta: en las comunidades pequeñas, la muestra de extranjeros es reducida y el dato tiene más error. "
+        source=_ine_src([UNEMP_TABLE], EPA),
+        notes=["Parados en % de los activos (personas que trabajan o buscan empleo) de 16 años o más.",
+               "«spanish» en la descarga: tasa de los españoles en la misma comunidad.",
+               "En las comunidades pequeñas la muestra de extranjeros de la EPA es reducida y el dato tiene más error. "
                "Ceuta y Melilla no protagonizan el titular."],
         rows=sorted(out, key=lambda r: r["geo"]),
         geos=geo.ccaa_table(r["geo"] for r in out),
@@ -257,33 +284,28 @@ def comunidades_paro():
 def poblacion_tiempo():
     born_h, nat_h = _ecp(BIRTH_HIST), _ecp(NAT_HIST)
     born_n, nat_n = _ecp(BIRTH_NEW), _ecp(NAT_NEW)
-    N = "Total Nacional"
 
-    def jan(*tables_keys):
+    def series(*pairs):
         out = {}
-        for table, key in tables_keys:
-            for p, v in table[(N, key)].items():
-                if p.endswith("Q1"):
-                    out.setdefault(int(p[:4]), v)
+        for table, key in pairs:
+            for y, v in _jan(table[(N, key)]).items():
+                out.setdefault(y, v)
         return out
 
-    total = jan((born_h, "Total"), (born_n, "Total"))
-    born = jan((born_h, "Extranjero"), (born_n, "Extranjero"))
-    foreign = jan((nat_h, "Extranjera"), (nat_n, "Extranjera"))
+    total = series((born_h, "Total"), (born_n, "Total"))
+    born = series((born_h, "Extranjero"), (born_n, "Extranjero"))
+    foreign = series((nat_h, "Extranjera"), (nat_n, "Extranjera"))
     years = sorted(set(total) & set(born) & set(foreign))
     assert years[0] == 2002 and years[-1] >= 2026, years
     first, last = years[0], years[-1]
     sb = {y: 100 * born[y] / total[y] for y in years}
     sf = {y: 100 * foreign[y] / total[y] for y in years}
+    native = {y: total[y] - born[y] for y in years}
+    npeak = max(years, key=lambda y: native[y])
+    assert all(native[y] < native[y - 1] for y in years if y > npeak), "el texto dice que baja todos los años"
     rows = ([{"time": str(y), "series": "nacidos", "value": round(sb[y], 1), "people": round(born[y]), "total": round(total[y])}
              for y in years]
             + [{"time": str(y), "series": "extranjeros", "value": round(sf[y], 1), "people": round(foreign[y])} for y in years])
-    # Pico de la población extranjera antes de la crisis
-    native = {y: total[y] - born[y] for y in years}
-    npeak = max(years, key=lambda y: native[y])
-    mill = lambda v: es1(v / 1e6)
-    peak = max((y for y in years if y <= 2015), key=lambda y: sf[y])
-    low = min((y for y in years if y >= peak), key=lambda y: sf[y])
     return chart(
         id="int1-poblacion",
         lens="tiempo", theme="inmigracion",
@@ -291,49 +313,107 @@ def poblacion_tiempo():
         subtitle=f"Población nacida en el extranjero y población de nacionalidad extranjera, 1 de enero de cada año, {first}-{last}, "
                  "en % de la población residente",
         unit="% de la población",
-        source={**_ine_src(BIRTH_HIST, ECP),
-                "also": [_ine_src(NAT_HIST, ECP), _ine_src(BIRTH_NEW, ECP), _ine_src(NAT_NEW, ECP)]},
-        notes=["Nacidos en el extranjero: personas nacidas fuera de España, tengan o no la nacionalidad española. "
-               "Extranjeros: personas sin nacionalidad española, hayan nacido donde hayan nacido.",
-               "La distancia entre las dos líneas corresponde a las personas nacidas fuera con nacionalidad española, "
-               "descontadas las de nacionalidad extranjera nacidas en España.",
-               f"La población extranjera tocó techo en {peak} ({es1(sf[peak])} %) y bajó hasta {low} ({es1(sf[low])} %).",
-               f"La población nacida en España llegó a su máximo en {npeak} ({mill(native[npeak])} millones) y en {last} era de "
-               f"{mill(native[last])} millones. Entre {npeak} y {last}, la nacida fuera pasó de {mill(born[npeak])} a {mill(born[last])} millones.",
-               f"Hasta {min(2025, last)}, cifras definitivas de la Estadística Continua de Población; después, provisionales. "
+        source=_ine_src([BIRTH_HIST, NAT_HIST, BIRTH_NEW, NAT_NEW], ECP),
+        notes=[f"Población nacida en España: máximo en {npeak} ({mill(native[npeak])} millones); {mill(native[last])} millones en {last}.",
+               f"Hasta {min(2025, last)}, cifras definitivas; después, provisionales.",
                "«people» en la descarga: número de personas; «total»: población residente."],
         rows=rows,
         extra={"dimensions": {"series": {"nacidos": {"es": "Nacidos en el extranjero"}, "extranjeros": {"es": "Nacionalidad extranjera"}}}},
     )
 
 
-def paro_tiempo():
-    by = _paro()
-    rows = []
-    for key, series in ((SPANISH, "espanoles"), (FOREIGN, "extranjeros")):
-        for p, v in sorted(by[("ES", key)].items()):
-            y, q = int(p[:4]), int(p[-1])
-            rows.append({"time": round(y + (q - 1) / 4, 2), "series": series, "value": round(v, 1)})
-    fs, ss = by[("ES", FOREIGN)], by[("ES", SPANISH)]
-    f4, qs = _last4(fs)
-    s4, _ = _last4(ss)
-    peak = max(fs, key=lambda p: fs[p])
+# Regiones de nacimiento de la ECP. Europa (sin España) se suma de dos agrupaciones que cambian en 2021 con el Brexit:
+# UE28 y resto de Europa hasta 2020; UE27 y resto de Europa desde 2021. La suma es la misma en ambos casos.
+REGIONS = {"Sudamérica": "sudamerica", "África": "africa", "Centro América y Caribe": "centroamerica", "Asia": "asia"}
+EUROPE = [("UE28 sin España", "Europa menos UE28"), ("UE27_2020 sin España", "Europa menos UE27_2020")]
+REGION_NAMES = {"sudamerica": "Sudamérica", "europa": "Resto de Europa", "africa": "África",
+                "centroamerica": "Centroamérica y Caribe", "asia": "Asia"}
+NOT_COUNTRIES = {"Total", "España", "Extranjero", "Sudamérica", "África", "Asia", "Oceanía", "América del Norte",
+                 "Centro América y Caribe", "UE27_2020 sin España", "UE28 sin España", "Europa menos UE27_2020",
+                 "Europa menos UE28", "Otro país de la Unión Europea sin España"}
+
+
+def origen_tiempo():
+    ecp = _ecp(BIRTH_HIST)
+    regions = {code: _jan(ecp[(N, name)]) for name, code in REGIONS.items()}
+    europe = {}
+    for a, b in EUROPE:
+        sa_, sb_ = _jan(ecp[(N, a)]), _jan(ecp[(N, b)])
+        europe.update({y: sa_[y] + sb_[y] for y in sa_ if y in sb_})
+    regions["europa"] = europe
+    years = sorted(set.intersection(*(set(s) for s in regions.values())))
+    first, last = years[0], years[-1]
+    born = _jan(ecp[(N, "Extranjero")])
+    shown = {y: sum(s[y] for s in regions.values()) for y in years}
+    assert all(born[y] - shown[y] < 0.03 * born[y] for y in years), "faltan regiones"
+    rows = [{"time": str(y), "series": code, "value": round(s[y] / 1e6, 3), "people": round(s[y])}
+            for code, s in regions.items() for y in years]
+    assert max(regions, key=lambda c: regions[c][last]) == "sudamerica"
+    assert max(regions, key=lambda c: regions[c][last] - regions[c][first]) == "sudamerica"
+    # Principales países de nacimiento en el último año
+    countries = {name: _jan(s).get(last) for (g, name), s in ecp.items() if g == N and name not in NOT_COUNTRIES}
+    best = sorted(((v, k) for k, v in countries.items() if v), reverse=True)[:6]
+    sa = regions["sudamerica"]
     return chart(
-        id="int2-paro",
+        id="int2-origen",
         lens="tiempo", theme="inmigracion",
-        title=f"El paro de los extranjeros es del {es1(f4)} % y el de los españoles, del {es1(s4)} %: "
-              f"en {peak[:4]} llegó al {es1(fs[peak])} % y al {es1(ss[peak])} %",
-        subtitle=f"Tasa de paro por nacionalidad, trimestral, {min(fs)[:4]}-{qs[-1][:4]}, en %. Titular: media {_quarters(qs)}",
-        unit="% de la población activa",
-        source=_ine_src(UNEMP_TABLE, EPA),
-        notes=["Parados en % de los activos de 16 años o más. Las personas nacidas fuera que tienen la nacionalidad española "
-               "cuentan como españolas.",
-               f"Máximo de la serie de los extranjeros: {_qlabel(peak)} ({es1(fs[peak])} %; españoles, {es1(ss[peak])} %).",
-               "Datos trimestrales sin desestacionalizar: el primer trimestre suele tener más paro."],
+        title=f"Los nacidos en Sudamérica son el grupo más numeroso y el que más ha crecido: de {mill(sa[first])} millones "
+              f"en {first} a {mill(sa[last])} en {last}",
+        subtitle=f"Población residente nacida fuera de España por región de nacimiento, 1 de enero de cada año, {first}-{last}, "
+                 "en millones de personas",
+        unit="Millones de personas",
+        source=_ine_src([BIRTH_HIST], ECP),
+        notes=[f"Principales países de nacimiento el 1 de enero de {last}: "
+               + ", ".join(f"{k} ({round(v):,})".replace(",", ".") for v, k in best) + " personas.",
+               "No se muestran América del Norte ni Oceanía (menos del 2 % de los nacidos fuera en 2025). «Resto de Europa»: toda Europa salvo España, dentro y fuera de la UE.",
+               "La serie por país de nacimiento llega, por ahora, al 1 de enero de 2025. «people» en la descarga: número de personas."],
         rows=rows,
-        extra={"dimensions": {"series": {"espanoles": {"es": "Españoles"}, "extranjeros": {"es": "Extranjeros"}}},
-               "quarterly": True},
+        extra={"dimensions": {"series": {c: {"es": n} for c, n in REGION_NAMES.items()}}},
     )
 
 
-BUILDERS = [europa_nacidos_fuera, europa_empleo, comunidades_nacidos_fuera, comunidades_paro, poblacion_tiempo, paro_tiempo]
+OLD_AGES = ["De 65 a 69 años", "De 70 a 74 años", "De 75 a 79 años", "De 80 a 84 años", "De 85 a 89 años", "90 y más años"]
+WORK_AGES = [f"De {a} a {a + 4} años" for a in range(15, 65, 5)]
+
+
+def dependencia_tiempo():
+    def by_age(hist, new, key):
+        out = defaultdict(float)
+        for ages, sign in ((WORK_AGES, "w"), (OLD_AGES, "o")):
+            for age in ages:
+                h, n = _ecp(hist, age), _ecp(new, age)
+                merged = {**_jan(n[(N, key)]), **_jan(h[(N, key)])}
+                for y, v in merged.items():
+                    out[(y, sign)] += v
+        return out
+
+    groups = {"total": "Total", "espana": "España", "fuera": "Extranjero"}
+    data = {g: by_age(BIRTH_HIST, BIRTH_NEW, key) for g, key in groups.items()}
+    years = sorted({y for (y, s) in data["total"]})
+    ratio = {g: {y: 100 * d[(y, "o")] / d[(y, "w")] for y in years} for g, d in data.items()}
+    first, last = years[0], years[-1]
+    share_work = {y: 100 * data["fuera"][(y, "w")] / data["total"][(y, "w")] for y in years}
+    rows = [{"time": str(y), "series": g, "value": round(ratio[g][y], 1)} for g in groups for y in years]
+    return chart(
+        id="int3-dependencia",
+        lens="tiempo", theme="inmigracion",
+        title=f"Entre los nacidos en España hay {es1(ratio['espana'][last])} mayores de 64 por cada 100 personas de 15 a 64 años; "
+              f"entre los nacidos fuera, {es1(ratio['fuera'][last])}",
+        subtitle=f"Personas de 65 años o más por cada 100 de 15 a 64 años, según el lugar de nacimiento, 1 de enero de cada año, "
+                 f"{first}-{last}",
+        unit="Mayores de 64 por cada 100 personas de 15 a 64",
+        source=_ine_src([BIRTH_HIST, BIRTH_NEW], ECP),
+        notes=["Usa el grupo de 15 a 64 años (los grupos de edad de la tabla son quinquenales), como Eurostat. El artículo de "
+               "demografía usa el indicador del INE, de 16 a 64 años, que da un valor algo distinto.",
+               f"Los nacidos fuera eran el {es1(share_work[first])} % de la población de 15 a 64 años en {first} y el "
+               f"{es1(share_work[last])} % en {last}.",
+               "Los hijos de inmigrantes nacidos en España cuentan como nacidos en España."],
+        rows=rows,
+        extra={"dimensions": {"series": {"total": {"es": "Toda la población"}, "espana": {"es": "Nacidos en España"},
+                                         "fuera": {"es": "Nacidos fuera"}}},
+               "share_work": {str(y): round(share_work[y], 1) for y in years}},
+    )
+
+
+BUILDERS = [europa_nacidos_fuera, europa_empleo, europa_sobrecualificacion, comunidades_nacidos_fuera, comunidades_paro,
+            poblacion_tiempo, origen_tiempo, dependencia_tiempo]

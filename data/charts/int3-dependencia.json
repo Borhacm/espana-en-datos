@@ -1,0 +1,446 @@
+{
+ "id": "int3-dependencia",
+ "lens": "tiempo",
+ "theme": "inmigracion",
+ "title": {
+  "es": "Entre los nacidos en España hay 38,8 mayores de 64 por cada 100 personas de 15 a 64 años; entre los nacidos fuera, 11,1"
+ },
+ "subtitle": {
+  "es": "Personas de 65 años o más por cada 100 de 15 a 64 años, según el lugar de nacimiento, 1 de enero de cada año, 2002-2026"
+ },
+ "unit": {
+  "es": "Mayores de 64 por cada 100 personas de 15 a 64"
+ },
+ "source": {
+  "name": "INE, Estadística Continua de Población",
+  "dataset": "Tablas 56937, 59586",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=56937",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Usa el grupo de 15 a 64 años (los grupos de edad de la tabla son quinquenales), como Eurostat. El artículo de demografía usa el indicador del INE, de 16 a 64 años, que da un valor algo distinto.",
+   "Los nacidos fuera eran el 6,8 % de la población de 15 a 64 años en 2002 y el 25,5 % en 2026.",
+   "Los hijos de inmigrantes nacidos en España cuentan como nacidos en España."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "total": {
+    "es": "Toda la población"
+   },
+   "espana": {
+    "es": "Nacidos en España"
+   },
+   "fuera": {
+    "es": "Nacidos fuera"
+   }
+  }
+ },
+ "share_work": {
+  "2002": 6.8,
+  "2003": 8.6,
+  "2004": 10.1,
+  "2005": 11.5,
+  "2006": 12.9,
+  "2007": 14.2,
+  "2008": 15.9,
+  "2009": 16.7,
+  "2010": 16.9,
+  "2011": 17.0,
+  "2012": 17.1,
+  "2013": 16.9,
+  "2014": 16.6,
+  "2015": 16.5,
+  "2016": 16.7,
+  "2017": 17.0,
+  "2018": 17.5,
+  "2019": 18.3,
+  "2020": 19.4,
+  "2021": 19.9,
+  "2022": 20.3,
+  "2023": 21.8,
+  "2024": 23.1,
+  "2025": 24.3,
+  "2026": 25.5
+ },
+ "rows": [
+  {
+   "time": "2002",
+   "series": "total",
+   "value": 24.8
+  },
+  {
+   "time": "2003",
+   "series": "total",
+   "value": 24.7
+  },
+  {
+   "time": "2004",
+   "series": "total",
+   "value": 24.4
+  },
+  {
+   "time": "2005",
+   "series": "total",
+   "value": 24.0
+  },
+  {
+   "time": "2006",
+   "series": "total",
+   "value": 24.2
+  },
+  {
+   "time": "2007",
+   "series": "total",
+   "value": 24.0
+  },
+  {
+   "time": "2008",
+   "series": "total",
+   "value": 23.8
+  },
+  {
+   "time": "2009",
+   "series": "total",
+   "value": 24.1
+  },
+  {
+   "time": "2010",
+   "series": "total",
+   "value": 24.6
+  },
+  {
+   "time": "2011",
+   "series": "total",
+   "value": 25.2
+  },
+  {
+   "time": "2012",
+   "series": "total",
+   "value": 25.7
+  },
+  {
+   "time": "2013",
+   "series": "total",
+   "value": 26.3
+  },
+  {
+   "time": "2014",
+   "series": "total",
+   "value": 27.2
+  },
+  {
+   "time": "2015",
+   "series": "total",
+   "value": 27.8
+  },
+  {
+   "time": "2016",
+   "series": "total",
+   "value": 28.2
+  },
+  {
+   "time": "2017",
+   "series": "total",
+   "value": 28.6
+  },
+  {
+   "time": "2018",
+   "series": "total",
+   "value": 29.0
+  },
+  {
+   "time": "2019",
+   "series": "total",
+   "value": 29.2
+  },
+  {
+   "time": "2020",
+   "series": "total",
+   "value": 29.5
+  },
+  {
+   "time": "2021",
+   "series": "total",
+   "value": 29.7
+  },
+  {
+   "time": "2022",
+   "series": "total",
+   "value": 30.2
+  },
+  {
+   "time": "2023",
+   "series": "total",
+   "value": 30.4
+  },
+  {
+   "time": "2024",
+   "series": "total",
+   "value": 30.8
+  },
+  {
+   "time": "2025",
+   "series": "total",
+   "value": 31.2
+  },
+  {
+   "time": "2026",
+   "series": "total",
+   "value": 31.7
+  },
+  {
+   "time": "2002",
+   "series": "espana",
+   "value": 26.0
+  },
+  {
+   "time": "2003",
+   "series": "espana",
+   "value": 26.3
+  },
+  {
+   "time": "2004",
+   "series": "espana",
+   "value": 26.4
+  },
+  {
+   "time": "2005",
+   "series": "espana",
+   "value": 26.3
+  },
+  {
+   "time": "2006",
+   "series": "espana",
+   "value": 26.8
+  },
+  {
+   "time": "2007",
+   "series": "espana",
+   "value": 26.9
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 27.2
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 27.7
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 28.3
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 29.0
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 29.5
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 30.1
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 30.9
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 31.6
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 32.0
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 32.5
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 33.1
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 33.7
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 34.3
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 34.6
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 35.2
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 36.0
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 36.8
+  },
+  {
+   "time": "2025",
+   "series": "espana",
+   "value": 37.7
+  },
+  {
+   "time": "2026",
+   "series": "espana",
+   "value": 38.8
+  },
+  {
+   "time": "2002",
+   "series": "fuera",
+   "value": 8.5
+  },
+  {
+   "time": "2003",
+   "series": "fuera",
+   "value": 7.5
+  },
+  {
+   "time": "2004",
+   "series": "fuera",
+   "value": 7.0
+  },
+  {
+   "time": "2005",
+   "series": "fuera",
+   "value": 6.7
+  },
+  {
+   "time": "2006",
+   "series": "fuera",
+   "value": 6.5
+  },
+  {
+   "time": "2007",
+   "series": "fuera",
+   "value": 6.4
+  },
+  {
+   "time": "2008",
+   "series": "fuera",
+   "value": 6.1
+  },
+  {
+   "time": "2009",
+   "series": "fuera",
+   "value": 6.2
+  },
+  {
+   "time": "2010",
+   "series": "fuera",
+   "value": 6.5
+  },
+  {
+   "time": "2011",
+   "series": "fuera",
+   "value": 6.8
+  },
+  {
+   "time": "2012",
+   "series": "fuera",
+   "value": 7.3
+  },
+  {
+   "time": "2013",
+   "series": "fuera",
+   "value": 7.8
+  },
+  {
+   "time": "2014",
+   "series": "fuera",
+   "value": 8.3
+  },
+  {
+   "time": "2015",
+   "series": "fuera",
+   "value": 8.7
+  },
+  {
+   "time": "2016",
+   "series": "fuera",
+   "value": 9.0
+  },
+  {
+   "time": "2017",
+   "series": "fuera",
+   "value": 9.3
+  },
+  {
+   "time": "2018",
+   "series": "fuera",
+   "value": 9.4
+  },
+  {
+   "time": "2019",
+   "series": "fuera",
+   "value": 9.4
+  },
+  {
+   "time": "2020",
+   "series": "fuera",
+   "value": 9.4
+  },
+  {
+   "time": "2021",
+   "series": "fuera",
+   "value": 9.7
+  },
+  {
+   "time": "2022",
+   "series": "fuera",
+   "value": 10.4
+  },
+  {
+   "time": "2023",
+   "series": "fuera",
+   "value": 10.5
+  },
+  {
+   "time": "2024",
+   "series": "fuera",
+   "value": 10.7
+  },
+  {
+   "time": "2025",
+   "series": "fuera",
+   "value": 11.0
+  },
+  {
+   "time": "2026",
+   "series": "fuera",
+   "value": 11.1
+  }
+ ]
+}

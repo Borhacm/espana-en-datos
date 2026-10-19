@@ -3,10 +3,10 @@
  "lens": "europa",
  "theme": "inmigracion",
  "title": {
-  "es": "En España trabaja el 69,6 % de los nacidos en el extranjero de 20 a 64 años, frente al 73,3 % de los nacidos en España"
+  "es": "La tasa de empleo de los nacidos fuera está 3,7 puntos por debajo de la de los nacidos en España; en la UE, 6,4 puntos"
  },
  "subtitle": {
-  "es": "Tasa de empleo de la población nacida en el extranjero de 20 a 64 años, 2025, en %. En la UE: 70,8 % de los nacidos fuera y 77,2 % de los nacidos en el país"
+  "es": "Tasa de empleo de la población de 20 a 64 años nacida en el extranjero, 2025, en %. España: 69,6 % (nacidos en España: 73,3 %). UE: 70,8 % (77,2 %)"
  },
  "unit": {
   "es": "% de la población de 20 a 64 años"
@@ -20,13 +20,12 @@
  "notes": {
   "es": [
    "Personas ocupadas de 20 a 64 años nacidas fuera del país, en % de toda la población nacida fuera de esa edad.",
-   "«native» en la descarga: tasa de empleo de los nacidos en el propio país, el mismo año. «prev»: tasa de los nacidos en el extranjero en 2015.",
-   "España es el 19.º de 26 países por la tasa de los nacidos fuera.",
+   "«native» en la descarga: tasa de los nacidos en el propio país. «prev»: tasa de los nacidos fuera en 2015.",
    "Eurostat marca los datos de 2025 de España y Francia como «definición distinta» de la armonizada.",
    "Sin dato de 2025: Malta."
   ]
  },
- "retrieved": "2026-10-16",
+ "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",

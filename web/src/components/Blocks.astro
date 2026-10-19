@@ -26,6 +26,7 @@ const figCode = (code: string) => (code.includes("-") ? code : `${codePrefix}-${
         <figcaption><a href={b.url} rel="noopener">{b.who[lang]}</a></figcaption>
       </figure>
     )
+  : "see" in b ? <p class="prose body b-see">{lang === "es" ? "Ver también: " : "See also: "}<a href={b.href}>{b.see[lang]}</a></p>
   : "timeline" in b ? (
       <ol class="b-timeline">
         {b.timeline.map((t) => <li><span class="t-date">{t.date[lang]}</span><span class="t-text">{t.text[lang]}</span></li>)}

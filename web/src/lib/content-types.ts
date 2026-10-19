@@ -15,7 +15,9 @@ export type Block =
   /** Cita breve atribuida, con su fuente */
   | { quote: Bi; who: Bi; url: string }
   /** Cronología */
-  | { timeline: { date: Bi; text: Bi }[] };
+  | { timeline: { date: Bi; text: Bi }[] }
+  /** Enlace a otra pieza publicada («Ver también») */
+  | { see: Bi; href: string };
 
 export interface Lens {
   id: LensId;

@@ -19,13 +19,12 @@
  },
  "notes": {
   "es": [
-   "Personas residentes nacidas fuera del país, sea cual sea su nacionalidad: incluye a quienes han obtenido la nacionalidad del país donde viven y a los nacidos en otro país de la UE.",
-   "En la UE, los nacidos en otro país de la Unión también cuentan como nacidos en el extranjero.",
+   "Incluye a quienes han obtenido la nacionalidad del país donde viven y a los nacidos en otro país de la UE.",
    "«prev» en la descarga: dato de 2015.",
    "Sin dato de 2025: Portugal."
   ]
  },
- "retrieved": "2026-10-16",
+ "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",

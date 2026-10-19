@@ -1,0 +1,770 @@
+{
+ "id": "int2-origen",
+ "lens": "tiempo",
+ "theme": "inmigracion",
+ "title": {
+  "es": "Los nacidos en Sudamérica son el grupo más numeroso y el que más ha crecido: de 0,8 millones en 2002 a 3,7 en 2025"
+ },
+ "subtitle": {
+  "es": "Población residente nacida fuera de España por región de nacimiento, 1 de enero de cada año, 2002-2025, en millones de personas"
+ },
+ "unit": {
+  "es": "Millones de personas"
+ },
+ "source": {
+  "name": "INE, Estadística Continua de Población",
+  "dataset": "Tabla 56937",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=56937",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Principales países de nacimiento el 1 de enero de 2025: Marruecos (1.165.955), Colombia (978.041), Venezuela (692.316), Rumanía (521.181), Ecuador (468.751), Argentina (450.883) personas.",
+   "No se muestran América del Norte ni Oceanía (menos del 2 % de los nacidos fuera en 2025). «Resto de Europa»: toda Europa salvo España, dentro y fuera de la UE.",
+   "La serie por país de nacimiento llega, por ahora, al 1 de enero de 2025. «people» en la descarga: número de personas."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "sudamerica": {
+    "es": "Sudamérica"
+   },
+   "europa": {
+    "es": "Resto de Europa"
+   },
+   "africa": {
+    "es": "África"
+   },
+   "centroamerica": {
+    "es": "Centroamérica y Caribe"
+   },
+   "asia": {
+    "es": "Asia"
+   }
+  }
+ },
+ "rows": [
+  {
+   "time": "2002",
+   "series": "sudamerica",
+   "value": 0.78,
+   "people": 780432
+  },
+  {
+   "time": "2003",
+   "series": "sudamerica",
+   "value": 1.081,
+   "people": 1081197
+  },
+  {
+   "time": "2004",
+   "series": "sudamerica",
+   "value": 1.311,
+   "people": 1311400
+  },
+  {
+   "time": "2005",
+   "series": "sudamerica",
+   "value": 1.467,
+   "people": 1467373
+  },
+  {
+   "time": "2006",
+   "series": "sudamerica",
+   "value": 1.61,
+   "people": 1609835
+  },
+  {
+   "time": "2007",
+   "series": "sudamerica",
+   "value": 1.792,
+   "people": 1791520
+  },
+  {
+   "time": "2008",
+   "series": "sudamerica",
+   "value": 1.981,
+   "people": 1981303
+  },
+  {
+   "time": "2009",
+   "series": "sudamerica",
+   "value": 2.088,
+   "people": 2088317
+  },
+  {
+   "time": "2010",
+   "series": "sudamerica",
+   "value": 2.08,
+   "people": 2079521
+  },
+  {
+   "time": "2011",
+   "series": "sudamerica",
+   "value": 2.042,
+   "people": 2042094
+  },
+  {
+   "time": "2012",
+   "series": "sudamerica",
+   "value": 2.0,
+   "people": 1999627
+  },
+  {
+   "time": "2013",
+   "series": "sudamerica",
+   "value": 1.928,
+   "people": 1928352
+  },
+  {
+   "time": "2014",
+   "series": "sudamerica",
+   "value": 1.835,
+   "people": 1834604
+  },
+  {
+   "time": "2015",
+   "series": "sudamerica",
+   "value": 1.804,
+   "people": 1804290
+  },
+  {
+   "time": "2016",
+   "series": "sudamerica",
+   "value": 1.815,
+   "people": 1814663
+  },
+  {
+   "time": "2017",
+   "series": "sudamerica",
+   "value": 1.873,
+   "people": 1873477
+  },
+  {
+   "time": "2018",
+   "series": "sudamerica",
+   "value": 1.98,
+   "people": 1979575
+  },
+  {
+   "time": "2019",
+   "series": "sudamerica",
+   "value": 2.148,
+   "people": 2147783
+  },
+  {
+   "time": "2020",
+   "series": "sudamerica",
+   "value": 2.375,
+   "people": 2375195
+  },
+  {
+   "time": "2021",
+   "series": "sudamerica",
+   "value": 2.495,
+   "people": 2494771
+  },
+  {
+   "time": "2022",
+   "series": "sudamerica",
+   "value": 2.605,
+   "people": 2604720
+  },
+  {
+   "time": "2023",
+   "series": "sudamerica",
+   "value": 2.997,
+   "people": 2996913
+  },
+  {
+   "time": "2024",
+   "series": "sudamerica",
+   "value": 3.381,
+   "people": 3380878
+  },
+  {
+   "time": "2025",
+   "series": "sudamerica",
+   "value": 3.74,
+   "people": 3739859
+  },
+  {
+   "time": "2002",
+   "series": "africa",
+   "value": 0.442,
+   "people": 442408
+  },
+  {
+   "time": "2003",
+   "series": "africa",
+   "value": 0.532,
+   "people": 532169
+  },
+  {
+   "time": "2004",
+   "series": "africa",
+   "value": 0.614,
+   "people": 613630
+  },
+  {
+   "time": "2005",
+   "series": "africa",
+   "value": 0.711,
+   "people": 710884
+  },
+  {
+   "time": "2006",
+   "series": "africa",
+   "value": 0.802,
+   "people": 801702
+  },
+  {
+   "time": "2007",
+   "series": "africa",
+   "value": 0.871,
+   "people": 871211
+  },
+  {
+   "time": "2008",
+   "series": "africa",
+   "value": 0.962,
+   "people": 961656
+  },
+  {
+   "time": "2009",
+   "series": "africa",
+   "value": 1.043,
+   "people": 1042687
+  },
+  {
+   "time": "2010",
+   "series": "africa",
+   "value": 1.071,
+   "people": 1070992
+  },
+  {
+   "time": "2011",
+   "series": "africa",
+   "value": 1.071,
+   "people": 1071376
+  },
+  {
+   "time": "2012",
+   "series": "africa",
+   "value": 1.06,
+   "people": 1059561
+  },
+  {
+   "time": "2013",
+   "series": "africa",
+   "value": 1.042,
+   "people": 1041854
+  },
+  {
+   "time": "2014",
+   "series": "africa",
+   "value": 1.017,
+   "people": 1017292
+  },
+  {
+   "time": "2015",
+   "series": "africa",
+   "value": 1.018,
+   "people": 1017664
+  },
+  {
+   "time": "2016",
+   "series": "africa",
+   "value": 1.032,
+   "people": 1031884
+  },
+  {
+   "time": "2017",
+   "series": "africa",
+   "value": 1.053,
+   "people": 1053377
+  },
+  {
+   "time": "2018",
+   "series": "africa",
+   "value": 1.089,
+   "people": 1089043
+  },
+  {
+   "time": "2019",
+   "series": "africa",
+   "value": 1.157,
+   "people": 1157240
+  },
+  {
+   "time": "2020",
+   "series": "africa",
+   "value": 1.247,
+   "people": 1247286
+  },
+  {
+   "time": "2021",
+   "series": "africa",
+   "value": 1.297,
+   "people": 1297144
+  },
+  {
+   "time": "2022",
+   "series": "africa",
+   "value": 1.342,
+   "people": 1341903
+  },
+  {
+   "time": "2023",
+   "series": "africa",
+   "value": 1.436,
+   "people": 1435992
+  },
+  {
+   "time": "2024",
+   "series": "africa",
+   "value": 1.525,
+   "people": 1524788
+  },
+  {
+   "time": "2025",
+   "series": "africa",
+   "value": 1.648,
+   "people": 1647610
+  },
+  {
+   "time": "2002",
+   "series": "centroamerica",
+   "value": 0.115,
+   "people": 115042
+  },
+  {
+   "time": "2003",
+   "series": "centroamerica",
+   "value": 0.135,
+   "people": 135126
+  },
+  {
+   "time": "2004",
+   "series": "centroamerica",
+   "value": 0.153,
+   "people": 153419
+  },
+  {
+   "time": "2005",
+   "series": "centroamerica",
+   "value": 0.173,
+   "people": 172595
+  },
+  {
+   "time": "2006",
+   "series": "centroamerica",
+   "value": 0.193,
+   "people": 193184
+  },
+  {
+   "time": "2007",
+   "series": "centroamerica",
+   "value": 0.221,
+   "people": 220878
+  },
+  {
+   "time": "2008",
+   "series": "centroamerica",
+   "value": 0.259,
+   "people": 258754
+  },
+  {
+   "time": "2009",
+   "series": "centroamerica",
+   "value": 0.289,
+   "people": 289116
+  },
+  {
+   "time": "2010",
+   "series": "centroamerica",
+   "value": 0.305,
+   "people": 304655
+  },
+  {
+   "time": "2011",
+   "series": "centroamerica",
+   "value": 0.321,
+   "people": 320919
+  },
+  {
+   "time": "2012",
+   "series": "centroamerica",
+   "value": 0.345,
+   "people": 344881
+  },
+  {
+   "time": "2013",
+   "series": "centroamerica",
+   "value": 0.359,
+   "people": 359269
+  },
+  {
+   "time": "2014",
+   "series": "centroamerica",
+   "value": 0.364,
+   "people": 364165
+  },
+  {
+   "time": "2015",
+   "series": "centroamerica",
+   "value": 0.376,
+   "people": 376129
+  },
+  {
+   "time": "2016",
+   "series": "centroamerica",
+   "value": 0.393,
+   "people": 392682
+  },
+  {
+   "time": "2017",
+   "series": "centroamerica",
+   "value": 0.416,
+   "people": 416058
+  },
+  {
+   "time": "2018",
+   "series": "centroamerica",
+   "value": 0.454,
+   "people": 454479
+  },
+  {
+   "time": "2019",
+   "series": "centroamerica",
+   "value": 0.509,
+   "people": 508723
+  },
+  {
+   "time": "2020",
+   "series": "centroamerica",
+   "value": 0.58,
+   "people": 580321
+  },
+  {
+   "time": "2021",
+   "series": "centroamerica",
+   "value": 0.618,
+   "people": 617741
+  },
+  {
+   "time": "2022",
+   "series": "centroamerica",
+   "value": 0.644,
+   "people": 644369
+  },
+  {
+   "time": "2023",
+   "series": "centroamerica",
+   "value": 0.72,
+   "people": 720178
+  },
+  {
+   "time": "2024",
+   "series": "centroamerica",
+   "value": 0.792,
+   "people": 791615
+  },
+  {
+   "time": "2025",
+   "series": "centroamerica",
+   "value": 0.858,
+   "people": 858231
+  },
+  {
+   "time": "2002",
+   "series": "asia",
+   "value": 0.098,
+   "people": 98034
+  },
+  {
+   "time": "2003",
+   "series": "asia",
+   "value": 0.129,
+   "people": 128989
+  },
+  {
+   "time": "2004",
+   "series": "asia",
+   "value": 0.158,
+   "people": 157860
+  },
+  {
+   "time": "2005",
+   "series": "asia",
+   "value": 0.197,
+   "people": 197075
+  },
+  {
+   "time": "2006",
+   "series": "asia",
+   "value": 0.233,
+   "people": 233201
+  },
+  {
+   "time": "2007",
+   "series": "asia",
+   "value": 0.256,
+   "people": 255860
+  },
+  {
+   "time": "2008",
+   "series": "asia",
+   "value": 0.291,
+   "people": 290617
+  },
+  {
+   "time": "2009",
+   "series": "asia",
+   "value": 0.327,
+   "people": 327057
+  },
+  {
+   "time": "2010",
+   "series": "asia",
+   "value": 0.344,
+   "people": 343684
+  },
+  {
+   "time": "2011",
+   "series": "asia",
+   "value": 0.362,
+   "people": 362353
+  },
+  {
+   "time": "2012",
+   "series": "asia",
+   "value": 0.371,
+   "people": 370686
+  },
+  {
+   "time": "2013",
+   "series": "asia",
+   "value": 0.37,
+   "people": 369512
+  },
+  {
+   "time": "2014",
+   "series": "asia",
+   "value": 0.362,
+   "people": 361951
+  },
+  {
+   "time": "2015",
+   "series": "asia",
+   "value": 0.367,
+   "people": 366951
+  },
+  {
+   "time": "2016",
+   "series": "asia",
+   "value": 0.379,
+   "people": 379457
+  },
+  {
+   "time": "2017",
+   "series": "asia",
+   "value": 0.395,
+   "people": 395480
+  },
+  {
+   "time": "2018",
+   "series": "asia",
+   "value": 0.42,
+   "people": 420002
+  },
+  {
+   "time": "2019",
+   "series": "asia",
+   "value": 0.452,
+   "people": 452241
+  },
+  {
+   "time": "2020",
+   "series": "asia",
+   "value": 0.488,
+   "people": 487810
+  },
+  {
+   "time": "2021",
+   "series": "asia",
+   "value": 0.499,
+   "people": 499121
+  },
+  {
+   "time": "2022",
+   "series": "asia",
+   "value": 0.507,
+   "people": 506753
+  },
+  {
+   "time": "2023",
+   "series": "asia",
+   "value": 0.535,
+   "people": 534877
+  },
+  {
+   "time": "2024",
+   "series": "asia",
+   "value": 0.567,
+   "people": 567391
+  },
+  {
+   "time": "2025",
+   "series": "asia",
+   "value": 0.616,
+   "people": 616222
+  },
+  {
+   "time": "2002",
+   "series": "europa",
+   "value": 0.845,
+   "people": 844816
+  },
+  {
+   "time": "2003",
+   "series": "europa",
+   "value": 1.046,
+   "people": 1045551
+  },
+  {
+   "time": "2004",
+   "series": "europa",
+   "value": 1.244,
+   "people": 1243743
+  },
+  {
+   "time": "2005",
+   "series": "europa",
+   "value": 1.486,
+   "people": 1486158
+  },
+  {
+   "time": "2006",
+   "series": "europa",
+   "value": 1.723,
+   "people": 1722569
+  },
+  {
+   "time": "2007",
+   "series": "europa",
+   "value": 1.979,
+   "people": 1979270
+  },
+  {
+   "time": "2008",
+   "series": "europa",
+   "value": 2.3,
+   "people": 2300335
+  },
+  {
+   "time": "2009",
+   "series": "europa",
+   "value": 2.388,
+   "people": 2387882
+  },
+  {
+   "time": "2010",
+   "series": "europa",
+   "value": 2.389,
+   "people": 2388735
+  },
+  {
+   "time": "2011",
+   "series": "europa",
+   "value": 2.391,
+   "people": 2390972
+  },
+  {
+   "time": "2012",
+   "series": "europa",
+   "value": 2.422,
+   "people": 2421862
+  },
+  {
+   "time": "2013",
+   "series": "europa",
+   "value": 2.367,
+   "people": 2366872
+  },
+  {
+   "time": "2014",
+   "series": "europa",
+   "value": 2.277,
+   "people": 2276765
+  },
+  {
+   "time": "2015",
+   "series": "europa",
+   "value": 2.22,
+   "people": 2219816
+  },
+  {
+   "time": "2016",
+   "series": "europa",
+   "value": 2.192,
+   "people": 2192059
+  },
+  {
+   "time": "2017",
+   "series": "europa",
+   "value": 2.171,
+   "people": 2170895
+  },
+  {
+   "time": "2018",
+   "series": "europa",
+   "value": 2.153,
+   "people": 2153182
+  },
+  {
+   "time": "2019",
+   "series": "europa",
+   "value": 2.165,
+   "people": 2165240
+  },
+  {
+   "time": "2020",
+   "series": "europa",
+   "value": 2.197,
+   "people": 2196565
+  },
+  {
+   "time": "2021",
+   "series": "europa",
+   "value": 2.213,
+   "people": 2213441
+  },
+  {
+   "time": "2022",
+   "series": "europa",
+   "value": 2.23,
+   "people": 2230346
+  },
+  {
+   "time": "2023",
+   "series": "europa",
+   "value": 2.361,
+   "people": 2360791
+  },
+  {
+   "time": "2024",
+   "series": "europa",
+   "value": 2.405,
+   "people": 2404951
+  },
+  {
+   "time": "2025",
+   "series": "europa",
+   "value": 2.417,
+   "people": 2417433
+  }
+ ]
+}

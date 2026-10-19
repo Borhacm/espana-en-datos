@@ -1,0 +1,265 @@
+{
+ "id": "ine3-europa-sobrecualificacion",
+ "lens": "europa",
+ "theme": "inmigracion",
+ "title": {
+  "es": "El 46,4 % de los extranjeros con estudios superiores que trabajan en España lo hace en un empleo que no los requiere: el 6.º porcentaje más alto de 20"
+ },
+ "subtitle": {
+  "es": "Tasa de sobrecualificación de los ocupados de 20 a 64 años con nacionalidad extranjera, 2025, en %. Españoles: 32,7 %. UE: 36,9 % de los extranjeros y 20,0 % de los nacionales"
+ },
+ "unit": {
+  "es": "% de los ocupados con estudios superiores"
+ },
+ "source": {
+  "name": "Eurostat, Encuesta de Población Activa de la UE",
+  "dataset": "lfsa_eoqgan",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_eoqgan/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Ocupados con estudios superiores (CINE 5 a 8) que trabajan en ocupaciones que no los requieren (grupos 4 a 9 de la clasificación internacional de ocupaciones), en % de todos los ocupados con estudios superiores.",
+   "Esta tabla de Eurostat clasifica por nacionalidad, no por lugar de nacimiento.",
+   "«national» en la descarga: tasa de los nacionales del país. Por esa tasa, España es el 1.º de 20.",
+   "Dato poco fiable por tamaño de muestra en 2025: Eslovenia, Hungría.",
+   "Sin dato de 2025: Bulgaria, Croacia, Dinamarca, Eslovaquia, Malta, Rumanía."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 36.8,
+   "national": 23.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 24.7,
+   "national": 19.0
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 36.6,
+   "national": 25.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 34.8,
+   "national": 11.7
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 36.7,
+   "national": 17.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 46.4,
+   "national": 32.7
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 56.4,
+   "national": 17.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 36.9,
+   "national": 20.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 30.8,
+   "national": 15.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 33.7,
+   "national": 19.5
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 72.9,
+   "national": 31.2
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 20.4,
+   "national": 14.0
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 34.9,
+   "national": 24.4
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 54.8,
+   "national": 19.3
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 22.4,
+   "national": 21.4
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 37.3,
+   "national": 18.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 23.2,
+   "national": 13.0
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 48.0,
+   "national": 19.3
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 46.8,
+   "national": 14.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 38.5,
+   "national": 19.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 28.2,
+   "national": 13.2
+  }
+ ]
+}

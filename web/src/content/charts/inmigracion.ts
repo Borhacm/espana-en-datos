@@ -12,6 +12,11 @@ const charts: Record<string, ChartConfig> = {
     digits: 1,
     table: { rows: "geo", cols: "time" },
   },
+  "ine3-europa-sobrecualificacion": {
+    renderer: "rank",
+    digits: 1,
+    table: { rows: "geo", cols: "time" },
+  },
   "ind1-comunidades-nacidos-fuera": {
     renderer: "rank",
     usesFocus: true,
@@ -31,10 +36,17 @@ const charts: Record<string, ChartConfig> = {
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },
-  "int2-paro": {
+  "int2-origen": {
     renderer: "line",
-    series: ["espanoles", "extranjeros"],
-    seriesColors: { extranjeros: "--es", espanoles: "--eu" },
+    series: ["asia", "centroamerica", "africa", "europa", "sudamerica"],
+    seriesColors: { sudamerica: "--es", europa: "--eu", africa: "--focus", centroamerica: "--context-strong", asia: "--context" },
+    table: { rows: "series", cols: "time", lastCols: 8 },
+    digits: 2,
+  },
+  "int3-dependencia": {
+    renderer: "line",
+    series: ["total", "espana", "fuera"],
+    seriesColors: { fuera: "--es", espana: "--eu", total: "--context-strong" },
     table: { rows: "series", cols: "time", lastCols: 8 },
     digits: 1,
   },

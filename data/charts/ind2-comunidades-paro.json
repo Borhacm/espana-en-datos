@@ -3,10 +3,10 @@
  "lens": "dentro",
  "theme": "inmigracion",
  "title": {
-  "es": "El paro de los extranjeros va del 21,0 % de Andalucía al 10,7 % de Madrid; en España, 15,3 %, frente al 9,2 % de los españoles"
+  "es": "El paro de los extranjeros es más alto que el de los españoles en todas las comunidades: del 21,0 % de Andalucía al 10,7 % de Madrid"
  },
  "subtitle": {
-  "es": "Tasa de paro de la población de nacionalidad extranjera, media del tercer trimestre de 2025 al segundo de 2026, en %"
+  "es": "Tasa de paro de la población de nacionalidad extranjera, media del tercer trimestre de 2025 al segundo de 2026, en %. España: 15,3 % (españoles: 9,2 %)"
  },
  "unit": {
   "es": "% de la población activa"
@@ -19,13 +19,12 @@
  },
  "notes": {
   "es": [
-   "Parados en % de los activos (personas que trabajan o buscan empleo) de 16 años o más con nacionalidad extranjera. Las personas nacidas fuera que tienen la nacionalidad española cuentan como españolas.",
-   "Media de los últimos cuatro trimestres publicados. «spanish» en la descarga: la tasa de los españoles en la misma comunidad.",
-   "En 17 de las 17 comunidades el paro de los extranjeros es más alto que el de los españoles.",
-   "La EPA es una encuesta: en las comunidades pequeñas, la muestra de extranjeros es reducida y el dato tiene más error. Ceuta y Melilla no protagonizan el titular."
+   "Parados en % de los activos (personas que trabajan o buscan empleo) de 16 años o más.",
+   "«spanish» en la descarga: tasa de los españoles en la misma comunidad.",
+   "En las comunidades pequeñas la muestra de extranjeros de la EPA es reducida y el dato tiene más error. Ceuta y Melilla no protagonizan el titular."
   ]
  },
- "retrieved": "2026-10-16",
+ "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",

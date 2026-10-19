@@ -3,10 +3,10 @@
  "lens": "dentro",
  "theme": "inmigracion",
  "title": {
-  "es": "El 20,2 % de los residentes en España nació fuera: del 29,3 % de Baleares al 6,6 % de Extremadura"
+  "es": "Del 29,3 % de residentes nacidos fuera en Baleares al 6,6 % en Extremadura"
  },
  "subtitle": {
-  "es": "Población nacida en el extranjero, 1 de enero de 2026, en % de la población de cada comunidad"
+  "es": "Población nacida en el extranjero, 1 de enero de 2026, en % de la población de cada comunidad. España: 20,2 %"
  },
  "unit": {
   "es": "% de la población"
@@ -19,12 +19,11 @@
  },
  "notes": {
   "es": [
-   "Nacidos fuera de España, tengan o no la nacionalidad española. Incluye, por ejemplo, a los hijos de emigrantes españoles nacidos en otro país.",
    "Dato provisional. «people» en la descarga: número de personas.",
    "Ceuta y Melilla tienen poblaciones pequeñas y no protagonizan el titular."
   ]
  },
- "retrieved": "2026-10-16",
+ "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",

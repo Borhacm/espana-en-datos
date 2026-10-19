@@ -13,40 +13,18 @@
  },
  "source": {
   "name": "INE, Estadística Continua de Población",
-  "dataset": "Tabla 56937",
+  "dataset": "Tablas 56937, 56936, 59586, 59585",
   "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=56937",
-  "license": "Reutilización libre citando la fuente",
-  "also": [
-   {
-    "name": "INE, Estadística Continua de Población",
-    "dataset": "Tabla 56936",
-    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=56936",
-    "license": "Reutilización libre citando la fuente"
-   },
-   {
-    "name": "INE, Estadística Continua de Población",
-    "dataset": "Tabla 59586",
-    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=59586",
-    "license": "Reutilización libre citando la fuente"
-   },
-   {
-    "name": "INE, Estadística Continua de Población",
-    "dataset": "Tabla 59585",
-    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=59585",
-    "license": "Reutilización libre citando la fuente"
-   }
-  ]
+  "license": "Reutilización libre citando la fuente"
  },
  "notes": {
   "es": [
-   "Nacidos en el extranjero: personas nacidas fuera de España, tengan o no la nacionalidad española. Extranjeros: personas sin nacionalidad española, hayan nacido donde hayan nacido.",
-   "La distancia entre las dos líneas corresponde a las personas nacidas fuera con nacionalidad española, descontadas las de nacionalidad extranjera nacidas en España.",
-   "La población extranjera tocó techo en 2009 (11,6 %) y bajó hasta 2017 (9,5 %).",
-   "La población nacida en España llegó a su máximo en 2013 (40,5 millones) y en 2026 era de 39,6 millones. Entre 2013 y 2026, la nacida fuera pasó de 6,2 a 10,0 millones.",
-   "Hasta 2025, cifras definitivas de la Estadística Continua de Población; después, provisionales. «people» en la descarga: número de personas; «total»: población residente."
+   "Población nacida en España: máximo en 2013 (40,5 millones); 39,6 millones en 2026.",
+   "Hasta 2025, cifras definitivas; después, provisionales.",
+   "«people» en la descarga: número de personas; «total»: población residente."
   ]
  },
- "retrieved": "2026-10-16",
+ "retrieved": "2026-10-19",
  "geos": {},
  "dimensions": {
   "series": {
