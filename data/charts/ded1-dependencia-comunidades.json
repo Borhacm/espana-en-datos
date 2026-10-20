@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "demografia",
  "title": {
-  "es": "Por cada 100 personas de 16 a 64 años hay 31,7 mayores de 64: 46,5 en Asturias y 24,5 en Baleares"
+  "es": "Por cada 100 personas de 16 a 64 años hay 31,7 mayores de 64: 46,5 en Asturias y 24,5 en Baleares",
+  "en": "For every 100 people aged 16 to 64 there are 31.7 people over 64: 46.5 in Asturias and 24.5 in Balearic Islands"
  },
  "subtitle": {
-  "es": "Tasa de dependencia de la población mayor de 64 años, 1 de enero de 2025. En 1975, España tenía 16,8"
+  "es": "Tasa de dependencia de la población mayor de 64 años, 1 de enero de 2025. En 1975, España tenía 16,8",
+  "en": "Old-age dependency ratio (over 64), 1 January 2025. In 1975, Spain's was 16.8"
  },
  "unit": {
-  "es": "Mayores de 64 por cada 100 personas de 16 a 64"
+  "es": "Mayores de 64 por cada 100 personas de 16 a 64",
+  "en": "People over 64 per 100 people aged 16 to 64"
  },
  "source": {
   "name": "INE, Indicadores Demográficos Básicos",
@@ -22,107 +25,132 @@
    "Población de 65 años o más dividida por la población de 16 a 64 años, por 100. Es una medida demográfica: no tiene en cuenta cuántas personas de 16 a 64 años trabajan ni cuántas de 65 o más siguen trabajando.",
    "«prev» en la descarga: dato de 1975.",
    "Ceuta y Melilla tienen poblaciones pequeñas y muy jóvenes."
+  ],
+  "en": [
+   "Population aged 65 or over divided by the population aged 16 to 64, times 100. It is a demographic measure: it does not take into account how many people aged 16 to 64 work or how many aged 65 or over are still working.",
+   "«prev» in the download: 1975 figure.",
+   "Ceuta and Melilla have small, very young populations."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

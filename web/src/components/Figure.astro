@@ -3,6 +3,7 @@ import { loadChart } from "../lib/data";
 import { pivot } from "../lib/table";
 import { inVedaAt } from "../lib/veda";
 import { ui, formatDate, type Lang } from "../lib/i18n";
+import { srcText } from "../lib/sources-en";
 
 interface Props { id: string; lang: Lang; code: string }
 const { id, lang, code } = Astro.props;
@@ -18,13 +19,13 @@ const notes = chart ? chart.notes[lang] ?? [] : [];
   <figure class="fig" id={id}>
     <figcaption class="fig-head">
       <span class="code">{code}</span>
-      <h3>Encuestas de intención de voto</h3>
+      <h3>{t.vedaTitle}</h3>
     </figcaption>
-    <p class="veda-note">La ley electoral prohíbe publicar encuestas durante los cinco días anteriores a la votación. Este gráfico volverá a mostrarse cuando cierren los colegios electorales, el 29 de noviembre.</p>
+    <p class="veda-note">{t.vedaNote}</p>
   </figure>
 )}
 {chart && table && (
-<figure class="fig" id={id} data-chart={id} data-lang={lang} data-error={t.loadError}>
+<figure class="fig" id={id} data-chart={id} data-lang={lang} data-error={t.loadError} data-veda={t.vedaNote}>
   <figcaption class="fig-head">
     <span class="code">{code}</span>
     <h3>{chart.title[lang]}</h3>
@@ -39,9 +40,9 @@ const notes = chart ? chart.notes[lang] ?? [] : [];
 
   <footer class="fig-foot">
     <p class="source">
-      {t.source}: <a href={chart.source.url} rel="noopener">{chart.source.name}</a>
-      {chart.source.also?.map((a) => <>, <a href={a.url} rel="noopener">{a.name}</a></>)}.{" "}
-      {t.license} {chart.source.license}. {t.retrieved} {formatDate(chart.retrieved, lang)}.
+      {t.source}: <a href={chart.source.url} rel="noopener">{srcText(chart.source.name, lang)}</a>
+      {chart.source.also?.map((a) => <>, <a href={a.url} rel="noopener">{srcText(a.name, lang)}</a></>)}.{" "}
+      {t.license} {srcText(chart.source.license, lang)}. {t.retrieved} {formatDate(chart.retrieved, lang)}.
     </p>
     {notes.length > 0 && (
       <ul class="notes">{notes.map((n) => <li>{n}</li>)}</ul>

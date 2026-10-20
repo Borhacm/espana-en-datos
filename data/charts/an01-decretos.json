@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "congreso",
  "title": {
-  "es": "De los 16 decretos-ley que el Congreso ha derogado desde 2011, 13 son de esta legislatura"
+  "es": "De los 16 decretos-ley que el Congreso ha derogado desde 2011, 13 son de esta legislatura",
+  "en": "Of the 16 decree-laws Congress has struck down since 2011, 13 are from this parliament"
  },
  "subtitle": {
-  "es": "Reales decretos-leyes derogados por el Congreso en cada legislatura"
+  "es": "Reales decretos-leyes derogados por el Congreso en cada legislatura",
+  "en": "Royal decree-laws struck down by Congress in each parliament"
  },
  "unit": {
-  "es": "Decretos-ley derogados"
+  "es": "Decretos-ley derogados",
+  "en": "Decree-laws struck down"
  },
  "source": {
   "name": "Congreso de los Diputados, datos abiertos de votaciones",
@@ -22,28 +25,38 @@
    "Un decreto-ley se convalida si tiene más votos a favor que en contra. Los empates repetidos fuera de los datos abiertos se corrigen con fuentes oficiales (RDL 14/2021 y 8/2023, convalidados).",
    "XV: incluye los RDL 26 y 27/2026, derogados el 2 de octubre de 2026, cuya votación aún no está en los datos abiertos.",
    "Decretos-ley votados: X: 71; XI: 1; XII: 59; XIV: 96; XV: 56."
+  ],
+  "en": [
+   "A decree-law is validated if it has more votes in favour than against. Ties repeated outside the open data are corrected with official sources (RDL 14/2021 and 8/2023, validated).",
+   "XV: includes RDL 26 and 27/2026, struck down on 2 October 2026, whose vote is not yet in the open data.",
+   "Decree-laws voted on: X: 71; XI: 1; XII: 59; XIV: 96; XV: 56."
   ]
  },
  "retrieved": "2026-10-07",
  "geos": {
   "X": {
    "es": "X (2011-2015)",
+   "en": "X (2011-2015)",
    "ccaa": true
   },
   "XI": {
    "es": "XI (2016)",
+   "en": "XI (2016)",
    "ccaa": true
   },
   "XII": {
    "es": "XII (2016-2019)",
+   "en": "XII (2016-2019)",
    "ccaa": true
   },
   "XIV": {
    "es": "XIV (2019-2023)",
+   "en": "XIV (2019-2023)",
    "ccaa": true
   },
   "XV": {
    "es": "XV (2023-2026)",
+   "en": "XV (2023-2026)",
    "ccaa": true
   }
  },

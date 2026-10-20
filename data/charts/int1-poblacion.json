@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "inmigracion",
  "title": {
-  "es": "Los nacidos en el extranjero han pasado del 5,7 % de la población en 2002 al 20,2 % en 2026"
+  "es": "Los nacidos en el extranjero han pasado del 5,7 % de la población en 2002 al 20,2 % en 2026",
+  "en": "The foreign-born have gone from 5.7% of the population in 2002 to 20.2% in 2026"
  },
  "subtitle": {
-  "es": "Población nacida en el extranjero y población de nacionalidad extranjera, 1 de enero de cada año, 2002-2026, en % de la población residente"
+  "es": "Población nacida en el extranjero y población de nacionalidad extranjera, 1 de enero de cada año, 2002-2026, en % de la población residente",
+  "en": "Foreign-born population and population of foreign nationality, 1 January each year, 2002-2026, as % of the resident population"
  },
  "unit": {
-  "es": "% de la población"
+  "es": "% de la población",
+  "en": "% of the population"
  },
  "source": {
   "name": "INE, Estadística Continua de Población",
@@ -22,6 +25,11 @@
    "Población nacida en España: máximo en 2013 (40,5 millones); 39,6 millones en 2026.",
    "Hasta 2025, cifras definitivas; después, provisionales.",
    "«people» en la descarga: número de personas; «total»: población residente."
+  ],
+  "en": [
+   "Population born in Spain: peak in 2013 (40.5 million); 39.6 million in 2026.",
+   "Final figures up to 2025; provisional afterwards.",
+   "«people» in the download: number of people; «total»: resident population."
   ]
  },
  "retrieved": "2026-10-19",
@@ -29,10 +37,12 @@
  "dimensions": {
   "series": {
    "nacidos": {
-    "es": "Nacidos en el extranjero"
+    "es": "Nacidos en el extranjero",
+    "en": "Born abroad"
    },
    "extranjeros": {
-    "es": "Nacionalidad extranjera"
+    "es": "Nacionalidad extranjera",
+    "en": "Foreign nationality"
    }
   }
  },

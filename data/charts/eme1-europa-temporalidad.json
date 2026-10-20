@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "empleo",
  "title": {
-  "es": "Los asalariados temporales bajan del 25,4 % al 15,4 % en España entre 2021 y 2025; en la UE, del 14,0 % al 12,6 %"
+  "es": "Los asalariados temporales bajan del 25,4 % al 15,4 % en España entre 2021 y 2025; en la UE, del 14,0 % al 12,6 %",
+  "en": "Temporary employees fall from 25.4% to 15.4% in Spain between 2021 and 2025; in the EU, from 14.0% to 12.6%"
  },
  "subtitle": {
-  "es": "Asalariados con contrato temporal, de 15 a 64 años, 2025, en % de los asalariados. España tenía en 2021 el 2.º porcentaje más alto de 27 países; ahora, el 3.º"
+  "es": "Asalariados con contrato temporal, de 15 a 64 años, 2025, en % de los asalariados. España tenía en 2021 el 2.º porcentaje más alto de 27 países; ahora, el 3.º",
+  "en": "Employees on temporary contracts, aged 15 to 64, 2025, as % of employees. In 2021 Spain had the 2nd highest share of 27 countries; now, the 3rd"
  },
  "unit": {
-  "es": "% de los asalariados"
+  "es": "% de los asalariados",
+  "en": "% of employees"
  },
  "source": {
   "name": "Eurostat",
@@ -22,147 +25,180 @@
    "Encuesta de Población Activa armonizada (para España, la EPA del INE), medias anuales.",
    "Los fijos discontinuos cuentan como contratos indefinidos, no como temporales.",
    "«prev» en la descarga: porcentaje de 2021, el último año completo antes de la reforma laboral."
+  ],
+  "en": [
+   "Harmonised Labour Force Survey (for Spain, INE's EPA), annual averages.",
+   "Fijos discontinuos (permanent seasonal contracts) count as permanent contracts, not temporary ones.",
+   "«prev» in the download: share in 2021, the last full year before the labour reform."
   ]
  },
  "retrieved": "2026-10-09",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

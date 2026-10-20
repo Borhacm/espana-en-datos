@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "empleo",
  "title": {
-  "es": "El salario mínimo pasa del 38,9 % al 58,1 % del salario medio entre 2008 y 2025"
+  "es": "El salario mínimo pasa del 38,9 % al 58,1 % del salario medio entre 2008 y 2025",
+  "en": "The minimum wage goes from 38.9% to 58.1% of the average wage between 2008 and 2025"
  },
  "subtitle": {
-  "es": "Salario mínimo en % del salario medio por trabajador, 2008-2025"
+  "es": "Salario mínimo en % del salario medio por trabajador, 2008-2025",
+  "en": "Minimum wage as % of the average wage per worker, 2008-2025"
  },
  "unit": {
-  "es": "% del salario medio"
+  "es": "% del salario medio",
+  "en": "% of the average wage"
  },
  "source": {
   "name": "Eurostat, salarios mínimos mensuales",
@@ -30,6 +33,11 @@
    "Las dos cifras son mensuales y en 12 pagas: el salario mínimo vigente el 1 de julio (Eurostat) y el coste salarial total por trabajador de la ETCL (media anual, industria, construcción y servicios).",
    "Es el salario medio, no la mediana ni el salario neto: no es la referencia de la Carta Social Europea (60 % del salario neto medio), que usa otra definición.",
    "El salario medio baja en 2020 por los ERTE, y eso sube el porcentaje de ese año."
+  ],
+  "en": [
+   "Both figures are monthly and in 12 payments: the minimum wage in force on 1 July (Eurostat) and the total wage cost per worker from the ETCL (annual average, industry, construction and services).",
+   "It is the average wage, not the median or the net wage: it is not the European Social Charter benchmark (60% of the average net wage), which uses another definition.",
+   "The average wage falls in 2020 because of furlough schemes (ERTE), and that raises that year's percentage."
   ]
  },
  "retrieved": "2026-10-19",
@@ -37,7 +45,8 @@
  "dimensions": {
   "series": {
    "ratio": {
-    "es": "Salario mínimo / salario medio"
+    "es": "Salario mínimo / salario medio",
+    "en": "Minimum wage / average wage"
    }
   }
  },

@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "legislatura",
  "title": {
-  "es": "El paro baja más donde era más alto: la distancia entre la comunidad con más paro y la de menos pasa de 10,5 a 7,5 puntos"
+  "es": "El paro baja más donde era más alto: la distancia entre la comunidad con más paro y la de menos pasa de 10,5 a 7,5 puntos",
+  "en": "Unemployment falls most where it was highest: the gap between the region with the most unemployment and the one with the least narrows from 10.5 to 7.5 points"
  },
  "subtitle": {
-  "es": "Tasa de paro, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 10,3 %"
+  "es": "Tasa de paro, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 10,3 %",
+  "en": "Unemployment rate, average of the four quarters from Q3 2025 to Q2 2026, in %. Spain: 10.3%"
  },
  "unit": {
-  "es": "% de la población activa"
+  "es": "% de la población activa",
+  "en": "% of the labour force"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -23,107 +26,133 @@
    "«prev» en la descarga: media de 2023; «change»: diferencia en puntos. El paro ha bajado en las 17 comunidades.",
    "Distancia entre la comunidad con más paro y la de menos (sin Ceuta ni Melilla): 10,5 puntos en 2023 (Andalucía y País Vasco) y 7,5 en el último año (Andalucía y Cantabria). Correlación entre el paro de 2023 y su variación: −0,8.",
    "Ceuta y Melilla tienen muestras pequeñas en la EPA y sus tasas varían mucho de un trimestre a otro."
+  ],
+  "en": [
+   "Labour Force Survey (EPA), population aged 16 and over. Average of the last four quarters to avoid seasonality (unemployment rises in winter and falls in summer).",
+   "«prev» in the download: 2023 average; «change»: difference in points. Unemployment has fallen in all 17 regions.",
+   "Gap between the region with the most unemployment and the one with the least (excluding Ceuta and Melilla): 10.5 points in 2023 (Andalusia and Basque Country) and 7.5 in the last year (Andalusia and Cantabria). Correlation between 2023 unemployment and its change: −0.8.",
+   "Ceuta and Melilla have small samples in the EPA and their rates vary a lot from one quarter to the next."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

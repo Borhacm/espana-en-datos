@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "demografia",
  "title": {
-  "es": "España dedica a pensiones el 13,2 % del PIB, frente al 12,6 % de la UE: el 7.º más alto de 27 países"
+  "es": "España dedica a pensiones el 13,2 % del PIB, frente al 12,6 % de la UE: el 7.º más alto de 27 países",
+  "en": "Spain spends 13.2% of GDP on pensions, against 12.6% in the EU: the 7th highest of 27 countries"
  },
  "subtitle": {
-  "es": "Gasto en pensiones, 2024, en % del PIB. En 2008, España dedicaba el 9,2 % y la UE, el 11,8 %"
+  "es": "Gasto en pensiones, 2024, en % del PIB. En 2008, España dedicaba el 9,2 % y la UE, el 11,8 %",
+  "en": "Pension spending, 2024, as % of GDP. In 2008, Spain spent 9.2% and the EU 11.8%"
  },
  "unit": {
-  "es": "% del PIB"
+  "es": "% del PIB",
+  "en": "% of GDP"
  },
  "source": {
   "name": "Eurostat, sistema europeo de estadísticas de protección social (SEEPROS)",
@@ -23,147 +26,181 @@
    "No es igual que el gasto del sistema de Seguridad Social que publica el Gobierno: la definición europea es más amplia y sirve para comparar países.",
    "«prev» en la descarga: dato de 2008.",
    "Datos provisionales de 2024: Alemania, la UE."
+  ],
+  "en": [
+   "Old-age, early retirement, survivors', disability and partial pensions, public and mandatory private, with and without prior contributions. Includes civil servants' pensions (clases pasivas).",
+   "It is not the same as the Social Security spending the government publishes: the European definition is broader and is used to compare countries.",
+   "«prev» in the download: 2008 figure.",
+   "Provisional 2024 data: Germany, the EU."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

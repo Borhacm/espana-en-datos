@@ -2,7 +2,8 @@
 // Dibuja el cuerpo de un tema, una nota o un análisis: párrafos, gráficos, subtítulos, listas, pasos, citas y cronologías.
 import Figure from "./Figure.astro";
 import type { Block } from "../lib/content-types";
-import type { Lang } from "../lib/i18n";
+import { ui, type Lang } from "../lib/i18n";
+import { localizeHref } from "../lib/themes";
 
 interface Props { lang: Lang; blocks: Block[]; codePrefix: string }
 const { lang, blocks, codePrefix } = Astro.props;
@@ -26,7 +27,7 @@ const figCode = (code: string) => (code.includes("-") ? code : `${codePrefix}-${
         <figcaption><a href={b.url} rel="noopener">{b.who[lang]}</a></figcaption>
       </figure>
     )
-  : "see" in b ? <p class="prose body b-see">{lang === "es" ? "Ver también: " : "See also: "}<a href={b.href}>{b.see[lang]}</a></p>
+  : "see" in b ? <p class="prose body b-see">{ui[lang].seeAlso}<a href={localizeHref(b.href, lang)}>{b.see[lang]}</a></p>
   : "timeline" in b ? (
       <ol class="b-timeline">
         {b.timeline.map((t) => <li><span class="t-date">{t.date[lang]}</span><span class="t-text">{t.text[lang]}</span></li>)}

@@ -42,3 +42,25 @@ def es_num(v: float) -> str:
     from decimal import ROUND_HALF_UP, Decimal
 
     return str(Decimal(str(v)).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
+
+
+def en_num(v: float) -> str:
+    """Igual que es_num, para el texto en inglés (los enteros se escriben igual en los dos idiomas)."""
+    return es_num(v)
+
+
+def dec(v: float, lang: str, digits: int = 1) -> str:
+    """Número con decimales en el idioma pedido: 3,7 en español, 3.7 en inglés."""
+    s = f"{v:.{digits}f}"
+    return s.replace(".", ",") if lang == "es" else s
+
+
+def ordinal_en(n: int) -> str:
+    """1 -> 1st, 2 -> 2nd, 11 -> 11th..."""
+    suffix = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def bi(es: str, en: str) -> dict:
+    """Texto en los dos idiomas de la web."""
+    return {"es": es, "en": en}

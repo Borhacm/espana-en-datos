@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "elecciones",
  "title": {
-  "es": "Andalucía, Cataluña y Madrid eligen 146 de los 350 diputados"
+  "es": "Andalucía, Cataluña y Madrid eligen 146 de los 350 diputados",
+  "en": "Andalusia, Catalonia and Madrid elect 146 of the 350 deputies"
  },
  "subtitle": {
-  "es": "Diputados que elige cada comunidad el 29 de noviembre de 2026"
+  "es": "Diputados que elige cada comunidad el 29 de noviembre de 2026",
+  "en": "Deputies each region elects on 29 November 2026"
  },
  "unit": {
-  "es": "Diputados"
+  "es": "Diputados",
+  "en": "Deputies"
  },
  "source": {
   "name": "INE, cifras oficiales de población (revisión del padrón)",
@@ -32,102 +35,126 @@
    "Los escaños se reparten por provincias (LOREG, art. 162): 2 fijos por provincia, 1 en Ceuta y en Melilla, y los 248 restantes según la población.",
    "Cambios respecto a 2023: Andalucía pasa de 61 a 60; Madrid pasa de 37 a 38. Por provincias: Cádiz (9 a 8), Madrid (37 a 38).",
    "En los datos, party es el partido del presidente o presidenta autonómico hoy (el PSC cuenta como PSOE), no de sus socios de coalición."
+  ],
+  "en": [
+   "Seats are allocated by province (LOREG, art. 162): 2 fixed per province, 1 in Ceuta and in Melilla, and the remaining 248 by population.",
+   "Changes from 2023: Andalusia goes from 61 to 60; Madrid goes from 37 to 38. By province: Cádiz (9 to 8), Madrid (37 to 38).",
+   "In the data, party is the party of the current regional president (the PSC counts as PSOE), not of their coalition partners."
   ]
  },
  "retrieved": "2026-10-12",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Is.",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Is.",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "C. y León",
+   "en": "Castile-León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "C.-La Mancha",
+   "en": "C.-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "C. Valenciana",
+   "en": "Valencian C.",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   }

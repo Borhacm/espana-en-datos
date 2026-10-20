@@ -11,7 +11,7 @@ from collections import defaultdict
 from datasets import congreso, gobiernos
 from lib.output import BASE_DIR, chart
 
-from ..common import es_num
+from ..common import bi, es_num
 
 SOURCE = {**congreso.SOURCE, "dataset": "Votaciones nominales del Pleno, legislaturas X a XV"}
 MIN_VOTES = 50
@@ -59,18 +59,25 @@ def coincidencia_pp_psoe():
     return chart(
         id="an01-pp-psoe",
         lens="tiempo", theme="congreso",
-        title=f"PP y PSOE han votado lo mismo entre el {es_num(lo['value'])} % ({lo['time']}) y el {es_num(hi['value'])} % "
-              f"({hi['time']}) de las votaciones de cada año",
-        subtitle="Porcentaje de votaciones nominales del Pleno en que PP y PSOE votaron igual, por año (sin Presupuestos)",
-        unit="% de votaciones",
+        title=bi(f"PP y PSOE han votado lo mismo entre el {es_num(lo['value'])} % ({lo['time']}) y el {es_num(hi['value'])} % "
+                 f"({hi['time']}) de las votaciones de cada año",
+                 f"PP and PSOE have voted the same way in between {es_num(lo['value'])}% ({lo['time']}) and {es_num(hi['value'])}% "
+                 f"({hi['time']}) of each year's votes"),
+        subtitle=bi("Porcentaje de votaciones nominales del Pleno en que PP y PSOE votaron igual, por año (sin Presupuestos)",
+                    "Share of roll-call votes in the plenary in which PP and PSOE voted the same way, by year (excluding budgets)"),
+        unit=bi("% de votaciones", "% of votes"),
         source=SOURCE,
-        notes=[
+        notes={"es": [
             "Voto de un partido: la opción que eligió la mayoría de sus diputados presentes.",
             "Sin las votaciones de Presupuestos Generales, que son miles de enmiendas en algunos años.",
             f"Años con al menos {MIN_VOTES} votaciones. 2016 y 2019 tuvieron legislaturas breves y elecciones repetidas.",
-        ],
+        ], "en": [
+            "A party's vote: the option chosen by the majority of its deputies present.",
+            "Excluding votes on the General State Budget, which run to thousands of amendments in some years.",
+            f"Years with at least {MIN_VOTES} votes. 2016 and 2019 had short parliaments and repeat elections.",
+        ]},
         rows=rows,
-        extra={"dimensions": {"series": {"pp-psoe": {"es": "PP y PSOE"}}}, "short_labels": {"pp-psoe": "PP y PSOE"}},
+        extra={"dimensions": {"series": {"pp-psoe": bi("PP y PSOE", "PP and PSOE")}}, "short_labels": {"pp-psoe": bi("PP y PSOE", "PP and PSOE")}},
     )
 
 
@@ -93,20 +100,29 @@ def gobierno_gana():
     return chart(
         id="an01-gobierno-gana",
         lens="tiempo", theme="congreso",
-        title=(f"Con mayoría absoluta, el PP ganó todas las votaciones de 2012 a 2015; " if pp_full else "")
-              + f"el PSOE ha pasado del {es_num(peak['value'])} % en {peak['time']} al {es_num(last['value'])} % en {last['time']}",
-        subtitle="Porcentaje de votaciones en las que el partido del presidente del Gobierno votó lo mismo que el resultado final, por año",
-        unit="% de votaciones",
+        title=bi((f"Con mayoría absoluta, el PP ganó todas las votaciones de 2012 a 2015; " if pp_full else "")
+                 + f"el PSOE ha pasado del {es_num(peak['value'])} % en {peak['time']} al {es_num(last['value'])} % en {last['time']}",
+                 (f"With an absolute majority, the PP won every vote from 2012 to 2015; " if pp_full else "")
+                 + f"the PSOE has gone from {es_num(peak['value'])}% in {peak['time']} to {es_num(last['value'])}% in {last['time']}"),
+        subtitle=bi("Porcentaje de votaciones en las que el partido del presidente del Gobierno votó lo mismo que el resultado final, por año",
+                    "Share of votes in which the prime minister's party voted the same way as the final result, by year"),
+        unit=bi("% de votaciones", "% of votes"),
         source={**SOURCE, "also": [{"name": "Presidentes del Gobierno (La Moncloa)", "url": gobiernos.NACIONAL_SOURCE["url"]}]},
-        notes=[
+        notes={"es": [
             "Gana quien vota sí y la votación sale adelante, o vota no y no sale. Las abstenciones no cuentan.",
             "Partido del Gobierno en la fecha de cada votación: PP hasta el 1 de junio de 2018 (moción de censura) y PSOE desde entonces. "
             "En 2018 hay dos puntos, uno por partido.",
             "Resultado por mayoría simple; las leyes orgánicas necesitan mayoría absoluta en la votación final, así que el dato es aproximado en esas votaciones.",
             f"Sin Presupuestos. Años con al menos {MIN_VOTES} votaciones de cada partido.",
-        ],
+        ], "en": [
+            "A party wins if it votes yes and the motion passes, or votes no and it fails. Abstentions do not count.",
+            "Party in government on the date of each vote: PP until 1 June 2018 (motion of no confidence) and PSOE since then. "
+            "In 2018 there are two points, one per party.",
+            "Outcome by simple majority; organic laws need an absolute majority in the final vote, so the figure is approximate for those votes.",
+            f"Excluding budgets. Years with at least {MIN_VOTES} votes for each party.",
+        ]},
         rows=rows,
-        extra={"short_labels": {"PP": "PP en el Gobierno", "PSOE": "PSOE en el Gobierno"}},
+        extra={"short_labels": {"PP": bi("PP en el Gobierno", "PP in government"), "PSOE": bi("PSOE en el Gobierno", "PSOE in government")}},
     )
 
 
@@ -123,18 +139,25 @@ def decretos_por_legislatura():
     return chart(
         id="an01-decretos",
         lens="tiempo", theme="congreso",
-        title=f"De los {total} decretos-ley que el Congreso ha derogado desde 2011, {xv['value']} son de esta legislatura",
-        subtitle="Reales decretos-leyes derogados por el Congreso en cada legislatura",
-        unit="Decretos-ley derogados",
+        title=bi(f"De los {total} decretos-ley que el Congreso ha derogado desde 2011, {xv['value']} son de esta legislatura",
+                 f"Of the {total} decree-laws Congress has struck down since 2011, {xv['value']} are from this parliament"),
+        subtitle=bi("Reales decretos-leyes derogados por el Congreso en cada legislatura",
+                    "Royal decree-laws struck down by Congress in each parliament"),
+        unit=bi("Decretos-ley derogados", "Decree-laws struck down"),
         source=SOURCE,
-        notes=[
+        notes={"es": [
             "Un decreto-ley se convalida si tiene más votos a favor que en contra. Los empates repetidos fuera de los datos abiertos se "
             "corrigen con fuentes oficiales (RDL 14/2021 y 8/2023, convalidados).",
             "XV: incluye los RDL 26 y 27/2026, derogados el 2 de octubre de 2026, cuya votación aún no está en los datos abiertos.",
             "Decretos-ley votados: " + "; ".join(f"{r['geo']}: {r['voted']}" for r in rows) + ".",
-        ],
+        ], "en": [
+            "A decree-law is validated if it has more votes in favour than against. Ties repeated outside the open data are "
+            "corrected with official sources (RDL 14/2021 and 8/2023, validated).",
+            "XV: includes RDL 26 and 27/2026, struck down on 2 October 2026, whose vote is not yet in the open data.",
+            "Decree-laws voted on: " + "; ".join(f"{r['geo']}: {r['voted']}" for r in rows) + ".",
+        ]},
         rows=rows,
-        geos={r["geo"]: {"es": next(l["label"] for l in d["legislatures"] if l["id"] == r["geo"]), "ccaa": True} for r in rows},
+        geos={r["geo"]: {**bi(*[next(l["label"] for l in d["legislatures"] if l["id"] == r["geo"])] * 2), "ccaa": True} for r in rows},
     )
 
 
@@ -168,15 +191,20 @@ def socios():
     return chart(
         id="an01-socios",
         lens="tiempo", theme="congreso",
-        title="Con quién ha votado cada Gobierno",
-        subtitle="Porcentaje de votaciones en que cada partido votó igual que el partido del Gobierno, por legislatura (sin Presupuestos)",
-        unit="% de votaciones",
+        title=bi("Con quién ha votado cada Gobierno", "Who each government has voted with"),
+        subtitle=bi("Porcentaje de votaciones en que cada partido votó igual que el partido del Gobierno, por legislatura (sin Presupuestos)",
+                    "Share of votes in which each party voted the same way as the governing party, by parliament (excluding budgets)"),
+        unit=bi("% de votaciones", "% of votes"),
         source=SOURCE,
-        notes=[
+        notes={"es": [
             "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos, incluido el principal de la oposición.",
             "Solo celdas con al menos 100 votaciones comparadas; los partidos que no estaban en el Congreso quedan vacíos.",
             "Grupo Mixto y Grupo Plural reúnen partidos distintos: su voto es el de la mayoría de sus miembros.",
-        ],
+        ], "en": [
+            "Row: parliament and the prime minister's party. Column: the other parties, including the main opposition party.",
+            "Only cells with at least 100 votes compared; parties that were not in Congress are left empty.",
+            "Grupo Mixto (Mixed Group) and Grupo Plural bring together different parties: their vote is that of the majority of their members.",
+        ]},
         rows=rows,
         extra={"blocs": present, "row_keys": [labels[k] for k in order]},
     )

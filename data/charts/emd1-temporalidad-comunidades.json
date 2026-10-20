@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "empleo",
  "title": {
-  "es": "En el sector privado, la temporalidad ha bajado desde 2021 en las 17 comunidades: hoy va del 9,3 % de Madrid al 18,1 % de Andalucía"
+  "es": "En el sector privado, la temporalidad ha bajado desde 2021 en las 17 comunidades: hoy va del 9,3 % de Madrid al 18,1 % de Andalucía",
+  "en": "In the private sector, the temporary employment rate has fallen since 2021 in all 17 regions: it now ranges from 9.3% in Madrid to 18.1% in Andalusia"
  },
  "subtitle": {
-  "es": "Asalariados del sector privado con contrato temporal, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 12,4 % (23,7 % en 2021)"
+  "es": "Asalariados del sector privado con contrato temporal, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %. España: 12,4 % (23,7 % en 2021)",
+  "en": "Private-sector employees on temporary contracts, average of the four quarters from Q3 2025 to Q2 2026, in %. Spain: 12.4% (23.7% in 2021)"
  },
  "unit": {
-  "es": "% de los asalariados del sector privado"
+  "es": "% de los asalariados del sector privado",
+  "en": "% of private-sector employees"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -24,107 +27,134 @@
    "Los fijos discontinuos cuentan como contratos indefinidos.",
    "La temporalidad depende mucho de la estructura productiva de cada comunidad (agricultura, turismo, industria).",
    "Ceuta y Melilla tienen muestras pequeñas en la EPA y sus porcentajes varían mucho de un trimestre a otro."
+  ],
+  "en": [
+   "Labour Force Survey (EPA). Average of the last four quarters to avoid seasonality (temporary contracts rise in summer).",
+   "«prev» in the download: 2021 average; «change»: difference in points.",
+   "Fijos discontinuos (permanent seasonal contracts) count as permanent contracts.",
+   "Temporary employment depends heavily on each region's economic structure (agriculture, tourism, industry).",
+   "Ceuta and Melilla have small samples in the EPA and their shares vary a lot from one quarter to the next."
   ]
  },
  "retrieved": "2026-10-09",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

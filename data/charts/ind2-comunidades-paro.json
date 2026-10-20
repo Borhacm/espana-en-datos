@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "inmigracion",
  "title": {
-  "es": "El paro de los extranjeros es más alto que el de los españoles en todas las comunidades: del 21,0 % de Andalucía al 10,7 % de Madrid"
+  "es": "El paro de los extranjeros es más alto que el de los españoles en todas las comunidades: del 21,0 % de Andalucía al 10,7 % de Madrid",
+  "en": "Unemployment among foreign nationals is higher than among Spaniards in every region: from 21.0% in Andalusia to 10.7% in Madrid"
  },
  "subtitle": {
-  "es": "Tasa de paro de la población de nacionalidad extranjera, media del tercer trimestre de 2025 al segundo de 2026, en %. España: 15,3 % (españoles: 9,2 %)"
+  "es": "Tasa de paro de la población de nacionalidad extranjera, media del tercer trimestre de 2025 al segundo de 2026, en %. España: 15,3 % (españoles: 9,2 %)",
+  "en": "Unemployment rate of foreign nationals, average from Q3 2025 to Q2 2026, in %. Spain: 15.3% (Spaniards: 9.2%)"
  },
  "unit": {
-  "es": "% de la población activa"
+  "es": "% de la población activa",
+  "en": "% of the labour force"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -22,107 +25,132 @@
    "Parados en % de los activos (personas que trabajan o buscan empleo) de 16 años o más.",
    "«spanish» en la descarga: tasa de los españoles en la misma comunidad.",
    "En las comunidades pequeñas la muestra de extranjeros de la EPA es reducida y el dato tiene más error. Ceuta y Melilla no protagonizan el titular."
+  ],
+  "en": [
+   "Unemployed people as % of the active population (people working or looking for work) aged 16 or over.",
+   "«spanish» in the download: rate for Spaniards in the same region.",
+   "In small regions the EPA sample of foreign nationals is small and the figure has a larger error. Ceuta and Melilla are not used in the headline."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

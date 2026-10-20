@@ -4,9 +4,13 @@ import Base from "../layouts/Base.astro";
 import Blocks from "../components/Blocks.astro";
 import LinkList from "../components/LinkList.astro";
 import SeatSimulator from "../components/SeatSimulator.astro";
-import { notesOf, published, themeById } from "../lib/themes";
-import { formatDate, notePath, paths, themePath } from "../lib/i18n";
+import { localizeHref, notesOf, published, themeById } from "../lib/themes";
+import { sourceName } from "../lib/content-types";
+import { formatDate, notePath, paths, themePath, type Lang } from "../lib/i18n";
 import "../styles/charts.css";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
 
 const theme = themeById("elecciones")!;
 const lenses = theme.lenses!;
@@ -14,76 +18,122 @@ const lenses = theme.lenses!;
 const notes = [...notesOf("elecciones"), ...notesOf("congreso")];
 // Piezas de campaña: los temas publicados (con el gancho electoral) y las notas del especial, de la más reciente a la más antigua
 const pieces = [
-  ...published().filter((t) => !t.hub).map((t) => ({ href: themePath(t.slug).es, title: t.title.es, dek: t.dek?.es, date: t.published! })),
-  ...notes.map((n) => ({ href: notePath(n.slug).es, title: n.title.es, dek: n.dek.es, date: n.published })),
+  ...published().filter((t) => !t.hub).map((t) => ({ href: themePath(t.slug)[lang], title: t.title[lang], dek: t.dek?.[lang], date: t.published! })),
+  ...notes.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], date: n.published })),
 ].sort((a, b) => b.date.localeCompare(a.date));
 
-// Calendario electoral (LOREG): convocatoria en el BOE el 6 de octubre, votación 54 días después
-const DATES = [
-  { date: "6 de octubre", text: "El BOE publica la convocatoria." },
-  { date: "13 de noviembre", text: "Empieza la campaña electoral." },
-  { date: "24 al 28 de noviembre", text: "Prohibido publicar encuestas (veda). Aquí se oculta el seguimiento." },
-  { date: "28 de noviembre", text: "Jornada de reflexión." },
-  { date: "29 de noviembre", text: "Votación, de 9.00 a 20.00 (una hora menos en Canarias)." },
-];
-
-const PRINCIPLES = [
-  "Todos los partidos se tratan igual: mismo formato, mismas fuentes y mismo nivel de exigencia.",
-  "Contamos lo que dicen los datos, no a quién votar. Cuando la evidencia no es concluyente, lo decimos.",
-  "Cada cifra enlaza a su fuente original y se puede descargar.",
-  "Las encuestas se muestran todas, pero en la media solo entran las que tienen muestreo probabilístico. El método está publicado.",
-];
+const copy = {
+  es: {
+    kicker: "Especial",
+    h1: "Elecciones generales del 29 de noviembre",
+    calendar: "Calendario electoral",
+    // Calendario electoral (LOREG): convocatoria en el BOE el 6 de octubre, votación 54 días después
+    dates: [
+      { date: "6 de octubre", text: "El BOE publica la convocatoria." },
+      { date: "13 de noviembre", text: "Empieza la campaña electoral." },
+      { date: "24 al 28 de noviembre", text: "Prohibido publicar encuestas (veda). Aquí se oculta el seguimiento." },
+      { date: "28 de noviembre", text: "Jornada de reflexión." },
+      { date: "29 de noviembre", text: "Votación, de 9.00 a 20.00 (una hora menos en Canarias)." },
+    ],
+    polls: "Encuestas",
+    start: "El punto de partida",
+    congressH: "La legislatura en el Congreso",
+    congressLede: "Cómo han votado los partidos desde 2023: quién coincide con quién y qué decretos cayeron.",
+    congressTitle: "El Congreso en datos",
+    pieces: "Análisis de campaña",
+    howH: "Cómo cubrimos estas elecciones",
+    principles: [
+      "Todos los partidos se tratan igual: mismo formato, mismas fuentes y mismo nivel de exigencia.",
+      "Contamos lo que dicen los datos, no a quién votar. Cuando la evidencia no es concluyente, lo decimos.",
+      "Cada cifra enlaza a su fuente original y se puede descargar.",
+      "Las encuestas se muestran todas, pero en la media solo entran las que tienen muestreo probabilístico. El método está publicado.",
+    ],
+    independent: "España en datos es un proyecto independiente. No trabaja para ningún partido ni empresa demoscópica.",
+    method: "Metodología completa",
+    sources: "Fuentes del texto",
+    countdown: { days: "Faltan {n} días.", tomorrow: "Mañana se vota.", today: "Hoy se vota." },
+  },
+  en: {
+    kicker: "Special",
+    h1: "Spain's general election on 29 November",
+    calendar: "Election calendar",
+    dates: [
+      { date: "6 October", text: "The official gazette (BOE) publishes the call for the election." },
+      { date: "13 November", text: "The campaign begins." },
+      { date: "24 to 28 November", text: "Publishing polls is banned. The poll tracker is hidden here." },
+      { date: "28 November", text: "Day of reflection: no campaigning." },
+      { date: "29 November", text: "Voting, from 9 am to 8 pm (an hour earlier in the Canary Islands)." },
+    ],
+    polls: "Polls",
+    start: "The starting point",
+    congressH: "The parliament in Congress",
+    congressLede: "How the parties have voted since 2023: who votes with whom and which decrees fell.",
+    congressTitle: "Congress in data",
+    pieces: "Campaign analysis",
+    howH: "How we cover this election",
+    principles: [
+      "Every party is treated the same: same format, same sources and same standards.",
+      "We report what the data says, not who to vote for. When the evidence is inconclusive, we say so.",
+      "Every figure links to its original source and can be downloaded.",
+      "All polls are shown, but only those with probability sampling enter the average. The method is published.",
+    ],
+    independent: "Spain in data is an independent project. It does not work for any party or polling company.",
+    method: "Full methodology",
+    sources: "Sources for the text",
+    countdown: { days: "{n} days to go.", tomorrow: "Spain votes tomorrow.", today: "Spain votes today." },
+  },
+}[lang];
 ---
-<Base lang="es" path={paths.elections} section="elections" title={theme.title.es} description={theme.dek!.es}>
+<Base lang={lang} path={paths.elections} section="elections" title={theme.title[lang]} description={theme.dek![lang]}>
   <header class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="kicker">Especial</p>
-        <h1>Elecciones generales del 29 de noviembre</h1>
-        <p class="dek">{theme.dek!.es}</p>
-        <p class="countdown" data-countdown hidden></p>
+        <p class="kicker">{copy.kicker}</p>
+        <h1>{copy.h1}</h1>
+        <p class="dek">{theme.dek![lang]}</p>
+        <p class="countdown" data-countdown data-days={copy.countdown.days} data-tomorrow={copy.countdown.tomorrow} data-today={copy.countdown.today} hidden></p>
       </div>
-      <ol class="calendar" aria-label="Calendario electoral">
-        {DATES.map((d) => <li><span class="c-date">{d.date}</span><span class="c-text">{d.text}</span></li>)}
+      <ol class="calendar" aria-label={copy.calendar}>
+        {copy.dates.map((d) => <li><span class="c-date">{d.date}</span><span class="c-text">{d.text}</span></li>)}
       </ol>
     </div>
   </header>
 
   <section class="wrap part" id="encuestas" aria-labelledby="enc-h">
-    <h2 id="enc-h">Encuestas</h2>
-    <p class="lede">{lenses.tiempo.lede.es}</p>
-    <Blocks lang="es" blocks={lenses.tiempo.body} codePrefix={theme.code} />
-    <SeatSimulator />
+    <h2 id="enc-h">{copy.polls}</h2>
+    <p class="lede">{lenses.tiempo.lede[lang]}</p>
+    <Blocks lang={lang} blocks={lenses.tiempo.body} codePrefix={theme.code} />
+    <SeatSimulator lang={lang} />
   </section>
 
   <section class="wrap part" id="territorio" aria-labelledby="ter-h">
-    <h2 id="ter-h">El punto de partida</h2>
-    <p class="lede">{lenses.dentro.lede.es}</p>
-    <Blocks lang="es" blocks={lenses.dentro.body} codePrefix={theme.code} />
+    <h2 id="ter-h">{copy.start}</h2>
+    <p class="lede">{lenses.dentro.lede[lang]}</p>
+    <Blocks lang={lang} blocks={lenses.dentro.body} codePrefix={theme.code} />
   </section>
 
   <section class="wrap part" aria-labelledby="cg-h">
-    <h2 id="cg-h">La legislatura en el Congreso</h2>
-    <p class="lede">Cómo han votado los partidos desde 2023: quién coincide con quién y qué decretos cayeron.</p>
-    <LinkList items={[{ href: paths.congress.es, title: "El Congreso en datos", dek: themeById("congreso")?.dek?.es }]} />
+    <h2 id="cg-h">{copy.congressH}</h2>
+    <p class="lede">{copy.congressLede}</p>
+    <LinkList items={[{ href: paths.congress[lang], title: copy.congressTitle, dek: themeById("congreso")?.dek?.[lang] }]} />
   </section>
 
   {pieces.length > 0 && (
     <section class="wrap part" id="piezas" aria-labelledby="notes-h">
-      <h2 id="notes-h">Análisis de campaña</h2>
-      <LinkList items={pieces.map((x) => ({ href: x.href, title: x.title, dek: x.dek, meta: formatDate(x.date) }))} />
+      <h2 id="notes-h">{copy.pieces}</h2>
+      <LinkList items={pieces.map((x) => ({ href: x.href, title: x.title, dek: x.dek, meta: formatDate(x.date, lang) }))} />
     </section>
   )}
 
   <section class="wrap part principles" aria-labelledby="how-h">
-    <h2 id="how-h">Cómo cubrimos estas elecciones</h2>
-    <ul class="prose">{PRINCIPLES.map((t) => <li>{t}</li>)}</ul>
+    <h2 id="how-h">{copy.howH}</h2>
+    <ul class="prose">{copy.principles.map((t) => <li>{t}</li>)}</ul>
     <p class="prose">
-      España en datos es un proyecto independiente. No trabaja para ningún partido ni empresa demoscópica.
-      {" "}<a href={paths.method.es}>Metodología completa</a>.
+      {copy.independent}
+      {" "}<a href={paths.method[lang]}>{copy.method}</a>.
     </p>
     {theme.sources && (
-      <p class="src">Fuentes del texto: {theme.sources.map((s, i) => <>{i > 0 && ", "}<a href={s.url} rel="noopener">{s.name}</a></>)}.</p>
+      <p class="src">{copy.sources}: {theme.sources.map((s, i) => <>{i > 0 && ", "}<a href={localizeHref(s.url, lang)} rel="noopener">{sourceName(s, lang)}</a></>)}.</p>
     )}
   </section>
 
@@ -93,9 +143,9 @@ const PRINCIPLES = [
     const el = document.querySelector<HTMLElement>("[data-countdown]");
     if (el) {
       const days = Math.ceil((+new Date("2026-11-29T09:00:00+01:00") - Date.now()) / 864e5);
-      if (days > 1) el.textContent = `Faltan ${days} días.`;
-      else if (days === 1) el.textContent = "Mañana se vota.";
-      else if (days === 0) el.textContent = "Hoy se vota.";
+      if (days > 1) el.textContent = el.dataset.days!.replace("{n}", String(days));
+      else if (days === 1) el.textContent = el.dataset.tomorrow!;
+      else if (days === 0) el.textContent = el.dataset.today!;
       el.hidden = days < 0;
     }
   </script>

@@ -12,6 +12,7 @@ Procedimiento para preparar y publicar una **nota** o un **artículo** del [cale
 4. Nunca regeneres datos ajenos a tu pieza: ejecuta el pipeline siempre con `--only`. Solo usa `--refresh` en el paso 2 (encuestas).
 5. No cambies la configuración de Vercel ni el dominio. No borres archivos ajenos a tu pieza.
 6. Español de España. **Nunca uses la raya (—)**: usa punto, coma o dos puntos. Coma decimal y espacio antes de %: "12,5 %". Títulos en frase normal que afirman el hallazgo.
+7. **La web es bilingüe: cada pieza se publica a la vez en español y en inglés** (español en la raíz, `/vivienda/`; inglés bajo `/en/`, `/en/housing/`). Primero se escribe y se verifica el español; el inglés es su traducción fiel: mismas cifras, mismos matices y mismas cautelas, sin añadir ni quitar nada. Inglés británico, punto decimal y % pegado ("12.5%"), nombres de comunidades como en `CCAA_EN` (`pipeline/lib/geo.py`), siglas de partidos sin traducir, y una aclaración breve la primera vez que sale una institución española ("INE, Spain's statistics office"; "AIReF, Spain's independent fiscal authority"). Tampoco en inglés se usa la raya. Si falta un texto en inglés, el pipeline o el build fallan: no lo esquives, tradúcelo.
 
 ## 1. Preparar el repositorio
 
@@ -66,7 +67,7 @@ Antes de abrir ninguna fuente, escribe en `editorial/registro/<id>.md` un **guio
 - Empieza por el guion y la `idea` del calendario, pero compruébala: que la fuente existe, qué dimensiones tiene y cuál es el último periodo completo.
 - Lectores en `pipeline/lib/sources.py`: `ine_table` (API del INE: busca tablas con `https://servicios.ine.es/wstempus/js/ES/TABLAS_OPERACION/<id>`), `eurostat`, `oecd`, `worldbank`, `socrata_cat` (datos abiertos de Cataluña), `wikipedia`. Resultados electorales: `pipeline/datasets/elecciones.py` (Infoelectoral, ficheros MUNI; necesita la cabecera de navegador de `lib/http.py`). Gobiernos autonómicos: `datasets/gobiernos.py`. Escaños 2026: `datasets/escanos.py`. Votaciones del Congreso (XV legislatura, voto de cada partido en cada votación nominal): `datasets/congreso.py`, con la sección `/congreso/` (`charts/congreso.py`) y su explorador de todas las legislaturas desde 2011 (`build_explorer`, `data/base/congreso-explorador.json`).
 - Geografía (`pipeline/lib/geo.py`): comunidades con código INE (`"01"`... `"19"`) y `"ES"` para el total; provincias `"01"`... `"52"`; países en ISO3 (`"ESP"`, `"DEU"`) y `"EU27"`. `geo.ccaa_table()` y `geo.country_table()` dan los nombres para el JSON.
-- Utilidades comunes en `pipeline/charts/common.py`: `ine_ccaa` (nombre del INE a código), `annual` (media anual con años completos), `pct`, `es_num`.
+- Utilidades comunes en `pipeline/charts/common.py`: `ine_ccaa` (nombre del INE a código), `annual` (media anual con años completos), `pct`, `es_num`, `bi(es, en)` (texto en los dos idiomas), `dec(v, lang)` y `ordinal_en`. En `charts/legislatura.py`: `es1`/`en1` (un decimal con coma o con punto), `nm(code)` (nombre de una comunidad en inglés) y `_qlabel`/`_qlabel_en` (trimestres). En `lib/geo.py`: `ccaa_name(code, lang)` y `country_name(code, lang)`.
 
 ## 5. Escribir los gráficos (pipeline)
 
@@ -76,6 +77,8 @@ Ejemplo completo: `pipeline/charts/vivienda.py` (artículo con seis gráficos, i
 - **Nota:** un archivo `pipeline/charts/notas/<id>_<palabra>.py` con `BUILDERS` (se registra solo). Uno o dos gráficos.
 - Identificador de cada gráfico: `<código del tema en minúsculas><e|d|t><n>-<palabras>` (por ejemplo `vid2-cataluna-rentas`); en notas, `<id>-<palabras>` (por ejemplo `n02-salario-real`).
 - Cada gráfico: título (el hallazgo), subtítulo (qué se mide, unidad, periodo), unidad, fuente con licencia, notas metodológicas (qué mide, qué falta, qué no se puede comparar) y filas. Para titulares con datos trimestrales, usa medias de cuatro trimestres, no un trimestre suelto.
+- **Todo texto va en los dos idiomas:** `title=bi("...", "...")`, igual `subtitle` y `unit`; `notes={"es": [...], "en": [...]}` con el mismo número de notas; las etiquetas de `dimensions`, `events`, `ref_line` y `short_labels`, con `bi(...)`. `chart()` se niega a generar un gráfico al que le falte el inglés. Los números del inglés salen de las mismas variables que los del español, nunca escritos a mano. Modelo: `pipeline/charts/vivienda.py`.
+- Los nombres de las fuentes (`source`) se escriben en español; la web traduce los conocidos con `web/src/lib/sources-en.ts`. Si usas una fuente o una licencia nueva, añade allí su traducción.
 - **Las notas son metodología, no texto.** No repitas en las notas lo que ya dice el título o el párrafo (posiciones en rankings, máximos que el texto ya cita). Una definición que se aplica a varios gráficos se explica una vez en el texto y, en las notas, en una frase corta.
 - Si un gráfico combina varias tablas de la misma operación, cita la fuente una vez con todas las tablas en `dataset` (no repitas el mismo `name` en `also`: la web lo mostraría varias veces).
 - Revisa las frases generadas con contadores: nada de «17 de las 17»; escribe «en todas las comunidades».
@@ -91,8 +94,9 @@ Abre los JSON y calcula todo lo que vas a escribir. Para cada número del texto,
 ## 7. Escribir la web
 
 - **Configuración de los gráficos:** `web/src/content/charts/<tema o id>.ts`. Renderizadores probados en este proyecto: `line` (series temporales; admite `series`, `seriesColors`, datos trimestrales con `quarterly`, fechas clave con `events`, etiquetas cortas con `short_labels`, línea de referencia con `ref_line`), `rank` (ranking de países de la UE o de comunidades; España se destaca sola), `spainmap` (mapa por provincia o municipio, preparado para resultados electorales), `govtimeline` y `polls` (solo del especial), `matrix` (matriz fila x columna: porcentajes con `matrixMode: "heat"` o votos a favor/en contra/abstención con `matrixMode: "votes"`). `stack`, `paired`, `dumbbell` y `map` vienen de Europa en datos y no se han probado aquí: si los usas, comprueba que se ven bien. Opciones en `web/src/lib/charts-config.ts`. Colores: usa tokens de `web/src/styles/global.css` (`--es` España, `--eu` UE, `--focus`, `--context`, y los de partido `--p-*` solo para partidos).
-- **Artículo:** `web/src/content/themes/<tema>.ts` (si ya existe como `status: "upcoming"`, sustitúyelo) con `code`, `slug`, `title`, `status: "published"`, `published` (fecha de hoy), `dek`, `lenses` (`europa`, `dentro`, `tiempo`: entradilla y cuerpo con párrafos `p("...")` y gráficos `{ fig, code: "E1" }`) y `sources` (fuentes de lo que no sale de los gráficos). Modelo: `web/src/content/themes/vivienda.ts`. Explica en la entradilla o el primer párrafo por qué el tema importa el 29N.
-- **Nota:** `web/src/content/notes/<id>.ts` con `id`, `code` (`N01`...), `slug`, `title`, `dek`, `published` (hoy), `lens`, `theme` (un tema publicado; las notas electorales van al tema `elecciones`) y `body`. Unas 250 palabras.
+- **Artículo:** `web/src/content/themes/<tema>.ts` (si ya existe como `status: "upcoming"`, sustitúyelo) con `code`, `slug`, `title`, `status: "published"`, `published` (fecha de hoy), `dek`, `lenses` (`europa`, `dentro`, `tiempo`: entradilla y cuerpo con párrafos `p("español", "English")` y gráficos `{ fig, code: "E1" }`) y `sources` (fuentes de lo que no sale de los gráficos). Modelo: `web/src/content/themes/vivienda.ts`. Explica en la entradilla o el primer párrafo por qué el tema importa el 29N.
+- **Los dos idiomas en cada texto:** todo lo que es `{ es: "..." }` lleva también `en`: `slug: { es: "vivienda", en: "housing" }` (el slug inglés, corto y en inglés, no puede coincidir con `themes`, `notes`, `lenses`, `methodology`, `congress` ni `general-election`), `title`, `dek`, entradillas, subtítulos, listas, pasos de las fichas y los `see`. En `sources`, `name` puede ser un texto (título original de una ley o un estudio) o `{ es, en }` si es una descripción nuestra. Los enlaces internos (`see`, fuentes) se escriben con la ruta en español (`/vivienda/`, `/notas/<slug>/`): la web los convierte a la ruta inglesa.
+- **Nota:** `web/src/content/notes/<id>.ts` con `id`, `code` (`N01`...), `slug`, `title`, `dek`, `published` (hoy), `lens`, `theme` (un tema publicado; las notas electorales van al tema `elecciones`) y `body`, todo en los dos idiomas como los artículos. Unas 250 palabras. Modelo: `web/src/content/notes/n02.ts`.
 - Las piezas aparecen solas en la portada, los índices, la metodología y en «Análisis de campaña» del especial.
 - **El texto añade lo que el gráfico no enseña:** contexto, comparación, causas posibles con su evidencia, límites. No parafrasees el título del gráfico que viene después. La entradilla (`dek`) cuenta la idea principal del artículo, no la suma de los titulares de los gráficos.
 - **Corregir una pieza publicada:** mantén `slug` y `published`, añade `updated` con la fecha y anota los cambios al final de `editorial/registro/<id>.md`.
@@ -109,7 +113,7 @@ Abre los JSON y calcula todo lo que vas a escribir. Para cada número del texto,
 cd web && npm run build && npm run check
 ```
 
-`npm run check` dibuja todos los gráficos en un navegador sin interfaz y prueba el simulador. Tiene que terminar sin errores. `git status` solo debe mostrar archivos de tu pieza, los datos de encuestas del paso 2 y el calendario. Si falta el navegador de Playwright, instálalo con `npx playwright install chromium-headless-shell` (desde `web/`).
+`npm run check` dibuja todos los gráficos en un navegador sin interfaz y prueba el simulador. Tiene que terminar sin errores. Lee también la versión inglesa de tu pieza en `web/dist/en/` (o con `npm run preview`): que no quede texto en español, que las cifras coincidan con las del español y que los enlaces apunten a páginas `/en/`. `git status` solo debe mostrar archivos de tu pieza, los datos de encuestas del paso 2 y el calendario. Si falta el navegador de Playwright, instálalo con `npx playwright install chromium-headless-shell` (desde `web/`).
 
 ## 8b. Autoevaluación (artículos)
 
@@ -122,6 +126,7 @@ Antes de publicar, rellena al final de `editorial/registro/<id>.md` esta lista y
 - [ ] Párrafo de «lo que no dicen estos datos».
 - [ ] Las notas no repiten el texto.
 - [ ] Un lector que sigue la prensa aprende al menos tres cosas que no sabía.
+- [ ] La versión inglesa dice lo mismo que la española, con las mismas cifras y cautelas.
 
 Si alguna casilla queda sin marcar y no se puede resolver en esta ejecución, **no publiques el artículo**: publica solo la actualización de encuestas, deja la pieza en una rama `borrador/<id>` y explica en el resumen qué falta.
 
@@ -142,7 +147,8 @@ Comprueba que `vercel build` termina sin error **antes** de desplegar: si falla,
 ## 10. Comprobar la web real
 
 - `curl -s -o /dev/null -w "%{http_code}" https://espanaendatos.bocal.online/<slug>/` (artículo) o `/notas/<slug>/` (nota) debe dar 200, y también `/data/charts/<id de un gráfico>.json`.
-- `https://espanaendatos.bocal.online/elecciones-29n/` debe dar 200.
+- La versión inglesa también debe dar 200: `/en/<slug inglés>/` (artículo) o `/en/notes/<slug inglés>/` (nota).
+- `https://espanaendatos.bocal.online/elecciones-29n/` y `https://espanaendatos.bocal.online/en/general-election/` deben dar 200.
 
 ## 11. Terminar
 

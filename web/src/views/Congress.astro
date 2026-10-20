@@ -3,61 +3,96 @@
 import Base from "../layouts/Base.astro";
 import Blocks from "../components/Blocks.astro";
 import CongressExplorer from "../components/CongressExplorer.astro";
-import { notesOf, themeById } from "../lib/themes";
+import { localizeHref, notesOf, themeById } from "../lib/themes";
 import LinkList from "../components/LinkList.astro";
 import { loadBase } from "../lib/data";
-import { formatDate, notePath, paths } from "../lib/i18n";
+import { formatDate, formatNumber, notePath, paths, type Lang } from "../lib/i18n";
+import { sourceName } from "../lib/content-types";
 import "../styles/charts.css";
 
+interface Props { lang: Lang }
+const { lang } = Astro.props;
 const theme = themeById("congreso")!;
 const body = theme.lenses!.tiempo;
 const base = loadBase("congreso-xv");
 const analyses = notesOf("congreso");
 const first = base.rows[0].date;
 const last = base.rows[base.rows.length - 1].date;
+const copy = {
+  es: {
+    kicker: "XV legislatura",
+    stats: ["votaciones nominales en el Pleno", "decretos-ley del Gobierno derogados", "de votaciones en las que PP y PSOE votaron lo mismo"],
+    period: (a: string, b: string) => `Votaciones del ${a} al ${b}. Las del 1 y 2 de octubre de 2026 aún no están en los datos abiertos.`,
+    analysis: "Análisis",
+    howH: "Cómo está hecho",
+    how: [
+      "Usamos todas las votaciones nominales del Pleno publicadas por el Congreso. No incluimos las que se aprueban por asentimiento.",
+      "El voto de un partido es la opción que eligió la mayoría de sus diputados presentes. El Grupo Mixto se separa por partido.",
+      "El resultado de cada votación se calcula por mayoría simple. Los empates que se repitieron fuera de los datos abiertos se corrigen con fuentes oficiales.",
+    ],
+    download: "Los datos se pueden descargar desde cada gráfico.",
+    method: "Metodología completa",
+    sources: "Fuentes",
+    back: "Volver al especial de las elecciones del 29N",
+  },
+  en: {
+    kicker: "15th parliament",
+    stats: ["roll-call votes in the plenary", "government decree-laws struck down", "of votes in which PP and PSOE voted the same way"],
+    period: (a: string, b: string) => `Votes from ${a} to ${b}. Those of 1 and 2 October 2026 are not yet in the open data.`,
+    analysis: "Analysis",
+    howH: "How it is made",
+    how: [
+      "We use every roll-call vote in the plenary published by Congress. Motions passed by unanimous assent are not included.",
+      "A party's vote is the option chosen by the majority of its deputies present. The Mixed Group is split by party.",
+      "The outcome of each vote is calculated by simple majority. Ties that were repeated outside the open data are corrected with official sources.",
+    ],
+    download: "The data can be downloaded from each chart.",
+    method: "Full methodology",
+    sources: "Sources",
+    back: "Back to the 29 November election special",
+  },
+}[lang];
 const STATS = [
-  { value: base.rows.length.toLocaleString("es-ES"), label: "votaciones nominales en el Pleno" },
-  { value: "13", label: "decretos-ley del Gobierno derogados" },
-  { value: "39 %", label: "de votaciones en las que PP y PSOE votaron lo mismo" },
+  { value: formatNumber(base.rows.length, lang, 0), label: copy.stats[0] },
+  { value: "13", label: copy.stats[1] },
+  { value: lang === "es" ? "39 %" : "39%", label: copy.stats[2] },
 ];
 ---
-<Base lang="es" path={paths.congress} section="congress" title={theme.title.es} description={theme.dek!.es}>
+<Base lang={lang} path={paths.congress} section="congress" title={theme.title[lang]} description={theme.dek![lang]}>
   <header class="hero">
     <div class="wrap">
-      <p class="kicker">XV legislatura</p>
-      <h1>{theme.title.es}</h1>
-      <p class="dek">{theme.dek!.es}</p>
+      <p class="kicker">{copy.kicker}</p>
+      <h1>{theme.title[lang]}</h1>
+      <p class="dek">{theme.dek![lang]}</p>
       <ul class="stats">
         {STATS.map((s) => <li><strong>{s.value}</strong><span>{s.label}</span></li>)}
       </ul>
-      <p class="period">Votaciones del {formatDate(first)} al {formatDate(last)}. Las del 1 y 2 de octubre de 2026 aún no están en los datos abiertos.</p>
+      <p class="period">{copy.period(formatDate(first, lang), formatDate(last, lang))}</p>
     </div>
   </header>
 
   {analyses.length > 0 && (
     <section class="wrap part">
-      <LinkList items={analyses.map((n) => ({ href: notePath(n.slug).es, title: n.title.es, dek: n.dek.es, meta: `Análisis. ${formatDate(n.published)}.` }))} />
+      <LinkList items={analyses.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], meta: `${copy.analysis}. ${formatDate(n.published, lang)}.` }))} />
     </section>
   )}
 
   <section class="wrap part">
-    <p class="lede">{body.lede.es}</p>
-    <Blocks lang="es" blocks={body.body} codePrefix={theme.code} />
-    <CongressExplorer />
+    <p class="lede">{body.lede[lang]}</p>
+    <Blocks lang={lang} blocks={body.body} codePrefix={theme.code} />
+    <CongressExplorer lang={lang} />
   </section>
 
   <section class="wrap part principles">
-    <h2>Cómo está hecho</h2>
+    <h2>{copy.howH}</h2>
     <ul class="prose">
-      <li>Usamos todas las votaciones nominales del Pleno publicadas por el Congreso. No incluimos las que se aprueban por asentimiento.</li>
-      <li>El voto de un partido es la opción que eligió la mayoría de sus diputados presentes. El Grupo Mixto se separa por partido.</li>
-      <li>El resultado de cada votación se calcula por mayoría simple. Los empates que se repitieron fuera de los datos abiertos se corrigen con fuentes oficiales.</li>
-      <li>Los datos se pueden descargar desde cada gráfico. <a href={paths.method.es}>Metodología completa</a>.</li>
+      {copy.how.map((i) => <li>{i}</li>)}
+      <li>{copy.download} <a href={paths.method[lang]}>{copy.method}</a>.</li>
     </ul>
     {theme.sources && (
-      <p class="src">Fuentes: {theme.sources.map((s, i) => <>{i > 0 && ", "}<a href={s.url} rel="noopener">{s.name}</a></>)}.</p>
+      <p class="src">{copy.sources}: {theme.sources.map((s, i) => <>{i > 0 && ", "}<a href={localizeHref(s.url, lang)} rel="noopener">{sourceName(s, lang)}</a></>)}.</p>
     )}
-    <p class="prose"><a href={paths.elections.es}>Volver al especial de las elecciones del 29N</a></p>
+    <p class="prose"><a href={paths.elections[lang]}>{copy.back}</a></p>
   </section>
 
   <script>

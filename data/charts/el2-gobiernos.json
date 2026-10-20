@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "elecciones",
  "title": {
-  "es": "El PP gobierna hoy 11 de las 17 comunidades autónomas"
+  "es": "El PP gobierna hoy 11 de las 17 comunidades autónomas",
+  "en": "The PP now governs 11 of the 17 regions"
  },
  "subtitle": {
-  "es": "Partido del presidente o presidenta de cada comunidad desde 1980"
+  "es": "Partido del presidente o presidenta de cada comunidad desde 1980",
+  "en": "Party of each region's president since 1980"
  },
  "unit": {
-  "es": "Partido"
+  "es": "Partido",
+  "en": "Party"
  },
  "source": {
   "name": "Wikipedia, Anexo:Presidencias autonómicas españolas",
@@ -29,72 +32,98 @@
    "El PSC cuenta como PSOE y Alianza Popular como PP. Al pasar por encima se ve la sigla original.",
    "Los tramos más claros son presidencias en funciones, que se incluyen para que no haya huecos.",
    "Cataluña, de octubre de 2017 a mayo de 2018: gobierno intervenido por el Estado (artículo 155)."
+  ],
+  "en": [
+   "The colour is the president's party; it does not show coalition partners.",
+   "The PSC counts as PSOE and Alianza Popular as PP. Hovering shows the original party.",
+   "Lighter stretches are acting presidencies, included so that there are no gaps.",
+   "Catalonia, October 2017 to May 2018: self-government suspended by the State (article 155 of the Constitution)."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
-   "es": "Andalucía"
+   "es": "Andalucía",
+   "en": "Andalusia"
   },
   "02": {
-   "es": "Aragón"
+   "es": "Aragón",
+   "en": "Aragon"
   },
   "03": {
-   "es": "Asturias"
+   "es": "Asturias",
+   "en": "Asturias"
   },
   "04": {
-   "es": "Baleares"
+   "es": "Baleares",
+   "en": "Balearic Islands"
   },
   "05": {
-   "es": "Canarias"
+   "es": "Canarias",
+   "en": "Canary Islands"
   },
   "06": {
-   "es": "Cantabria"
+   "es": "Cantabria",
+   "en": "Cantabria"
   },
   "07": {
-   "es": "Castilla y León"
+   "es": "Castilla y León",
+   "en": "Castile and León"
   },
   "08": {
-   "es": "Castilla-La Mancha"
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha"
   },
   "09": {
-   "es": "Cataluña"
+   "es": "Cataluña",
+   "en": "Catalonia"
   },
   "10": {
-   "es": "Comunidad Valenciana"
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community"
   },
   "11": {
-   "es": "Extremadura"
+   "es": "Extremadura",
+   "en": "Extremadura"
   },
   "12": {
-   "es": "Galicia"
+   "es": "Galicia",
+   "en": "Galicia"
   },
   "13": {
-   "es": "Madrid"
+   "es": "Madrid",
+   "en": "Madrid"
   },
   "14": {
-   "es": "Murcia"
+   "es": "Murcia",
+   "en": "Murcia"
   },
   "15": {
-   "es": "Navarra"
+   "es": "Navarra",
+   "en": "Navarre"
   },
   "16": {
-   "es": "País Vasco"
+   "es": "País Vasco",
+   "en": "Basque Country"
   },
   "17": {
-   "es": "La Rioja"
+   "es": "La Rioja",
+   "en": "La Rioja"
   },
   "18": {
-   "es": "Ceuta"
+   "es": "Ceuta",
+   "en": "Ceuta"
   },
   "19": {
-   "es": "Melilla"
+   "es": "Melilla",
+   "en": "Melilla"
   },
   "ES": {
-   "es": "Gobierno de España"
+   "es": "Gobierno de España",
+   "en": "Government of Spain"
   }
  },
- "today": "2026-10-19",
+ "today": "2026-10-20",
  "rows": [
   {
    "ccaa": "01",

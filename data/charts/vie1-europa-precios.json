@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "vivienda",
  "title": {
-  "es": "La vivienda ha subido un 81 % en España desde 2015, frente al 62 % de la UE"
+  "es": "La vivienda ha subido un 81 % en España desde 2015, frente al 62 % de la UE",
+  "en": "House prices have risen 81% in Spain since 2015, against 62% in the EU"
  },
  "subtitle": {
-  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %. España es el 14.º de 26 países"
+  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %. España es el 14.º de 26 países",
+  "en": "Rise in house prices between 2015 and 2025, in %. Spain ranks 14th of 26 countries"
  },
  "unit": {
-  "es": "% de subida"
+  "es": "% de subida",
+  "en": "% rise"
  },
  "source": {
   "name": "Eurostat",
@@ -21,142 +24,173 @@
   "es": [
    "Índice de precios de la vivienda de Eurostat: compraventas de vivienda nueva y usada. Precios nominales.",
    "Para España, Eurostat usa el índice del INE."
+  ],
+  "en": [
+   "Eurostat house price index: sales of new and existing homes. Nominal prices.",
+   "For Spain, Eurostat uses the INE index."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

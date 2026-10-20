@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-export type Bi = { es: string };
+export type Bi = { es: string; en: string };
 
 export interface ChartData {
   id: string;
@@ -12,7 +12,7 @@ export interface ChartData {
   subtitle: Bi;
   unit: Bi;
   source: { name: string; dataset: string; url: string; license: string; also?: { name: string; url: string }[] };
-  notes: string[] | { es: string[] };
+  notes: { es: string[]; en: string[] };
   retrieved: string;
   geos: Record<string, Bi & { eu?: boolean; aggregate?: boolean }>;
   dimensions?: Record<string, Record<string, Bi>>;

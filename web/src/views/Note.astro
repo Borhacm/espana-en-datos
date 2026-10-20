@@ -4,8 +4,9 @@ import Base from "../layouts/Base.astro";
 import Blocks from "../components/Blocks.astro";
 import FocusSelect from "../components/FocusSelect.astro";
 import LinkList from "../components/LinkList.astro";
-import { NOTES, lensById, themeById, type Note } from "../lib/themes";
+import { NOTES, lensById, localizeHref, themeById, type Bi, type Note } from "../lib/themes";
 import { formatDate, lensPath, notePath, paths, themePath, type Lang } from "../lib/i18n";
+import { sourceName } from "../lib/content-types";
 import "../styles/charts.css";
 
 interface Props { lang: Lang; note: Note }
@@ -22,7 +23,7 @@ const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
 const isAnalysis = note.kind === "analisis";
 const label = isAnalysis ? (lang === "es" ? "Análisis" : "Analysis") : copy.note;
 // Índice de un análisis: sus subtítulos
-const toc = note.body.filter((b): b is { h: { es: string; en: string }; id: string } => "h" in b);
+const toc = note.body.filter((b): b is { h: Bi; id: string } => "h" in b);
 ---
 <Base lang={lang} path={notePath(note.slug)} section="notes" title={note.title[lang]} description={note.dek[lang]}>
   <article class="wrap note">
@@ -51,7 +52,7 @@ const toc = note.body.filter((b): b is { h: { es: string; en: string }; id: stri
     {note.sources && note.sources.length > 0 && (
       <section class="sources" aria-label={copy.sources}>
         <h2>{copy.sources}</h2>
-        <ul>{note.sources.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a></li>)}</ul>
+        <ul>{note.sources.map((s) => <li><a href={localizeHref(s.url, lang)} rel="noopener">{sourceName(s, lang)}</a></li>)}</ul>
       </section>
     )}
 

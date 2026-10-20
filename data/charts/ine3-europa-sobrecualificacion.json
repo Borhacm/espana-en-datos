@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "inmigracion",
  "title": {
-  "es": "El 46,4 % de los extranjeros con estudios superiores que trabajan en España lo hace en un empleo que no los requiere: el 6.º porcentaje más alto de 20"
+  "es": "El 46,4 % de los extranjeros con estudios superiores que trabajan en España lo hace en un empleo que no los requiere: el 6.º porcentaje más alto de 20",
+  "en": "46.4% of foreign nationals with higher education working in Spain hold a job that does not require it: the 6th highest share of 20"
  },
  "subtitle": {
-  "es": "Tasa de sobrecualificación de los ocupados de 20 a 64 años con nacionalidad extranjera, 2025, en %. Españoles: 32,7 %. UE: 36,9 % de los extranjeros y 20,0 % de los nacionales"
+  "es": "Tasa de sobrecualificación de los ocupados de 20 a 64 años con nacionalidad extranjera, 2025, en %. Españoles: 32,7 %. UE: 36,9 % de los extranjeros y 20,0 % de los nacionales",
+  "en": "Over-qualification rate of employed foreign nationals aged 20 to 64, 2025, in %. Spaniards: 32.7%. EU: 36.9% of foreign nationals and 20.0% of nationals"
  },
  "unit": {
-  "es": "% de los ocupados con estudios superiores"
+  "es": "% de los ocupados con estudios superiores",
+  "en": "% of employed people with higher education"
  },
  "source": {
   "name": "Eurostat, Encuesta de Población Activa de la UE",
@@ -24,112 +27,140 @@
    "«national» en la descarga: tasa de los nacionales del país. Por esa tasa, España es el 1.º de 20.",
    "Dato poco fiable por tamaño de muestra en 2025: Eslovenia, Hungría.",
    "Sin dato de 2025: Bulgaria, Croacia, Dinamarca, Eslovaquia, Malta, Rumanía."
+  ],
+  "en": [
+   "Employed people with higher education (ISCED 5 to 8) working in occupations that do not require it (groups 4 to 9 of the international classification of occupations), as % of all employed people with higher education.",
+   "This Eurostat table classifies by nationality, not by place of birth.",
+   "«national» in the download: rate for the country's own nationals. On that rate, Spain ranks 1st of 20.",
+   "Unreliable figure because of sample size in 2025: Hungary, Slovenia.",
+   "No 2025 data: Bulgaria, Croatia, Denmark, Malta, Romania, Slovakia."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

@@ -44,14 +44,14 @@ const modules = import.meta.glob<{ default: Record<string, ChartConfig> }>("../c
 export const CHARTS: Record<string, ChartConfig> = Object.assign({}, ...Object.values(modules).map((m) => m.default));
 
 /** Etiquetas de los controles que no vienen en el JSON */
-export const EXTRA_DIMENSIONS: Record<string, Record<string, { es: string }>> = {
+export const EXTRA_DIMENSIONS: Record<string, Record<string, { es: string; en: string }>> = {
   range: {
-    all: { es: "Desde 2023" },
-    year: { es: "Último año" },
-    quarter: { es: "Últimos tres meses" },
+    all: { es: "Desde 2023", en: "Since 2023" },
+    year: { es: "Último año", en: "Last year" },
+    quarter: { es: "Últimos tres meses", en: "Last three months" },
   },
   level: {
-    provincia: { es: "Provincias" },
-    municipio: { es: "Municipios" },
+    provincia: { es: "Provincias", en: "Provinces" },
+    municipio: { es: "Municipios", en: "Municipalities" },
   },
 };

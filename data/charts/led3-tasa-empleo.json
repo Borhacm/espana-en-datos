@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "legislatura",
  "title": {
-  "es": "Trabaja una proporción mayor de la población de 25 a 54 años en 15 de las 17 comunidades: en España, el 80,0 %, 2,0 puntos más que en 2023"
+  "es": "Trabaja una proporción mayor de la población de 25 a 54 años en 15 de las 17 comunidades: en España, el 80,0 %, 2,0 puntos más que en 2023",
+  "en": "A larger share of people aged 25 to 54 are in work in 15 of the 17 regions: in Spain, 80.0%, 2.0 points more than in 2023"
  },
  "subtitle": {
-  "es": "Tasa de empleo de 25 a 54 años, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %"
+  "es": "Tasa de empleo de 25 a 54 años, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en %",
+  "en": "Employment rate aged 25 to 54, average of the four quarters from Q3 2025 to Q2 2026, in %"
  },
  "unit": {
-  "es": "% de la población de 25 a 54 años"
+  "es": "% de la población de 25 a 54 años",
+  "en": "% of the population aged 25 to 54"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -24,107 +27,134 @@
    "Número de ocupados de todas las edades en España: 21,2 millones de media en 2023 y 22,5 en el último año (6,1 %).",
    "Extremos (sin Ceuta ni Melilla): Madrid, 84,9 %; Andalucía, 75,0 %. Mayor subida: Asturias (5,8 puntos).",
    "La EPA es una encuesta: en las comunidades menos pobladas el error de muestreo es mayor y las diferencias pequeñas entre ellas no son significativas. Ceuta y Melilla tienen muestras muy pequeñas."
+  ],
+  "en": [
+   "Employed people aged 25 to 54 as % of the population of that age (EPA). Unlike the number of people in work, it does not rise just because the population grows, and by leaving out the young and the old it does not depend on ageing either.",
+   "«prev» in the download: 2023 average; «change»: difference in points.",
+   "Number of people in work of all ages in Spain: 21.2 million on average in 2023 and 22.5 in the last year (6.1%).",
+   "Extremes (excluding Ceuta and Melilla): Madrid, 84.9%; Andalusia, 75.0%. Largest rise: Asturias (5.8 points).",
+   "The EPA is a survey: in the less populated regions the sampling error is larger and small differences between them are not significant. Ceuta and Melilla have very small samples."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

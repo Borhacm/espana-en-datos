@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import Mark from "../components/Mark.astro";
 import Consent from "../components/Consent.astro";
-import { ui, paths, type Lang, type Bi, type Section } from "../lib/i18n";
+import { ui, paths, LANGS, type Lang, type Bi, type Section } from "../lib/i18n";
 
 interface Props {
   lang: Lang;
@@ -19,6 +19,7 @@ const fullTitle = title ? `${title} | ${t.siteName}` : t.siteName;
 const desc = description ?? t.siteDescription;
 const site = Astro.site ?? new URL("https://espanaendatos.bocal.online");
 const canonical = new URL(path[lang], site);
+const other: Lang = lang === "es" ? "en" : "es";
 ---
 <!doctype html>
 <html lang={lang}>
@@ -28,6 +29,8 @@ const canonical = new URL(path[lang], site);
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
     <link rel="canonical" href={canonical} />
+    {LANGS.map((l) => <link rel="alternate" hreflang={l} href={new URL(path[l], site)} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(path.es, site)} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#151826" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#12141f" media="(prefers-color-scheme: dark)" />
@@ -35,7 +38,8 @@ const canonical = new URL(path[lang], site);
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale" content={lang === "es" ? "es_ES" : "en_GB"} />
+    <meta property="og:locale:alternate" content={lang === "es" ? "en_GB" : "es_ES"} />
     <meta name="twitter:card" content="summary" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,13 +56,14 @@ const canonical = new URL(path[lang], site);
           <Mark size={30} class="brand-mark" />
           <span>{t.siteName}</span>
         </a>
-        <nav aria-label="Principal">
+        <nav aria-label={t.navLabel}>
           <a class="hot" href={paths.elections[lang]} aria-current={section === "elections" ? "page" : undefined}>{t.navElections}</a>
           <a class="secondary" href={paths.congress[lang]} aria-current={section === "congress" ? "page" : undefined}>{t.navCongress}</a>
           <a href={paths.themes[lang]} aria-current={section === "themes" ? "page" : undefined}>{t.navThemes}</a>
-          <a href={paths.notes[lang]} aria-current={section === "notes" ? "page" : undefined}>{t.navNotes}</a>
+          <a class="tertiary" href={paths.notes[lang]} aria-current={section === "notes" ? "page" : undefined}>{t.navNotes}</a>
           <a class="secondary" href={paths.lenses[lang]} aria-current={section === "lenses" ? "page" : undefined}>{t.navLenses}</a>
           <a class="secondary" href={paths.method[lang]} aria-current={section === "method" ? "page" : undefined}>{t.navMethod}</a>
+          <a class="lang" href={path[other]} hreflang={other} lang={other} aria-label={t.otherLangLabel}>{other.toUpperCase()}</a>
         </nav>
       </div>
     </header>
@@ -76,7 +81,8 @@ const canonical = new URL(path[lang], site);
         <p>{t.footerIndependent}</p>
         <p>{t.footerData} <a href={paths.method[lang]}>{t.navMethod}</a>.</p>
         <p><a href="https://bocal.online">bocal.online</a></p>
-        <p><button type="button" class="linklike" data-open-consent>Preferencias de cookies</button></p>
+        <p><a href={path[other]} hreflang={other} lang={other}>{t.otherLang}</a></p>
+        <p><button type="button" class="linklike" data-open-consent>{t.cookies}</button></p>
       </div>
     </footer>
     <Consent lang={lang} />
@@ -150,11 +156,17 @@ const canonical = new URL(path[lang], site);
   nav a:hover { color: var(--h-ink); }
   nav a[aria-current="page"] { color: var(--h-ink); border-bottom-color: #8b7ef0; }
   nav .hot { color: var(--h-ink); font-weight: 600; }
+  nav .lang { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; border: 1px solid #3a3f55; border-radius: 4px; padding: 0.2rem 0.45rem; }
+  nav .lang:hover { border-color: var(--h-ink-2); }
   nav .hot::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #8b7ef0; margin-right: 0.45rem; vertical-align: 0.12em; }
 
   @media (max-width: 560px) {
     .brand span { font-size: 1.2rem; }
     nav .secondary { display: none; }
+  }
+  /* Con el selector de idioma no caben cuatro enlaces en los móviles más estrechos: las notas se enlazan desde la portada */
+  @media (max-width: 420px) {
+    nav .tertiary { display: none; }
   }
 
   .site-footer {

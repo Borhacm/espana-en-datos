@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "inmigracion",
  "title": {
-  "es": "El 19,3 % de los residentes en España nació en otro país, frente al 14,4 % de la UE: el 9.º porcentaje más alto de 26"
+  "es": "El 19,3 % de los residentes en España nació en otro país, frente al 14,4 % de la UE: el 9.º porcentaje más alto de 26",
+  "en": "19.3% of Spain's residents were born in another country, against 14.4% in the EU: the 9th highest share of 26"
  },
  "subtitle": {
-  "es": "Población nacida en el extranjero, 1 de enero de 2025, en % de la población. En 2015, España tenía el 12,7 % y la UE, el 10,0 %"
+  "es": "Población nacida en el extranjero, 1 de enero de 2025, en % de la población. En 2015, España tenía el 12,7 % y la UE, el 10,0 %",
+  "en": "Foreign-born population, 1 January 2025, as % of the population. In 2015, Spain's share was 12.7% and the EU's 10.0%"
  },
  "unit": {
-  "es": "% de la población"
+  "es": "% de la población",
+  "en": "% of the population"
  },
  "source": {
   "name": "Eurostat",
@@ -22,142 +25,174 @@
    "Incluye a quienes han obtenido la nacionalidad del país donde viven y a los nacidos en otro país de la UE.",
    "«prev» en la descarga: dato de 2015.",
    "Sin dato de 2025: Portugal."
+  ],
+  "en": [
+   "Includes people who have acquired the nationality of the country where they live and those born in another EU country.",
+   "«prev» in the download: 2015 figure.",
+   "No 2025 data: Portugal."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

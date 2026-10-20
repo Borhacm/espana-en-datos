@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "congreso",
  "title": {
-  "es": "PP y PSOE votaron lo mismo en el 39 % de las votaciones de la legislatura"
+  "es": "PP y PSOE votaron lo mismo en el 39 % de las votaciones de la legislatura",
+  "en": "PP and PSOE voted the same way in 39% of the votes in this parliament"
  },
  "subtitle": {
-  "es": "Porcentaje de votaciones nominales del Pleno en que dos partidos votaron igual (2.173 votaciones, del 19 de septiembre de 2023 al 30 de septiembre de 2026)"
+  "es": "Porcentaje de votaciones nominales del Pleno en que dos partidos votaron igual (2.173 votaciones, del 19 de septiembre de 2023 al 30 de septiembre de 2026)",
+  "en": "Share of roll-call votes in the plenary in which two parties voted the same way (2,173 votes, from 19 September 2023 to 30 September 2026)"
  },
  "unit": {
-  "es": "% de votaciones con el mismo voto"
+  "es": "% de votaciones con el mismo voto",
+  "en": "% of votes with the same vote"
  },
  "source": {
   "name": "Congreso de los Diputados, datos abiertos de votaciones",
@@ -23,6 +26,12 @@
    "Cuentan las votaciones en las que los dos partidos votaron. Todas pesan igual: una moción pesa lo mismo que una ley.",
    "Podemos formó parte del grupo de Sumar hasta diciembre de 2023: hasta entonces cuenta como Sumar.",
    "BNG, CC, UPN y Podemos están en el Grupo Mixto: se separan por diputado."
+  ],
+  "en": [
+   "A party's vote: the option (yes, no or abstention) chosen by the majority of its deputies present.",
+   "Only votes in which both parties voted count. They all carry the same weight: a motion weighs the same as a law.",
+   "Podemos was part of the Sumar group until December 2023: until then it counts as Sumar.",
+   "BNG, CC, UPN and Podemos sit in the Mixed Group: they are split by deputy."
   ]
  },
  "retrieved": "2026-10-12",

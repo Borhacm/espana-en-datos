@@ -34,8 +34,8 @@ page.on("pageerror", (e) => errors.push(`${page.url()}: ${e.message}`));
 
 let total = 0;
 const failed = [];
-// La raíz solo redirige a /es/
-const paths = pages(DIST).filter((p) => p !== "/").sort();
+// Todas las páginas: español en la raíz e inglés bajo /en/
+const paths = pages(DIST).sort();
 for (const path of paths) {
   await page.goto(base + path, { waitUntil: "load" });
   const figs = await page.$$("figure[data-chart]");

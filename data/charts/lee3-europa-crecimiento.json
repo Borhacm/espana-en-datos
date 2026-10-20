@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "legislatura",
  "title": {
-  "es": "El PIB de España crece un 6,4 % entre 2023 y 2025, el 8.º de 27 países de la UE; por habitante, un 4,2 %, el 11.º"
+  "es": "El PIB de España crece un 6,4 % entre 2023 y 2025, el 8.º de 27 países de la UE; por habitante, un 4,2 %, el 11.º",
+  "en": "Spain's GDP grows 6.4% between 2023 and 2025, 8th of 27 EU countries; per person, 4.2%, 11th"
  },
  "subtitle": {
-  "es": "Crecimiento del PIB en volumen (descontada la inflación) entre 2023 y 2025, en %. Media de la UE: 2,8 % (2,2 % por habitante)"
+  "es": "Crecimiento del PIB en volumen (descontada la inflación) entre 2023 y 2025, en %. Media de la UE: 2,8 % (2,2 % por habitante)",
+  "en": "Real GDP growth (adjusted for inflation) between 2023 and 2025, in %. EU average: 2.8% (2.2% per person)"
  },
  "unit": {
-  "es": "% de crecimiento"
+  "es": "% de crecimiento",
+  "en": "% growth"
  },
  "source": {
   "name": "Eurostat, cuentas nacionales",
@@ -23,147 +26,181 @@
    "«per_capita» en la descarga: crecimiento del PIB por habitante en el mismo periodo. En España, el aumento de la población explica en torno al 34 % del crecimiento del PIB (en escala logarítmica).",
    "«population» en la descarga: crecimiento de la población implícita (PIB / PIB por habitante). España: 2,1 %, el 6.º de 27; UE: 0,5 %.",
    "Datos de 2025 provisionales en varios países, entre ellos España."
+  ],
+  "en": [
+   "GDP in chain-linked volumes (2010 euros): it measures how much more is produced, without the effect of prices.",
+   "«per_capita» in the download: growth of GDP per person over the same period. In Spain, population growth explains around 34% of GDP growth (on a logarithmic scale).",
+   "«population» in the download: growth of the implied population (GDP / GDP per person). Spain: 2.1%, 6th of 27; EU: 0.5%.",
+   "2025 data provisional in several countries, including Spain."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

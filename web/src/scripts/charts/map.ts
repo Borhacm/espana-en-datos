@@ -3,7 +3,7 @@ import { scaleLinear } from "d3-scale";
 import { interpolateLab } from "d3-interpolate";
 import { feature } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
-import { svg, cssVar, nf, geoName, tooltip, tipRow, niceTicks, type RenderContext } from "./core";
+import { svg, cssVar, nf, geoName, tooltip, tipRow, niceTicks, type RenderContext, pctSign } from "./core";
 
 type Feat = GeoJSON.Feature<GeoJSON.Geometry, { NUTS_ID: string; CNTR_CODE: string; NAME_LATN: string }>;
 
@@ -87,7 +87,7 @@ export async function renderMap(ctx: RenderContext) {
       const rect = plot.getBoundingClientRect();
       const region = r.level === 0 ? geoName(chart, r.country, lang) : `${r.name}`;
       const sub = r.level === 0 ? "" : `<div class="tip-note">${geoName(chart, r.country, lang)}</div>`;
-      tip.show(e.clientX - rect.left, e.clientY - rect.top, `<div class="tip-title">${region}</div>${sub}${tipRow(color(r.value), latest, `${fmt(r.value)} %`, true)}`);
+      tip.show(e.clientX - rect.left, e.clientY - rect.top, `<div class="tip-title">${region}</div>${sub}${tipRow(color(r.value), latest, `${fmt(r.value)}${pctSign(lang)}`, true)}`);
     });
     el.addEventListener("pointerleave", () => tip.hide());
   };

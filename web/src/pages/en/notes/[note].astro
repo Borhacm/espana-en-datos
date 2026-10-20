@@ -1,0 +1,10 @@
+---
+import View from "../../../views/Note.astro";
+import { NOTES } from "../../../lib/themes";
+
+export function getStaticPaths() {
+  return NOTES.map((note) => ({ params: { note: note.slug.en }, props: { note } }));
+}
+const { note } = Astro.props;
+---
+<View lang="en" note={note} />

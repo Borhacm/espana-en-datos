@@ -1,0 +1,10 @@
+---
+import View from "../../../views/Lens.astro";
+import { LENSES } from "../../../lib/themes";
+
+export function getStaticPaths() {
+  return LENSES.map((lens) => ({ params: { lens: lens.slug.en }, props: { lens } }));
+}
+const { lens } = Astro.props;
+---
+<View lang="en" lens={lens} />

@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "congreso",
  "title": {
-  "es": "Con quién ha votado cada Gobierno"
+  "es": "Con quién ha votado cada Gobierno",
+  "en": "Who each government has voted with"
  },
  "subtitle": {
-  "es": "Porcentaje de votaciones en que cada partido votó igual que el partido del Gobierno, por legislatura (sin Presupuestos)"
+  "es": "Porcentaje de votaciones en que cada partido votó igual que el partido del Gobierno, por legislatura (sin Presupuestos)",
+  "en": "Share of votes in which each party voted the same way as the governing party, by parliament (excluding budgets)"
  },
  "unit": {
-  "es": "% de votaciones"
+  "es": "% de votaciones",
+  "en": "% of votes"
  },
  "source": {
   "name": "Congreso de los Diputados, datos abiertos de votaciones",
@@ -22,6 +25,11 @@
    "Fila: legislatura y partido del presidente del Gobierno. Columna: el resto de partidos, incluido el principal de la oposición.",
    "Solo celdas con al menos 100 votaciones comparadas; los partidos que no estaban en el Congreso quedan vacíos.",
    "Grupo Mixto y Grupo Plural reúnen partidos distintos: su voto es el de la mayoría de sus miembros."
+  ],
+  "en": [
+   "Row: parliament and the prime minister's party. Column: the other parties, including the main opposition party.",
+   "Only cells with at least 100 votes compared; parties that were not in Congress are left empty.",
+   "Grupo Mixto (Mixed Group) and Grupo Plural bring together different parties: their vote is that of the majority of their members."
   ]
  },
  "retrieved": "2026-10-07",

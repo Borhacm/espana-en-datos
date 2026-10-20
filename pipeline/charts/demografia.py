@@ -12,8 +12,8 @@ from lib.output import THEMES, chart
 import math
 import re
 
-from .common import annual, ine_ccaa
-from .legislatura import CPI_TABLE, INE_CPI, _eu_rank, _place, es1
+from .common import annual, bi, ine_ccaa, ordinal_en
+from .legislatura import CPI_TABLE, INE_CPI, _eu_rank, _place, _qlabel_en, en1, es1, nm
 
 THEMES["demografia"] = {"code": "DE", "title": "Demografía y pensiones: un país que envejece"}
 
@@ -45,9 +45,19 @@ def es2(v: float) -> str:
     return f"{v:.2f}".replace(".", ",")
 
 
+def en2(v: float) -> str:
+    """Dos decimales con punto: 1.10."""
+    return f"{v:.2f}"
+
+
 def _ordinal(n: int, high: bool = True) -> str:
     word = "más alto" if high else "más bajo"
     return f"el {word}" if n == 1 else f"el {n}.º {word}"
+
+
+def _ordinal_en(n: int, high: bool = True) -> str:
+    word = "highest" if high else "lowest"
+    return f"the {word}" if n == 1 else f"the {ordinal_en(n)} {word}"
 
 
 def _dependencia() -> dict[str, dict[int, float]]:
@@ -87,24 +97,34 @@ def europa_pensiones():
     eu = next(r for r in out if r["geo"] == "EU27")
     place = _place(out, "ESP")
     n = len(out) - 1
-    provisional = sorted(geo.COUNTRIES[geo.from_eurostat(r["geo"])][1] if geo.from_eurostat(r["geo"]) != "EU27" else "la UE"
-                         for r in raw if r["time"] == last and "p" in r["flag"]
-                         and geo.from_eurostat(r["geo"]) in {o["geo"] for o in out})
+    prov_codes = [geo.from_eurostat(r["geo"]) for r in raw if r["time"] == last and "p" in r["flag"]
+                  and geo.from_eurostat(r["geo"]) in {o["geo"] for o in out}]
+    provisional = sorted(geo.COUNTRIES[c][1] if c != "EU27" else "la UE" for c in prov_codes)
+    provisional_en = sorted(geo.COUNTRIES[c][2] if c != "EU27" else "the EU" for c in prov_codes)
     return chart(
         id="dee2-europa-pensiones",
         lens="europa", theme="demografia",
-        title=f"España dedica a pensiones el {es1(es['value'])} % del PIB, frente al {es1(eu['value'])} % de la UE: "
-              f"{_ordinal(place)} de {n} países",
-        subtitle=f"Gasto en pensiones, {last}, en % del PIB. En {PREV}, España dedicaba el {es1(es['prev'])} % y la UE, el {es1(eu['prev'])} %",
-        unit="% del PIB",
+        title=bi(f"España dedica a pensiones el {es1(es['value'])} % del PIB, frente al {es1(eu['value'])} % de la UE: "
+                 f"{_ordinal(place)} de {n} países",
+                 f"Spain spends {en1(es['value'])}% of GDP on pensions, against {en1(eu['value'])}% in the EU: "
+                 f"{_ordinal_en(place)} of {n} countries"),
+        subtitle=bi(f"Gasto en pensiones, {last}, en % del PIB. En {PREV}, España dedicaba el {es1(es['prev'])} % y la UE, el {es1(eu['prev'])} %",
+                    f"Pension spending, {last}, as % of GDP. In {PREV}, Spain spent {en1(es['prev'])}% and the EU {en1(eu['prev'])}%"),
+        unit=bi("% del PIB", "% of GDP"),
         source={"name": "Eurostat, sistema europeo de estadísticas de protección social (SEEPROS)", "dataset": "spr_exp_pens",
                 "url": "https://ec.europa.eu/eurostat/databrowser/view/spr_exp_pens/default/table", "license": "CC BY 4.0"},
-        notes=["Pensiones de jubilación, de jubilación anticipada, de viudedad y orfandad, de incapacidad y parciales, públicas y privadas "
-               "obligatorias, con y sin cotización previa. Incluye las de clases pasivas de los funcionarios.",
-               "No es igual que el gasto del sistema de Seguridad Social que publica el Gobierno: la definición europea es más amplia "
-               "y sirve para comparar países.",
-               f"«prev» en la descarga: dato de {PREV}."]
-              + ([f"Datos provisionales de {last}: {', '.join(provisional)}."] if provisional else []),
+        notes={"es": ["Pensiones de jubilación, de jubilación anticipada, de viudedad y orfandad, de incapacidad y parciales, públicas y privadas "
+                      "obligatorias, con y sin cotización previa. Incluye las de clases pasivas de los funcionarios.",
+                      "No es igual que el gasto del sistema de Seguridad Social que publica el Gobierno: la definición europea es más amplia "
+                      "y sirve para comparar países.",
+                      f"«prev» en la descarga: dato de {PREV}."]
+                     + ([f"Datos provisionales de {last}: {', '.join(provisional)}."] if provisional else []),
+               "en": ["Old-age, early retirement, survivors', disability and partial pensions, public and mandatory private, with and "
+                      "without prior contributions. Includes civil servants' pensions (clases pasivas).",
+                      "It is not the same as the Social Security spending the government publishes: the European definition is broader "
+                      "and is used to compare countries.",
+                      f"«prev» in the download: {PREV} figure."]
+                     + ([f"Provisional {last} data: {', '.join(provisional_en)}."] if provisional else [])},
         rows=out,
         geos=geo.country_table(r["geo"] for r in out),
     )
@@ -129,23 +149,33 @@ def europa_sustitucion():
     eu = next(r for r in out if r["geo"] == "EU27")
     ranked = sorted((r for r in out if r["geo"] != "EU27"), key=lambda r: -r["value"])
     above = [geo.COUNTRIES[r["geo"]][1] for r in ranked if r["value"] > es["value"]]
+    above_en = [geo.COUNTRIES[r["geo"]][2] for r in ranked if r["value"] > es["value"]]
     es_hist = {r["time"]: r["value"] for r in raw if r["geo"] == "ES"}
     first = min(es_hist)
     return chart(
         id="dee3-europa-sustitucion",
         lens="europa", theme="demografia",
-        title=f"La pensión mediana de los jubilados españoles equivale al {es['value']:.0f} % del salario mediano de quienes "
-              f"están a punto de jubilarse; en la UE, al {eu['value']:.0f} %",
-        subtitle=f"Tasa de sustitución agregada, {last}: pensión mediana de 65 a 74 años en % de la renta del trabajo mediana de "
-                 "50 a 59 años, en bruto",
-        unit="%",
+        title=bi(f"La pensión mediana de los jubilados españoles equivale al {es['value']:.0f} % del salario mediano de quienes "
+                 f"están a punto de jubilarse; en la UE, al {eu['value']:.0f} %",
+                 f"The median pension of Spanish retirees equals {es['value']:.0f}% of the median earnings of those about to "
+                 f"retire; in the EU, {eu['value']:.0f}%"),
+        subtitle=bi(f"Tasa de sustitución agregada, {last}: pensión mediana de 65 a 74 años en % de la renta del trabajo mediana de "
+                    "50 a 59 años, en bruto",
+                    f"Aggregate replacement ratio, {last}: median pension of people aged 65 to 74 as % of the median earnings of "
+                    "people aged 50 to 59, gross"),
+        unit=bi("%", "%"),
         source={"name": "Eurostat, encuesta de condiciones de vida (EU-SILC)", "dataset": "ilc_pnp3",
                 "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_pnp3/default/table", **EUROSTAT_LICENSE},
-        notes=["Compara dos grupos distintos en el mismo año: las pensiones individuales de las personas de 65 a 74 años y las rentas "
-               "del trabajo de las de 50 a 59. No es la pensión que cobrará cada trabajador sobre su último sueldo.",
-               "Cantidades brutas, sin descontar impuestos. Solo pensiones; no incluye otras prestaciones sociales.",
-               "Países con una tasa más alta que España: " + (", ".join(above) if above else "ninguno") + ".",
-               f"España, {first}: {es_hist[first]:.0f} %."],
+        notes={"es": ["Compara dos grupos distintos en el mismo año: las pensiones individuales de las personas de 65 a 74 años y las rentas "
+                      "del trabajo de las de 50 a 59. No es la pensión que cobrará cada trabajador sobre su último sueldo.",
+                      "Cantidades brutas, sin descontar impuestos. Solo pensiones; no incluye otras prestaciones sociales.",
+                      "Países con una tasa más alta que España: " + (", ".join(above) if above else "ninguno") + ".",
+                      f"España, {first}: {es_hist[first]:.0f} %."],
+               "en": ["It compares two different groups in the same year: the individual pensions of people aged 65 to 74 and the earnings "
+                      "of people aged 50 to 59. It is not the pension each worker will get relative to their last wage.",
+                      "Gross amounts, before tax. Pensions only; other social benefits are not included.",
+                      "Countries with a higher ratio than Spain: " + (", ".join(above_en) if above_en else "none") + ".",
+                      f"Spain, {first}: {es_hist[first]:.0f}%."]},
         rows=out,
         geos=geo.country_table(r["geo"] for r in out),
     )
@@ -158,22 +188,30 @@ def europa_vida65():
     eu = next(r for r in out if r["geo"] == "EU27")
     top = max(r["value"] for r in out if r["geo"] != "EU27")
     tied = sorted(geo.COUNTRIES[r["geo"]][1] for r in out if r["geo"] not in ("EU27", "ESP") and r["value"] == top)
+    tied_en = sorted(geo.COUNTRIES[r["geo"]][2] for r in out if r["geo"] not in ("EU27", "ESP") and r["value"] == top)
     es_hist = {r["time"]: r["value"] for r in raw if r["geo"] == "ES"}
     assert es["value"] == top, (es, top)
-    title = (f"A los 65 años, a un español le quedan de media {es1(es['value'])} años de vida, "
-             + (f"igual que en {', '.join(tied)} y más que en ningún otro país de la UE" if tied else "más que en ningún otro país de la UE")
-             + f" (media: {es1(eu['value'])})")
+    title = bi(f"A los 65 años, a un español le quedan de media {es1(es['value'])} años de vida, "
+               + (f"igual que en {', '.join(tied)} y más que en ningún otro país de la UE" if tied else "más que en ningún otro país de la UE")
+               + f" (media: {es1(eu['value'])})",
+               f"At 65, a Spaniard can expect to live another {en1(es['value'])} years on average, "
+               + (f"the same as in {', '.join(tied_en)} and more than in any other EU country" if tied_en else "more than in any other EU country")
+               + f" (average: {en1(eu['value'])})")
     return chart(
         id="dee4-europa-vida65",
         lens="europa", theme="demografia",
         title=title,
-        subtitle=f"Esperanza de vida a los 65 años, ambos sexos, {last}, en años",
-        unit="Años",
+        subtitle=bi(f"Esperanza de vida a los 65 años, ambos sexos, {last}, en años",
+                    f"Life expectancy at 65, both sexes, {last}, in years"),
+        unit=bi("Años", "Years"),
         source={"name": "Eurostat", "dataset": "demo_mlexpec",
                 "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table", **EUROSTAT_LICENSE},
-        notes=["Años que viviría de media una persona que cumple 65 años si se mantuvieran las tasas de mortalidad por edad de ese año.",
-               f"España: {es1(es_hist['1975'])} años en 1975, {es1(es_hist[str(BASE)])} en {BASE}.",
-               "Datos de la UE estimados o provisionales por Eurostat."],
+        notes={"es": ["Años que viviría de media una persona que cumple 65 años si se mantuvieran las tasas de mortalidad por edad de ese año.",
+                      f"España: {es1(es_hist['1975'])} años en 1975, {es1(es_hist[str(BASE)])} en {BASE}.",
+                      "Datos de la UE estimados o provisionales por Eurostat."],
+               "en": ["Years a person turning 65 would live on average if that year's age-specific death rates held.",
+                      f"Spain: {en1(es_hist['1975'])} years in 1975, {en1(es_hist[str(BASE)])} in {BASE}.",
+                      "EU data estimated or provisional by Eurostat."]},
         rows=out,
         geos=geo.country_table(r["geo"] for r in out),
     )
@@ -193,15 +231,22 @@ def dependencia_comunidades():
     return chart(
         id="ded1-dependencia-comunidades",
         lens="dentro", theme="demografia",
-        title=f"Por cada 100 personas de 16 a 64 años hay {es1(es['value'])} mayores de 64: "
-              f"{es1(top['value'])} en {geo.CCAA[top['geo']]} y {es1(low['value'])} en {geo.CCAA[low['geo']]}",
-        subtitle=f"Tasa de dependencia de la población mayor de 64 años, 1 de enero de {last}. En {START}, España tenía {es1(es['prev'])}",
-        unit="Mayores de 64 por cada 100 personas de 16 a 64",
+        title=bi(f"Por cada 100 personas de 16 a 64 años hay {es1(es['value'])} mayores de 64: "
+                 f"{es1(top['value'])} en {geo.CCAA[top['geo']]} y {es1(low['value'])} en {geo.CCAA[low['geo']]}",
+                 f"For every 100 people aged 16 to 64 there are {en1(es['value'])} people over 64: "
+                 f"{en1(top['value'])} in {nm(top['geo'])} and {en1(low['value'])} in {nm(low['geo'])}"),
+        subtitle=bi(f"Tasa de dependencia de la población mayor de 64 años, 1 de enero de {last}. En {START}, España tenía {es1(es['prev'])}",
+                    f"Old-age dependency ratio (over 64), 1 January {last}. In {START}, Spain's was {en1(es['prev'])}"),
+        unit=bi("Mayores de 64 por cada 100 personas de 16 a 64", "People over 64 per 100 people aged 16 to 64"),
         source=INE_DEP,
-        notes=["Población de 65 años o más dividida por la población de 16 a 64 años, por 100. Es una medida demográfica: no tiene "
-               "en cuenta cuántas personas de 16 a 64 años trabajan ni cuántas de 65 o más siguen trabajando.",
-               f"«prev» en la descarga: dato de {START}.",
-               "Ceuta y Melilla tienen poblaciones pequeñas y muy jóvenes."],
+        notes={"es": ["Población de 65 años o más dividida por la población de 16 a 64 años, por 100. Es una medida demográfica: no tiene "
+                      "en cuenta cuántas personas de 16 a 64 años trabajan ni cuántas de 65 o más siguen trabajando.",
+                      f"«prev» en la descarga: dato de {START}.",
+                      "Ceuta y Melilla tienen poblaciones pequeñas y muy jóvenes."],
+               "en": ["Population aged 65 or over divided by the population aged 16 to 64, times 100. It is a demographic measure: it does "
+                      "not take into account how many people aged 16 to 64 work or how many aged 65 or over are still working.",
+                      f"«prev» in the download: {START} figure.",
+                      "Ceuta and Melilla have small, very young populations."]},
         rows=sorted(out, key=lambda r: r["geo"]),
         geos=geo.ccaa_table(r["geo"] for r in out),
     )
@@ -243,20 +288,32 @@ def ocupados_mayores():
     return chart(
         id="ded3-ocupados-mayores",
         lens="dentro", theme="demografia",
-        title=(f"Hay menos ocupados por cada mayor de 64 que en {BASE} en {'las' if fell == len(main) else str(fell) + ' de las'} "
-               f"{len(main)} comunidades: en España, {es2(es['value'])} frente a {es2(es['prev'])}"),
-        subtitle=f"Ocupados de todas las edades por cada persona de 65 años o más, media del {q(p0)} al {q(p1)}",
-        unit="Ocupados por cada mayor de 64",
+        title=bi(f"Hay menos ocupados por cada mayor de 64 que en {BASE} en {'las' if fell == len(main) else str(fell) + ' de las'} "
+                 f"{len(main)} comunidades: en España, {es2(es['value'])} frente a {es2(es['prev'])}",
+                 f"There are fewer people in work for every person over 64 than in {BASE} in "
+                 f"{'all' if fell == len(main) else str(fell) + ' of the'} {len(main)} regions: in Spain, {en2(es['value'])} against {en2(es['prev'])}"),
+        subtitle=bi(f"Ocupados de todas las edades por cada persona de 65 años o más, media del {q(p0)} al {q(p1)}",
+                    f"People in work of all ages per person aged 65 or over, average from {_qlabel_en(p0)} to {_qlabel_en(p1)}"),
+        unit=bi("Ocupados por cada mayor de 64", "People in work per person over 64"),
         source=INE_EPA,
-        notes=["Ocupados de 16 años y más (también los mayores de 64 que trabajan) divididos por la población de 65 años y más, "
-               "las dos de la EPA y en medias de cuatro trimestres.",
-               "No es la ratio de afiliados por pensión de la Seguridad Social: no todos los ocupados cotizan al mismo régimen, "
-               "no todos los mayores de 64 cobran pensión y hay pensionistas menores de 65 (incapacidad, viudedad, jubilación anticipada).",
-               f"«prev» en la descarga: media de los cuatro trimestres de {BASE}. Desde entonces, en España los ocupados han "
-               f"crecido un {es1(g_occ)} % y los mayores de 64, un {es1(g_old)} %.",
-               f"Extremos del último año (sin Ceuta ni Melilla): {geo.CCAA[top['geo']]}, {es2(top['value'])}; "
-               f"{geo.CCAA[low['geo']]}, {es2(low['value'])}.",
-               "La EPA es una encuesta: en las comunidades pequeñas tiene más margen de error. Ceuta y Melilla no protagonizan el titular."],
+        notes={"es": ["Ocupados de 16 años y más (también los mayores de 64 que trabajan) divididos por la población de 65 años y más, "
+                      "las dos de la EPA y en medias de cuatro trimestres.",
+                      "No es la ratio de afiliados por pensión de la Seguridad Social: no todos los ocupados cotizan al mismo régimen, "
+                      "no todos los mayores de 64 cobran pensión y hay pensionistas menores de 65 (incapacidad, viudedad, jubilación anticipada).",
+                      f"«prev» en la descarga: media de los cuatro trimestres de {BASE}. Desde entonces, en España los ocupados han "
+                      f"crecido un {es1(g_occ)} % y los mayores de 64, un {es1(g_old)} %.",
+                      f"Extremos del último año (sin Ceuta ni Melilla): {geo.CCAA[top['geo']]}, {es2(top['value'])}; "
+                      f"{geo.CCAA[low['geo']]}, {es2(low['value'])}.",
+                      "La EPA es una encuesta: en las comunidades pequeñas tiene más margen de error. Ceuta y Melilla no protagonizan el titular."],
+               "en": ["People in work aged 16 and over (including those over 64 who work) divided by the population aged 65 and over, "
+                      "both from the EPA and as four-quarter averages.",
+                      "It is not Social Security's ratio of contributors per pension: not everyone in work contributes to the same scheme, "
+                      "not everyone over 64 draws a pension and there are pensioners under 65 (disability, survivors', early retirement).",
+                      f"«prev» in the download: average of the four quarters of {BASE}. Since then, the number of people in work in Spain "
+                      f"has grown {en1(g_occ)}% and the number over 64, {en1(g_old)}%.",
+                      f"Extremes in the last year (excluding Ceuta and Melilla): {nm(top['geo'])}, {en2(top['value'])}; "
+                      f"{nm(low['geo'])}, {en2(low['value'])}.",
+                      "The EPA is a survey: in small regions its margin of error is larger. Ceuta and Melilla are not used in the headline."]},
         rows=out,
         geos=geo.ccaa_table(r["geo"] for r in out),
     )
@@ -275,24 +332,36 @@ def fecundidad_tiempo():
     eu_rows, eu_last = _eu_last(eu_raw, 2)
     eu = next(r["value"] for r in eu_rows if r["geo"] == "EU27")
     ranked = sorted((r for r in eu_rows if r["geo"] != "EU27"), key=lambda r: r["value"])
-    lower = [geo.COUNTRIES[r["geo"]][1] for r in ranked if r["value"] < next(x["value"] for x in ranked if x["geo"] == "ESP")]
+    es_v = next(x["value"] for x in ranked if x["geo"] == "ESP")
+    lower = [geo.COUNTRIES[r["geo"]][1] for r in ranked if r["value"] < es_v]
+    lower_en = [geo.COUNTRIES[r["geo"]][2] for r in ranked if r["value"] < es_v]
+    none_reach = all(r["value"] < 2.1 for r in ranked)
     return chart(
         id="det1-fecundidad",
         lens="tiempo", theme="demografia",
-        title=f"La fecundidad ha pasado de {es2(es[START])} hijos por mujer en {START} a {es2(es[last])} en {last}",
-        subtitle=f"Indicador coyuntural de fecundidad en España, {START}-{last}, hijos por mujer",
-        unit="Hijos por mujer",
+        title=bi(f"La fecundidad ha pasado de {es2(es[START])} hijos por mujer en {START} a {es2(es[last])} en {last}",
+                 f"Fertility has gone from {en2(es[START])} children per woman in {START} to {en2(es[last])} in {last}"),
+        subtitle=bi(f"Indicador coyuntural de fecundidad en España, {START}-{last}, hijos por mujer",
+                    f"Total fertility rate in Spain, {START}-{last}, children per woman"),
+        unit=bi("Hijos por mujer", "Children per woman"),
         source=INE_ICF,
-        notes=["Número medio de hijos que tendría una mujer a lo largo de su vida si se mantuvieran las tasas de fecundidad por edad de ese año. "
-               "Madres de todas las nacionalidades.",
-               f"El dato más bajo de la serie es el de {low_y} ({es2(es[low_y])}).",
-               "Línea de referencia: 2,1 hijos por mujer, el nivel con el que una población se mantiene sin migraciones.",
-               f"En la UE ({eu_last}, Eurostat): media de {es2(eu)} hijos por mujer; con menos que España, "
-               + (", ".join(lower) if lower else "ningún país") + f". Ningún país de la UE llega a 2,1."
-               if all(r["value"] < 2.1 for r in ranked) else f"En la UE ({eu_last}, Eurostat): media de {es2(eu)}."],
+        notes={"es": ["Número medio de hijos que tendría una mujer a lo largo de su vida si se mantuvieran las tasas de fecundidad por edad de ese año. "
+                      "Madres de todas las nacionalidades.",
+                      f"El dato más bajo de la serie es el de {low_y} ({es2(es[low_y])}).",
+                      "Línea de referencia: 2,1 hijos por mujer, el nivel con el que una población se mantiene sin migraciones.",
+                      f"En la UE ({eu_last}, Eurostat): media de {es2(eu)} hijos por mujer; con menos que España, "
+                      + (", ".join(lower) if lower else "ningún país") + f". Ningún país de la UE llega a 2,1."
+                      if none_reach else f"En la UE ({eu_last}, Eurostat): media de {es2(eu)}."],
+               "en": ["Average number of children a woman would have over her lifetime if that year's age-specific fertility rates held. "
+                      "Mothers of all nationalities.",
+                      f"The lowest figure in the series is {low_y}'s ({en2(es[low_y])}).",
+                      "Reference line: 2.1 children per woman, the level at which a population stays stable without migration.",
+                      f"In the EU ({eu_last}, Eurostat): average of {en2(eu)} children per woman; with fewer than Spain, "
+                      + (", ".join(lower_en) if lower_en else "no country") + f". No EU country reaches 2.1."
+                      if none_reach else f"In the EU ({eu_last}, Eurostat): average of {en2(eu)}."]},
         rows=[{"time": str(y), "series": "fecundidad", "value": round(es[y], 2)} for y in years],
-        extra={"dimensions": {"series": {"fecundidad": {"es": "Hijos por mujer"}}},
-               "ref_line": {"value": 2.1, "label": {"es": "2,1"}}},
+        extra={"dimensions": {"series": {"fecundidad": bi("Hijos por mujer", "Children per woman")}},
+               "ref_line": {"value": 2.1, "label": bi("2,1", "2.1")}},
     )
 
 
@@ -315,24 +384,34 @@ def gasto_descomposicion():
     return chart(
         id="det4-gasto-descomposicion",
         lens="tiempo", theme="demografia",
-        title=f"Entre {BASE} y {last}, el gasto real en pensiones sube un {es1(g)} %: hay un {es1(n)} % más de pensionistas "
-              f"y cada uno cobra de media un {es1(m)} % más, descontada la inflación",
-        subtitle=f"Gasto en pensiones descontada la inflación, número de pensionistas y gasto real por pensionista. Índices, {BASE} = 100, {BASE}-{last}",
-        unit=f"Índice ({BASE} = 100)",
+        title=bi(f"Entre {BASE} y {last}, el gasto real en pensiones sube un {es1(g)} %: hay un {es1(n)} % más de pensionistas "
+                 f"y cada uno cobra de media un {es1(m)} % más, descontada la inflación",
+                 f"Between {BASE} and {last}, real pension spending rises {en1(g)}%: there are {en1(n)}% more pensioners "
+                 f"and each receives {en1(m)}% more on average, adjusted for inflation"),
+        subtitle=bi(f"Gasto en pensiones descontada la inflación, número de pensionistas y gasto real por pensionista. Índices, {BASE} = 100, {BASE}-{last}",
+                    f"Pension spending adjusted for inflation, number of pensioners and real spending per pensioner. Indices, {BASE} = 100, {BASE}-{last}"),
+        unit=bi(f"Índice ({BASE} = 100)", f"Index ({BASE} = 100)"),
         source={"name": "Eurostat, SEEPROS", "dataset": "spr_exp_pens y spr_pns_ben",
                 "url": "https://ec.europa.eu/eurostat/databrowser/view/spr_pns_ben/default/table", **EUROSTAT_LICENSE,
                 "also": [INE_CPI]},
-        notes=["Gasto: todas las pensiones de la definición europea (jubilación, viudedad, orfandad, incapacidad; públicas y de "
-               "funcionarios), en euros, deflactado con el IPC medio de cada año.",
-               "Pensionistas: personas que cobran al menos una pensión, contadas una sola vez aunque cobren dos.",
-               f"El gasto real crece porque crecen las dos cosas: {es1(100 + n)} x {es1(100 + m)} / 100 = {es1(100 + g)}. "
-               f"En escala logarítmica, el número de pensionistas explica el {share_n:.0f} % de la subida y la pensión media, el resto.",
-               "La pensión media sube también porque los nuevos jubilados tuvieron salarios y carreras de cotización mayores que "
-               "quienes fallecen (efecto sustitución), no solo por la revalorización de las pensiones ya existentes."],
+        notes={"es": ["Gasto: todas las pensiones de la definición europea (jubilación, viudedad, orfandad, incapacidad; públicas y de "
+                      "funcionarios), en euros, deflactado con el IPC medio de cada año.",
+                      "Pensionistas: personas que cobran al menos una pensión, contadas una sola vez aunque cobren dos.",
+                      f"El gasto real crece porque crecen las dos cosas: {es1(100 + n)} x {es1(100 + m)} / 100 = {es1(100 + g)}. "
+                      f"En escala logarítmica, el número de pensionistas explica el {share_n:.0f} % de la subida y la pensión media, el resto.",
+                      "La pensión media sube también porque los nuevos jubilados tuvieron salarios y carreras de cotización mayores que "
+                      "quienes fallecen (efecto sustitución), no solo por la revalorización de las pensiones ya existentes."],
+               "en": ["Spending: all pensions under the European definition (old-age, survivors', orphans', disability; public and civil "
+                      "servants'), in euros, deflated with each year's average CPI.",
+                      "Pensioners: people receiving at least one pension, counted once even if they receive two.",
+                      f"Real spending grows because both things grow: {en1(100 + n)} x {en1(100 + m)} / 100 = {en1(100 + g)}. "
+                      f"On a logarithmic scale, the number of pensioners explains {share_n:.0f}% of the rise and the average pension the rest.",
+                      "The average pension also rises because new retirees had higher wages and longer contribution records than those "
+                      "who die (the replacement effect), not only because existing pensions are uprated."]},
         rows=rows,
-        extra={"dimensions": {"series": {"gasto": {"es": "Gasto real"}, "pensionistas": {"es": "Pensionistas"},
-                                         "media": {"es": "Por pensionista"}}},
-               "ref_line": {"value": 100, "label": {"es": str(BASE)}}},
+        extra={"dimensions": {"series": {"gasto": bi("Gasto real", "Real spending"), "pensionistas": bi("Pensionistas", "Pensioners"),
+                                         "media": bi("Por pensionista", "Per pensioner")}},
+               "ref_line": {"value": 100, "label": bi(str(BASE), str(BASE))}},
     )
 
 
@@ -373,26 +452,41 @@ def dependencia_proyeccion():
     return chart(
         id="det5-dependencia-proyeccion",
         lens="tiempo", theme="demografia",
-        title=f"El INE proyecta {es1(central[y50])} mayores de 64 por cada 100 personas de 16 a 64 años en {y50}; "
-              f"sin migración, serían {es1(nulo[y50])}",
-        subtitle=f"Tasa de dependencia de los mayores de 64: observada, {START}-{h1}, y proyectada, {years[0]}-{end}, en dos escenarios del INE",
-        unit="Mayores de 64 por cada 100 personas de 16 a 64",
+        title=bi(f"El INE proyecta {es1(central[y50])} mayores de 64 por cada 100 personas de 16 a 64 años en {y50}; "
+                 f"sin migración, serían {es1(nulo[y50])}",
+                 f"INE projects {en1(central[y50])} people over 64 for every 100 people aged 16 to 64 in {y50}; "
+                 f"without migration, there would be {en1(nulo[y50])}"),
+        subtitle=bi(f"Tasa de dependencia de los mayores de 64: observada, {START}-{h1}, y proyectada, {years[0]}-{end}, en dos escenarios del INE",
+                    f"Old-age dependency ratio: observed, {START}-{h1}, and projected, {years[0]}-{end}, in two INE scenarios"),
+        unit=bi("Mayores de 64 por cada 100 personas de 16 a 64", "People over 64 per 100 people aged 16 to 64"),
         source={**INE_DEP, "also": [INE_PROJ]},
-        notes=["Población de 65 años o más dividida por la población de 16 a 64 años, por 100.",
-               "Escenario central del INE: fecundidad, esperanza de vida y saldo migratorio según las tendencias recientes. "
-               "Escenario de saldo migratorio nulo: tantas entradas como salidas de población cada año.",
-               f"En el escenario central, la tasa calculada con la población proyectada coincide con la que publica el INE (tabla 36670). "
-               f"Sube hasta {es1(central[peak_y])} en {peak_y}, baja hasta {es1(central[trough_y])} en {trough_y} "
-               f"y vuelve a subir hasta {es1(central[end])} en {end}. Sin migración, llega a {es1(nulo[end])} en {end}.",
-               f"Otros escenarios del INE en {y50} y {end}: fecundidad alta, {es1(proj['Fecundidad alta'][y50])} y "
-               f"{es1(proj['Fecundidad alta'][end])}; fecundidad baja, {es1(proj['Fecundidad baja'][y50])} y {es1(proj['Fecundidad baja'][end])}; "
-               f"saldo migratorio alto, {es1(proj['Saldo migratorio alto'][y50])} y {es1(proj['Saldo migratorio alto'][end])}; "
-               f"saldo migratorio bajo, {es1(proj['Saldo migratorio bajo'][y50])} y {es1(proj['Saldo migratorio bajo'][end])}.",
-               "Una proyección no es una predicción: muestra qué pasaría si se cumplieran sus supuestos.",
-               f"La serie observada es del 1 de enero de cada año; la proyectada empieza en {years[0]}."],
+        notes={"es": ["Población de 65 años o más dividida por la población de 16 a 64 años, por 100.",
+                      "Escenario central del INE: fecundidad, esperanza de vida y saldo migratorio según las tendencias recientes. "
+                      "Escenario de saldo migratorio nulo: tantas entradas como salidas de población cada año.",
+                      f"En el escenario central, la tasa calculada con la población proyectada coincide con la que publica el INE (tabla 36670). "
+                      f"Sube hasta {es1(central[peak_y])} en {peak_y}, baja hasta {es1(central[trough_y])} en {trough_y} "
+                      f"y vuelve a subir hasta {es1(central[end])} en {end}. Sin migración, llega a {es1(nulo[end])} en {end}.",
+                      f"Otros escenarios del INE en {y50} y {end}: fecundidad alta, {es1(proj['Fecundidad alta'][y50])} y "
+                      f"{es1(proj['Fecundidad alta'][end])}; fecundidad baja, {es1(proj['Fecundidad baja'][y50])} y {es1(proj['Fecundidad baja'][end])}; "
+                      f"saldo migratorio alto, {es1(proj['Saldo migratorio alto'][y50])} y {es1(proj['Saldo migratorio alto'][end])}; "
+                      f"saldo migratorio bajo, {es1(proj['Saldo migratorio bajo'][y50])} y {es1(proj['Saldo migratorio bajo'][end])}.",
+                      "Una proyección no es una predicción: muestra qué pasaría si se cumplieran sus supuestos.",
+                      f"La serie observada es del 1 de enero de cada año; la proyectada empieza en {years[0]}."],
+               "en": ["Population aged 65 or over divided by the population aged 16 to 64, times 100.",
+                      "INE central scenario: fertility, life expectancy and net migration following recent trends. "
+                      "Zero net migration scenario: as many people arrive as leave each year.",
+                      f"In the central scenario, the ratio calculated with the projected population matches the one INE publishes (table 36670). "
+                      f"It rises to {en1(central[peak_y])} in {peak_y}, falls to {en1(central[trough_y])} in {trough_y} "
+                      f"and rises again to {en1(central[end])} in {end}. Without migration, it reaches {en1(nulo[end])} in {end}.",
+                      f"Other INE scenarios in {y50} and {end}: high fertility, {en1(proj['Fecundidad alta'][y50])} and "
+                      f"{en1(proj['Fecundidad alta'][end])}; low fertility, {en1(proj['Fecundidad baja'][y50])} and {en1(proj['Fecundidad baja'][end])}; "
+                      f"high net migration, {en1(proj['Saldo migratorio alto'][y50])} and {en1(proj['Saldo migratorio alto'][end])}; "
+                      f"low net migration, {en1(proj['Saldo migratorio bajo'][y50])} and {en1(proj['Saldo migratorio bajo'][end])}.",
+                      "A projection is not a forecast: it shows what would happen if its assumptions held.",
+                      f"The observed series is for 1 January each year; the projection starts in {years[0]}."]},
         rows=rows,
-        extra={"dimensions": {"series": {"historico": {"es": "Observada"}, "central": {"es": "Central"},
-                                         "nulo": {"es": "Sin migración"}}}},
+        extra={"dimensions": {"series": {"historico": bi("Observada", "Observed"), "central": bi("Central", "Central"),
+                                         "nulo": bi("Sin migración", "No migration")}}},
     )
 
 

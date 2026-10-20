@@ -1,6 +1,6 @@
 import type { ChartData } from "./data";
 import { CHARTS, EXTRA_DIMENSIONS } from "./charts-config";
-import { formatNumber, type Lang } from "./i18n";
+import { formatNumber, locale, type Lang } from "./i18n";
 
 export interface Pivot {
   rowHeader: string;
@@ -9,19 +9,43 @@ export interface Pivot {
 }
 
 const EU_STATS = {
-  median: { es: "UE (mediana de los 27)" },
-  min: { es: "País de la UE con el valor más bajo" },
+  median: { es: "UE (mediana de los 27)", en: "EU (median of the 27)" },
+  min: { es: "País de la UE con el valor más bajo", en: "EU country with the lowest value" },
 };
 
-const n = (v: number | null | undefined, d = 1) => (v === null || v === undefined ? null : formatNumber(v, "es", d));
-const day = (iso: string | null) => (iso ? new Intl.DateTimeFormat("es-ES", { dateStyle: "medium" }).format(new Date(iso)) : "en el cargo");
+const TXT = {
+  es: {
+    inOffice: "en el cargo", series: "Serie",
+    poll: "Encuesta", avgAt: "Media a", election2023: "Elecciones del 23 de julio de 2023",
+    presidency: "Presidencia", party: "Partido", from: "Desde", to: "Hasta", acting: " (en funciones)",
+    vote: { si: "A favor", no: "En contra", abst: "Abstención" } as Record<string, string>,
+    decree: "Decreto-ley", government: "Gobierno",
+    province: "Provincia", winner: "Ganador", winnerPct: "% del ganador", second: "Segundo", margin: "Ventaja (puntos)", turnout: "Participación %",
+  },
+  en: {
+    inOffice: "in office", series: "Series",
+    poll: "Poll", avgAt: "Average on", election2023: "Election of 23 July 2023",
+    presidency: "Presidency", party: "Party", from: "From", to: "To", acting: " (acting)",
+    vote: { si: "Yes", no: "No", abst: "Abstention" } as Record<string, string>,
+    decree: "Decree-law", government: "Government",
+    province: "Province", winner: "Winner", winnerPct: "Winner's %", second: "Second", margin: "Lead (points)", turnout: "Turnout %",
+  },
+};
 
-/** 2025.25 -> "T2 2025" (series trimestrales: time = año + (trimestre - 1) / 4). */
-const quarterLabel = (t: number) => `T${Math.round((t % 1) * 4) + 1} ${Math.floor(t)}`;
+/** 2025.25 -> "T2 2025" / "Q2 2025" (series trimestrales: time = año + (trimestre - 1) / 4). */
+const quarterLabel = (t: number, lang: Lang) => `${lang === "es" ? "T" : "Q"}${Math.round((t % 1) * 4) + 1} ${Math.floor(t)}`;
+
+function helpers(lang: Lang) {
+  const T = TXT[lang];
+  const n = (v: number | null | undefined, d = 1) => (v === null || v === undefined ? null : formatNumber(v, lang, d));
+  const day = (iso: string | null) => (iso ? new Intl.DateTimeFormat(locale(lang), { dateStyle: "medium" }).format(new Date(iso)) : T.inOffice);
+  return { T, n, day };
+}
 
 /** Tablas de gráficos que no son una matriz fila x columna. */
-const CUSTOM: Record<string, (chart: ChartData) => Pivot> = {
-  polls(chart) {
+const CUSTOM: Record<string, (chart: ChartData, lang: Lang) => Pivot> = {
+  polls(chart, lang) {
+    const { n, day, T } = helpers(lang);
     const parties: string[] = chart.parties;
     const avg = chart.rows.filter((r) => r.series === "avg");
     const lastDay = avg[avg.length - 1]?.date;
@@ -36,39 +60,41 @@ const CUSTOM: Record<string, (chart: ChartData) => Pivot> = {
     const mean = Object.fromEntries(avg.filter((r) => r.date === lastDay).map((r) => [r.party, r.value]));
     const res = Object.fromEntries(chart.results_2023.map((r: any) => [r.party, r.value]));
     return {
-      rowHeader: "Encuesta",
+      rowHeader: T.poll,
       cols: parties.map((p) => ({ key: p, label: p })),
       rows: [
-        { key: "avg", label: `Media a ${day(lastDay)}`, cells: parties.map((p) => n(mean[p])) },
+        { key: "avg", label: `${T.avgAt} ${day(lastDay)}`, cells: parties.map((p) => n(mean[p])) },
         ...recent.map((r) => ({
           key: `${r.date}${r.who}`,
           label: `${day(r.date)}. ${r.who}${r.kind !== "poll" ? " *" : ""}`,
           cells: parties.map((p) => n(r.v[p])),
         })),
-        { key: "2023", label: "Elecciones del 23 de julio de 2023", cells: parties.map((p) => n(res[p])) },
+        { key: "2023", label: T.election2023, cells: parties.map((p) => n(res[p])) },
       ],
     };
   },
-  govtimeline(chart) {
-    const rows = [...chart.rows].sort((a, b) => (a.ccaa === "ES" ? -1 : 0) - (b.ccaa === "ES" ? -1 : 0) || chart.geos[a.ccaa].es.localeCompare(chart.geos[b.ccaa].es, "es") || a.start.localeCompare(b.start));
+  govtimeline(chart, lang) {
+    const { day, T } = helpers(lang);
+    const rows = [...chart.rows].sort((a, b) => (a.ccaa === "ES" ? -1 : 0) - (b.ccaa === "ES" ? -1 : 0) || chart.geos[a.ccaa][lang].localeCompare(chart.geos[b.ccaa][lang], lang) || a.start.localeCompare(b.start));
     return {
-      rowHeader: "Presidencia",
-      cols: [{ key: "party", label: "Partido" }, { key: "start", label: "Desde" }, { key: "end", label: "Hasta" }],
+      rowHeader: T.presidency,
+      cols: [{ key: "party", label: T.party }, { key: "start", label: T.from }, { key: "end", label: T.to }],
       rows: rows.map((r) => ({
         key: `${r.ccaa}${r.start}`,
-        label: `${chart.geos[r.ccaa].es}: ${r.president}${r.acting ? " (en funciones)" : ""}`,
+        label: `${chart.geos[r.ccaa][lang]}: ${lang === "en" && r.party === "Art. 155" ? "Direct rule by the Spanish government (art. 155)" : r.president}${r.acting ? T.acting : ""}`,
         cells: [r.party_label, day(r.start), day(r.end)],
       })),
     };
   },
-  matrix(chart) {
+  matrix(chart, lang) {
+    const { n, T } = helpers(lang);
     const cols: string[] = chart.blocs;
     const votes = chart.rows.some((r) => r.vote);
-    const VOTE: Record<string, string> = { si: "A favor", no: "En contra", abst: "Abstención" };
+    const VOTE = T.vote;
     const rowKeys: string[] = chart.row_keys ?? (votes ? [...new Set(chart.rows.map((r) => r.row as string))] : cols);
     const cell = new Map(chart.rows.map((r) => [`${r.row}|${r.col}`, r]));
     return {
-      rowHeader: votes ? "Decreto-ley" : chart.row_keys ? "Gobierno" : "Partido",
+      rowHeader: votes ? T.decree : chart.row_keys ? T.government : T.party,
       cols: cols.map((c) => ({ key: c, label: c })),
       rows: rowKeys.map((rk) => ({
         key: rk,
@@ -81,13 +107,14 @@ const CUSTOM: Record<string, (chart: ChartData) => Pivot> = {
       })),
     };
   },
-  spainmap(chart) {
+  spainmap(chart, lang) {
+    const { n, T } = helpers(lang);
     const rows = chart.rows.filter((r) => r.level === "provincia").sort((a, b) => a.name.localeCompare(b.name, "es"));
     return {
-      rowHeader: "Provincia",
+      rowHeader: T.province,
       cols: [
-        { key: "winner", label: "Ganador" }, { key: "value", label: "% del ganador" }, { key: "second", label: "Segundo" },
-        { key: "margin", label: "Ventaja (puntos)" }, { key: "turnout", label: "Participación %" },
+        { key: "winner", label: T.winner }, { key: "value", label: T.winnerPct }, { key: "second", label: T.second },
+        { key: "margin", label: T.margin }, { key: "turnout", label: T.turnout },
       ],
       rows: rows.map((r) => ({ key: r.geo, label: r.name, cells: [r.winner, n(r.value), r.second, n(r.margin), n(r.turnout)] })),
     };
@@ -104,7 +131,7 @@ function label(chart: ChartData, dim: string, key: string, lang: Lang): string {
 /** Tabla accesible con el estado por defecto de los controles. */
 export function pivot(chart: ChartData, lang: Lang, headers: { country: string; year: string }): Pivot {
   const cfg = CHARTS[chart.id];
-  if (cfg.customTable) return CUSTOM[cfg.customTable](chart);
+  if (cfg.customTable) return CUSTOM[cfg.customTable](chart, lang);
   const { rows: rowDim, cols: colDim, lastCols } = cfg.table;
   const filter: Record<string, string> = { ...(cfg.fixed ?? {}) };
   for (const c of cfg.controls ?? []) if (c.dim !== rowDim && c.dim !== colDim && c.dim !== "scale") filter[c.dim] = c.default;
@@ -129,8 +156,8 @@ export function pivot(chart: ChartData, lang: Lang, headers: { country: string; 
 
   const index = new Map(data.map((r) => [`${r[rowDim]}|${r[colDim]}`, r.value as number]));
   return {
-    rowHeader: rowDim === "geo" ? headers.country : "Serie",
-    cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? (chart.quarterly ? quarterLabel(+k) : k) : label(chart, colDim, k, lang) })),
+    rowHeader: rowDim === "geo" ? headers.country : TXT[lang].series,
+    cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? (chart.quarterly ? quarterLabel(+k, lang) : k) : label(chart, colDim, k, lang) })),
     rows: rowKeys.map((k) => ({
       key: k,
       label: rowLabel(k),

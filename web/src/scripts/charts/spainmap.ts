@@ -5,7 +5,7 @@ import { geoConicConformalSpain } from "d3-composite-projections";
 import { interpolateLab } from "d3-interpolate";
 import { feature, mesh } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
-import { svg, cssVar, nf, PARTY_VAR, tooltip, tipRow, legend, type RenderContext, type Row } from "./core";
+import { svg, cssVar, nf, PARTY_VAR, tooltip, tipRow, legend, type RenderContext, type Row, pctSign, LOCALE } from "./core";
 
 type Feat = GeoJSON.Feature<GeoJSON.Geometry, { name: string }> & { id: string };
 
@@ -36,7 +36,10 @@ function rewind(f: Feat) {
 
 export async function renderSpainMap(ctx: RenderContext) {
   const { chart, plot, width } = ctx;
-  const fmt = nf("es", 1);
+  const fmt = nf(ctx.lang, 1);
+  const es = ctx.lang === "es";
+  const pc = pctSign(ctx.lang);
+  const loc = LOCALE[ctx.lang];
   const level = ctx.state.level ?? "provincia";
   const rows = chart.rows.filter((r: Row) => r.level === level);
   const byId = new Map<string, Row>(rows.map((r: Row) => [r.geo, r]));
@@ -71,10 +74,10 @@ export async function renderSpainMap(ctx: RenderContext) {
       const seats = r.seats ? Object.entries(r.seats as Record<string, number>).sort((a, b) => b[1] - a[1])
         .map(([k, v]) => `${k} ${v}`).join(", ") : "";
       return `<div class="tip-title">${r.name}</div>` +
-        tipRow(winnerColor(r.winner), r.winner, `${fmt(r.value)} %`, true) +
-        (r.second ? `<div class="tip-note">Ventaja sobre ${r.second}: ${fmt(r.margin)} puntos</div>` : "") +
-        (r.turnout ? `<div class="tip-note">Participación: ${fmt(r.turnout)} %</div>` : "") +
-        (seats ? `<div class="tip-note">Escaños: ${seats}</div>` : "");
+        tipRow(winnerColor(r.winner), r.winner, `${fmt(r.value)}${pc}`, true) +
+        (r.second ? `<div class="tip-note">${es ? `Ventaja sobre ${r.second}: ${fmt(r.margin)} puntos` : `Lead over ${r.second}: ${fmt(r.margin)} points`}</div>` : "") +
+        (r.turnout ? `<div class="tip-note">${es ? "Participación" : "Turnout"}: ${fmt(r.turnout)}${pc}</div>` : "") +
+        (seats ? `<div class="tip-note">${es ? "Escaños" : "Seats"}: ${seats}</div>` : "");
     };
     p.addEventListener("pointermove", (e) => {
       const rect = root.getBoundingClientRect();
@@ -101,10 +104,10 @@ export async function renderSpainMap(ctx: RenderContext) {
   const ranked = [...wins.entries()].sort((a, b) => b[1] - a[1]);
   const named = ranked.filter(([p]) => p in PARTY_VAR);
   const other = ranked.filter(([p]) => !(p in PARTY_VAR));
-  const list = (xs: [string, number][]) => xs.map(([p, n]) => `${p} ${n.toLocaleString("es-ES")}`).join(", ");
+  const list = (xs: [string, number][]) => xs.map(([p, n]) => `${p} ${n.toLocaleString(loc)}`).join(", ");
   legend(ctx.legend, [
-    ...named.map(([party, n]) => ({ color: winnerColor(party), label: `${party} (${n.toLocaleString("es-ES")})`, kind: "swatch" as const })),
-    ...(other.length ? [{ color: cssVar("--p-other"), label: `Otros (${list(other)})`, kind: "swatch" as const }] : []),
+    ...named.map(([party, n]) => ({ color: winnerColor(party), label: `${party} (${n.toLocaleString(loc)})`, kind: "swatch" as const })),
+    ...(other.length ? [{ color: cssVar("--p-other"), label: `${es ? "Otros" : "Others"} (${list(other)})`, kind: "swatch" as const }] : []),
   ]);
 
   // Entrada animada solo con provincias (miles de municipios serían demasiados elementos)

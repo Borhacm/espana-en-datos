@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "demografia",
  "title": {
-  "es": "La pensión mediana de los jubilados españoles equivale al 81 % del salario mediano de quienes están a punto de jubilarse; en la UE, al 60 %"
+  "es": "La pensión mediana de los jubilados españoles equivale al 81 % del salario mediano de quienes están a punto de jubilarse; en la UE, al 60 %",
+  "en": "The median pension of Spanish retirees equals 81% of the median earnings of those about to retire; in the EU, 60%"
  },
  "subtitle": {
-  "es": "Tasa de sustitución agregada, 2025: pensión mediana de 65 a 74 años en % de la renta del trabajo mediana de 50 a 59 años, en bruto"
+  "es": "Tasa de sustitución agregada, 2025: pensión mediana de 65 a 74 años en % de la renta del trabajo mediana de 50 a 59 años, en bruto",
+  "en": "Aggregate replacement ratio, 2025: median pension of people aged 65 to 74 as % of the median earnings of people aged 50 to 59, gross"
  },
  "unit": {
-  "es": "%"
+  "es": "%",
+  "en": "%"
  },
  "source": {
   "name": "Eurostat, encuesta de condiciones de vida (EU-SILC)",
@@ -23,147 +26,181 @@
    "Cantidades brutas, sin descontar impuestos. Solo pensiones; no incluye otras prestaciones sociales.",
    "Países con una tasa más alta que España: Luxemburgo.",
    "España, 2010: 50 %."
+  ],
+  "en": [
+   "It compares two different groups in the same year: the individual pensions of people aged 65 to 74 and the earnings of people aged 50 to 59. It is not the pension each worker will get relative to their last wage.",
+   "Gross amounts, before tax. Pensions only; other social benefits are not included.",
+   "Countries with a higher ratio than Spain: Luxembourg.",
+   "Spain, 2010: 50%."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

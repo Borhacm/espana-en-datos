@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "congreso",
  "title": {
-  "es": "Con mayoría absoluta, el PP ganó todas las votaciones de 2012 a 2015; el PSOE ha pasado del 99 % en 2021 al 76 % en 2026"
+  "es": "Con mayoría absoluta, el PP ganó todas las votaciones de 2012 a 2015; el PSOE ha pasado del 99 % en 2021 al 76 % en 2026",
+  "en": "With an absolute majority, the PP won every vote from 2012 to 2015; the PSOE has gone from 99% in 2021 to 76% in 2026"
  },
  "subtitle": {
-  "es": "Porcentaje de votaciones en las que el partido del presidente del Gobierno votó lo mismo que el resultado final, por año"
+  "es": "Porcentaje de votaciones en las que el partido del presidente del Gobierno votó lo mismo que el resultado final, por año",
+  "en": "Share of votes in which the prime minister's party voted the same way as the final result, by year"
  },
  "unit": {
-  "es": "% de votaciones"
+  "es": "% de votaciones",
+  "en": "% of votes"
  },
  "source": {
   "name": "Congreso de los Diputados, datos abiertos de votaciones",
@@ -29,13 +32,25 @@
    "Partido del Gobierno en la fecha de cada votación: PP hasta el 1 de junio de 2018 (moción de censura) y PSOE desde entonces. En 2018 hay dos puntos, uno por partido.",
    "Resultado por mayoría simple; las leyes orgánicas necesitan mayoría absoluta en la votación final, así que el dato es aproximado en esas votaciones.",
    "Sin Presupuestos. Años con al menos 50 votaciones de cada partido."
+  ],
+  "en": [
+   "A party wins if it votes yes and the motion passes, or votes no and it fails. Abstentions do not count.",
+   "Party in government on the date of each vote: PP until 1 June 2018 (motion of no confidence) and PSOE since then. In 2018 there are two points, one per party.",
+   "Outcome by simple majority; organic laws need an absolute majority in the final vote, so the figure is approximate for those votes.",
+   "Excluding budgets. Years with at least 50 votes for each party."
   ]
  },
  "retrieved": "2026-10-07",
  "geos": {},
  "short_labels": {
-  "PP": "PP en el Gobierno",
-  "PSOE": "PSOE en el Gobierno"
+  "PP": {
+   "es": "PP en el Gobierno",
+   "en": "PP in government"
+  },
+  "PSOE": {
+   "es": "PSOE en el Gobierno",
+   "en": "PSOE in government"
+  }
  },
  "rows": [
   {

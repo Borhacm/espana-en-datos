@@ -4,8 +4,9 @@ import PageHead from "../components/PageHead.astro";
 import SectionBar from "../components/SectionBar.astro";
 import LensSection from "../components/LensSection.astro";
 import LinkList from "../components/LinkList.astro";
-import { LENSES, figuresOf, lensById, notesOf, published, type Theme } from "../lib/themes";
+import { LENSES, figuresOf, lensById, localizeHref, notesOf, published, type Theme } from "../lib/themes";
 import { formatDate, lensPath, notePath, themePath, type Lang } from "../lib/i18n";
+import { sourceName } from "../lib/content-types";
 import "../styles/charts.css";
 
 interface Props { lang: Lang; theme: Theme }
@@ -48,7 +49,7 @@ const notes = notesOf(theme.id);
   {theme.sources && theme.sources.length > 0 && (
     <section class="wrap sources" aria-label={copy.sources}>
       <h2>{copy.sources}</h2>
-      <ul>{theme.sources.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a></li>)}</ul>
+      <ul>{theme.sources.map((s) => <li><a href={localizeHref(s.url, lang)} rel="noopener">{sourceName(s, lang)}</a></li>)}</ul>
     </section>
   )}
 

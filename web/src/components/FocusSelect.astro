@@ -1,6 +1,6 @@
 ---
 // Selector "Destacar una comunidad": lo usan la barra de secciones y las notas.
-import { CCAA } from "../lib/geo";
+import { CCAA, CCAA_EN } from "../lib/geo";
 import { ui, type Lang } from "../lib/i18n";
 
 interface Props { lang: Lang }
@@ -8,9 +8,9 @@ const { lang } = Astro.props;
 const t = ui[lang];
 
 // Comunidades, ordenadas por nombre
-const countries = Object.entries(CCAA)
+const countries = Object.entries(lang === "es" ? CCAA : CCAA_EN)
   .map(([code, name]) => ({ code, name }))
-  .sort((a, b) => a.name.localeCompare(b.name, "es"));
+  .sort((a, b) => a.name.localeCompare(b.name, lang));
 ---
 <label class="focus">
   <span>{t.yourCountry}</span>

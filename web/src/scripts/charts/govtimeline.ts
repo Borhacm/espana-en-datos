@@ -1,12 +1,20 @@
 // Quién gobierna: una fila por comunidad (y el Gobierno de España arriba), con un tramo por presidencia
 // coloreado por partido. Los partidos sin color propio (regionalistas pequeños, UCD, CDS...) van en gris con su sigla.
 import { scaleTime } from "d3-scale";
-import { svg, cssVar, PARTY_VAR, tooltip, legend, type RenderContext, type Row } from "./core";
+import { svg, cssVar, PARTY_VAR, tooltip, legend, fmtDay as fmtDate, type Lang, type RenderContext, type Row } from "./core";
 
-const MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 // CiU, PDeCAT y Junts comparten color (mismo espacio político): una sola entrada de leyenda
 const JUNTS_FAMILY = ["CiU", "PDeCAT", "JxCat"];
-const LABEL: Record<string, string> = { PP: "PP (y AP)", PSOE: "PSOE (y PSC)", JUNTS: "CiU, PDeCAT y Junts", OTHER: "Otros (UCD, CDS, PRC, PAR, independientes...)" };
+const TXT = {
+  es: {
+    label: { PP: "PP (y AP)", PSOE: "PSOE (y PSC)", JUNTS: "CiU, PDeCAT y Junts", OTHER: "Otros (UCD, CDS, PRC, PAR, independientes...)" } as Record<string, string>,
+    acting: ", en funciones", today: "hoy", spain: "España",
+  },
+  en: {
+    label: { PP: "PP (and AP)", PSOE: "PSOE (and PSC)", JUNTS: "CiU, PDeCAT and Junts", OTHER: "Others (UCD, CDS, PRC, PAR, independents...)" } as Record<string, string>,
+    acting: ", acting", today: "today", spain: "Spain",
+  },
+};
 
 const govColor = (party: string) => cssVar(PARTY_VAR[party] ?? "--p-other");
 
@@ -19,15 +27,13 @@ function labelColor(hex: string): string {
   return lum > 0.22 ? "#151826" : "#ffffff";
 }
 
-const fmtDay = (iso: string) => {
-  const d = new Date(iso + "T00:00:00");
-  return `${d.getDate()} de ${MONTHS[d.getMonth()]} de ${d.getFullYear()}`;
-};
+const fmtDay = (lang: Lang, iso: string) => fmtDate(lang, new Date(iso + "T00:00:00"), "long");
 
 export function renderGovTimeline(ctx: RenderContext) {
-  const { chart, plot, width, focus } = ctx;
+  const { chart, plot, width, focus, lang } = ctx;
+  const T = TXT[lang];
   const today = new Date(chart.today + "T00:00:00");
-  const order = ["ES", ...Object.keys(chart.geos).filter((g) => g !== "ES").sort((a, b) => chart.geos[a].es.localeCompare(chart.geos[b].es, "es"))];
+  const order = ["ES", ...Object.keys(chart.geos).filter((g) => g !== "ES").sort((a, b) => chart.geos[a][lang].localeCompare(chart.geos[b][lang], lang))];
 
   const narrow = width < 600;
   const rowH = narrow ? 20 : 22, gap = 4;
@@ -51,7 +57,7 @@ export function renderGovTimeline(ctx: RenderContext) {
     const y0 = m.top + i * (rowH + gap) + (i > 0 ? 10 : 0);
     const strong = code === "ES" || code === focus;
     const name = svg("text", { x: m.left - 8, y: y0 + rowH / 2 + 4, class: `row-name${strong ? " strong" : ""}`, "text-anchor": "end" }, root);
-    name.textContent = narrow && code === "ES" ? "España" : chart.geos[code].es;
+    name.textContent = narrow && code === "ES" ? T.spain : chart.geos[code][lang];
     names.push(name);
     const mine = chart.rows.filter((r: Row) => r.ccaa === code);
     for (const r of mine) {
@@ -67,8 +73,9 @@ export function renderGovTimeline(ctx: RenderContext) {
       if (w > r.party.length * 7.2 + 8 && r.party !== "Art. 155") {
         svg("text", { x: x0 + 4, y: y0 + rowH / 2 + 4, class: "gov-label", fill: labelColor(fill) }, g).textContent = r.party;
       }
-      const html = `<div class="tip-title">${r.president}</div><div class="tip-note">${chart.geos[code].es}. ${r.party_label}${r.acting ? ", en funciones" : ""}</div>` +
-        `<div>${fmtDay(r.start)} – ${r.end ? fmtDay(r.end) : "hoy"}</div>`;
+      const who = lang === "en" && r.party === "Art. 155" ? "Direct rule by the Spanish government (art. 155)" : r.president;
+      const html = `<div class="tip-title">${who}</div><div class="tip-note">${chart.geos[code][lang]}. ${r.party_label}${r.acting ? T.acting : ""}</div>` +
+        `<div>${fmtDay(lang, r.start)} – ${r.end ? fmtDay(lang, r.end) : T.today}</div>`;
       const show = (cx: number, cy: number) => tip.show(cx, cy, html);
       g.addEventListener("pointermove", (e) => {
         const rect = root.getBoundingClientRect();
@@ -89,7 +96,7 @@ export function renderGovTimeline(ctx: RenderContext) {
   }
   legend(ctx.legend, [...time.entries()].sort((a, b) => b[1] - a[1]).map(([k]) => ({
     color: k === "OTHER" ? cssVar("--p-other") : k === "JUNTS" ? cssVar("--p-junts") : govColor(k),
-    label: LABEL[k] ?? k,
+    label: T.label[k] ?? k,
     kind: "swatch" as const,
   })));
 

@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "elecciones",
  "title": {
-  "es": "Cada diputado de Castilla y León representa a 77.371 habitantes; cada uno de Madrid, a 187.817"
+  "es": "Cada diputado de Castilla y León representa a 77.371 habitantes; cada uno de Madrid, a 187.817",
+  "en": "Each deputy from Castile and León represents 77,371 people; each one from Madrid, 187,817"
  },
  "subtitle": {
-  "es": "Habitantes por diputado en cada comunidad, con la población oficial a 1 de enero de 2025 y el reparto de 2026"
+  "es": "Habitantes por diputado en cada comunidad, con la población oficial a 1 de enero de 2025 y el reparto de 2026",
+  "en": "Inhabitants per deputy in each region, with the official population on 1 January 2025 and the 2026 allocation"
  },
  "unit": {
-  "es": "Habitantes por diputado"
+  "es": "Habitantes por diputado",
+  "en": "Inhabitants per deputy"
  },
  "source": {
   "name": "INE, cifras oficiales de población (revisión del padrón)",
@@ -28,107 +31,132 @@
    "Población total empadronada, de todas las edades y nacionalidades, no censo electoral.",
    "La diferencia viene de la ley electoral: cada provincia tiene 2 escaños fijos, así que las provincias poco pobladas eligen más diputados por habitante. Por provincias, el extremo es Soria y el contrario, Madrid.",
    "Ceuta y Melilla eligen un diputado cada una."
+  ],
+  "en": [
+   "Total registered population, of all ages and nationalities, not the electoral roll.",
+   "The difference comes from the electoral law: each province has 2 fixed seats, so sparsely populated provinces elect more deputies per inhabitant. By province, the extreme is Soria and the opposite, Madrid.",
+   "Ceuta and Melilla elect one deputy each."
   ]
  },
  "retrieved": "2026-10-12",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Is.",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Is.",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "C. y León",
+   "en": "Castile-León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "C.-La Mancha",
+   "en": "C.-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "C. Valenciana",
+   "en": "Valencian C.",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

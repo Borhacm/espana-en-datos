@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "demografia",
  "title": {
-  "es": "Hay menos ocupados por cada mayor de 64 que en 2008 en las 17 comunidades: en España, 2,19 frente a 2,79"
+  "es": "Hay menos ocupados por cada mayor de 64 que en 2008 en las 17 comunidades: en España, 2,19 frente a 2,79",
+  "en": "There are fewer people in work for every person over 64 than in 2008 in all 17 regions: in Spain, 2.19 against 2.79"
  },
  "subtitle": {
-  "es": "Ocupados de todas las edades por cada persona de 65 años o más, media del tercer trimestre de 2025 al segundo trimestre de 2026"
+  "es": "Ocupados de todas las edades por cada persona de 65 años o más, media del tercer trimestre de 2025 al segundo trimestre de 2026",
+  "en": "People in work of all ages per person aged 65 or over, average from Q3 2025 to Q2 2026"
  },
  "unit": {
-  "es": "Ocupados por cada mayor de 64"
+  "es": "Ocupados por cada mayor de 64",
+  "en": "People in work per person over 64"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -24,107 +27,134 @@
    "«prev» en la descarga: media de los cuatro trimestres de 2008. Desde entonces, en España los ocupados han crecido un 9,8 % y los mayores de 64, un 39,6 %.",
    "Extremos del último año (sin Ceuta ni Melilla): Baleares, 2,98; Asturias, 1,50.",
    "La EPA es una encuesta: en las comunidades pequeñas tiene más margen de error. Ceuta y Melilla no protagonizan el titular."
+  ],
+  "en": [
+   "People in work aged 16 and over (including those over 64 who work) divided by the population aged 65 and over, both from the EPA and as four-quarter averages.",
+   "It is not Social Security's ratio of contributors per pension: not everyone in work contributes to the same scheme, not everyone over 64 draws a pension and there are pensioners under 65 (disability, survivors', early retirement).",
+   "«prev» in the download: average of the four quarters of 2008. Since then, the number of people in work in Spain has grown 9.8% and the number over 64, 39.6%.",
+   "Extremes in the last year (excluding Ceuta and Melilla): Balearic Islands, 2.98; Asturias, 1.50.",
+   "The EPA is a survey: in small regions its margin of error is larger. Ceuta and Melilla are not used in the headline."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

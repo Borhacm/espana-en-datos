@@ -1,7 +1,7 @@
 import { scaleLinear } from "d3-scale";
 import {
   svg, colorFor, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, niceTicks,
-  type RenderContext, type Row,
+  type RenderContext, type Row, pctSign,
 } from "./core";
 
 const BAR = 14;       // grosor de barra (<= 24px)
@@ -24,7 +24,7 @@ function nameWidth(width: number) { return width < 520 ? 104 : 150; }
 
 /** Sufijo de unidad para ticks y tooltips: " %" solo si el gráfico se mide en porcentaje. */
 function pctSuffix(ctx: RenderContext): string {
-  return ctx.chart.unit.es.startsWith("%") ? " %" : "";
+  return ctx.chart.unit.es.startsWith("%") ? pctSign(ctx.lang) : "";
 }
 
 function euRows(ctx: RenderContext, rows: Row[]): Row[] {
@@ -113,7 +113,7 @@ export function renderPaired(ctx: RenderContext) {
   for (const t of ticks) {
     svg("line", { x1: x(t), x2: x(t), y1: m.top - 6, y2: height - m.bottom, class: t === 0 ? "baseline" : "gridline" }, root);
     const txt = svg("text", { x: x(t), y: m.top - 12, class: "tick", "text-anchor": "middle" }, root);
-    txt.textContent = `${fmt(t)} %`;
+    txt.textContent = `${fmt(t)}${pctSign(lang)}`;
   }
   const tip = tooltip(plot);
   cats.forEach((c, i) => {
@@ -129,7 +129,7 @@ export function renderPaired(ctx: RenderContext) {
       svg("path", { d: barPath(x(0), x(v), y, BAR), fill: colorFor(g, focus) }, grp);
       const val = svg("text", { x: x(v) + 6, y: y + BAR - 2, class: "row-value" }, grp);
       val.textContent = fmt(v);
-      const show = () => tip.show(x(v), y, `<div class="tip-title">${dimLabel(chart, "reason", c, lang)}</div>${tipRow(colorFor(g, focus), geoName(chart, g, lang), `${fmt(v)} %`)}`);
+      const show = () => tip.show(x(v), y, `<div class="tip-title">${dimLabel(chart, "reason", c, lang)}</div>${tipRow(colorFor(g, focus), geoName(chart, g, lang), `${fmt(v)}${pctSign(lang)}`)}`);
       grp.addEventListener("pointerenter", show);
       grp.addEventListener("focus", show);
       grp.addEventListener("pointerleave", () => tip.hide());

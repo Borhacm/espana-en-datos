@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "vivienda",
  "title": {
-  "es": "El 27 % de los inquilinos que pagan alquiler de mercado en España dedica más del 40 % de su renta a la vivienda; en la UE, el 19 %"
+  "es": "El 27 % de los inquilinos que pagan alquiler de mercado en España dedica más del 40 % de su renta a la vivienda; en la UE, el 19 %",
+  "en": "27% of tenants paying market rent in Spain spend more than 40% of their income on housing; in the EU, 19%"
  },
  "subtitle": {
-  "es": "Inquilinos a precio de mercado con sobrecarga de gastos de vivienda, 2025, en %. España es el 8.º de 27"
+  "es": "Inquilinos a precio de mercado con sobrecarga de gastos de vivienda, 2025, en %. España es el 8.º de 27",
+  "en": "Market-rent tenants overburdened by housing costs, 2025, in %. Spain ranks 8th of 27"
  },
  "unit": {
-  "es": "% de inquilinos"
+  "es": "% de inquilinos",
+  "en": "% of tenants"
  },
  "source": {
   "name": "Eurostat",
@@ -20,147 +23,178 @@
  "notes": {
   "es": [
    "Sobrecarga: los gastos de vivienda (alquiler, suministros, comunidad) superan el 40 % de la renta disponible del hogar, descontadas las ayudas a la vivienda. Encuesta de Condiciones de Vida (EU-SILC)."
+  ],
+  "en": [
+   "Overburden: housing costs (rent, utilities, building fees) exceed 40% of the household's disposable income, net of housing allowances. EU Survey on Income and Living Conditions (EU-SILC)."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

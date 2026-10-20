@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "inmigracion",
  "title": {
-  "es": "La tasa de empleo de los nacidos fuera está 3,7 puntos por debajo de la de los nacidos en España; en la UE, 6,4 puntos"
+  "es": "La tasa de empleo de los nacidos fuera está 3,7 puntos por debajo de la de los nacidos en España; en la UE, 6,4 puntos",
+  "en": "The employment rate of the foreign-born is 3.7 points below that of people born in Spain; in the EU, 6.4 points"
  },
  "subtitle": {
-  "es": "Tasa de empleo de la población de 20 a 64 años nacida en el extranjero, 2025, en %. España: 69,6 % (nacidos en España: 73,3 %). UE: 70,8 % (77,2 %)"
+  "es": "Tasa de empleo de la población de 20 a 64 años nacida en el extranjero, 2025, en %. España: 69,6 % (nacidos en España: 73,3 %). UE: 70,8 % (77,2 %)",
+  "en": "Employment rate of the foreign-born population aged 20 to 64, 2025, in %. Spain: 69.6% (born in Spain: 73.3%). EU: 70.8% (77.2%)"
  },
  "unit": {
-  "es": "% de la población de 20 a 64 años"
+  "es": "% de la población de 20 a 64 años",
+  "en": "% of the population aged 20 to 64"
  },
  "source": {
   "name": "Eurostat, Encuesta de Población Activa de la UE",
@@ -23,142 +26,175 @@
    "«native» en la descarga: tasa de los nacidos en el propio país. «prev»: tasa de los nacidos fuera en 2015.",
    "Eurostat marca los datos de 2025 de España y Francia como «definición distinta» de la armonizada.",
    "Sin dato de 2025: Malta."
+  ],
+  "en": [
+   "Employed people aged 20 to 64 born outside the country, as % of the whole foreign-born population of that age.",
+   "«native» in the download: rate of those born in the country itself. «prev»: rate of the foreign-born in 2015.",
+   "Eurostat flags the 2025 data for France and Spain as having a «different definition» from the harmonised one.",
+   "No 2025 data: Malta."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

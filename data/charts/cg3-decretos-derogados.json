@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "congreso",
  "title": {
-  "es": "El Congreso ha tumbado 13 decretos-ley del Gobierno esta legislatura"
+  "es": "El Congreso ha tumbado 13 decretos-ley del Gobierno esta legislatura",
+  "en": "Congress has struck down 13 government decree-laws in this parliament"
  },
  "subtitle": {
-  "es": "Voto de cada partido en los decretos-ley derogados (11 con votación publicada en los datos abiertos)"
+  "es": "Voto de cada partido en los decretos-ley derogados (11 con votación publicada en los datos abiertos)",
+  "en": "Each party's vote on the decree-laws struck down (11 with the vote published in the open data)"
  },
  "unit": {
-  "es": "Voto"
+  "es": "Voto",
+  "en": "Vote"
  },
  "source": {
   "name": "Congreso de los Diputados, datos abiertos de votaciones",
@@ -33,6 +36,12 @@
    "Un decreto-ley se convalida si tiene más votos a favor que en contra.",
    "Empate a 171 en la primera votación; convalidado en la segunda por 172 a 171. No figura entre los derogados.",
    "Celda vacía: ese partido no tuvo posición (no votó o sus diputados se dividieron a partes iguales)."
+  ],
+  "en": [
+   "Of 54 decree-laws voted on with published data, 11 were struck down. Added to them are 2 struck down on 2 October 2026 whose vote is not yet in the open data.",
+   "A decree-law is validated if it has more votes in favour than against.",
+   "RDL 8/2023: tied at 171 in the first vote; validated in the second by 172 to 171. It is not among those struck down.",
+   "Empty cell: that party had no position (it did not vote or its deputies split evenly)."
   ]
  },
  "retrieved": "2026-10-12",

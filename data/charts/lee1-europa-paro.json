@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "legislatura",
  "title": {
-  "es": "La tasa de paro de España baja del 12,2 % al 10,5 % entre 2023 y 2025, pero sigue siendo la más alta de la UE"
+  "es": "La tasa de paro de España baja del 12,2 % al 10,5 % entre 2023 y 2025, pero sigue siendo la más alta de la UE",
+  "en": "Spain's unemployment rate falls from 12.2% to 10.5% between 2023 and 2025, but it is still the highest in the EU"
  },
  "subtitle": {
-  "es": "Tasa de paro de 15 a 74 años, 2025, en % de la población activa. Media de la UE: 6,0 %"
+  "es": "Tasa de paro de 15 a 74 años, 2025, en % de la población activa. Media de la UE: 6,0 %",
+  "en": "Unemployment rate aged 15 to 74, 2025, as % of the labour force. EU average: 6.0%"
  },
  "unit": {
-  "es": "% de la población activa"
+  "es": "% de la población activa",
+  "en": "% of the labour force"
  },
  "source": {
   "name": "Eurostat",
@@ -21,147 +24,179 @@
   "es": [
    "Medias anuales de la Encuesta de Población Activa armonizada (para España, la EPA del INE). Compara 2025 con 2023, el año de las últimas generales.",
    "«prev» en la descarga: tasa de 2023. En 2023 España también tenía la tasa más alta de los 27 países."
+  ],
+  "en": [
+   "Annual averages of the harmonised Labour Force Survey (for Spain, INE's EPA). It compares 2025 with 2023, the year of the last general election.",
+   "«prev» in the download: rate in 2023. In 2023 Spain also had the highest rate of the 27 countries."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

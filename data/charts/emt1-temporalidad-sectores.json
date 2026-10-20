@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "empleo",
  "title": {
-  "es": "Entre 2021 y el último año, la temporalidad del sector privado baja del 23,7 % al 12,4 %; en el público, del 31,2 % al 27,0 %"
+  "es": "Entre 2021 y el último año, la temporalidad del sector privado baja del 23,7 % al 12,4 %; en el público, del 31,2 % al 27,0 %",
+  "en": "Between 2021 and the last year, the private sector's temporary employment rate falls from 23.7% to 12.4%; in the public sector, from 31.2% to 27.0%"
  },
  "subtitle": {
-  "es": "Asalariados con contrato temporal, en % de los asalariados de cada sector, trimestral desde 2008 hasta el segundo trimestre de 2026"
+  "es": "Asalariados con contrato temporal, en % de los asalariados de cada sector, trimestral desde 2008 hasta el segundo trimestre de 2026",
+  "en": "Employees on temporary contracts, as % of each sector's employees, quarterly from 2008 to Q2 2026"
  },
  "unit": {
-  "es": "% de los asalariados"
+  "es": "% de los asalariados",
+  "en": "% of employees"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -29,6 +32,12 @@
    "Titular: media de 2021 frente a la media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026.",
    "Los cambios de contratos de la reforma rigen para todos los empleadores, pero el empleo público temporal (interinos) sigue sobre todo sus propias normas: la Ley 20/2021 de estabilización del empleo público se aprobó a la vez. Por eso el sector público sirve de comparación, aunque imperfecta.",
    "Los fijos discontinuos cuentan como contratos indefinidos."
+  ],
+  "en": [
+   "Labour Force Survey (EPA), employees aged 16 and over. Quarterly data, not seasonally adjusted.",
+   "Headline: 2021 average against the average of the four quarters from Q3 2025 to Q2 2026.",
+   "The reform's contract rules apply to all employers, but temporary public employment (interim staff) mostly follows its own rules: Law 20/2021 on stabilising public employment was passed at the same time. That is why the public sector works as a comparison, if an imperfect one.",
+   "Fijos discontinuos (permanent seasonal contracts) count as permanent contracts."
   ]
  },
  "retrieved": "2026-10-09",
@@ -36,10 +45,12 @@
  "dimensions": {
   "series": {
    "privado": {
-    "es": "Sector privado"
+    "es": "Sector privado",
+    "en": "Private sector"
    },
    "publico": {
-    "es": "Sector público"
+    "es": "Sector público",
+    "en": "Public sector"
    }
   }
  },
@@ -48,13 +59,15 @@
   {
    "time": 2022.0,
    "label": {
-    "es": "Reforma laboral: Real Decreto-ley 32/2021 (diciembre de 2021)"
+    "es": "Reforma laboral: Real Decreto-ley 32/2021 (diciembre de 2021)",
+    "en": "Labour reform: Royal Decree-law 32/2021 (December 2021)"
    }
   },
   {
    "time": 2022.23,
    "label": {
-    "es": "Rigen los nuevos contratos (30 de marzo de 2022)"
+    "es": "Rigen los nuevos contratos (30 de marzo de 2022)",
+    "en": "The new contract rules apply (30 March 2022)"
    }
   }
  ],

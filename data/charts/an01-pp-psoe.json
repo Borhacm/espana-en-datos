@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "congreso",
  "title": {
-  "es": "PP y PSOE han votado lo mismo entre el 30 % (2013) y el 61 % (2016) de las votaciones de cada año"
+  "es": "PP y PSOE han votado lo mismo entre el 30 % (2013) y el 61 % (2016) de las votaciones de cada año",
+  "en": "PP and PSOE have voted the same way in between 30% (2013) and 61% (2016) of each year's votes"
  },
  "subtitle": {
-  "es": "Porcentaje de votaciones nominales del Pleno en que PP y PSOE votaron igual, por año (sin Presupuestos)"
+  "es": "Porcentaje de votaciones nominales del Pleno en que PP y PSOE votaron igual, por año (sin Presupuestos)",
+  "en": "Share of roll-call votes in the plenary in which PP and PSOE voted the same way, by year (excluding budgets)"
  },
  "unit": {
-  "es": "% de votaciones"
+  "es": "% de votaciones",
+  "en": "% of votes"
  },
  "source": {
   "name": "Congreso de los Diputados, datos abiertos de votaciones",
@@ -22,6 +25,11 @@
    "Voto de un partido: la opción que eligió la mayoría de sus diputados presentes.",
    "Sin las votaciones de Presupuestos Generales, que son miles de enmiendas en algunos años.",
    "Años con al menos 50 votaciones. 2016 y 2019 tuvieron legislaturas breves y elecciones repetidas."
+  ],
+  "en": [
+   "A party's vote: the option chosen by the majority of its deputies present.",
+   "Excluding votes on the General State Budget, which run to thousands of amendments in some years.",
+   "Years with at least 50 votes. 2016 and 2019 had short parliaments and repeat elections."
   ]
  },
  "retrieved": "2026-10-07",
@@ -29,12 +37,16 @@
  "dimensions": {
   "series": {
    "pp-psoe": {
-    "es": "PP y PSOE"
+    "es": "PP y PSOE",
+    "en": "PP and PSOE"
    }
   }
  },
  "short_labels": {
-  "pp-psoe": "PP y PSOE"
+  "pp-psoe": {
+   "es": "PP y PSOE",
+   "en": "PP and PSOE"
+  }
  },
  "rows": [
   {

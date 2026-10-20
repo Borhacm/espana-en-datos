@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "inmigracion",
  "title": {
-  "es": "Del 29,3 % de residentes nacidos fuera en Baleares al 6,6 % en Extremadura"
+  "es": "Del 29,3 % de residentes nacidos fuera en Baleares al 6,6 % en Extremadura",
+  "en": "From 29.3% of residents born abroad in Balearic Islands to 6.6% in Extremadura"
  },
  "subtitle": {
-  "es": "Población nacida en el extranjero, 1 de enero de 2026, en % de la población de cada comunidad. España: 20,2 %"
+  "es": "Población nacida en el extranjero, 1 de enero de 2026, en % de la población de cada comunidad. España: 20,2 %",
+  "en": "Foreign-born population, 1 January 2026, as % of each region's population. Spain: 20.2%"
  },
  "unit": {
-  "es": "% de la población"
+  "es": "% de la población",
+  "en": "% of the population"
  },
  "source": {
   "name": "INE, Estadística Continua de Población",
@@ -21,107 +24,131 @@
   "es": [
    "Dato provisional. «people» en la descarga: número de personas.",
    "Ceuta y Melilla tienen poblaciones pequeñas y no protagonizan el titular."
+  ],
+  "en": [
+   "Provisional figure. «people» in the download: number of people.",
+   "Ceuta and Melilla have small populations and are not used in the headline."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

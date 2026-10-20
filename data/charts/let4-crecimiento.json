@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "legislatura",
  "title": {
-  "es": "Desde 2019, el PIB ha crecido un 10,0 %: la mitad por la población, que sube un 4,8 %, y la otra mitad por el PIB por habitante (5,0 %)"
+  "es": "Desde 2019, el PIB ha crecido un 10,0 %: la mitad por la población, que sube un 4,8 %, y la otra mitad por el PIB por habitante (5,0 %)",
+  "en": "Since 2019, GDP has grown 10.0%: half from population, up 4.8%, and the other half from GDP per person (5.0%)"
  },
  "subtitle": {
-  "es": "PIB en volumen, población y PIB por habitante en volumen. Índices, 2019 = 100, 2015-2025"
+  "es": "PIB en volumen, población y PIB por habitante en volumen. Índices, 2019 = 100, 2015-2025",
+  "en": "Real GDP, population and real GDP per person. Indices, 2019 = 100, 2015-2025"
  },
  "unit": {
-  "es": "Índice (2019 = 100)"
+  "es": "Índice (2019 = 100)",
+  "en": "Index (2019 = 100)"
  },
  "source": {
   "name": "Eurostat, cuentas nacionales",
@@ -23,6 +26,12 @@
    "Base en 2019, el último año antes de la pandemia: la caída de 2020 y la recuperación posterior distorsionan las comparaciones con años intermedios.",
    "Desde 2023, año de las últimas generales: PIB 6,4 %, población 2,1 %, PIB por habitante 4,2 %.",
    "Datos de 2025 provisionales."
+  ],
+  "en": [
+   "GDP and GDP per person in chain-linked volumes (2010 euros); population is the ratio of the two, the one Eurostat uses for GDP per person.",
+   "Base year 2019, the last year before the pandemic: the 2020 fall and the recovery afterwards distort comparisons with the years in between.",
+   "Since 2023, the year of the last general election: GDP 6.4%, population 2.1%, GDP per person 4.2%.",
+   "2025 data provisional."
   ]
  },
  "retrieved": "2026-10-19",
@@ -30,27 +39,32 @@
  "dimensions": {
   "series": {
    "pib": {
-    "es": "PIB"
+    "es": "PIB",
+    "en": "GDP"
    },
    "poblacion": {
-    "es": "Población"
+    "es": "Población",
+    "en": "Population"
    },
    "per_capita": {
-    "es": "PIB por habitante"
+    "es": "PIB por habitante",
+    "en": "GDP per person"
    }
   }
  },
  "ref_line": {
   "value": 100,
   "label": {
-   "es": "2019"
+   "es": "2019",
+   "en": "2019"
   }
  },
  "events": [
   {
    "time": 2023.5,
    "label": {
-    "es": "Elecciones generales (23 de julio de 2023)"
+    "es": "Elecciones generales (23 de julio de 2023)",
+    "en": "General election (23 July 2023)"
    }
   }
  ],

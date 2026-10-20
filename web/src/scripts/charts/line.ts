@@ -1,7 +1,7 @@
 import { scaleLinear } from "d3-scale";
 import { line as d3line } from "d3-shape";
 import {
-  svg, colorFor, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, niceTicks,
+  svg, colorFor, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, niceTicks, pctSign,
   type RenderContext, type Row,
 } from "./core";
 
@@ -101,7 +101,7 @@ export function renderLine(ctx: RenderContext) {
   if (events.length) {
     const note = document.createElement("ol");
     note.className = "event-list";
-    note.innerHTML = events.map((ev) => `<li>${ev.label.es}</li>`).join("");
+    note.innerHTML = events.map((ev) => `<li>${ev.label[lang]}</li>`).join("");
     ctx.legend.after(note);
   }
 
@@ -131,7 +131,8 @@ export function renderLine(ctx: RenderContext) {
       prev = yy;
       const txt = svg("text", { x: l.x + 10, y: yy + 4, class: "end-label" }, root);
       // Etiqueta corta al final de la línea si el gráfico la define (la leyenda lleva el nombre completo)
-      const name = chart.short_labels?.[l.s.key] ?? l.s.label;
+      const short = chart.short_labels?.[l.s.key];
+      const name = (typeof short === "string" ? short : short?.[lang]) ?? l.s.label;
       txt.innerHTML = `<tspan class="end-name">${name}</tspan> <tspan class="end-value">${fmt(l.value)}</tspan>`;
     }
   }
@@ -165,7 +166,9 @@ export function renderLine(ctx: RenderContext) {
       lines.push({ color: s.color, label: s.label, v: p.y });
     }
     lines.sort((a, b) => b.v - a.v);
-    const when = chart.quarterly ? `${["Primer", "Segundo", "Tercer", "Cuarto"][Math.round((yr % 1) * 4)]} trimestre de ${Math.floor(yr)}` : String(yr);
+    const q = Math.round((yr % 1) * 4);
+    const when = !chart.quarterly ? String(yr)
+      : lang === "es" ? `${["Primer", "Segundo", "Tercer", "Cuarto"][q]} trimestre de ${Math.floor(yr)}` : `Q${q + 1} ${Math.floor(yr)}`;
     tip.show(x(yr), m.top + 10, `<div class="tip-title">${when}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
   };
   const hide = () => { hover.style.display = "none"; tip.hide(); };

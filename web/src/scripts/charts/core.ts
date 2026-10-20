@@ -1,9 +1,9 @@
 import type { ChartConfig } from "../../lib/charts-config";
 import { EXTRA_DIMENSIONS } from "../../lib/charts-config";
 
-export type Lang = "es";
+export type Lang = "es" | "en";
 export type Row = Record<string, any> & { value: number };
-export type Bi = { es: string };
+export type Bi = { es: string; en: string };
 
 export interface Chart {
   id: string;
@@ -69,9 +69,22 @@ export function isHighlighted(geo: string, focus: string | null): boolean {
   return geo === "EU27" || geo === "ES" || geo === focus || geo in BLOC_VAR;
 }
 
+export const LOCALE: Record<Lang, string> = { es: "es-ES", en: "en-GB" };
+
 export function nf(lang: Lang, digits = 1) {
-  const f = new Intl.NumberFormat("es-ES", { maximumFractionDigits: digits });
+  const f = new Intl.NumberFormat(LOCALE[lang], { maximumFractionDigits: digits });
   return (v: number) => f.format(v);
+}
+
+/** Signo de porcentaje: con espacio en español (12 %), pegado en inglés (12%) */
+export const pctSign = (lang: Lang) => (lang === "es" ? " %" : "%");
+
+/** Idioma de la página (para los scripts que no reciben un contexto de gráfico) */
+export const pageLang = (): Lang => (document.documentElement.lang === "en" ? "en" : "es");
+
+/** Fecha corta o larga en el idioma de la página: «3 oct 2026» / «3 Oct 2026», «3 de octubre de 2026» / «3 October 2026» */
+export function fmtDay(lang: Lang, dt: Date, style: "short" | "long" = "short"): string {
+  return new Intl.DateTimeFormat(LOCALE[lang], { day: "numeric", month: style, year: "numeric" }).format(dt).replace(/\.(?= )/g, "");
 }
 
 export function geoName(chart: Chart, geo: string, lang: Lang): string {

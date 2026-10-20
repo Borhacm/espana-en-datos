@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "empleo",
  "title": {
-  "es": "El 35,4 % de los parados lleva un año o más buscando empleo: del 19,3 % de Baleares al 45,2 % de Canarias"
+  "es": "El 35,4 % de los parados lleva un año o más buscando empleo: del 19,3 % de Baleares al 45,2 % de Canarias",
+  "en": "35.4% of the unemployed have been looking for work for a year or more: from 19.3% in Balearic Islands to 45.2% in Canary Islands"
  },
  "subtitle": {
-  "es": "Parados que llevan un año o más buscando empleo, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en % de los parados. España: 47,8 % en 2021"
+  "es": "Parados que llevan un año o más buscando empleo, media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026, en % de los parados. España: 47,8 % en 2021",
+  "en": "Unemployed people looking for work for a year or more, average of the four quarters from Q3 2025 to Q2 2026, as % of the unemployed. Spain: 47.8% in 2021"
  },
  "unit": {
-  "es": "% de los parados"
+  "es": "% de los parados",
+  "en": "% of the unemployed"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -23,107 +26,133 @@
    "«prev» en la descarga: media de 2021; «change»: diferencia en puntos.",
    "En 2021 todavía pesaban los parados que perdieron el empleo con la pandemia de 2020: parte de la bajada desde entonces es la salida de esa crisis.",
    "Ceuta y Melilla tienen muestras pequeñas en la EPA y sus porcentajes varían mucho de un trimestre a otro."
+  ],
+  "en": [
+   "Sum of the unemployed who have been looking for work for one to two years and for two years or more, over all the unemployed in each region. It is a share of the unemployed, not of the labour force.",
+   "«prev» in the download: 2021 average; «change»: difference in points.",
+   "In 2021 the people who lost their jobs in the 2020 pandemic still weighed heavily: part of the fall since then is the recovery from that crisis.",
+   "Ceuta and Melilla have small samples in the EPA and their shares vary a lot from one quarter to the next."
   ]
  },
  "retrieved": "2026-10-09",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "inmigracion",
  "title": {
-  "es": "Entre los nacidos en España hay 38,8 mayores de 64 por cada 100 personas de 15 a 64 años; entre los nacidos fuera, 11,1"
+  "es": "Entre los nacidos en España hay 38,8 mayores de 64 por cada 100 personas de 15 a 64 años; entre los nacidos fuera, 11,1",
+  "en": "Among people born in Spain there are 38.8 people over 64 for every 100 aged 15 to 64; among the foreign-born, 11.1"
  },
  "subtitle": {
-  "es": "Personas de 65 años o más por cada 100 de 15 a 64 años, según el lugar de nacimiento, 1 de enero de cada año, 2002-2026"
+  "es": "Personas de 65 años o más por cada 100 de 15 a 64 años, según el lugar de nacimiento, 1 de enero de cada año, 2002-2026",
+  "en": "People aged 65 or over per 100 aged 15 to 64, by place of birth, 1 January each year, 2002-2026"
  },
  "unit": {
-  "es": "Mayores de 64 por cada 100 personas de 15 a 64"
+  "es": "Mayores de 64 por cada 100 personas de 15 a 64",
+  "en": "People over 64 per 100 people aged 15 to 64"
  },
  "source": {
   "name": "INE, Estadística Continua de Población",
@@ -22,6 +25,11 @@
    "Usa el grupo de 15 a 64 años (los grupos de edad de la tabla son quinquenales), como Eurostat. El artículo de demografía usa el indicador del INE, de 16 a 64 años, que da un valor algo distinto.",
    "Los nacidos fuera eran el 6,8 % de la población de 15 a 64 años en 2002 y el 25,5 % en 2026.",
    "Los hijos de inmigrantes nacidos en España cuentan como nacidos en España."
+  ],
+  "en": [
+   "It uses the 15 to 64 age group (the table's age groups are five-year bands), as Eurostat does. The demographics article uses INE's indicator, 16 to 64, which gives a slightly different value.",
+   "The foreign-born were 6.8% of the population aged 15 to 64 in 2002 and 25.5% in 2026.",
+   "Children of immigrants born in Spain count as born in Spain."
   ]
  },
  "retrieved": "2026-10-19",
@@ -29,13 +37,16 @@
  "dimensions": {
   "series": {
    "total": {
-    "es": "Toda la población"
+    "es": "Toda la población",
+    "en": "Whole population"
    },
    "espana": {
-    "es": "Nacidos en España"
+    "es": "Nacidos en España",
+    "en": "Born in Spain"
    },
    "fuera": {
-    "es": "Nacidos fuera"
+    "es": "Nacidos fuera",
+    "en": "Born abroad"
    }
   }
  },

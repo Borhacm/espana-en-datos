@@ -17,7 +17,19 @@ interface Data {
 const POS: Record<string, string> = { s: "si", n: "no", a: "abst" };
 const MIN_POSITIONS = 30; // un partido aparece si tiene posición en al menos 30 votaciones de la selección
 
+interface I18n {
+  error: string; all: string; views: [string, string, string]; types: Record<string, string>; notes: Record<string, string>;
+  summary: string; oneLeg: string; manyLegs: string; empty: string; party: string; sameAs: string; compared: string;
+  quarter: string; year: string; winning: string; votes: string; pair: string; same: string; comparedN: string;
+}
+/** Sustituye {clave} por su valor */
+const fill = (tpl: string, vars: Record<string, string | number>) => tpl.replace(/\{(\w+)\}/g, (_, k) => String(vars[k] ?? ""));
+
 const root = document.querySelector<HTMLElement>("[data-explorer]");
+const T: I18n = root ? JSON.parse(root.dataset.i18n!) : null;
+const LOCALE = root?.dataset.locale ?? "es-ES";
+const LANG = LOCALE.startsWith("es") ? "es" : "en";
+const PCT = LANG === "es" ? " %" : "%";
 if (root) init(root);
 
 async function init(root: HTMLElement) {
@@ -26,7 +38,7 @@ async function init(root: HTMLElement) {
   try {
     data = await fetch("/data/base/congreso-explorador.json").then((r) => r.json());
   } catch {
-    status.textContent = "No se han podido cargar las votaciones.";
+    status.textContent = T.error;
     return;
   }
 
@@ -57,8 +69,8 @@ async function init(root: HTMLElement) {
     update();
   }));
 
-  segmented(root.querySelector("[data-ex-type]")!, [["todas", "Todas"], ...Object.entries(data.types)], () => state.type, (v) => { state.type = v; update(); });
-  segmented(root.querySelector("[data-ex-view]")!, [["matriz", "Quién vota con quién"], ["partido", "Un partido frente a los demás"], ["ganador", "Quién gana las votaciones"]],
+  segmented(root.querySelector("[data-ex-type]")!, [["todas", T.all], ...Object.keys(data.types).map((k) => [k, T.types[k]] as [string, string])], () => state.type, (v) => { state.type = v; update(); });
+  segmented(root.querySelector("[data-ex-view]")!, [["matriz", T.views[0]], ["partido", T.views[1]], ["ganador", T.views[2]]],
     () => state.view, (v) => { state.view = v; update(); });
   const partySel = root.querySelector<HTMLSelectElement>("[data-ex-party]")!;
   partySel.addEventListener("change", () => { state.party = partySel.value; update(); });
@@ -83,8 +95,13 @@ async function init(root: HTMLElement) {
     const from = votes.length ? fmtDate(votes.reduce((m, v) => (v[1] < m ? v[1] : m), votes[0][1])) : "";
     const to = votes.length ? fmtDate(votes.reduce((m, v) => (v[1] > m ? v[1] : m), votes[0][1])) : "";
     summary.textContent = votes.length
-      ? `${votes.length.toLocaleString("es-ES")} votaciones${state.type !== "todas" ? ` (${data.types[state.type].toLowerCase()})` : ""} de ${legs.length === 1 ? `la legislatura ${legs[0].label}` : `${legs.length} legislaturas sumadas`}, del ${from} al ${to}.`
-      : "No hay votaciones con esta selección.";
+      ? fill(T.summary, {
+          n: votes.length.toLocaleString(LOCALE),
+          type: state.type !== "todas" ? ` (${T.types[state.type].toLowerCase()})` : "",
+          legs: legs.length === 1 ? fill(T.oneLeg, { leg: legs[0].label }) : fill(T.manyLegs, { n: legs.length }),
+          from, to,
+        })
+      : T.empty;
 
     // Selector de partido: solo los presentes en la selección
     if (!present.some((x) => x.b === state.party) && present.length) state.party = present.find((x) => x.b === "PSOE")?.b ?? present[0].b;
@@ -124,7 +141,7 @@ async function init(root: HTMLElement) {
       if (!me) return;
       const rows = present.filter((x) => x.b !== me.b).map((x) => ({ b: x.b, ...pair(me.j, x.j) })).filter((r) => r.n).sort((a, b) => b.value - a.value);
       bars(plot, rows, me.b, width);
-      table.innerHTML = simpleTable(["Partido", `% de votaciones en que votó igual que ${me.b}`, "Votaciones comparadas"], rows.map((r) => [r.b, fmt1(r.value), r.n.toLocaleString("es-ES")]));
+      table.innerHTML = simpleTable([T.party, fill(T.sameAs, { p: me.b }), T.compared], rows.map((r) => [r.b, fmt1(r.value), r.n.toLocaleString(LOCALE)]));
     } else {
       // Lado ganador por año (o por trimestre si solo hay una legislatura)
       const quarterly = state.legs.size === 1;
@@ -147,16 +164,16 @@ async function init(root: HTMLElement) {
         return { series, time: +t, value: Math.round((1000 * w) / n) / 10, n };
       });
       const colors = Object.fromEntries(series.map((b) => [b, PARTY_VAR[b] ?? "--context-strong"]));
-      const ctx = fakeCtx({ rows, quarterly, unit: { es: "%" }, ref_line: { value: 50, label: { es: "50 %" } } },
+      const ctx = fakeCtx({ rows, quarterly, unit: { es: "%", en: "%" }, ref_line: { value: 50, label: { es: "50 %", en: "50%" } } },
         { renderer: "line", series, seriesColors: colors, digits: 0, domainMin: 0 }, plot, legend, width);
       renderLine(ctx);
-      table.innerHTML = simpleTable(["Partido", quarterly ? "Trimestre" : "Año", "% en el lado ganador", "Votaciones"],
+      table.innerHTML = simpleTable([T.party, quarterly ? T.quarter : T.year, T.winning, T.votes],
         rows.sort((a, b) => a.series.localeCompare(b.series) || a.time - b.time)
-          .map((r) => [r.series, quarterly ? `T${Math.round((r.time % 1) * 4) + 1} ${Math.floor(r.time)}` : String(r.time), fmt1(r.value), String(r.n)]));
+          .map((r) => [r.series, quarterly ? `${LANG === "es" ? "T" : "Q"}${Math.round((r.time % 1) * 4) + 1} ${Math.floor(r.time)}` : String(r.time), fmt1(r.value), String(r.n)]));
     }
 
     // Notas de los grupos que reúnen varios partidos
-    const notes = present.map((x) => data.bloc_notes[x.b]).filter(Boolean);
+    const notes = present.map((x) => (x.b in data.bloc_notes ? T.notes[x.b] : "")).filter(Boolean);
     root.querySelector<HTMLElement>("[data-ex-notes]")!.innerHTML = [...new Set(notes)].map((n) => `<li>${n}</li>`).join("");
   }
 
@@ -185,7 +202,7 @@ function segmented(el: HTMLElement, options: [string, string][], get: () => stri
 }
 
 function fakeCtx(chart: any, cfg: any, plot: HTMLElement, legend: HTMLElement, width: number): RenderContext {
-  return { chart: { id: "explorador", title: { es: "" }, unit: { es: "" }, geos: {}, ...chart }, cfg: { table: { rows: "", cols: "" }, ...cfg }, lang: "es", state: {}, focus: null, plot, legend, width };
+  return { chart: { id: "explorador", title: { es: "", en: "" }, unit: { es: "", en: "" }, geos: {}, ...chart }, cfg: { table: { rows: "", cols: "" }, ...cfg }, lang: LANG, state: {}, focus: null, plot, legend, width };
 }
 
 /** Barras horizontales: coincidencia de un partido con cada uno de los demás. */
@@ -197,18 +214,18 @@ function bars(plot: HTMLElement, rows: { b: string; value: number; n: number }[]
   plot.appendChild(root);
   for (const t of [0, 25, 50, 75, 100]) {
     svg("line", { x1: x(t), x2: x(t), y1: top - 6, y2: height, class: t === 0 ? "baseline" : "gridline" }, root);
-    svg("text", { x: x(t), y: top - 12, class: "tick", "text-anchor": "middle" }, root).textContent = `${t} %`;
+    svg("text", { x: x(t), y: top - 12, class: "tick", "text-anchor": "middle" }, root).textContent = `${t}${PCT}`;
   }
   const tip = tooltip(plot);
-  const f = nf("es", 0);
+  const f = nf(LANG, 0);
   rows.forEach((r, i) => {
     const y = top + i * rowH;
     const g = svg("g", { tabindex: 0, class: "bar-row" }, root);
     svg("text", { x: left - 10, y: y + rowH / 2 + 5, class: "row-name", "text-anchor": "end" }, g).textContent = r.b;
     const color = cssVar(PARTY_VAR[r.b] ?? "--context-strong");
     svg("rect", { x: x(0), y: y + (rowH - bar) / 2, width: Math.max(x(r.value) - x(0), 1), height: bar, rx: 3, fill: color }, g);
-    svg("text", { x: x(r.value) + 6, y: y + rowH / 2 + 5, class: "row-value strong" }, g).textContent = `${f(r.value)} %`;
-    const html = `<div class="tip-title">${me} y ${r.b}</div>${tipRow(color, "Votaron igual", `${f(r.value)} %`, true)}<div class="tip-note">${r.n.toLocaleString("es-ES")} votaciones comparadas</div>`;
+    svg("text", { x: x(r.value) + 6, y: y + rowH / 2 + 5, class: "row-value strong" }, g).textContent = `${f(r.value)}${PCT}`;
+    const html = `<div class="tip-title">${fill(T.pair, { a: me, b: r.b })}</div>${tipRow(color, T.same, `${f(r.value)}${PCT}`, true)}<div class="tip-note">${fill(T.comparedN, { n: r.n.toLocaleString(LOCALE) })}</div>`;
     g.addEventListener("pointerenter", () => tip.show(x(r.value), y, html));
     g.addEventListener("focus", () => tip.show(x(r.value), y, html));
     g.addEventListener("pointerleave", () => tip.hide());
@@ -216,8 +233,8 @@ function bars(plot: HTMLElement, rows: { b: string; value: number; n: number }[]
   });
 }
 
-const fmt1 = (v: number) => (Number.isFinite(v) ? v.toLocaleString("es-ES", { maximumFractionDigits: 1 }) : "–");
-const fmtDate = (d: string) => new Intl.DateTimeFormat("es-ES", { dateStyle: "long" }).format(new Date(`${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}T12:00:00`));
+const fmt1 = (v: number) => (Number.isFinite(v) ? v.toLocaleString(LOCALE, { maximumFractionDigits: 1 }) : "–");
+const fmtDate = (d: string) => new Intl.DateTimeFormat(LOCALE, { dateStyle: "long" }).format(new Date(`${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}T12:00:00`));
 
 function simpleTable(head: string[], rows: string[][]): string {
   return `<table><thead><tr>${head.map((h, i) => `<th scope="col"${i ? ' class="num"' : ""}>${h}</th>`).join("")}</tr></thead><tbody>${
@@ -226,5 +243,5 @@ function simpleTable(head: string[], rows: string[][]): string {
 
 function matrixTable(blocs: string[], rows: { row: string; col: string; value: number }[]): string {
   const m = new Map(rows.map((r) => [`${r.row}|${r.col}`, r.value]));
-  return simpleTable(["Partido", ...blocs], blocs.map((a) => [a, ...blocs.map((b) => (a === b ? "–" : fmt1(m.get(`${a}|${b}`) ?? NaN)))]));
+  return simpleTable([T.party, ...blocs], blocs.map((a) => [a, ...blocs.map((b) => (a === b ? "–" : fmt1(m.get(`${a}|${b}`) ?? NaN)))]));
 }

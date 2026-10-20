@@ -1,46 +1,104 @@
 ---
 // Explorador de votaciones del Congreso (legislaturas X a XV). La lógica está en scripts/congress-explorer.ts.
 import { loadBase } from "../lib/data";
+import { formatNumber, locale, ui, type Lang } from "../lib/i18n";
 
+interface Props { lang: Lang }
+const { lang } = Astro.props;
 const data = loadBase("congreso-explorador");
 const first = data.legislatures[0];
 const last = data.legislatures[data.legislatures.length - 1];
+const copy = {
+  es: {
+    title: "Explora las votaciones desde 2011",
+    sub: `${formatNumber(data.votes.length, lang, 0)} votaciones nominales del Pleno, de la legislatura ${first.label} a la ${last.label}. Elige una o varias legislaturas (se suman), el tipo de votación y cómo verlo. El enlace de la página guarda tu selección.`,
+    legs: "Legislaturas", all: "Todas", type: "Tipo de votación", view: "Vista", party: "Partido",
+    loading: "Cargando las votaciones",
+    source: "Fuente",
+    sourceName: "Congreso de los Diputados, datos abiertos de votaciones",
+    foot: "Voto de un partido: la opción que eligió la mayoría de sus diputados presentes. Coincidencia: votaciones en que dos partidos votaron igual, sobre las que ambos votaron. Cada votación pesa lo mismo. Solo aparecen los partidos con posición en al menos 30 votaciones de la selección. Al sumar legislaturas se juntan los partidos con el mismo nombre; los grupos que cambiaron de nombre (por ejemplo, Unidas Podemos y Sumar) se cuentan aparte.",
+    download: "Descargar las votaciones (JSON)",
+  },
+  en: {
+    title: "Explore the votes since 2011",
+    sub: `${formatNumber(data.votes.length, lang, 0)} roll-call votes in the plenary, from the ${first.label} parliament to the ${last.label}. Pick one or more parliaments (they are added together), the type of vote and how to see it. The page link keeps your selection.`,
+    legs: "Parliaments", all: "All", type: "Type of vote", view: "View", party: "Party",
+    loading: "Loading the votes",
+    source: "Source",
+    sourceName: "Congress of Deputies, open data on votes",
+    foot: "A party's vote: the option chosen by the majority of its deputies present. Agreement: votes in which two parties voted the same way, out of those in which both voted. Every vote carries the same weight. Only parties with a position in at least 30 votes of the selection are shown. When parliaments are added together, parties with the same name are merged; groups that changed name (for example Unidas Podemos and Sumar) are counted separately.",
+    download: "Download the votes (JSON)",
+  },
+}[lang];
+// Textos que escribe el navegador
+const client = {
+  es: {
+    error: "No se han podido cargar las votaciones.",
+    all: "Todas",
+    views: ["Quién vota con quién", "Un partido frente a los demás", "Quién gana las votaciones"],
+    types: data.types as Record<string, string>,
+    notes: data.bloc_notes as Record<string, string>,
+    summary: "{n} votaciones{type} de {legs}, del {from} al {to}.",
+    oneLeg: "la legislatura {leg}", manyLegs: "{n} legislaturas sumadas",
+    empty: "No hay votaciones con esta selección.",
+    party: "Partido", sameAs: "% de votaciones en que votó igual que {p}", compared: "Votaciones comparadas",
+    quarter: "Trimestre", year: "Año", winning: "% en el lado ganador", votes: "Votaciones",
+    pair: "{a} y {b}", same: "Votaron igual", comparedN: "{n} votaciones comparadas",
+  },
+  en: {
+    error: "The votes could not be loaded.",
+    all: "All",
+    views: ["Who votes with whom", "One party against the rest", "Who wins the votes"],
+    types: { ley: "Laws", presupuestos: "Budgets", decreto: "Decree-laws", mocion: "Motions and non-legislative proposals", otra: "Other" },
+    notes: {
+      "Grupo Mixto": "Grupo Mixto (Mixed Group): brings together different parties in each parliament; its vote is that of the majority of its members.",
+      "Grupo Plural": "Grupo Plural (14th parliament): Junts, Más País, Compromís, BNG and others.",
+      "Unidas Podemos": "Unidas Podemos: the group of Podemos and its regional allies in the 11th, 12th and 14th parliaments.",
+      "Mixto (otros)": "Mixto (otros), 15th parliament: Mixed Group deputies who do not belong to Podemos, BNG, CC, UPN or Compromís (for example, those who left their group); its vote is that of the majority of them.",
+      "Podemos": "Podemos (15th parliament): in the Sumar group until December 2023 and in the Mixed Group afterwards.",
+    } as Record<string, string>,
+    summary: "{n} votes{type} from {legs}, from {from} to {to}.",
+    oneLeg: "the {leg} parliament", manyLegs: "{n} parliaments added together",
+    empty: "No votes match this selection.",
+    party: "Party", sameAs: "% of votes in which it voted the same as {p}", compared: "Votes compared",
+    quarter: "Quarter", year: "Year", winning: "% on the winning side", votes: "Votes",
+    pair: "{a} and {b}", same: "Voted the same", comparedN: "{n} votes compared",
+  },
+}[lang];
+// Si el pipeline añade un tipo o una nota de grupo sin traducir, el build falla en vez de publicar texto en español
+for (const k of Object.keys(data.types)) if (!(k in client.types)) throw new Error(`Explorador: tipo «${k}» sin traducir`);
+for (const k of Object.keys(data.bloc_notes)) if (!(k in client.notes)) throw new Error(`Explorador: nota de «${k}» sin traducir`);
 ---
-<section class="explorer" id="explorador" aria-labelledby="ex-h" data-explorer>
+<section class="explorer" id="explorador" aria-labelledby="ex-h" data-explorer data-locale={locale(lang)} data-i18n={JSON.stringify(client)}>
   <p class="code">CG-EX</p>
-  <h3 id="ex-h">Explora las votaciones desde 2011</h3>
-  <p class="sub">
-    {data.votes.length.toLocaleString("es-ES")} votaciones nominales del Pleno, de la legislatura {first.label} a la {last.label}.
-    Elige una o varias legislaturas (se suman), el tipo de votación y cómo verlo. El enlace de la página guarda tu selección.
-  </p>
+  <h3 id="ex-h">{copy.title}</h3>
+  <p class="sub">{copy.sub}</p>
 
   <div class="ex-controls">
     <fieldset>
-      <legend>Legislaturas</legend>
+      <legend>{copy.legs}</legend>
       <div class="chips" data-ex-legs></div>
-      <button type="button" class="linkbtn" data-ex-all>Todas</button>
+      <button type="button" class="linkbtn" data-ex-all>{copy.all}</button>
     </fieldset>
-    <div class="ctl"><span class="lbl">Tipo de votación</span><div class="seg" data-ex-type></div></div>
-    <div class="ctl"><span class="lbl">Vista</span><div class="seg" data-ex-view></div></div>
-    <label class="ctl" data-ex-party-wrap hidden><span class="lbl">Partido</span><select data-ex-party></select></label>
+    <div class="ctl"><span class="lbl">{copy.type}</span><div class="seg" data-ex-type></div></div>
+    <div class="ctl"><span class="lbl">{copy.view}</span><div class="seg" data-ex-view></div></div>
+    <label class="ctl" data-ex-party-wrap hidden><span class="lbl">{copy.party}</span><select data-ex-party></select></label>
   </div>
 
   <p class="summary" data-ex-summary aria-live="polite"></p>
   <div class="legend" data-ex-legend></div>
-  <div class="plot" data-ex-plot><p class="plot-status" data-ex-status>Cargando las votaciones</p></div>
+  <div class="plot" data-ex-plot><p class="plot-status" data-ex-status>{copy.loading}</p></div>
 
   <footer class="fig-foot">
     <p>
-      Fuente: <a href="https://www.congreso.es/es/opendata/votaciones" rel="noopener">Congreso de los Diputados, datos abiertos de votaciones</a>.
-      Voto de un partido: la opción que eligió la mayoría de sus diputados presentes. Coincidencia: votaciones en que dos partidos votaron igual,
-      sobre las que ambos votaron. Cada votación pesa lo mismo. Solo aparecen los partidos con posición en al menos 30 votaciones de la selección.
-      Al sumar legislaturas se juntan los partidos con el mismo nombre; los grupos que cambiaron de nombre (por ejemplo, Unidas Podemos y Sumar) se cuentan aparte.
+      {copy.source}: <a href="https://www.congreso.es/es/opendata/votaciones" rel="noopener">{copy.sourceName}</a>.{" "}
+      {copy.foot}
     </p>
     <ul class="notes" data-ex-notes></ul>
     <details class="table-view">
-      <summary>Ver los datos en una tabla</summary>
+      <summary>{ui[lang].showTable}</summary>
       <div class="table-scroll" data-ex-table></div>
-      <a class="download" href="/data/base/congreso-explorador.json" download>Descargar las votaciones (JSON)</a>
+      <a class="download" href="/data/base/congreso-explorador.json" download>{copy.download}</a>
     </details>
   </footer>
 </section>

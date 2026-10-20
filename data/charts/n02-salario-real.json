@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "empleo",
  "title": {
-  "es": "Descontada la inflación, el salario medio de 2025 es un 3,7 % menor que el de 2008; el salario mínimo, un 43,9 % mayor"
+  "es": "Descontada la inflación, el salario medio de 2025 es un 3,7 % menor que el de 2008; el salario mínimo, un 43,9 % mayor",
+  "en": "Adjusted for inflation, the average wage in 2025 is 3.7% lower than in 2008; the minimum wage, 43.9% higher"
  },
  "subtitle": {
-  "es": "Salario medio por trabajador y salario mínimo descontada la inflación. Índices, 2008 = 100, medias anuales, 2008-2025"
+  "es": "Salario medio por trabajador y salario mínimo descontada la inflación. Índices, 2008 = 100, medias anuales, 2008-2025",
+  "en": "Average wage per worker and minimum wage adjusted for inflation. Indices, 2008 = 100, annual averages, 2008-2025"
  },
  "unit": {
-  "es": "Índice (2008 = 100)"
+  "es": "Índice (2008 = 100)",
+  "en": "Index (2008 = 100)"
  },
  "source": {
   "name": "INE, Encuesta Trimestral de Coste Laboral",
@@ -40,6 +43,13 @@
    "Salario mínimo: cuantía mensual vigente el 1 de julio de cada año, en 12 pagas (Eurostat).",
    "Inflación: IPC general, media anual. Los dos índices se deflactan con el mismo IPC.",
    "Solo años completos: el último año con salario e IPC de todo el año es 2025."
+  ],
+  "en": [
+   "Average wage: total wage cost per worker per month from the ETCL (INE's quarterly labour cost survey: industry, construction and services, excluding agriculture and domestic work), with extra payments spread out. It is an average: if mostly low-wage jobs are lost, as in 2008-2013 or in 2020, the average rises even if no wage does.",
+   "In 2020 the average wage also falls because workers on furlough (ERTE) were paid by Social Security, not by their employer.",
+   "Minimum wage: monthly amount in force on 1 July each year, in 12 payments (Eurostat).",
+   "Inflation: general CPI, annual average. Both indices are deflated with the same CPI.",
+   "Full years only: the last year with wage and CPI data for the whole year is 2025."
   ]
  },
  "retrieved": "2026-10-19",
@@ -47,17 +57,20 @@
  "dimensions": {
   "series": {
    "salario": {
-    "es": "Salario medio"
+    "es": "Salario medio",
+    "en": "Average wage"
    },
    "smi": {
-    "es": "Salario mínimo"
+    "es": "Salario mínimo",
+    "en": "Minimum wage"
    }
   }
  },
  "ref_line": {
   "value": 100,
   "label": {
-   "es": "2008"
+   "es": "2008",
+   "en": "2008"
   }
  },
  "rows": [

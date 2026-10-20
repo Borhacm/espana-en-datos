@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "vivienda",
  "title": {
-  "es": "Desde 2015, la vivienda sube un 100 % en Madrid y un 40 % en Extremadura"
+  "es": "Desde 2015, la vivienda sube un 100 % en Madrid y un 40 % en Extremadura",
+  "en": "Since 2015, house prices have risen 100% in Madrid and 40% in Extremadura"
  },
  "subtitle": {
-  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %. España: 80 %"
+  "es": "Subida del precio de la vivienda entre 2015 y 2025, en %. España: 80 %",
+  "en": "Rise in house prices between 2015 and 2025, in %. Spain: 80%"
  },
  "unit": {
-  "es": "% de subida"
+  "es": "% de subida",
+  "en": "% rise"
  },
  "source": {
   "name": "INE, Índice de Precios de Vivienda",
@@ -21,107 +24,131 @@
   "es": [
    "Índice de Precios de Vivienda, medias anuales. Precios nominales, sin descontar la inflación.",
    "Ceuta y Melilla tienen pocas compraventas, así que su índice varía mucho de un año a otro."
+  ],
+  "en": [
+   "INE House Price Index, annual averages. Nominal prices, not adjusted for inflation.",
+   "Ceuta and Melilla have few sales, so their index varies a lot from one year to the next."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "01": {
    "es": "Andalucía",
+   "en": "Andalusia",
    "ccaa": true,
    "aggregate": false
   },
   "02": {
    "es": "Aragón",
+   "en": "Aragon",
    "ccaa": true,
    "aggregate": false
   },
   "03": {
    "es": "Asturias",
+   "en": "Asturias",
    "ccaa": true,
    "aggregate": false
   },
   "04": {
    "es": "Baleares",
+   "en": "Balearic Islands",
    "ccaa": true,
    "aggregate": false
   },
   "05": {
    "es": "Canarias",
+   "en": "Canary Islands",
    "ccaa": true,
    "aggregate": false
   },
   "06": {
    "es": "Cantabria",
+   "en": "Cantabria",
    "ccaa": true,
    "aggregate": false
   },
   "07": {
    "es": "Castilla y León",
+   "en": "Castile and León",
    "ccaa": true,
    "aggregate": false
   },
   "08": {
    "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
    "ccaa": true,
    "aggregate": false
   },
   "09": {
    "es": "Cataluña",
+   "en": "Catalonia",
    "ccaa": true,
    "aggregate": false
   },
   "10": {
    "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
    "ccaa": true,
    "aggregate": false
   },
   "11": {
    "es": "Extremadura",
+   "en": "Extremadura",
    "ccaa": true,
    "aggregate": false
   },
   "12": {
    "es": "Galicia",
+   "en": "Galicia",
    "ccaa": true,
    "aggregate": false
   },
   "13": {
    "es": "Madrid",
+   "en": "Madrid",
    "ccaa": true,
    "aggregate": false
   },
   "14": {
    "es": "Murcia",
+   "en": "Murcia",
    "ccaa": true,
    "aggregate": false
   },
   "15": {
    "es": "Navarra",
+   "en": "Navarre",
    "ccaa": true,
    "aggregate": false
   },
   "16": {
    "es": "País Vasco",
+   "en": "Basque Country",
    "ccaa": true,
    "aggregate": false
   },
   "17": {
    "es": "La Rioja",
+   "en": "La Rioja",
    "ccaa": true,
    "aggregate": false
   },
   "18": {
    "es": "Ceuta",
+   "en": "Ceuta",
    "ccaa": true,
    "aggregate": false
   },
   "19": {
    "es": "Melilla",
+   "en": "Melilla",
    "ccaa": true,
    "aggregate": false
   },
   "ES": {
    "es": "España",
+   "en": "Spain",
    "ccaa": false,
    "aggregate": true
   }

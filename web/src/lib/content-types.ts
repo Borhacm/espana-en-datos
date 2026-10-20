@@ -1,6 +1,9 @@
 // Tipos de los contenidos (temas y notas). Los archivos de content/ importan de aquí.
 
-export type Bi = { es: string };
+/** Texto en los dos idiomas de la web. Una pieza no se publica sin su versión inglesa. */
+export type Bi = { es: string; en: string };
+/** Fuente citada: el nombre puede quedarse en el idioma original (títulos de leyes o informes) o traducirse */
+export type Source = { name: string | Bi; url: string };
 export type LensId = "europa" | "dentro" | "tiempo";
 export type Block =
   | { p: Bi }
@@ -51,7 +54,7 @@ export interface Theme {
   /** Notas de otros temas que adelantaron este (se listan en la página del tema) */
   notes?: string[];
   /** Fuentes de las afirmaciones del texto que no salen de los gráficos (leyes, informes...) */
-  sources?: { name: string; url: string }[];
+  sources?: Source[];
 }
 
 export interface Note {
@@ -71,8 +74,11 @@ export interface Note {
   theme: string;
   body: Block[];
   /** Fuentes de las afirmaciones del texto que no salen de los gráficos (leyes, informes...) */
-  sources?: { name: string; url: string }[];
+  sources?: Source[];
 }
 
-/** Atajo para párrafos */
-export const p = (es: string): Block => ({ p: { es } });
+/** Atajo para párrafos: primero el español, después el inglés */
+export const p = (es: string, en: string): Block => ({ p: { es, en } });
+
+/** Nombre de una fuente en el idioma de la página */
+export const sourceName = (s: Source, lang: "es" | "en") => (typeof s.name === "string" ? s.name : s.name[lang]);

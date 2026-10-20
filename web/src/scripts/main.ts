@@ -112,7 +112,7 @@ async function mount(fig: HTMLElement) {
     fig.classList.add("veda");
     const note = document.createElement("p");
     note.className = "veda-note";
-    note.textContent = "La ley electoral prohíbe publicar encuestas durante los cinco días anteriores a la votación. Este gráfico volverá a mostrarse cuando cierren los colegios electorales.";
+    note.textContent = fig.dataset.veda ?? "";
     fig.querySelector(".fig-head")?.after(note);
     return;
   }

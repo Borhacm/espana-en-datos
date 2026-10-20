@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "legislatura",
  "title": {
-  "es": "Entre 2023 y 2025, el salario medio sube un 7,2 % y los precios, un 5,5 %"
+  "es": "Entre 2023 y 2025, el salario medio sube un 7,2 % y los precios, un 5,5 %",
+  "en": "Between 2023 and 2025, the average wage rises 7.2% and prices 5.5%"
  },
  "subtitle": {
-  "es": "Índices, 2023 = 100. Salario medio por trabajador y precios de consumo, medias anuales desde 2015"
+  "es": "Índices, 2023 = 100. Salario medio por trabajador y precios de consumo, medias anuales desde 2015",
+  "en": "Indices, 2023 = 100. Average wage per worker and consumer prices, annual averages since 2015"
  },
  "unit": {
-  "es": "Índice (2023 = 100)"
+  "es": "Índice (2023 = 100)",
+  "en": "Index (2023 = 100)"
  },
  "source": {
   "name": "INE, Encuesta Trimestral de Coste Laboral",
@@ -29,6 +32,12 @@
    "Precios: IPC general, media anual.",
    "Descontada la inflación, el salario medio de 2025 es un 1,6 % más alto que el de 2023.",
    "Solo años completos."
+  ],
+  "en": [
+   "Wage: total wage cost per worker per month (industry, construction and services), annual average. Includes extra payments. It is an average: it does not say how each person's wage has fared.",
+   "Prices: general CPI, annual average.",
+   "Adjusted for inflation, the average wage in 2025 is 1.6% higher than in 2023.",
+   "Full years only."
   ]
  },
  "retrieved": "2026-10-19",
@@ -36,17 +45,20 @@
  "dimensions": {
   "series": {
    "salarios": {
-    "es": "Salario medio"
+    "es": "Salario medio",
+    "en": "Average wage"
    },
    "precios": {
-    "es": "Precios (IPC)"
+    "es": "Precios (IPC)",
+    "en": "Prices (CPI)"
    }
   }
  },
  "ref_line": {
   "value": 100,
   "label": {
-   "es": "2023"
+   "es": "2023",
+   "en": "2023"
   }
  },
  "rows": [

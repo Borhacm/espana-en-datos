@@ -2,9 +2,11 @@
 // Simulador de escaños: el lector elige el voto nacional de cada partido y ve el reparto de diputados.
 // El modelo está en scripts/simulator-model.ts y se comprueba con `npm run check:sim`.
 import { loadBase } from "../lib/data";
-import { formatDate } from "../lib/i18n";
+import { formatDate, locale, type Lang } from "../lib/i18n";
 import { inVedaAt } from "../lib/veda";
 
+interface Props { lang: Lang }
+const { lang } = Astro.props;
 const data = loadBase("simulador");
 // Veda electoral: si se compila durante la veda, el simulador no lleva la media de encuestas; parte de 2023
 const veda = inVedaAt();
@@ -18,20 +20,67 @@ const changed = seatsData.rows.filter((r: any) => {
   return p && p.seats !== p.seats_2023;
 }).map((r: any) => {
   const p = data.provinces.find((x: any) => x.geo === r.geo);
-  return `${r.name} (${p.seats_2023} a ${p.seats})`;
+  return `${r.name} (${p.seats_2023} ${lang === "es" ? "a" : "to"} ${p.seats})`;
 });
+const copy = {
+  es: {
+    title: "Simulador de escaños",
+    sub: "Mueve el voto de cada partido y mira cuántos diputados saldrían.",
+    from2023: "Empieza con el resultado de 2023.",
+    fromPolls: (d: string) => `Empieza con la media de encuestas del ${d}.`,
+    inputs: "Voto nacional de cada partido",
+    fixed: "ERC, Junts, EH Bildu, PNV, BNG, CC y UPN mantienen su voto de 2023 en sus provincias.",
+    pollAvg: "Media de encuestas",
+    result2023: "Resultado de 2023",
+    majority: "Mayoría absoluta: 176",
+    party: "Partido", seats: "Escaños", change: "Cambio sobre 2023",
+    combos: "Sumas posibles",
+    combosNote: "Solo aritmética: no indica que esos pactos vayan a producirse.",
+    notPrediction: "No es una predicción.",
+    model: "Cada partido sube o baja en la misma proporción en todas las provincias respecto a 2023 (Podemos, con la distribución que tuvo Sumar, con quien se presentó; SALF, igual en todas). Después se reparten los escaños de cada provincia con la ley D'Hondt y el umbral del 3 %. Los resultados reales dependen de cómo se reparte el voto en cada provincia.",
+    seatsYear: (y: number) => `Escaños de 2026 por provincia calculados con la población oficial a 1 de enero de ${y} (LOREG, art. 162)`,
+    changed: (xs: string[]) => `: cambian ${xs.join(" y ")}`,
+    pending: " Pendiente de contrastar con el decreto de convocatoria.",
+    sources: "Fuentes",
+    interior: "Ministerio del Interior",
+    // Textos que escribe el navegador
+    client: { majority: "mayoría absoluta", missing: "faltan {n}" },
+  },
+  en: {
+    title: "Seat simulator",
+    sub: "Move each party's vote and see how many seats it would win.",
+    from2023: "It starts from the 2023 result.",
+    fromPolls: (d: string) => `It starts from the poll average of ${d}.`,
+    inputs: "National vote of each party",
+    fixed: "ERC, Junts, EH Bildu, PNV, BNG, CC and UPN keep their 2023 vote in their provinces.",
+    pollAvg: "Poll average",
+    result2023: "2023 result",
+    majority: "Absolute majority: 176",
+    party: "Party", seats: "Seats", change: "Change on 2023",
+    combos: "Possible sums",
+    combosNote: "Arithmetic only: it does not mean those deals will happen.",
+    notPrediction: "This is not a forecast.",
+    model: "Each party rises or falls by the same proportion in every province compared with 2023 (Podemos with the distribution Sumar had, since they ran together; SALF the same everywhere). The seats in each province are then allocated with the D'Hondt method and a 3% threshold. Real results depend on how the vote is spread across each province.",
+    seatsYear: (y: number) => `2026 seats per province calculated with the official population on 1 January ${y} (LOREG, art. 162)`,
+    changed: (xs: string[]) => `; changes in ${xs.join(" and ")}`,
+    pending: " Still to be checked against the decree calling the election.",
+    sources: "Sources",
+    interior: "Ministry of the Interior",
+    client: { majority: "absolute majority", missing: "{n} short" },
+  },
+}[lang];
 ---
-<section class="sim" id="simulador" aria-labelledby="sim-h" data-sim>
+<section class="sim" id="simulador" aria-labelledby="sim-h" data-sim data-locale={locale(lang)} data-i18n={JSON.stringify(copy.client)}>
   <p class="code">EL-SIM</p>
-  <h3 id="sim-h">Simulador de escaños</h3>
+  <h3 id="sim-h">{copy.title}</h3>
   <p class="sub">
-    Mueve el voto de cada partido y mira cuántos diputados saldrían.{" "}
-    {veda ? <span>Empieza con el resultado de 2023.</span> : <span data-poll-ref>Empieza con la media de encuestas del {formatDate(data.defaults_date)}.</span>}
+    {copy.sub}{" "}
+    {veda ? <span>{copy.from2023}</span> : <span data-poll-ref>{copy.fromPolls(formatDate(data.defaults_date, lang))}</span>}
   </p>
 
   <div class="sim-grid">
-    <!-- No es un <form>: la medición automática de GA contaría «form_start», que en bocal.online es el formulario de contacto -->
-    <div class="inputs" role="group" aria-label="Voto nacional de cada partido">
+    {/* No es un <form>: la medición automática de GA contaría «form_start», que en bocal.online es el formulario de contacto */}
+    <div class="inputs" role="group" aria-label={copy.inputs}>
       {parties.map((p) => (
         <label class="row" style={`--c: var(--p-${p.toLowerCase()})`}>
           <span class="name"><i></i>{LABEL[p] ?? p}</span>
@@ -39,39 +88,36 @@ const changed = seatsData.rows.filter((r: any) => {
           <output class="pct" for={p}></output>
         </label>
       ))}
-      <p class="fixed">ERC, Junts, EH Bildu, PNV, BNG, CC y UPN mantienen su voto de 2023 en sus provincias.</p>
+      <p class="fixed">{copy.fixed}</p>
       <div class="buttons">
-        {!veda && <button type="button" data-preset="defaults" data-poll-ref>Media de encuestas</button>}
-        <button type="button" data-preset="2023">Resultado de 2023</button>
+        {!veda && <button type="button" data-preset="defaults" data-poll-ref>{copy.pollAvg}</button>}
+        <button type="button" data-preset="2023">{copy.result2023}</button>
       </div>
     </div>
 
     <div class="results" aria-live="polite">
       <div class="bar-wrap">
         <div class="bar" data-bar></div>
-        <div class="majority" title="Mayoría absoluta: 176"><span>176</span></div>
+        <div class="majority" title={copy.majority}><span>176</span></div>
       </div>
       <table class="seats">
-        <thead><tr><th scope="col">Partido</th><th scope="col">Escaños</th><th scope="col">Cambio sobre 2023</th></tr></thead>
+        <thead><tr><th scope="col">{copy.party}</th><th scope="col">{copy.seats}</th><th scope="col">{copy.change}</th></tr></thead>
         <tbody data-table></tbody>
       </table>
-      <h4>Sumas posibles</h4>
-      <p class="combos-note">Solo aritmética: no indica que esos pactos vayan a producirse.</p>
+      <h4>{copy.combos}</h4>
+      <p class="combos-note">{copy.combosNote}</p>
       <ul class="combos" data-combos></ul>
     </div>
   </div>
 
   <footer class="sim-foot" id="sim-note">
     <p>
-      <strong>No es una predicción.</strong> Cada partido sube o baja en la misma proporción en todas las provincias respecto a 2023
-      (Podemos, con la distribución que tuvo Sumar, con quien se presentó; SALF, igual en todas). Después se reparten los escaños de cada
-      provincia con la ley D'Hondt y el umbral del 3 %. Los resultados reales dependen de cómo se reparte el voto en cada provincia.
+      <strong>{copy.notPrediction}</strong> {copy.model}
     </p>
     <p>
-      Escaños de 2026 por provincia calculados con la población oficial a 1 de enero de {seatsData.population_year} (LOREG, art. 162)
-      {changed.length > 0 && <>: cambian {changed.join(" y ")}</>}.
-      {!seatsData.verified && " Pendiente de contrastar con el decreto de convocatoria."}
-      {" "}Fuentes: <a href="https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/" rel="noopener">Ministerio del Interior</a>,
+      {copy.seatsYear(seatsData.population_year)}{changed.length > 0 && copy.changed(changed)}.
+      {!seatsData.verified && copy.pending}
+      {" "}{copy.sources}: <a href="https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/" rel="noopener">{copy.interior}</a>,
       {" "}<a href={seatsData.source.url} rel="noopener">INE</a>.
     </p>
   </footer>
@@ -89,7 +135,9 @@ const changed = seatsData.rows.filter((r: any) => {
     const data: SimData & { defaults: Record<string, number> } = JSON.parse(root.querySelector("[data-sim-data]")!.textContent!);
     const inputs = [...root.querySelectorAll<HTMLInputElement>("input[type=range]")];
     const base2023 = simulate(Object.fromEntries(data.parties.map((p) => [p, data.national_2023[p] ?? 0])), data, "seats_2023").total;
-    const fmt = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    const i18n: { majority: string; missing: string } = JSON.parse(root.dataset.i18n!);
+    const fmt = new Intl.NumberFormat(root.dataset.locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    const pctSign = root.dataset.locale === "es-ES" ? " %" : "%";
     const css = (v: string) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
     const VAR: Record<string, string> = {
       PP: "--p-pp", PSOE: "--p-psoe", Vox: "--p-vox", Sumar: "--p-sumar", Podemos: "--p-podemos", SALF: "--p-salf",
@@ -109,7 +157,7 @@ const changed = seatsData.rows.filter((r: any) => {
     const update = () => {
       const input = Object.fromEntries(inputs.map((i) => [i.name, +i.value]));
       inputs.forEach((i) => {
-        i.nextElementSibling!.textContent = `${fmt.format(+i.value)} %`;
+        i.nextElementSibling!.textContent = `${fmt.format(+i.value)}${pctSign}`;
         i.style.setProperty("--v", `${(+i.value / +i.max) * 100}%`);
       });
       const { total } = simulate(input, data);
@@ -128,7 +176,7 @@ const changed = seatsData.rows.filter((r: any) => {
       root.querySelector("[data-combos]")!.innerHTML = COMBOS.map((c) => {
         const n = c.reduce((a, p) => a + (total[p] ?? 0), 0);
         const ok = n >= 176;
-        return `<li class="${ok ? "ok" : ""}"><span>${c.map(L).join(" + ")}</span><strong>${n}</strong><em>${ok ? "mayoría absoluta" : `faltan ${176 - n}`}</em></li>`;
+        return `<li class="${ok ? "ok" : ""}"><span>${c.map(L).join(" + ")}</span><strong>${n}</strong><em>${ok ? i18n.majority : i18n.missing.replace("{n}", String(176 - n))}</em></li>`;
       }).join("");
     };
 

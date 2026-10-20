@@ -27,6 +27,29 @@ CCAA = {
     "19": "Melilla",
 }
 
+# Nombres en inglés (los mismos que usa la web, web/src/lib/geo.ts)
+CCAA_EN = {
+    "01": "Andalusia", "02": "Aragon", "03": "Asturias", "04": "Balearic Islands", "05": "Canary Islands",
+    "06": "Cantabria", "07": "Castile and León", "08": "Castile-La Mancha", "09": "Catalonia",
+    "10": "Valencian Community", "11": "Extremadura", "12": "Galicia", "13": "Madrid", "14": "Murcia",
+    "15": "Navarre", "16": "Basque Country", "17": "La Rioja", "18": "Ceuta", "19": "Melilla",
+}
+assert set(CCAA_EN) == set(CCAA)
+
+
+def ccaa_name(code: str, lang: str) -> str:
+    """Nombre de una comunidad (o España) en el idioma pedido."""
+    if code == "ES":
+        return "España" if lang == "es" else "Spain"
+    return CCAA[code] if lang == "es" else CCAA_EN[code]
+
+
+def country_name(code: str, lang: str) -> str:
+    if code == "EU27":
+        return EU_NAMES[lang]
+    return COUNTRIES[code][1 if lang == "es" else 2]
+
+
 # Provincias (código INE -> nombre, comunidad)
 PROVINCIAS = {
     "01": ("Álava", "16"), "02": ("Albacete", "08"), "03": ("Alicante", "10"), "04": ("Almería", "01"),
@@ -124,8 +147,7 @@ def country_table(codes) -> dict:
     """Nombres de países para el JSON de salida."""
     out = {}
     for c in sorted(set(codes)):
-        nm = "Unión Europea" if c == "EU27" else COUNTRIES[c][1]
-        out[c] = {"es": nm, "eu": c == "EU27" or COUNTRIES[c][3], "aggregate": c == "EU27"}
+        out[c] = {"es": country_name(c, "es"), "en": country_name(c, "en"), "eu": c == "EU27" or COUNTRIES[c][3], "aggregate": c == "EU27"}
     return out
 
 
@@ -133,5 +155,5 @@ def ccaa_table(codes) -> dict:
     """Nombres de comunidades (y España) para el JSON de salida."""
     out = {}
     for c in sorted(set(codes)):
-        out[c] = {"es": "España" if c == "ES" else CCAA[c], "ccaa": c != "ES", "aggregate": c == "ES"}
+        out[c] = {"es": ccaa_name(c, "es"), "en": ccaa_name(c, "en"), "ccaa": c != "ES", "aggregate": c == "ES"}
     return out

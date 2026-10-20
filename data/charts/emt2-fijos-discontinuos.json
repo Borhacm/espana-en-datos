@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "empleo",
  "title": {
-  "es": "Los fijos discontinuos pasan del 2,5 % al 4,1 % de los asalariados privados; sumados a los temporales, bajan del 26,2 % al 16,5 %"
+  "es": "Los fijos discontinuos pasan del 2,5 % al 4,1 % de los asalariados privados; sumados a los temporales, bajan del 26,2 % al 16,5 %",
+  "en": "Permanent seasonal workers rise from 2.5% to 4.1% of private employees; added to temporary workers, they fall from 26.2% to 16.5%"
  },
  "subtitle": {
-  "es": "Asalariados del sector privado con contrato temporal o fijo discontinuo, en %, trimestral desde 2008 hasta el segundo trimestre de 2026"
+  "es": "Asalariados del sector privado con contrato temporal o fijo discontinuo, en %, trimestral desde 2008 hasta el segundo trimestre de 2026",
+  "en": "Private-sector employees on temporary or permanent seasonal contracts, in %, quarterly from 2008 to Q2 2026"
  },
  "unit": {
-  "es": "% de los asalariados del sector privado"
+  "es": "% de los asalariados del sector privado",
+  "en": "% of private-sector employees"
  },
  "source": {
   "name": "INE, Encuesta de Población Activa",
@@ -24,6 +27,12 @@
    "La EPA pregunta a las personas por su contrato en la semana de referencia: un fijo discontinuo en un periodo sin actividad puede aparecer como ocupado ausente o como parado según su situación, de ahí parte de la estacionalidad.",
    "Titular: media de 2021 frente a la media de los cuatro trimestres del tercer trimestre de 2025 al segundo trimestre de 2026.",
    "«suma»: temporales más fijos discontinuos, para ver cuánto de la caída de la temporalidad se explica por el paso a fijos discontinuos."
+  ],
+  "en": [
+   "Fijo discontinuo (permanent seasonal contract): a permanent contract for seasonal or intermittent work. Between periods of activity the worker earns no wage but keeps the contract. It counts as permanent.",
+   "The EPA asks people about their contract in the reference week: a permanent seasonal worker in a period without activity may appear as employed but absent or as unemployed depending on their situation, hence part of the seasonality.",
+   "Headline: 2021 average against the average of the four quarters from Q3 2025 to Q2 2026.",
+   "«suma»: temporary plus permanent seasonal workers, to see how much of the fall in temporary employment is explained by the shift to permanent seasonal contracts."
   ]
  },
  "retrieved": "2026-10-09",
@@ -31,33 +40,47 @@
  "dimensions": {
   "series": {
    "temporal": {
-    "es": "Temporales"
+    "es": "Temporales",
+    "en": "Temporary"
    },
    "discontinuo": {
-    "es": "Fijos discontinuos"
+    "es": "Fijos discontinuos",
+    "en": "Permanent seasonal"
    },
    "suma": {
-    "es": "Temporales + fijos discontinuos"
+    "es": "Temporales + fijos discontinuos",
+    "en": "Temporary + permanent seasonal"
    }
   }
  },
  "short_labels": {
-  "temporal": "Temporales",
-  "discontinuo": "Fijos disc.",
-  "suma": "Suma"
+  "temporal": {
+   "es": "Temporales",
+   "en": "Temporary"
+  },
+  "discontinuo": {
+   "es": "Fijos disc.",
+   "en": "Perm. seasonal"
+  },
+  "suma": {
+   "es": "Suma",
+   "en": "Sum"
+  }
  },
  "quarterly": true,
  "events": [
   {
    "time": 2022.0,
    "label": {
-    "es": "Reforma laboral: Real Decreto-ley 32/2021 (diciembre de 2021)"
+    "es": "Reforma laboral: Real Decreto-ley 32/2021 (diciembre de 2021)",
+    "en": "Labour reform: Royal Decree-law 32/2021 (December 2021)"
    }
   },
   {
    "time": 2022.23,
    "label": {
-    "es": "Rigen los nuevos contratos (30 de marzo de 2022)"
+    "es": "Rigen los nuevos contratos (30 de marzo de 2022)",
+    "en": "The new contract rules apply (30 March 2022)"
    }
   }
  ],

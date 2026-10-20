@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "demografia",
  "title": {
-  "es": "El INE proyecta 51,8 mayores de 64 por cada 100 personas de 16 a 64 años en 2050; sin migración, serían 69,9"
+  "es": "El INE proyecta 51,8 mayores de 64 por cada 100 personas de 16 a 64 años en 2050; sin migración, serían 69,9",
+  "en": "INE projects 51.8 people over 64 for every 100 people aged 16 to 64 in 2050; without migration, there would be 69.9"
  },
  "subtitle": {
-  "es": "Tasa de dependencia de los mayores de 64: observada, 1975-2025, y proyectada, 2026-2075, en dos escenarios del INE"
+  "es": "Tasa de dependencia de los mayores de 64: observada, 1975-2025, y proyectada, 2026-2075, en dos escenarios del INE",
+  "en": "Old-age dependency ratio: observed, 1975-2025, and projected, 2026-2075, in two INE scenarios"
  },
  "unit": {
-  "es": "Mayores de 64 por cada 100 personas de 16 a 64"
+  "es": "Mayores de 64 por cada 100 personas de 16 a 64",
+  "en": "People over 64 per 100 people aged 16 to 64"
  },
  "source": {
   "name": "INE, Indicadores Demográficos Básicos",
@@ -33,6 +36,14 @@
    "Otros escenarios del INE en 2050 y 2075: fecundidad alta, 51,5 y 49,7; fecundidad baja, 52,1 y 56,9; saldo migratorio alto, 50,1 y 51,9; saldo migratorio bajo, 53,7 y 54,6.",
    "Una proyección no es una predicción: muestra qué pasaría si se cumplieran sus supuestos.",
    "La serie observada es del 1 de enero de cada año; la proyectada empieza en 2026."
+  ],
+  "en": [
+   "Population aged 65 or over divided by the population aged 16 to 64, times 100.",
+   "INE central scenario: fertility, life expectancy and net migration following recent trends. Zero net migration scenario: as many people arrive as leave each year.",
+   "In the central scenario, the ratio calculated with the projected population matches the one INE publishes (table 36670). It rises to 52.2 in 2054, falls to 50.9 in 2066 and rises again to 53.1 in 2075. Without migration, it reaches 90.4 in 2075.",
+   "Other INE scenarios in 2050 and 2075: high fertility, 51.5 and 49.7; low fertility, 52.1 and 56.9; high net migration, 50.1 and 51.9; low net migration, 53.7 and 54.6.",
+   "A projection is not a forecast: it shows what would happen if its assumptions held.",
+   "The observed series is for 1 January each year; the projection starts in 2026."
   ]
  },
  "retrieved": "2026-10-19",
@@ -40,13 +51,16 @@
  "dimensions": {
   "series": {
    "historico": {
-    "es": "Observada"
+    "es": "Observada",
+    "en": "Observed"
    },
    "central": {
-    "es": "Central"
+    "es": "Central",
+    "en": "Central"
    },
    "nulo": {
-    "es": "Sin migración"
+    "es": "Sin migración",
+    "en": "No migration"
    }
   }
  },

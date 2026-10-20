@@ -1,5 +1,5 @@
 import { scaleLinear } from "d3-scale";
-import { svg, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, type RenderContext } from "./core";
+import { svg, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, type RenderContext, pctSign } from "./core";
 
 const ORDER = ["abierto", "api", "cerrado"];
 const VAR: Record<string, string> = { abierto: "--ord-3", api: "--ord-2", cerrado: "--ord-1" };
@@ -47,13 +47,13 @@ export function renderStack(ctx: RenderContext) {
       const fill = cssVar(VAR[a]);
       const seg = svg("g", { tabindex: 0 }, root);
       svg("rect", { x: x0, y, width: Math.max(x1 - x0, 0), height: BAR, fill, rx: 0 }, seg);
-      const label = `${fmt(r.value)} %`;
+      const label = `${fmt(r.value)}${pctSign(lang)}`;
       if (x1 - x0 > label.length * 8 + 12) {
         const t = svg("text", { x: x0 + 8, y: y + BAR / 2 + 5, class: "seg-label", fill: labelColor(fill) }, seg);
         t.textContent = label;
       }
       const show = () => tip.show(x0 + (x1 - x0) / 2, y,
-        `<div class="tip-title">${geoName(chart, g, lang)}</div>${tipRow(fill, dimLabel(chart, "access", a, lang), `${fmt(r.value)} % (${r.count})`)}`);
+        `<div class="tip-title">${geoName(chart, g, lang)}</div>${tipRow(fill, dimLabel(chart, "access", a, lang), `${fmt(r.value)}${pctSign(lang)} (${r.count})`)}`);
       seg.addEventListener("pointerenter", show);
       seg.addEventListener("focus", show);
       seg.addEventListener("pointerleave", () => tip.hide());

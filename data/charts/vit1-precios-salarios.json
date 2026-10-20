@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "vivienda",
  "title": {
-  "es": "Descontada la inflación, la vivienda cuesta un 42 % más que en 2015; el salario medio compra un 1,5 % menos"
+  "es": "Descontada la inflación, la vivienda cuesta un 42 % más que en 2015; el salario medio compra un 1,5 % menos",
+  "en": "Adjusted for inflation, housing costs 42% more than in 2015; the average wage buys 1.5% less"
  },
  "subtitle": {
-  "es": "Índices, 2015 = 100. Precio de la vivienda, salario medio por trabajador y precios de consumo"
+  "es": "Índices, 2015 = 100. Precio de la vivienda, salario medio por trabajador y precios de consumo",
+  "en": "Indices, 2015 = 100. House prices, average wage per worker and consumer prices"
  },
  "unit": {
-  "es": "Índice (2015 = 100)"
+  "es": "Índice (2015 = 100)",
+  "en": "Index (2015 = 100)"
  },
  "source": {
   "name": "INE, Índice de Precios de Vivienda",
@@ -34,6 +37,13 @@
    "Precios: IPC general, media anual. Entre 2015 y 2025 subió un 27 %.",
    "En términos nominales, entre 2015 y 2025 la vivienda sube un 80 % y el salario medio, un 25 %.",
    "Solo años completos."
+  ],
+  "en": [
+   "Housing: INE House Price Index (sales of new and existing homes), annual average.",
+   "Wages: total wage cost per worker per month (industry, construction and services), annual average. Includes extra payments.",
+   "Prices: general CPI, annual average. Between 2015 and 2025 it rose 27%.",
+   "In nominal terms, between 2015 and 2025 house prices rise 80% and the average wage 25%.",
+   "Full years only."
   ]
  },
  "retrieved": "2026-10-19",
@@ -41,20 +51,24 @@
  "dimensions": {
   "series": {
    "vivienda": {
-    "es": "Vivienda"
+    "es": "Vivienda",
+    "en": "Housing"
    },
    "salarios": {
-    "es": "Salarios"
+    "es": "Salarios",
+    "en": "Wages"
    },
    "precios": {
-    "es": "Precios (IPC)"
+    "es": "Precios (IPC)",
+    "en": "Prices (CPI)"
    }
   }
  },
  "ref_line": {
   "value": 100,
   "label": {
-   "es": "2015"
+   "es": "2015",
+   "en": "2015"
   }
  },
  "rows": [

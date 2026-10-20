@@ -26,6 +26,29 @@ const copy = {
       "España en datos cuenta con datos abiertos cómo está España, cómo se compara con Europa y qué diferencias hay entre sus comunidades.",
       "Cada gráfico enlaza a su fuente original, explica sus límites y permite descargar los datos. Las fuentes principales son el INE, Eurostat, el Ministerio del Interior, el Banco de España y el CIS.",
     ],
+    spKicker: "Especial",
+    spTitle: "Elecciones generales del 29 de noviembre",
+    spDek: "Seguimiento de encuestas, el mapa de 2023 y quién gobierna en cada comunidad.",
+  },
+  en: {
+    h1: ["Spain, told", "with open data."],
+    dek: "The economy, housing, jobs, politics and the regions. Compared with Europe, across regions and with the past, always one click away from the source.",
+    themesTitle: "Themes",
+    allThemes: "All themes",
+    charts: "charts",
+    notesTitle: "Notes",
+    notesIntro: "Short pieces on one specific figure, with one or two charts.",
+    allNotes: "All notes",
+    lensesTitle: "Three lenses",
+    lensesIntro: "Each lens runs through every theme. Pick one and follow it from start to finish.",
+    aboutTitle: "About this project",
+    about: [
+      "Spain in data uses open data to show how Spain is doing, how it compares with Europe and how its regions differ.",
+      "Every chart links to its original source, explains its limits and lets you download the data. The main sources are INE (Spain's statistics office), Eurostat, the Ministry of the Interior, the Bank of Spain and the CIS (the public polling institute).",
+    ],
+    spKicker: "Special",
+    spTitle: "Spain's general election on 29 November",
+    spDek: "A poll tracker, the 2023 map and who governs each region.",
   },
 }[lang];
 
@@ -39,9 +62,9 @@ const latestNotes = NOTES.slice(0, 3);
 <Base lang={lang} path={paths.home} section="home">
   <a class="special" href={paths.elections[lang]}>
     <span class="wrap special-in">
-      <span class="sp-kicker">Especial</span>
-      <span class="sp-title">Elecciones generales del 29 de noviembre</span>
-      <span class="sp-dek">Seguimiento de encuestas, el mapa de 2023 y quién gobierna en cada comunidad.</span>
+      <span class="sp-kicker">{copy.spKicker}</span>
+      <span class="sp-title">{copy.spTitle}</span>
+      <span class="sp-dek">{copy.spDek}</span>
     </span>
   </a>
   <section class="hero wrap">

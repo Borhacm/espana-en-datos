@@ -4,6 +4,7 @@ import { loadChart } from "../lib/data";
 import { inVedaAt } from "../lib/veda";
 import { NOTES, figuresOf, noteFigures, published } from "../lib/themes";
 import { notePath, paths, themePath, formatDate, type Lang } from "../lib/i18n";
+import { srcText } from "../lib/sources-en";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -18,7 +19,7 @@ const groups = [
   })),
   ...(NOTES.length
     ? [{
-        title: "Notas",
+        title: lang === "es" ? "Notas" : "Notes",
         href: paths.notes[lang],
         charts: NOTES.flatMap((n) => noteFigures(n).map((f) => ({ ...f, href: `${notePath(n.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) }))),
       }]
@@ -55,6 +56,39 @@ const copy = {
     privacyText: "Medimos el uso de la web con Google Analytics: visitas y qué gráficos, tablas y simulador se usan. Sin tu consentimiento solo se envían mediciones sin cookies que no te identifican; con él, también cookies de análisis. Puedes cambiarlo en «Preferencias de cookies», al pie de cada página. Si eliges destacar una comunidad, esa preferencia se guarda solo en tu navegador.",
     independent: "Independencia",
     independentText: "Este es un proyecto independiente de Bocal. No está vinculado a ningún partido, administración ni empresa demoscópica, ni a ninguna de las fuentes citadas, y no representa sus opiniones.",
+    others: "Otros",
+  },
+  en: {
+    title: "Methodology",
+    intro: "How the data on this site has been collected, processed and presented.",
+    principles: "Principles",
+    list: [
+      "Only open, public data. We prioritise official sources (INE, Spain's statistics office; Eurostat; the Ministry of the Interior; the Bank of Spain; the CIS, the public polling institute). When they do not cover a topic, we use recognised academic or independent sources and say so in each chart.",
+      "Every chart links to its source, states its licence and the date the data was retrieved, and lets you view and download the data.",
+      "The data is downloaded by an automatic, reproducible process, with no manual edits. Methodological caveats are shown next to each chart.",
+      "We describe, we do not attribute. A region governed by one party having a better or worse figure does not prove it is because of that party: it also depends on income, demographics, the economic cycle and which level of government holds the power in question. When we assess a policy, we compare it with a control group and cite independent evaluations.",
+      "Every party is treated the same: same format, same sources and same standards.",
+      "Every piece is written and checked in Spanish first and published in English at the same time. The English version is a faithful translation, with the same figures and caveats; if the two ever differ, the Spanish original prevails.",
+    ],
+    polls: "Polls",
+    pollsList: [
+      "We collect every voting intention poll published since the 2023 general election, with a link to where it was originally published. The starting compilation is Wikipedia's, which cites each source.",
+      "The average is calculated every week from each pollster's latest poll in the previous 45 days. Each poll is weighted by its age (a 14-day Gaussian kernel) and by the square root of its sample size, capped at 3,000 interviews. Only polls published up to that date are used.",
+      "Shown but left out of the average: online panels without probability sampling, polls commissioned by parties, and re-estimates of CIS surveys made by other companies (they reuse the same sample).",
+      "Spanish electoral law (LOREG, article 69.7) bans publishing polls in the five days before the vote. From 24 to 28 November 2026 the tracker is hidden.",
+    ],
+    colors: "Colours",
+    colorsText: "Each party always has the same colour, close to the one it usually uses. Regional nationalist parties have their own colour, chosen to stand apart from their direct rivals in their territory (for example PNV and EH Bildu, or Junts and ERC). CiU, PDeCAT and Junts share a colour because they are the same political space; small parties are grey with their initials. Because some pairs are hard to tell apart with colour blindness (PSOE's red and Vox's green, or PNV and Bildu), the charts name every series and have a table. The palette is checked in light and dark mode.",
+    charts: "Charts and sources",
+    code: "Chart",
+    source: "Source",
+    license: "Licence",
+    retrieved: "Retrieved",
+    privacy: "Privacy",
+    privacyText: "We measure use of the site with Google Analytics: visits, and which charts, tables and the simulator are used. Without your consent, only cookieless measurements that do not identify you are sent; with it, analytics cookies too. You can change this under «Cookie preferences» at the foot of every page. If you choose to highlight a region, that preference is stored only in your browser.",
+    independent: "Independence",
+    independentText: "This is an independent project by Bocal. It is not linked to any party, public body or polling company, nor to any of the sources cited, and does not represent their views.",
+    others: "Others",
   },
 }[lang];
 ---
@@ -72,7 +106,7 @@ const copy = {
     <h2>{copy.colors}</h2>
     <p class="prose">{copy.colorsText}</p>
     <div class="swatches" aria-hidden="true">
-      {[["PP", "--p-pp"], ["PSOE", "--p-psoe"], ["Vox", "--p-vox"], ["Sumar", "--p-sumar"], ["Podemos", "--p-podemos"], ["SALF", "--p-salf"], ["PNV", "--p-pnv"], ["EH Bildu", "--p-bildu"], ["UPN", "--p-upn"], ["Junts", "--p-junts"], ["ERC", "--p-erc"], ["BNG", "--p-bng"], ["CC", "--p-cc"], ["Otros", "--p-other"]].map(([name, v]) => (
+      {[["PP", "--p-pp"], ["PSOE", "--p-psoe"], ["Vox", "--p-vox"], ["Sumar", "--p-sumar"], ["Podemos", "--p-podemos"], ["SALF", "--p-salf"], ["PNV", "--p-pnv"], ["EH Bildu", "--p-bildu"], ["UPN", "--p-upn"], ["Junts", "--p-junts"], ["ERC", "--p-erc"], ["BNG", "--p-bng"], ["CC", "--p-cc"], [copy.others, "--p-other"]].map(([name, v]) => (
         <span><i style={`background:var(${v})`}></i>{name}</span>
       ))}
     </div>
@@ -87,8 +121,8 @@ const copy = {
             {g.charts.map((c) => (
               <tr>
                 <th scope="row"><a href={c.href}>{c.code}</a> {c.chart.title[lang]}</th>
-                <td><a href={c.chart.source.url} rel="noopener">{c.chart.source.name}</a> <span class="ds">{c.chart.source.dataset}</span></td>
-                <td>{c.chart.source.license}</td>
+                <td><a href={c.chart.source.url} rel="noopener">{srcText(c.chart.source.name, lang)}</a> <span class="ds">{srcText(c.chart.source.dataset, lang)}</span></td>
+                <td>{srcText(c.chart.source.license, lang)}</td>
                 <td class="num">{formatDate(c.chart.retrieved, lang)}</td>
               </tr>
             ))}

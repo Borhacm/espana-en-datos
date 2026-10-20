@@ -2,9 +2,26 @@
 //  - "heat": porcentaje (0-100) con rampa secuencial de un solo tono (coincidencias entre partidos).
 //  - "votes": voto de cada partido (si / no / abst) en cada fila (decretos derogados).
 import { interpolateLab } from "d3-interpolate";
-import { svg, cssVar, nf, tooltip, tipRow, legend, type RenderContext, type Row } from "./core";
+import { svg, cssVar, nf, tooltip, tipRow, legend, type RenderContext, type Row, LOCALE, type Lang } from "./core";
 
-const VOTE_LABEL: Record<string, string> = { si: "A favor", no: "En contra", abst: "Abstención" };
+const VOTE_LABEL: Record<Lang, Record<string, string>> = {
+  es: { si: "A favor", no: "En contra", abst: "Abstención" },
+  en: { si: "Yes", no: "No", abst: "Abstention" },
+};
+const TXT = {
+  es: {
+    withGov: (c: string) => `${c} con el Gobierno`, pair: (a: string, b: string) => `${a} y ${b}`,
+    same: (v: string, n: string) => `Votaron lo mismo en el <strong>${v} %</strong> de ${n} votaciones`,
+    vote: (d: string, y: number, n: number) => `Votación del ${d}: ${y} a favor, ${n} en contra`,
+    never: "0 %: nunca votan igual", always: "100 %: siempre votan igual",
+  },
+  en: {
+    withGov: (c: string) => `${c} with the government`, pair: (a: string, b: string) => `${a} and ${b}`,
+    same: (v: string, n: string) => `Voted the same way in <strong>${v}%</strong> of ${n} votes`,
+    vote: (d: string, y: number, n: number) => `Vote of ${d}: ${y} in favour, ${n} against`,
+    never: "0%: never vote the same", always: "100%: always vote the same",
+  },
+};
 const VOTE_VAR: Record<string, string> = { si: "--vote-yes", no: "--vote-no", abst: "--vote-abst" };
 
 /** Texto en tinta oscura sobre fondos claros y en blanco sobre los oscuros (sirve en modo claro y oscuro). */
@@ -17,7 +34,8 @@ function textOn(rgb: string): string {
 export function renderMatrix(ctx: RenderContext) {
   const { chart, plot, width, cfg } = ctx;
   const mode = cfg.matrixMode ?? "heat";
-  const fmt = nf("es", 0);
+  const fmt = nf(ctx.lang, 0);
+  const T = TXT[ctx.lang];
   const cols: string[] = chart.blocs;
   // Filas: las que declare el gráfico (row_keys), los propios partidos (matriz cuadrada) o las que haya en los datos
   const rowKeys: string[] = chart.row_keys ?? (mode === "heat" ? chart.blocs : [...new Set(chart.rows.map((r: Row) => r.row as string))]);
@@ -70,10 +88,10 @@ export function renderMatrix(ctx: RenderContext) {
           .textContent = fmt(r.value);
       }
       const html = mode === "heat"
-        ? `<div class="tip-title">${chart.row_keys ? `${c} con el Gobierno` : `${rk} y ${c}`}</div>${chart.row_keys ? `<div class="tip-note">${rk}</div>` : ""}<div>Votaron lo mismo en el <strong>${fmt(r.value)} %</strong> de ${r.n.toLocaleString("es-ES")} votaciones</div>`
+        ? `<div class="tip-title">${chart.row_keys ? T.withGov(c) : T.pair(rk, c)}</div>${chart.row_keys ? `<div class="tip-note">${rk}</div>` : ""}<div>${T.same(fmt(r.value), r.n.toLocaleString(LOCALE[ctx.lang]))}</div>`
         : `<div class="tip-title">RDL ${rk}</div><div class="tip-note">${chart.labels?.[rk] ?? ""}</div>` +
-          `<div class="tip-note">Votación del ${r.date}: ${r.yes} a favor, ${r.no} en contra</div>` +
-          tipRow(fill, c, VOTE_LABEL[r.vote], true);
+          `<div class="tip-note">${T.vote(r.date, r.yes, r.no)}</div>` +
+          tipRow(fill, c, VOTE_LABEL[ctx.lang][r.vote], true);
       const show = (cx: number, cy: number) => tip.show(cx, cy, html);
       g.addEventListener("pointermove", (e) => {
         const rect = root.getBoundingClientRect();
@@ -86,11 +104,11 @@ export function renderMatrix(ctx: RenderContext) {
   });
 
   if (mode === "votes") {
-    legend(ctx.legend, Object.entries(VOTE_LABEL).map(([k, label]) => ({ color: cssVar(VOTE_VAR[k]), label, kind: "swatch" as const })));
+    legend(ctx.legend, Object.entries(VOTE_LABEL[ctx.lang]).map(([k, label]) => ({ color: cssVar(VOTE_VAR[k]), label, kind: "swatch" as const })));
   } else {
     legend(ctx.legend, [
-      { color: lo, label: "0 %: nunca votan igual", kind: "swatch" as const },
-      { color: hi, label: "100 %: siempre votan igual", kind: "swatch" as const },
+      { color: lo, label: T.never, kind: "swatch" as const },
+      { color: hi, label: T.always, kind: "swatch" as const },
     ]);
   }
 }

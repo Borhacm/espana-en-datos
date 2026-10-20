@@ -3,13 +3,16 @@
  "lens": "europa",
  "theme": "legislatura",
  "title": {
-  "es": "La deuda pública baja del 105,2 % al 100,7 % del PIB entre 2023 y 2025; en la UE pasa del 80,5 % al 81,7 %"
+  "es": "La deuda pública baja del 105,2 % al 100,7 % del PIB entre 2023 y 2025; en la UE pasa del 80,5 % al 81,7 %",
+  "en": "Public debt falls from 105.2% to 100.7% of GDP between 2023 and 2025; in the EU it goes from 80.5% to 81.7%"
  },
  "subtitle": {
-  "es": "Deuda de las administraciones públicas, 2025, en % del PIB. España es la 5.ª más alta de 27"
+  "es": "Deuda de las administraciones públicas, 2025, en % del PIB. España es la 5.ª más alta de 27",
+  "en": "General government debt, 2025, as % of GDP. Spain's is the 5th highest of 27"
  },
  "unit": {
-  "es": "% del PIB"
+  "es": "% del PIB",
+  "en": "% of GDP"
  },
  "source": {
   "name": "Eurostat",
@@ -22,147 +25,180 @@
    "Deuda según el Protocolo de Déficit Excesivo (criterio de Maastricht): Estado, comunidades, ayuntamientos y Seguridad Social, a valor nominal y consolidada.",
    "La ratio baja si la deuda crece menos que el PIB nominal: en euros, la deuda de España ha seguido subiendo.",
    "«prev» en la descarga: deuda de 2023."
+  ],
+  "en": [
+   "Debt under the Excessive Deficit Procedure (Maastricht criterion): central government, regions, local councils and Social Security, at nominal value and consolidated.",
+   "The ratio falls if debt grows less than nominal GDP: in euros, Spain's debt has kept rising.",
+   "«prev» in the download: debt in 2023."
   ]
  },
  "retrieved": "2026-10-19",
  "geos": {
   "AUT": {
    "es": "Austria",
+   "en": "Austria",
    "eu": true,
    "aggregate": false
   },
   "BEL": {
    "es": "Bélgica",
+   "en": "Belgium",
    "eu": true,
    "aggregate": false
   },
   "BGR": {
    "es": "Bulgaria",
+   "en": "Bulgaria",
    "eu": true,
    "aggregate": false
   },
   "CYP": {
    "es": "Chipre",
+   "en": "Cyprus",
    "eu": true,
    "aggregate": false
   },
   "CZE": {
    "es": "Chequia",
+   "en": "Czechia",
    "eu": true,
    "aggregate": false
   },
   "DEU": {
    "es": "Alemania",
+   "en": "Germany",
    "eu": true,
    "aggregate": false
   },
   "DNK": {
    "es": "Dinamarca",
+   "en": "Denmark",
    "eu": true,
    "aggregate": false
   },
   "ESP": {
    "es": "España",
+   "en": "Spain",
    "eu": true,
    "aggregate": false
   },
   "EST": {
    "es": "Estonia",
+   "en": "Estonia",
    "eu": true,
    "aggregate": false
   },
   "EU27": {
    "es": "Unión Europea",
+   "en": "European Union",
    "eu": true,
    "aggregate": true
   },
   "FIN": {
    "es": "Finlandia",
+   "en": "Finland",
    "eu": true,
    "aggregate": false
   },
   "FRA": {
    "es": "Francia",
+   "en": "France",
    "eu": true,
    "aggregate": false
   },
   "GRC": {
    "es": "Grecia",
+   "en": "Greece",
    "eu": true,
    "aggregate": false
   },
   "HRV": {
    "es": "Croacia",
+   "en": "Croatia",
    "eu": true,
    "aggregate": false
   },
   "HUN": {
    "es": "Hungría",
+   "en": "Hungary",
    "eu": true,
    "aggregate": false
   },
   "IRL": {
    "es": "Irlanda",
+   "en": "Ireland",
    "eu": true,
    "aggregate": false
   },
   "ITA": {
    "es": "Italia",
+   "en": "Italy",
    "eu": true,
    "aggregate": false
   },
   "LTU": {
    "es": "Lituania",
+   "en": "Lithuania",
    "eu": true,
    "aggregate": false
   },
   "LUX": {
    "es": "Luxemburgo",
+   "en": "Luxembourg",
    "eu": true,
    "aggregate": false
   },
   "LVA": {
    "es": "Letonia",
+   "en": "Latvia",
    "eu": true,
    "aggregate": false
   },
   "MLT": {
    "es": "Malta",
+   "en": "Malta",
    "eu": true,
    "aggregate": false
   },
   "NLD": {
    "es": "Países Bajos",
+   "en": "Netherlands",
    "eu": true,
    "aggregate": false
   },
   "POL": {
    "es": "Polonia",
+   "en": "Poland",
    "eu": true,
    "aggregate": false
   },
   "PRT": {
    "es": "Portugal",
+   "en": "Portugal",
    "eu": true,
    "aggregate": false
   },
   "ROU": {
    "es": "Rumanía",
+   "en": "Romania",
    "eu": true,
    "aggregate": false
   },
   "SVK": {
    "es": "Eslovaquia",
+   "en": "Slovakia",
    "eu": true,
    "aggregate": false
   },
   "SVN": {
    "es": "Eslovenia",
+   "en": "Slovenia",
    "eu": true,
    "aggregate": false
   },
   "SWE": {
    "es": "Suecia",
+   "en": "Sweden",
    "eu": true,
    "aggregate": false
   }

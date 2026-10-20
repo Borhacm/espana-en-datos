@@ -13,6 +13,8 @@ from lib import geo
 from lib.http import fetch
 from lib.output import DATA_DIR, THEMES, chart
 
+from .common import bi, dec
+
 THEMES["elecciones"] = {"code": "EL", "title": "Elecciones generales del 29N"}
 
 ELECTION_2023 = "2023-07-23"
@@ -139,13 +141,16 @@ def tracker():
     return chart(
         id="el1-encuestas",
         lens="tiempo", theme="elecciones",
-        title=f"El {lead[0][0]} lidera la media de encuestas con un {str(lead[0][1]).replace('.', ',')} %, "
-              f"{str(round(lead[0][1] - lead[1][1], 1)).replace('.', ',')} puntos por delante del {lead[1][0]}",
-        subtitle="Intención de voto al Congreso, en % sobre voto válido. Cada punto es una encuesta; la línea, la media.",
-        unit="% del voto válido",
+        title=bi(f"El {lead[0][0]} lidera la media de encuestas con un {str(lead[0][1]).replace('.', ',')} %, "
+                 f"{str(round(lead[0][1] - lead[1][1], 1)).replace('.', ',')} puntos por delante del {lead[1][0]}",
+                 f"The {lead[0][0]} leads the poll average with {lead[0][1]}%, "
+                 f"{round(lead[0][1] - lead[1][1], 1)} points ahead of the {lead[1][0]}"),
+        subtitle=bi("Intención de voto al Congreso, en % sobre voto válido. Cada punto es una encuesta; la línea, la media.",
+                    "Voting intention for Congress, as % of valid votes. Each dot is a poll; the line, the average."),
+        unit=bi("% del voto válido", "% of valid votes"),
         source={**encuestas.SOURCE, "dataset": "Encuestas recopiladas con su enlace original",
                 "also": [{"name": "Resultados de 2023: Ministerio del Interior", "url": elecciones.SOURCE["url"]}]},
-        notes=[
+        notes={"es": [
             f"Media semanal suavizada: para cada fecha, las encuestas de {WINDOW_DAYS} días antes y después, ponderadas por distancia "
             f"(núcleo gaussiano de {BANDWIDTH_DAYS} días) y por la raíz del tamaño muestral (tope de 3.000 entrevistas). En el último "
             "tramo solo hay encuestas anteriores, así que la media puede moverse cuando lleguen las siguientes. Cada empresa reparte su "
@@ -161,7 +166,23 @@ def tracker():
             "Comunidad Valenciana. El resultado de 2023 es el de Sumar.",
             "Resultados de 2023: % sobre voto válido (candidaturas + blanco), con voto exterior.",
             "Por ley (LOREG, art. 69.7), las encuestas no se pueden publicar del 24 al 28 de noviembre. Esos días este gráfico se oculta.",
-        ],
+        ], "en": [
+            f"Smoothed weekly average: for each date, the polls from {WINDOW_DAYS} days before and after, weighted by distance "
+            f"(a {BANDWIDTH_DAYS}-day Gaussian kernel) and by the square root of the sample size (capped at 3,000 interviews). In the final "
+            "stretch there are only earlier polls, so the average may move when the next ones arrive. Each pollster splits its "
+            "weight across its polls in the window, so those that publish more often do not dominate.",
+            f"Before averaging, house effects are corrected: each pollster's average deviation from the average (with at least "
+            f"{HOUSE_MIN_POLLS} polls), shrunk towards zero and centred so that the set of pollsters does not shift. "
+            "The dots always show the published figure, uncorrected.",
+            "Left out of the average: online panels without probability sampling (ElectoPanel), party polls and re-estimates of "
+            "CIS surveys made by other companies. They do appear as dots.",
+            "Sumar/FA: since September 2026 Frente Amplio replaces the Sumar alliance (IU, Movimiento Sumar, Más Madrid and Comuns, "
+            "among others) and continues its series. It also includes Compromís–Front Valencià (Compromís, Podemos and EUPV in the "
+            "Valencian Community), just as Sumar included Compromís in 2023. So since that change, Podemos does not include its vote "
+            "in the Valencian Community. The 2023 result is Sumar's.",
+            "2023 results: % of valid votes (parties + blank), including votes from abroad.",
+            "By law (LOREG, art. 69.7), polls cannot be published from 24 to 28 November. On those days this chart is hidden.",
+        ]},
         rows=sorted(rows + avg, key=lambda r: (r["series"], r["party"], r["date"])),
         extra={
             "parties": TRACKED,
@@ -174,23 +195,37 @@ def tracker():
     )
 
 
+# Traducción de las notas de datasets/gobiernos.py, en el mismo orden
+GOV_NOTES_EN = [
+    "The colour is the president's party; it does not show coalition partners.",
+    "The PSC counts as PSOE and Alianza Popular as PP. Hovering shows the original party.",
+    "Lighter stretches are acting presidencies, included so that there are no gaps.",
+]
+
+
 def gobiernos_timeline():
     base = gobiernos.build()
+    assert len(base["notes"]) == len(GOV_NOTES_EN), "Han cambiado las notas de gobiernos: actualiza GOV_NOTES_EN"
     rows = [{**r, "value": 1} for r in base["rows"]]
     current = {r["ccaa"]: r["party"] for r in base["rows"] if r["end"] is None}
     pp = sum(1 for c, p in current.items() if p == "PP" and c not in ("18", "19"))
     return chart(
         id="el2-gobiernos",
         lens="dentro", theme="elecciones",
-        title=f"El PP gobierna hoy {pp} de las 17 comunidades autónomas",
-        subtitle="Partido del presidente o presidenta de cada comunidad desde 1980",
-        unit="Partido",
+        title=bi(f"El PP gobierna hoy {pp} de las 17 comunidades autónomas", f"The PP now governs {pp} of the 17 regions"),
+        subtitle=bi("Partido del presidente o presidenta de cada comunidad desde 1980",
+                    "Party of each region's president since 1980"),
+        unit=bi("Partido", "Party"),
         source={**gobiernos.SOURCE, "dataset": "Presidencias autonómicas"},
-        notes=base["notes"] + [
-            "Cataluña, de octubre de 2017 a mayo de 2018: gobierno intervenido por el Estado (artículo 155).",
-        ],
+        notes={"es": base["notes"] + [
+                   "Cataluña, de octubre de 2017 a mayo de 2018: gobierno intervenido por el Estado (artículo 155).",
+               ],
+               "en": GOV_NOTES_EN + [
+                   "Catalonia, October 2017 to May 2018: self-government suspended by the State (article 155 of the Constitution).",
+               ]},
         rows=rows,
-        geos={c: {"es": n} for c, n in {**geo.CCAA, "ES": "Gobierno de España"}.items()},
+        geos={c: bi(geo.ccaa_name(c, "es") if c != "ES" else "Gobierno de España", geo.ccaa_name(c, "en") if c != "ES" else "Government of Spain")
+              for c in [*geo.CCAA, "ES"]},
         extra={"today": dt.date.today().isoformat()},
     )
 
@@ -208,6 +243,10 @@ def _geometry():
 
 def _miles(n: int) -> str:
     return f"{n:,}".replace(",", ".")
+
+
+def _thousands(n: int) -> str:
+    return f"{n:,}"
 
 
 def mapa_2023():
@@ -236,14 +275,20 @@ def mapa_2023():
     return chart(
         id="el3-mapa-2023",
         lens="dentro", theme="elecciones",
-        title=f"En 2023, el {top[0][0]} ganó en {_miles(top[0][1])} municipios y el {top[1][0]} en {_miles(top[1][1])}",
-        subtitle="Partido más votado en las elecciones al Congreso del 23 de julio de 2023",
-        unit="% del voto a candidaturas del ganador",
+        title=bi(f"En 2023, el {top[0][0]} ganó en {_miles(top[0][1])} municipios y el {top[1][0]} en {_miles(top[1][1])}",
+                 f"In 2023, the {top[0][0]} won in {_thousands(top[0][1])} municipalities and the {top[1][0]} in {_thousands(top[1][1])}"),
+        subtitle=bi("Partido más votado en las elecciones al Congreso del 23 de julio de 2023",
+                    "Party with the most votes in the Congress election of 23 July 2023"),
+        unit=bi("% del voto a candidaturas del ganador", "Winner's % of the vote for parties"),
         source={**elecciones.SOURCE, "dataset": "Ficheros MUNI 02202307", "also": [ATLAS_SOURCE]},
-        notes=[
-            "La intensidad del color indica el porcentaje del ganador sobre el voto a candidaturas.",
-            "Los municipios no incluyen el voto exterior.",
-        ],
+        notes={"es": [
+                   "La intensidad del color indica el porcentaje del ganador sobre el voto a candidaturas.",
+                   "Los municipios no incluyen el voto exterior.",
+               ],
+               "en": [
+                   "The intensity of the colour shows the winner's share of the vote for parties.",
+                   "Municipalities do not include votes cast from abroad.",
+               ]},
         rows=rows,
         extra={"geometry": {"provincia": "geo/es-provinces.json", "municipio": "geo/es-municipalities.json"}},
     )

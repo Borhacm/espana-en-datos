@@ -3,13 +3,16 @@
  "lens": "dentro",
  "theme": "vivienda",
  "title": {
-  "es": "Con tope, la renta de los nuevos alquileres está un 4 % por encima de 2023; sin tope, un 12 %"
+  "es": "Con tope, la renta de los nuevos alquileres está un 4 % por encima de 2023; sin tope, un 12 %",
+  "en": "With a cap, rents on new leases are 4% above 2023; without one, 12%"
  },
  "subtitle": {
-  "es": "Renta media de los contratos firmados cada trimestre, índice 2023 = 100, hasta el primer trimestre de 2026"
+  "es": "Renta media de los contratos firmados cada trimestre, índice 2023 = 100, hasta el primer trimestre de 2026",
+  "en": "Average rent of contracts signed each quarter, index 2023 = 100, up to Q1 2026"
  },
  "unit": {
-  "es": "Índice (2023 = 100)"
+  "es": "Índice (2023 = 100)",
+  "en": "Index (2023 = 100)"
  },
  "source": {
   "name": "Generalitat de Catalunya, fianzas de alquiler depositadas en el INCASÒL",
@@ -30,6 +33,13 @@
    "Índice: 2023 = 100 en cada grupo (último año completo antes de los topes). Los grupos parten de niveles distintos: importa cómo cambian, no su nivel.",
    "Es una comparación descriptiva: los municipios con tope son más urbanos y caros que los demás, así que la diferencia no se puede atribuir solo a la norma.",
    "Renta media ponderada por el número de contratos de cada municipio: si cambia el tipo de vivienda que se alquila (más pequeña, por ejemplo), cambia la media aunque no cambien los precios."
+  ],
+  "en": [
+   "Long-term residential rental contracts with a deposit lodged with INCASÒL (the Catalan housing agency). Seasonal lets and contracts without a lodged deposit are not included.",
+   "Headline: average of the last four quarters against 2023. «Capped»: municipalities with a cap since March 2024.",
+   "Index: 2023 = 100 in each group (the last full year before the caps). The groups start from different levels: what matters is how they change, not their level.",
+   "This is a descriptive comparison: capped municipalities are more urban and expensive than the rest, so the difference cannot be attributed to the rule alone.",
+   "Average rent weighted by the number of contracts in each municipality: if the type of home being rented changes (smaller, for example), the average changes even if prices do not."
   ]
  },
  "retrieved": "2026-10-19",
@@ -37,44 +47,60 @@
  "dimensions": {
   "series": {
    "zmrt1": {
-    "es": "Con tope desde marzo de 2024 (140 municipios)"
+    "es": "Con tope desde marzo de 2024 (140 municipios)",
+    "en": "Capped since March 2024 (140 municipalities)"
    },
    "zmrt2": {
-    "es": "Con tope desde octubre de 2024 (131 municipios)"
+    "es": "Con tope desde octubre de 2024 (131 municipios)",
+    "en": "Capped since October 2024 (131 municipalities)"
    },
    "sin": {
-    "es": "Sin tope"
+    "es": "Sin tope",
+    "en": "No cap"
    }
   }
  },
  "short_labels": {
-  "zmrt1": "Tope mar. 2024",
-  "zmrt2": "Tope oct. 2024",
-  "sin": "Sin tope"
+  "zmrt1": {
+   "es": "Tope mar. 2024",
+   "en": "Cap Mar 2024"
+  },
+  "zmrt2": {
+   "es": "Tope oct. 2024",
+   "en": "Cap Oct 2024"
+  },
+  "sin": {
+   "es": "Sin tope",
+   "en": "No cap"
+  }
  },
  "events": [
   {
    "time": 2020.72,
    "label": {
-    "es": "Ley catalana de contención de rentas (septiembre de 2020)"
+    "es": "Ley catalana de contención de rentas (septiembre de 2020)",
+    "en": "Catalan rent containment law (September 2020)"
    }
   },
   {
    "time": 2022.19,
    "label": {
-    "es": "El Constitucional la anula (marzo de 2022)"
+    "es": "El Constitucional la anula (marzo de 2022)",
+    "en": "The Constitutional Court strikes it down (March 2022)"
    }
   },
   {
    "time": 2024.2,
    "label": {
-    "es": "Tope en los primeros 140 municipios (marzo de 2024)"
+    "es": "Tope en los primeros 140 municipios (marzo de 2024)",
+    "en": "Cap in the first 140 municipalities (March 2024)"
    }
   },
   {
    "time": 2024.77,
    "label": {
-    "es": "Tope en 131 municipios más (octubre de 2024)"
+    "es": "Tope en 131 municipios más (octubre de 2024)",
+    "en": "Cap in 131 more municipalities (October 2024)"
    }
   }
  ],
@@ -82,7 +108,8 @@
  "ref_line": {
   "value": 100,
   "label": {
-   "es": "2023"
+   "es": "2023",
+   "en": "2023"
   }
  },
  "rows": [

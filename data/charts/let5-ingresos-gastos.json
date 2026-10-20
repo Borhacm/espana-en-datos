@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "legislatura",
  "title": {
-  "es": "El déficit baja del 3,3 % al 2,4 % del PIB entre 2023 y 2025: los ingresos suben del 42,1 % al 42,9 % y el gasto pasa del 45,4 % al 45,3 %"
+  "es": "El déficit baja del 3,3 % al 2,4 % del PIB entre 2023 y 2025: los ingresos suben del 42,1 % al 42,9 % y el gasto pasa del 45,4 % al 45,3 %",
+  "en": "The deficit falls from 3.3% to 2.4% of GDP between 2023 and 2025: revenue rises from 42.1% to 42.9% and spending goes from 45.4% to 45.3%"
  },
  "subtitle": {
-  "es": "Ingresos y gastos de las administraciones públicas, en % del PIB, 2008-2025. El déficit es la distancia entre las dos líneas"
+  "es": "Ingresos y gastos de las administraciones públicas, en % del PIB, 2008-2025. El déficit es la distancia entre las dos líneas",
+  "en": "General government revenue and spending, as % of GDP, 2008-2025. The deficit is the gap between the two lines"
  },
  "unit": {
-  "es": "% del PIB"
+  "es": "% del PIB",
+  "en": "% of GDP"
  },
  "source": {
   "name": "Eurostat",
@@ -24,6 +27,13 @@
    "Ingresos de 2025: el máximo de la serie.",
    "Déficit de la media de la UE en 2025: 3,1 % del PIB.",
    "Que suban los ingresos en % del PIB puede deberse a subidas de impuestos, a más empleo y beneficios o a que la inflación eleve lo recaudado; los datos no separan esos efectos."
+  ],
+  "en": [
+   "Central government, regions, local councils and Social Security, in national accounts. Revenue: taxes, social contributions and other revenue; spending: all of it, including interest on the debt.",
+   "The 2025 deficit is the lowest in the series, which starts in 2008.",
+   "Revenue in 2025: the highest in the series.",
+   "EU average deficit in 2025: 3.1% of GDP.",
+   "Revenue rising as % of GDP can be due to tax rises, more jobs and profits, or inflation lifting tax takings; the data does not separate those effects."
   ]
  },
  "retrieved": "2026-10-19",
@@ -31,10 +41,12 @@
  "dimensions": {
   "series": {
    "ingresos": {
-    "es": "Ingresos"
+    "es": "Ingresos",
+    "en": "Revenue"
    },
    "gastos": {
-    "es": "Gastos"
+    "es": "Gastos",
+    "en": "Spending"
    }
   }
  },
@@ -42,7 +54,8 @@
   {
    "time": 2023.5,
    "label": {
-    "es": "Elecciones generales (23 de julio de 2023)"
+    "es": "Elecciones generales (23 de julio de 2023)",
+    "en": "General election (23 July 2023)"
    }
   }
  ],

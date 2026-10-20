@@ -3,13 +3,16 @@
  "lens": "tiempo",
  "theme": "inmigracion",
  "title": {
-  "es": "Los nacidos en Sudamérica son el grupo más numeroso y el que más ha crecido: de 0,8 millones en 2002 a 3,7 en 2025"
+  "es": "Los nacidos en Sudamérica son el grupo más numeroso y el que más ha crecido: de 0,8 millones en 2002 a 3,7 en 2025",
+  "en": "People born in South America are the largest group and the one that has grown most: from 0.8 million in 2002 to 3.7 in 2025"
  },
  "subtitle": {
-  "es": "Población residente nacida fuera de España por región de nacimiento, 1 de enero de cada año, 2002-2025, en millones de personas"
+  "es": "Población residente nacida fuera de España por región de nacimiento, 1 de enero de cada año, 2002-2025, en millones de personas",
+  "en": "Resident population born outside Spain by region of birth, 1 January each year, 2002-2025, in millions of people"
  },
  "unit": {
-  "es": "Millones de personas"
+  "es": "Millones de personas",
+  "en": "Millions of people"
  },
  "source": {
   "name": "INE, Estadística Continua de Población",
@@ -22,6 +25,11 @@
    "Principales países de nacimiento el 1 de enero de 2025: Marruecos (1.165.955), Colombia (978.041), Venezuela (692.316), Rumanía (521.181), Ecuador (468.751), Argentina (450.883) personas.",
    "No se muestran América del Norte ni Oceanía (menos del 2 % de los nacidos fuera en 2025). «Resto de Europa»: toda Europa salvo España, dentro y fuera de la UE.",
    "La serie por país de nacimiento llega, por ahora, al 1 de enero de 2025. «people» en la descarga: número de personas."
+  ],
+  "en": [
+   "Main countries of birth on 1 January 2025: Morocco (1,165,955), Colombia (978,041), Venezuela (692,316), Romania (521,181), Ecuador (468,751), Argentina (450,883) people.",
+   "North America and Oceania are not shown (less than 2% of the foreign-born in 2025). «Rest of Europe»: all of Europe except Spain, inside and outside the EU.",
+   "The series by country of birth currently runs to 1 January 2025. «people» in the download: number of people."
   ]
  },
  "retrieved": "2026-10-19",
@@ -29,19 +37,24 @@
  "dimensions": {
   "series": {
    "sudamerica": {
-    "es": "Sudamérica"
+    "es": "Sudamérica",
+    "en": "South America"
    },
    "europa": {
-    "es": "Resto de Europa"
+    "es": "Resto de Europa",
+    "en": "Rest of Europe"
    },
    "africa": {
-    "es": "África"
+    "es": "África",
+    "en": "Africa"
    },
    "centroamerica": {
-    "es": "Centroamérica y Caribe"
+    "es": "Centroamérica y Caribe",
+    "en": "Central America and the Caribbean"
    },
    "asia": {
-    "es": "Asia"
+    "es": "Asia",
+    "en": "Asia"
    }
   }
  },
