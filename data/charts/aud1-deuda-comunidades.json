@@ -1,0 +1,238 @@
+{
+ "id": "aud1-deuda-comunidades",
+ "lens": "dentro",
+ "theme": "autonomias",
+ "title": {
+  "es": "La deuda equivale al 40,0 % del PIB en la Comunidad Valenciana y al 10,9 % en Canarias",
+  "en": "Debt equals 40.0% of GDP in the Valencian Community and 10.9% in the Canary Islands"
+ },
+ "subtitle": {
+  "es": "Deuda de cada comunidad en % de su PIB, junio de 2026. Todas las comunidades: 20,4 % del PIB de España",
+  "en": "Debt of each region as % of its GDP, June 2026. All regions: 20.4% of Spain's GDP"
+ },
+ "unit": {
+  "es": "% del PIB regional",
+  "en": "% of regional GDP"
+ },
+ "source": {
+  "name": "Banco de España, Boletín Estadístico",
+  "license": "Reutilización libre citando la fuente",
+  "dataset": "Cuadro 13.10",
+  "url": "https://www.bde.es/wbe/es/estadisticas/temas/administraciones-publicas/"
+ },
+ "notes": {
+  "es": [
+   "Deuda según el protocolo de déficit excesivo (PDE) de cada comunidad y sus organismos, incluida la que debe al Estado. PIB de los últimos cuatro trimestres.",
+   "El Banco de España no publica este dato para Ceuta y Melilla, que son ciudades autónomas.",
+   "El País Vasco y Navarra tienen un régimen foral: recaudan casi todos sus impuestos y no participan en el sistema de financiación común. Por eso el titular compara solo las comunidades de régimen común."
+  ],
+  "en": [
+   "Debt under the excessive deficit procedure (EDP) of each region and its agencies, including what it owes to central government. GDP over the last four quarters.",
+   "The Bank of Spain does not publish this figure for Ceuta and Melilla, which are autonomous cities.",
+   "The Basque Country and Navarre have a foral regime: they collect almost all their own taxes and are not part of the common financing system. That is why the headline compares only the common-regime regions."
+  ]
+ },
+ "retrieved": "2026-10-21",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2026T2",
+   "value": 18.2
+  },
+  {
+   "geo": "02",
+   "time": "2026T2",
+   "value": 17.4
+  },
+  {
+   "geo": "03",
+   "time": "2026T2",
+   "value": 12.5
+  },
+  {
+   "geo": "04",
+   "time": "2026T2",
+   "value": 17.8
+  },
+  {
+   "geo": "05",
+   "time": "2026T2",
+   "value": 10.9
+  },
+  {
+   "geo": "06",
+   "time": "2026T2",
+   "value": 17.2
+  },
+  {
+   "geo": "07",
+   "time": "2026T2",
+   "value": 18.3
+  },
+  {
+   "geo": "08",
+   "time": "2026T2",
+   "value": 28.1
+  },
+  {
+   "geo": "09",
+   "time": "2026T2",
+   "value": 28.1
+  },
+  {
+   "geo": "10",
+   "time": "2026T2",
+   "value": 40.0
+  },
+  {
+   "geo": "11",
+   "time": "2026T2",
+   "value": 19.2
+  },
+  {
+   "geo": "12",
+   "time": "2026T2",
+   "value": 15.0
+  },
+  {
+   "geo": "13",
+   "time": "2026T2",
+   "value": 12.3
+  },
+  {
+   "geo": "14",
+   "time": "2026T2",
+   "value": 30.8
+  },
+  {
+   "geo": "15",
+   "time": "2026T2",
+   "value": 8.4
+  },
+  {
+   "geo": "16",
+   "time": "2026T2",
+   "value": 11.7
+  },
+  {
+   "geo": "17",
+   "time": "2026T2",
+   "value": 16.4
+  },
+  {
+   "geo": "ES",
+   "time": "2026T2",
+   "value": 20.4
+  }
+ ]
+}

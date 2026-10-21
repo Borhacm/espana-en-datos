@@ -1,0 +1,685 @@
+{
+ "id": "aut1-deuda",
+ "lens": "tiempo",
+ "theme": "autonomias",
+ "title": {
+  "es": "La deuda de las comunidades pasó del 5,8 % del PIB a finales de 2007 al 27,4 % en marzo de 2021; en junio de 2026, el 20,4 %",
+  "en": "Regional debt went from 5.8% of GDP at the end of 2007 to 27.4% in March 2021; in June 2026, 20.4%"
+ },
+ "subtitle": {
+  "es": "Deuda del conjunto de las comunidades autónomas, en % del PIB, trimestral desde 1995",
+  "en": "Debt of all regional governments, as % of GDP, quarterly since 1995"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Banco de España, Boletín Estadístico",
+  "license": "Reutilización libre citando la fuente",
+  "dataset": "Cuadro 13.10",
+  "url": "https://www.bde.es/wbe/es/estadisticas/temas/administraciones-publicas/"
+ },
+ "notes": {
+  "es": [
+   "Deuda PDE a final de cada trimestre sobre el PIB de los últimos cuatro trimestres.",
+   "En 2020 y principios de 2021 el PIB cayó por la pandemia: el porcentaje subió también porque bajó el denominador."
+  ],
+  "en": [
+   "EDP debt at the end of each quarter over GDP for the last four quarters.",
+   "In 2020 and early 2021 GDP fell because of the pandemic: the ratio also rose because the denominator shrank."
+  ]
+ },
+ "retrieved": "2026-10-21",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "deuda": {
+    "es": "Deuda de las comunidades",
+    "en": "Regional debt"
+   }
+  }
+ },
+ "quarterly": true,
+ "events": [
+  {
+   "time": 2012.5,
+   "label": {
+    "es": "El Estado crea el Fondo de Liquidez Autonómico (julio de 2012)",
+    "en": "Central government creates the Regional Liquidity Fund (July 2012)"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "time": 1995.0,
+   "series": "deuda",
+   "value": 5.7
+  },
+  {
+   "time": 1995.25,
+   "series": "deuda",
+   "value": 5.7
+  },
+  {
+   "time": 1995.5,
+   "series": "deuda",
+   "value": 5.7
+  },
+  {
+   "time": 1995.75,
+   "series": "deuda",
+   "value": 5.8
+  },
+  {
+   "time": 1996.0,
+   "series": "deuda",
+   "value": 5.9
+  },
+  {
+   "time": 1996.25,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 1996.5,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 1996.75,
+   "series": "deuda",
+   "value": 6.3
+  },
+  {
+   "time": 1997.0,
+   "series": "deuda",
+   "value": 6.4
+  },
+  {
+   "time": 1997.25,
+   "series": "deuda",
+   "value": 6.7
+  },
+  {
+   "time": 1997.5,
+   "series": "deuda",
+   "value": 6.6
+  },
+  {
+   "time": 1997.75,
+   "series": "deuda",
+   "value": 6.6
+  },
+  {
+   "time": 1998.0,
+   "series": "deuda",
+   "value": 6.6
+  },
+  {
+   "time": 1998.25,
+   "series": "deuda",
+   "value": 6.6
+  },
+  {
+   "time": 1998.5,
+   "series": "deuda",
+   "value": 6.4
+  },
+  {
+   "time": 1998.75,
+   "series": "deuda",
+   "value": 6.5
+  },
+  {
+   "time": 1999.0,
+   "series": "deuda",
+   "value": 6.5
+  },
+  {
+   "time": 1999.25,
+   "series": "deuda",
+   "value": 6.5
+  },
+  {
+   "time": 1999.5,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 1999.75,
+   "series": "deuda",
+   "value": 6.3
+  },
+  {
+   "time": 2000.0,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2000.25,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2000.5,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2000.75,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2001.0,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2001.25,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2001.5,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2001.75,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2002.0,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2002.25,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2002.5,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2002.75,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2003.0,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2003.25,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2003.5,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2003.75,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2004.0,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2004.25,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2004.5,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2004.75,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2005.0,
+   "series": "deuda",
+   "value": 6.3
+  },
+  {
+   "time": 2005.25,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2005.5,
+   "series": "deuda",
+   "value": 6.1
+  },
+  {
+   "time": 2005.75,
+   "series": "deuda",
+   "value": 6.2
+  },
+  {
+   "time": 2006.0,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2006.25,
+   "series": "deuda",
+   "value": 5.9
+  },
+  {
+   "time": 2006.5,
+   "series": "deuda",
+   "value": 5.8
+  },
+  {
+   "time": 2006.75,
+   "series": "deuda",
+   "value": 5.9
+  },
+  {
+   "time": 2007.0,
+   "series": "deuda",
+   "value": 5.8
+  },
+  {
+   "time": 2007.25,
+   "series": "deuda",
+   "value": 5.7
+  },
+  {
+   "time": 2007.5,
+   "series": "deuda",
+   "value": 5.5
+  },
+  {
+   "time": 2007.75,
+   "series": "deuda",
+   "value": 5.8
+  },
+  {
+   "time": 2008.0,
+   "series": "deuda",
+   "value": 5.8
+  },
+  {
+   "time": 2008.25,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2008.5,
+   "series": "deuda",
+   "value": 6.0
+  },
+  {
+   "time": 2008.75,
+   "series": "deuda",
+   "value": 6.7
+  },
+  {
+   "time": 2009.0,
+   "series": "deuda",
+   "value": 7.2
+  },
+  {
+   "time": 2009.25,
+   "series": "deuda",
+   "value": 8.1
+  },
+  {
+   "time": 2009.5,
+   "series": "deuda",
+   "value": 8.3
+  },
+  {
+   "time": 2009.75,
+   "series": "deuda",
+   "value": 8.7
+  },
+  {
+   "time": 2010.0,
+   "series": "deuda",
+   "value": 9.5
+  },
+  {
+   "time": 2010.25,
+   "series": "deuda",
+   "value": 10.4
+  },
+  {
+   "time": 2010.5,
+   "series": "deuda",
+   "value": 10.6
+  },
+  {
+   "time": 2010.75,
+   "series": "deuda",
+   "value": 11.5
+  },
+  {
+   "time": 2011.0,
+   "series": "deuda",
+   "value": 12.2
+  },
+  {
+   "time": 2011.25,
+   "series": "deuda",
+   "value": 13.0
+  },
+  {
+   "time": 2011.5,
+   "series": "deuda",
+   "value": 13.2
+  },
+  {
+   "time": 2011.75,
+   "series": "deuda",
+   "value": 13.7
+  },
+  {
+   "time": 2012.0,
+   "series": "deuda",
+   "value": 14.2
+  },
+  {
+   "time": 2012.25,
+   "series": "deuda",
+   "value": 16.4
+  },
+  {
+   "time": 2012.5,
+   "series": "deuda",
+   "value": 16.4
+  },
+  {
+   "time": 2012.75,
+   "series": "deuda",
+   "value": 18.3
+  },
+  {
+   "time": 2013.0,
+   "series": "deuda",
+   "value": 18.8
+  },
+  {
+   "time": 2013.25,
+   "series": "deuda",
+   "value": 19.3
+  },
+  {
+   "time": 2013.5,
+   "series": "deuda",
+   "value": 19.6
+  },
+  {
+   "time": 2013.75,
+   "series": "deuda",
+   "value": 20.5
+  },
+  {
+   "time": 2014.0,
+   "series": "deuda",
+   "value": 22.0
+  },
+  {
+   "time": 2014.25,
+   "series": "deuda",
+   "value": 22.3
+  },
+  {
+   "time": 2014.5,
+   "series": "deuda",
+   "value": 22.5
+  },
+  {
+   "time": 2014.75,
+   "series": "deuda",
+   "value": 22.9
+  },
+  {
+   "time": 2015.0,
+   "series": "deuda",
+   "value": 23.0
+  },
+  {
+   "time": 2015.25,
+   "series": "deuda",
+   "value": 23.7
+  },
+  {
+   "time": 2015.5,
+   "series": "deuda",
+   "value": 23.7
+  },
+  {
+   "time": 2015.75,
+   "series": "deuda",
+   "value": 24.2
+  },
+  {
+   "time": 2016.0,
+   "series": "deuda",
+   "value": 24.3
+  },
+  {
+   "time": 2016.25,
+   "series": "deuda",
+   "value": 24.7
+  },
+  {
+   "time": 2016.5,
+   "series": "deuda",
+   "value": 24.5
+  },
+  {
+   "time": 2016.75,
+   "series": "deuda",
+   "value": 24.7
+  },
+  {
+   "time": 2017.0,
+   "series": "deuda",
+   "value": 24.7
+  },
+  {
+   "time": 2017.25,
+   "series": "deuda",
+   "value": 25.0
+  },
+  {
+   "time": 2017.5,
+   "series": "deuda",
+   "value": 24.6
+  },
+  {
+   "time": 2017.75,
+   "series": "deuda",
+   "value": 24.6
+  },
+  {
+   "time": 2018.0,
+   "series": "deuda",
+   "value": 24.5
+  },
+  {
+   "time": 2018.25,
+   "series": "deuda",
+   "value": 24.6
+  },
+  {
+   "time": 2018.5,
+   "series": "deuda",
+   "value": 24.4
+  },
+  {
+   "time": 2018.75,
+   "series": "deuda",
+   "value": 24.2
+  },
+  {
+   "time": 2019.0,
+   "series": "deuda",
+   "value": 24.2
+  },
+  {
+   "time": 2019.25,
+   "series": "deuda",
+   "value": 24.3
+  },
+  {
+   "time": 2019.5,
+   "series": "deuda",
+   "value": 24.0
+  },
+  {
+   "time": 2019.75,
+   "series": "deuda",
+   "value": 23.5
+  },
+  {
+   "time": 2020.0,
+   "series": "deuda",
+   "value": 24.0
+  },
+  {
+   "time": 2020.25,
+   "series": "deuda",
+   "value": 26.0
+  },
+  {
+   "time": 2020.5,
+   "series": "deuda",
+   "value": 26.2
+  },
+  {
+   "time": 2020.75,
+   "series": "deuda",
+   "value": 26.9
+  },
+  {
+   "time": 2021.0,
+   "series": "deuda",
+   "value": 27.4
+  },
+  {
+   "time": 2021.25,
+   "series": "deuda",
+   "value": 26.5
+  },
+  {
+   "time": 2021.5,
+   "series": "deuda",
+   "value": 26.0
+  },
+  {
+   "time": 2021.75,
+   "series": "deuda",
+   "value": 25.3
+  },
+  {
+   "time": 2022.0,
+   "series": "deuda",
+   "value": 24.4
+  },
+  {
+   "time": 2022.25,
+   "series": "deuda",
+   "value": 24.2
+  },
+  {
+   "time": 2022.5,
+   "series": "deuda",
+   "value": 23.4
+  },
+  {
+   "time": 2022.75,
+   "series": "deuda",
+   "value": 23.0
+  },
+  {
+   "time": 2023.0,
+   "series": "deuda",
+   "value": 22.8
+  },
+  {
+   "time": 2023.25,
+   "series": "deuda",
+   "value": 22.7
+  },
+  {
+   "time": 2023.5,
+   "series": "deuda",
+   "value": 22.2
+  },
+  {
+   "time": 2023.75,
+   "series": "deuda",
+   "value": 21.7
+  },
+  {
+   "time": 2024.0,
+   "series": "deuda",
+   "value": 21.6
+  },
+  {
+   "time": 2024.25,
+   "series": "deuda",
+   "value": 21.8
+  },
+  {
+   "time": 2024.5,
+   "series": "deuda",
+   "value": 21.2
+  },
+  {
+   "time": 2024.75,
+   "series": "deuda",
+   "value": 21.0
+  },
+  {
+   "time": 2025.0,
+   "series": "deuda",
+   "value": 20.9
+  },
+  {
+   "time": 2025.25,
+   "series": "deuda",
+   "value": 20.9
+  },
+  {
+   "time": 2025.5,
+   "series": "deuda",
+   "value": 20.4
+  },
+  {
+   "time": 2025.75,
+   "series": "deuda",
+   "value": 20.2
+  },
+  {
+   "time": 2026.0,
+   "series": "deuda",
+   "value": 20.2
+  },
+  {
+   "time": 2026.25,
+   "series": "deuda",
+   "value": 20.4
+  }
+ ]
+}

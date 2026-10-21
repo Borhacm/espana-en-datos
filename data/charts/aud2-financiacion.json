@@ -1,0 +1,334 @@
+{
+ "id": "aud2-financiacion",
+ "lens": "dentro",
+ "theme": "autonomias",
+ "title": {
+  "es": "Con sus impuestos, Madrid reúne 135 por habitante ajustado y Canarias, 55; tras el reparto, 100 y 108",
+  "en": "With its own taxes, Madrid raises 135 per adjusted inhabitant and the Canary Islands 55; after redistribution, 100 and 108"
+ },
+ "subtitle": {
+  "es": "Ingresos tributarios y financiación final por habitante ajustado, 2024. Índice: financiación media de las comunidades de régimen común = 100",
+  "en": "Tax revenue and final funding per adjusted inhabitant, 2024. Index: average funding of the common-regime regions = 100"
+ },
+ "unit": {
+  "es": "Índice (media = 100)",
+  "en": "Index (average = 100)"
+ },
+ "source": {
+  "name": "Fedea, A. de la Fuente, La liquidación de 2024 del sistema de financiación de las comunidades autónomas de régimen común",
+  "dataset": "Estudios sobre la Economía Española 2026/24, cuadro 9",
+  "url": "https://documentos.fedea.net/pubs/eee/2026/eee2026-24.pdf",
+  "license": "Cita de un estudio publicado"
+ },
+ "notes": {
+  "es": [
+   "Población ajustada: la población corregida por lo que el sistema estima que cuesta prestar los servicios en cada territorio (edad, dispersión, superficie, insularidad).",
+   "Cálculos de Fedea sobre la liquidación oficial de Hacienda, a competencias homogéneas e igual esfuerzo fiscal: como si todas cobraran los mismos impuestos y tuvieran las mismas competencias.",
+   "«Sus impuestos»: tributos cedidos a cada comunidad, incluido el régimen económico y fiscal de Canarias. «Financiación final»: después del Fondo de Garantía y de los fondos de Suficiencia, Cooperación y Competitividad.",
+   "Solo las 15 comunidades de régimen común: el País Vasco y Navarra tienen régimen foral, y Ceuta y Melilla, uno propio."
+  ],
+  "en": [
+   "Adjusted population: population corrected for what the system estimates it costs to provide services in each territory (age, dispersion, area, insularity).",
+   "Fedea calculations on the official Finance Ministry settlement, with the same powers and the same tax effort: as if every region levied the same taxes and had the same responsibilities.",
+   "«Its own taxes»: taxes ceded to each region, including the Canary Islands' special tax regime. «Final funding»: after the Guarantee Fund and the Sufficiency, Cooperation and Competitiveness funds.",
+   "Only the 15 common-regime regions: the Basque Country and Navarre have a foral regime, and Ceuta and Melilla their own."
+  ]
+ },
+ "retrieved": "2026-10-21",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "time": {
+   "antes": {
+    "es": "Sus impuestos",
+    "en": "Its own taxes"
+   },
+   "despues": {
+    "es": "Financiación final",
+    "en": "Final funding"
+   }
+  },
+  "stage": {
+   "antes": {
+    "es": "Sus impuestos",
+    "en": "Its own taxes"
+   },
+   "despues": {
+    "es": "Financiación final",
+    "en": "Final funding"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "antes",
+   "stage": "antes",
+   "value": 75.1
+  },
+  {
+   "geo": "01",
+   "time": "despues",
+   "stage": "despues",
+   "value": 94.7
+  },
+  {
+   "geo": "02",
+   "time": "antes",
+   "stage": "antes",
+   "value": 89.3
+  },
+  {
+   "geo": "02",
+   "time": "despues",
+   "stage": "despues",
+   "value": 101.3
+  },
+  {
+   "geo": "03",
+   "time": "antes",
+   "stage": "antes",
+   "value": 81.1
+  },
+  {
+   "geo": "03",
+   "time": "despues",
+   "stage": "despues",
+   "value": 102.7
+  },
+  {
+   "geo": "04",
+   "time": "antes",
+   "stage": "antes",
+   "value": 118.5
+  },
+  {
+   "geo": "04",
+   "time": "despues",
+   "stage": "despues",
+   "value": 109.2
+  },
+  {
+   "geo": "05",
+   "time": "antes",
+   "stage": "antes",
+   "value": 55.1
+  },
+  {
+   "geo": "05",
+   "time": "despues",
+   "stage": "despues",
+   "value": 108.4
+  },
+  {
+   "geo": "06",
+   "time": "antes",
+   "stage": "antes",
+   "value": 87.7
+  },
+  {
+   "geo": "06",
+   "time": "despues",
+   "stage": "despues",
+   "value": 118.6
+  },
+  {
+   "geo": "07",
+   "time": "antes",
+   "stage": "antes",
+   "value": 81.3
+  },
+  {
+   "geo": "07",
+   "time": "despues",
+   "stage": "despues",
+   "value": 105.7
+  },
+  {
+   "geo": "08",
+   "time": "antes",
+   "stage": "antes",
+   "value": 69.4
+  },
+  {
+   "geo": "08",
+   "time": "despues",
+   "stage": "despues",
+   "value": 94.7
+  },
+  {
+   "geo": "09",
+   "time": "antes",
+   "stage": "antes",
+   "value": 110.6
+  },
+  {
+   "geo": "09",
+   "time": "despues",
+   "stage": "despues",
+   "value": 102.6
+  },
+  {
+   "geo": "10",
+   "time": "antes",
+   "stage": "antes",
+   "value": 85.0
+  },
+  {
+   "geo": "10",
+   "time": "despues",
+   "stage": "despues",
+   "value": 92.8
+  },
+  {
+   "geo": "11",
+   "time": "antes",
+   "stage": "antes",
+   "value": 64.3
+  },
+  {
+   "geo": "11",
+   "time": "despues",
+   "stage": "despues",
+   "value": 110.6
+  },
+  {
+   "geo": "12",
+   "time": "antes",
+   "stage": "antes",
+   "value": 75.6
+  },
+  {
+   "geo": "12",
+   "time": "despues",
+   "stage": "despues",
+   "value": 102.3
+  },
+  {
+   "geo": "13",
+   "time": "antes",
+   "stage": "antes",
+   "value": 135.3
+  },
+  {
+   "geo": "13",
+   "time": "despues",
+   "stage": "despues",
+   "value": 100.3
+  },
+  {
+   "geo": "14",
+   "time": "antes",
+   "stage": "antes",
+   "value": 72.9
+  },
+  {
+   "geo": "14",
+   "time": "despues",
+   "stage": "despues",
+   "value": 92.0
+  },
+  {
+   "geo": "17",
+   "time": "antes",
+   "stage": "antes",
+   "value": 86.8
+  },
+  {
+   "geo": "17",
+   "time": "despues",
+   "stage": "despues",
+   "value": 112.2
+  }
+ ]
+}

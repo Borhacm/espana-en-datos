@@ -115,3 +115,27 @@ def socrata_cat(dataset: str, **params) -> list[dict]:
         if len(rows) < page:
             return out
         offset += page
+
+
+BDE_CSV = "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be{table}.csv"
+BDE_MONTHS = {"MAR": 1, "JUN": 2, "SEP": 3, "DIC": 4}
+
+
+def bde(table: str) -> list[dict]:
+    """Cuadro del Boletín Estadístico del Banco de España (p. ej. '1310' para el 13.10), trimestral.
+
+    Una fila por observación: código y descripción de la serie, año, trimestre y valor. Los huecos ("_") se omiten.
+    """
+    path = fetch(BDE_CSV.format(table=table), ".csv")
+    rows = list(csv.reader(path.read_text(encoding="latin-1").splitlines()))
+    codes, names = rows[0], rows[3]
+    out = []
+    for r in rows:
+        if not r or len(r[0].split()) != 2 or r[0].split()[0] not in BDE_MONTHS:
+            continue
+        month, year = r[0].split()
+        for code, name, v in zip(codes[1:], names[1:], r[1:]):
+            if v in ("_", ""):
+                continue
+            out.append({"code": code, "series": name, "year": int(year), "q": BDE_MONTHS[month], "value": float(v)})
+    return out

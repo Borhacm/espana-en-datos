@@ -5,9 +5,11 @@ import type { Lang } from "./i18n";
 
 const EXACT: Record<string, string> = {
   // Nombres
+  "Banco de España, Boletín Estadístico": "Bank of Spain, Statistical Bulletin",
   "Congreso de los Diputados, datos abiertos de votaciones": "Congress of Deputies, open data on votes",
   "Eurostat, Encuesta de Población Activa de la UE": "Eurostat, EU Labour Force Survey",
   "Eurostat, cuentas nacionales": "Eurostat, national accounts",
+  "Eurostat, cuentas de las administraciones públicas": "Eurostat, government finance statistics",
   "Eurostat, encuesta de condiciones de vida (EU-SILC)": "Eurostat, Survey on Income and Living Conditions (EU-SILC)",
   "Eurostat, salarios mínimos mensuales": "Eurostat, monthly minimum wages",
   "Eurostat, sistema europeo de estadísticas de protección social (SEEPROS)": "Eurostat, European system of integrated social protection statistics (ESSPROS)",
@@ -34,12 +36,14 @@ const EXACT: Record<string, string> = {
   "Cifras oficiales de población a 1 de enero de 2025": "Official population figures on 1 January 2025",
   "Convalidación o derogación de reales decretos-leyes": "Validation or repeal of royal decree-laws",
   "Encuestas recopiladas con su enlace original": "Polls collected with a link to the original",
+  "Estudios sobre la Economía Española 2026/24, cuadro 9": "Estudios sobre la Economía Española 2026/24, table 9",
   "Ficheros MUNI 02202307": "MUNI 02202307 files",
   "Presidencias autonómicas": "Regional presidencies",
   "Votaciones nominales del Pleno, XV legislatura": "Roll-call votes in the plenary, 15th parliament",
   "Votaciones nominales del Pleno, legislaturas X a XV": "Roll-call votes in the plenary, 10th to 15th parliaments",
   // Licencias
   "Reutilización libre citando la fuente": "Free reuse with attribution",
+  "Cita de un estudio publicado": "Citation of a published study",
   "Reutilización libre citando la fuente (Ley 37/2007)": "Free reuse with attribution (Law 37/2007)",
   "Reutilización libre citando la fuente (aviso legal del Congreso)": "Free reuse with attribution (Congress legal notice)",
   "Llicència oberta d'ús d'informació (Catalunya)": "Open information use licence (Catalonia)",
@@ -47,6 +51,7 @@ const EXACT: Record<string, string> = {
 
 const RULES: [RegExp, (...m: string[]) => string][] = [
   [/^Tabla (\d+)$/, (_, n) => `Table ${n}`],
+  [/^Cuadro (\S+)$/, (_, n) => `Table ${n}`],
   [/^Tablas (.+)$/, (_, list) => `Tables ${list.replace(/ y /g, " and ")}`],
   [/^RDL (\S+) \(derogado el (\S+)\)$/, (_, d, date) => `RDL ${d} (struck down on ${date})`],
   [/^(\S+) y (\S+)$/, (_, a, b) => `${a} and ${b}`],

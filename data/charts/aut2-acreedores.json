@@ -1,0 +1,792 @@
+{
+ "id": "aut2-acreedores",
+ "lens": "tiempo",
+ "theme": "autonomias",
+ "title": {
+  "es": "El Estado es el acreedor de 57 de cada 100 euros que deben las comunidades",
+  "en": "Central government is the creditor for 57 of every 100 euros the regions owe"
+ },
+ "subtitle": {
+  "es": "Deuda de las comunidades según a quién se debe, en miles de millones de euros, trimestral, 2008 a junio de 2026",
+  "en": "Regional debt by creditor, in billions of euros, quarterly, 2008 to June 2026"
+ },
+ "unit": {
+  "es": "Miles de millones de euros",
+  "en": "Billions of euros"
+ },
+ "source": {
+  "name": "Banco de España, Boletín Estadístico",
+  "license": "Reutilización libre citando la fuente",
+  "dataset": "Cuadro 13.7",
+  "url": "https://www.bde.es/wbe/es/estadisticas/temas/administraciones-publicas/"
+ },
+ "notes": {
+  "es": [
+   "«Préstamos del Estado»: préstamos de los fondos de financiación de la Administración central a las comunidades (pago a proveedores, Fondo de Liquidez Autonómico y sus sucesores). Aparecen en 2012.",
+   "«Bonos, bancos y otros»: deuda emitida en los mercados, préstamos de entidades financieras y otros pasivos.",
+   "Titular: a junio de 2026."
+  ],
+  "en": [
+   "«Central government loans»: loans from central government financing funds to the regions (supplier payments, the Regional Liquidity Fund and its successors). They first appear in 2012.",
+   "«Bonds, banks and other»: debt issued on the markets, loans from financial institutions and other liabilities.",
+   "Headline: as of June 2026."
+  ]
+ },
+ "retrieved": "2026-10-21",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "estado": {
+    "es": "Préstamos del Estado",
+    "en": "Central government loans"
+   },
+   "resto": {
+    "es": "Bonos, bancos y otros",
+    "en": "Bonds, banks and other"
+   }
+  }
+ },
+ "quarterly": true,
+ "rows": [
+  {
+   "time": 2008.0,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2008.0,
+   "series": "resto",
+   "value": 63.7
+  },
+  {
+   "time": 2008.25,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2008.25,
+   "series": "resto",
+   "value": 66.5
+  },
+  {
+   "time": 2008.5,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2008.5,
+   "series": "resto",
+   "value": 66.2
+  },
+  {
+   "time": 2008.75,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2008.75,
+   "series": "resto",
+   "value": 74.5
+  },
+  {
+   "time": 2009.0,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2009.0,
+   "series": "resto",
+   "value": 79.5
+  },
+  {
+   "time": 2009.25,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2009.25,
+   "series": "resto",
+   "value": 88.1
+  },
+  {
+   "time": 2009.5,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2009.5,
+   "series": "resto",
+   "value": 90.2
+  },
+  {
+   "time": 2009.75,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2009.75,
+   "series": "resto",
+   "value": 93.3
+  },
+  {
+   "time": 2010.0,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2010.0,
+   "series": "resto",
+   "value": 101.7
+  },
+  {
+   "time": 2010.25,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2010.25,
+   "series": "resto",
+   "value": 111.5
+  },
+  {
+   "time": 2010.5,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2010.5,
+   "series": "resto",
+   "value": 114.4
+  },
+  {
+   "time": 2010.75,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2010.75,
+   "series": "resto",
+   "value": 124.2
+  },
+  {
+   "time": 2011.0,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2011.0,
+   "series": "resto",
+   "value": 131.1
+  },
+  {
+   "time": 2011.25,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2011.25,
+   "series": "resto",
+   "value": 140.0
+  },
+  {
+   "time": 2011.5,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2011.5,
+   "series": "resto",
+   "value": 141.9
+  },
+  {
+   "time": 2011.75,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2011.75,
+   "series": "resto",
+   "value": 145.9
+  },
+  {
+   "time": 2012.0,
+   "series": "estado",
+   "value": 0.0
+  },
+  {
+   "time": 2012.0,
+   "series": "resto",
+   "value": 151.0
+  },
+  {
+   "time": 2012.25,
+   "series": "estado",
+   "value": 17.7
+  },
+  {
+   "time": 2012.25,
+   "series": "resto",
+   "value": 155.1
+  },
+  {
+   "time": 2012.5,
+   "series": "estado",
+   "value": 17.7
+  },
+  {
+   "time": 2012.5,
+   "series": "resto",
+   "value": 154.4
+  },
+  {
+   "time": 2012.75,
+   "series": "estado",
+   "value": 34.3
+  },
+  {
+   "time": 2012.75,
+   "series": "resto",
+   "value": 154.9
+  },
+  {
+   "time": 2013.0,
+   "series": "estado",
+   "value": 37.6
+  },
+  {
+   "time": 2013.0,
+   "series": "resto",
+   "value": 156.7
+  },
+  {
+   "time": 2013.25,
+   "series": "estado",
+   "value": 45.2
+  },
+  {
+   "time": 2013.25,
+   "series": "resto",
+   "value": 152.7
+  },
+  {
+   "time": 2013.5,
+   "series": "estado",
+   "value": 49.4
+  },
+  {
+   "time": 2013.5,
+   "series": "resto",
+   "value": 151.1
+  },
+  {
+   "time": 2013.75,
+   "series": "estado",
+   "value": 61.5
+  },
+  {
+   "time": 2013.75,
+   "series": "resto",
+   "value": 149.0
+  },
+  {
+   "time": 2014.0,
+   "series": "estado",
+   "value": 74.4
+  },
+  {
+   "time": 2014.0,
+   "series": "resto",
+   "value": 151.4
+  },
+  {
+   "time": 2014.25,
+   "series": "estado",
+   "value": 79.4
+  },
+  {
+   "time": 2014.25,
+   "series": "resto",
+   "value": 149.6
+  },
+  {
+   "time": 2014.5,
+   "series": "estado",
+   "value": 85.2
+  },
+  {
+   "time": 2014.5,
+   "series": "resto",
+   "value": 147.7
+  },
+  {
+   "time": 2014.75,
+   "series": "estado",
+   "value": 88.7
+  },
+  {
+   "time": 2014.75,
+   "series": "resto",
+   "value": 149.2
+  },
+  {
+   "time": 2015.0,
+   "series": "estado",
+   "value": 91.2
+  },
+  {
+   "time": 2015.0,
+   "series": "resto",
+   "value": 150.2
+  },
+  {
+   "time": 2015.25,
+   "series": "estado",
+   "value": 107.5
+  },
+  {
+   "time": 2015.25,
+   "series": "resto",
+   "value": 143.5
+  },
+  {
+   "time": 2015.5,
+   "series": "estado",
+   "value": 114.9
+  },
+  {
+   "time": 2015.5,
+   "series": "resto",
+   "value": 139.4
+  },
+  {
+   "time": 2015.75,
+   "series": "estado",
+   "value": 125.7
+  },
+  {
+   "time": 2015.75,
+   "series": "resto",
+   "value": 137.6
+  },
+  {
+   "time": 2016.0,
+   "series": "estado",
+   "value": 127.7
+  },
+  {
+   "time": 2016.0,
+   "series": "resto",
+   "value": 138.3
+  },
+  {
+   "time": 2016.25,
+   "series": "estado",
+   "value": 134.7
+  },
+  {
+   "time": 2016.25,
+   "series": "resto",
+   "value": 138.9
+  },
+  {
+   "time": 2016.5,
+   "series": "estado",
+   "value": 138.0
+  },
+  {
+   "time": 2016.5,
+   "series": "resto",
+   "value": 134.7
+  },
+  {
+   "time": 2016.75,
+   "series": "estado",
+   "value": 148.6
+  },
+  {
+   "time": 2016.75,
+   "series": "resto",
+   "value": 128.4
+  },
+  {
+   "time": 2017.0,
+   "series": "estado",
+   "value": 149.3
+  },
+  {
+   "time": 2017.0,
+   "series": "resto",
+   "value": 130.1
+  },
+  {
+   "time": 2017.25,
+   "series": "estado",
+   "value": 157.1
+  },
+  {
+   "time": 2017.25,
+   "series": "resto",
+   "value": 128.8
+  },
+  {
+   "time": 2017.5,
+   "series": "estado",
+   "value": 159.5
+  },
+  {
+   "time": 2017.5,
+   "series": "resto",
+   "value": 124.9
+  },
+  {
+   "time": 2017.75,
+   "series": "estado",
+   "value": 166.2
+  },
+  {
+   "time": 2017.75,
+   "series": "resto",
+   "value": 122.0
+  },
+  {
+   "time": 2018.0,
+   "series": "estado",
+   "value": 168.5
+  },
+  {
+   "time": 2018.0,
+   "series": "resto",
+   "value": 121.2
+  },
+  {
+   "time": 2018.25,
+   "series": "estado",
+   "value": 174.4
+  },
+  {
+   "time": 2018.25,
+   "series": "resto",
+   "value": 119.0
+  },
+  {
+   "time": 2018.5,
+   "series": "estado",
+   "value": 176.8
+  },
+  {
+   "time": 2018.5,
+   "series": "resto",
+   "value": 115.7
+  },
+  {
+   "time": 2018.75,
+   "series": "estado",
+   "value": 179.1
+  },
+  {
+   "time": 2018.75,
+   "series": "resto",
+   "value": 114.3
+  },
+  {
+   "time": 2019.0,
+   "series": "estado",
+   "value": 178.3
+  },
+  {
+   "time": 2019.0,
+   "series": "resto",
+   "value": 118.6
+  },
+  {
+   "time": 2019.25,
+   "series": "estado",
+   "value": 178.6
+  },
+  {
+   "time": 2019.25,
+   "series": "resto",
+   "value": 122.0
+  },
+  {
+   "time": 2019.5,
+   "series": "estado",
+   "value": 180.1
+  },
+  {
+   "time": 2019.5,
+   "series": "resto",
+   "value": 118.0
+  },
+  {
+   "time": 2019.75,
+   "series": "estado",
+   "value": 180.2
+  },
+  {
+   "time": 2019.75,
+   "series": "resto",
+   "value": 114.9
+  },
+  {
+   "time": 2020.0,
+   "series": "estado",
+   "value": 181.3
+  },
+  {
+   "time": 2020.0,
+   "series": "resto",
+   "value": 117.0
+  },
+  {
+   "time": 2020.25,
+   "series": "estado",
+   "value": 188.4
+  },
+  {
+   "time": 2020.25,
+   "series": "resto",
+   "value": 117.3
+  },
+  {
+   "time": 2020.5,
+   "series": "estado",
+   "value": 185.3
+  },
+  {
+   "time": 2020.5,
+   "series": "resto",
+   "value": 116.6
+  },
+  {
+   "time": 2020.75,
+   "series": "estado",
+   "value": 178.9
+  },
+  {
+   "time": 2020.75,
+   "series": "resto",
+   "value": 125.1
+  },
+  {
+   "time": 2021.0,
+   "series": "estado",
+   "value": 176.7
+  },
+  {
+   "time": 2021.0,
+   "series": "resto",
+   "value": 131.0
+  },
+  {
+   "time": 2021.25,
+   "series": "estado",
+   "value": 175.7
+  },
+  {
+   "time": 2021.25,
+   "series": "resto",
+   "value": 136.4
+  },
+  {
+   "time": 2021.5,
+   "series": "estado",
+   "value": 175.6
+  },
+  {
+   "time": 2021.5,
+   "series": "resto",
+   "value": 136.7
+  },
+  {
+   "time": 2021.75,
+   "series": "estado",
+   "value": 179.8
+  },
+  {
+   "time": 2021.75,
+   "series": "resto",
+   "value": 132.8
+  },
+  {
+   "time": 2022.0,
+   "series": "estado",
+   "value": 176.5
+  },
+  {
+   "time": 2022.0,
+   "series": "resto",
+   "value": 133.2
+  },
+  {
+   "time": 2022.25,
+   "series": "estado",
+   "value": 180.0
+  },
+  {
+   "time": 2022.25,
+   "series": "resto",
+   "value": 136.6
+  },
+  {
+   "time": 2022.5,
+   "series": "estado",
+   "value": 182.3
+  },
+  {
+   "time": 2022.5,
+   "series": "resto",
+   "value": 132.6
+  },
+  {
+   "time": 2022.75,
+   "series": "estado",
+   "value": 185.8
+  },
+  {
+   "time": 2022.75,
+   "series": "resto",
+   "value": 131.3
+  },
+  {
+   "time": 2023.0,
+   "series": "estado",
+   "value": 187.0
+  },
+  {
+   "time": 2023.0,
+   "series": "resto",
+   "value": 135.4
+  },
+  {
+   "time": 2023.25,
+   "series": "estado",
+   "value": 191.7
+  },
+  {
+   "time": 2023.25,
+   "series": "resto",
+   "value": 135.6
+  },
+  {
+   "time": 2023.5,
+   "series": "estado",
+   "value": 195.0
+  },
+  {
+   "time": 2023.5,
+   "series": "resto",
+   "value": 130.5
+  },
+  {
+   "time": 2023.75,
+   "series": "estado",
+   "value": 198.0
+  },
+  {
+   "time": 2023.75,
+   "series": "resto",
+   "value": 127.3
+  },
+  {
+   "time": 2024.0,
+   "series": "estado",
+   "value": 199.1
+  },
+  {
+   "time": 2024.0,
+   "series": "resto",
+   "value": 129.8
+  },
+  {
+   "time": 2024.25,
+   "series": "estado",
+   "value": 204.8
+  },
+  {
+   "time": 2024.25,
+   "series": "resto",
+   "value": 132.7
+  },
+  {
+   "time": 2024.5,
+   "series": "estado",
+   "value": 208.6
+  },
+  {
+   "time": 2024.5,
+   "series": "resto",
+   "value": 124.5
+  },
+  {
+   "time": 2024.75,
+   "series": "estado",
+   "value": 210.8
+  },
+  {
+   "time": 2024.75,
+   "series": "resto",
+   "value": 125.1
+  },
+  {
+   "time": 2025.0,
+   "series": "estado",
+   "value": 208.9
+  },
+  {
+   "time": 2025.0,
+   "series": "resto",
+   "value": 129.3
+  },
+  {
+   "time": 2025.25,
+   "series": "estado",
+   "value": 204.7
+  },
+  {
+   "time": 2025.25,
+   "series": "resto",
+   "value": 138.1
+  },
+  {
+   "time": 2025.5,
+   "series": "estado",
+   "value": 203.1
+  },
+  {
+   "time": 2025.5,
+   "series": "resto",
+   "value": 135.7
+  },
+  {
+   "time": 2025.75,
+   "series": "estado",
+   "value": 205.6
+  },
+  {
+   "time": 2025.75,
+   "series": "resto",
+   "value": 136.0
+  },
+  {
+   "time": 2026.0,
+   "series": "estado",
+   "value": 207.3
+  },
+  {
+   "time": 2026.0,
+   "series": "resto",
+   "value": 139.6
+  },
+  {
+   "time": 2026.25,
+   "series": "estado",
+   "value": 202.7
+  },
+  {
+   "time": 2026.25,
+   "series": "resto",
+   "value": 152.5
+  }
+ ]
+}

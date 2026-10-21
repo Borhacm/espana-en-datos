@@ -79,6 +79,7 @@ piezas:
     tema: autonomias
     titulo: "Financiación autonómica y deuda de las comunidades"
     idea: deuda por comunidad (Banco de España), financiación por habitante ajustado (Hacienda, Fedea), gasto por habitante.
+    estado: hecha
 
   - id: a06
     tipo: articulo

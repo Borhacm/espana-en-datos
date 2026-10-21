@@ -1,0 +1,432 @@
+{
+ "id": "aue1-europa-gasto",
+ "lens": "europa",
+ "theme": "autonomias",
+ "title": {
+  "es": "Comunidades y ayuntamientos gastan el 51 % del dinero público en España; en la UE, el 35 %",
+  "en": "Regions and municipalities spend 51% of public money in Spain; in the EU, 35%"
+ },
+ "subtitle": {
+  "es": "Gasto de los gobiernos regionales y locales sobre el gasto de todas las administraciones, 2025, en %. España es el 2.º de 27 países",
+  "en": "Spending by regional and local governments as a share of all government spending, 2025, in %. Spain ranks 2nd of 27 countries"
+ },
+ "unit": {
+  "es": "% del gasto público",
+  "en": "% of public spending"
+ },
+ "source": {
+  "name": "Eurostat, cuentas de las administraciones públicas",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_main",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+ },
+ "notes": {
+  "es": [
+   "Gasto total de cada nivel de gobierno en las cuentas nacionales (SEC 2010). Se suman sin descontar las transferencias entre ellos, así que el porcentaje puede estar algo sobrestimado.",
+   "Solo Alemania, Austria, Bélgica y España tienen un nivel regional propio en estas cuentas. En el resto de países, las regiones que existen (por ejemplo, en Italia o Francia) se cuentan dentro del nivel local.",
+   "España, 2025: comunidades autónomas, 16,9 % del PIB; corporaciones locales, 6,1 % del PIB."
+  ],
+  "en": [
+   "Total spending by each level of government in the national accounts (ESA 2010). The levels are added up without netting out transfers between them, so the share may be somewhat overstated.",
+   "Only Germany, Austria, Belgium and Spain have a separate regional level in these accounts. In the other countries, existing regions (in Italy or France, for example) are counted within the local level.",
+   "Spain, 2025: regional governments, 16.9% of GDP; local governments, 6.1% of GDP."
+  ]
+ },
+ "retrieved": "2026-10-21",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 36.6,
+   "regional": 10.6,
+   "local": 9.4,
+   "total": 54.6
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 50.2,
+   "regional": 20.1,
+   "local": 7.2,
+   "total": 54.4
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 19.5,
+   "regional": 0,
+   "local": 8.2,
+   "total": 42.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 5.3,
+   "regional": 0,
+   "local": 2.0,
+   "total": 37.9
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 28.6,
+   "regional": 0,
+   "local": 12.4,
+   "total": 43.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 47.3,
+   "regional": 14.2,
+   "local": 9.5,
+   "total": 50.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 65.0,
+   "regional": 0,
+   "local": 30.7,
+   "total": 47.2
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 50.8,
+   "regional": 16.9,
+   "local": 6.1,
+   "total": 45.3
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 22.8,
+   "regional": 0,
+   "local": 10.4,
+   "total": 45.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 34.8,
+   "regional": 5.9,
+   "local": 11.3,
+   "total": 49.4
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 41.6,
+   "regional": 0,
+   "local": 23.9,
+   "total": 57.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 19.5,
+   "regional": 0,
+   "local": 11.2,
+   "total": 57.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 8.4,
+   "regional": 0,
+   "local": 4.0,
+   "total": 47.8
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 26.1,
+   "regional": 0,
+   "local": 12.9,
+   "total": 49.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 11.3,
+   "regional": 0,
+   "local": 5.4,
+   "total": 47.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 11.7,
+   "regional": 0,
+   "local": 2.6,
+   "total": 22.3
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 28.6,
+   "regional": 0,
+   "local": 14.6,
+   "total": 51.1
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 24.8,
+   "regional": 0,
+   "local": 10.2,
+   "total": 41.1
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 11.5,
+   "regional": 0,
+   "local": 5.6,
+   "total": 48.7
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 25.2,
+   "regional": 0,
+   "local": 11.4,
+   "total": 45.3
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 1.1,
+   "regional": 0,
+   "local": 0.4,
+   "total": 37.1
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 29.4,
+   "regional": 0,
+   "local": 13.3,
+   "total": 45.2
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 29.1,
+   "regional": 0,
+   "local": 14.8,
+   "total": 50.9
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 16.1,
+   "regional": 0,
+   "local": 6.8,
+   "total": 42.3
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 20.7,
+   "regional": 0,
+   "local": 9.0,
+   "total": 43.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 17.1,
+   "regional": 0,
+   "local": 8.1,
+   "total": 47.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 18.4,
+   "regional": 0,
+   "local": 9.0,
+   "total": 48.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 49.7,
+   "regional": 0,
+   "local": 24.5,
+   "total": 49.3
+  }
+ ]
+}

@@ -185,11 +185,12 @@ export function renderDumbbell(ctx: RenderContext) {
     const val = svg("text", { x: Math.max(x(d.a), x(d.b)) + 10, y: cy + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(d.b);
     const show = () => tip.show(x(d.b), cy - 12,
-      `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), first, `${fmt(d.a)}${pct}`)}${tipRow(color, last, `${fmt(d.b)}${pct}`, true)}`);
+      `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), dimLabel(chart, "time", first, lang), `${fmt(d.a)}${pct}`)}${tipRow(color, dimLabel(chart, "time", last, lang), `${fmt(d.b)}${pct}`, true)}`);
     g.addEventListener("pointerenter", show);
     g.addEventListener("focus", show);
     g.addEventListener("pointerleave", () => tip.hide());
     g.addEventListener("blur", () => tip.hide());
   });
-  ctx.legend.innerHTML = `<span class="lg lg-hollow"><span class="key"></span>${first}</span><span class="lg lg-dot"><span class="key"></span>${last}</span>`;
+  // Los extremos pueden ser años o etapas con etiqueta propia en dimensions.time (p. ej. antes y después de un reparto)
+  ctx.legend.innerHTML = `<span class="lg lg-hollow"><span class="key"></span>${dimLabel(chart, "time", first, lang)}</span><span class="lg lg-dot"><span class="key"></span>${dimLabel(chart, "time", last, lang)}</span>`;
 }
