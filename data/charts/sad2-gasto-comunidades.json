@@ -1,0 +1,240 @@
+{
+ "id": "sad2-gasto-comunidades",
+ "lens": "dentro",
+ "theme": "sanidad",
+ "title": {
+  "es": "Cada comunidad gasta en sanidad entre 1.658 euros por habitante (Andalucía) y 2.332 (País Vasco)",
+  "en": "Regions spend between 1,658 euros per inhabitant on health (Andalusia) and 2,332 (Basque Country)"
+ },
+ "subtitle": {
+  "es": "Gasto sanitario público de cada comunidad, 2024, en euros por habitante. Conjunto de las comunidades: 1.958 euros",
+  "en": "Public health spending by each region, 2024, in euros per inhabitant. All regions: 1,958 euros"
+ },
+ "unit": {
+  "es": "Euros por habitante",
+  "en": "Euros per inhabitant"
+ },
+ "source": {
+  "name": "Ministerio de Sanidad, Estadística de Gasto Sanitario Público",
+  "dataset": "Serie 2002-2024, gasto real (devengo)",
+  "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/home.htm",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Gasto consolidado del sector comunidades autónomas. No incluye el de las mutualidades de funcionarios (MUFACE, ISFAS y MUGEJU), el de la Administración central ni el de los ayuntamientos. Ceuta y Melilla no figuran: las gestiona el INGESA.",
+   "Datos de 2024 provisionales. Población residente a 1 de julio (INE).",
+   "Euros por habitante sin ajustar por edad: una población más envejecida necesita más atención por persona.",
+   "La barra de España es el conjunto de las comunidades."
+  ],
+  "en": [
+   "Consolidated spending by the regional government sector. It excludes the civil servants' mutual funds (MUFACE, ISFAS and MUGEJU), central government and municipalities. Ceuta and Melilla are not shown: they are run by INGESA.",
+   "2024 figures are provisional. Resident population on 1 July (INE).",
+   "Euros per inhabitant not adjusted for age: an older population needs more care per person.",
+   "The bar for Spain is all regions combined."
+  ]
+ },
+ "retrieved": "2026-10-24",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2024",
+   "value": 1657.8
+  },
+  {
+   "geo": "02",
+   "time": "2024",
+   "value": 2190.2
+  },
+  {
+   "geo": "03",
+   "time": "2024",
+   "value": 2322.4
+  },
+  {
+   "geo": "04",
+   "time": "2024",
+   "value": 1955.9
+  },
+  {
+   "geo": "05",
+   "time": "2024",
+   "value": 2035.5
+  },
+  {
+   "geo": "06",
+   "time": "2024",
+   "value": 2241.7
+  },
+  {
+   "geo": "07",
+   "time": "2024",
+   "value": 2218.1
+  },
+  {
+   "geo": "08",
+   "time": "2024",
+   "value": 1957.1
+  },
+  {
+   "geo": "09",
+   "time": "2024",
+   "value": 2060.6
+  },
+  {
+   "geo": "10",
+   "time": "2024",
+   "value": 1866.5
+  },
+  {
+   "geo": "11",
+   "time": "2024",
+   "value": 2245.9
+  },
+  {
+   "geo": "12",
+   "time": "2024",
+   "value": 2070.6
+  },
+  {
+   "geo": "13",
+   "time": "2024",
+   "value": 1778.6
+  },
+  {
+   "geo": "14",
+   "time": "2024",
+   "value": 2154.8
+  },
+  {
+   "geo": "15",
+   "time": "2024",
+   "value": 2155.7
+  },
+  {
+   "geo": "16",
+   "time": "2024",
+   "value": 2332.1
+  },
+  {
+   "geo": "17",
+   "time": "2024",
+   "value": 1878.4
+  },
+  {
+   "geo": "ES",
+   "time": "2024",
+   "value": 1957.6
+  }
+ ]
+}

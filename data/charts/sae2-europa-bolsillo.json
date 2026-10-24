@@ -1,0 +1,348 @@
+{
+ "id": "sae2-europa-bolsillo",
+ "lens": "europa",
+ "theme": "sanidad",
+ "title": {
+  "es": "Los hogares pagan de su bolsillo el 21,5 % del gasto sanitario en España; en la UE, el 15,1 %",
+  "en": "Households pay 21.5% of health spending out of pocket in Spain; in the EU, 15.1%"
+ },
+ "subtitle": {
+  "es": "Pagos directos de los hogares, 2024, en % del gasto sanitario corriente. España es el 11.º de 27",
+  "en": "Household out-of-pocket payments, 2024, as % of current health expenditure. Spain ranks 11th of 27"
+ },
+ "unit": {
+  "es": "% del gasto sanitario",
+  "en": "% of health spending"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "hlth_sha11_hf",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_sha11_hf/default/table"
+ },
+ "notes": {
+  "es": [
+   "El gasto sanitario corriente se reparte entre tres pagadores. En España, las administraciones y la Seguridad Social pagan el 72,2 % (en la UE, el 80,3 %); los seguros voluntarios, el 6,3 %, y los hogares, el resto.",
+   "Pagos directos: lo que los hogares pagan sin seguro que los cubra, como la parte del precio de los medicamentos con receta, el dentista, las gafas o las consultas privadas.",
+   "Cuentas de salud (System of Health Accounts). No incluye el gasto de capital."
+  ],
+  "en": [
+   "Current health expenditure is split between three payers. In Spain, government and social security pay 72.2% (in the EU, 80.3%); voluntary insurance 6.3%, and households the rest.",
+   "Out-of-pocket payments: what households pay with no insurance to cover it, such as their share of the price of prescription medicines, the dentist, glasses or private consultations.",
+   "Health accounts (System of Health Accounts). Capital spending is not included."
+  ]
+ },
+ "retrieved": "2026-10-24",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 16.7
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 21.8
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 34.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 16.9
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 13.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 11.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 14.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 21.5
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 21.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 15.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 14.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 10.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 34.2
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 8.6
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 22.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 10.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 23.0
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 29.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 8.8
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 31.9
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 29.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 11.8
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 16.6
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 28.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 22.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 20.2
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 12.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 12.8
+  }
+ ]
+}

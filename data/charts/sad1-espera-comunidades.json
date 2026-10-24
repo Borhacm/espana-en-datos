@@ -1,0 +1,282 @@
+{
+ "id": "sad1-espera-comunidades",
+ "lens": "dentro",
+ "theme": "sanidad",
+ "title": {
+  "es": "Para operarse, en Andalucía se espera de media 173 días; en Madrid, 50",
+  "en": "Patients waiting for surgery in Andalusia have waited 173 days on average; in Madrid, 50"
+ },
+ "subtitle": {
+  "es": "Tiempo medio de espera de los pacientes pendientes de una operación, 31 de diciembre de 2025, en días. España: 122 días",
+  "en": "Average time waited by patients pending surgery, 31 December 2025, in days. Spain: 122 days"
+ },
+ "unit": {
+  "es": "Días",
+  "en": "Days"
+ },
+ "source": {
+  "name": "Ministerio de Sanidad, Sistema de Información sobre Listas de Espera del SNS (SISLE-SNS)",
+  "dataset": "Indicadores resumen, situación a 31 de diciembre de cada año",
+  "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/listaEspera.htm",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Lista de espera estructural: pacientes con una operación no urgente prescrita cuya espera depende de la organización y los recursos del servicio de salud. No incluye a quienes esperan por decisión propia (por ejemplo, por rechazar operarse en otro centro) ni a quienes no se pueden operar todavía por motivos clínicos.",
+   "Tiempo que llevan esperando, en la fecha de corte, los pacientes que siguen en la lista, no el tiempo que tardaron en operarse los que ya salieron de ella.",
+   "Cada comunidad aporta y computa sus datos; el Ministerio los agrega. Ceuta y Melilla las gestiona el INGESA.",
+   "Datos rectificados por el Ministerio para Castilla-La Mancha."
+  ],
+  "en": [
+   "Structural waiting list: patients with non-urgent surgery prescribed whose wait depends on the organisation and resources of the health service. It excludes those waiting by their own choice (for example because they turned down surgery at another hospital) and those who cannot yet be operated on for clinical reasons.",
+   "Time already waited, on the reference date, by patients still on the list, not the time it took those who have already left it to be operated on.",
+   "Each region supplies and computes its own data; the Ministry of Health compiles them. Ceuta and Melilla are run by INGESA, the national health management agency.",
+   "Figures for Castile-La Mancha as corrected by the Ministry."
+  ]
+ },
+ "retrieved": "2026-10-24",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2025",
+   "value": 173,
+   "over6m": 32.2
+  },
+  {
+   "geo": "02",
+   "time": "2025",
+   "value": 132,
+   "over6m": 21.7
+  },
+  {
+   "geo": "03",
+   "time": "2025",
+   "value": 91,
+   "over6m": 10.4
+  },
+  {
+   "geo": "04",
+   "time": "2025",
+   "value": 105,
+   "over6m": 22.4
+  },
+  {
+   "geo": "05",
+   "time": "2025",
+   "value": 106,
+   "over6m": 17.4
+  },
+  {
+   "geo": "06",
+   "time": "2025",
+   "value": 137,
+   "over6m": 26.2
+  },
+  {
+   "geo": "07",
+   "time": "2025",
+   "value": 87,
+   "over6m": 13.8
+  },
+  {
+   "geo": "08",
+   "time": "2025",
+   "value": 117,
+   "over6m": 16.5
+  },
+  {
+   "geo": "09",
+   "time": "2025",
+   "value": 142,
+   "over6m": 32.0
+  },
+  {
+   "geo": "10",
+   "time": "2025",
+   "value": 88,
+   "over6m": 16.1
+  },
+  {
+   "geo": "11",
+   "time": "2025",
+   "value": 135,
+   "over6m": 23.1
+  },
+  {
+   "geo": "12",
+   "time": "2025",
+   "value": 73,
+   "over6m": 5.7
+  },
+  {
+   "geo": "13",
+   "time": "2025",
+   "value": 50,
+   "over6m": 0.8
+  },
+  {
+   "geo": "14",
+   "time": "2025",
+   "value": 103,
+   "over6m": 19.3
+  },
+  {
+   "geo": "15",
+   "time": "2025",
+   "value": 96,
+   "over6m": 16.7
+  },
+  {
+   "geo": "16",
+   "time": "2025",
+   "value": 64,
+   "over6m": 2.3
+  },
+  {
+   "geo": "17",
+   "time": "2025",
+   "value": 78,
+   "over6m": 6.4
+  },
+  {
+   "geo": "18",
+   "time": "2025",
+   "value": 94,
+   "over6m": 15.1
+  },
+  {
+   "geo": "19",
+   "time": "2025",
+   "value": 82,
+   "over6m": 8.2
+  },
+  {
+   "geo": "ES",
+   "time": "2025",
+   "value": 122,
+   "over6m": 21.6
+  }
+ ]
+}

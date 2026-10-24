@@ -24,6 +24,8 @@ const EXACT: Record<string, string> = {
   "INE, Índice de Precios de Consumo": "INE, Consumer Price Index",
   "INE, Proyecciones de Población 2026-2075": "INE, Population Projections 2026-2075",
   "Ministerio del Interior, Infoelectoral": "Ministry of the Interior, Infoelectoral",
+  "Ministerio de Sanidad, Sistema de Información sobre Listas de Espera del SNS (SISLE-SNS)": "Ministry of Health, National Health System Waiting List Information System (SISLE-SNS)",
+  "Ministerio de Sanidad, Estadística de Gasto Sanitario Público": "Ministry of Health, Public Health Expenditure Statistics",
   "Resultados de 2023: Ministerio del Interior": "2023 results: Ministry of the Interior",
   "Presidentes del Gobierno (La Moncloa)": "Prime ministers (La Moncloa)",
   "Sector público": "Public sector",
@@ -39,6 +41,8 @@ const EXACT: Record<string, string> = {
   "Estudios sobre la Economía Española 2026/24, cuadro 9": "Estudios sobre la Economía Española 2026/24, table 9",
   "Ficheros MUNI 02202307": "MUNI 02202307 files",
   "Presidencias autonómicas": "Regional presidencies",
+  "Indicadores resumen, situación a 31 de diciembre de cada año": "Summary indicators, position on 31 December each year",
+  "Serie 2002-2024, gasto real (devengo)": "2002-2024 series, actual spending (accrual basis)",
   "Votaciones nominales del Pleno, XV legislatura": "Roll-call votes in the plenary, 15th parliament",
   "Votaciones nominales del Pleno, legislaturas X a XV": "Roll-call votes in the plenary, 10th to 15th parliaments",
   // Licencias

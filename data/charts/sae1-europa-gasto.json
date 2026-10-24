@@ -1,0 +1,346 @@
+{
+ "id": "sae1-europa-gasto",
+ "lens": "europa",
+ "theme": "sanidad",
+ "title": {
+  "es": "España dedica a la sanidad pública el 6,5 % de su PIB; la UE, el 7,3 %",
+  "en": "Spain spends 6.5% of its GDP on public health care; the EU, 7.3%"
+ },
+ "subtitle": {
+  "es": "Gasto público en sanidad, 2024, en % del PIB. España es el 15.º de 27 países",
+  "en": "Public spending on health, 2024, as % of GDP. Spain ranks 15th of 27 countries"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_exp",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+ },
+ "notes": {
+  "es": [
+   "Gasto de todas las administraciones públicas en la función «Sanidad» de la clasificación COFOG: hospitales, atención primaria, medicamentos y productos sanitarios, salud pública e investigación.",
+   "Los datos de España, Alemania, Francia, Bélgica, Portugal y Eslovaquia son provisionales."
+  ],
+  "en": [
+   "Spending by all levels of government on the «Health» function of the COFOG classification: hospitals, outpatient care, medicines and medical products, public health and research.",
+   "Figures for Spain, Germany, France, Belgium, Portugal and Slovakia are provisional."
+  ]
+ },
+ "retrieved": "2026-10-24",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 9.5
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 8.0
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 5.4
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 6.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 9.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 7.6
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 8.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 6.5
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 6.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 7.3
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 7.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 8.9
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 5.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 9.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 4.7
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 5.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 6.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 5.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 5.6
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 5.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 5.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 7.3
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 6.1
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 6.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 5.2
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 6.9
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 8.0
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 7.4
+  }
+ ]
+}

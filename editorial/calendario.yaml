@@ -87,6 +87,7 @@ piezas:
     tema: sanidad
     titulo: "Sanidad: listas de espera y gasto por comunidad"
     idea: listas de espera (Ministerio de Sanidad, SISLE), gasto sanitario público por habitante, médicos por habitante frente a la UE.
+    estado: hecha
 
   - id: n03
     tipo: nota

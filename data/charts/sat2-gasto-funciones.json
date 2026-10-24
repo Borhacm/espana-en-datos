@@ -1,0 +1,414 @@
+{
+ "id": "sat2-gasto-funciones",
+ "lens": "tiempo",
+ "theme": "sanidad",
+ "title": {
+  "es": "Los hospitales se llevan el 62 % del gasto sanitario público, frente al 53 % en 2002; la farmacia baja del 22 % al 14 %",
+  "en": "Hospitals take 62% of public health spending, against 53% in 2002; pharmacy falls from 22% to 14%"
+ },
+ "subtitle": {
+  "es": "Reparto del gasto sanitario público por función, 2002-2024, en % del total",
+  "en": "Breakdown of public health spending by function, 2002-2024, as % of the total"
+ },
+ "unit": {
+  "es": "% del gasto sanitario público",
+  "en": "% of public health spending"
+ },
+ "source": {
+  "name": "Ministerio de Sanidad, Estadística de Gasto Sanitario Público",
+  "dataset": "Serie 2002-2024, gasto real (devengo)",
+  "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/home.htm",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Hospitales y especialistas incluye las consultas de especialistas fuera del hospital y los medicamentos que se dispensan en el hospital. Farmacia es el gasto en recetas que se dispensan en las oficinas de farmacia.",
+   "La atención primaria pasa del 15,1 % al 14,4 %. El resto del gasto es salud pública, servicios colectivos, traslados, prótesis e inversión.",
+   "Gasto consolidado de todas las administraciones. 2023 y 2024, provisionales."
+  ],
+  "en": [
+   "Hospitals and specialists includes specialist consultations outside hospital and medicines dispensed in hospital. Pharmacy is spending on prescriptions dispensed by community pharmacies.",
+   "Primary care goes from 15.1% to 14.4%. The rest is public health, collective services, patient transport, prostheses and investment.",
+   "Consolidated spending by all levels of government. 2023 and 2024 are provisional."
+  ]
+ },
+ "retrieved": "2026-10-24",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "hospital": {
+    "es": "Hospitales y especialistas",
+    "en": "Hospitals and specialists"
+   },
+   "primaria": {
+    "es": "Atención primaria",
+    "en": "Primary care"
+   },
+   "farmacia": {
+    "es": "Farmacia (recetas)",
+    "en": "Pharmacy (prescriptions)"
+   }
+  }
+ },
+ "short_labels": {
+  "hospital": {
+   "es": "Hospitales",
+   "en": "Hospitals"
+  },
+  "primaria": {
+   "es": "Primaria",
+   "en": "Primary care"
+  },
+  "farmacia": {
+   "es": "Farmacia",
+   "en": "Pharmacy"
+  }
+ },
+ "rows": [
+  {
+   "time": "2002",
+   "series": "hospital",
+   "value": 52.6
+  },
+  {
+   "time": "2003",
+   "series": "hospital",
+   "value": 52.7
+  },
+  {
+   "time": "2004",
+   "series": "hospital",
+   "value": 53.3
+  },
+  {
+   "time": "2005",
+   "series": "hospital",
+   "value": 53.7
+  },
+  {
+   "time": "2006",
+   "series": "hospital",
+   "value": 54.1
+  },
+  {
+   "time": "2007",
+   "series": "hospital",
+   "value": 54.2
+  },
+  {
+   "time": "2008",
+   "series": "hospital",
+   "value": 55.5
+  },
+  {
+   "time": "2009",
+   "series": "hospital",
+   "value": 55.6
+  },
+  {
+   "time": "2010",
+   "series": "hospital",
+   "value": 56.3
+  },
+  {
+   "time": "2011",
+   "series": "hospital",
+   "value": 58.6
+  },
+  {
+   "time": "2012",
+   "series": "hospital",
+   "value": 60.6
+  },
+  {
+   "time": "2013",
+   "series": "hospital",
+   "value": 60.8
+  },
+  {
+   "time": "2014",
+   "series": "hospital",
+   "value": 61.5
+  },
+  {
+   "time": "2015",
+   "series": "hospital",
+   "value": 62.6
+  },
+  {
+   "time": "2016",
+   "series": "hospital",
+   "value": 62.4
+  },
+  {
+   "time": "2017",
+   "series": "hospital",
+   "value": 62.2
+  },
+  {
+   "time": "2018",
+   "series": "hospital",
+   "value": 61.9
+  },
+  {
+   "time": "2019",
+   "series": "hospital",
+   "value": 62.3
+  },
+  {
+   "time": "2020",
+   "series": "hospital",
+   "value": 62.2
+  },
+  {
+   "time": "2021",
+   "series": "hospital",
+   "value": 61.7
+  },
+  {
+   "time": "2022",
+   "series": "hospital",
+   "value": 60.8
+  },
+  {
+   "time": "2023",
+   "series": "hospital",
+   "value": 61.0
+  },
+  {
+   "time": "2024",
+   "series": "hospital",
+   "value": 62.1
+  },
+  {
+   "time": "2002",
+   "series": "primaria",
+   "value": 15.1
+  },
+  {
+   "time": "2003",
+   "series": "primaria",
+   "value": 15.1
+  },
+  {
+   "time": "2004",
+   "series": "primaria",
+   "value": 15.2
+  },
+  {
+   "time": "2005",
+   "series": "primaria",
+   "value": 15.1
+  },
+  {
+   "time": "2006",
+   "series": "primaria",
+   "value": 14.9
+  },
+  {
+   "time": "2007",
+   "series": "primaria",
+   "value": 15.3
+  },
+  {
+   "time": "2008",
+   "series": "primaria",
+   "value": 15.4
+  },
+  {
+   "time": "2009",
+   "series": "primaria",
+   "value": 15.1
+  },
+  {
+   "time": "2010",
+   "series": "primaria",
+   "value": 15.1
+  },
+  {
+   "time": "2011",
+   "series": "primaria",
+   "value": 14.8
+  },
+  {
+   "time": "2012",
+   "series": "primaria",
+   "value": 14.6
+  },
+  {
+   "time": "2013",
+   "series": "primaria",
+   "value": 14.6
+  },
+  {
+   "time": "2014",
+   "series": "primaria",
+   "value": 14.4
+  },
+  {
+   "time": "2015",
+   "series": "primaria",
+   "value": 14.1
+  },
+  {
+   "time": "2016",
+   "series": "primaria",
+   "value": 14.1
+  },
+  {
+   "time": "2017",
+   "series": "primaria",
+   "value": 14.0
+  },
+  {
+   "time": "2018",
+   "series": "primaria",
+   "value": 14.4
+  },
+  {
+   "time": "2019",
+   "series": "primaria",
+   "value": 14.6
+  },
+  {
+   "time": "2020",
+   "series": "primaria",
+   "value": 14.2
+  },
+  {
+   "time": "2021",
+   "series": "primaria",
+   "value": 14.4
+  },
+  {
+   "time": "2022",
+   "series": "primaria",
+   "value": 14.2
+  },
+  {
+   "time": "2023",
+   "series": "primaria",
+   "value": 14.2
+  },
+  {
+   "time": "2024",
+   "series": "primaria",
+   "value": 14.4
+  },
+  {
+   "time": "2002",
+   "series": "farmacia",
+   "value": 22.0
+  },
+  {
+   "time": "2003",
+   "series": "farmacia",
+   "value": 22.4
+  },
+  {
+   "time": "2004",
+   "series": "farmacia",
+   "value": 22.0
+  },
+  {
+   "time": "2005",
+   "series": "farmacia",
+   "value": 21.2
+  },
+  {
+   "time": "2006",
+   "series": "farmacia",
+   "value": 20.3
+  },
+  {
+   "time": "2007",
+   "series": "farmacia",
+   "value": 19.7
+  },
+  {
+   "time": "2008",
+   "series": "farmacia",
+   "value": 19.0
+  },
+  {
+   "time": "2009",
+   "series": "farmacia",
+   "value": 19.0
+  },
+  {
+   "time": "2010",
+   "series": "farmacia",
+   "value": 19.2
+  },
+  {
+   "time": "2011",
+   "series": "farmacia",
+   "value": 18.0
+  },
+  {
+   "time": "2012",
+   "series": "farmacia",
+   "value": 16.9
+  },
+  {
+   "time": "2013",
+   "series": "farmacia",
+   "value": 16.9
+  },
+  {
+   "time": "2014",
+   "series": "farmacia",
+   "value": 16.8
+  },
+  {
+   "time": "2015",
+   "series": "farmacia",
+   "value": 15.9
+  },
+  {
+   "time": "2016",
+   "series": "farmacia",
+   "value": 16.3
+  },
+  {
+   "time": "2017",
+   "series": "farmacia",
+   "value": 16.5
+  },
+  {
+   "time": "2018",
+   "series": "farmacia",
+   "value": 16.3
+  },
+  {
+   "time": "2019",
+   "series": "farmacia",
+   "value": 15.8
+  },
+  {
+   "time": "2020",
+   "series": "farmacia",
+   "value": 14.6
+  },
+  {
+   "time": "2021",
+   "series": "farmacia",
+   "value": 14.6
+  },
+  {
+   "time": "2022",
+   "series": "farmacia",
+   "value": 14.7
+  },
+  {
+   "time": "2023",
+   "series": "farmacia",
+   "value": 14.3
+  },
+  {
+   "time": "2024",
+   "series": "farmacia",
+   "value": 14.4
+  }
+ ]
+}

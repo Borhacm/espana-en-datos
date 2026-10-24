@@ -1,0 +1,93 @@
+{
+ "id": "sat1-lista-espera",
+ "lens": "tiempo",
+ "theme": "sanidad",
+ "title": {
+  "es": "Por cada 1.000 habitantes, 17,7 personas esperan una operación; a finales de 2018, 14,8",
+  "en": "For every 1,000 inhabitants, 17.7 people are waiting for surgery; at the end of 2018, 14.8"
+ },
+ "subtitle": {
+  "es": "Pacientes en lista de espera quirúrgica por 1.000 habitantes, a 31 de diciembre de cada año, 2018-2025",
+  "en": "Patients on the surgical waiting list per 1,000 inhabitants, on 31 December each year, 2018-2025"
+ },
+ "unit": {
+  "es": "Pacientes por 1.000 habitantes",
+  "en": "Patients per 1,000 inhabitants"
+ },
+ "source": {
+  "name": "Ministerio de Sanidad, Sistema de Información sobre Listas de Espera del SNS (SISLE-SNS)",
+  "dataset": "Indicadores resumen, situación a 31 de diciembre de cada año",
+  "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/listaEspera.htm",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Población con tarjeta sanitaria. El máximo de la serie es el de 2023 (18,1).",
+   "La serie empieza en 2018 porque ese año Andalucía cambió su forma de contar la lista de espera; hasta 2016, además, los datos de Cataluña eran una estimación.",
+   "Cada valor sale del informe de su corte. Los informes de junio no se incluyen."
+  ],
+  "en": [
+   "Population with a health card. The highest value in the series is 2023 (18.1).",
+   "The series starts in 2018 because that year Andalusia changed the way it counts its waiting list; until 2016, Catalonia's figures were also an estimate.",
+   "Each value comes from the report for that date. The June reports are not included."
+  ]
+ },
+ "retrieved": "2026-10-24",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "tasa": {
+    "es": "Lista de espera quirúrgica",
+    "en": "Surgical waiting list"
+   }
+  }
+ },
+ "short_labels": {
+  "tasa": {
+   "es": "Lista de espera",
+   "en": "Waiting list"
+  }
+ },
+ "rows": [
+  {
+   "time": "2018",
+   "series": "tasa",
+   "value": 14.78
+  },
+  {
+   "time": "2019",
+   "series": "tasa",
+   "value": 15.53
+  },
+  {
+   "time": "2020",
+   "series": "tasa",
+   "value": 14.2
+  },
+  {
+   "time": "2021",
+   "series": "tasa",
+   "value": 15.39
+  },
+  {
+   "time": "2022",
+   "series": "tasa",
+   "value": 17.1
+  },
+  {
+   "time": "2023",
+   "series": "tasa",
+   "value": 18.11
+  },
+  {
+   "time": "2024",
+   "series": "tasa",
+   "value": 17.8
+  },
+  {
+   "time": "2025",
+   "series": "tasa",
+   "value": 17.7
+  }
+ ]
+}

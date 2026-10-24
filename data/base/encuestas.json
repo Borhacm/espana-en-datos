@@ -19456,6 +19456,46 @@
    }
   },
   {
+   "pollster": "IMOP",
+   "commissioner": "El Confidencial",
+   "fieldwork": "13–16 Oct",
+   "date": "2026-10-16",
+   "sample": 1000,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.elconfidencial.com/espana/2026-10-23/encuesta-imop-elecciones-29n-bloque-psoe-frente-amplio_4450302/",
+   "values": {
+    "PP": 28.5,
+    "PSOE": 27.1,
+    "Vox": 20.0,
+    "Sumar": 8.9,
+    "ERC": 2.2,
+    "Junts": 1.2,
+    "EH Bildu": 1.3,
+    "PNV": 1.0,
+    "BNG": 1.1,
+    "CC": 0.6,
+    "Podemos": 1.9,
+    "SALF": 1.2
+   },
+   "seats": {
+    "PP": 123,
+    "PSOE": 113,
+    "Vox": 72,
+    "Sumar": 14,
+    "ERC": 8,
+    "Junts": 4,
+    "EH Bildu": 6,
+    "PNV": 5,
+    "BNG": 2,
+    "CC": 1,
+    "AA": 1,
+    "Podemos": 1,
+    "SALF": 0
+   }
+  },
+  {
    "pollster": "EM-Analytics",
    "commissioner": "Electomanía",
    "fieldwork": "15–17 Oct",
@@ -19497,5 +19537,5 @@
    }
   }
  ],
- "retrieved": "2026-10-21"
+ "retrieved": "2026-10-24"
 }
