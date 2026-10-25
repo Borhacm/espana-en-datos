@@ -18,6 +18,19 @@ from .common import bi, dec
 THEMES["elecciones"] = {"code": "EL", "title": "Elecciones generales del 29N"}
 
 ELECTION_2023 = "2023-07-23"
+
+
+def _base(name: str, build):
+    """Dataset base ya guardado en data/base (se versiona con el repositorio); si no existe, se construye.
+
+    Así los gráficos no vuelven a descargar fuentes que no cambian (Infoelectoral, por ejemplo, no responde
+    desde algunos entornos en la nube). Los datasets base se regeneran con run.py sin --only o con --only <nombre>."""
+    path = DATA_DIR / "base" / f"{name}.json"
+    return json.loads(path.read_text()) if path.exists() else build()
+
+
+def _results_2023() -> dict:
+    return _base("congreso-202307", lambda: elecciones.build("202307"))
 # Partidos con serie propia en el seguimiento; el resto no tiene datos en todas las encuestas
 TRACKED = ["PP", "PSOE", "Vox", "Sumar", "Podemos", "SALF"]
 
@@ -131,7 +144,7 @@ def tracker():
                     "kind": "panel" if p["panel"] else "partisan" if p["partisan"] else "reestimate" if p["reestimate"] else "poll",
                     "url": p["url"],
                 })
-    result = elecciones.build("202307")
+    result = _results_2023()
     nat = next(p for p in result["provinces"] if p["geo"] == "ES")
     valid = sum(nat["votes"].values()) + nat["blank"]
     results_2023 = [{"party": k, "value": round(100 * v / valid, 1)} for k, v in nat["votes"].items() if k in TRACKED]
@@ -204,7 +217,7 @@ GOV_NOTES_EN = [
 
 
 def gobiernos_timeline():
-    base = gobiernos.build()
+    base = _base("gobiernos", gobiernos.build)
     assert len(base["notes"]) == len(GOV_NOTES_EN), "Han cambiado las notas de gobiernos: actualiza GOV_NOTES_EN"
     rows = [{**r, "value": 1} for r in base["rows"]]
     current = {r["ccaa"]: r["party"] for r in base["rows"] if r["end"] is None}
@@ -238,7 +251,9 @@ def _geometry():
     geo_dir = DATA_DIR / "geo"
     geo_dir.mkdir(parents=True, exist_ok=True)
     for name in ("provinces", "municipalities"):
-        shutil.copy(fetch(ATLAS.format(name=name), ".json"), geo_dir / f"es-{name}.json")
+        target = geo_dir / f"es-{name}.json"
+        if not target.exists():  # las geometrías están en el repositorio: solo se descargan si faltan
+            shutil.copy(fetch(ATLAS.format(name=name), ".json"), target)
 
 
 def _miles(n: int) -> str:
@@ -251,7 +266,7 @@ def _thousands(n: int) -> str:
 
 def mapa_2023():
     _geometry()
-    result = elecciones.build("202307")
+    result = _results_2023()
     rows = []
     for level, items in (("provincia", result["provinces"]), ("municipio", result["municipalities"])):
         for a in items:
@@ -307,8 +322,8 @@ REGIONAL = ["ERC", "Junts", "EH Bildu", "PNV", "BNG", "CC", "UPN"]
 def simulador() -> dict:
     from datasets import escanos
 
-    seats = {r["geo"]: r["seats"] for r in escanos.build()["rows"]}
-    result = elecciones.build("202307")
+    seats = {r["geo"]: r["seats"] for r in _base("escanos-2026", escanos.build)["rows"]}
+    result = _results_2023()
     nat = next(p for p in result["provinces"] if p["geo"] == "ES")
     nat_valid = sum(nat["votes"].values()) + nat["blank"]
     provinces = []
