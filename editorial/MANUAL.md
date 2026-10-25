@@ -17,12 +17,12 @@ Procedimiento para preparar y publicar una **nota** o un **artículo** del [cale
 ## 1. Preparar el repositorio
 
 ```bash
-cd /Users/bcm/espana-en-datos
+cd <carpeta del repositorio>   # en local, ~/Projects/espana-en-datos; en una rutina en la nube, la que se haya clonado
 git status --short          # debe estar vacío; si no, para y explica qué hay
-git checkout main
+git checkout main && git pull --ff-only
 ```
 
-El repositorio tiene una copia privada en GitHub (`Borhacm/espana-en-datos`, rama `main`) que sirve solo de respaldo: GitHub no publica nada. La web se publica con la CLI de Vercel desde `web/` (paso 9).
+El repositorio está en GitHub (`Borhacm/espana-en-datos`, rama `main`). **Vercel publica la web automáticamente cada vez que llega un commit a `main`** (como Europa en datos): no hace falta la CLI de Vercel. Por eso nada que no haya pasado las comprobaciones puede llegar a `main`.
 
 ## 2. Actualizar las encuestas (cada ejecución, salvo en veda)
 
@@ -134,15 +134,8 @@ Si alguna casilla queda sin marcar y no se puede resolver en esta ejecución, **
 
 1. Marca la entrada como `estado: hecha` en `editorial/calendario.yaml`.
 2. Commit en `main`: `git add -A && git commit -m "<Nota|Artículo> <id>: <título>"` y, en una línea aparte al final del mensaje, `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Si solo has actualizado encuestas: `Encuestas: actualización del <fecha>`.
-3. Copia de seguridad: `git push origin main`. Si falla (por ejemplo, sin conexión con GitHub), sigue y dilo en el resumen.
-4. Publica desde `web/` (el build sincroniza `../data`, por eso no se compila en remoto):
-
-```bash
-cd /Users/bcm/espana-en-datos/web
-vercel build --prod --scope bocalma && vercel deploy --prebuilt --prod --scope bocalma
-```
-
-Comprueba que `vercel build` termina sin error **antes** de desplegar: si falla, `deploy --prebuilt` publicaría una versión vieja.
+3. Publica: `git pull --rebase origin main && git push origin main`. Al llegar a `main`, Vercel compila la web desde `web/` (el build copia `../data`) y la publica. Si el push falla, no se publica nada: dilo en el resumen.
+4. Comprueba que el despliegue termina bien: `gh api repos/Borhacm/espana-en-datos/commits/HEAD/status --jq .state` debe acabar en `success` (espera y repite unos minutos si da `pending`). Si da `failure`, la web sigue con la versión anterior: revisa el error en Vercel, corrígelo con otro commit y vuelve a comprobar.
 
 ## 10. Comprobar la web real
 
