@@ -19535,7 +19535,207 @@
     "Podemos": 1,
     "SALF": 0
    }
+  },
+  {
+   "pollster": "Ateneo del Dato",
+   "commissioner": "elDiario.es",
+   "fieldwork": "20–22 Oct",
+   "date": "2026-10-22",
+   "sample": 2000,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.eldiario.es/politica/bloque-izquierdas-recorta-distancias-pp-vox-mantienen-mayoria-absoluta_1_13611052.html",
+   "values": {
+    "PP": 31.1,
+    "PSOE": 27.6,
+    "Vox": 19.8,
+    "Sumar": 6.8,
+    "Podemos": 2.7
+   },
+   "seats": {
+    "PP": 126.5,
+    "PSOE": 109.5,
+    "Vox": 70.5,
+    "Sumar": 14.0,
+    "Podemos": 1.5
+   }
+  },
+  {
+   "pollster": "Sigma Dos",
+   "commissioner": "El Mundo",
+   "fieldwork": "8–22 Oct",
+   "date": "2026-10-22",
+   "sample": 3122,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.elmundo.es/espana/encuestas/2026/10/26/6addf8c4fdddfff23d8b4581.html",
+   "values": {
+    "PP": 30.6,
+    "PSOE": 26.1,
+    "Vox": 19.9,
+    "Sumar": 8.2,
+    "ERC": 2.5,
+    "Junts": 1.2,
+    "EH Bildu": 1.2,
+    "PNV": 0.9,
+    "BNG": 0.9,
+    "CC": 0.4,
+    "AA": 1.0,
+    "Podemos": 2.8
+   },
+   "seats": {
+    "PP": 128.0,
+    "PSOE": 106.0,
+    "Vox": 67.5,
+    "Sumar": 13.5,
+    "ERC": 8.5,
+    "Junts": 6.5,
+    "EH Bildu": 7.5,
+    "PNV": 4.5,
+    "BNG": 2,
+    "CC": 0.5,
+    "AA": 2.5,
+    "Podemos": 1
+   }
+  },
+  {
+   "pollster": "EM-Analytics",
+   "commissioner": "Electomanía",
+   "fieldwork": "17–23 Oct",
+   "date": "2026-10-23",
+   "sample": 4309,
+   "panel": true,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://electomania.es/electopanel-25-octubre-el-pp-baja-de-nuevo-frente-amplio-crece/",
+   "values": {
+    "PP": 30.9,
+    "PSOE": 26.7,
+    "Vox": 19.0,
+    "Sumar": 7.0,
+    "ERC": 2.2,
+    "Junts": 1.3,
+    "EH Bildu": 1.4,
+    "PNV": 1.0,
+    "BNG": 1.0,
+    "CC": 0.3,
+    "AA": 1.1,
+    "Podemos": 1.7,
+    "SALF": 1.7
+   },
+   "seats": {
+    "PP": 132,
+    "PSOE": 111,
+    "Vox": 62,
+    "Sumar": 13,
+    "ERC": 8,
+    "Junts": 5,
+    "EH Bildu": 7,
+    "PNV": 6,
+    "BNG": 3,
+    "CC": 0,
+    "AA": 2,
+    "Podemos": 1,
+    "SALF": 0
+   }
+  },
+  {
+   "pollster": "NC Report",
+   "commissioner": "La Razón",
+   "fieldwork": "22–24 Oct",
+   "date": "2026-10-24",
+   "sample": 1000,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.larazon.es/espana/18-votantes-socialistas-apoyan-hoy-vox_202610266adea62a3eef771e1ac8d43d.html",
+   "values": {
+    "PP": 33.1,
+    "PSOE": 25.8,
+    "Vox": 19.0,
+    "Sumar": 6.6,
+    "ERC": 2.0,
+    "Junts": 1.8,
+    "EH Bildu": 1.4,
+    "PNV": 0.9,
+    "BNG": 0.8,
+    "CC": 0.4,
+    "Podemos": 2.6
+   },
+   "seats": {
+    "PP": 143.0,
+    "PSOE": 101.0,
+    "Vox": 65.0,
+    "Sumar": 8.5,
+    "ERC": 7.5,
+    "Junts": 8.5,
+    "EH Bildu": 6.5,
+    "PNV": 4.5,
+    "BNG": 1.5,
+    "CC": 1,
+    "Podemos": 1
+   }
+  },
+  {
+   "pollster": "PSOE",
+   "commissioner": null,
+   "fieldwork": "25 Oct",
+   "date": "2026-10-25",
+   "sample": null,
+   "panel": false,
+   "reestimate": null,
+   "partisan": true,
+   "url": "https://www.eldiario.es/politica/sanchez-saca-psoe-pesimismo-errores-feijoo-miedo-vox_1_13607713.html",
+   "values": {
+    "PP": 29.0,
+    "PSOE": 30.0,
+    "Vox": 20.0
+   },
+   "seats": null
+  },
+  {
+   "pollster": "SocioMétrica",
+   "commissioner": "El Español",
+   "fieldwork": "26 Oct",
+   "date": "2026-10-26",
+   "sample": 3223,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.elespanol.com/espana/politica/20261026/horquilla-horquilla-peor-escenario-pp-escanos-psoe-mejor-casos-no-pasaria/1003744434367_0.html",
+   "values": {
+    "PP": 32.4,
+    "PSOE": 27.0,
+    "Vox": 18.6,
+    "Sumar": 6.1,
+    "ERC": 2.6,
+    "Junts": 1.7,
+    "EH Bildu": 1.3,
+    "PNV": 0.8,
+    "BNG": 0.9,
+    "CC": 0.4,
+    "AA": 1.2,
+    "Podemos": 1.8,
+    "SALF": 2.4
+   },
+   "seats": {
+    "PP": 137,
+    "PSOE": 108,
+    "Vox": 63,
+    "Sumar": 10,
+    "ERC": 9,
+    "Junts": 7,
+    "EH Bildu": 7,
+    "PNV": 4,
+    "BNG": 2,
+    "CC": 1,
+    "AA": 2,
+    "Podemos": 0,
+    "SALF": 0
+   }
   }
  ],
- "retrieved": "2026-10-24"
+ "retrieved": "2026-10-26"
 }

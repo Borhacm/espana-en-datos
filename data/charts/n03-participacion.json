@@ -1,0 +1,207 @@
+{
+ "id": "n03-participacion",
+ "lens": "tiempo",
+ "theme": "elecciones",
+ "title": {
+  "es": "Las tres generales con menos participación desde 1977 son las de 2016, noviembre de 2019 y 2023, todas por debajo del 67 %",
+  "en": "The three general elections with the lowest turnout since 1977 are those of 2016, November 2019 and 2023, all below 67%"
+ },
+ "subtitle": {
+  "es": "Participación en las elecciones al Congreso, % del censo, 1977-2023",
+  "en": "Turnout in elections to the Congress of Deputies, % of the electoral roll, 1977-2023"
+ },
+ "unit": {
+  "es": "% del censo",
+  "en": "% of the electoral roll"
+ },
+ "source": {
+  "name": "Ministerio del Interior, Infoelectoral",
+  "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)",
+  "dataset": "Ficheros MUNI de cada elección general (fichero 07)"
+ },
+ "notes": {
+  "es": [
+   "Votantes: votos a candidaturas, en blanco y nulos.",
+   "La participación oficial se calcula sobre el censo de escrutinio, que incluye a los españoles residentes en el extranjero (CERA), que votan mucho menos. Con el voto rogado (elecciones de 2011 a 2019) votaron todavía menos. Estos ficheros no separan su voto, así que no se puede descontar."
+  ],
+  "en": [
+   "Voters: votes for candidates, blank and spoilt ballots.",
+   "Official turnout is calculated on the final electoral roll, which includes Spaniards living abroad (CERA), who vote much less. Under the 'voto rogado' system (prior application required, elections from 2011 to 2019) even fewer of them voted. These files do not separate their vote, so it cannot be stripped out."
+  ]
+ },
+ "retrieved": "2026-10-26",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "ES": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "time_labels": {
+  "1977.417": {
+   "es": "Junio de 1977",
+   "en": "June 1977"
+  },
+  "1979.167": {
+   "es": "Marzo de 1979",
+   "en": "March 1979"
+  },
+  "1982.75": {
+   "es": "Octubre de 1982",
+   "en": "October 1982"
+  },
+  "1986.417": {
+   "es": "Junio de 1986",
+   "en": "June 1986"
+  },
+  "1989.75": {
+   "es": "Octubre de 1989",
+   "en": "October 1989"
+  },
+  "1993.417": {
+   "es": "Junio de 1993",
+   "en": "June 1993"
+  },
+  "1996.167": {
+   "es": "Marzo de 1996",
+   "en": "March 1996"
+  },
+  "2000.167": {
+   "es": "Marzo de 2000",
+   "en": "March 2000"
+  },
+  "2004.167": {
+   "es": "Marzo de 2004",
+   "en": "March 2004"
+  },
+  "2008.167": {
+   "es": "Marzo de 2008",
+   "en": "March 2008"
+  },
+  "2011.833": {
+   "es": "Noviembre de 2011",
+   "en": "November 2011"
+  },
+  "2015.917": {
+   "es": "Diciembre de 2015",
+   "en": "December 2015"
+  },
+  "2016.417": {
+   "es": "Junio de 2016",
+   "en": "June 2016"
+  },
+  "2019.25": {
+   "es": "Abril de 2019",
+   "en": "April 2019"
+  },
+  "2019.833": {
+   "es": "Noviembre de 2019",
+   "en": "November 2019"
+  },
+  "2023.5": {
+   "es": "Julio de 2023",
+   "en": "July 2023"
+  }
+ },
+ "rows": [
+  {
+   "time": "1977.417",
+   "series": "ES",
+   "value": 78.83,
+   "election": "1977-06"
+  },
+  {
+   "time": "1979.167",
+   "series": "ES",
+   "value": 68.04,
+   "election": "1979-03"
+  },
+  {
+   "time": "1982.75",
+   "series": "ES",
+   "value": 79.97,
+   "election": "1982-10"
+  },
+  {
+   "time": "1986.417",
+   "series": "ES",
+   "value": 70.49,
+   "election": "1986-06"
+  },
+  {
+   "time": "1989.75",
+   "series": "ES",
+   "value": 69.74,
+   "election": "1989-10"
+  },
+  {
+   "time": "1993.417",
+   "series": "ES",
+   "value": 76.44,
+   "election": "1993-06"
+  },
+  {
+   "time": "1996.167",
+   "series": "ES",
+   "value": 77.38,
+   "election": "1996-03"
+  },
+  {
+   "time": "2000.167",
+   "series": "ES",
+   "value": 68.71,
+   "election": "2000-03"
+  },
+  {
+   "time": "2004.167",
+   "series": "ES",
+   "value": 75.66,
+   "election": "2004-03"
+  },
+  {
+   "time": "2008.167",
+   "series": "ES",
+   "value": 73.85,
+   "election": "2008-03"
+  },
+  {
+   "time": "2011.833",
+   "series": "ES",
+   "value": 68.94,
+   "election": "2011-11"
+  },
+  {
+   "time": "2015.917",
+   "series": "ES",
+   "value": 69.67,
+   "election": "2015-12"
+  },
+  {
+   "time": "2016.417",
+   "series": "ES",
+   "value": 66.48,
+   "election": "2016-06"
+  },
+  {
+   "time": "2019.25",
+   "series": "ES",
+   "value": 71.76,
+   "election": "2019-04"
+  },
+  {
+   "time": "2019.833",
+   "series": "ES",
+   "value": 66.23,
+   "election": "2019-11"
+  },
+  {
+   "time": "2023.5",
+   "series": "ES",
+   "value": 66.59,
+   "election": "2023-07"
+  }
+ ]
+}

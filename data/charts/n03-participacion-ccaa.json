@@ -1,0 +1,308 @@
+{
+ "id": "n03-participacion-ccaa",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "En 2023 votó el 73,0 % del censo en Castilla-La Mancha y el 58,2 % en Canarias: 14,8 puntos de diferencia",
+  "en": "In 2023, 73.0% of the electoral roll voted in Castile-La Mancha and 58.2% in the Canary Islands: a gap of 14.8 points"
+ },
+ "subtitle": {
+  "es": "Participación en las elecciones al Congreso de julio de 2023 por comunidad, % del censo",
+  "en": "Turnout in the July 2023 election to the Congress of Deputies by region, % of the electoral roll"
+ },
+ "unit": {
+  "es": "% del censo",
+  "en": "% of the electoral roll"
+ },
+ "source": {
+  "name": "Ministerio del Interior, Infoelectoral",
+  "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)",
+  "dataset": "Ficheros MUNI de cada elección general (fichero 07)",
+  "also": [
+   {
+    "name": "INE, Padrón de Españoles Residentes en el Extranjero",
+    "dataset": "Tabla 71106",
+    "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=71106",
+    "license": "Reutilización libre citando la fuente"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Cada comunidad suma los votantes y el censo de sus provincias.",
+   "Los residentes en el extranjero (CERA) cuentan en la provincia donde están inscritos y bajan la participación donde son muchos en relación con el censo, como en Galicia, Asturias o Canarias (INE, padrón de españoles residentes en el extranjero). Las de 2023 son las primeras generales sin voto rogado desde 2008 (Ley Orgánica 12/2022).",
+   "Ceuta y Melilla, con un diputado cada una, quedan fuera del titular: sus porcentajes cambian mucho de una elección a otra."
+  ],
+  "en": [
+   "Each region adds up the voters and the electoral roll of its provinces.",
+   "Residents abroad (CERA) are counted in the province where they are registered and lower turnout where there are many of them relative to the roll, as in Galicia, Asturias or the Canary Islands (INE, register of Spaniards living abroad). The 2023 election is the first general election without 'voto rogado' since 2008 (Organic Law 12/2022).",
+   "Ceuta and Melilla, with one deputy each, are left out of the title: their percentages change a lot from one election to the next."
+  ]
+ },
+ "retrieved": "2026-10-26",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Is.",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Is.",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "C. y León",
+   "en": "Castile-León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "C.-La Mancha",
+   "en": "C.-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "C. Valenciana",
+   "en": "Valencian C.",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023",
+   "value": 66.6,
+   "voters": 4442464,
+   "census": 6669641
+  },
+  {
+   "geo": "02",
+   "time": "2023",
+   "value": 70.7,
+   "voters": 721119,
+   "census": 1019803
+  },
+  {
+   "geo": "03",
+   "time": "2023",
+   "value": 62.9,
+   "voters": 603183,
+   "census": 959023
+  },
+  {
+   "geo": "04",
+   "time": "2023",
+   "value": 61.3,
+   "voters": 508233,
+   "census": 828755
+  },
+  {
+   "geo": "05",
+   "time": "2023",
+   "value": 58.2,
+   "voters": 1035689,
+   "census": 1780099
+  },
+  {
+   "geo": "06",
+   "time": "2023",
+   "value": 69.9,
+   "voters": 355145,
+   "census": 507818
+  },
+  {
+   "geo": "07",
+   "time": "2023",
+   "value": 69.4,
+   "voters": 1446315,
+   "census": 2083736
+  },
+  {
+   "geo": "08",
+   "time": "2023",
+   "value": 73.0,
+   "voters": 1161824,
+   "census": 1591727
+  },
+  {
+   "geo": "09",
+   "time": "2023",
+   "value": 62.7,
+   "voters": 3575234,
+   "census": 5703784
+  },
+  {
+   "geo": "10",
+   "time": "2023",
+   "value": 71.5,
+   "voters": 2671610,
+   "census": 3736481
+  },
+  {
+   "geo": "11",
+   "time": "2023",
+   "value": 71.7,
+   "voters": 637980,
+   "census": 890193
+  },
+  {
+   "geo": "12",
+   "time": "2023",
+   "value": 61.4,
+   "voters": 1651086,
+   "census": 2688627
+  },
+  {
+   "geo": "13",
+   "time": "2023",
+   "value": 69.7,
+   "voters": 3639500,
+   "census": 5224561
+  },
+  {
+   "geo": "14",
+   "time": "2023",
+   "value": 68.7,
+   "voters": 755255,
+   "census": 1099703
+  },
+  {
+   "geo": "15",
+   "time": "2023",
+   "value": 66.4,
+   "voters": 345095,
+   "census": 519918
+  },
+  {
+   "geo": "16",
+   "time": "2023",
+   "value": 65.1,
+   "voters": 1164447,
+   "census": 1789070
+  },
+  {
+   "geo": "17",
+   "time": "2023",
+   "value": 70.2,
+   "voters": 176945,
+   "census": 252091
+  },
+  {
+   "geo": "18",
+   "time": "2023",
+   "value": 53.2,
+   "voters": 33674,
+   "census": 63310
+  },
+  {
+   "geo": "19",
+   "time": "2023",
+   "value": 45.2,
+   "voters": 27649,
+   "census": 61118
+  },
+  {
+   "geo": "ES",
+   "time": "2023",
+   "value": 66.6,
+   "voters": 24952447,
+   "census": 37469458
+  }
+ ]
+}

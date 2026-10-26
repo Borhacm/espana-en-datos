@@ -96,6 +96,7 @@ piezas:
     mirada: tiempo
     titulo: "Quién vota y quién no: la participación desde 1977"
     idea: participación en generales por año y por provincia (Infoelectoral). Los datos de las 16 generales desde 1977 ya están en data/base/participacion.json (dataset «participacion» del pipeline): úsalos y no vuelvas a descargar Infoelectoral, que no responde desde la nube.
+    estado: hecha
 
   - id: a07
     tipo: articulo

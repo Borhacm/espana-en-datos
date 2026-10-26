@@ -157,7 +157,7 @@ export function pivot(chart: ChartData, lang: Lang, headers: { country: string; 
   const index = new Map(data.map((r) => [`${r[rowDim]}|${r[colDim]}`, r.value as number]));
   return {
     rowHeader: rowDim === "geo" ? headers.country : TXT[lang].series,
-    cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? (chart.quarterly ? quarterLabel(+k, lang) : k) : label(chart, colDim, k, lang) })),
+    cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? (chart.time_labels?.[k]?.[lang] ?? (chart.quarterly ? quarterLabel(+k, lang) : k)) : label(chart, colDim, k, lang) })),
     rows: rowKeys.map((k) => ({
       key: k,
       label: rowLabel(k),

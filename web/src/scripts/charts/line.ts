@@ -167,8 +167,10 @@ export function renderLine(ctx: RenderContext) {
     }
     lines.sort((a, b) => b.v - a.v);
     const q = Math.round((yr % 1) * 4);
-    const when = !chart.quarterly ? String(yr)
-      : lang === "es" ? `${["Primer", "Segundo", "Tercer", "Cuarto"][q]} trimestre de ${Math.floor(yr)}` : `Q${q + 1} ${Math.floor(yr)}`;
+    // Etiquetas propias de cada fecha (p. ej. dos elecciones en un mismo año: time = año + (mes - 1) / 12)
+    const own: string | undefined = chart.time_labels?.[String(yr)]?.[lang];
+    const when = own ?? (!chart.quarterly ? String(yr)
+      : lang === "es" ? `${["Primer", "Segundo", "Tercer", "Cuarto"][q]} trimestre de ${Math.floor(yr)}` : `Q${q + 1} ${Math.floor(yr)}`);
     tip.show(x(yr), m.top + 10, `<div class="tip-title">${when}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
   };
   const hide = () => { hover.style.display = "none"; tip.hide(); };
