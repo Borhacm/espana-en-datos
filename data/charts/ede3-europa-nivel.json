@@ -1,0 +1,364 @@
+{
+ "id": "ede3-europa-nivel",
+ "lens": "europa",
+ "theme": "educacion",
+ "title": {
+  "es": "Solo para el 23,0 % de los españoles de 25 a 34 años el título más alto es el bachillerato o la FP de grado medio; en la UE, el 41,7 %",
+  "en": "Only 23.0% of Spaniards aged 25 to 34 have upper secondary (bachillerato or intermediate vocational training) as their highest qualification; in the EU, 41.7%"
+ },
+ "subtitle": {
+  "es": "Población de 25 a 34 años cuyo nivel más alto es el medio, 2025, en %. España es la última de la UE",
+  "en": "Population aged 25 to 34 whose highest level is upper secondary, 2025, in %. Spain is last in the EU"
+ },
+ "unit": {
+  "es": "% de la población de 25 a 34 años",
+  "en": "% of population aged 25 to 34"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "edat_lfse_03",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_03/default/table"
+ },
+ "notes": {
+  "es": [
+   "El resto se reparte entre los dos extremos. Como mucho la ESO: 24,5 % en España y 13,5 % en la UE. Estudios superiores: 52,5 % y 44,8 %.",
+   "Nivel medio: bachillerato, FP de grado medio y estudios postsecundarios no superiores. La FP de grado superior cuenta como estudios superiores."
+  ],
+  "en": [
+   "The rest is split between the two extremes. Lower secondary at most: 24.5% in Spain and 13.5% in the EU. Tertiary education: 52.5% and 44.8%.",
+   "Upper secondary level: bachillerato, intermediate vocational training and post-secondary non-tertiary studies. Higher vocational training counts as tertiary education."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "levels": {
+  "ED0-2": {
+   "ESP": 24.5,
+   "EU27": 13.5
+  },
+  "ED3_4": {
+   "ESP": 23.0,
+   "EU27": 41.7
+  },
+  "ED35_45": {
+   "ESP": 10.0,
+   "EU27": 30.6
+  },
+  "ED5-8": {
+   "ESP": 52.5,
+   "EU27": 44.8
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 45.7
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 36.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 45.8
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 30.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 57.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 45.0
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 32.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 23.0
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 43.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 41.7
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 50.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 34.1
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 49.4
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 54.5
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 54.9
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 29.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 49.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 35.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 27.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 46.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 36.9
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 33.8
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 50.0
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 42.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 55.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 54.9
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 50.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 36.6
+  }
+ ]
+}

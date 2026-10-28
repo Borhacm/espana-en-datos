@@ -1,0 +1,348 @@
+{
+ "id": "ede2-europa-pisa",
+ "lens": "europa",
+ "theme": "educacion",
+ "title": {
+  "es": "En PISA 2025, uno de cada tres alumnos de 15 años no llega al nivel básico de matemáticas: el 33,4 % en España y el 33,9 % en la UE",
+  "en": "In PISA 2025, one in three 15-year-olds falls short of the basic level in mathematics: 33.4% in Spain and 33.9% in the EU"
+ },
+ "subtitle": {
+  "es": "Alumnos de 15 años por debajo del nivel 2 de PISA en matemáticas, 2025, en %. España es el 14.º de 27 países",
+  "en": "15-year-old pupils below PISA level 2 in mathematics, 2025, in %. Spain ranks 14th of 27 countries"
+ },
+ "unit": {
+  "es": "% de los alumnos de 15 años",
+  "en": "% of 15-year-old pupils"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "sdg_04_40 (PISA)",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_40/default/table"
+ },
+ "notes": {
+  "es": [
+   "PISA (OCDE) evalúa a alumnos de 15 años, estén en el curso que estén. El nivel 2 es el que la OCDE considera básico para desenvolverse; por debajo, el alumno no resuelve problemas sencillos fuera de un contexto conocido.",
+   "En lectura, por debajo del nivel 2 está el 31,5 % en España y el 31,3 % en la UE; en ciencias, el 24,4 % y el 25,9 %.",
+   "Es una muestra de alumnos: las diferencias pequeñas entre países no son significativas."
+  ],
+  "en": [
+   "PISA (OECD) tests 15-year-old pupils, whatever school year they are in. Level 2 is what the OECD considers the baseline; below it, pupils cannot solve simple problems outside a familiar context.",
+   "In reading, 31.5% are below level 2 in Spain and 31.3% in the EU; in science, 24.4% and 25.9%.",
+   "It is a sample of pupils: small differences between countries are not significant."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 27.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 28.4
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 57.2
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 55.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 29.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 34.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 28.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 33.4
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 17.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 33.9
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 31.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 35.7
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 49.6
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 36.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 33.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 24.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 31.3
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 28.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 37.0
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 32.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 44.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 29.7
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 25.7
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 35.2
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 51.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 32.2
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 34.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 33.9
+  }
+ ]
+}

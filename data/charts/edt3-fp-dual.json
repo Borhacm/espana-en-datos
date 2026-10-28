@@ -1,0 +1,151 @@
+{
+ "id": "edt3-fp-dual",
+ "lens": "tiempo",
+ "theme": "educacion",
+ "title": {
+  "es": "En el curso 2024-2025, solo el 4,1 % de los alumnos de FP de grado básico y medio estudiaba en programas que combinan centro y empresa; en la UE, el 24,7 %",
+  "en": "In the 2024-2025 school year, only 4.1% of basic and intermediate vocational students were in programmes combining school and workplace; in the EU, 24.7%"
+ },
+ "subtitle": {
+  "es": "Alumnos de FP de secundaria superior en programas combinados de centro y empresa, en % de los alumnos de FP de ese nivel. Cursos 2015-2016 a 2024-2025",
+  "en": "Upper-secondary vocational students in combined school- and work-based programmes, as % of vocational students at that level. School years 2015-2016 to 2024-2025"
+ },
+ "unit": {
+  "es": "% de los alumnos de FP",
+  "en": "% of vocational students"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "educ_uoe_enrs04",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/educ_uoe_enrs04/default/table"
+ },
+ "notes": {
+  "es": [
+   "Programas combinados: los que reparten la formación entre el centro y la empresa, como la FP dual o el aprendizaje. Cada país decide qué programas clasifica así.",
+   "FP de secundaria superior: en España, sobre todo la FP de grado básico y de grado medio. La FP de grado superior no está incluida.",
+   "Eurostat fecha cada curso por el año en que empieza."
+  ],
+  "en": [
+   "Combined programmes: those that split training between the school and the workplace, such as dual vocational training or apprenticeships. Each country decides which programmes it classifies this way.",
+   "Upper-secondary vocational training: in Spain, mainly basic and intermediate vocational training. Higher vocational training is not included.",
+   "Eurostat dates each school year by the year in which it starts."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "UE",
+    "en": "EU"
+   }
+  }
+ },
+ "rows": [
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 1.2
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 2.0
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 2.7
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 2.8
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 2.4
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 1.9
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 2.4
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 2.6
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 2.6
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 4.1
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 22.1
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 22.0
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 22.0
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 23.5
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 24.1
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 24.3
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 24.1
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 24.6
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 24.5
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 24.7
+  }
+ ]
+}

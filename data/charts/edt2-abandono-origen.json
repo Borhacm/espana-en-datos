@@ -1,0 +1,286 @@
+{
+ "id": "edt2-abandono-origen",
+ "lens": "tiempo",
+ "theme": "educacion",
+ "title": {
+  "es": "Desde 2004, el abandono baja del 30,5 % al 9,6 % entre los nacidos en España y del 47,5 % al 27,4 % entre los nacidos fuera",
+  "en": "Since 2004, early leaving has fallen from 30.5% to 9.6% among those born in Spain and from 47.5% to 27.4% among those born abroad"
+ },
+ "subtitle": {
+  "es": "Abandono temprano de la educación y la formación, 18 a 24 años, por lugar de nacimiento, 2004-2025, en %",
+  "en": "Early leavers from education and training, aged 18 to 24, by country of birth, 2004-2025, in %"
+ },
+ "unit": {
+  "es": "% de los jóvenes de 18 a 24 años",
+  "en": "% of people aged 18 to 24"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "edat_lfse_02",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_02/default/table"
+ },
+ "notes": {
+  "es": [
+   "El peso de los nacidos fuera entre los jóvenes de 18 a 24 años se deduce de las tres tasas publicadas: la total es la media de las otras dos ponderada por ese peso. Es una aproximación: las tasas están redondeadas.",
+   "Nacidos fuera incluye a quienes llegaron de niños y estudiaron en España y a quienes llegaron ya con 18 años o más.",
+   "La muestra de nacidos fuera es más pequeña y su tasa varía más de un año a otro."
+  ],
+  "en": [
+   "The share of people born abroad among those aged 18 to 24 is derived from the three published rates: the total is the average of the other two weighted by that share. It is an approximation: the rates are rounded.",
+   "Born abroad includes those who arrived as children and went to school in Spain and those who arrived aged 18 or older.",
+   "The sample of people born abroad is smaller and their rate varies more from year to year."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "nat": {
+    "es": "Nacidos en España",
+    "en": "Born in Spain"
+   },
+   "for": {
+    "es": "Nacidos fuera",
+    "en": "Born abroad"
+   }
+  }
+ },
+ "short_labels": {
+  "nat": {
+   "es": "Nativos",
+   "en": "Natives"
+  },
+  "for": {
+   "es": "Fuera",
+   "en": "Abroad"
+  }
+ },
+ "foreign_share": {
+  "2004": 0.1,
+  "2025": 0.18
+ },
+ "fixed_mix_total": 11.4,
+ "rows": [
+  {
+   "time": "2004",
+   "series": "nat",
+   "value": 30.5
+  },
+  {
+   "time": "2005",
+   "series": "nat",
+   "value": 28.7
+  },
+  {
+   "time": "2006",
+   "series": "nat",
+   "value": 28.0
+  },
+  {
+   "time": "2007",
+   "series": "nat",
+   "value": 28.3
+  },
+  {
+   "time": "2008",
+   "series": "nat",
+   "value": 28.7
+  },
+  {
+   "time": "2009",
+   "series": "nat",
+   "value": 27.7
+  },
+  {
+   "time": "2010",
+   "series": "nat",
+   "value": 25.1
+  },
+  {
+   "time": "2011",
+   "series": "nat",
+   "value": 23.1
+  },
+  {
+   "time": "2012",
+   "series": "nat",
+   "value": 21.4
+  },
+  {
+   "time": "2013",
+   "series": "nat",
+   "value": 20.6
+  },
+  {
+   "time": "2014",
+   "series": "nat",
+   "value": 18.9
+  },
+  {
+   "time": "2015",
+   "series": "nat",
+   "value": 17.5
+  },
+  {
+   "time": "2016",
+   "series": "nat",
+   "value": 16.1
+  },
+  {
+   "time": "2017",
+   "series": "nat",
+   "value": 15.6
+  },
+  {
+   "time": "2018",
+   "series": "nat",
+   "value": 14.9
+  },
+  {
+   "time": "2019",
+   "series": "nat",
+   "value": 14.4
+  },
+  {
+   "time": "2020",
+   "series": "nat",
+   "value": 13.2
+  },
+  {
+   "time": "2021",
+   "series": "nat",
+   "value": 11.3
+  },
+  {
+   "time": "2022",
+   "series": "nat",
+   "value": 10.9
+  },
+  {
+   "time": "2023",
+   "series": "nat",
+   "value": 10.5
+  },
+  {
+   "time": "2024",
+   "series": "nat",
+   "value": 10.3
+  },
+  {
+   "time": "2025",
+   "series": "nat",
+   "value": 9.6
+  },
+  {
+   "time": "2004",
+   "series": "for",
+   "value": 47.5
+  },
+  {
+   "time": "2005",
+   "series": "for",
+   "value": 46.5
+  },
+  {
+   "time": "2006",
+   "series": "for",
+   "value": 43.8
+  },
+  {
+   "time": "2007",
+   "series": "for",
+   "value": 44.0
+  },
+  {
+   "time": "2008",
+   "series": "for",
+   "value": 45.6
+  },
+  {
+   "time": "2009",
+   "series": "for",
+   "value": 45.2
+  },
+  {
+   "time": "2010",
+   "series": "for",
+   "value": 43.0
+  },
+  {
+   "time": "2011",
+   "series": "for",
+   "value": 41.1
+  },
+  {
+   "time": "2012",
+   "series": "for",
+   "value": 40.2
+  },
+  {
+   "time": "2013",
+   "series": "for",
+   "value": 38.3
+  },
+  {
+   "time": "2014",
+   "series": "for",
+   "value": 37.8
+  },
+  {
+   "time": "2015",
+   "series": "for",
+   "value": 33.3
+  },
+  {
+   "time": "2016",
+   "series": "for",
+   "value": 32.9
+  },
+  {
+   "time": "2017",
+   "series": "for",
+   "value": 31.9
+  },
+  {
+   "time": "2018",
+   "series": "for",
+   "value": 32.0
+  },
+  {
+   "time": "2019",
+   "series": "for",
+   "value": 31.1
+  },
+  {
+   "time": "2020",
+   "series": "for",
+   "value": 29.0
+  },
+  {
+   "time": "2021",
+   "series": "for",
+   "value": 22.6
+  },
+  {
+   "time": "2022",
+   "series": "for",
+   "value": 27.8
+  },
+  {
+   "time": "2023",
+   "series": "for",
+   "value": 28.9
+  },
+  {
+   "time": "2024",
+   "series": "for",
+   "value": 25.5
+  },
+  {
+   "time": "2025",
+   "series": "for",
+   "value": 27.4
+  }
+ ]
+}

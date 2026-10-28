@@ -1,0 +1,341 @@
+{
+ "id": "ede1-europa-abandono",
+ "lens": "europa",
+ "theme": "educacion",
+ "title": {
+  "es": "El 12,8 % de los jóvenes españoles deja los estudios sin pasar de la ESO; en la UE, el 9,1 %",
+  "en": "12.8% of young Spaniards leave education with no more than lower secondary; in the EU, 9.1%"
+ },
+ "subtitle": {
+  "es": "Abandono temprano de la educación y la formación, jóvenes de 18 a 24 años, 2025, en %. España es el 3.º de 26 países",
+  "en": "Early leavers from education and training, aged 18 to 24, 2025, in %. Spain ranks 3rd of 26 countries"
+ },
+ "unit": {
+  "es": "% de los jóvenes de 18 a 24 años",
+  "en": "% of people aged 18 to 24"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "edat_lfse_14",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table"
+ },
+ "notes": {
+  "es": [
+   "Abandono temprano: jóvenes de 18 a 24 años que como mucho han terminado la ESO y no siguen estudiando ni formándose (Encuesta de Población Activa).",
+   "En España, el 6,9 % de los jóvenes de 18 a 24 años ha abandonado y trabaja, y el 5,9 % ha abandonado y no trabaja; en la UE, el 4,2 % y el 4,9 %.",
+   "Eurostat advierte de que la definición de España y Francia difiere ligeramente de la común."
+  ],
+  "en": [
+   "Early leavers: people aged 18 to 24 who have at most completed lower secondary education (ESO in Spain) and are not in education or training (Labour Force Survey).",
+   "In Spain, 6.9% of people aged 18 to 24 have left early and are working, and 5.9% have left early and are not working; in the EU, 4.2% and 4.9%.",
+   "Eurostat notes that the definition used for Spain and France differs slightly from the common one."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "countries_above": {
+  "es": "Rumanía, Alemania",
+  "en": "Romania, Germany"
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 10.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 7.3
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 8.6
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 9.8
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 6.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 13.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 10.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 12.8
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 10.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 9.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 9.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 7.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 3.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 2.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 9.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 3.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 8.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 5.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 8.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 8.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 7.4
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 4.0
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 6.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 15.5
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 6.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 5.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 6.7
+  }
+ ]
+}

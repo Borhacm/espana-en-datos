@@ -1,0 +1,296 @@
+{
+ "id": "edt1-abandono",
+ "lens": "tiempo",
+ "theme": "educacion",
+ "title": {
+  "es": "El abandono temprano ha caído a menos de la mitad desde 2004 y la distancia con la UE se ha reducido de 16,2 a 3,7 puntos",
+  "en": "Early school leaving has fallen by more than half since 2004 and the gap with the EU has narrowed from 16.2 to 3.7 points"
+ },
+ "subtitle": {
+  "es": "Abandono temprano de la educación y la formación, 18 a 24 años, 2002-2025, en %",
+  "en": "Early leavers from education and training, aged 18 to 24, 2002-2025, in %"
+ },
+ "unit": {
+  "es": "% de los jóvenes de 18 a 24 años",
+  "en": "% of people aged 18 to 24"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "edat_lfse_14",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table"
+ },
+ "notes": {
+  "es": [
+   "Abandono temprano: jóvenes de 18 a 24 años que como mucho han terminado la ESO y no siguen estudiando ni formándose (Encuesta de Población Activa).",
+   "La serie de España empieza en 1992, con un 40,4 %; la media de la UE, en 2002.",
+   "Eurostat marca rupturas de serie en España en 2003, 2005, 2006, 2014 y 2021 por cambios en la encuesta."
+  ],
+  "en": [
+   "Early leavers: people aged 18 to 24 who have at most completed lower secondary education (ESO in Spain) and are not in education or training (Labour Force Survey).",
+   "The series for Spain starts in 1992, at 40.4%; the EU average, in 2002.",
+   "Eurostat flags breaks in the series for Spain in 2003, 2005, 2006, 2014 and 2021 owing to changes in the survey."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "UE",
+    "en": "EU"
+   }
+  }
+ },
+ "peak": {
+  "year": 2004,
+  "espana": 32.2,
+  "ue": 16.0
+ },
+ "rows": [
+  {
+   "time": "2002",
+   "series": "espana",
+   "value": 30.9
+  },
+  {
+   "time": "2003",
+   "series": "espana",
+   "value": 31.7
+  },
+  {
+   "time": "2004",
+   "series": "espana",
+   "value": 32.2
+  },
+  {
+   "time": "2005",
+   "series": "espana",
+   "value": 31.0
+  },
+  {
+   "time": "2006",
+   "series": "espana",
+   "value": 30.3
+  },
+  {
+   "time": "2007",
+   "series": "espana",
+   "value": 30.8
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 31.7
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 30.9
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 28.2
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 26.3
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 24.7
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 23.6
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 21.9
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 20.0
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 19.0
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 18.3
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 17.9
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 17.3
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 16.0
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 13.3
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 13.9
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 13.7
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 13.0
+  },
+  {
+   "time": "2025",
+   "series": "espana",
+   "value": 12.8
+  },
+  {
+   "time": "2002",
+   "series": "ue",
+   "value": 16.9
+  },
+  {
+   "time": "2003",
+   "series": "ue",
+   "value": 16.4
+  },
+  {
+   "time": "2004",
+   "series": "ue",
+   "value": 16.0
+  },
+  {
+   "time": "2005",
+   "series": "ue",
+   "value": 15.6
+  },
+  {
+   "time": "2006",
+   "series": "ue",
+   "value": 15.2
+  },
+  {
+   "time": "2007",
+   "series": "ue",
+   "value": 14.7
+  },
+  {
+   "time": "2008",
+   "series": "ue",
+   "value": 14.3
+  },
+  {
+   "time": "2009",
+   "series": "ue",
+   "value": 14.0
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 13.8
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 13.2
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 12.6
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 11.8
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 11.1
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 11.0
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 10.6
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 10.5
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 10.5
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 10.1
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 10.0
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 9.7
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 9.6
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 9.6
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 9.6
+  },
+  {
+   "time": "2025",
+   "series": "ue",
+   "value": 9.1
+  }
+ ]
+}

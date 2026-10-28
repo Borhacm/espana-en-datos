@@ -1,0 +1,280 @@
+{
+ "id": "edd1-comunidades-abandono",
+ "lens": "dentro",
+ "theme": "educacion",
+ "title": {
+  "es": "El abandono temprano va del 5,1 % en el País Vasco al 19,3 % en Murcia",
+  "en": "Early school leaving ranges from 5.1% in the Basque Country to 19.3% in Murcia"
+ },
+ "subtitle": {
+  "es": "Abandono temprano de la educación y la formación, 18 a 24 años, media 2023-2025, en %. España: 13,2 %",
+  "en": "Early leavers from education and training, aged 18 to 24, 2023-2025 average, in %. Spain: 13.2%"
+ },
+ "unit": {
+  "es": "% de los jóvenes de 18 a 24 años",
+  "en": "% of people aged 18 to 24"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "edat_lfse_16",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_16/default/table"
+ },
+ "notes": {
+  "es": [
+   "Abandono temprano: jóvenes de 18 a 24 años que como mucho han terminado la ESO y no siguen estudiando ni formándose (Encuesta de Población Activa).",
+   "Media de 2023 a 2025: la muestra de la EPA en cada comunidad es pequeña y el dato de un solo año varía mucho. Ceuta y Melilla tienen muy pocas observaciones; en algún año Eurostat no publica su dato.",
+   "Se cuenta a los jóvenes donde viven, no donde estudiaron."
+  ],
+  "en": [
+   "Early leavers: people aged 18 to 24 who have at most completed lower secondary education (ESO in Spain) and are not in education or training (Labour Force Survey).",
+   "Average from 2023 to 2025: the Labour Force Survey sample in each region is small and a single year's figure varies a lot. Ceuta and Melilla have very few observations; in some years Eurostat does not publish their figure.",
+   "Young people are counted where they live, not where they studied."
+  ]
+ },
+ "retrieved": "2026-10-28",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023-2025",
+   "value": 15.6,
+   "years": 3
+  },
+  {
+   "geo": "02",
+   "time": "2023-2025",
+   "value": 11.7,
+   "years": 3
+  },
+  {
+   "geo": "03",
+   "time": "2023-2025",
+   "value": 10.5,
+   "years": 3
+  },
+  {
+   "geo": "04",
+   "time": "2023-2025",
+   "value": 17.8,
+   "years": 3
+  },
+  {
+   "geo": "05",
+   "time": "2023-2025",
+   "value": 14.6,
+   "years": 3
+  },
+  {
+   "geo": "06",
+   "time": "2023-2025",
+   "value": 7.2,
+   "years": 3
+  },
+  {
+   "geo": "07",
+   "time": "2023-2025",
+   "value": 10.4,
+   "years": 3
+  },
+  {
+   "geo": "08",
+   "time": "2023-2025",
+   "value": 15.6,
+   "years": 3
+  },
+  {
+   "geo": "09",
+   "time": "2023-2025",
+   "value": 14.0,
+   "years": 3
+  },
+  {
+   "geo": "10",
+   "time": "2023-2025",
+   "value": 14.1,
+   "years": 3
+  },
+  {
+   "geo": "11",
+   "time": "2023-2025",
+   "value": 12.6,
+   "years": 3
+  },
+  {
+   "geo": "12",
+   "time": "2023-2025",
+   "value": 10.1,
+   "years": 3
+  },
+  {
+   "geo": "13",
+   "time": "2023-2025",
+   "value": 10.5,
+   "years": 3
+  },
+  {
+   "geo": "14",
+   "time": "2023-2025",
+   "value": 19.3,
+   "years": 3
+  },
+  {
+   "geo": "15",
+   "time": "2023-2025",
+   "value": 8.1,
+   "years": 3
+  },
+  {
+   "geo": "16",
+   "time": "2023-2025",
+   "value": 5.1,
+   "years": 3
+  },
+  {
+   "geo": "17",
+   "time": "2023-2025",
+   "value": 14.1,
+   "years": 3
+  },
+  {
+   "geo": "18",
+   "time": "2023-2025",
+   "value": 17.9,
+   "years": 2
+  },
+  {
+   "geo": "19",
+   "time": "2023-2025",
+   "value": 20.2,
+   "years": 3
+  },
+  {
+   "geo": "ES",
+   "time": "2023-2025",
+   "value": 13.2,
+   "years": 3
+  }
+ ]
+}

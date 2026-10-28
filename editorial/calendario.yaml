@@ -104,6 +104,7 @@ piezas:
     tema: educacion
     titulo: "Educación: abandono escolar, resultados y gasto"
     idea: abandono temprano (EPA/Eurostat), resultados PISA, gasto público frente a la UE y por comunidades.
+    estado: hecha
 
   - id: a08
     tipo: articulo
