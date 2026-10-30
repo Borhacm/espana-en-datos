@@ -1,0 +1,366 @@
+{
+ "id": "fid1-comunidades-saldo",
+ "lens": "dentro",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "Los hogares de Madrid pagan en impuestos sobre la renta y cotizaciones 5.084 euros por habitante más de lo que reciben en pensiones y prestaciones; los de Asturias reciben 1.119 euros más de lo que pagan",
+  "en": "Households in Madrid pay 5,084 euros per inhabitant more in income taxes and social contributions than they receive in pensions and benefits; those in Asturias receive 1,119 euros more than they pay"
+ },
+ "subtitle": {
+  "es": "Impuestos sobre la renta y el patrimonio y cotizaciones sociales que pagan los hogares menos las prestaciones en dinero que reciben, euros por habitante, 2023. España: 1.795 euros",
+  "en": "Taxes on income and wealth and social contributions paid by households minus the cash benefits they receive, euros per inhabitant, 2023. Spain: 1,795 euros"
+ },
+ "unit": {
+  "es": "euros por habitante",
+  "en": "euros per inhabitant"
+ },
+ "source": {
+  "name": "Eurostat, cuentas nacionales",
+  "license": "CC BY 4.0",
+  "dataset": "nama_10r_2hhinc",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2hhinc/default/table"
+ },
+ "notes": {
+  "es": [
+   "Cuentas de los hogares de cada comunidad: se cuenta a las personas donde viven. No incluyen el IVA ni los demás impuestos sobre el consumo, ni el gasto público en sanidad o educación, que se recibe en servicios y no en dinero.",
+   "Cotizaciones: las de los trabajadores y también las que pagan las empresas por ellos. Prestaciones: pensiones, paro, incapacidad y otras ayudas en dinero, incluidas las de las mutualidades y los planes de empresa.",
+   "Población media del año según Eurostat."
+  ],
+  "en": [
+   "Household accounts for each region: people are counted where they live. They do not include VAT or other taxes on consumption, nor public spending on health or education, which is received as services rather than cash.",
+   "Contributions: those paid by workers and also those paid by employers on their behalf. Benefits: pensions, unemployment, disability and other cash benefits, including those from mutual societies and company schemes.",
+   "Average population for the year according to Eurostat."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "parts": {
+  "01": {
+   "impuestos": 2026,
+   "cotizaciones": 3485,
+   "prestaciones": 5013
+  },
+  "02": {
+   "impuestos": 3044,
+   "cotizaciones": 4666,
+   "prestaciones": 6206
+  },
+  "03": {
+   "impuestos": 2925,
+   "cotizaciones": 3944,
+   "prestaciones": 7988
+  },
+  "04": {
+   "impuestos": 3383,
+   "cotizaciones": 4775,
+   "prestaciones": 4765
+  },
+  "05": {
+   "impuestos": 2076,
+   "cotizaciones": 3753,
+   "prestaciones": 4532
+  },
+  "06": {
+   "impuestos": 2796,
+   "cotizaciones": 3888,
+   "prestaciones": 6290
+  },
+  "07": {
+   "impuestos": 2630,
+   "cotizaciones": 3927,
+   "prestaciones": 6496
+  },
+  "08": {
+   "impuestos": 2036,
+   "cotizaciones": 3439,
+   "prestaciones": 4629
+  },
+  "09": {
+   "impuestos": 3832,
+   "cotizaciones": 5089,
+   "prestaciones": 5798
+  },
+  "10": {
+   "impuestos": 2466,
+   "cotizaciones": 3828,
+   "prestaciones": 5219
+  },
+  "11": {
+   "impuestos": 1746,
+   "cotizaciones": 3295,
+   "prestaciones": 5431
+  },
+  "12": {
+   "impuestos": 2606,
+   "cotizaciones": 3843,
+   "prestaciones": 6105
+  },
+  "13": {
+   "impuestos": 4792,
+   "cotizaciones": 5994,
+   "prestaciones": 5702
+  },
+  "14": {
+   "impuestos": 2024,
+   "cotizaciones": 3688,
+   "prestaciones": 4566
+  },
+  "15": {
+   "impuestos": 3151,
+   "cotizaciones": 5184,
+   "prestaciones": 6311
+  },
+  "16": {
+   "impuestos": 3504,
+   "cotizaciones": 5275,
+   "prestaciones": 7667
+  },
+  "17": {
+   "impuestos": 2836,
+   "cotizaciones": 4106,
+   "prestaciones": 5519
+  },
+  "18": {
+   "impuestos": 1113,
+   "cotizaciones": 3734,
+   "prestaciones": 4730
+  },
+  "19": {
+   "impuestos": 1036,
+   "cotizaciones": 3585,
+   "prestaciones": 4452
+  },
+  "ES": {
+   "impuestos": 3003,
+   "cotizaciones": 4392,
+   "prestaciones": 5600
+  }
+ },
+ "negative": [
+  "03",
+  "11"
+ ],
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023",
+   "value": 498
+  },
+  {
+   "geo": "02",
+   "time": "2023",
+   "value": 1504
+  },
+  {
+   "geo": "03",
+   "time": "2023",
+   "value": -1119
+  },
+  {
+   "geo": "04",
+   "time": "2023",
+   "value": 3392
+  },
+  {
+   "geo": "05",
+   "time": "2023",
+   "value": 1297
+  },
+  {
+   "geo": "06",
+   "time": "2023",
+   "value": 393
+  },
+  {
+   "geo": "07",
+   "time": "2023",
+   "value": 62
+  },
+  {
+   "geo": "08",
+   "time": "2023",
+   "value": 846
+  },
+  {
+   "geo": "09",
+   "time": "2023",
+   "value": 3123
+  },
+  {
+   "geo": "10",
+   "time": "2023",
+   "value": 1075
+  },
+  {
+   "geo": "11",
+   "time": "2023",
+   "value": -391
+  },
+  {
+   "geo": "12",
+   "time": "2023",
+   "value": 344
+  },
+  {
+   "geo": "13",
+   "time": "2023",
+   "value": 5084
+  },
+  {
+   "geo": "14",
+   "time": "2023",
+   "value": 1145
+  },
+  {
+   "geo": "15",
+   "time": "2023",
+   "value": 2024
+  },
+  {
+   "geo": "16",
+   "time": "2023",
+   "value": 1112
+  },
+  {
+   "geo": "17",
+   "time": "2023",
+   "value": 1423
+  },
+  {
+   "geo": "18",
+   "time": "2023",
+   "value": 117
+  },
+  {
+   "geo": "19",
+   "time": "2023",
+   "value": 169
+  },
+  {
+   "geo": "ES",
+   "time": "2023",
+   "value": 1795
+  }
+ ]
+}

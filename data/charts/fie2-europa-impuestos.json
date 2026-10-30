@@ -1,0 +1,181 @@
+{
+ "id": "fie2-europa-impuestos",
+ "lens": "europa",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "En impuestos sobre la renta y los beneficios, España ya recauda como la media de la UE; recauda menos en impuestos sobre el consumo (11,5 % del PIB frente a 12,9 %) y en cotizaciones",
+  "en": "In taxes on income and profits, Spain now collects as much as the EU average; it collects less in taxes on consumption (11.5% of GDP against 12.9%) and in social contributions"
+ },
+ "subtitle": {
+  "es": "Recaudación por tipo de impuesto, 2025, en % del PIB. Punto hueco: media de la UE; punto lleno: España",
+  "en": "Revenue by type of tax, 2025, as % of GDP. Hollow dot: EU average; solid dot: Spain"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, cuentas de las administraciones públicas",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_taxag",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_taxag/default/table"
+ },
+ "notes": {
+  "es": [
+   "Otros al consumo: impuestos especiales (hidrocarburos, tabaco, alcohol, electricidad), transmisiones patrimoniales y actos jurídicos, primas de seguros, IBI y otros que pagan las empresas por producir.",
+   "IRPF: sobre todo el IRPF, también el impuesto sobre la renta de no residentes. Sociedades: impuesto sobre los beneficios de las empresas. Patrimonio y otros: patrimonio, sucesiones y donaciones, entre otros.",
+   "Cotizaciones: las sociales de empresas y trabajadores, incluidas las imputadas (las que equivalen a las pensiones que pagan directamente las administraciones a sus funcionarios).",
+   "Las partidas están redondeadas a un decimal y su suma puede no coincidir con el total.",
+   "Los datos del último año son provisionales y pueden revisarse."
+  ],
+  "en": [
+   "Other consumption: excise duties (fuel, tobacco, alcohol, electricity), property transfer and stamp duties, insurance premium tax, property tax (IBI) and other taxes paid by businesses on production.",
+   "Personal income: mainly IRPF (Spain's personal income tax), also the non-resident income tax. Corporate profits: corporate income tax. Wealth and other: wealth tax and inheritance and gift tax, among others.",
+   "Contributions: social contributions paid by employers and workers, including imputed contributions (those equivalent to the pensions that government pays directly to its civil servants).",
+   "Items are rounded to one decimal place and may not add up to the total.",
+   "Figures for the last year are provisional and may be revised."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "iva": {
+   "es": "IVA",
+   "en": "VAT",
+   "aggregate": true
+  },
+  "produccion": {
+   "es": "Otros al consumo",
+   "en": "Other consumption",
+   "aggregate": true
+  },
+  "irpf": {
+   "es": "IRPF",
+   "en": "Personal income",
+   "aggregate": true
+  },
+  "sociedades": {
+   "es": "Sociedades",
+   "en": "Corporate profits",
+   "aggregate": true
+  },
+  "otros": {
+   "es": "Patrimonio y otros",
+   "en": "Wealth and other",
+   "aggregate": true
+  },
+  "cotizaciones": {
+   "es": "Cotizaciones",
+   "en": "Contributions",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "groups": {
+  "iva": {
+   "ESP": 6.8,
+   "EU27": 7.2
+  },
+  "produccion": {
+   "ESP": 4.7,
+   "EU27": 5.7
+  },
+  "irpf": {
+   "ESP": 9.6,
+   "EU27": 9.6
+  },
+  "sociedades": {
+   "ESP": 3.2,
+   "EU27": 3.2
+  },
+  "otros": {
+   "ESP": 0.7,
+   "EU27": 0.7
+  },
+  "cotizaciones": {
+   "ESP": 13.2,
+   "EU27": 14.3
+  }
+ },
+ "consumo": {
+  "ESP": 11.5,
+  "EU27": 12.9
+ },
+ "renta": {
+  "ESP": 12.8,
+  "EU27": 12.8
+ },
+ "gap_total": 2.6,
+ "rows": [
+  {
+   "geo": "iva",
+   "time": "0-ue",
+   "value": 7.2
+  },
+  {
+   "geo": "iva",
+   "time": "1-espana",
+   "value": 6.8
+  },
+  {
+   "geo": "produccion",
+   "time": "0-ue",
+   "value": 5.7
+  },
+  {
+   "geo": "produccion",
+   "time": "1-espana",
+   "value": 4.7
+  },
+  {
+   "geo": "irpf",
+   "time": "0-ue",
+   "value": 9.6
+  },
+  {
+   "geo": "irpf",
+   "time": "1-espana",
+   "value": 9.6
+  },
+  {
+   "geo": "sociedades",
+   "time": "0-ue",
+   "value": 3.2
+  },
+  {
+   "geo": "sociedades",
+   "time": "1-espana",
+   "value": 3.2
+  },
+  {
+   "geo": "otros",
+   "time": "0-ue",
+   "value": 0.7
+  },
+  {
+   "geo": "otros",
+   "time": "1-espana",
+   "value": 0.7
+  },
+  {
+   "geo": "cotizaciones",
+   "time": "0-ue",
+   "value": 14.3
+  },
+  {
+   "geo": "cotizaciones",
+   "time": "1-espana",
+   "value": 13.2
+  }
+ ]
+}

@@ -1,0 +1,244 @@
+{
+ "id": "fie3-europa-gasto",
+ "lens": "europa",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "El gasto público equivale al 45,5 % del PIB en España y al 48,8 % en la UE; donde más se queda por debajo es en protección social y sanidad",
+  "en": "Public spending is equivalent to 45.5% of GDP in Spain and 48.8% in the EU; it falls furthest below in social protection and health"
+ },
+ "subtitle": {
+  "es": "Gasto de las administraciones públicas por función, 2024, en % del PIB. Punto hueco: media de la UE; punto lleno: España",
+  "en": "General government expenditure by function, 2024, as % of GDP. Hollow dot: EU average; solid dot: Spain"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, cuentas de las administraciones públicas",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_exp",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+ },
+ "notes": {
+  "es": [
+   "Clasificación de las funciones de las administraciones públicas (COFOG). Protección social incluye las pensiones de jubilación y viudedad, el paro, la incapacidad, la familia y la exclusión social; las pensiones de los funcionarios cuentan aquí aunque se paguen sin pasar por la Seguridad Social.",
+   "Sanidad incluye el gasto público en hospitales, atención primaria y medicamentos, no el privado. Servicios generales incluye los intereses de la deuda. Seguridad: policía, bomberos, justicia y prisiones. Vivienda: vivienda, urbanismo, agua y alumbrado público (las prestaciones de vivienda a los hogares cuentan en protección social).",
+   "Comparar en % del PIB no tiene en cuenta que la población de cada país tiene una edad distinta."
+  ],
+  "en": [
+   "Classification of the functions of government (COFOG). Social protection includes retirement and survivors' pensions, unemployment, disability, family and social exclusion; civil servants' pensions count here even when they are not paid through Social Security.",
+   "Health includes public spending on hospitals, primary care and medicines, not private spending. General services includes interest on debt. Public order: police, fire services, courts and prisons. Housing: housing, urban development, water supply and street lighting (housing benefits paid to households count as social protection).",
+   "Comparing as % of GDP does not take into account that each country's population has a different age profile."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "GF10": {
+   "es": "Protección social",
+   "en": "Social protection",
+   "aggregate": true
+  },
+  "GF07": {
+   "es": "Sanidad",
+   "en": "Health",
+   "aggregate": true
+  },
+  "GF01": {
+   "es": "Servicios generales",
+   "en": "General services",
+   "aggregate": true
+  },
+  "GF04": {
+   "es": "Asuntos económicos",
+   "en": "Economic affairs",
+   "aggregate": true
+  },
+  "GF09": {
+   "es": "Educación",
+   "en": "Education",
+   "aggregate": true
+  },
+  "GF03": {
+   "es": "Seguridad",
+   "en": "Public order",
+   "aggregate": true
+  },
+  "GF08": {
+   "es": "Cultura y ocio",
+   "en": "Culture, recreation",
+   "aggregate": true
+  },
+  "GF02": {
+   "es": "Defensa",
+   "en": "Defence",
+   "aggregate": true
+  },
+  "GF05": {
+   "es": "Medio ambiente",
+   "en": "Environment",
+   "aggregate": true
+  },
+  "GF06": {
+   "es": "Vivienda",
+   "en": "Housing",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "gap": {
+  "GF10": 0.8,
+  "GF07": 0.8,
+  "GF01": 0.2,
+  "GF04": 0.2,
+  "GF09": 0.6,
+  "GF03": -0.1,
+  "GF08": 0.0,
+  "GF02": 0.6,
+  "GF05": -0.2,
+  "GF06": 0.2
+ },
+ "social": {
+  "enfermedad": {
+   "ESP": 2.8,
+   "EU27": 2.8
+  },
+  "vejez": {
+   "ESP": 10.4,
+   "EU27": 10.6
+  },
+  "supervivencia": {
+   "ESP": 2.2,
+   "EU27": 1.4
+  },
+  "familia": {
+   "ESP": 1.0,
+   "EU27": 2.0
+  },
+  "desempleo": {
+   "ESP": 1.5,
+   "EU27": 1.2
+  },
+  "vivienda": {
+   "ESP": 0.0,
+   "EU27": 0.3
+  },
+  "exclusion": {
+   "ESP": 0.7,
+   "EU27": 0.9
+  }
+ },
+ "rows": [
+  {
+   "geo": "GF10",
+   "time": "0-ue",
+   "value": 19.5
+  },
+  {
+   "geo": "GF10",
+   "time": "1-espana",
+   "value": 18.7
+  },
+  {
+   "geo": "GF07",
+   "time": "0-ue",
+   "value": 7.3
+  },
+  {
+   "geo": "GF07",
+   "time": "1-espana",
+   "value": 6.5
+  },
+  {
+   "geo": "GF01",
+   "time": "0-ue",
+   "value": 6.0
+  },
+  {
+   "geo": "GF01",
+   "time": "1-espana",
+   "value": 5.8
+  },
+  {
+   "geo": "GF04",
+   "time": "0-ue",
+   "value": 5.3
+  },
+  {
+   "geo": "GF04",
+   "time": "1-espana",
+   "value": 5.1
+  },
+  {
+   "geo": "GF09",
+   "time": "0-ue",
+   "value": 4.7
+  },
+  {
+   "geo": "GF09",
+   "time": "1-espana",
+   "value": 4.1
+  },
+  {
+   "geo": "GF03",
+   "time": "0-ue",
+   "value": 1.7
+  },
+  {
+   "geo": "GF03",
+   "time": "1-espana",
+   "value": 1.8
+  },
+  {
+   "geo": "GF08",
+   "time": "0-ue",
+   "value": 1.2
+  },
+  {
+   "geo": "GF08",
+   "time": "1-espana",
+   "value": 1.2
+  },
+  {
+   "geo": "GF02",
+   "time": "0-ue",
+   "value": 1.5
+  },
+  {
+   "geo": "GF02",
+   "time": "1-espana",
+   "value": 0.9
+  },
+  {
+   "geo": "GF05",
+   "time": "0-ue",
+   "value": 0.8
+  },
+  {
+   "geo": "GF05",
+   "time": "1-espana",
+   "value": 1.0
+  },
+  {
+   "geo": "GF06",
+   "time": "0-ue",
+   "value": 0.7
+  },
+  {
+   "geo": "GF06",
+   "time": "1-espana",
+   "value": 0.5
+  }
+ ]
+}

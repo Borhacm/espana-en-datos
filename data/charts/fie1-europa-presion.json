@@ -1,0 +1,363 @@
+{
+ "id": "fie1-europa-presion",
+ "lens": "europa",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "España recauda en impuestos y cotizaciones el 38,1 % del PIB: 13 de los 27 países de la UE recaudan más",
+  "en": "Spain collects 38.1% of GDP in taxes and social contributions: 13 of the 27 EU countries collect more"
+ },
+ "subtitle": {
+  "es": "Impuestos y cotizaciones sociales, 2025, en % del PIB. Media de la UE: 40,7 %",
+  "en": "Taxes and social contributions, 2025, as % of GDP. EU average: 40.7%"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, cuentas de las administraciones públicas",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_taxag",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_taxag/default/table"
+ },
+ "notes": {
+  "es": [
+   "Presión fiscal: impuestos y cotizaciones sociales que cobran todas las administraciones (y la UE, por los aranceles) en % del PIB. Incluye las cotizaciones sociales imputadas y descuenta lo que se ha liquidado pero no se espera cobrar.",
+   "Un porcentaje del PIB más bajo no significa que cada contribuyente pague menos: depende también de cuánta renta y cuánto consumo hay, de las exenciones y del fraude.",
+   "Los datos del último año son provisionales y pueden revisarse."
+  ],
+  "en": [
+   "Tax burden: taxes and social contributions collected by all levels of government (and the EU, through customs duties) as % of GDP. It includes imputed social contributions and excludes amounts assessed but unlikely to be collected.",
+   "A lower share of GDP does not mean that each taxpayer pays less: it also depends on how much income and consumption there is, on exemptions and on tax evasion.",
+   "Figures for the last year are provisional and may be revised."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "countries_above": [
+  "FRA",
+  "DNK",
+  "BEL",
+  "AUT",
+  "ITA",
+  "FIN",
+  "LUX",
+  "DEU",
+  "GRC",
+  "SWE",
+  "NLD",
+  "SVN",
+  "HRV"
+ ],
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 43.9
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 44.7
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 30.6
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 36.3
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 35.2
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 41.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 45.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 38.1
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 36.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 40.7
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 42.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 46.0
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 41.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 38.9
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 35.4
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 22.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 43.0
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 33.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 42.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 34.2
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 30.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 39.6
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 37.6
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 37.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 29.3
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 36.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 39.1
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 41.2
+  }
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "id": "fid2-comunidades-renta",
+ "lens": "dentro",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "Antes de impuestos y prestaciones, la renta por habitante de Madrid es 1,87 veces la de Extremadura; después, 1,49 veces",
+  "en": "Before taxes and benefits, income per inhabitant in Madrid is 1.87 times that of Extremadura; afterwards, 1.49 times"
+ },
+ "subtitle": {
+  "es": "Renta de los hogares por habitante antes de impuestos y prestaciones (renta primaria) y renta disponible, 2023. Índice: España = 100 en cada una",
+  "en": "Household income per inhabitant before taxes and benefits (primary income) and disposable income, 2023. Index: Spain = 100 for each"
+ },
+ "unit": {
+  "es": "Índice (España = 100)",
+  "en": "Index (Spain = 100)"
+ },
+ "source": {
+  "name": "Eurostat, cuentas nacionales",
+  "license": "CC BY 4.0",
+  "dataset": "nama_10r_2hhinc",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2hhinc/default/table"
+ },
+ "notes": {
+  "es": [
+   "Cuentas de los hogares de cada comunidad: se cuenta a las personas donde viven. No incluyen el IVA ni los demás impuestos sobre el consumo, ni el gasto público en sanidad o educación, que se recibe en servicios y no en dinero.",
+   "Renta primaria: salarios (con las cotizaciones de la empresa), rentas de los autónomos, alquileres, intereses y dividendos. Renta disponible: la primaria menos los impuestos sobre la renta y las cotizaciones, más las prestaciones y otras transferencias."
+  ],
+  "en": [
+   "Household accounts for each region: people are counted where they live. They do not include VAT or other taxes on consumption, nor public spending on health or education, which is received as services rather than cash.",
+   "Primary income: wages (including employer contributions), self-employment income, rents, interest and dividends. Disposable income: primary income minus income taxes and contributions, plus benefits and other transfers."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "antes": {
+    "es": "Renta antes de impuestos y prestaciones",
+    "en": "Income before taxes and benefits"
+   },
+   "despues": {
+    "es": "Renta disponible",
+    "en": "Disposable income"
+   }
+  },
+  "stage": {
+   "antes": {
+    "es": "Renta antes de impuestos y prestaciones",
+    "en": "Income before taxes and benefits"
+   },
+   "despues": {
+    "es": "Renta disponible",
+    "en": "Disposable income"
+   }
+  }
+ },
+ "ratio": {
+  "rich": "13",
+  "poor": "11",
+  "before": 1.871,
+  "after": 1.487
+ },
+ "disposable_share": {
+  "01": 95.9,
+  "02": 91.6,
+  "03": 105.4,
+  "04": 83.6,
+  "05": 90.9,
+  "06": 97.0,
+  "07": 98.7,
+  "08": 93.6,
+  "09": 85.2,
+  "10": 92.3,
+  "11": 101.7,
+  "12": 97.9,
+  "13": 80.8,
+  "14": 91.6,
+  "15": 90.2,
+  "16": 94.8,
+  "17": 91.7,
+  "18": 98.2,
+  "19": 97.7,
+  "ES": 90.0
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "antes",
+   "stage": "antes",
+   "value": 75.5
+  },
+  {
+   "geo": "01",
+   "time": "despues",
+   "stage": "despues",
+   "value": 80.4
+  },
+  {
+   "geo": "02",
+   "time": "antes",
+   "stage": "antes",
+   "value": 106.9
+  },
+  {
+   "geo": "02",
+   "time": "despues",
+   "stage": "despues",
+   "value": 108.8
+  },
+  {
+   "geo": "03",
+   "time": "antes",
+   "stage": "antes",
+   "value": 91.0
+  },
+  {
+   "geo": "03",
+   "time": "despues",
+   "stage": "despues",
+   "value": 106.6
+  },
+  {
+   "geo": "04",
+   "time": "antes",
+   "stage": "antes",
+   "value": 112.2
+  },
+  {
+   "geo": "04",
+   "time": "despues",
+   "stage": "despues",
+   "value": 104.2
+  },
+  {
+   "geo": "05",
+   "time": "antes",
+   "stage": "antes",
+   "value": 82.9
+  },
+  {
+   "geo": "05",
+   "time": "despues",
+   "stage": "despues",
+   "value": 83.7
+  },
+  {
+   "geo": "06",
+   "time": "antes",
+   "stage": "antes",
+   "value": 93.0
+  },
+  {
+   "geo": "06",
+   "time": "despues",
+   "stage": "despues",
+   "value": 100.3
+  },
+  {
+   "geo": "07",
+   "time": "antes",
+   "stage": "antes",
+   "value": 92.1
+  },
+  {
+   "geo": "07",
+   "time": "despues",
+   "stage": "despues",
+   "value": 101.0
+  },
+  {
+   "geo": "08",
+   "time": "antes",
+   "stage": "antes",
+   "value": 83.3
+  },
+  {
+   "geo": "08",
+   "time": "despues",
+   "stage": "despues",
+   "value": 86.6
+  },
+  {
+   "geo": "09",
+   "time": "antes",
+   "stage": "antes",
+   "value": 115.1
+  },
+  {
+   "geo": "09",
+   "time": "despues",
+   "stage": "despues",
+   "value": 109.0
+  },
+  {
+   "geo": "10",
+   "time": "antes",
+   "stage": "antes",
+   "value": 85.4
+  },
+  {
+   "geo": "10",
+   "time": "despues",
+   "stage": "despues",
+   "value": 87.5
+  },
+  {
+   "geo": "11",
+   "time": "antes",
+   "stage": "antes",
+   "value": 73.6
+  },
+  {
+   "geo": "11",
+   "time": "despues",
+   "stage": "despues",
+   "value": 83.2
+  },
+  {
+   "geo": "12",
+   "time": "antes",
+   "stage": "antes",
+   "value": 89.7
+  },
+  {
+   "geo": "12",
+   "time": "despues",
+   "stage": "despues",
+   "value": 97.5
+  },
+  {
+   "geo": "13",
+   "time": "antes",
+   "stage": "antes",
+   "value": 137.7
+  },
+  {
+   "geo": "13",
+   "time": "despues",
+   "stage": "despues",
+   "value": 123.7
+  },
+  {
+   "geo": "14",
+   "time": "antes",
+   "stage": "antes",
+   "value": 85.1
+  },
+  {
+   "geo": "14",
+   "time": "despues",
+   "stage": "despues",
+   "value": 86.6
+  },
+  {
+   "geo": "15",
+   "time": "antes",
+   "stage": "antes",
+   "value": 116.8
+  },
+  {
+   "geo": "15",
+   "time": "despues",
+   "stage": "despues",
+   "value": 116.9
+  },
+  {
+   "geo": "16",
+   "time": "antes",
+   "stage": "antes",
+   "value": 125.7
+  },
+  {
+   "geo": "16",
+   "time": "despues",
+   "stage": "despues",
+   "value": 132.4
+  },
+  {
+   "geo": "17",
+   "time": "antes",
+   "stage": "antes",
+   "value": 101.6
+  },
+  {
+   "geo": "17",
+   "time": "despues",
+   "stage": "despues",
+   "value": 103.5
+  },
+  {
+   "geo": "18",
+   "time": "antes",
+   "stage": "antes",
+   "value": 80.6
+  },
+  {
+   "geo": "18",
+   "time": "despues",
+   "stage": "despues",
+   "value": 87.9
+  },
+  {
+   "geo": "19",
+   "time": "antes",
+   "stage": "antes",
+   "value": 74.9
+  },
+  {
+   "geo": "19",
+   "time": "despues",
+   "stage": "despues",
+   "value": 81.3
+  },
+  {
+   "geo": "ES",
+   "time": "antes",
+   "stage": "antes",
+   "value": 100.0
+  },
+  {
+   "geo": "ES",
+   "time": "despues",
+   "stage": "despues",
+   "value": 100.0
+  }
+ ]
+}

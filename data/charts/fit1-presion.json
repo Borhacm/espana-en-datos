@@ -1,0 +1,402 @@
+{
+ "id": "fit1-presion",
+ "lens": "tiempo",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "La distancia con la UE en presión fiscal se ha reducido de 8,3 puntos en 1995 a 2,6 en 2025, la menor de la serie",
+  "en": "The tax-burden gap with the EU has narrowed from 8.3 points in 1995 to 2.6 in 2025, the smallest on record"
+ },
+ "subtitle": {
+  "es": "Impuestos y cotizaciones sociales en % del PIB, 1995-2025",
+  "en": "Taxes and social contributions as % of GDP, 1995-2025"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, cuentas de las administraciones públicas",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_taxag",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_taxag/default/table"
+ },
+ "notes": {
+  "es": [
+   "Presión fiscal: impuestos y cotizaciones sociales que cobran todas las administraciones (y la UE, por los aranceles) en % del PIB. Incluye las cotizaciones sociales imputadas y descuenta lo que se ha liquidado pero no se espera cobrar.",
+   "UE: los 27 países actuales en toda la serie.",
+   "Los datos del último año son provisionales y pueden revisarse."
+  ],
+  "en": [
+   "Tax burden: taxes and social contributions collected by all levels of government (and the EU, through customs duties) as % of GDP. It includes imputed social contributions and excludes amounts assessed but unlikely to be collected.",
+   "EU: the current 27 countries throughout the series.",
+   "Figures for the last year are provisional and may be revised."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "UE",
+    "en": "EU"
+   }
+  }
+ },
+ "gap": {
+  "1995": 8.3,
+  "1996": 9.1,
+  "1997": 8.5,
+  "1998": 7.5,
+  "1999": 7.6,
+  "2000": 7.1,
+  "2001": 6.5,
+  "2002": 5.7,
+  "2003": 5.9,
+  "2004": 4.6,
+  "2005": 3.6,
+  "2006": 3.2,
+  "2007": 2.9,
+  "2008": 6.6,
+  "2009": 8.7,
+  "2010": 6.9,
+  "2011": 7.4,
+  "2012": 7.2,
+  "2013": 7.0,
+  "2014": 6.5,
+  "2015": 6.4,
+  "2016": 6.8,
+  "2017": 6.6,
+  "2018": 5.9,
+  "2019": 5.7,
+  "2020": 3.7,
+  "2021": 3.1,
+  "2022": 3.2,
+  "2023": 2.8,
+  "2024": 3.0,
+  "2025": 2.6
+ },
+ "boom": {
+  "year": 2007,
+  "value": 37.2
+ },
+ "crisis": {
+  "year": 2009,
+  "value": 30.5
+ },
+ "rows": [
+  {
+   "time": "1995",
+   "series": "espana",
+   "value": 32.3
+  },
+  {
+   "time": "1996",
+   "series": "espana",
+   "value": 32.0
+  },
+  {
+   "time": "1997",
+   "series": "espana",
+   "value": 32.9
+  },
+  {
+   "time": "1998",
+   "series": "espana",
+   "value": 33.7
+  },
+  {
+   "time": "1999",
+   "series": "espana",
+   "value": 34.1
+  },
+  {
+   "time": "2000",
+   "series": "espana",
+   "value": 34.0
+  },
+  {
+   "time": "2001",
+   "series": "espana",
+   "value": 33.7
+  },
+  {
+   "time": "2002",
+   "series": "espana",
+   "value": 34.1
+  },
+  {
+   "time": "2003",
+   "series": "espana",
+   "value": 33.9
+  },
+  {
+   "time": "2004",
+   "series": "espana",
+   "value": 34.9
+  },
+  {
+   "time": "2005",
+   "series": "espana",
+   "value": 36.1
+  },
+  {
+   "time": "2006",
+   "series": "espana",
+   "value": 36.8
+  },
+  {
+   "time": "2007",
+   "series": "espana",
+   "value": 37.2
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 32.9
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 30.5
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 32.1
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 32.0
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 33.2
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 34.0
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 34.5
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 34.4
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 34.1
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 34.4
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 35.2
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 35.2
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 37.3
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 38.1
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 37.4
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 37.1
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 37.2
+  },
+  {
+   "time": "2025",
+   "series": "espana",
+   "value": 38.1
+  },
+  {
+   "time": "1995",
+   "series": "ue",
+   "value": 40.6
+  },
+  {
+   "time": "1996",
+   "series": "ue",
+   "value": 41.1
+  },
+  {
+   "time": "1997",
+   "series": "ue",
+   "value": 41.4
+  },
+  {
+   "time": "1998",
+   "series": "ue",
+   "value": 41.2
+  },
+  {
+   "time": "1999",
+   "series": "ue",
+   "value": 41.7
+  },
+  {
+   "time": "2000",
+   "series": "ue",
+   "value": 41.1
+  },
+  {
+   "time": "2001",
+   "series": "ue",
+   "value": 40.2
+  },
+  {
+   "time": "2002",
+   "series": "ue",
+   "value": 39.8
+  },
+  {
+   "time": "2003",
+   "series": "ue",
+   "value": 39.8
+  },
+  {
+   "time": "2004",
+   "series": "ue",
+   "value": 39.5
+  },
+  {
+   "time": "2005",
+   "series": "ue",
+   "value": 39.7
+  },
+  {
+   "time": "2006",
+   "series": "ue",
+   "value": 40.0
+  },
+  {
+   "time": "2007",
+   "series": "ue",
+   "value": 40.1
+  },
+  {
+   "time": "2008",
+   "series": "ue",
+   "value": 39.5
+  },
+  {
+   "time": "2009",
+   "series": "ue",
+   "value": 39.2
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 39.0
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 39.4
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 40.4
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 41.0
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 41.0
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 40.8
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 40.9
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 41.0
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 41.1
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 40.9
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 41.0
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 41.2
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 40.6
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 39.9
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 40.2
+  },
+  {
+   "time": "2025",
+   "series": "ue",
+   "value": 40.7
+  }
+ ]
+}

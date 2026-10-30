@@ -112,6 +112,7 @@ piezas:
     tema: fiscalidad
     titulo: "Impuestos y gasto público: España frente a Europa"
     idea: presión fiscal, estructura de impuestos, gasto por funciones (Eurostat COFOG), por comunidades (impuestos cedidos).
+    estado: hecha
 
   - id: n04
     tipo: nota

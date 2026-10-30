@@ -19469,30 +19469,28 @@
     "PP": 28.5,
     "PSOE": 27.1,
     "Vox": 20.0,
-    "Sumar": 8.9,
-    "ERC": 2.2,
-    "Junts": 1.2,
-    "EH Bildu": 1.3,
-    "PNV": 1.0,
-    "BNG": 1.1,
-    "CC": 0.6,
-    "Podemos": 1.9,
-    "SALF": 1.2
+    "Sumar": 11.1,
+    "ERC": 1.2,
+    "Junts": 1.3,
+    "EH Bildu": 1.0,
+    "PNV": 1.1,
+    "BNG": 0.6,
+    "AA": 1.9,
+    "Podemos": 1.2
    },
    "seats": {
     "PP": 123,
     "PSOE": 113,
     "Vox": 72,
-    "Sumar": 14,
-    "ERC": 8,
-    "Junts": 4,
-    "EH Bildu": 6,
-    "PNV": 5,
-    "BNG": 2,
+    "Sumar": 22,
+    "ERC": 4,
+    "Junts": 6,
+    "EH Bildu": 5,
+    "PNV": 2,
+    "BNG": 1,
     "CC": 1,
     "AA": 1,
-    "Podemos": 1,
-    "SALF": 0
+    "Podemos": 0
    }
   },
   {
@@ -19551,14 +19549,14 @@
     "PSOE": 27.6,
     "Vox": 19.8,
     "Sumar": 6.8,
-    "Podemos": 2.7
+    "AA": 2.7
    },
    "seats": {
     "PP": 126.5,
     "PSOE": 109.5,
     "Vox": 70.5,
     "Sumar": 14.0,
-    "Podemos": 1.5
+    "AA": 1.5
    }
   },
   {
@@ -19642,6 +19640,38 @@
    }
   },
   {
+   "pollster": "Winston",
+   "commissioner": "Artículo14",
+   "fieldwork": "21–23 Oct",
+   "date": "2026-10-23",
+   "sample": 1200,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://www.articulo14.es/politica/encuesta-articulo14-el-psoe-se-coloca-6-escanos-del-pp-que-mantiene-una-mayoria-de-190-escanos-con-vox-20261026.html",
+   "values": {
+    "PP": 29.4,
+    "PSOE": 27.1,
+    "Vox": 19.2,
+    "Sumar": 5.6
+   },
+   "seats": {
+    "PP": 122,
+    "PSOE": 115,
+    "Vox": 69,
+    "Sumar": 12,
+    "ERC": 11,
+    "Junts": 4,
+    "EH Bildu": 7,
+    "PNV": 3,
+    "BNG": 1,
+    "CC": 1,
+    "AA": 3,
+    "Podemos": 2,
+    "SALF": 0
+   }
+  },
+  {
    "pollster": "NC Report",
    "commissioner": "La Razón",
    "fieldwork": "22–24 Oct",
@@ -19655,27 +19685,27 @@
     "PP": 33.1,
     "PSOE": 25.8,
     "Vox": 19.0,
-    "Sumar": 6.6,
-    "ERC": 2.0,
-    "Junts": 1.8,
-    "EH Bildu": 1.4,
-    "PNV": 0.9,
-    "BNG": 0.8,
-    "CC": 0.4,
-    "Podemos": 2.6
+    "Sumar": 8.6,
+    "ERC": 1.8,
+    "Junts": 1.4,
+    "EH Bildu": 0.9,
+    "PNV": 0.8,
+    "BNG": 0.4,
+    "CC": 1.3,
+    "AA": 2.6
    },
    "seats": {
     "PP": 143.0,
     "PSOE": 101.0,
     "Vox": 65.0,
-    "Sumar": 8.5,
-    "ERC": 7.5,
-    "Junts": 8.5,
-    "EH Bildu": 6.5,
-    "PNV": 4.5,
-    "BNG": 1.5,
-    "CC": 1,
-    "Podemos": 1
+    "Sumar": 16.0,
+    "ERC": 8.5,
+    "Junts": 6.5,
+    "EH Bildu": 4.5,
+    "PNV": 1.5,
+    "BNG": 1,
+    "CC": 3,
+    "AA": 1
    }
   },
   {
@@ -19698,13 +19728,13 @@
   {
    "pollster": "SocioMétrica",
    "commissioner": "El Español",
-   "fieldwork": "26 Oct",
-   "date": "2026-10-26",
+   "fieldwork": "1 Sep–25 Oct",
+   "date": "2026-10-25",
    "sample": 3223,
    "panel": false,
    "reestimate": null,
    "partisan": false,
-   "url": "https://www.elespanol.com/espana/politica/20261026/horquilla-horquilla-peor-escenario-pp-escanos-psoe-mejor-casos-no-pasaria/1003744434367_0.html",
+   "url": "https://www.elespanol.com/espana/politica/20261025/izquierda-no-remonta-sanchez-gana-escanos-costa-frente-podemos-sondeo-noche/1003744434105_0.html",
    "values": {
     "PP": 32.4,
     "PSOE": 27.0,
@@ -19737,5 +19767,5 @@
    }
   }
  ],
- "retrieved": "2026-10-26"
+ "retrieved": "2026-10-30"
 }

@@ -1,0 +1,717 @@
+{
+ "id": "fit2-impuestos",
+ "lens": "tiempo",
+ "theme": "fiscalidad",
+ "title": {
+  "es": "Desde 2019, el IRPF ha pasado del 7,9 % al 9,6 % del PIB y sociedades, del 2,1 % al 3,2 %; el resto de impuestos y cotizaciones, en conjunto, apenas ha cambiado",
+  "en": "Since 2019, personal income tax has risen from 7.9% to 9.6% of GDP and corporate tax from 2.1% to 3.2%; the rest of taxes and contributions, taken together, has barely changed"
+ },
+ "subtitle": {
+  "es": "Recaudación de los principales impuestos y de las cotizaciones sociales, en % del PIB, 1995-2025",
+  "en": "Revenue from the main taxes and from social contributions, as % of GDP, 1995-2025"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, cuentas de las administraciones públicas",
+  "license": "CC BY 4.0",
+  "dataset": "gov_10a_taxag",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_taxag/default/table"
+ },
+ "notes": {
+  "es": [
+   "IRPF: impuestos sobre la renta de las personas, incluido el de no residentes. Sociedades: impuestos sobre los beneficios de las empresas. Cotizaciones sociales: de empresas y trabajadores, incluidas las imputadas.",
+   "Lo que recauda cada impuesto se anota cuando se genera la obligación de pagar, no cuando se ingresa: puede diferir de las cifras de caja de la Agencia Tributaria.",
+   "Los datos del último año son provisionales y pueden revisarse."
+  ],
+  "en": [
+   "IRPF: taxes on personal income, including the non-resident income tax. Corporate tax: taxes on company profits. Social contributions: paid by employers and workers, including imputed contributions.",
+   "Each tax's revenue is recorded when the obligation to pay arises, not when it is paid in: it may differ from the Tax Agency's cash figures.",
+   "Figures for the last year are provisional and may be revised."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "irpf": {
+    "es": "IRPF",
+    "en": "Personal income tax"
+   },
+   "sociedades": {
+    "es": "Sociedades",
+    "en": "Corporate tax"
+   },
+   "iva": {
+    "es": "IVA",
+    "en": "VAT"
+   },
+   "cotizaciones": {
+    "es": "Cotizaciones sociales",
+    "en": "Social contributions"
+   }
+  }
+ },
+ "short_labels": {
+  "irpf": {
+   "es": "IRPF",
+   "en": "PIT"
+  },
+  "sociedades": {
+   "es": "Sociedades",
+   "en": "CIT"
+  },
+  "iva": {
+   "es": "IVA",
+   "en": "VAT"
+  },
+  "cotizaciones": {
+   "es": "Cotizaciones",
+   "en": "Contributions"
+  }
+ },
+ "change": {
+  "irpf": 1.7,
+  "sociedades": 1.1,
+  "iva": 0.3,
+  "cotizaciones": 0.4
+ },
+ "change_total": 2.9,
+ "change_renta": 2.8,
+ "rest": {
+  "2019": 25.2,
+  "2025": 25.3
+ },
+ "total": {
+  "2019": 35.2,
+  "2025": 38.1
+ },
+ "peak_sociedades": {
+  "year": 2007,
+  "value": 4.6
+ },
+ "rows": [
+  {
+   "time": "1995",
+   "series": "irpf",
+   "value": 7.5
+  },
+  {
+   "time": "1996",
+   "series": "irpf",
+   "value": 7.3
+  },
+  {
+   "time": "1997",
+   "series": "irpf",
+   "value": 6.9
+  },
+  {
+   "time": "1998",
+   "series": "irpf",
+   "value": 6.9
+  },
+  {
+   "time": "1999",
+   "series": "irpf",
+   "value": 6.7
+  },
+  {
+   "time": "2000",
+   "series": "irpf",
+   "value": 6.4
+  },
+  {
+   "time": "2001",
+   "series": "irpf",
+   "value": 6.6
+  },
+  {
+   "time": "2002",
+   "series": "irpf",
+   "value": 6.7
+  },
+  {
+   "time": "2003",
+   "series": "irpf",
+   "value": 6.3
+  },
+  {
+   "time": "2004",
+   "series": "irpf",
+   "value": 6.3
+  },
+  {
+   "time": "2005",
+   "series": "irpf",
+   "value": 6.6
+  },
+  {
+   "time": "2006",
+   "series": "irpf",
+   "value": 7.0
+  },
+  {
+   "time": "2007",
+   "series": "irpf",
+   "value": 7.5
+  },
+  {
+   "time": "2008",
+   "series": "irpf",
+   "value": 7.1
+  },
+  {
+   "time": "2009",
+   "series": "irpf",
+   "value": 6.6
+  },
+  {
+   "time": "2010",
+   "series": "irpf",
+   "value": 6.9
+  },
+  {
+   "time": "2011",
+   "series": "irpf",
+   "value": 7.2
+  },
+  {
+   "time": "2012",
+   "series": "irpf",
+   "value": 7.5
+  },
+  {
+   "time": "2013",
+   "series": "irpf",
+   "value": 7.6
+  },
+  {
+   "time": "2014",
+   "series": "irpf",
+   "value": 7.7
+  },
+  {
+   "time": "2015",
+   "series": "irpf",
+   "value": 7.3
+  },
+  {
+   "time": "2016",
+   "series": "irpf",
+   "value": 7.2
+  },
+  {
+   "time": "2017",
+   "series": "irpf",
+   "value": 7.4
+  },
+  {
+   "time": "2018",
+   "series": "irpf",
+   "value": 7.7
+  },
+  {
+   "time": "2019",
+   "series": "irpf",
+   "value": 7.9
+  },
+  {
+   "time": "2020",
+   "series": "irpf",
+   "value": 8.8
+  },
+  {
+   "time": "2021",
+   "series": "irpf",
+   "value": 8.6
+  },
+  {
+   "time": "2022",
+   "series": "irpf",
+   "value": 9.0
+  },
+  {
+   "time": "2023",
+   "series": "irpf",
+   "value": 9.0
+  },
+  {
+   "time": "2024",
+   "series": "irpf",
+   "value": 9.1
+  },
+  {
+   "time": "2025",
+   "series": "irpf",
+   "value": 9.6
+  },
+  {
+   "time": "1995",
+   "series": "sociedades",
+   "value": 1.6
+  },
+  {
+   "time": "1996",
+   "series": "sociedades",
+   "value": 1.8
+  },
+  {
+   "time": "1997",
+   "series": "sociedades",
+   "value": 2.4
+  },
+  {
+   "time": "1998",
+   "series": "sociedades",
+   "value": 2.5
+  },
+  {
+   "time": "1999",
+   "series": "sociedades",
+   "value": 2.6
+  },
+  {
+   "time": "2000",
+   "series": "sociedades",
+   "value": 2.9
+  },
+  {
+   "time": "2001",
+   "series": "sociedades",
+   "value": 2.7
+  },
+  {
+   "time": "2002",
+   "series": "sociedades",
+   "value": 3.0
+  },
+  {
+   "time": "2003",
+   "series": "sociedades",
+   "value": 3.0
+  },
+  {
+   "time": "2004",
+   "series": "sociedades",
+   "value": 3.3
+  },
+  {
+   "time": "2005",
+   "series": "sociedades",
+   "value": 3.8
+  },
+  {
+   "time": "2006",
+   "series": "sociedades",
+   "value": 4.0
+  },
+  {
+   "time": "2007",
+   "series": "sociedades",
+   "value": 4.6
+  },
+  {
+   "time": "2008",
+   "series": "sociedades",
+   "value": 2.8
+  },
+  {
+   "time": "2009",
+   "series": "sociedades",
+   "value": 2.2
+  },
+  {
+   "time": "2010",
+   "series": "sociedades",
+   "value": 1.8
+  },
+  {
+   "time": "2011",
+   "series": "sociedades",
+   "value": 1.8
+  },
+  {
+   "time": "2012",
+   "series": "sociedades",
+   "value": 2.1
+  },
+  {
+   "time": "2013",
+   "series": "sociedades",
+   "value": 2.0
+  },
+  {
+   "time": "2014",
+   "series": "sociedades",
+   "value": 2.0
+  },
+  {
+   "time": "2015",
+   "series": "sociedades",
+   "value": 2.2
+  },
+  {
+   "time": "2016",
+   "series": "sociedades",
+   "value": 2.2
+  },
+  {
+   "time": "2017",
+   "series": "sociedades",
+   "value": 2.2
+  },
+  {
+   "time": "2018",
+   "series": "sociedades",
+   "value": 2.4
+  },
+  {
+   "time": "2019",
+   "series": "sociedades",
+   "value": 2.1
+  },
+  {
+   "time": "2020",
+   "series": "sociedades",
+   "value": 2.0
+  },
+  {
+   "time": "2021",
+   "series": "sociedades",
+   "value": 2.6
+  },
+  {
+   "time": "2022",
+   "series": "sociedades",
+   "value": 2.7
+  },
+  {
+   "time": "2023",
+   "series": "sociedades",
+   "value": 2.9
+  },
+  {
+   "time": "2024",
+   "series": "sociedades",
+   "value": 3.0
+  },
+  {
+   "time": "2025",
+   "series": "sociedades",
+   "value": 3.2
+  },
+  {
+   "time": "1995",
+   "series": "iva",
+   "value": 5.0
+  },
+  {
+   "time": "1996",
+   "series": "iva",
+   "value": 5.1
+  },
+  {
+   "time": "1997",
+   "series": "iva",
+   "value": 5.3
+  },
+  {
+   "time": "1998",
+   "series": "iva",
+   "value": 5.6
+  },
+  {
+   "time": "1999",
+   "series": "iva",
+   "value": 5.9
+  },
+  {
+   "time": "2000",
+   "series": "iva",
+   "value": 5.8
+  },
+  {
+   "time": "2001",
+   "series": "iva",
+   "value": 5.7
+  },
+  {
+   "time": "2002",
+   "series": "iva",
+   "value": 5.6
+  },
+  {
+   "time": "2003",
+   "series": "iva",
+   "value": 5.7
+  },
+  {
+   "time": "2004",
+   "series": "iva",
+   "value": 6.0
+  },
+  {
+   "time": "2005",
+   "series": "iva",
+   "value": 6.2
+  },
+  {
+   "time": "2006",
+   "series": "iva",
+   "value": 6.2
+  },
+  {
+   "time": "2007",
+   "series": "iva",
+   "value": 5.8
+  },
+  {
+   "time": "2008",
+   "series": "iva",
+   "value": 4.7
+  },
+  {
+   "time": "2009",
+   "series": "iva",
+   "value": 3.4
+  },
+  {
+   "time": "2010",
+   "series": "iva",
+   "value": 5.1
+  },
+  {
+   "time": "2011",
+   "series": "iva",
+   "value": 5.1
+  },
+  {
+   "time": "2012",
+   "series": "iva",
+   "value": 5.3
+  },
+  {
+   "time": "2013",
+   "series": "iva",
+   "value": 5.9
+  },
+  {
+   "time": "2014",
+   "series": "iva",
+   "value": 6.2
+  },
+  {
+   "time": "2015",
+   "series": "iva",
+   "value": 6.4
+  },
+  {
+   "time": "2016",
+   "series": "iva",
+   "value": 6.4
+  },
+  {
+   "time": "2017",
+   "series": "iva",
+   "value": 6.5
+  },
+  {
+   "time": "2018",
+   "series": "iva",
+   "value": 6.5
+  },
+  {
+   "time": "2019",
+   "series": "iva",
+   "value": 6.5
+  },
+  {
+   "time": "2020",
+   "series": "iva",
+   "value": 6.3
+  },
+  {
+   "time": "2021",
+   "series": "iva",
+   "value": 6.8
+  },
+  {
+   "time": "2022",
+   "series": "iva",
+   "value": 6.8
+  },
+  {
+   "time": "2023",
+   "series": "iva",
+   "value": 6.4
+  },
+  {
+   "time": "2024",
+   "series": "iva",
+   "value": 6.4
+  },
+  {
+   "time": "2025",
+   "series": "iva",
+   "value": 6.8
+  },
+  {
+   "time": "1995",
+   "series": "cotizaciones",
+   "value": 12.2
+  },
+  {
+   "time": "1996",
+   "series": "cotizaciones",
+   "value": 12.0
+  },
+  {
+   "time": "1997",
+   "series": "cotizaciones",
+   "value": 12.2
+  },
+  {
+   "time": "1998",
+   "series": "cotizaciones",
+   "value": 12.2
+  },
+  {
+   "time": "1999",
+   "series": "cotizaciones",
+   "value": 12.4
+  },
+  {
+   "time": "2000",
+   "series": "cotizaciones",
+   "value": 12.4
+  },
+  {
+   "time": "2001",
+   "series": "cotizaciones",
+   "value": 12.6
+  },
+  {
+   "time": "2002",
+   "series": "cotizaciones",
+   "value": 12.5
+  },
+  {
+   "time": "2003",
+   "series": "cotizaciones",
+   "value": 12.6
+  },
+  {
+   "time": "2004",
+   "series": "cotizaciones",
+   "value": 12.6
+  },
+  {
+   "time": "2005",
+   "series": "cotizaciones",
+   "value": 12.6
+  },
+  {
+   "time": "2006",
+   "series": "cotizaciones",
+   "value": 12.6
+  },
+  {
+   "time": "2007",
+   "series": "cotizaciones",
+   "value": 12.6
+  },
+  {
+   "time": "2008",
+   "series": "cotizaciones",
+   "value": 12.7
+  },
+  {
+   "time": "2009",
+   "series": "cotizaciones",
+   "value": 12.9
+  },
+  {
+   "time": "2010",
+   "series": "cotizaciones",
+   "value": 12.7
+  },
+  {
+   "time": "2011",
+   "series": "cotizaciones",
+   "value": 12.7
+  },
+  {
+   "time": "2012",
+   "series": "cotizaciones",
+   "value": 12.5
+  },
+  {
+   "time": "2013",
+   "series": "cotizaciones",
+   "value": 12.4
+  },
+  {
+   "time": "2014",
+   "series": "cotizaciones",
+   "value": 12.4
+  },
+  {
+   "time": "2015",
+   "series": "cotizaciones",
+   "value": 12.1
+  },
+  {
+   "time": "2016",
+   "series": "cotizaciones",
+   "value": 12.1
+  },
+  {
+   "time": "2017",
+   "series": "cotizaciones",
+   "value": 12.2
+  },
+  {
+   "time": "2018",
+   "series": "cotizaciones",
+   "value": 12.3
+  },
+  {
+   "time": "2019",
+   "series": "cotizaciones",
+   "value": 12.8
+  },
+  {
+   "time": "2020",
+   "series": "cotizaciones",
+   "value": 14.4
+  },
+  {
+   "time": "2021",
+   "series": "cotizaciones",
+   "value": 13.9
+  },
+  {
+   "time": "2022",
+   "series": "cotizaciones",
+   "value": 13.1
+  },
+  {
+   "time": "2023",
+   "series": "cotizaciones",
+   "value": 13.2
+  },
+  {
+   "time": "2024",
+   "series": "cotizaciones",
+   "value": 13.2
+  },
+  {
+   "time": "2025",
+   "series": "cotizaciones",
+   "value": 13.2
+  }
+ ]
+}
