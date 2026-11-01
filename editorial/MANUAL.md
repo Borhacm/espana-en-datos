@@ -10,7 +10,7 @@ Procedimiento para preparar y publicar una **nota** o un **artículo** del [cale
 2. **Neutralidad política.** Mismo formato y misma exigencia para todos los partidos. Describimos, no atribuimos: que una comunidad gobernada por un partido tenga un dato mejor o peor no prueba que sea por ese partido (influyen la renta, la demografía, el ciclo y quién tiene la competencia). Nunca pidas el voto ni califiques a un partido. Si valoras una política, compárala con un grupo de control y cita evaluaciones independientes (AIReF, Banco de España, Fedea, EsadeEcPol, IVIE, artículos académicos), y di cuándo la evidencia no es concluyente.
 3. **Veda electoral (LOREG, art. 69.7): del 24 al 28 de noviembre de 2026**, ninguna pieza muestra, cita ni resume encuestas de intención de voto, y no se actualizan las encuestas (paso 2). El sábado **28 de noviembre (jornada de reflexión) no se publica nada**.
 4. Nunca regeneres datos ajenos a tu pieza: ejecuta el pipeline siempre con `--only`. Solo usa `--refresh` en el paso 2 (encuestas).
-5. No cambies la configuración de Vercel ni el dominio. No borres archivos ajenos a tu pieza.
+5. No cambies la configuración de GitHub Pages ni el dominio. No borres archivos ajenos a tu pieza.
 6. Español de España. **Nunca uses la raya (—)**: usa punto, coma o dos puntos. Coma decimal y espacio antes de %: "12,5 %". Títulos en frase normal que afirman el hallazgo.
 7. **La web es bilingüe: cada pieza se publica a la vez en español y en inglés** (español en la raíz, `/vivienda/`; inglés bajo `/en/`, `/en/housing/`). Primero se escribe y se verifica el español; el inglés es su traducción fiel: mismas cifras, mismos matices y mismas cautelas, sin añadir ni quitar nada. Inglés británico, punto decimal y % pegado ("12.5%"), nombres de comunidades como en `CCAA_EN` (`pipeline/lib/geo.py`), siglas de partidos sin traducir, y una aclaración breve la primera vez que sale una institución española ("INE, Spain's statistics office"; "AIReF, Spain's independent fiscal authority"). Tampoco en inglés se usa la raya. Si falta un texto en inglés, el pipeline o el build fallan: no lo esquives, tradúcelo.
 
@@ -22,7 +22,7 @@ git status --short          # debe estar vacío; si no, para y explica qué hay
 git checkout main && git pull --ff-only
 ```
 
-El repositorio está en GitHub (`Borhacm/espana-en-datos`, rama `main`). **Vercel publica la web automáticamente cada vez que llega un commit a `main`** (como Europa en datos): no hace falta la CLI de Vercel. Por eso nada que no haya pasado las comprobaciones puede llegar a `main`.
+El repositorio está en GitHub (`Borhacm/espana-en-datos`, rama `main`). **GitHub Pages publica la web automáticamente cada vez que llega un commit a `main`** (workflow `.github/workflows/pages.yml`, como Europa en datos). Por eso nada que no haya pasado las comprobaciones puede llegar a `main`.
 
 ## 2. Actualizar las encuestas (cada ejecución, salvo en veda)
 
@@ -134,8 +134,8 @@ Si alguna casilla queda sin marcar y no se puede resolver en esta ejecución, **
 
 1. Marca la entrada como `estado: hecha` en `editorial/calendario.yaml`.
 2. Commit en `main`: `git add -A && git commit -m "<Nota|Artículo> <id>: <título>"` y, en una línea aparte al final del mensaje, `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Si solo has actualizado encuestas: `Encuestas: actualización del <fecha>`.
-3. Publica: `git pull --rebase origin main && git push origin main`. Al llegar a `main`, Vercel compila la web desde `web/` (el build copia `../data`) y la publica. Si el push falla, no se publica nada: dilo en el resumen.
-4. Comprueba que el despliegue termina bien: `gh api repos/Borhacm/espana-en-datos/commits/HEAD/status --jq .state` debe acabar en `success` (espera y repite unos minutos si da `pending`). Si da `failure`, la web sigue con la versión anterior: revisa el error en Vercel, corrígelo con otro commit y vuelve a comprobar.
+3. Publica: `git pull --rebase origin main && git push origin main`. Al llegar a `main`, GitHub Actions compila la web desde `web/` (el build copia `../data`) y la publica. Si el push falla, no se publica nada: dilo en el resumen.
+4. Comprueba que el despliegue termina bien: `gh run list --repo Borhacm/espana-en-datos --workflow pages.yml --branch main --limit 1 --json headSha,status,conclusion` debe mostrar el SHA de tu commit con `conclusion` `success` (espera y repite unos minutos si `status` no es `completed`). Si da `failure`, la web sigue con la versión anterior: revisa el error con `gh run view --log-failed`, corrígelo con otro commit y vuelve a comprobar.
 
 ## 10. Comprobar la web real
 

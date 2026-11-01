@@ -51,8 +51,8 @@ Desde `web/`: `npm run dev`, `npm run build`, `npm run check` (dibuja todos los 
 
 ## Publicación editorial
 
-La rutina «espana-publicacion» de la app de Claude (lunes, miércoles y viernes a las 8.30) actualiza las encuestas y publica la pieza del día de [editorial/calendario.yaml](editorial/calendario.yaml) siguiendo [editorial/MANUAL.md](editorial/MANUAL.md): nota los lunes, artículo con tres miradas los miércoles y viernes. Cada pieza deja su tabla de verificación en `editorial/registro/<id>.md`. Dos tareas puntuales republican la web al empezar la veda (24 de noviembre, 00.05) y al cerrar los colegios (29 de noviembre, 21.05).
+La rutina «espana-publicacion» de la app de Claude (lunes, miércoles y viernes a las 8.30) actualiza las encuestas y publica la pieza del día de [editorial/calendario.yaml](editorial/calendario.yaml) siguiendo [editorial/MANUAL.md](editorial/MANUAL.md): nota los lunes, artículo con tres miradas los miércoles y viernes. Cada pieza deja su tabla de verificación en `editorial/registro/<id>.md`. El workflow de publicación vuelve a compilar la web solo al empezar la veda (24 de noviembre, 00.05) y al cerrar los colegios (29 de noviembre, 21.05).
 
-Copia de seguridad privada en GitHub: `Borhacm/espana-en-datos` (no publica; la web se despliega con la CLI de Vercel).
+Repositorio: `Borhacm/espana-en-datos`. Cada push a `main` se publica en https://espanaendatos.bocal.online con GitHub Pages (`.github/workflows/pages.yml`).
 
 Proyecto independiente de [Bocal](https://bocal.online).
