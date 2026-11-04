@@ -1,0 +1,1234 @@
+{
+ "id": "generales-escanos",
+ "title": "Escaños de cada candidatura en las elecciones al Congreso, 1977-2023",
+ "source": {
+  "name": "Wikipedia, artículos de cada elección general al Congreso",
+  "dataset": "Tabla de resultados del Congreso de los Diputados, 1977-2023",
+  "url": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a",
+  "license": "CC BY-SA 4.0",
+  "also": [
+   {
+    "name": "Ministerio del Interior, Infoelectoral",
+    "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+    "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+   }
+  ]
+ },
+ "notes": [
+  "Tabla de resultados del Congreso del artículo de Wikipedia de cada elección; se comprueba que suma 350 escaños, que coincide con la leyenda del diagrama de escaños del mismo artículo y, en 2023, con Infoelectoral.",
+  "Candidaturas como las agrupa la tabla: un partido y sus listas asociadas en una comunidad cuentan juntos (por ejemplo, PSOE con el PSC) y una coalición cuenta como una sola candidatura.",
+  "Solo candidaturas con escaño."
+ ],
+ "pages": {
+  "1977-06": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1977",
+  "1979-03": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1979",
+  "1982-10": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1982",
+  "1986-06": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1986",
+  "1989-10": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1989",
+  "1993-06": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1993",
+  "1996-03": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_1996",
+  "2000-03": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2000",
+  "2004-03": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2004",
+  "2008-03": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2008",
+  "2011-11": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2011",
+  "2015-12": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2015",
+  "2016-06": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2016",
+  "2019-04": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_abril_de_2019",
+  "2019-11": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_noviembre_de_2019",
+  "2023-07": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a_de_2023"
+ },
+ "warnings": [
+  "2015-12: la leyenda de la ficha no coincide con la tabla ([123, 89, 42, 40, 12, 9, 9, 8, 6, 6, 2, 2, 1, 1] frente a [123, 90, 42, 40, 12, 9, 9, 8, 6, 6, 2, 2, 1])"
+ ],
+ "rows": [
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Unión de Centro Democrático (UCD)",
+   "seats": 165
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 118
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Partido Comunista de España (PCE)",
+   "seats": 20
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Federación de Partidos de Alianza Popular (AP)",
+   "seats": 16
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Pacte Democràtic per Catalunya (PDPC)",
+   "seats": 11
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Partido Nacionalista Vasco (PNV)",
+   "seats": 8
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Partido Socialista Popular-Unidad Socialista (PSP-US)",
+   "seats": 6
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Unió del Centre i la Democràcia Cristiana de Catalunya",
+   "seats": 2
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Esquerra de Catalunya (EC-FED)",
+   "seats": 1
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Euskadiko Ezkerra (EE)",
+   "seats": 1
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Candidatura Aragonesa Independiente de Centro",
+   "seats": 1
+  },
+  {
+   "election": "1977-06",
+   "year": 1977,
+   "list": "Candidatura Independiente de Centro (INDEP)",
+   "seats": 1
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Unión de Centro Democrático (UCD)",
+   "seats": 168
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 121
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Partido Comunista de España (PCE)",
+   "seats": 23
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Coalición Democrática (CD)",
+   "seats": 10
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 8
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 7
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Partido Socialista de Andalucía-Partido Andaluz (PSA-PA)",
+   "seats": 5
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Herri Batasuna (HB)",
+   "seats": 3
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Unión Nacional (UN)",
+   "seats": 1
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Esquerra Republicana de Catalunya-FNC-PSDC (ERC-FNC-PSDC)",
+   "seats": 1
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Euskadiko Ezkerra (EE)",
+   "seats": 1
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Unión del Pueblo Canario (UPC)",
+   "seats": 1
+  },
+  {
+   "election": "1979-03",
+   "year": 1979,
+   "list": "Partido Aragonés Regionalista (PAR)",
+   "seats": 1
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 202
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Alianza Popular-Partido Demócrata Popular (AP-PDP)",
+   "seats": 107
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 12
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Unión de Centro Democrático (UCD)",
+   "seats": 11
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 8
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Partido Comunista de España (PCE)",
+   "seats": 4
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Centro Democrático y Social (CDS)",
+   "seats": 2
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Herri Batasuna (HB)",
+   "seats": 2
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Esquerra Republicana de Catalunya (ERC)",
+   "seats": 1
+  },
+  {
+   "election": "1982-10",
+   "year": 1982,
+   "list": "Euskadiko Ezkerra-Izquierda para el Socialismo (EE)",
+   "seats": 1
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 184
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Coalición Popular (AP-PDP-PL)",
+   "seats": 105
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Centro Democrático y Social (CDS)",
+   "seats": 19
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 18
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Izquierda Unida (IU)",
+   "seats": 7
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 6
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Herri Batasuna (HB)",
+   "seats": 5
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Euskadiko Ezkerra (EE)",
+   "seats": 2
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Coalición Galega (CG)",
+   "seats": 1
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Partido Aragonés Regionalista (PAR)",
+   "seats": 1
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Agrupaciones Independientes de Canarias (AIC)",
+   "seats": 1
+  },
+  {
+   "election": "1986-06",
+   "year": 1986,
+   "list": "Unió Valenciana (UV)",
+   "seats": 1
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 175
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Partido Popular (PP)",
+   "seats": 107
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 18
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Izquierda Unida (IU)",
+   "seats": 17
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Centro Democrático y Social (CDS)",
+   "seats": 14
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 5
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Herri Batasuna (HB)",
+   "seats": 4
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Partido Andalucista (PA)",
+   "seats": 2
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Unió Valenciana (UV)",
+   "seats": 2
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Eusko Alkartasuna (EA)",
+   "seats": 2
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Euskadiko Ezkerra (EE)",
+   "seats": 2
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Partido Aragonés Regionalista (PAR)",
+   "seats": 1
+  },
+  {
+   "election": "1989-10",
+   "year": 1989,
+   "list": "Agrupaciones Independientes de Canarias (AIC)",
+   "seats": 1
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 159
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Partido Popular (PP)",
+   "seats": 141
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Izquierda Unida (IU)",
+   "seats": 18
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 17
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 5
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Coalición Canaria (CC)",
+   "seats": 4
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Herri Batasuna (HB)",
+   "seats": 2
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Esquerra Republicana de Catalunya (ERC)",
+   "seats": 1
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Partido Aragonés Regionalista (PAR)",
+   "seats": 1
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Eusko Alkartasuna-Euskal Ezkerra (EA)",
+   "seats": 1
+  },
+  {
+   "election": "1993-06",
+   "year": 1993,
+   "list": "Unió Valenciana (UV)",
+   "seats": 1
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Partido Popular (PP)",
+   "seats": 156
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 141
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Izquierda Unida (IU)",
+   "seats": 21
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 16
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 5
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Coalición Canaria (CC)",
+   "seats": 4
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Bloque Nacionalista Galego (BNG)",
+   "seats": 2
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Herri Batasuna (HB)",
+   "seats": 2
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Esquerra Republicana de Catalunya (ERC)",
+   "seats": 1
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Eusko Alkartasuna (EA)",
+   "seats": 1
+  },
+  {
+   "election": "1996-03",
+   "year": 1996,
+   "list": "Unió Valenciana (UV)",
+   "seats": 1
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Partido Popular (PP)",
+   "seats": 183
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Partido Socialista Obrero Español-Progresistas (PSOE-PROGR.)",
+   "seats": 125
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 15
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Izquierda Unida (IU)",
+   "seats": 8
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 7
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Coalición Canaria (CC)",
+   "seats": 4
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Bloque Nacionalista Galego (BNG)",
+   "seats": 3
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Partido Andalucista (PA)",
+   "seats": 1
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Esquerra Republicana de Catalunya (ERC)",
+   "seats": 1
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Iniciativa per Catalunya-Verds (ICV)",
+   "seats": 1
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Eusko Alkartasuna (EA)",
+   "seats": 1
+  },
+  {
+   "election": "2000-03",
+   "year": 2000,
+   "list": "Chunta Aragonesista (CHA)",
+   "seats": 1
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 164
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Partido Popular (PP)",
+   "seats": 148
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 10
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Esquerra Republicana de Catalunya (ERC)",
+   "seats": 8
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 7
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Izquierda Unida (IU)",
+   "seats": 5
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Coalición Canaria (CC)",
+   "seats": 3
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Bloque Nacionalista Galego (BNG)",
+   "seats": 2
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Chunta Aragonesista (CHA)",
+   "seats": 1
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Eusko Alkartasuna (EA)",
+   "seats": 1
+  },
+  {
+   "election": "2004-03",
+   "year": 2004,
+   "list": "Nafarroa Bai (NaBai)",
+   "seats": 1
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 169
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Partido Popular (PP)",
+   "seats": 154
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Convergència i Unió (CiU)",
+   "seats": 10
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Partido Nacionalista Vasco (EAJ/PNV)",
+   "seats": 6
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Esquerra Republicana de Catalunya (ERC)",
+   "seats": 3
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Izquierda Unida (IU)",
+   "seats": 2
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Bloque Nacionalista Galego (BNG)",
+   "seats": 2
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Coalición Canaria-Partido Nacionalista Canario (CC-PNC)",
+   "seats": 2
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Unión Progreso y Democracia (UPyD)",
+   "seats": 1
+  },
+  {
+   "election": "2008-03",
+   "year": 2008,
+   "list": "Nafarroa Bai (Na-Bai)",
+   "seats": 1
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Partido Popular",
+   "seats": 186
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Partido Socialista Obrero Español",
+   "seats": 110
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Convergència i Unió",
+   "seats": 16
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Izquierda Unida-Los Verdes: La Izquierda Plural",
+   "seats": 11
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Amaiur",
+   "seats": 7
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Unión Progreso y Democracia",
+   "seats": 5
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Partido Nacionalista Vasco",
+   "seats": 5
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Esquerra Republicana de Catalunya-Catalunya Sí",
+   "seats": 3
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Bloque Nacionalista Galego",
+   "seats": 2
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Coalición Canaria-Nueva Canarias",
+   "seats": 2
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Coalició Compromís",
+   "seats": 1
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Foro de Ciudadanos",
+   "seats": 1
+  },
+  {
+   "election": "2011-11",
+   "year": 2011,
+   "list": "Geroa Bai",
+   "seats": 1
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Partido Popular (en coalición con Partido Aragonés, Unión del Pueblo Navarro y Foro Asturias)",
+   "seats": 123
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Partido Socialista Obrero Español - Nueva Canarias",
+   "seats": 90
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Podemos",
+   "seats": 42
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Ciudadanos-Partido de la Ciudadanía",
+   "seats": 40
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "En Comú Podem",
+   "seats": 12
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Compromís-Podemos-És el moment",
+   "seats": 9
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Esquerra Republicana de Catalunya-Catalunya Sí",
+   "seats": 9
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Democràcia i Llibertat. Convergència. Demòcrates. Reagrupament",
+   "seats": 8
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "En Marea",
+   "seats": 6
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+   "seats": 6
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Unidad Popular: Izquierda Unida, Unidad Popular en Común",
+   "seats": 2
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Euskal Herria Bildu",
+   "seats": 2
+  },
+  {
+   "election": "2015-12",
+   "year": 2015,
+   "list": "Coalición Canaria-Partido Nacionalista Canario",
+   "seats": 1
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Partido Popular",
+   "seats": 137
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Partido Socialista Obrero Español",
+   "seats": 85
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Unidos Podemos",
+   "seats": 45
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Ciudadanos-Partido de la Ciudadanía",
+   "seats": 32
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "En Comú Podem-Guanyem el Canvi",
+   "seats": 12
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Compromís-Podemos-EUPV: A la Valenciana",
+   "seats": 9
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Esquerra Republicana de Catalunya-Catalunya Sí",
+   "seats": 9
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Convergència Democràtica de Catalunya",
+   "seats": 8
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "En Marea",
+   "seats": 5
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+   "seats": 5
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Euskal Herria Bildu",
+   "seats": 2
+  },
+  {
+   "election": "2016-06",
+   "year": 2016,
+   "list": "Coalición Canaria-Partido Nacionalista Canario",
+   "seats": 1
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Partido Socialista Obrero Español",
+   "seats": 123
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Partido Popular",
+   "seats": 66
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Ciudadanos-Partido de la Ciudadanía",
+   "seats": 57
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Unidas Podemos",
+   "seats": 33
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Vox",
+   "seats": 24
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Esquerra Republicana de Catalunya-Sobiranistes",
+   "seats": 15
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "En Comú Podem-Guanyem el Canvi",
+   "seats": 7
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Junts per Catalunya",
+   "seats": 7
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+   "seats": 6
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Euskal Herria Bildu",
+   "seats": 4
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "En Común",
+   "seats": 2
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Coalición Canaria-Partido Nacionalista Canario",
+   "seats": 2
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Navarra Suma",
+   "seats": 2
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Compromís",
+   "seats": 1
+  },
+  {
+   "election": "2019-04",
+   "year": 2019,
+   "list": "Partido Regionalista de Cantabria",
+   "seats": 1
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Partido Socialista Obrero Español (PSOE)",
+   "seats": 120
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Partido Popular (PP)",
+   "seats": 89
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Vox (Vox)",
+   "seats": 52
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Unidas Podemos (UP)",
+   "seats": 26
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Esquerra Republicana de Catalunya-Sobiranistes (ERC-Sobiranistes)",
+   "seats": 13
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Ciudadanos-Partido de la Ciudadanía (Cs)",
+   "seats": 10
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Junts per Catalunya (JxCat)",
+   "seats": 8
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "En Comú Podem-Guanyem el Canvi (ECP)",
+   "seats": 7
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco (EAJ-PNV)",
+   "seats": 6
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Euskal Herria Bildu (EH Bildu)",
+   "seats": 5
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Más País-EQUO (MP-EQUO)",
+   "seats": 2
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Candidatura d'Unitat Popular-Per la Ruptura (CUP-PR)",
+   "seats": 2
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "En Común (EC)",
+   "seats": 2
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Coalición Canaria-Nueva Canarias (CCa-NC)",
+   "seats": 2
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Navarra Suma (NA+)",
+   "seats": 2
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Més Compromís (MC)",
+   "seats": 1
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Bloque Nacionalista Galego (BNG)",
+   "seats": 1
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Partido Regionalista de Cantabria (PRC)",
+   "seats": 1
+  },
+  {
+   "election": "2019-11",
+   "year": 2019,
+   "list": "Teruel Existe (¡TE!)",
+   "seats": 1
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Partido Popular",
+   "seats": 137
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Partido Socialista Obrero Español",
+   "seats": 121
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Vox",
+   "seats": 33
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Sumar",
+   "seats": 31
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Esquerra Republicana de Catalunya",
+   "seats": 7
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Junts per Catalunya",
+   "seats": 7
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Euskal Herria Bildu",
+   "seats": 6
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+   "seats": 5
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Bloque Nacionalista Galego",
+   "seats": 1
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Coalición Canaria",
+   "seats": 1
+  },
+  {
+   "election": "2023-07",
+   "year": 2023,
+   "list": "Unión del Pueblo Navarro",
+   "seats": 1
+  }
+ ],
+ "retrieved": "2026-11-04"
+}

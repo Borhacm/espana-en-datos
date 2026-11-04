@@ -1,0 +1,230 @@
+{
+ "id": "n04-partidos-efectivos",
+ "lens": "tiempo",
+ "theme": "elecciones",
+ "title": {
+  "es": "Hasta 2011 el Congreso nunca pasó de 2,9 partidos efectivos; desde 2015 no ha bajado de 3,4",
+  "en": "Until 2011 Congress never went above 2.9 effective parties; since 2015 it has not fallen below 3.4"
+ },
+ "subtitle": {
+  "es": "Número efectivo de partidos en el Congreso según sus escaños, 1977-2023",
+  "en": "Effective number of parties in Congress by seats, 1977-2023"
+ },
+ "unit": {
+  "es": "partidos efectivos",
+  "en": "effective parties"
+ },
+ "source": {
+  "name": "Wikipedia, artículos de cada elección general al Congreso",
+  "dataset": "Tabla de resultados del Congreso de los Diputados, 1977-2023",
+  "url": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a",
+  "license": "CC BY-SA 4.0",
+  "also": [
+   {
+    "name": "Ministerio del Interior, Infoelectoral",
+    "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+    "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Número efectivo de partidos (índice de Laakso y Taagepera): 1 dividido entre la suma de los cuadrados de la proporción de escaños de cada candidatura. Vale 2 si dos partidos se reparten los escaños a partes iguales.",
+   "Candidaturas como las agrupa la tabla de resultados de cada elección: un partido y sus listas asociadas en una comunidad cuentan juntos (por ejemplo, PSOE con el PSC) y una coalición cuenta como una sola candidatura."
+  ],
+  "en": [
+   "Effective number of parties (Laakso-Taagepera index): 1 divided by the sum of the squared share of seats of each list. It equals 2 if two parties share the seats equally.",
+   "Lists as grouped in the results table of each election: a party and its associated lists in a region count together (for example, PSOE with the PSC) and a coalition counts as a single list."
+  ]
+ },
+ "retrieved": "2026-11-04",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "ES": {
+    "es": "Congreso",
+    "en": "Congress"
+   }
+  }
+ },
+ "time_labels": {
+  "1977.417": {
+   "es": "Junio de 1977",
+   "en": "June 1977"
+  },
+  "1979.167": {
+   "es": "Marzo de 1979",
+   "en": "March 1979"
+  },
+  "1982.75": {
+   "es": "Octubre de 1982",
+   "en": "October 1982"
+  },
+  "1986.417": {
+   "es": "Junio de 1986",
+   "en": "June 1986"
+  },
+  "1989.75": {
+   "es": "Octubre de 1989",
+   "en": "October 1989"
+  },
+  "1993.417": {
+   "es": "Junio de 1993",
+   "en": "June 1993"
+  },
+  "1996.167": {
+   "es": "Marzo de 1996",
+   "en": "March 1996"
+  },
+  "2000.167": {
+   "es": "Marzo de 2000",
+   "en": "March 2000"
+  },
+  "2004.167": {
+   "es": "Marzo de 2004",
+   "en": "March 2004"
+  },
+  "2008.167": {
+   "es": "Marzo de 2008",
+   "en": "March 2008"
+  },
+  "2011.833": {
+   "es": "Noviembre de 2011",
+   "en": "November 2011"
+  },
+  "2015.917": {
+   "es": "Diciembre de 2015",
+   "en": "December 2015"
+  },
+  "2016.417": {
+   "es": "Junio de 2016",
+   "en": "June 2016"
+  },
+  "2019.25": {
+   "es": "Abril de 2019",
+   "en": "April 2019"
+  },
+  "2019.833": {
+   "es": "Noviembre de 2019",
+   "en": "November 2019"
+  },
+  "2023.5": {
+   "es": "Julio de 2023",
+   "en": "July 2023"
+  }
+ },
+ "rows": [
+  {
+   "time": "1977.417",
+   "series": "ES",
+   "value": 2.91,
+   "election": "1977-06",
+   "lists": 12
+  },
+  {
+   "time": "1979.167",
+   "series": "ES",
+   "value": 2.81,
+   "election": "1979-03",
+   "lists": 13
+  },
+  {
+   "time": "1982.75",
+   "series": "ES",
+   "value": 2.33,
+   "election": "1982-10",
+   "lists": 10
+  },
+  {
+   "time": "1986.417",
+   "series": "ES",
+   "value": 2.68,
+   "election": "1986-06",
+   "lists": 12
+  },
+  {
+   "time": "1989.75",
+   "series": "ES",
+   "value": 2.85,
+   "election": "1989-10",
+   "lists": 13
+  },
+  {
+   "time": "1993.417",
+   "series": "ES",
+   "value": 2.67,
+   "election": "1993-06",
+   "lists": 11
+  },
+  {
+   "time": "1996.167",
+   "series": "ES",
+   "value": 2.72,
+   "election": "1996-03",
+   "lists": 11
+  },
+  {
+   "time": "2000.167",
+   "series": "ES",
+   "value": 2.48,
+   "election": "2000-03",
+   "lists": 12
+  },
+  {
+   "time": "2004.167",
+   "series": "ES",
+   "value": 2.5,
+   "election": "2004-03",
+   "lists": 11
+  },
+  {
+   "time": "2008.167",
+   "series": "ES",
+   "value": 2.34,
+   "election": "2008-03",
+   "lists": 10
+  },
+  {
+   "time": "2011.833",
+   "series": "ES",
+   "value": 2.6,
+   "election": "2011-11",
+   "lists": 13
+  },
+  {
+   "time": "2015.917",
+   "series": "ES",
+   "value": 4.53,
+   "election": "2015-12",
+   "lists": 13
+  },
+  {
+   "time": "2016.417",
+   "series": "ES",
+   "value": 4.16,
+   "election": "2016-06",
+   "lists": 12
+  },
+  {
+   "time": "2019.25",
+   "series": "ES",
+   "value": 4.94,
+   "election": "2019-04",
+   "lists": 15
+  },
+  {
+   "time": "2019.833",
+   "series": "ES",
+   "value": 4.68,
+   "election": "2019-11",
+   "lists": 19
+  },
+  {
+   "time": "2023.5",
+   "series": "ES",
+   "value": 3.44,
+   "election": "2023-07",
+   "lists": 11
+  }
+ ]
+}

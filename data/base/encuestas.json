@@ -19709,6 +19709,26 @@
    }
   },
   {
+   "pollster": "More in Common",
+   "commissioner": null,
+   "fieldwork": "21–25 Oct",
+   "date": "2026-10-25",
+   "sample": 2210,
+   "panel": false,
+   "reestimate": null,
+   "partisan": false,
+   "url": "https://moreincommones.substack.com/p/rumbo-al-29n-una-radiografia-de-la",
+   "values": {
+    "PP": 28.3,
+    "PSOE": 27.6,
+    "Vox": 20.8,
+    "Sumar": 7.8,
+    "AA": 2.6,
+    "Podemos": 2.4
+   },
+   "seats": null
+  },
+  {
    "pollster": "PSOE",
    "commissioner": null,
    "fieldwork": "25 Oct",
@@ -19954,7 +19974,7 @@
     "PP": 31.1,
     "PSOE": 24.6,
     "Vox": 19.3,
-    "Sumar": 8.0,
+    "Sumar": 8.4,
     "ERC": 3.0,
     "Junts": 1.1,
     "EH Bildu": 1.3,
@@ -19968,7 +19988,7 @@
     "PP": 136.0,
     "PSOE": 100.0,
     "Vox": 66.0,
-    "Sumar": 12.5,
+    "Sumar": 13.0,
     "ERC": 10.0,
     "Junts": 6,
     "EH Bildu": 7.5,
@@ -20048,5 +20068,5 @@
    }
   }
  ],
- "retrieved": "2026-11-02"
+ "retrieved": "2026-11-04"
 }

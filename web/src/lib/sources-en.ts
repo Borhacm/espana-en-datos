@@ -25,6 +25,7 @@ const EXACT: Record<string, string> = {
   "INE, Padrón de Españoles Residentes en el Extranjero": "INE, Register of Spaniards Resident Abroad (PERE)",
   "INE, Proyecciones de Población 2026-2075": "INE, Population Projections 2026-2075",
   "Ministerio del Interior, Infoelectoral": "Ministry of the Interior, Infoelectoral",
+  "Wikipedia, artículos de cada elección general al Congreso": "Spanish Wikipedia, articles on each general election to Congress",
   "Ministerio de Sanidad, Sistema de Información sobre Listas de Espera del SNS (SISLE-SNS)": "Ministry of Health, National Health System Waiting List Information System (SISLE-SNS)",
   "Ministerio de Sanidad, Estadística de Gasto Sanitario Público": "Ministry of Health, Public Health Expenditure Statistics",
   "Resultados de 2023: Ministerio del Interior": "2023 results: Ministry of the Interior",
@@ -36,6 +37,7 @@ const EXACT: Record<string, string> = {
   "BOE, Real Decreto 806/2026 de convocatoria (diputados por circunscripción)": "BOE (official gazette), Royal Decree 806/2026 calling the election (deputies per constituency)",
   "BOE, Real Decreto 126/2026 (salario mínimo de 2026: 1.221 euros al mes en 14 pagas)": "BOE (official gazette), Royal Decree 126/2026 (2026 minimum wage: 1,221 euros a month in 14 payments)",
   // Conjuntos de datos
+  "Tabla de resultados del Congreso de los Diputados, 1977-2023": "Results table for the Congress of Deputies, 1977-2023",
   "Cifras oficiales de población a 1 de enero de 2025": "Official population figures on 1 January 2025",
   "Convalidación o derogación de reales decretos-leyes": "Validation or repeal of royal decree-laws",
   "Encuestas recopiladas con su enlace original": "Polls collected with a link to the original",

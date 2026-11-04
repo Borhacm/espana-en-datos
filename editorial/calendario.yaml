@@ -121,6 +121,7 @@ piezas:
     mirada: tiempo
     titulo: "Un Congreso cada vez más fragmentado"
     idea: número efectivo de partidos y escaños de los dos mayores desde 1977 (Infoelectoral). Enlaza a la sección /congreso/ (cómo han votado los partidos esta legislatura) y puede reutilizar el gráfico CG-1 con su código completo.
+    estado: hecha
 
   - id: a09
     tipo: articulo

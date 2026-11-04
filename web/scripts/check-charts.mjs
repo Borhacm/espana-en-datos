@@ -35,7 +35,9 @@ page.on("pageerror", (e) => errors.push(`${page.url()}: ${e.message}`));
 let total = 0;
 const failed = [];
 // Todas las páginas: español en la raíz e inglés bajo /en/
-const paths = pages(DIST).sort();
+// Sin las páginas de redirección de Astro (redirects de astro.config.mjs): navegan solas y no tienen gráficos
+const isRedirect = (path) => /<meta http-equiv="refresh"/.test(readFileSync(join(DIST, path, "index.html"), "utf8").slice(0, 400));
+const paths = pages(DIST).filter((p) => !isRedirect(p)).sort();
 for (const path of paths) {
   await page.goto(base + path, { waitUntil: "load" });
   const figs = await page.$$("figure[data-chart]");

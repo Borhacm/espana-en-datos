@@ -1,0 +1,230 @@
+{
+ "id": "n04-dos-mayores",
+ "lens": "tiempo",
+ "theme": "elecciones",
+ "title": {
+  "es": "Los dos partidos con más escaños sumaron 323 diputados en 2008 y 189 en abril de 2019",
+  "en": "The two parties with most seats had 323 deputies between them in 2008 and 189 in April 2019"
+ },
+ "subtitle": {
+  "es": "Escaños de las dos candidaturas con más diputados, % de los 350 del Congreso, 1977-2023",
+  "en": "Seats of the two lists with most deputies, % of the 350 in Congress, 1977-2023"
+ },
+ "unit": {
+  "es": "% de los escaños",
+  "en": "% of seats"
+ },
+ "source": {
+  "name": "Wikipedia, artículos de cada elección general al Congreso",
+  "dataset": "Tabla de resultados del Congreso de los Diputados, 1977-2023",
+  "url": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Espa%C3%B1a",
+  "license": "CC BY-SA 4.0",
+  "also": [
+   {
+    "name": "Ministerio del Interior, Infoelectoral",
+    "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+    "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Las dos candidaturas con más escaños en cada elección: UCD y PSOE en 1977 y 1979; PSOE y AP (Coalición Popular en 1986) de 1982 a 1986; PSOE y PP desde 1989.",
+   "Candidaturas como las agrupa la tabla de resultados de cada elección: un partido y sus listas asociadas en una comunidad cuentan juntos (por ejemplo, PSOE con el PSC) y una coalición cuenta como una sola candidatura."
+  ],
+  "en": [
+   "The two lists with most seats in each election: UCD and PSOE in 1977 and 1979; PSOE and AP (Coalición Popular in 1986) from 1982 to 1986; PSOE and PP since 1989.",
+   "Lists as grouped in the results table of each election: a party and its associated lists in a region count together (for example, PSOE with the PSC) and a coalition counts as a single list."
+  ]
+ },
+ "retrieved": "2026-11-04",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "ES": {
+    "es": "Dos mayores",
+    "en": "Two largest"
+   }
+  }
+ },
+ "time_labels": {
+  "1977.417": {
+   "es": "Junio de 1977",
+   "en": "June 1977"
+  },
+  "1979.167": {
+   "es": "Marzo de 1979",
+   "en": "March 1979"
+  },
+  "1982.75": {
+   "es": "Octubre de 1982",
+   "en": "October 1982"
+  },
+  "1986.417": {
+   "es": "Junio de 1986",
+   "en": "June 1986"
+  },
+  "1989.75": {
+   "es": "Octubre de 1989",
+   "en": "October 1989"
+  },
+  "1993.417": {
+   "es": "Junio de 1993",
+   "en": "June 1993"
+  },
+  "1996.167": {
+   "es": "Marzo de 1996",
+   "en": "March 1996"
+  },
+  "2000.167": {
+   "es": "Marzo de 2000",
+   "en": "March 2000"
+  },
+  "2004.167": {
+   "es": "Marzo de 2004",
+   "en": "March 2004"
+  },
+  "2008.167": {
+   "es": "Marzo de 2008",
+   "en": "March 2008"
+  },
+  "2011.833": {
+   "es": "Noviembre de 2011",
+   "en": "November 2011"
+  },
+  "2015.917": {
+   "es": "Diciembre de 2015",
+   "en": "December 2015"
+  },
+  "2016.417": {
+   "es": "Junio de 2016",
+   "en": "June 2016"
+  },
+  "2019.25": {
+   "es": "Abril de 2019",
+   "en": "April 2019"
+  },
+  "2019.833": {
+   "es": "Noviembre de 2019",
+   "en": "November 2019"
+  },
+  "2023.5": {
+   "es": "Julio de 2023",
+   "en": "July 2023"
+  }
+ },
+ "rows": [
+  {
+   "time": "1977.417",
+   "series": "ES",
+   "value": 80.9,
+   "election": "1977-06",
+   "seats": 283
+  },
+  {
+   "time": "1979.167",
+   "series": "ES",
+   "value": 82.6,
+   "election": "1979-03",
+   "seats": 289
+  },
+  {
+   "time": "1982.75",
+   "series": "ES",
+   "value": 88.3,
+   "election": "1982-10",
+   "seats": 309
+  },
+  {
+   "time": "1986.417",
+   "series": "ES",
+   "value": 82.6,
+   "election": "1986-06",
+   "seats": 289
+  },
+  {
+   "time": "1989.75",
+   "series": "ES",
+   "value": 80.6,
+   "election": "1989-10",
+   "seats": 282
+  },
+  {
+   "time": "1993.417",
+   "series": "ES",
+   "value": 85.7,
+   "election": "1993-06",
+   "seats": 300
+  },
+  {
+   "time": "1996.167",
+   "series": "ES",
+   "value": 84.9,
+   "election": "1996-03",
+   "seats": 297
+  },
+  {
+   "time": "2000.167",
+   "series": "ES",
+   "value": 88.0,
+   "election": "2000-03",
+   "seats": 308
+  },
+  {
+   "time": "2004.167",
+   "series": "ES",
+   "value": 89.1,
+   "election": "2004-03",
+   "seats": 312
+  },
+  {
+   "time": "2008.167",
+   "series": "ES",
+   "value": 92.3,
+   "election": "2008-03",
+   "seats": 323
+  },
+  {
+   "time": "2011.833",
+   "series": "ES",
+   "value": 84.6,
+   "election": "2011-11",
+   "seats": 296
+  },
+  {
+   "time": "2015.917",
+   "series": "ES",
+   "value": 60.9,
+   "election": "2015-12",
+   "seats": 213
+  },
+  {
+   "time": "2016.417",
+   "series": "ES",
+   "value": 63.4,
+   "election": "2016-06",
+   "seats": 222
+  },
+  {
+   "time": "2019.25",
+   "series": "ES",
+   "value": 54.0,
+   "election": "2019-04",
+   "seats": 189
+  },
+  {
+   "time": "2019.833",
+   "series": "ES",
+   "value": 59.7,
+   "election": "2019-11",
+   "seats": 209
+  },
+  {
+   "time": "2023.5",
+   "series": "ES",
+   "value": 73.7,
+   "election": "2023-07",
+   "seats": 258
+  }
+ ]
+}
