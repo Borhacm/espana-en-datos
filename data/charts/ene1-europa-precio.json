@@ -1,0 +1,390 @@
+{
+ "id": "ene1-europa-precio",
+ "lens": "europa",
+ "theme": "energia",
+ "title": {
+  "es": "Los hogares españoles pagan la luz a 25,9 céntimos el kWh, por debajo de la media de la UE (28,6): 11 de los 27 países la pagan más cara",
+  "en": "Spanish households pay 25.9 cents per kWh for electricity, below the EU average (28.6): 11 of the 27 countries pay more"
+ },
+ "subtitle": {
+  "es": "Precio de la electricidad para los hogares con todos los impuestos, céntimos de euro por kWh. Media del segundo semestre de 2025 y primer semestre de 2026",
+  "en": "Household electricity price including all taxes, euro cents per kWh. Average of H2 2025 and H1 2026"
+ },
+ "unit": {
+  "es": "céntimos por kWh",
+  "en": "cents per kWh"
+ },
+ "source": {
+  "name": "Eurostat, precios de la electricidad para los hogares",
+  "license": "CC BY 4.0",
+  "dataset": "nrg_pc_204",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table"
+ },
+ "notes": {
+  "es": [
+   "Precio medio de la electricidad para los hogares con un consumo de 2.500 a 5.000 kWh al año (la banda de consumo más habitual en la UE), con todos los impuestos. Incluye la parte fija (potencia) y la variable (energía) de la factura.",
+   "Media de los dos últimos semestres publicados, para no depender de la estación del año.",
+   "En euros no se tiene en cuenta que el nivel de precios y de salarios es distinto en cada país. En paridad de poder de compra (PPA), que lo corrige, España queda prácticamente en la media de la UE."
+  ],
+  "en": [
+   "Average electricity price for households consuming 2,500 to 5,000 kWh a year (the most common consumption band in the EU), including all taxes. It includes the fixed (capacity) and variable (energy) parts of the bill.",
+   "Average of the last two half-years published, so as not to depend on the season.",
+   "Figures in euros do not take into account that price and wage levels differ between countries. In purchasing power standards (PPS), which correct for this, Spain is practically at the EU average."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "time": {
+   "ultimo": {
+    "es": "Último año",
+    "en": "Last year"
+   }
+  }
+ },
+ "semesters": [
+  "2025-S2",
+  "2026-S1"
+ ],
+ "countries_above": [
+  "IRL",
+  "DEU",
+  "BEL",
+  "AUT",
+  "CZE",
+  "ITA",
+  "SWE",
+  "ROU",
+  "POL",
+  "DNK",
+  "CYP"
+ ],
+ "pps": {
+  "ESP": 28.9,
+  "EU27": 28.7,
+  "countries_above": [
+   "ROU",
+   "POL",
+   "CZE",
+   "DEU",
+   "IRL",
+   "ITA",
+   "BEL",
+   "LVA",
+   "CYP",
+   "GRC"
+  ],
+  "n": 27
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "ultimo",
+   "value": 32.7
+  },
+  {
+   "geo": "BEL",
+   "time": "ultimo",
+   "value": 35.4
+  },
+  {
+   "geo": "BGR",
+   "time": "ultimo",
+   "value": 13.5
+  },
+  {
+   "geo": "CYP",
+   "time": "ultimo",
+   "value": 27.3
+  },
+  {
+   "geo": "CZE",
+   "time": "ultimo",
+   "value": 30.5
+  },
+  {
+   "geo": "DEU",
+   "time": "ultimo",
+   "value": 37.4
+  },
+  {
+   "geo": "DNK",
+   "time": "ultimo",
+   "value": 28.4
+  },
+  {
+   "geo": "ESP",
+   "time": "ultimo",
+   "value": 25.9
+  },
+  {
+   "geo": "EST",
+   "time": "ultimo",
+   "value": 22.1
+  },
+  {
+   "geo": "EU27",
+   "time": "ultimo",
+   "value": 28.6
+  },
+  {
+   "geo": "FIN",
+   "time": "ultimo",
+   "value": 24.7
+  },
+  {
+   "geo": "FRA",
+   "time": "ultimo",
+   "value": 25.2
+  },
+  {
+   "geo": "GRC",
+   "time": "ultimo",
+   "value": 23.9
+  },
+  {
+   "geo": "HRV",
+   "time": "ultimo",
+   "value": 17.3
+  },
+  {
+   "geo": "HUN",
+   "time": "ultimo",
+   "value": 11.1
+  },
+  {
+   "geo": "IRL",
+   "time": "ultimo",
+   "value": 39.6
+  },
+  {
+   "geo": "ITA",
+   "time": "ultimo",
+   "value": 30.5
+  },
+  {
+   "geo": "LTU",
+   "time": "ultimo",
+   "value": 20.6
+  },
+  {
+   "geo": "LUX",
+   "time": "ultimo",
+   "value": 23.4
+  },
+  {
+   "geo": "LVA",
+   "time": "ultimo",
+   "value": 24.3
+  },
+  {
+   "geo": "MLT",
+   "time": "ultimo",
+   "value": 12.8
+  },
+  {
+   "geo": "NLD",
+   "time": "ultimo",
+   "value": 25.0
+  },
+  {
+   "geo": "POL",
+   "time": "ultimo",
+   "value": 28.5
+  },
+  {
+   "geo": "PRT",
+   "time": "ultimo",
+   "value": 24.0
+  },
+  {
+   "geo": "ROU",
+   "time": "ultimo",
+   "value": 28.6
+  },
+  {
+   "geo": "SVK",
+   "time": "ultimo",
+   "value": 19.2
+  },
+  {
+   "geo": "SVN",
+   "time": "ultimo",
+   "value": 21.2
+  },
+  {
+   "geo": "SWE",
+   "time": "ultimo",
+   "value": 28.9
+  }
+ ]
+}

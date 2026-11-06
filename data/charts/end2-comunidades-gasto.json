@@ -1,0 +1,326 @@
+{
+ "id": "end2-comunidades-gasto",
+ "lens": "dentro",
+ "theme": "energia",
+ "title": {
+  "es": "Los hogares de Castilla-La Mancha gastan 1.563 euros al año en luz, gas y otros combustibles para la vivienda; los de Canarias, 778",
+  "en": "Households in Castile-La Mancha spend 1,563 euros a year on electricity, gas and other fuels for the home; those in the Canary Islands, 778"
+ },
+ "subtitle": {
+  "es": "Gasto medio por hogar en electricidad, gas y otros combustibles de la vivienda, 2025, euros. España: 1.255 euros",
+  "en": "Average spending per household on electricity, gas and other household fuels, 2025, euros. Spain: 1,255 euros"
+ },
+ "unit": {
+  "es": "euros por hogar",
+  "en": "euros per household"
+ },
+ "source": {
+  "name": "INE, Encuesta de Presupuestos Familiares",
+  "dataset": "Tablas 73992 y 73993",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=73992",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Gasto de los hogares en la electricidad, el gas (natural y butano o propano), el gasóleo y otros combustibles de su vivienda principal. No incluye el combustible del coche.",
+   "Gasto por hogar: depende también del tamaño de los hogares y de las viviendas de cada comunidad.",
+   "Las ayudas como el bono social reducen la factura y, por tanto, el gasto que declara el hogar."
+  ],
+  "en": [
+   "Household spending on electricity, gas (natural gas and butane or propane), heating oil and other fuels for their main home. It does not include car fuel.",
+   "Spending per household: it also depends on the size of households and homes in each region.",
+   "Support such as the bono social (Spain's discounted electricity tariff for vulnerable households) reduces the bill and therefore the spending households report."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "electricity_share": {
+  "01": 85.5,
+  "02": 58.4,
+  "03": 63.6,
+  "04": 82.0,
+  "05": 92.6,
+  "06": 60.5,
+  "07": 48.8,
+  "08": 58.8,
+  "09": 66.8,
+  "10": 83.6,
+  "11": 71.2,
+  "12": 63.8,
+  "13": 60.8,
+  "14": 85.8,
+  "15": 53.4,
+  "16": 61.7,
+  "17": 49.8,
+  "18": 87.9,
+  "19": 89.7,
+  "ES": 69.3
+ },
+ "budget_share": {
+  "01": 3.45,
+  "02": 4.13,
+  "03": 4.37,
+  "04": 3.42,
+  "05": 2.36,
+  "06": 3.62,
+  "07": 4.58,
+  "08": 4.96,
+  "09": 3.57,
+  "10": 3.24,
+  "11": 4.19,
+  "12": 4.05,
+  "13": 3.35,
+  "14": 3.55,
+  "15": 4.12,
+  "16": 2.98,
+  "17": 4.08,
+  "18": 2.29,
+  "19": 2.6,
+  "ES": 3.57
+ },
+ "electricity": {
+  "ES": 869,
+  "01": 909,
+  "02": 845,
+  "03": 872,
+  "04": 1061,
+  "05": 720,
+  "06": 773,
+  "07": 707,
+  "08": 919,
+  "09": 909,
+  "10": 920,
+  "11": 863,
+  "12": 855,
+  "13": 854,
+  "14": 1025,
+  "15": 778,
+  "16": 713,
+  "17": 691,
+  "18": 684,
+  "19": 819
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2025",
+   "value": 1063
+  },
+  {
+   "geo": "02",
+   "time": "2025",
+   "value": 1447
+  },
+  {
+   "geo": "03",
+   "time": "2025",
+   "value": 1371
+  },
+  {
+   "geo": "04",
+   "time": "2025",
+   "value": 1293
+  },
+  {
+   "geo": "05",
+   "time": "2025",
+   "value": 778
+  },
+  {
+   "geo": "06",
+   "time": "2025",
+   "value": 1277
+  },
+  {
+   "geo": "07",
+   "time": "2025",
+   "value": 1448
+  },
+  {
+   "geo": "08",
+   "time": "2025",
+   "value": 1563
+  },
+  {
+   "geo": "09",
+   "time": "2025",
+   "value": 1362
+  },
+  {
+   "geo": "10",
+   "time": "2025",
+   "value": 1100
+  },
+  {
+   "geo": "11",
+   "time": "2025",
+   "value": 1212
+  },
+  {
+   "geo": "12",
+   "time": "2025",
+   "value": 1340
+  },
+  {
+   "geo": "13",
+   "time": "2025",
+   "value": 1405
+  },
+  {
+   "geo": "14",
+   "time": "2025",
+   "value": 1196
+  },
+  {
+   "geo": "15",
+   "time": "2025",
+   "value": 1456
+  },
+  {
+   "geo": "16",
+   "time": "2025",
+   "value": 1157
+  },
+  {
+   "geo": "17",
+   "time": "2025",
+   "value": 1386
+  },
+  {
+   "geo": "18",
+   "time": "2025",
+   "value": 778
+  },
+  {
+   "geo": "19",
+   "time": "2025",
+   "value": 913
+  },
+  {
+   "geo": "ES",
+   "time": "2025",
+   "value": 1255
+  }
+ ]
+}

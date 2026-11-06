@@ -1,0 +1,370 @@
+{
+ "id": "end1-comunidades-frio",
+ "lens": "dentro",
+ "theme": "energia",
+ "title": {
+  "es": "En Murcia, el 23,4 % de los hogares no puede mantener la casa caliente; en Navarra, el 11,0 %",
+  "en": "In Murcia, 23.4% of households cannot keep their home warm; in Navarre, 11.0%"
+ },
+ "subtitle": {
+  "es": "Hogares que no pueden permitirse mantener la vivienda a una temperatura adecuada, media 2023-2025, en %. España: 18,2 %",
+  "en": "Households that cannot afford to keep their home adequately warm, 2023-2025 average, in %. Spain: 18.2%"
+ },
+ "unit": {
+  "es": "% de los hogares",
+  "en": "% of households"
+ },
+ "source": {
+  "name": "INE, Encuesta de Condiciones de Vida",
+  "dataset": "Tabla 9975",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=9975",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Hogares que declaran que no pueden permitirse mantener la vivienda a una temperatura adecuada en invierno. Es una respuesta a una encuesta, no una medida de temperatura ni de gasto.",
+   "Media de los tres últimos años: la muestra de cada comunidad es pequeña y el dato de un solo año varía mucho. Ceuta y Melilla tienen muestras aún más pequeñas.",
+   "Porcentaje de hogares (el de Eurostat del gráfico anterior es de personas)."
+  ],
+  "en": [
+   "Households reporting that they cannot afford to keep their home adequately warm in winter. It is a survey answer, not a measure of temperature or spending.",
+   "Average of the last three years: each region's sample is small and a single year's figure varies a lot. Ceuta and Melilla have even smaller samples.",
+   "Share of households (the Eurostat figure in the previous chart is of people)."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "2023-2025": {
+    "es": "Media 2023-2025",
+    "en": "2023-2025 average"
+   }
+  }
+ },
+ "years": {
+  "ES": {
+   "2023": 21.0,
+   "2024": 17.4,
+   "2025": 16.1
+  },
+  "01": {
+   "2023": 24.0,
+   "2024": 20.1,
+   "2025": 18.7
+  },
+  "02": {
+   "2023": 13.7,
+   "2024": 13.0,
+   "2025": 11.3
+  },
+  "03": {
+   "2023": 17.8,
+   "2024": 15.2,
+   "2025": 16.2
+  },
+  "04": {
+   "2023": 20.2,
+   "2024": 15.6,
+   "2025": 14.0
+  },
+  "05": {
+   "2023": 24.0,
+   "2024": 16.8,
+   "2025": 18.2
+  },
+  "06": {
+   "2023": 20.4,
+   "2024": 15.9,
+   "2025": 14.3
+  },
+  "07": {
+   "2023": 15.3,
+   "2024": 14.7,
+   "2025": 12.0
+  },
+  "08": {
+   "2023": 23.0,
+   "2024": 19.5,
+   "2025": 19.7
+  },
+  "09": {
+   "2023": 20.7,
+   "2024": 17.8,
+   "2025": 16.3
+  },
+  "10": {
+   "2023": 22.8,
+   "2024": 17.8,
+   "2025": 14.8
+  },
+  "11": {
+   "2023": 26.8,
+   "2024": 21.7,
+   "2025": 20.2
+  },
+  "12": {
+   "2023": 22.7,
+   "2024": 18.4,
+   "2025": 17.9
+  },
+  "13": {
+   "2023": 19.4,
+   "2024": 16.2,
+   "2025": 15.3
+  },
+  "14": {
+   "2023": 28.5,
+   "2024": 20.9,
+   "2025": 20.7
+  },
+  "15": {
+   "2023": 12.9,
+   "2024": 12.4,
+   "2025": 7.8
+  },
+  "16": {
+   "2023": 12.6,
+   "2024": 12.6,
+   "2025": 10.4
+  },
+  "17": {
+   "2023": 16.4,
+   "2024": 14.6,
+   "2025": 14.2
+  },
+  "18": {
+   "2023": 30.5,
+   "2024": 24.2,
+   "2025": 21.7
+  },
+  "19": {
+   "2023": 15.1,
+   "2024": 15.6,
+   "2025": 17.6
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023-2025",
+   "value": 20.9
+  },
+  {
+   "geo": "02",
+   "time": "2023-2025",
+   "value": 12.7
+  },
+  {
+   "geo": "03",
+   "time": "2023-2025",
+   "value": 16.4
+  },
+  {
+   "geo": "04",
+   "time": "2023-2025",
+   "value": 16.6
+  },
+  {
+   "geo": "05",
+   "time": "2023-2025",
+   "value": 19.7
+  },
+  {
+   "geo": "06",
+   "time": "2023-2025",
+   "value": 16.9
+  },
+  {
+   "geo": "07",
+   "time": "2023-2025",
+   "value": 14.0
+  },
+  {
+   "geo": "08",
+   "time": "2023-2025",
+   "value": 20.7
+  },
+  {
+   "geo": "09",
+   "time": "2023-2025",
+   "value": 18.3
+  },
+  {
+   "geo": "10",
+   "time": "2023-2025",
+   "value": 18.5
+  },
+  {
+   "geo": "11",
+   "time": "2023-2025",
+   "value": 22.9
+  },
+  {
+   "geo": "12",
+   "time": "2023-2025",
+   "value": 19.7
+  },
+  {
+   "geo": "13",
+   "time": "2023-2025",
+   "value": 17.0
+  },
+  {
+   "geo": "14",
+   "time": "2023-2025",
+   "value": 23.4
+  },
+  {
+   "geo": "15",
+   "time": "2023-2025",
+   "value": 11.0
+  },
+  {
+   "geo": "16",
+   "time": "2023-2025",
+   "value": 11.9
+  },
+  {
+   "geo": "17",
+   "time": "2023-2025",
+   "value": 15.1
+  },
+  {
+   "geo": "18",
+   "time": "2023-2025",
+   "value": 25.5
+  },
+  {
+   "geo": "19",
+   "time": "2023-2025",
+   "value": 16.1
+  },
+  {
+   "geo": "ES",
+   "time": "2023-2025",
+   "value": 18.2
+  }
+ ]
+}

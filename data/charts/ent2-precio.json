@@ -1,0 +1,595 @@
+{
+ "id": "ent2-precio",
+ "lens": "tiempo",
+ "theme": "energia",
+ "title": {
+  "es": "La luz de los hogares fue más cara en España que en la media de la UE desde la segunda mitad de 2009 hasta 2022; desde 2023 es más barata",
+  "en": "Household electricity was more expensive in Spain than the EU average from the second half of 2009 until 2022; since 2023 it has been cheaper"
+ },
+ "subtitle": {
+  "es": "Precio de la electricidad para los hogares con todos los impuestos, céntimos de euro por kWh, por semestres, segundo semestre de 2007 a primer semestre de 2026",
+  "en": "Household electricity price including all taxes, euro cents per kWh, by half-year, H2 2007 to H1 2026"
+ },
+ "unit": {
+  "es": "céntimos por kWh",
+  "en": "cents per kWh"
+ },
+ "source": {
+  "name": "Eurostat, precios de la electricidad para los hogares",
+  "license": "CC BY 4.0",
+  "dataset": "nrg_pc_204",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table"
+ },
+ "notes": {
+  "es": [
+   "Precio medio de la electricidad para los hogares con un consumo de 2.500 a 5.000 kWh al año (la banda de consumo más habitual en la UE), con todos los impuestos. Incluye la parte fija (potencia) y la variable (energía) de la factura.",
+   "Hasta 2017, Eurostat calculaba estos precios con reglas algo distintas; la comparación entre España y la UE en cada momento sí es homogénea.",
+   "UE: los 27 países actuales en toda la serie. Precios corrientes, sin descontar la inflación."
+  ],
+  "en": [
+   "Average electricity price for households consuming 2,500 to 5,000 kWh a year (the most common consumption band in the EU), including all taxes. It includes the fixed (capacity) and variable (energy) parts of the bill.",
+   "Until 2017, Eurostat calculated these prices using slightly different rules; the comparison between Spain and the EU at each point in time is consistent.",
+   "EU: the current 27 countries throughout the series. Current prices, not adjusted for inflation."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "UE",
+    "en": "EU"
+   }
+  }
+ },
+ "time_labels": {
+  "2007.5": {
+   "es": "Segundo semestre de 2007",
+   "en": "H2 2007"
+  },
+  "2008": {
+   "es": "Primer semestre de 2008",
+   "en": "H1 2008"
+  },
+  "2008.5": {
+   "es": "Segundo semestre de 2008",
+   "en": "H2 2008"
+  },
+  "2009": {
+   "es": "Primer semestre de 2009",
+   "en": "H1 2009"
+  },
+  "2009.5": {
+   "es": "Segundo semestre de 2009",
+   "en": "H2 2009"
+  },
+  "2010": {
+   "es": "Primer semestre de 2010",
+   "en": "H1 2010"
+  },
+  "2010.5": {
+   "es": "Segundo semestre de 2010",
+   "en": "H2 2010"
+  },
+  "2011": {
+   "es": "Primer semestre de 2011",
+   "en": "H1 2011"
+  },
+  "2011.5": {
+   "es": "Segundo semestre de 2011",
+   "en": "H2 2011"
+  },
+  "2012": {
+   "es": "Primer semestre de 2012",
+   "en": "H1 2012"
+  },
+  "2012.5": {
+   "es": "Segundo semestre de 2012",
+   "en": "H2 2012"
+  },
+  "2013": {
+   "es": "Primer semestre de 2013",
+   "en": "H1 2013"
+  },
+  "2013.5": {
+   "es": "Segundo semestre de 2013",
+   "en": "H2 2013"
+  },
+  "2014": {
+   "es": "Primer semestre de 2014",
+   "en": "H1 2014"
+  },
+  "2014.5": {
+   "es": "Segundo semestre de 2014",
+   "en": "H2 2014"
+  },
+  "2015": {
+   "es": "Primer semestre de 2015",
+   "en": "H1 2015"
+  },
+  "2015.5": {
+   "es": "Segundo semestre de 2015",
+   "en": "H2 2015"
+  },
+  "2016": {
+   "es": "Primer semestre de 2016",
+   "en": "H1 2016"
+  },
+  "2016.5": {
+   "es": "Segundo semestre de 2016",
+   "en": "H2 2016"
+  },
+  "2017": {
+   "es": "Primer semestre de 2017",
+   "en": "H1 2017"
+  },
+  "2017.5": {
+   "es": "Segundo semestre de 2017",
+   "en": "H2 2017"
+  },
+  "2018": {
+   "es": "Primer semestre de 2018",
+   "en": "H1 2018"
+  },
+  "2018.5": {
+   "es": "Segundo semestre de 2018",
+   "en": "H2 2018"
+  },
+  "2019": {
+   "es": "Primer semestre de 2019",
+   "en": "H1 2019"
+  },
+  "2019.5": {
+   "es": "Segundo semestre de 2019",
+   "en": "H2 2019"
+  },
+  "2020": {
+   "es": "Primer semestre de 2020",
+   "en": "H1 2020"
+  },
+  "2020.5": {
+   "es": "Segundo semestre de 2020",
+   "en": "H2 2020"
+  },
+  "2021": {
+   "es": "Primer semestre de 2021",
+   "en": "H1 2021"
+  },
+  "2021.5": {
+   "es": "Segundo semestre de 2021",
+   "en": "H2 2021"
+  },
+  "2022": {
+   "es": "Primer semestre de 2022",
+   "en": "H1 2022"
+  },
+  "2022.5": {
+   "es": "Segundo semestre de 2022",
+   "en": "H2 2022"
+  },
+  "2023": {
+   "es": "Primer semestre de 2023",
+   "en": "H1 2023"
+  },
+  "2023.5": {
+   "es": "Segundo semestre de 2023",
+   "en": "H2 2023"
+  },
+  "2024": {
+   "es": "Primer semestre de 2024",
+   "en": "H1 2024"
+  },
+  "2024.5": {
+   "es": "Segundo semestre de 2024",
+   "en": "H2 2024"
+  },
+  "2025": {
+   "es": "Primer semestre de 2025",
+   "en": "H1 2025"
+  },
+  "2025.5": {
+   "es": "Segundo semestre de 2025",
+   "en": "H2 2025"
+  },
+  "2026": {
+   "es": "Primer semestre de 2026",
+   "en": "H1 2026"
+  }
+ },
+ "above": {
+  "start": "2009-S2",
+  "end": "2022-S2"
+ },
+ "below_since": "2023-S1",
+ "peak": {
+  "time": "2022-S2",
+  "ESP": 33.5,
+  "EU27": 27.7
+ },
+ "rows": [
+  {
+   "time": "2007.5",
+   "series": "espana",
+   "value": 14.0
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 13.7
+  },
+  {
+   "time": "2008.5",
+   "series": "espana",
+   "value": 15.6
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 15.8
+  },
+  {
+   "time": "2009.5",
+   "series": "espana",
+   "value": 16.8
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 17.3
+  },
+  {
+   "time": "2010.5",
+   "series": "espana",
+   "value": 18.5
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 19.8
+  },
+  {
+   "time": "2011.5",
+   "series": "espana",
+   "value": 20.9
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 21.9
+  },
+  {
+   "time": "2012.5",
+   "series": "espana",
+   "value": 22.8
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 22.3
+  },
+  {
+   "time": "2013.5",
+   "series": "espana",
+   "value": 22.7
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 21.6
+  },
+  {
+   "time": "2014.5",
+   "series": "espana",
+   "value": 23.7
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 23.1
+  },
+  {
+   "time": "2015.5",
+   "series": "espana",
+   "value": 23.7
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 21.9
+  },
+  {
+   "time": "2016.5",
+   "series": "espana",
+   "value": 22.8
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 23.0
+  },
+  {
+   "time": "2017.5",
+   "series": "espana",
+   "value": 21.8
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 23.8
+  },
+  {
+   "time": "2018.5",
+   "series": "espana",
+   "value": 24.8
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 24.0
+  },
+  {
+   "time": "2019.5",
+   "series": "espana",
+   "value": 23.9
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 22.4
+  },
+  {
+   "time": "2020.5",
+   "series": "espana",
+   "value": 23.0
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 23.2
+  },
+  {
+   "time": "2021.5",
+   "series": "espana",
+   "value": 28.2
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 30.7
+  },
+  {
+   "time": "2022.5",
+   "series": "espana",
+   "value": 33.5
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 24.5
+  },
+  {
+   "time": "2023.5",
+   "series": "espana",
+   "value": 23.5
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 24.4
+  },
+  {
+   "time": "2024.5",
+   "series": "espana",
+   "value": 24.1
+  },
+  {
+   "time": "2025",
+   "series": "espana",
+   "value": 26.1
+  },
+  {
+   "time": "2025.5",
+   "series": "espana",
+   "value": 26.7
+  },
+  {
+   "time": "2026",
+   "series": "espana",
+   "value": 25.1
+  },
+  {
+   "time": "2007.5",
+   "series": "ue",
+   "value": 15.4
+  },
+  {
+   "time": "2008",
+   "series": "ue",
+   "value": 16.0
+  },
+  {
+   "time": "2008.5",
+   "series": "ue",
+   "value": 16.8
+  },
+  {
+   "time": "2009",
+   "series": "ue",
+   "value": 16.7
+  },
+  {
+   "time": "2009.5",
+   "series": "ue",
+   "value": 16.8
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 17.2
+  },
+  {
+   "time": "2010.5",
+   "series": "ue",
+   "value": 17.8
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 18.6
+  },
+  {
+   "time": "2011.5",
+   "series": "ue",
+   "value": 18.9
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 19.2
+  },
+  {
+   "time": "2012.5",
+   "series": "ue",
+   "value": 20.0
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 20.4
+  },
+  {
+   "time": "2013.5",
+   "series": "ue",
+   "value": 20.6
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 20.6
+  },
+  {
+   "time": "2014.5",
+   "series": "ue",
+   "value": 20.8
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 20.8
+  },
+  {
+   "time": "2015.5",
+   "series": "ue",
+   "value": 20.9
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 20.5
+  },
+  {
+   "time": "2016.5",
+   "series": "ue",
+   "value": 20.7
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 20.9
+  },
+  {
+   "time": "2017.5",
+   "series": "ue",
+   "value": 20.9
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 21.0
+  },
+  {
+   "time": "2018.5",
+   "series": "ue",
+   "value": 21.5
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 21.7
+  },
+  {
+   "time": "2019.5",
+   "series": "ue",
+   "value": 21.7
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 21.4
+  },
+  {
+   "time": "2020.5",
+   "series": "ue",
+   "value": 21.5
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 22.0
+  },
+  {
+   "time": "2021.5",
+   "series": "ue",
+   "value": 24.1
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 24.9
+  },
+  {
+   "time": "2022.5",
+   "series": "ue",
+   "value": 27.7
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 28.9
+  },
+  {
+   "time": "2023.5",
+   "series": "ue",
+   "value": 28.5
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 29.2
+  },
+  {
+   "time": "2024.5",
+   "series": "ue",
+   "value": 28.9
+  },
+  {
+   "time": "2025",
+   "series": "ue",
+   "value": 28.8
+  },
+  {
+   "time": "2025.5",
+   "series": "ue",
+   "value": 29.0
+  },
+  {
+   "time": "2026",
+   "series": "ue",
+   "value": 28.3
+  }
+ ]
+}

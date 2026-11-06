@@ -1,0 +1,320 @@
+{
+ "id": "ent3-dependencia",
+ "lens": "tiempo",
+ "theme": "energia",
+ "title": {
+  "es": "España importó en 2024 el 68,9 % de la energía que utiliza, frente al 81,6 % de 2008; sigue 11,6 puntos por encima de la UE",
+  "en": "In 2024, Spain imported 68.9% of the energy it uses, down from 81.6% in 2008; it remains 11.6 points above the EU"
+ },
+ "subtitle": {
+  "es": "Dependencia energética: importaciones netas en % de la energía disponible, 2000-2024",
+  "en": "Energy import dependency: net imports as % of available energy, 2000-2024"
+ },
+ "unit": {
+  "es": "% de la energía disponible",
+  "en": "% of available energy"
+ },
+ "source": {
+  "name": "Eurostat, balances energéticos",
+  "license": "CC BY 4.0",
+  "dataset": "nrg_ind_id",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table"
+ },
+ "notes": {
+  "es": [
+   "Importaciones menos exportaciones de todos los productos energéticos, en % de la energía bruta disponible (producción más importaciones netas y variación de existencias).",
+   "Por convenio estadístico, la energía nuclear cuenta como producción propia aunque el uranio se importe.",
+   "UE: dependencia del conjunto de los 27 frente al resto del mundo, no la media de los países."
+  ],
+  "en": [
+   "Imports minus exports of all energy products, as % of gross available energy (production plus net imports and stock changes).",
+   "By statistical convention, nuclear energy counts as domestic production even though the uranium is imported.",
+   "EU: dependency of the 27 as a whole on the rest of the world, not the average of the countries."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "UE",
+    "en": "EU"
+   }
+  }
+ },
+ "peak": {
+  "year": 2008,
+  "value": 81.6
+ },
+ "gap": 11.6,
+ "by_fuel": {
+  "G3000": {
+   "ESP": 97.4,
+   "EU27": 85.0
+  },
+  "O4000XBIO": {
+   "ESP": 100.3,
+   "EU27": 96.6
+  },
+  "C0000X0350-0370": {
+   "ESP": 84.7,
+   "EU27": 34.2
+  }
+ },
+ "rows": [
+  {
+   "time": "2000",
+   "series": "espana",
+   "value": 76.8
+  },
+  {
+   "time": "2001",
+   "series": "espana",
+   "value": 74.8
+  },
+  {
+   "time": "2002",
+   "series": "espana",
+   "value": 78.6
+  },
+  {
+   "time": "2003",
+   "series": "espana",
+   "value": 76.7
+  },
+  {
+   "time": "2004",
+   "series": "espana",
+   "value": 77.7
+  },
+  {
+   "time": "2005",
+   "series": "espana",
+   "value": 81.5
+  },
+  {
+   "time": "2006",
+   "series": "espana",
+   "value": 81.3
+  },
+  {
+   "time": "2007",
+   "series": "espana",
+   "value": 79.6
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 81.6
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 79.5
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 77.0
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 76.0
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 72.8
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 70.0
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 72.6
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 72.7
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 71.5
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 73.9
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 73.6
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 75.0
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 67.9
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 69.4
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 74.2
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 68.3
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 68.9
+  },
+  {
+   "time": "2000",
+   "series": "ue",
+   "value": 56.3
+  },
+  {
+   "time": "2001",
+   "series": "ue",
+   "value": 55.8
+  },
+  {
+   "time": "2002",
+   "series": "ue",
+   "value": 56.3
+  },
+  {
+   "time": "2003",
+   "series": "ue",
+   "value": 56.9
+  },
+  {
+   "time": "2004",
+   "series": "ue",
+   "value": 56.9
+  },
+  {
+   "time": "2005",
+   "series": "ue",
+   "value": 57.8
+  },
+  {
+   "time": "2006",
+   "series": "ue",
+   "value": 58.2
+  },
+  {
+   "time": "2007",
+   "series": "ue",
+   "value": 57.2
+  },
+  {
+   "time": "2008",
+   "series": "ue",
+   "value": 58.4
+  },
+  {
+   "time": "2009",
+   "series": "ue",
+   "value": 57.2
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 55.7
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 56.3
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 54.9
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 53.9
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 54.4
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 56.0
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 56.1
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 57.5
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 58.1
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 60.5
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 57.5
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 55.5
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 62.5
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 58.3
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 57.3
+  }
+ ]
+}

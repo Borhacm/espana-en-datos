@@ -129,6 +129,7 @@ piezas:
     tema: energia
     titulo: "Energía: precio de la luz, renovables y dependencia"
     idea: precio de la electricidad para hogares frente a la UE, peso de las renovables, dependencia energética.
+    estado: hecha
 
   - id: a10
     tipo: articulo

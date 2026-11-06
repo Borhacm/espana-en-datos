@@ -1,0 +1,381 @@
+{
+ "id": "ene3-europa-frio",
+ "lens": "europa",
+ "theme": "energia",
+ "title": {
+  "es": "El 15,9 % de los españoles vive en hogares que no pueden mantener la casa caliente, frente al 8,8 % en la UE: solo 3 de los 27 países tienen un porcentaje más alto",
+  "en": "15.9% of Spaniards live in households that cannot keep their home warm, against 8.8% in the EU: only 3 of the 27 countries have a higher share"
+ },
+ "subtitle": {
+  "es": "Población que vive en hogares que no pueden permitirse mantener la vivienda a una temperatura adecuada, 2025, en %",
+  "en": "Population living in households that cannot afford to keep their home adequately warm, 2025, in %"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of population"
+ },
+ "source": {
+  "name": "Eurostat, encuesta de condiciones de vida (EU-SILC)",
+  "license": "CC BY 4.0",
+  "dataset": "ilc_mdes01",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_mdes01/default/table"
+ },
+ "notes": {
+  "es": [
+   "Hogares que declaran que no pueden permitirse mantener la vivienda a una temperatura adecuada en invierno. Es una respuesta a una encuesta, no una medida de temperatura ni de gasto.",
+   "Porcentaje de personas, no de hogares. La encuesta se hace a lo largo del año y pregunta por la situación del hogar en ese momento."
+  ],
+  "en": [
+   "Households reporting that they cannot afford to keep their home adequately warm in winter. It is a survey answer, not a measure of temperature or spending.",
+   "Share of people, not of households. The survey is carried out throughout the year and asks about the household's situation at that time."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "countries_above": [
+  "GRC",
+  "LTU",
+  "BGR"
+ ],
+ "history": {
+  "2019": {
+   "ESP": 7.5,
+   "EU27": 6.9
+  },
+  "2020": {
+   "ESP": 10.9,
+   "EU27": 7.5
+  },
+  "2021": {
+   "ESP": 14.2,
+   "EU27": 6.9
+  },
+  "2022": {
+   "ESP": 17.1,
+   "EU27": 9.3
+  },
+  "2023": {
+   "ESP": 20.8,
+   "EU27": 10.6
+  },
+  "2024": {
+   "ESP": 17.5,
+   "EU27": 9.2
+  },
+  "2025": {
+   "ESP": 15.9,
+   "EU27": 8.8
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 4.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 4.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 16.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 11.3
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 4.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 5.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 4.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 15.9
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 3.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 8.8
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 2.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 11.5
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 18.1
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 4.2
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 5.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 4.5
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 8.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 16.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 3.5
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 4.3
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 7.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 6.6
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 3.2
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 15.6
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 11.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 8.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 3.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 4.7
+  }
+ ]
+}

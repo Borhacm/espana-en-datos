@@ -1,0 +1,140 @@
+{
+ "id": "ene2-europa-componentes",
+ "lens": "europa",
+ "theme": "energia",
+ "title": {
+  "es": "La luz es más barata en España por la energía (11,1 céntimos el kWh frente a 12,5) y por las redes; en impuestos, los hogares pagan casi lo mismo que en la UE",
+  "en": "Electricity is cheaper in Spain because of energy (11.1 cents per kWh against 12.5) and networks; in taxes, households pay almost the same as in the EU"
+ },
+ "subtitle": {
+  "es": "Precio de la electricidad para los hogares por componentes, 2025, céntimos de euro por kWh. Punto hueco: media de la UE; punto lleno: España",
+  "en": "Household electricity price by component, 2025, euro cents per kWh. Hollow dot: EU average; solid dot: Spain"
+ },
+ "unit": {
+  "es": "céntimos por kWh",
+  "en": "cents per kWh"
+ },
+ "source": {
+  "name": "Eurostat, precios de la electricidad para los hogares",
+  "license": "CC BY 4.0",
+  "dataset": "nrg_pc_204_c",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204_c/default/table"
+ },
+ "notes": {
+  "es": [
+   "Hogares con un consumo de 2.500 a 5.000 kWh al año. Datos anuales.",
+   "Energía y suministro: lo que cuesta producir o comprar la electricidad y comercializarla. Redes: transporte y distribución. Impuestos sin IVA: impuesto sobre la electricidad y otros tributos y cargos regulados.",
+   "Las partidas de Eurostat no coinciden exactamente con las de la factura española (peajes, cargos, impuesto especial e IVA): cada país asigna sus cargos regulados a una u otra partida.",
+   "Las partidas están redondeadas a un decimal y su suma puede no coincidir con el total."
+  ],
+  "en": [
+   "Households consuming 2,500 to 5,000 kWh a year. Annual data.",
+   "Energy and supply: the cost of producing or buying electricity and selling it on. Networks: transmission and distribution. Taxes excl. VAT: electricity tax and other taxes, levies and regulated charges.",
+   "Eurostat's components do not match the Spanish bill exactly (network tolls, regulated charges, electricity tax and VAT): each country assigns its regulated charges to one component or another.",
+   "Components are rounded to one decimal place and may not add up to the total."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "energia": {
+   "es": "Energía y suministro",
+   "en": "Energy and supply",
+   "aggregate": true
+  },
+  "redes": {
+   "es": "Redes",
+   "en": "Networks",
+   "aggregate": true
+  },
+  "impuestos": {
+   "es": "Impuestos sin IVA",
+   "en": "Taxes excl. VAT",
+   "aggregate": true
+  },
+  "iva": {
+   "es": "IVA",
+   "en": "VAT",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "year": 2025,
+ "components": {
+  "ESP": {
+   "energia": 11.1,
+   "redes": 7.1,
+   "impuestos": 3.8,
+   "iva": 4.4
+  },
+  "EU27": {
+   "energia": 12.5,
+   "redes": 8.2,
+   "impuestos": 3.9,
+   "iva": 4.4
+  }
+ },
+ "total": {
+  "ESP": 26.4,
+  "EU27": 28.9
+ },
+ "gap": {
+  "energia": 1.4,
+  "redes": 1.0,
+  "impuestos": 0.1,
+  "iva": 0.0
+ },
+ "gap_total": 2.5,
+ "rows": [
+  {
+   "geo": "energia",
+   "time": "0-ue",
+   "value": 12.5
+  },
+  {
+   "geo": "energia",
+   "time": "1-espana",
+   "value": 11.1
+  },
+  {
+   "geo": "redes",
+   "time": "0-ue",
+   "value": 8.2
+  },
+  {
+   "geo": "redes",
+   "time": "1-espana",
+   "value": 7.1
+  },
+  {
+   "geo": "impuestos",
+   "time": "0-ue",
+   "value": 3.9
+  },
+  {
+   "geo": "impuestos",
+   "time": "1-espana",
+   "value": 3.8
+  },
+  {
+   "geo": "iva",
+   "time": "0-ue",
+   "value": 4.4
+  },
+  {
+   "geo": "iva",
+   "time": "1-espana",
+   "value": 4.4
+  }
+ ]
+}
