@@ -1,0 +1,514 @@
+{
+ "id": "prt2-id",
+ "lens": "tiempo",
+ "theme": "productividad",
+ "title": {
+  "es": "España dedica a I+D el 1,50 % del PIB, dos tercios de lo que dedica la UE (2,26 %); casi toda la diferencia está en el gasto de las empresas",
+  "en": "Spain spends 1.50% of GDP on R&D, two thirds of the EU figure (2.26%); almost all of the difference lies in business spending"
+ },
+ "subtitle": {
+  "es": "Gasto en I+D en % del PIB, 2000-2024. España y UE: gasto total; financiación pública: la parte que pagan las administraciones en España",
+  "en": "R&D spending as % of GDP, 2000-2024. Spain and EU: total spending; public funding: the share paid by government in Spain"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, estadísticas de I+D",
+  "license": "CC BY 4.0",
+  "dataset": "rd_e_gerdfund, rd_e_gerdtot y rd_e_gerdreg",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/rd_e_gerdfund/default/table"
+ },
+ "notes": {
+  "es": [
+   "Gasto en I+D ejecutado en el país por empresas, administraciones, universidades e instituciones sin fines de lucro, según quién lo realiza; la financiación pública es la parte de ese gasto que pagan las administraciones, la ejecute quien la ejecute.",
+   "No incluye las deducciones fiscales por I+D ni la financiación pública de I+D hecha en el extranjero.",
+   "UE: estimaciones de Eurostat. «regions» en la descarga: gasto en I+D por comunidad en el último año."
+  ],
+  "en": [
+   "R&D spending carried out in the country by businesses, government, universities and non-profit institutions, by who performs it; public funding is the part of that spending paid for by government, whoever carries it out.",
+   "It does not include R&D tax credits or publicly funded R&D carried out abroad.",
+   "EU: Eurostat estimates. «regions» in the download: R&D spending by region in the latest year."
+  ]
+ },
+ "retrieved": "2026-11-09",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "publica": {
+    "es": "España, financiación pública",
+    "en": "Spain, public funding"
+   }
+  }
+ },
+ "short_labels": {
+  "espana": {
+   "es": "España",
+   "en": "Spain"
+  },
+  "ue": {
+   "es": "UE",
+   "en": "EU"
+  },
+  "publica": {
+   "es": "Financiación pública",
+   "en": "Public funding"
+  }
+ },
+ "year": 2024,
+ "countries_above": [
+  "SWE",
+  "AUT",
+  "BEL",
+  "FIN",
+  "DNK",
+  "DEU",
+  "NLD",
+  "FRA",
+  "SVN",
+  "EST",
+  "CZE",
+  "PRT",
+  "IRL",
+  "GRC"
+ ],
+ "n": 27,
+ "public": {
+  "2019": 0.47,
+  "2020": 0.54,
+  "2021": 0.52,
+  "2022": 0.53,
+  "2023": 0.57,
+  "2024": 0.58
+ },
+ "business_funded": {
+  "ESP": 0.72,
+  "EU27": 1.28,
+  "EU27_year": 2023
+ },
+ "public_eu": {
+  "year": 2023,
+  "value": 0.68
+ },
+ "business_performed": {
+  "ESP": 0.84,
+  "EU27": 1.5,
+  "share_of_gap": 86.8
+ },
+ "peak_2008": {
+  "year": 2009,
+  "value": 1.36
+ },
+ "low": {
+  "year": 2016,
+  "value": 1.18
+ },
+ "regions": {
+  "01": 1.09,
+  "02": 1.15,
+  "03": 1.03,
+  "04": 0.39,
+  "05": 0.53,
+  "06": 0.98,
+  "07": 1.38,
+  "08": 0.56,
+  "09": 1.82,
+  "10": 1.22,
+  "11": 0.7,
+  "12": 1.29,
+  "13": 2.18,
+  "14": 1.1,
+  "15": 2.34,
+  "16": 2.3,
+  "17": 0.92,
+  "18": 0.28,
+  "19": 0.47,
+  "ES": 1.5
+ },
+ "rows": [
+  {
+   "time": "2000",
+   "series": "espana",
+   "value": 0.88
+  },
+  {
+   "time": "2001",
+   "series": "espana",
+   "value": 0.89
+  },
+  {
+   "time": "2002",
+   "series": "espana",
+   "value": 0.96
+  },
+  {
+   "time": "2003",
+   "series": "espana",
+   "value": 1.02
+  },
+  {
+   "time": "2004",
+   "series": "espana",
+   "value": 1.04
+  },
+  {
+   "time": "2005",
+   "series": "espana",
+   "value": 1.1
+  },
+  {
+   "time": "2006",
+   "series": "espana",
+   "value": 1.18
+  },
+  {
+   "time": "2007",
+   "series": "espana",
+   "value": 1.24
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 1.32
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 1.36
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 1.35
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 1.33
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 1.29
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 1.27
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 1.23
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 1.21
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 1.18
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 1.2
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 1.23
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 1.24
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 1.4
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 1.4
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 1.4
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 1.49
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 1.5
+  },
+  {
+   "time": "2000",
+   "series": "ue",
+   "value": 1.81
+  },
+  {
+   "time": "2001",
+   "series": "ue",
+   "value": 1.82
+  },
+  {
+   "time": "2002",
+   "series": "ue",
+   "value": 1.83
+  },
+  {
+   "time": "2003",
+   "series": "ue",
+   "value": 1.82
+  },
+  {
+   "time": "2004",
+   "series": "ue",
+   "value": 1.79
+  },
+  {
+   "time": "2005",
+   "series": "ue",
+   "value": 1.78
+  },
+  {
+   "time": "2006",
+   "series": "ue",
+   "value": 1.8
+  },
+  {
+   "time": "2007",
+   "series": "ue",
+   "value": 1.79
+  },
+  {
+   "time": "2008",
+   "series": "ue",
+   "value": 1.87
+  },
+  {
+   "time": "2009",
+   "series": "ue",
+   "value": 1.96
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 1.96
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 2
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 2.06
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 2.08
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 2.09
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 2.1
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 2.1
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 2.14
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 2.17
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 2.21
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 2.28
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 2.24
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 2.22
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 2.25
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 2.26
+  },
+  {
+   "time": "2000",
+   "series": "publica",
+   "value": 0.34
+  },
+  {
+   "time": "2001",
+   "series": "publica",
+   "value": 0.35
+  },
+  {
+   "time": "2002",
+   "series": "publica",
+   "value": 0.38
+  },
+  {
+   "time": "2003",
+   "series": "publica",
+   "value": 0.41
+  },
+  {
+   "time": "2004",
+   "series": "publica",
+   "value": 0.43
+  },
+  {
+   "time": "2005",
+   "series": "publica",
+   "value": 0.47
+  },
+  {
+   "time": "2006",
+   "series": "publica",
+   "value": 0.5
+  },
+  {
+   "time": "2007",
+   "series": "publica",
+   "value": 0.54
+  },
+  {
+   "time": "2008",
+   "series": "publica",
+   "value": 0.6
+  },
+  {
+   "time": "2009",
+   "series": "publica",
+   "value": 0.64
+  },
+  {
+   "time": "2010",
+   "series": "publica",
+   "value": 0.63
+  },
+  {
+   "time": "2011",
+   "series": "publica",
+   "value": 0.59
+  },
+  {
+   "time": "2012",
+   "series": "publica",
+   "value": 0.56
+  },
+  {
+   "time": "2013",
+   "series": "publica",
+   "value": 0.53
+  },
+  {
+   "time": "2014",
+   "series": "publica",
+   "value": 0.51
+  },
+  {
+   "time": "2015",
+   "series": "publica",
+   "value": 0.5
+  },
+  {
+   "time": "2016",
+   "series": "publica",
+   "value": 0.47
+  },
+  {
+   "time": "2017",
+   "series": "publica",
+   "value": 0.47
+  },
+  {
+   "time": "2018",
+   "series": "publica",
+   "value": 0.46
+  },
+  {
+   "time": "2019",
+   "series": "publica",
+   "value": 0.47
+  },
+  {
+   "time": "2020",
+   "series": "publica",
+   "value": 0.54
+  },
+  {
+   "time": "2021",
+   "series": "publica",
+   "value": 0.52
+  },
+  {
+   "time": "2022",
+   "series": "publica",
+   "value": 0.53
+  },
+  {
+   "time": "2023",
+   "series": "publica",
+   "value": 0.57
+  },
+  {
+   "time": "2024",
+   "series": "publica",
+   "value": 0.58
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "id": "pre3-europa-tamano",
+ "lens": "europa",
+ "theme": "productividad",
+ "title": {
+  "es": "Las empresas españolas producen menos por persona que las europeas de su mismo tamaño; si el empleo se repartiera por tamaños como en la UE, la distancia solo se reduciría un 8 %",
+  "en": "Spanish firms produce less per person than European firms of the same size; if employment were spread across firm sizes as in the EU, the gap would shrink by only 8%"
+ },
+ "subtitle": {
+  "es": "Valor añadido por persona ocupada según el tamaño de la empresa, 2023, miles de euros. Punto hueco: media de la UE; punto lleno: España",
+  "en": "Value added per person employed by firm size, 2023, thousand euros. Hollow dot: EU average; solid dot: Spain"
+ },
+ "unit": {
+  "es": "miles de euros por ocupado",
+  "en": "thousand euros per person employed"
+ },
+ "source": {
+  "name": "Eurostat, estadísticas estructurales de empresas",
+  "license": "CC BY 4.0",
+  "dataset": "sbs_sc_ovw",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/sbs_sc_ovw/default/table"
+ },
+ "notes": {
+  "es": [
+   "Empresas de la industria, la construcción y los servicios de mercado. No incluye la agricultura, las administraciones públicas, la educación ni la sanidad públicas, ni las finanzas.",
+   "En euros corrientes, sin corregir por el nivel de precios: en paridad de poder de compra la distancia con la UE es menor, pero la parte que explica el tamaño no cambia, porque la corrección afecta igual a todos los tamaños.",
+   "Tamaño: personas ocupadas en la empresa, incluidos los propietarios que trabajan en ella.",
+   "Se usa 2023, el último año en que la UE publica todos los tamaños."
+  ],
+  "en": [
+   "Firms in industry, construction and market services. Excludes agriculture, public administration, public education and health, and finance.",
+   "In current euros, not corrected for price levels: in purchasing power standards the gap with the EU is smaller, but the share explained by firm size does not change, because the correction affects all sizes equally.",
+   "Size: people employed in the firm, including working owners.",
+   "2023 is used, the latest year in which the EU publishes all size classes."
+  ]
+ },
+ "retrieved": "2026-11-09",
+ "geos": {
+  "0-9": {
+   "es": "De 0 a 9 personas",
+   "en": "0 to 9 people",
+   "aggregate": true
+  },
+  "10-19": {
+   "es": "De 10 a 19",
+   "en": "10 to 19",
+   "aggregate": true
+  },
+  "20-49": {
+   "es": "De 20 a 49",
+   "en": "20 to 49",
+   "aggregate": true
+  },
+  "50-249": {
+   "es": "De 50 a 249",
+   "en": "50 to 249",
+   "aggregate": true
+  },
+  "GE250": {
+   "es": "250 o más",
+   "en": "250 or more",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "year": 2023,
+ "employment_share": {
+  "ESP": {
+   "0-9": 32.8,
+   "10-19": 8.2,
+   "20-49": 10.2,
+   "50-249": 14.1,
+   "GE250": 34.8
+  },
+  "EU27": {
+   "0-9": 29.8,
+   "10-19": 8.4,
+   "20-49": 10.0,
+   "50-249": 15.2,
+   "GE250": 36.5
+  }
+ },
+ "total": {
+  "ESP": 54.7,
+  "EU27": 64.5
+ },
+ "with_eu_sizes": 55.6,
+ "gap": 9.8,
+ "explained_pct": 8.4,
+ "rows": [
+  {
+   "geo": "0-9",
+   "time": "0-ue",
+   "value": 42.1
+  },
+  {
+   "geo": "0-9",
+   "time": "1-espana",
+   "value": 38.5
+  },
+  {
+   "geo": "10-19",
+   "time": "0-ue",
+   "value": 50.9
+  },
+  {
+   "geo": "10-19",
+   "time": "1-espana",
+   "value": 44.8
+  },
+  {
+   "geo": "20-49",
+   "time": "0-ue",
+   "value": 56.6
+  },
+  {
+   "geo": "20-49",
+   "time": "1-espana",
+   "value": 52.4
+  },
+  {
+   "geo": "50-249",
+   "time": "0-ue",
+   "value": 67.8
+  },
+  {
+   "geo": "50-249",
+   "time": "1-espana",
+   "value": 61.4
+  },
+  {
+   "geo": "GE250",
+   "time": "0-ue",
+   "value": 86.8
+  },
+  {
+   "geo": "GE250",
+   "time": "1-espana",
+   "value": 70.5
+  }
+ ]
+}

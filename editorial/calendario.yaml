@@ -137,6 +137,7 @@ piezas:
     tema: productividad
     titulo: "Productividad y empresa: por qué España crece pero no converge"
     idea: PIB por habitante y por hora frente a la UE, tamaño de empresa, I+D.
+    estado: hecha
 
   - id: n05
     tipo: nota

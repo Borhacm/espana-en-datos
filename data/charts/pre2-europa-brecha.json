@@ -1,0 +1,143 @@
+{
+ "id": "pre2-europa-brecha",
+ "lens": "europa",
+ "theme": "productividad",
+ "title": {
+  "es": "La distancia con la UE se reparte casi a partes iguales: España produce un 4,7 % menos por hora trabajada y trabaja un 4,1 % menos horas por habitante, porque hay menos ocupados",
+  "en": "The gap with the EU is split almost evenly: Spain produces 4.7% less per hour worked and works 4.1% fewer hours per person, because fewer people are in work"
+ },
+ "subtitle": {
+  "es": "España frente a la media de la UE (= 100), 2025: PIB por habitante y por hora trabajada, horas trabajadas por habitante, ocupados por habitante y horas por ocupado. Punto hueco: UE; punto lleno: España",
+  "en": "Spain compared with the EU average (= 100), 2025: GDP per person and per hour worked, hours worked per person, workers per person and hours per worker. Hollow dot: EU; solid dot: Spain"
+ },
+ "unit": {
+  "es": "índice, UE = 100",
+  "en": "index, EU = 100"
+ },
+ "source": {
+  "name": "Eurostat, cuentas nacionales",
+  "license": "CC BY 4.0",
+  "dataset": "nama_10_lp_ulc",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_lp_ulc/default/table"
+ },
+ "notes": {
+  "es": [
+   "El PIB por habitante es igual a la productividad por hora multiplicada por las horas trabajadas por habitante; y estas, a los ocupados por habitante multiplicados por las horas de cada ocupado. Los índices cumplen esas igualdades salvo por el redondeo.",
+   "Productividad: PIB por hora trabajada en paridad de poder de compra. Ocupados y horas, de la contabilidad nacional (incluye a los autónomos)."
+  ],
+  "en": [
+   "GDP per person equals productivity per hour multiplied by hours worked per person; and the latter equals workers per person multiplied by hours per worker. The indices satisfy these identities except for rounding.",
+   "Productivity: GDP per hour worked in purchasing power standards. Workers and hours from the national accounts (self-employed included)."
+  ]
+ },
+ "retrieved": "2026-11-09",
+ "geos": {
+  "pib": {
+   "es": "PIB por habitante",
+   "en": "GDP per person",
+   "aggregate": true
+  },
+  "hora": {
+   "es": "PIB por hora",
+   "en": "GDP per hour",
+   "aggregate": true
+  },
+  "horas": {
+   "es": "Horas por persona",
+   "en": "Hours per person",
+   "aggregate": true
+  },
+  "ocupados": {
+   "es": "Ocupados",
+   "en": "Workers",
+   "aggregate": true
+  },
+  "jornada": {
+   "es": "Horas por ocupado",
+   "en": "Hours per worker",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "year": 2025,
+ "spain": {
+  "pib": 91.4,
+  "hora": 95.3,
+  "horas": 95.9,
+  "ocupados": 94.3,
+  "jornada": 101.7
+ },
+ "hours": {
+  "ESP": {
+   "per_person": 750.8,
+   "per_worker": 1632.6
+  },
+  "EU27": {
+   "per_person": 783.0,
+   "per_worker": 1604.8
+  }
+ },
+ "rows": [
+  {
+   "geo": "pib",
+   "time": "0-ue",
+   "value": 100.0
+  },
+  {
+   "geo": "pib",
+   "time": "1-espana",
+   "value": 91.4
+  },
+  {
+   "geo": "hora",
+   "time": "0-ue",
+   "value": 100.0
+  },
+  {
+   "geo": "hora",
+   "time": "1-espana",
+   "value": 95.3
+  },
+  {
+   "geo": "horas",
+   "time": "0-ue",
+   "value": 100.0
+  },
+  {
+   "geo": "horas",
+   "time": "1-espana",
+   "value": 95.9
+  },
+  {
+   "geo": "ocupados",
+   "time": "0-ue",
+   "value": 100.0
+  },
+  {
+   "geo": "ocupados",
+   "time": "1-espana",
+   "value": 94.3
+  },
+  {
+   "geo": "jornada",
+   "time": "0-ue",
+   "value": 100.0
+  },
+  {
+   "geo": "jornada",
+   "time": "1-espana",
+   "value": 101.7
+  }
+ ]
+}

@@ -1,0 +1,365 @@
+{
+ "id": "pre1-europa-pib",
+ "lens": "europa",
+ "theme": "productividad",
+ "title": {
+  "es": "El PIB por habitante de España es el 91,4 % de la media de la UE, una vez descontadas las diferencias de precios: 14 de los otros 26 países están por encima",
+  "en": "Spain's GDP per person is 91.4% of the EU average once price differences are taken into account: 14 of the other 26 countries are above it"
+ },
+ "subtitle": {
+  "es": "PIB por habitante en paridad de poder de compra, 2025. Índice: media de la UE = 100",
+  "en": "GDP per person in purchasing power standards, 2025. Index: EU average = 100"
+ },
+ "unit": {
+  "es": "índice, UE = 100",
+  "en": "index, EU = 100"
+ },
+ "source": {
+  "name": "Eurostat, cuentas nacionales",
+  "license": "CC BY 4.0",
+  "dataset": "nama_10_pc",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table"
+ },
+ "notes": {
+  "es": [
+   "En paridad de poder de compra (PPA): corrige las diferencias de nivel de precios entre países, de modo que un euro compra lo mismo en todos.",
+   "En Irlanda y Luxemburgo, el PIB por habitante está inflado por los beneficios de multinacionales y por los trabajadores que viven en otros países.",
+   "Los datos de 2025 son provisionales."
+  ],
+  "en": [
+   "In purchasing power standards (PPS): corrects for differences in price levels between countries, so that a euro buys the same everywhere.",
+   "In Ireland and Luxembourg, GDP per person is inflated by multinational profits and by workers who live in other countries.",
+   "2025 data are provisional."
+  ]
+ },
+ "retrieved": "2026-11-09",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "year": 2025,
+ "countries_above": [
+  "LUX",
+  "IRL",
+  "NLD",
+  "DNK",
+  "AUT",
+  "DEU",
+  "BEL",
+  "SWE",
+  "MLT",
+  "CYP",
+  "FIN",
+  "FRA",
+  "ITA",
+  "CZE"
+ ],
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 118.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 113.9
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 68.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 103.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 92.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 116.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 129.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 91.4
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 79.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 100.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 100.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 97.5
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 69.6
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 78.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 76.2
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 223.5
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 95.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 87.5
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 243.3
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 71.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 110.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 132.0
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 81.1
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 81.4
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 78.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 75.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 91.1
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 110.9
+  }
+ ]
+}

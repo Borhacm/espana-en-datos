@@ -1,0 +1,438 @@
+{
+ "id": "prt1-convergencia",
+ "lens": "tiempo",
+ "theme": "productividad",
+ "title": {
+  "es": "El PIB por habitante de España superó la media de la UE entre 2002 y 2009, con un máximo del 104,9 % en 2006; desde 2011 no ha pasado del 92,3 %",
+  "en": "Spain's GDP per person was above the EU average between 2002 and 2009, peaking at 104.9% in 2006; since 2011 it has not exceeded 92.3%"
+ },
+ "subtitle": {
+  "es": "PIB por habitante y PIB por hora trabajada de España en paridad de poder de compra, 1995-2025. Índice: media de la UE = 100",
+  "en": "Spain's GDP per person and GDP per hour worked in purchasing power standards, 1995-2025. Index: EU average = 100"
+ },
+ "unit": {
+  "es": "índice, UE = 100",
+  "en": "index, EU = 100"
+ },
+ "source": {
+  "name": "Eurostat, cuentas nacionales",
+  "license": "CC BY 4.0",
+  "dataset": "nama_10_pc y nama_10_lp_ulc",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table"
+ },
+ "notes": {
+  "es": [
+   "En paridad de poder de compra (PPA): corrige las diferencias de nivel de precios entre países, de modo que un euro compra lo mismo en todos. Sirve para comparar países en cada año; la evolución en el tiempo es orientativa.",
+   "UE: los 27 países actuales en toda la serie.",
+   "«real_growth» en la descarga: crecimiento de la productividad por hora en volumen (sin el efecto de los precios) desde 2000 y desde 2019, en España y en la UE."
+  ],
+  "en": [
+   "In purchasing power standards (PPS): corrects for differences in price levels between countries, so that a euro buys the same everywhere. It is designed to compare countries in each year; changes over time are indicative.",
+   "EU: the current 27 countries throughout the series.",
+   "«real_growth» in the download: growth in productivity per hour in volume terms (without the effect of prices) since 2000 and since 2019, in Spain and the EU."
+  ]
+ },
+ "retrieved": "2026-11-09",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "pib": {
+    "es": "PIB por habitante",
+    "en": "GDP per person"
+   },
+   "hora": {
+    "es": "PIB por hora trabajada",
+    "en": "GDP per hour worked"
+   }
+  }
+ },
+ "short_labels": {
+  "pib": {
+   "es": "Por habitante",
+   "en": "Per person"
+  },
+  "hora": {
+   "es": "Por hora",
+   "en": "Per hour"
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "Media de la UE",
+   "en": "EU average"
+  }
+ },
+ "above_eu": [
+  2002,
+  2003,
+  2004,
+  2005,
+  2006,
+  2007,
+  2008,
+  2009
+ ],
+ "peak": {
+  "year": 2006,
+  "value": 104.9
+ },
+ "max_since": {
+  "year": 2011,
+  "value": 92.3
+ },
+ "workers_per_person": {
+  "1995": 83.2,
+  "1996": 83.8,
+  "1997": 86.0,
+  "1998": 88.4,
+  "1999": 91.2,
+  "2000": 94.2,
+  "2001": 96.3,
+  "2002": 97.6,
+  "2003": 99.0,
+  "2004": 101.0,
+  "2005": 102.7,
+  "2006": 103.6,
+  "2007": 103.1,
+  "2008": 100.9,
+  "2009": 95.7,
+  "2010": 94.6,
+  "2011": 92.0,
+  "2012": 88.4,
+  "2013": 87.1,
+  "2014": 87.6,
+  "2015": 89.5,
+  "2016": 90.3,
+  "2017": 91.2,
+  "2018": 91.6,
+  "2019": 92.3,
+  "2020": 88.8,
+  "2021": 89.6,
+  "2022": 90.7,
+  "2023": 91.8,
+  "2024": 93.0,
+  "2025": 94.3
+ },
+ "real_growth": {
+  "since": 2000,
+  "ESP": 18.7,
+  "EU27": 27.7,
+  "since_2019": {
+   "ESP": 2.0,
+   "EU27": 3.4
+  }
+ },
+ "rows": [
+  {
+   "time": "1995",
+   "series": "pib",
+   "value": 91.4
+  },
+  {
+   "time": "1996",
+   "series": "pib",
+   "value": 92.2
+  },
+  {
+   "time": "1997",
+   "series": "pib",
+   "value": 93.6
+  },
+  {
+   "time": "1998",
+   "series": "pib",
+   "value": 95.3
+  },
+  {
+   "time": "1999",
+   "series": "pib",
+   "value": 95.7
+  },
+  {
+   "time": "2000",
+   "series": "pib",
+   "value": 97.4
+  },
+  {
+   "time": "2001",
+   "series": "pib",
+   "value": 98.8
+  },
+  {
+   "time": "2002",
+   "series": "pib",
+   "value": 100.3
+  },
+  {
+   "time": "2003",
+   "series": "pib",
+   "value": 100.9
+  },
+  {
+   "time": "2004",
+   "series": "pib",
+   "value": 100.7
+  },
+  {
+   "time": "2005",
+   "series": "pib",
+   "value": 102.4
+  },
+  {
+   "time": "2006",
+   "series": "pib",
+   "value": 104.9
+  },
+  {
+   "time": "2007",
+   "series": "pib",
+   "value": 104.1
+  },
+  {
+   "time": "2008",
+   "series": "pib",
+   "value": 101.9
+  },
+  {
+   "time": "2009",
+   "series": "pib",
+   "value": 100.4
+  },
+  {
+   "time": "2010",
+   "series": "pib",
+   "value": 96.0
+  },
+  {
+   "time": "2011",
+   "series": "pib",
+   "value": 92.2
+  },
+  {
+   "time": "2012",
+   "series": "pib",
+   "value": 90.6
+  },
+  {
+   "time": "2013",
+   "series": "pib",
+   "value": 89.7
+  },
+  {
+   "time": "2014",
+   "series": "pib",
+   "value": 90.2
+  },
+  {
+   "time": "2015",
+   "series": "pib",
+   "value": 91.2
+  },
+  {
+   "time": "2016",
+   "series": "pib",
+   "value": 91.7
+  },
+  {
+   "time": "2017",
+   "series": "pib",
+   "value": 92.3
+  },
+  {
+   "time": "2018",
+   "series": "pib",
+   "value": 90.8
+  },
+  {
+   "time": "2019",
+   "series": "pib",
+   "value": 90.3
+  },
+  {
+   "time": "2020",
+   "series": "pib",
+   "value": 82.2
+  },
+  {
+   "time": "2021",
+   "series": "pib",
+   "value": 84.9
+  },
+  {
+   "time": "2022",
+   "series": "pib",
+   "value": 87.8
+  },
+  {
+   "time": "2023",
+   "series": "pib",
+   "value": 90.3
+  },
+  {
+   "time": "2024",
+   "series": "pib",
+   "value": 90.8
+  },
+  {
+   "time": "2025",
+   "series": "pib",
+   "value": 91.4
+  },
+  {
+   "time": "1995",
+   "series": "hora",
+   "value": 109.3
+  },
+  {
+   "time": "1996",
+   "series": "hora",
+   "value": 109.2
+  },
+  {
+   "time": "1997",
+   "series": "hora",
+   "value": 107.7
+  },
+  {
+   "time": "1998",
+   "series": "hora",
+   "value": 106.1
+  },
+  {
+   "time": "1999",
+   "series": "hora",
+   "value": 102.7
+  },
+  {
+   "time": "2000",
+   "series": "hora",
+   "value": 100.6
+  },
+  {
+   "time": "2001",
+   "series": "hora",
+   "value": 98.8
+  },
+  {
+   "time": "2002",
+   "series": "hora",
+   "value": 98.3
+  },
+  {
+   "time": "2003",
+   "series": "hora",
+   "value": 97.6
+  },
+  {
+   "time": "2004",
+   "series": "hora",
+   "value": 96.8
+  },
+  {
+   "time": "2005",
+   "series": "hora",
+   "value": 97.4
+  },
+  {
+   "time": "2006",
+   "series": "hora",
+   "value": 99.5
+  },
+  {
+   "time": "2007",
+   "series": "hora",
+   "value": 100.0
+  },
+  {
+   "time": "2008",
+   "series": "hora",
+   "value": 99.4
+  },
+  {
+   "time": "2009",
+   "series": "hora",
+   "value": 101.4
+  },
+  {
+   "time": "2010",
+   "series": "hora",
+   "value": 98.8
+  },
+  {
+   "time": "2011",
+   "series": "hora",
+   "value": 97.3
+  },
+  {
+   "time": "2012",
+   "series": "hora",
+   "value": 99.1
+  },
+  {
+   "time": "2013",
+   "series": "hora",
+   "value": 99.6
+  },
+  {
+   "time": "2014",
+   "series": "hora",
+   "value": 99.5
+  },
+  {
+   "time": "2015",
+   "series": "hora",
+   "value": 98.3
+  },
+  {
+   "time": "2016",
+   "series": "hora",
+   "value": 97.9
+  },
+  {
+   "time": "2017",
+   "series": "hora",
+   "value": 97.5
+  },
+  {
+   "time": "2018",
+   "series": "hora",
+   "value": 95.1
+  },
+  {
+   "time": "2019",
+   "series": "hora",
+   "value": 94.6
+  },
+  {
+   "time": "2020",
+   "series": "hora",
+   "value": 90.7
+  },
+  {
+   "time": "2021",
+   "series": "hora",
+   "value": 92.4
+  },
+  {
+   "time": "2022",
+   "series": "hora",
+   "value": 94.2
+  },
+  {
+   "time": "2023",
+   "series": "hora",
+   "value": 96.2
+  },
+  {
+   "time": "2024",
+   "series": "hora",
+   "value": 95.7
+  },
+  {
+   "time": "2025",
+   "series": "hora",
+   "value": 95.3
+  }
+ ]
+}

@@ -1,0 +1,387 @@
+{
+ "id": "prd2-comunidades-hora",
+ "lens": "dentro",
+ "theme": "productividad",
+ "title": {
+  "es": "Por hora trabajada, las diferencias son menores: el País Vasco produce 54,1 euros, 1,41 veces lo que Murcia (38,5)",
+  "en": "Per hour worked, the differences are smaller: the Basque Country produces 54.1 euros, 1.41 times as much as Murcia (38.5)"
+ },
+ "subtitle": {
+  "es": "PIB por hora trabajada, 2025, euros corrientes. España: 45,6 euros",
+  "en": "GDP per hour worked, 2025, current euros. Spain: 45.6 euros"
+ },
+ "unit": {
+  "es": "euros por hora",
+  "en": "euros per hour"
+ },
+ "source": {
+  "name": "INE, Contabilidad Regional de España",
+  "license": "Reutilización libre citando la fuente",
+  "dataset": "Tablas 82284, 82285 y 82002",
+  "url": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736167628&menu=resultados&idp=1254735576581"
+ },
+ "notes": {
+  "es": [
+   "PIB de cada comunidad dividido entre las horas trabajadas en ella, de la Contabilidad Regional del INE.",
+   "El PIB por habitante es la productividad por hora multiplicada por las horas trabajadas por habitante: «index» en la descarga da los tres índices de cada comunidad (España = 100).",
+   "Primera estimación del INE para 2025: se revisará."
+  ],
+  "en": [
+   "Each region's GDP divided by the hours worked in it, from INE's Regional Accounts.",
+   "GDP per person equals productivity per hour multiplied by hours worked per person: «index» in the download gives the three indices for each region (Spain = 100).",
+   "INE's first estimate for 2025: it will be revised."
+  ]
+ },
+ "retrieved": "2026-11-09",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "year": 2025,
+ "ratio_hour": 1.41,
+ "ratio_pc": 1.81,
+ "hours_per_person": {
+  "ES": 750.8,
+  "01": 647.5,
+  "02": 812.7,
+  "03": 685.9,
+  "04": 779.8,
+  "05": 703.2,
+  "06": 689.2,
+  "07": 732.8,
+  "08": 632.2,
+  "09": 807.3,
+  "10": 679.1,
+  "11": 668.9,
+  "12": 729.0,
+  "13": 930.7,
+  "14": 728.8,
+  "15": 796.4,
+  "16": 785.9,
+  "17": 761.5,
+  "18": 646.3,
+  "19": 668.3
+ },
+ "index": {
+  "ES": {
+   "pib": 100.0,
+   "hora": 100.0,
+   "horas": 100.0
+  },
+  "01": {
+   "pib": 76.2,
+   "hora": 88.4,
+   "horas": 86.2
+  },
+  "02": {
+   "pib": 111.1,
+   "hora": 102.6,
+   "horas": 108.2
+  },
+  "03": {
+   "pib": 89.6,
+   "hora": 98.0,
+   "horas": 91.4
+  },
+  "04": {
+   "pib": 112.5,
+   "hora": 108.3,
+   "horas": 103.9
+  },
+  "05": {
+   "pib": 79.4,
+   "hora": 84.9,
+   "horas": 93.6
+  },
+  "06": {
+   "pib": 91.3,
+   "hora": 99.6,
+   "horas": 91.8
+  },
+  "07": {
+   "pib": 94.2,
+   "hora": 96.5,
+   "horas": 97.6
+  },
+  "08": {
+   "pib": 79.8,
+   "hora": 94.7,
+   "horas": 84.2
+  },
+  "09": {
+   "pib": 114.5,
+   "hora": 106.6,
+   "horas": 107.5
+  },
+  "10": {
+   "pib": 83.8,
+   "hora": 92.5,
+   "horas": 90.4
+  },
+  "11": {
+   "pib": 78.1,
+   "hora": 87.7,
+   "horas": 89.1
+  },
+  "12": {
+   "pib": 92.9,
+   "hora": 95.6,
+   "horas": 97.1
+  },
+  "13": {
+   "pib": 137.9,
+   "hora": 111.2,
+   "horas": 124.0
+  },
+  "14": {
+   "pib": 82.0,
+   "hora": 84.4,
+   "horas": 97.1
+  },
+  "15": {
+   "pib": 118.1,
+   "hora": 111.4,
+   "horas": 106.1
+  },
+  "16": {
+   "pib": 124.1,
+   "hora": 118.6,
+   "horas": 104.7
+  },
+  "17": {
+   "pib": 103.9,
+   "hora": 102.4,
+   "horas": 101.4
+  },
+  "18": {
+   "pib": 71.9,
+   "hora": 83.6,
+   "horas": 86.1
+  },
+  "19": {
+   "pib": 65.1,
+   "hora": 73.2,
+   "horas": 89.0
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2025",
+   "value": 40.3
+  },
+  {
+   "geo": "02",
+   "time": "2025",
+   "value": 46.8
+  },
+  {
+   "geo": "03",
+   "time": "2025",
+   "value": 44.7
+  },
+  {
+   "geo": "04",
+   "time": "2025",
+   "value": 49.4
+  },
+  {
+   "geo": "05",
+   "time": "2025",
+   "value": 38.7
+  },
+  {
+   "geo": "06",
+   "time": "2025",
+   "value": 45.4
+  },
+  {
+   "geo": "07",
+   "time": "2025",
+   "value": 44.0
+  },
+  {
+   "geo": "08",
+   "time": "2025",
+   "value": 43.2
+  },
+  {
+   "geo": "09",
+   "time": "2025",
+   "value": 48.6
+  },
+  {
+   "geo": "10",
+   "time": "2025",
+   "value": 42.2
+  },
+  {
+   "geo": "11",
+   "time": "2025",
+   "value": 40.0
+  },
+  {
+   "geo": "12",
+   "time": "2025",
+   "value": 43.6
+  },
+  {
+   "geo": "13",
+   "time": "2025",
+   "value": 50.7
+  },
+  {
+   "geo": "14",
+   "time": "2025",
+   "value": 38.5
+  },
+  {
+   "geo": "15",
+   "time": "2025",
+   "value": 50.8
+  },
+  {
+   "geo": "16",
+   "time": "2025",
+   "value": 54.1
+  },
+  {
+   "geo": "17",
+   "time": "2025",
+   "value": 46.7
+  },
+  {
+   "geo": "18",
+   "time": "2025",
+   "value": 38.1
+  },
+  {
+   "geo": "19",
+   "time": "2025",
+   "value": 33.4
+  },
+  {
+   "geo": "ES",
+   "time": "2025",
+   "value": 45.6
+  }
+ ]
+}

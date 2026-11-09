@@ -14,6 +14,9 @@ const EXACT: Record<string, string> = {
   "Eurostat, salarios mínimos mensuales": "Eurostat, monthly minimum wages",
   "Eurostat, precios de la electricidad para los hogares": "Eurostat, electricity prices for household consumers",
   "Eurostat, balances energéticos": "Eurostat, energy balances",
+  "Eurostat, estadísticas estructurales de empresas": "Eurostat, structural business statistics",
+  "Eurostat, estadísticas de I+D": "Eurostat, R&D statistics",
+  "INE, Contabilidad Regional de España": "INE, Spanish Regional Accounts",
   "INE, Encuesta de Condiciones de Vida": "INE, Living Conditions Survey",
   "INE, Encuesta de Presupuestos Familiares": "INE, Household Budget Survey",
   "Eurostat, sistema europeo de estadísticas de protección social (SEEPROS)": "Eurostat, European system of integrated social protection statistics (ESSPROS)",
@@ -53,6 +56,7 @@ const EXACT: Record<string, string> = {
   "Serie 2002-2024, gasto real (devengo)": "2002-2024 series, actual spending (accrual basis)",
   "Votaciones nominales del Pleno, XV legislatura": "Roll-call votes in the plenary, 15th parliament",
   "Votaciones nominales del Pleno, legislaturas X a XV": "Roll-call votes in the plenary, 10th to 15th parliaments",
+  "rd_e_gerdfund, rd_e_gerdtot y rd_e_gerdreg": "rd_e_gerdfund, rd_e_gerdtot and rd_e_gerdreg",
   // Licencias
   "Reutilización libre citando la fuente": "Free reuse with attribution",
   "Cita de un estudio publicado": "Citation of a published study",
