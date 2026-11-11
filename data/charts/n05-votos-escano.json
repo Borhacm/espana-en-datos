@@ -1,0 +1,180 @@
+{
+ "id": "n05-votos-escano",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "En 2023 el PP y el PSOE lograron un escaño por menos de 65.000 votos; Vox y Sumar necesitaron más de 90.000",
+  "en": "In 2023 the PP and the PSOE won a seat for fewer than 65,000 votes; Vox and Sumar needed more than 90,000"
+ },
+ "subtitle": {
+  "es": "Votos por escaño obtenido de cada candidatura con diputados en las generales de julio de 2023, en toda España",
+  "en": "Votes per seat won by each list with deputies at the July 2023 general election, across Spain"
+ },
+ "unit": {
+  "es": "votos por escaño",
+  "en": "votes per seat"
+ },
+ "source": {
+  "name": "Ministerio del Interior, Infoelectoral",
+  "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+ },
+ "notes": {
+  "es": [
+   "Votos de la candidatura en todas las provincias divididos entre los escaños que obtuvo. Los votos se agrupan por la candidatura cabecera nacional (por ejemplo, el PSC cuenta como PSOE).",
+   "Los escaños se reparten provincia a provincia con la regla D'Hondt y un mínimo del 3 % del voto válido de la provincia."
+  ],
+  "en": [
+   "Votes for the list in every province divided by the seats it won. Votes are grouped by the national head list (for example, the PSC counts as PSOE).",
+   "Seats are allocated province by province with the D'Hondt rule and a minimum of 3% of the valid vote in the province."
+  ]
+ },
+ "retrieved": "2026-11-11",
+ "geos": {
+  "PSOE": {
+   "es": "PSOE",
+   "en": "PSOE",
+   "rank": true,
+   "party": true
+  },
+  "PP": {
+   "es": "PP",
+   "en": "PP",
+   "rank": true,
+   "party": true
+  },
+  "Vox": {
+   "es": "Vox",
+   "en": "Vox",
+   "rank": true,
+   "party": true
+  },
+  "Sumar": {
+   "es": "Sumar",
+   "en": "Sumar",
+   "rank": true,
+   "party": true
+  },
+  "CC": {
+   "es": "CC",
+   "en": "CC",
+   "rank": true,
+   "party": true
+  },
+  "ERC": {
+   "es": "ERC",
+   "en": "ERC",
+   "rank": true,
+   "party": true
+  },
+  "Junts": {
+   "es": "Junts",
+   "en": "Junts",
+   "rank": true,
+   "party": true
+  },
+  "BNG": {
+   "es": "BNG",
+   "en": "BNG",
+   "rank": true,
+   "party": true
+  },
+  "EH Bildu": {
+   "es": "EH Bildu",
+   "en": "EH Bildu",
+   "rank": true,
+   "party": true
+  },
+  "UPN": {
+   "es": "UPN",
+   "en": "UPN",
+   "rank": true,
+   "party": true
+  },
+  "PNV": {
+   "es": "PNV",
+   "en": "PNV",
+   "rank": true,
+   "party": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "PSOE",
+   "time": "2023",
+   "value": 64642,
+   "votes": 7821718,
+   "seats": 121
+  },
+  {
+   "geo": "PP",
+   "time": "2023",
+   "value": 59568,
+   "votes": 8160837,
+   "seats": 137
+  },
+  {
+   "geo": "Vox",
+   "time": "2023",
+   "value": 92636,
+   "votes": 3057000,
+   "seats": 33
+  },
+  {
+   "geo": "Sumar",
+   "time": "2023",
+   "value": 98226,
+   "votes": 3044996,
+   "seats": 31
+  },
+  {
+   "geo": "CC",
+   "time": "2023",
+   "value": 116363,
+   "votes": 116363,
+   "seats": 1
+  },
+  {
+   "geo": "ERC",
+   "time": "2023",
+   "value": 66574,
+   "votes": 466020,
+   "seats": 7
+  },
+  {
+   "geo": "Junts",
+   "time": "2023",
+   "value": 56490,
+   "votes": 395429,
+   "seats": 7
+  },
+  {
+   "geo": "BNG",
+   "time": "2023",
+   "value": 153995,
+   "votes": 153995,
+   "seats": 1
+  },
+  {
+   "geo": "EH Bildu",
+   "time": "2023",
+   "value": 55855,
+   "votes": 335129,
+   "seats": 6
+  },
+  {
+   "geo": "UPN",
+   "time": "2023",
+   "value": 52188,
+   "votes": 52188,
+   "seats": 1
+  },
+  {
+   "geo": "PNV",
+   "time": "2023",
+   "value": 55458,
+   "votes": 277289,
+   "seats": 5
+  }
+ ]
+}

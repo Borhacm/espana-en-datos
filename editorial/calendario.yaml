@@ -146,6 +146,7 @@ piezas:
     mirada: dentro
     titulo: "Cuánto cuesta un escaño en cada provincia"
     idea: votos por escaño en 2023 por provincia y efecto de la ley D'Hondt (dataset congreso-202307 y escanos-2026).
+    estado: hecha
 
   - id: a11
     tipo: articulo

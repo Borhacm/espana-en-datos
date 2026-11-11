@@ -14,7 +14,7 @@ export interface ChartData {
   source: { name: string; dataset: string; url: string; license: string; also?: { name: string; url: string }[] };
   notes: { es: string[]; en: string[] };
   retrieved: string;
-  geos: Record<string, Bi & { eu?: boolean; aggregate?: boolean }>;
+  geos: Record<string, Bi & { eu?: boolean; aggregate?: boolean; rank?: boolean; party?: boolean }>;
   dimensions?: Record<string, Record<string, Bi>>;
   rows: Record<string, any>[];
   [key: string]: any;

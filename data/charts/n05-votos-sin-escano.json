@@ -1,0 +1,736 @@
+{
+ "id": "n05-votos-sin-escano",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "En las provincias que eligen 2 o 3 diputados, el 23,6 % del voto fue a candidaturas sin escaño; en las que eligen 10 o más, el 2,3 %",
+  "en": "In provinces that elect 2 or 3 deputies, 23.6% of the vote went to lists that won no seat; in those that elect 10 or more, 2.3%"
+ },
+ "subtitle": {
+  "es": "Votos a candidaturas que no obtuvieron escaño en la provincia, % del voto válido, generales de julio de 2023",
+  "en": "Votes for lists that won no seat in the province, % of the valid vote, July 2023 general election"
+ },
+ "unit": {
+  "es": "% del voto válido",
+  "en": "% of valid vote"
+ },
+ "source": {
+  "name": "Ministerio del Interior, Infoelectoral",
+  "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+ },
+ "notes": {
+  "es": [
+   "El voto válido incluye el voto en blanco, que nunca da escaño pero no se cuenta aquí como voto sin escaño. Incluye el voto exterior (CERA).",
+   "Ceuta y Melilla eligen un solo diputado: todo el voto que no va al ganador se queda sin escaño."
+  ],
+  "en": [
+   "The valid vote includes blank ballots, which never win a seat but are not counted here as votes without a seat. It includes the vote from abroad (CERA).",
+   "Ceuta and Melilla elect a single deputy: every vote not cast for the winner is left without a seat."
+  ]
+ },
+ "retrieved": "2026-11-11",
+ "geos": {
+  "01": {
+   "es": "Álava",
+   "en": "Álava",
+   "rank": true
+  },
+  "02": {
+   "es": "Albacete",
+   "en": "Albacete",
+   "rank": true
+  },
+  "03": {
+   "es": "Alicante",
+   "en": "Alicante",
+   "rank": true
+  },
+  "04": {
+   "es": "Almería",
+   "en": "Almería",
+   "rank": true
+  },
+  "05": {
+   "es": "Ávila",
+   "en": "Ávila",
+   "rank": true
+  },
+  "06": {
+   "es": "Badajoz",
+   "en": "Badajoz",
+   "rank": true
+  },
+  "07": {
+   "es": "Baleares",
+   "en": "Balearic Is.",
+   "rank": true
+  },
+  "08": {
+   "es": "Barcelona",
+   "en": "Barcelona",
+   "rank": true
+  },
+  "09": {
+   "es": "Burgos",
+   "en": "Burgos",
+   "rank": true
+  },
+  "10": {
+   "es": "Cáceres",
+   "en": "Cáceres",
+   "rank": true
+  },
+  "11": {
+   "es": "Cádiz",
+   "en": "Cádiz",
+   "rank": true
+  },
+  "12": {
+   "es": "Castellón",
+   "en": "Castellón",
+   "rank": true
+  },
+  "13": {
+   "es": "Ciudad Real",
+   "en": "Ciudad Real",
+   "rank": true
+  },
+  "14": {
+   "es": "Córdoba",
+   "en": "Córdoba",
+   "rank": true
+  },
+  "15": {
+   "es": "A Coruña",
+   "en": "A Coruña",
+   "rank": true
+  },
+  "16": {
+   "es": "Cuenca",
+   "en": "Cuenca",
+   "rank": true
+  },
+  "17": {
+   "es": "Girona",
+   "en": "Girona",
+   "rank": true
+  },
+  "18": {
+   "es": "Granada",
+   "en": "Granada",
+   "rank": true
+  },
+  "19": {
+   "es": "Guadalajara",
+   "en": "Guadalajara",
+   "rank": true
+  },
+  "20": {
+   "es": "Gipuzkoa",
+   "en": "Gipuzkoa",
+   "rank": true
+  },
+  "21": {
+   "es": "Huelva",
+   "en": "Huelva",
+   "rank": true
+  },
+  "22": {
+   "es": "Huesca",
+   "en": "Huesca",
+   "rank": true
+  },
+  "23": {
+   "es": "Jaén",
+   "en": "Jaén",
+   "rank": true
+  },
+  "24": {
+   "es": "León",
+   "en": "León",
+   "rank": true
+  },
+  "25": {
+   "es": "Lleida",
+   "en": "Lleida",
+   "rank": true
+  },
+  "26": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "rank": true
+  },
+  "27": {
+   "es": "Lugo",
+   "en": "Lugo",
+   "rank": true
+  },
+  "28": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "rank": true
+  },
+  "29": {
+   "es": "Málaga",
+   "en": "Málaga",
+   "rank": true
+  },
+  "30": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "rank": true
+  },
+  "31": {
+   "es": "Navarra",
+   "en": "Navarra",
+   "rank": true
+  },
+  "32": {
+   "es": "Ourense",
+   "en": "Ourense",
+   "rank": true
+  },
+  "33": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "rank": true
+  },
+  "34": {
+   "es": "Palencia",
+   "en": "Palencia",
+   "rank": true
+  },
+  "35": {
+   "es": "Las Palmas",
+   "en": "Las Palmas",
+   "rank": true
+  },
+  "36": {
+   "es": "Pontevedra",
+   "en": "Pontevedra",
+   "rank": true
+  },
+  "37": {
+   "es": "Salamanca",
+   "en": "Salamanca",
+   "rank": true
+  },
+  "38": {
+   "es": "S.C. Tenerife",
+   "en": "S.C. Tenerife",
+   "rank": true
+  },
+  "39": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "rank": true
+  },
+  "40": {
+   "es": "Segovia",
+   "en": "Segovia",
+   "rank": true
+  },
+  "41": {
+   "es": "Sevilla",
+   "en": "Sevilla",
+   "rank": true
+  },
+  "42": {
+   "es": "Soria",
+   "en": "Soria",
+   "rank": true
+  },
+  "43": {
+   "es": "Tarragona",
+   "en": "Tarragona",
+   "rank": true
+  },
+  "44": {
+   "es": "Teruel",
+   "en": "Teruel",
+   "rank": true
+  },
+  "45": {
+   "es": "Toledo",
+   "en": "Toledo",
+   "rank": true
+  },
+  "46": {
+   "es": "Valencia",
+   "en": "Valencia",
+   "rank": true
+  },
+  "47": {
+   "es": "Valladolid",
+   "en": "Valladolid",
+   "rank": true
+  },
+  "48": {
+   "es": "Bizkaia",
+   "en": "Bizkaia",
+   "rank": true
+  },
+  "49": {
+   "es": "Zamora",
+   "en": "Zamora",
+   "rank": true
+  },
+  "50": {
+   "es": "Zaragoza",
+   "en": "Zaragoza",
+   "rank": true
+  },
+  "51": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "rank": true
+  },
+  "52": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "rank": true
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "aggregate": true
+  }
+ },
+ "groups": {
+  "2-3": {
+   "provinces": 9,
+   "share": 23.6
+  },
+  "10+": {
+   "provinces": 7,
+   "share": 2.3
+  }
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023",
+   "value": 17.9,
+   "seats": 4,
+   "lost": 30336,
+   "valid": 169107
+  },
+  {
+   "geo": "02",
+   "time": "2023",
+   "value": 24.7,
+   "seats": 4,
+   "lost": 54736,
+   "valid": 221191
+  },
+  {
+   "geo": "03",
+   "time": "2023",
+   "value": 1.4,
+   "seats": 12,
+   "lost": 12667,
+   "valid": 899192
+  },
+  {
+   "geo": "04",
+   "time": "2023",
+   "value": 8.0,
+   "seats": 6,
+   "lost": 25608,
+   "valid": 321242
+  },
+  {
+   "geo": "05",
+   "time": "2023",
+   "value": 28.7,
+   "seats": 3,
+   "lost": 28127,
+   "valid": 97956
+  },
+  {
+   "geo": "06",
+   "time": "2023",
+   "value": 8.5,
+   "seats": 5,
+   "lost": 33203,
+   "valid": 391461
+  },
+  {
+   "geo": "07",
+   "time": "2023",
+   "value": 1.5,
+   "seats": 8,
+   "lost": 7453,
+   "valid": 503280
+  },
+  {
+   "geo": "08",
+   "time": "2023",
+   "value": 4.9,
+   "seats": 32,
+   "lost": 131929,
+   "valid": 2667478
+  },
+  {
+   "geo": "09",
+   "time": "2023",
+   "value": 24.0,
+   "seats": 4,
+   "lost": 48614,
+   "valid": 202569
+  },
+  {
+   "geo": "10",
+   "time": "2023",
+   "value": 22.4,
+   "seats": 4,
+   "lost": 52805,
+   "valid": 235851
+  },
+  {
+   "geo": "11",
+   "time": "2023",
+   "value": 2.9,
+   "seats": 9,
+   "lost": 18257,
+   "valid": 637098
+  },
+  {
+   "geo": "12",
+   "time": "2023",
+   "value": 15.4,
+   "seats": 5,
+   "lost": 47530,
+   "valid": 307930
+  },
+  {
+   "geo": "13",
+   "time": "2023",
+   "value": 7.0,
+   "seats": 5,
+   "lost": 19769,
+   "valid": 282979
+  },
+  {
+   "geo": "14",
+   "time": "2023",
+   "value": 1.4,
+   "seats": 6,
+   "lost": 6078,
+   "valid": 448602
+  },
+  {
+   "geo": "15",
+   "time": "2023",
+   "value": 5.8,
+   "seats": 8,
+   "lost": 39065,
+   "valid": 677702
+  },
+  {
+   "geo": "16",
+   "time": "2023",
+   "value": 22.0,
+   "seats": 3,
+   "lost": 25056,
+   "valid": 113808
+  },
+  {
+   "geo": "17",
+   "time": "2023",
+   "value": 24.9,
+   "seats": 6,
+   "lost": 80433,
+   "valid": 322988
+  },
+  {
+   "geo": "18",
+   "time": "2023",
+   "value": 1.4,
+   "seats": 7,
+   "lost": 7283,
+   "valid": 502845
+  },
+  {
+   "geo": "19",
+   "time": "2023",
+   "value": 10.6,
+   "seats": 3,
+   "lost": 14970,
+   "valid": 140913
+  },
+  {
+   "geo": "20",
+   "time": "2023",
+   "value": 22.5,
+   "seats": 6,
+   "lost": 84560,
+   "valid": 376621
+  },
+  {
+   "geo": "21",
+   "time": "2023",
+   "value": 12.0,
+   "seats": 5,
+   "lost": 30931,
+   "valid": 256804
+  },
+  {
+   "geo": "22",
+   "time": "2023",
+   "value": 27.2,
+   "seats": 3,
+   "lost": 32588,
+   "valid": 119895
+  },
+  {
+   "geo": "23",
+   "time": "2023",
+   "value": 11.0,
+   "seats": 5,
+   "lost": 40398,
+   "valid": 368731
+  },
+  {
+   "geo": "24",
+   "time": "2023",
+   "value": 28.9,
+   "seats": 4,
+   "lost": 79480,
+   "valid": 275240
+  },
+  {
+   "geo": "25",
+   "time": "2023",
+   "value": 32.8,
+   "seats": 4,
+   "lost": 60507,
+   "valid": 184539
+  },
+  {
+   "geo": "26",
+   "time": "2023",
+   "value": 17.8,
+   "seats": 4,
+   "lost": 31018,
+   "valid": 174663
+  },
+  {
+   "geo": "27",
+   "time": "2023",
+   "value": 18.8,
+   "seats": 4,
+   "lost": 37383,
+   "valid": 198566
+  },
+  {
+   "geo": "28",
+   "time": "2023",
+   "value": 1.3,
+   "seats": 37,
+   "lost": 47987,
+   "valid": 3608673
+  },
+  {
+   "geo": "29",
+   "time": "2023",
+   "value": 1.7,
+   "seats": 11,
+   "lost": 13247,
+   "valid": 788338
+  },
+  {
+   "geo": "30",
+   "time": "2023",
+   "value": 1.5,
+   "seats": 10,
+   "lost": 10879,
+   "valid": 747797
+  },
+  {
+   "geo": "31",
+   "time": "2023",
+   "value": 22.6,
+   "seats": 5,
+   "lost": 77125,
+   "valid": 341844
+  },
+  {
+   "geo": "32",
+   "time": "2023",
+   "value": 19.3,
+   "seats": 4,
+   "lost": 35945,
+   "valid": 186271
+  },
+  {
+   "geo": "33",
+   "time": "2023",
+   "value": 1.7,
+   "seats": 7,
+   "lost": 9887,
+   "valid": 597032
+  },
+  {
+   "geo": "34",
+   "time": "2023",
+   "value": 22.5,
+   "seats": 3,
+   "lost": 21807,
+   "valid": 96962
+  },
+  {
+   "geo": "35",
+   "time": "2023",
+   "value": 15.5,
+   "seats": 8,
+   "lost": 82035,
+   "valid": 529337
+  },
+  {
+   "geo": "36",
+   "time": "2023",
+   "value": 15.0,
+   "seats": 7,
+   "lost": 86249,
+   "valid": 573124
+  },
+  {
+   "geo": "37",
+   "time": "2023",
+   "value": 21.8,
+   "seats": 4,
+   "lost": 43425,
+   "valid": 199110
+  },
+  {
+   "geo": "38",
+   "time": "2023",
+   "value": 13.4,
+   "seats": 7,
+   "lost": 66120,
+   "valid": 494373
+  },
+  {
+   "geo": "39",
+   "time": "2023",
+   "value": 9.6,
+   "seats": 5,
+   "lost": 33723,
+   "valid": 350150
+  },
+  {
+   "geo": "40",
+   "time": "2023",
+   "value": 23.4,
+   "seats": 3,
+   "lost": 20731,
+   "valid": 88613
+  },
+  {
+   "geo": "41",
+   "time": "2023",
+   "value": 1.6,
+   "seats": 12,
+   "lost": 17152,
+   "valid": 1059358
+  },
+  {
+   "geo": "42",
+   "time": "2023",
+   "value": 32.7,
+   "seats": 2,
+   "lost": 16623,
+   "valid": 50769
+  },
+  {
+   "geo": "43",
+   "time": "2023",
+   "value": 14.9,
+   "seats": 6,
+   "lost": 54698,
+   "valid": 368024
+  },
+  {
+   "geo": "44",
+   "time": "2023",
+   "value": 35.2,
+   "seats": 3,
+   "lost": 26691,
+   "valid": 75913
+  },
+  {
+   "geo": "45",
+   "time": "2023",
+   "value": 9.3,
+   "seats": 6,
+   "lost": 35940,
+   "valid": 387200
+  },
+  {
+   "geo": "46",
+   "time": "2023",
+   "value": 1.4,
+   "seats": 16,
+   "lost": 20033,
+   "valid": 1437161
+  },
+  {
+   "geo": "47",
+   "time": "2023",
+   "value": 10.5,
+   "seats": 5,
+   "lost": 33176,
+   "valid": 316309
+  },
+  {
+   "geo": "48",
+   "time": "2023",
+   "value": 3.6,
+   "seats": 8,
+   "lost": 21674,
+   "valid": 609693
+  },
+  {
+   "geo": "49",
+   "time": "2023",
+   "value": 21.9,
+   "seats": 3,
+   "lost": 22691,
+   "valid": 103410
+  },
+  {
+   "geo": "50",
+   "time": "2023",
+   "value": 3.5,
+   "seats": 7,
+   "lost": 18077,
+   "valid": 518705
+  },
+  {
+   "geo": "51",
+   "time": "2023",
+   "value": 60.2,
+   "seats": 1,
+   "lost": 20075,
+   "valid": 33321
+  },
+  {
+   "geo": "52",
+   "time": "2023",
+   "value": 49.9,
+   "seats": 1,
+   "lost": 13650,
+   "valid": 27349
+  },
+  {
+   "geo": "ES",
+   "time": "2023",
+   "value": 7.8,
+   "seats": 350,
+   "lost": 1930424,
+   "valid": 24688087
+  }
+ ]
+}

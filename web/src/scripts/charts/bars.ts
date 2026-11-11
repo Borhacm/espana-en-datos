@@ -1,6 +1,6 @@
 import { scaleLinear } from "d3-scale";
 import {
-  svg, colorFor, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, niceTicks,
+  svg, colorFor, partyColor, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, niceTicks,
   type RenderContext, type Row, pctSign,
 } from "./core";
 
@@ -29,8 +29,9 @@ function pctSuffix(ctx: RenderContext): string {
 
 function euRows(ctx: RenderContext, rows: Row[]): Row[] {
   const extra = ctx.cfg.extraGeos ?? [];
-  // Rankings de países de la UE o de comunidades autónomas (y el total de España)
-  return rows.filter((r) => ctx.chart.geos[r.geo]?.eu || ctx.chart.geos[r.geo]?.ccaa || ctx.chart.geos[r.geo]?.aggregate || extra.includes(r.geo));
+  // Rankings de países de la UE o de comunidades autónomas (y el total de España). `rank` marca otras filas
+  // ordenables (provincias, partidos) que el JSON declara expresamente.
+  return rows.filter((r) => ctx.chart.geos[r.geo]?.eu || ctx.chart.geos[r.geo]?.ccaa || ctx.chart.geos[r.geo]?.aggregate || ctx.chart.geos[r.geo]?.rank || extra.includes(r.geo));
 }
 
 /** Ranking de países: d3 (IA generativa) y d4 (competencias digitales). */
@@ -69,15 +70,19 @@ export function renderRank(ctx: RenderContext) {
   const tip = tooltip(plot);
   rows.forEach((r, i) => {
     const y = m.top + i * ROW;
-    const hl = r.geo === "EU27" || r.geo === "ES" || r.geo === "ESP" || r.geo === focus || (ctx.cfg.extraGeos ?? []).includes(r.geo);
+    // Las filas `rank` (provincias, partidos) no usan el territorio destacado: sus códigos no son de comunidad
+    const own = ctx.chart.geos[r.geo]?.rank;
+    const hl = r.geo === "EU27" || r.geo === "ES" || r.geo === "ESP" || (!own && r.geo === focus) || (ctx.cfg.extraGeos ?? []).includes(r.geo);
     const g = svg("g", { class: `bar-row${hl ? " hl" : ""}`, tabindex: 0 }, root);
     svg("rect", { x: 0, y, width, height: ROW, fill: "transparent" }, g);
     const name = svg("text", { x: left - 10, y: y + ROW / 2 + 5, class: `row-name${hl ? " strong" : ""}`, "text-anchor": "end" }, g);
     name.textContent = geoName(chart, r.geo, lang);
-    svg("path", { d: barPath(x(0), x(r.value), y + (ROW - BAR) / 2, BAR), fill: colorFor(r.geo, focus) }, g);
+    // Filas de partidos: con su color (el color sigue a la entidad)
+    const fill = ctx.chart.geos[r.geo]?.party ? partyColor(r.geo) : colorFor(r.geo, own ? null : focus);
+    svg("path", { d: barPath(x(0), x(r.value), y + (ROW - BAR) / 2, BAR), fill }, g);
     const val = svg("text", { x: Math.max(x(r.value), x(0)) + 6, y: y + ROW / 2 + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(r.value);
-    const show = () => tip.show(x(r.value), y, tipRow(colorFor(r.geo, focus), geoName(chart, r.geo, lang), `${fmt(r.value)}${pct}`, true));
+    const show = () => tip.show(x(r.value), y, tipRow(fill, geoName(chart, r.geo, lang), `${fmt(r.value)}${pct}`, true));
     g.addEventListener("pointerenter", show);
     g.addEventListener("focus", show);
     g.addEventListener("pointerleave", () => tip.hide());
