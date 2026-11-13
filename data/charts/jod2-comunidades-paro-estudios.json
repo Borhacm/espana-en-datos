@@ -1,0 +1,360 @@
+{
+ "id": "jod2-comunidades-paro-estudios",
+ "lens": "dentro",
+ "theme": "jovenes",
+ "title": {
+  "es": "En todas las comunidades, el paro de los jóvenes que no pasaron de la ESO es más alto que el de los que tienen estudios superiores: en España, el 20,9 % frente al 8,8 %",
+  "en": "In every region, unemployment among young people with no more than lower secondary education is higher than among those with tertiary education: in Spain, 20.9% against 8.8%"
+ },
+ "subtitle": {
+  "es": "Tasa de paro de 25 a 34 años según el nivel de estudios, media 2023-2025, en %. Punto hueco: estudios superiores; punto lleno: como mucho la ESO",
+  "en": "Unemployment rate, aged 25 to 34, by level of education, 2023-2025 average, in %. Hollow dot: tertiary education; solid dot: lower secondary at most"
+ },
+ "unit": {
+  "es": "% de los activos",
+  "en": "% of the labour force"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "lfst_r_lfu3rt",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lfu3rt/default/table"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa. Tasa de paro: parados sobre activos (los que trabajan o buscan empleo) de cada nivel de estudios. «Como mucho la ESO»: niveles 0 a 2 de la CINE; «estudios superiores»: niveles 5 a 8 (grado superior de FP, grado, máster y doctorado).",
+   "Media de tres años, porque la muestra de cada comunidad es pequeña; Eurostat marca como poco fiables algunos datos anuales de las comunidades pequeñas. Sin Ceuta y Melilla, por el tamaño de la muestra."
+  ],
+  "en": [
+   "Labour Force Survey. Unemployment rate: unemployed over the labour force (those working or looking for work) at each level of education. «Lower secondary at most»: ISCED levels 0 to 2; «tertiary»: levels 5 to 8 (higher vocational training, bachelor's, master's and doctorate).",
+   "Three-year average, because the sample in each region is small; Eurostat flags some annual figures for small regions as having low reliability. Ceuta and Melilla are excluded because of their sample size."
+  ]
+ },
+ "retrieved": "2026-11-13",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-sup": {
+    "es": "Estudios superiores",
+    "en": "Tertiary education"
+   },
+   "1-eso": {
+    "es": "Como mucho la ESO",
+    "en": "Lower secondary at most"
+   }
+  }
+ },
+ "ratio": {
+  "01": 1.92,
+  "02": 2.77,
+  "03": 1.93,
+  "04": 1.99,
+  "05": 2.41,
+  "06": 2.11,
+  "07": 2.61,
+  "08": 1.98,
+  "09": 2.98,
+  "10": 2.23,
+  "11": 1.59,
+  "12": 1.98,
+  "13": 2.46,
+  "14": 1.96,
+  "15": 2.32,
+  "16": 3.38,
+  "17": 2.02,
+  "ES": 2.37
+ },
+ "highest_low_educ": "01",
+ "lowest_low_educ": "06",
+ "rows": [
+  {
+   "geo": "01",
+   "time": "0-sup",
+   "value": 13.1
+  },
+  {
+   "geo": "01",
+   "time": "1-eso",
+   "value": 25.1
+  },
+  {
+   "geo": "02",
+   "time": "0-sup",
+   "value": 6.2
+  },
+  {
+   "geo": "02",
+   "time": "1-eso",
+   "value": 17.2
+  },
+  {
+   "geo": "03",
+   "time": "0-sup",
+   "value": 10.4
+  },
+  {
+   "geo": "03",
+   "time": "1-eso",
+   "value": 20.1
+  },
+  {
+   "geo": "04",
+   "time": "0-sup",
+   "value": 8.2
+  },
+  {
+   "geo": "04",
+   "time": "1-eso",
+   "value": 16.3
+  },
+  {
+   "geo": "05",
+   "time": "0-sup",
+   "value": 10.2
+  },
+  {
+   "geo": "05",
+   "time": "1-eso",
+   "value": 24.6
+  },
+  {
+   "geo": "06",
+   "time": "0-sup",
+   "value": 7.5
+  },
+  {
+   "geo": "06",
+   "time": "1-eso",
+   "value": 15.8
+  },
+  {
+   "geo": "07",
+   "time": "0-sup",
+   "value": 8.5
+  },
+  {
+   "geo": "07",
+   "time": "1-eso",
+   "value": 22.2
+  },
+  {
+   "geo": "08",
+   "time": "0-sup",
+   "value": 10.0
+  },
+  {
+   "geo": "08",
+   "time": "1-eso",
+   "value": 19.8
+  },
+  {
+   "geo": "09",
+   "time": "0-sup",
+   "value": 6.0
+  },
+  {
+   "geo": "09",
+   "time": "1-eso",
+   "value": 17.9
+  },
+  {
+   "geo": "10",
+   "time": "0-sup",
+   "value": 9.5
+  },
+  {
+   "geo": "10",
+   "time": "1-eso",
+   "value": 21.2
+  },
+  {
+   "geo": "11",
+   "time": "0-sup",
+   "value": 15.7
+  },
+  {
+   "geo": "11",
+   "time": "1-eso",
+   "value": 25.0
+  },
+  {
+   "geo": "12",
+   "time": "0-sup",
+   "value": 9.3
+  },
+  {
+   "geo": "12",
+   "time": "1-eso",
+   "value": 18.4
+  },
+  {
+   "geo": "13",
+   "time": "0-sup",
+   "value": 7.4
+  },
+  {
+   "geo": "13",
+   "time": "1-eso",
+   "value": 18.2
+  },
+  {
+   "geo": "14",
+   "time": "0-sup",
+   "value": 10.8
+  },
+  {
+   "geo": "14",
+   "time": "1-eso",
+   "value": 21.2
+  },
+  {
+   "geo": "15",
+   "time": "0-sup",
+   "value": 7.3
+  },
+  {
+   "geo": "15",
+   "time": "1-eso",
+   "value": 16.9
+  },
+  {
+   "geo": "16",
+   "time": "0-sup",
+   "value": 6.4
+  },
+  {
+   "geo": "16",
+   "time": "1-eso",
+   "value": 21.6
+  },
+  {
+   "geo": "17",
+   "time": "0-sup",
+   "value": 8.7
+  },
+  {
+   "geo": "17",
+   "time": "1-eso",
+   "value": 17.6
+  },
+  {
+   "geo": "ES",
+   "time": "0-sup",
+   "value": 8.8
+  },
+  {
+   "geo": "ES",
+   "time": "1-eso",
+   "value": 20.9
+  }
+ ]
+}

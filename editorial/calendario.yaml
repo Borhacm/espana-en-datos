@@ -154,6 +154,7 @@ piezas:
     tema: jovenes
     titulo: "Jóvenes: emancipación, paro y vivienda"
     idea: edad de emancipación frente a la UE, paro juvenil, coste de la vivienda para menores de 30.
+    estado: hecha
 
   # Campaña (13-27 nov): programas frente a datos
   - id: a12

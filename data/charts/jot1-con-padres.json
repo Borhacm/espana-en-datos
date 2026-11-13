@@ -1,0 +1,247 @@
+{
+ "id": "jot1-con-padres",
+ "lens": "tiempo",
+ "theme": "jovenes",
+ "title": {
+  "es": "La mitad de los españoles de 25 a 34 años vive con sus padres: el 50,2 % en 2025, frente al 36,6 % en 2008",
+  "en": "Half of Spaniards aged 25 to 34 live with their parents: 50.2% in 2025, against 36.6% in 2008"
+ },
+ "subtitle": {
+  "es": "Jóvenes de 25 a 34 años que viven con sus padres, 2004-2025, en %",
+  "en": "People aged 25 to 34 living with their parents, 2004-2025, in %"
+ },
+ "unit": {
+  "es": "% de los jóvenes de 25 a 34 años",
+  "en": "% of people aged 25 to 34"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "ilc_lvps08",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvps08/default/table"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Condiciones de Vida (EU-SILC). «Vivir con los padres»: residir en el mismo hogar que al menos uno de ellos, aunque se aporten ingresos al hogar.",
+   "La media de la UE empieza en 2010 y es una estimación de Eurostat hasta 2019.",
+   "En 2008 y 2013 hubo cambios de método en la encuesta española; en 2021, en la de toda la UE."
+  ],
+  "en": [
+   "EU Survey on Income and Living Conditions (EU-SILC). «Living with parents»: living in the same household as at least one of them, even if contributing income to the household.",
+   "The EU average starts in 2010 and is a Eurostat estimate until 2019.",
+   "There were methodological changes in the Spanish survey in 2008 and 2013, and in the EU-wide survey in 2021."
+  ]
+ },
+ "retrieved": "2026-11-13",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "espana": {
+    "es": "España",
+    "en": "Spain"
+   },
+   "ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   }
+  }
+ },
+ "max_is_last": true,
+ "low_year": "2008",
+ "eu_last": 30.1,
+ "eu_first": {
+  "2010": 29.0
+ },
+ "rows": [
+  {
+   "time": "2004",
+   "series": "espana",
+   "value": 33.2
+  },
+  {
+   "time": "2005",
+   "series": "espana",
+   "value": 38.7
+  },
+  {
+   "time": "2006",
+   "series": "espana",
+   "value": 38.7
+  },
+  {
+   "time": "2007",
+   "series": "espana",
+   "value": 38.9
+  },
+  {
+   "time": "2008",
+   "series": "espana",
+   "value": 36.6
+  },
+  {
+   "time": "2009",
+   "series": "espana",
+   "value": 35.5
+  },
+  {
+   "time": "2010",
+   "series": "espana",
+   "value": 35.1
+  },
+  {
+   "time": "2011",
+   "series": "espana",
+   "value": 36.6
+  },
+  {
+   "time": "2012",
+   "series": "espana",
+   "value": 37.2
+  },
+  {
+   "time": "2013",
+   "series": "espana",
+   "value": 37.4
+  },
+  {
+   "time": "2014",
+   "series": "espana",
+   "value": 39.6
+  },
+  {
+   "time": "2015",
+   "series": "espana",
+   "value": 39.1
+  },
+  {
+   "time": "2016",
+   "series": "espana",
+   "value": 40.0
+  },
+  {
+   "time": "2017",
+   "series": "espana",
+   "value": 42.8
+  },
+  {
+   "time": "2018",
+   "series": "espana",
+   "value": 43.8
+  },
+  {
+   "time": "2019",
+   "series": "espana",
+   "value": 46.4
+  },
+  {
+   "time": "2020",
+   "series": "espana",
+   "value": 46.8
+  },
+  {
+   "time": "2021",
+   "series": "espana",
+   "value": 46.0
+  },
+  {
+   "time": "2022",
+   "series": "espana",
+   "value": 46.3
+  },
+  {
+   "time": "2023",
+   "series": "espana",
+   "value": 45.7
+  },
+  {
+   "time": "2024",
+   "series": "espana",
+   "value": 48.3
+  },
+  {
+   "time": "2025",
+   "series": "espana",
+   "value": 50.2
+  },
+  {
+   "time": "2010",
+   "series": "ue",
+   "value": 29.0
+  },
+  {
+   "time": "2011",
+   "series": "ue",
+   "value": 29.7
+  },
+  {
+   "time": "2012",
+   "series": "ue",
+   "value": 30.1
+  },
+  {
+   "time": "2013",
+   "series": "ue",
+   "value": 30.4
+  },
+  {
+   "time": "2014",
+   "series": "ue",
+   "value": 30.7
+  },
+  {
+   "time": "2015",
+   "series": "ue",
+   "value": 30.7
+  },
+  {
+   "time": "2016",
+   "series": "ue",
+   "value": 30.8
+  },
+  {
+   "time": "2017",
+   "series": "ue",
+   "value": 30.5
+  },
+  {
+   "time": "2018",
+   "series": "ue",
+   "value": 30.5
+  },
+  {
+   "time": "2019",
+   "series": "ue",
+   "value": 30.7
+  },
+  {
+   "time": "2020",
+   "series": "ue",
+   "value": 30.4
+  },
+  {
+   "time": "2021",
+   "series": "ue",
+   "value": 30.5
+  },
+  {
+   "time": "2022",
+   "series": "ue",
+   "value": 30.4
+  },
+  {
+   "time": "2023",
+   "series": "ue",
+   "value": 30.0
+  },
+  {
+   "time": "2024",
+   "series": "ue",
+   "value": 29.7
+  },
+  {
+   "time": "2025",
+   "series": "ue",
+   "value": 30.1
+  }
+ ]
+}

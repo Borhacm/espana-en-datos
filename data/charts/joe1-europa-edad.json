@@ -1,0 +1,359 @@
+{
+ "id": "joe1-europa-edad",
+ "lens": "europa",
+ "theme": "jovenes",
+ "title": {
+  "es": "Los jóvenes españoles se van de casa de sus padres a los 30,2 años de media, 3,9 años más tarde que la media de la UE",
+  "en": "Young Spaniards leave their parents' home at 30.2 on average, 3.9 years later than the EU average"
+ },
+ "subtitle": {
+  "es": "Edad media estimada a la que los jóvenes dejan el hogar de sus padres, 2025, en años. Solo en 3 países de la UE se van más tarde",
+  "en": "Estimated average age at which young people leave the parental household, 2025, in years. Only in 3 EU countries do they leave later"
+ },
+ "unit": {
+  "es": "años",
+  "en": "years"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "yth_demo_030",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/yth_demo_030/default/table"
+ },
+ "notes": {
+  "es": [
+   "Estimación de Eurostat a partir de la Encuesta de Población Activa de cada país: edad a la que el 50 % de los jóvenes ya no vive en el hogar de sus padres.",
+   "En 2002, la edad era de 29,3 años en España y de 26,5 en la UE."
+  ],
+  "en": [
+   "Eurostat estimate based on each country's Labour Force Survey: the age at which 50% of young people no longer live in their parents' household.",
+   "In 2002, the age was 29.3 in Spain and 26.5 in the EU."
+  ]
+ },
+ "retrieved": "2026-11-13",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "countries_above": [
+  "GRC",
+  "HRV",
+  "SVK"
+ ],
+ "countries_tied": [
+  "ITA"
+ ],
+ "first_year": "2002",
+ "first": {
+  "ESP": 29.3,
+  "EU27": 26.5
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 25.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 26.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 27.9
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 27.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 25.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 24.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 21.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 30.2
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 22.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 26.3
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 21.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 23.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 30.9
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 31.5
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 27.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 26.9
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 30.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 22.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 26.6
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 25.7
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 27.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 23.4
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 26.8
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 28.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 27.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 30.9
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 28.8
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 23.1
+  }
+ ]
+}

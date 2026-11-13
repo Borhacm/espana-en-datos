@@ -1,0 +1,533 @@
+{
+ "id": "jot2-tenencia",
+ "lens": "tiempo",
+ "theme": "jovenes",
+ "title": {
+  "es": "En los hogares de menores de 30 años, los propietarios han pasado del 56 % al 29 % y los inquilinos a precio de mercado, del 29 % al 50 %",
+  "en": "In households headed by under-30s, owners have fallen from 56% to 29% and market-rent tenants have risen from 29% to 50%"
+ },
+ "subtitle": {
+  "es": "Hogares cuya persona de referencia tiene de 16 a 29 años según el régimen de tenencia de la vivienda, 2004-2025, en %",
+  "en": "Households whose reference person is aged 16 to 29 by housing tenure, 2004-2025, in %"
+ },
+ "unit": {
+  "es": "% de los hogares",
+  "en": "% of households"
+ },
+ "source": {
+  "name": "INE, Encuesta de Condiciones de Vida",
+  "dataset": "Tabla 9994",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=9994",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Titular: medias de 2006-2008 y de 2023-2025, porque la muestra de hogares encabezados por menores de 30 años es pequeña y el dato de un año suelto varía mucho.",
+   "Solo cuenta a los jóvenes que ya tienen su propio hogar (o encabezan uno), no a los que viven con sus padres.",
+   "Propietarios: con o sin hipoteca. Cesión: vivienda prestada gratis, a menudo por la familia o la empresa."
+  ],
+  "en": [
+   "Headline: averages for 2006-2008 and 2023-2025, because the sample of households headed by under-30s is small and a single year's figure varies a lot.",
+   "It only counts young people who already have (or head) their own household, not those living with their parents.",
+   "Owners: with or without a mortgage. Rent-free: a home lent at no cost, often by family or an employer."
+  ]
+ },
+ "retrieved": "2026-11-13",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "propiedad": {
+    "es": "Propietarios",
+    "en": "Owners"
+   },
+   "mercado": {
+    "es": "Alquiler a precio de mercado",
+    "en": "Market rent"
+   },
+   "reducido": {
+    "es": "Alquiler por debajo del mercado",
+    "en": "Below-market rent"
+   },
+   "cesion": {
+    "es": "Cesión gratuita",
+    "en": "Rent-free"
+   }
+  }
+ },
+ "short_labels": {
+  "propiedad": {
+   "es": "Propietarios",
+   "en": "Owners"
+  },
+  "mercado": {
+   "es": "Alquiler",
+   "en": "Market rent"
+  },
+  "reducido": {
+   "es": "Bajo mercado",
+   "en": "Below market"
+  },
+  "cesion": {
+   "es": "Cesión",
+   "en": "Rent-free"
+  }
+ },
+ "averages": {
+  "early": "2006-2008",
+  "late": "2023-2025",
+  "owners": [
+   56.4,
+   28.9
+  ],
+  "market_rent": [
+   28.7,
+   49.9
+  ],
+  "owners_30_44": [
+   73.6,
+   53.8
+  ]
+ },
+ "rows": [
+  {
+   "time": "2004",
+   "series": "propiedad",
+   "value": 47.7
+  },
+  {
+   "time": "2005",
+   "series": "propiedad",
+   "value": 53.6
+  },
+  {
+   "time": "2006",
+   "series": "propiedad",
+   "value": 56.1
+  },
+  {
+   "time": "2007",
+   "series": "propiedad",
+   "value": 58.1
+  },
+  {
+   "time": "2008",
+   "series": "propiedad",
+   "value": 54.9
+  },
+  {
+   "time": "2009",
+   "series": "propiedad",
+   "value": 50.0
+  },
+  {
+   "time": "2010",
+   "series": "propiedad",
+   "value": 46.9
+  },
+  {
+   "time": "2011",
+   "series": "propiedad",
+   "value": 46.4
+  },
+  {
+   "time": "2012",
+   "series": "propiedad",
+   "value": 42.5
+  },
+  {
+   "time": "2013",
+   "series": "propiedad",
+   "value": 38.5
+  },
+  {
+   "time": "2014",
+   "series": "propiedad",
+   "value": 34.2
+  },
+  {
+   "time": "2015",
+   "series": "propiedad",
+   "value": 34.2
+  },
+  {
+   "time": "2016",
+   "series": "propiedad",
+   "value": 28.4
+  },
+  {
+   "time": "2017",
+   "series": "propiedad",
+   "value": 26.5
+  },
+  {
+   "time": "2018",
+   "series": "propiedad",
+   "value": 29.6
+  },
+  {
+   "time": "2019",
+   "series": "propiedad",
+   "value": 25.5
+  },
+  {
+   "time": "2020",
+   "series": "propiedad",
+   "value": 31.8
+  },
+  {
+   "time": "2021",
+   "series": "propiedad",
+   "value": 32.5
+  },
+  {
+   "time": "2022",
+   "series": "propiedad",
+   "value": 30.7
+  },
+  {
+   "time": "2023",
+   "series": "propiedad",
+   "value": 29.0
+  },
+  {
+   "time": "2024",
+   "series": "propiedad",
+   "value": 27.0
+  },
+  {
+   "time": "2025",
+   "series": "propiedad",
+   "value": 30.6
+  },
+  {
+   "time": "2004",
+   "series": "mercado",
+   "value": 37.6
+  },
+  {
+   "time": "2005",
+   "series": "mercado",
+   "value": 31.6
+  },
+  {
+   "time": "2006",
+   "series": "mercado",
+   "value": 25.5
+  },
+  {
+   "time": "2007",
+   "series": "mercado",
+   "value": 28.4
+  },
+  {
+   "time": "2008",
+   "series": "mercado",
+   "value": 32.3
+  },
+  {
+   "time": "2009",
+   "series": "mercado",
+   "value": 33.7
+  },
+  {
+   "time": "2010",
+   "series": "mercado",
+   "value": 36.4
+  },
+  {
+   "time": "2011",
+   "series": "mercado",
+   "value": 40.3
+  },
+  {
+   "time": "2012",
+   "series": "mercado",
+   "value": 39.0
+  },
+  {
+   "time": "2013",
+   "series": "mercado",
+   "value": 41.8
+  },
+  {
+   "time": "2014",
+   "series": "mercado",
+   "value": 47.4
+  },
+  {
+   "time": "2015",
+   "series": "mercado",
+   "value": 43.1
+  },
+  {
+   "time": "2016",
+   "series": "mercado",
+   "value": 47.8
+  },
+  {
+   "time": "2017",
+   "series": "mercado",
+   "value": 48.9
+  },
+  {
+   "time": "2018",
+   "series": "mercado",
+   "value": 45.8
+  },
+  {
+   "time": "2019",
+   "series": "mercado",
+   "value": 48.2
+  },
+  {
+   "time": "2020",
+   "series": "mercado",
+   "value": 45.4
+  },
+  {
+   "time": "2021",
+   "series": "mercado",
+   "value": 47.7
+  },
+  {
+   "time": "2022",
+   "series": "mercado",
+   "value": 47.6
+  },
+  {
+   "time": "2023",
+   "series": "mercado",
+   "value": 48.7
+  },
+  {
+   "time": "2024",
+   "series": "mercado",
+   "value": 51.2
+  },
+  {
+   "time": "2025",
+   "series": "mercado",
+   "value": 49.8
+  },
+  {
+   "time": "2004",
+   "series": "reducido",
+   "value": 1.7
+  },
+  {
+   "time": "2005",
+   "series": "reducido",
+   "value": 3.5
+  },
+  {
+   "time": "2006",
+   "series": "reducido",
+   "value": 2.7
+  },
+  {
+   "time": "2007",
+   "series": "reducido",
+   "value": 3.8
+  },
+  {
+   "time": "2008",
+   "series": "reducido",
+   "value": 4.2
+  },
+  {
+   "time": "2009",
+   "series": "reducido",
+   "value": 4.0
+  },
+  {
+   "time": "2010",
+   "series": "reducido",
+   "value": 5.2
+  },
+  {
+   "time": "2011",
+   "series": "reducido",
+   "value": 2.5
+  },
+  {
+   "time": "2012",
+   "series": "reducido",
+   "value": 4.1
+  },
+  {
+   "time": "2013",
+   "series": "reducido",
+   "value": 4.6
+  },
+  {
+   "time": "2014",
+   "series": "reducido",
+   "value": 2.7
+  },
+  {
+   "time": "2015",
+   "series": "reducido",
+   "value": 5.3
+  },
+  {
+   "time": "2016",
+   "series": "reducido",
+   "value": 5.0
+  },
+  {
+   "time": "2017",
+   "series": "reducido",
+   "value": 3.3
+  },
+  {
+   "time": "2018",
+   "series": "reducido",
+   "value": 6.6
+  },
+  {
+   "time": "2019",
+   "series": "reducido",
+   "value": 3.9
+  },
+  {
+   "time": "2020",
+   "series": "reducido",
+   "value": 3.9
+  },
+  {
+   "time": "2021",
+   "series": "reducido",
+   "value": 4.8
+  },
+  {
+   "time": "2022",
+   "series": "reducido",
+   "value": 5.8
+  },
+  {
+   "time": "2023",
+   "series": "reducido",
+   "value": 7.9
+  },
+  {
+   "time": "2024",
+   "series": "reducido",
+   "value": 7.3
+  },
+  {
+   "time": "2025",
+   "series": "reducido",
+   "value": 4.9
+  },
+  {
+   "time": "2004",
+   "series": "cesion",
+   "value": 13.0
+  },
+  {
+   "time": "2005",
+   "series": "cesion",
+   "value": 11.2
+  },
+  {
+   "time": "2006",
+   "series": "cesion",
+   "value": 15.6
+  },
+  {
+   "time": "2007",
+   "series": "cesion",
+   "value": 9.7
+  },
+  {
+   "time": "2008",
+   "series": "cesion",
+   "value": 8.7
+  },
+  {
+   "time": "2009",
+   "series": "cesion",
+   "value": 12.3
+  },
+  {
+   "time": "2010",
+   "series": "cesion",
+   "value": 11.5
+  },
+  {
+   "time": "2011",
+   "series": "cesion",
+   "value": 10.8
+  },
+  {
+   "time": "2012",
+   "series": "cesion",
+   "value": 14.4
+  },
+  {
+   "time": "2013",
+   "series": "cesion",
+   "value": 15.1
+  },
+  {
+   "time": "2014",
+   "series": "cesion",
+   "value": 15.7
+  },
+  {
+   "time": "2015",
+   "series": "cesion",
+   "value": 17.4
+  },
+  {
+   "time": "2016",
+   "series": "cesion",
+   "value": 18.7
+  },
+  {
+   "time": "2017",
+   "series": "cesion",
+   "value": 21.4
+  },
+  {
+   "time": "2018",
+   "series": "cesion",
+   "value": 18.0
+  },
+  {
+   "time": "2019",
+   "series": "cesion",
+   "value": 22.5
+  },
+  {
+   "time": "2020",
+   "series": "cesion",
+   "value": 18.9
+  },
+  {
+   "time": "2021",
+   "series": "cesion",
+   "value": 15.1
+  },
+  {
+   "time": "2022",
+   "series": "cesion",
+   "value": 15.9
+  },
+  {
+   "time": "2023",
+   "series": "cesion",
+   "value": 14.3
+  },
+  {
+   "time": "2024",
+   "series": "cesion",
+   "value": 14.5
+  },
+  {
+   "time": "2025",
+   "series": "cesion",
+   "value": 14.7
+  }
+ ]
+}

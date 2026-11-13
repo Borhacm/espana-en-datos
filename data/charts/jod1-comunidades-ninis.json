@@ -1,0 +1,290 @@
+{
+ "id": "jod1-comunidades-ninis",
+ "lens": "dentro",
+ "theme": "jovenes",
+ "title": {
+  "es": "Ni estudian ni trabajan el 14,4 % de los jóvenes de Andalucía y el 8,0 % de los de Cantabria",
+  "en": "14.4% of young people in Andalusia are neither in work nor in education, against 8.0% in Cantabria"
+ },
+ "subtitle": {
+  "es": "Jóvenes de 15 a 29 años que no trabajan ni estudian ni se forman, media 2023-2025, en %. España: 11,9 %; UE: 11,2 %",
+  "en": "People aged 15 to 29 not in employment, education or training, 2023-2025 average, in %. Spain: 11.9%; EU: 11.2%"
+ },
+ "unit": {
+  "es": "% de los jóvenes de 15 a 29 años",
+  "en": "% of people aged 15 to 29"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "edat_lfse_22",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_22/default/table"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa. Incluye a los que buscan empleo y a los que no lo buscan (por cuidados, enfermedad o desánimo).",
+   "Media de tres años, porque la muestra de cada comunidad es pequeña.",
+   "Ceuta y Melilla tienen una muestra muy pequeña y Eurostat marca su dato como poco fiable."
+  ],
+  "en": [
+   "Labour Force Survey. Includes those looking for work and those who are not (because of caring responsibilities, illness or discouragement).",
+   "Three-year average, because the sample in each region is small.",
+   "Ceuta and Melilla have a very small sample and Eurostat flags their figure as having low reliability."
+  ]
+ },
+ "retrieved": "2026-11-13",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "eu": 11.2,
+ "below_eu": [
+  "02",
+  "06",
+  "07",
+  "12",
+  "13",
+  "15",
+  "16"
+ ],
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023-2025",
+   "value": 14.4,
+   "years": 3
+  },
+  {
+   "geo": "02",
+   "time": "2023-2025",
+   "value": 10.2,
+   "years": 3
+  },
+  {
+   "geo": "03",
+   "time": "2023-2025",
+   "value": 12.6,
+   "years": 3
+  },
+  {
+   "geo": "04",
+   "time": "2023-2025",
+   "value": 13.5,
+   "years": 3
+  },
+  {
+   "geo": "05",
+   "time": "2023-2025",
+   "value": 14.1,
+   "years": 3
+  },
+  {
+   "geo": "06",
+   "time": "2023-2025",
+   "value": 8.0,
+   "years": 3
+  },
+  {
+   "geo": "07",
+   "time": "2023-2025",
+   "value": 11.1,
+   "years": 3
+  },
+  {
+   "geo": "08",
+   "time": "2023-2025",
+   "value": 12.2,
+   "years": 3
+  },
+  {
+   "geo": "09",
+   "time": "2023-2025",
+   "value": 11.7,
+   "years": 3
+  },
+  {
+   "geo": "10",
+   "time": "2023-2025",
+   "value": 11.4,
+   "years": 3
+  },
+  {
+   "geo": "11",
+   "time": "2023-2025",
+   "value": 12.5,
+   "years": 3
+  },
+  {
+   "geo": "12",
+   "time": "2023-2025",
+   "value": 10.7,
+   "years": 3
+  },
+  {
+   "geo": "13",
+   "time": "2023-2025",
+   "value": 10.4,
+   "years": 3
+  },
+  {
+   "geo": "14",
+   "time": "2023-2025",
+   "value": 13.7,
+   "years": 3
+  },
+  {
+   "geo": "15",
+   "time": "2023-2025",
+   "value": 9.9,
+   "years": 3
+  },
+  {
+   "geo": "16",
+   "time": "2023-2025",
+   "value": 8.1,
+   "years": 3
+  },
+  {
+   "geo": "17",
+   "time": "2023-2025",
+   "value": 11.5,
+   "years": 3
+  },
+  {
+   "geo": "18",
+   "time": "2023-2025",
+   "value": 13.6,
+   "years": 3
+  },
+  {
+   "geo": "19",
+   "time": "2023-2025",
+   "value": 18.1,
+   "years": 3
+  },
+  {
+   "geo": "ES",
+   "time": "2023-2025",
+   "value": 11.9,
+   "years": 3
+  }
+ ]
+}

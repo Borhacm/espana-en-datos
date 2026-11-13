@@ -1,0 +1,147 @@
+{
+ "id": "joe2-europa-trabajan",
+ "lens": "europa",
+ "theme": "jovenes",
+ "title": {
+  "es": "El 33,3 % de los españoles de 25 a 34 años trabaja y sigue viviendo con sus padres; en la UE, el 21,1 %",
+  "en": "33.3% of Spaniards aged 25 to 34 have a job and still live with their parents; in the EU, 21.1%"
+ },
+ "subtitle": {
+  "es": "Jóvenes de 25 a 34 años que viven con sus padres según su situación (trabajo a tiempo completo o parcial, paro, estudios u otra), 2025, en % del total de los que viven con sus padres. Punto hueco: media de la UE; punto lleno: España",
+  "en": "People aged 25 to 34 living with their parents by main activity (full-time or part-time job, unemployment, study or other), 2025, as % of all those living with their parents. Hollow dot: EU average; solid dot: Spain"
+ },
+ "unit": {
+  "es": "% de los que viven con sus padres",
+  "en": "% of those living with their parents"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "ilc_lvps09 e ilc_lvps08",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvps09/default/table"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Condiciones de Vida (EU-SILC). «Vivir con los padres»: residir en el mismo hogar que al menos uno de ellos, aunque se aporten ingresos al hogar.",
+   "Situación declarada por el propio joven (actividad principal), no la definición de paro de la EPA.",
+   "Titular: porcentaje de jóvenes de 25 a 34 años que viven con sus padres (50,2 % en España y 30,1 % en la UE) por la parte de ellos que trabaja."
+  ],
+  "en": [
+   "EU Survey on Income and Living Conditions (EU-SILC). «Living with parents»: living in the same household as at least one of them, even if contributing income to the household.",
+   "Status as reported by the young person (main activity), not the Labour Force Survey definition of unemployment.",
+   "Headline: share of people aged 25 to 34 living with their parents (50.2% in Spain and 30.1% in the EU) times the share of them who work."
+  ]
+ },
+ "retrieved": "2026-11-13",
+ "geos": {
+  "EMP_FT": {
+   "es": "Tiempo completo",
+   "en": "Full-time job",
+   "aggregate": true
+  },
+  "EMP_PT": {
+   "es": "Tiempo parcial",
+   "en": "Part-time job",
+   "aggregate": true
+  },
+  "UNE": {
+   "es": "En paro",
+   "en": "Unemployed",
+   "aggregate": true
+  },
+  "EDUC": {
+   "es": "Estudia",
+   "en": "Studying",
+   "aggregate": true
+  },
+  "INAC_OTH": {
+   "es": "Otros inactivos",
+   "en": "Other inactive",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "Media de la UE",
+    "en": "EU average"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "year": "2025",
+ "living_with_parents": {
+  "ESP": 50.2,
+  "EU27": 30.1
+ },
+ "working_share": {
+  "ESP": 66.3,
+  "EU27": 70.2
+ },
+ "pop_working": {
+  "ESP": 33.3,
+  "EU27": 21.1
+ },
+ "pop_not_working": {
+  "ESP": 16.9,
+  "EU27": 9.0
+ },
+ "gap": 20.1,
+ "gap_working": 12.2,
+ "gap_working_pct": 60.7,
+ "rows": [
+  {
+   "geo": "EMP_FT",
+   "time": "0-ue",
+   "value": 61.0
+  },
+  {
+   "geo": "EMP_FT",
+   "time": "1-espana",
+   "value": 52.1
+  },
+  {
+   "geo": "EMP_PT",
+   "time": "0-ue",
+   "value": 9.2
+  },
+  {
+   "geo": "EMP_PT",
+   "time": "1-espana",
+   "value": 14.2
+  },
+  {
+   "geo": "UNE",
+   "time": "0-ue",
+   "value": 11.4
+  },
+  {
+   "geo": "UNE",
+   "time": "1-espana",
+   "value": 17.6
+  },
+  {
+   "geo": "EDUC",
+   "time": "0-ue",
+   "value": 10.8
+  },
+  {
+   "geo": "EDUC",
+   "time": "1-espana",
+   "value": 11.2
+  },
+  {
+   "geo": "INAC_OTH",
+   "time": "0-ue",
+   "value": 7.7
+  },
+  {
+   "geo": "INAC_OTH",
+   "time": "1-espana",
+   "value": 4.9
+  }
+ ]
+}
