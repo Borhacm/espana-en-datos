@@ -1,0 +1,138 @@
+{
+ "id": "n06-problemas-ranking",
+ "lens": "tiempo",
+ "theme": "elecciones",
+ "title": {
+  "es": "En los tres últimos barómetros, el 45,4 % cita la vivienda entre los problemas de España, más del doble que el segundo, la inmigración (21,3 %)",
+  "en": "In the last three barometers, 45.4% name housing among Spain's problems, more than twice the second, immigration (21.3%)"
+ },
+ "subtitle": {
+  "es": "Porcentaje de entrevistados que citan cada problema entre los tres principales de España. Media de los barómetros de julio de 2026, septiembre de 2026 y octubre de 2026. Los 10 más citados",
+  "en": "Share of respondents who name each problem among Spain's three main problems. Average of the July 2026, September 2026 and October 2026 barometers. The 10 most cited"
+ },
+ "unit": {
+  "es": "% de entrevistados",
+  "en": "% of respondents"
+ },
+ "source": {
+  "name": "CIS, barómetros mensuales",
+  "dataset": "Pregunta sobre los tres principales problemas de España (marginales de cada barómetro)",
+  "url": "https://www.cis.es/estudios/catalogo",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Media simple de los tres barómetros; cada uno pesa lo mismo.",
+   "Nombres abreviados. «Gobierno y partidos»: «el Gobierno y partidos o políticos concretos»; «Política en general»: «los problemas políticos en general»; «Conducta de políticos»: «el mal comportamiento de los políticos». Son categorías distintas del CIS y no se pueden sumar: un mismo entrevistado puede citar varias."
+  ],
+  "en": [
+   "Simple average of the three barometers; each one carries the same weight.",
+   "Shortened names. 'Gov. and parties': 'the government and specific parties or politicians'; 'Politics in general': 'political problems in general'; 'Politicians' conduct': 'the bad behaviour of politicians'. They are separate CIS categories and cannot be added up: the same respondent can name several."
+  ]
+ },
+ "retrieved": "2026-11-16",
+ "geos": {
+  "vivienda": {
+   "es": "Vivienda",
+   "en": "Housing",
+   "ccaa": true
+  },
+  "inmigracion": {
+   "es": "Inmigración",
+   "en": "Immigration",
+   "ccaa": true
+  },
+  "economia": {
+   "es": "Economía",
+   "en": "Economy",
+   "ccaa": true
+  },
+  "calidad-empleo": {
+   "es": "Calidad del empleo",
+   "en": "Job quality",
+   "ccaa": true
+  },
+  "gobierno": {
+   "es": "Gobierno y partidos",
+   "en": "Gov. and parties",
+   "ccaa": true
+  },
+  "politica": {
+   "es": "Política en general",
+   "en": "Politics in general",
+   "ccaa": true
+  },
+  "sanidad": {
+   "es": "Sanidad",
+   "en": "Healthcare",
+   "ccaa": true
+  },
+  "paro": {
+   "es": "Paro",
+   "en": "Unemployment",
+   "ccaa": true
+  },
+  "corrupcion": {
+   "es": "Corrupción",
+   "en": "Corruption",
+   "ccaa": true
+  },
+  "comportamiento": {
+   "es": "Conducta de políticos",
+   "en": "Politicians' conduct",
+   "ccaa": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "vivienda",
+   "time": "2026-07/2026-10",
+   "value": 45.4
+  },
+  {
+   "geo": "inmigracion",
+   "time": "2026-07/2026-10",
+   "value": 21.3
+  },
+  {
+   "geo": "economia",
+   "time": "2026-07/2026-10",
+   "value": 19.7
+  },
+  {
+   "geo": "calidad-empleo",
+   "time": "2026-07/2026-10",
+   "value": 16.0
+  },
+  {
+   "geo": "gobierno",
+   "time": "2026-07/2026-10",
+   "value": 15.3
+  },
+  {
+   "geo": "politica",
+   "time": "2026-07/2026-10",
+   "value": 14.2
+  },
+  {
+   "geo": "sanidad",
+   "time": "2026-07/2026-10",
+   "value": 12.0
+  },
+  {
+   "geo": "paro",
+   "time": "2026-07/2026-10",
+   "value": 10.7
+  },
+  {
+   "geo": "corrupcion",
+   "time": "2026-07/2026-10",
+   "value": 10.3
+  },
+  {
+   "geo": "comportamiento",
+   "time": "2026-07/2026-10",
+   "value": 9.7
+  }
+ ]
+}

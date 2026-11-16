@@ -6,6 +6,7 @@ import type { Lang } from "./i18n";
 const EXACT: Record<string, string> = {
   // Nombres
   "Banco de España, Boletín Estadístico": "Bank of Spain, Statistical Bulletin",
+  "CIS, barómetros mensuales": "CIS (Spain's public polling institute), monthly barometers",
   "Congreso de los Diputados, datos abiertos de votaciones": "Congress of Deputies, open data on votes",
   "Eurostat, Encuesta de Población Activa de la UE": "Eurostat, EU Labour Force Survey",
   "Eurostat, cuentas nacionales": "Eurostat, national accounts",
@@ -44,6 +45,7 @@ const EXACT: Record<string, string> = {
   "BOE, Real Decreto 806/2026 de convocatoria (diputados por circunscripción)": "BOE (official gazette), Royal Decree 806/2026 calling the election (deputies per constituency)",
   "BOE, Real Decreto 126/2026 (salario mínimo de 2026: 1.221 euros al mes en 14 pagas)": "BOE (official gazette), Royal Decree 126/2026 (2026 minimum wage: 1,221 euros a month in 14 payments)",
   // Conjuntos de datos
+  "Pregunta sobre los tres principales problemas de España (marginales de cada barómetro)": "Question on Spain's three main problems (results tables of each barometer)",
   "Tabla de resultados del Congreso de los Diputados, 1977-2023": "Results table for the Congress of Deputies, 1977-2023",
   "Cifras oficiales de población a 1 de enero de 2025": "Official population figures on 1 January 2025",
   "Convalidación o derogación de reales decretos-leyes": "Validation or repeal of royal decree-laws",

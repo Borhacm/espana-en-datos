@@ -171,6 +171,7 @@ piezas:
     mirada: tiempo
     titulo: "Qué preocupa a los españoles: los problemas según el CIS"
     idea: principales problemas del barómetro del CIS desde 2023 (pregunta abierta, microdatos o informes del CIS).
+    estado: hecha
 
   - id: a13
     tipo: articulo

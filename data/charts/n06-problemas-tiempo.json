@@ -1,0 +1,1127 @@
+{
+ "id": "n06-problemas-tiempo",
+ "lens": "tiempo",
+ "theme": "elecciones",
+ "title": {
+  "es": "La vivienda es el problema más citado en los 20 barómetros del CIS desde enero de 2025; en 2023 la mencionaba de media un 6,2 %",
+  "en": "Housing is the most-cited problem in the 20 CIS barometers since January 2025; in 2023 an average of 6.2% mentioned it"
+ },
+ "subtitle": {
+  "es": "Porcentaje de entrevistados que citan cada problema entre los tres principales de España, barómetros mensuales, enero de 2023-octubre de 2026",
+  "en": "Share of respondents who name each problem among Spain's three main problems, monthly barometers, January 2023-October 2026"
+ },
+ "unit": {
+  "es": "% de entrevistados",
+  "en": "% of respondents"
+ },
+ "source": {
+  "name": "CIS, barómetros mensuales",
+  "dataset": "Pregunta sobre los tres principales problemas de España (marginales de cada barómetro)",
+  "url": "https://www.cis.es/estudios/catalogo",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Respuesta espontánea, hasta tres problemas por entrevistado (ver el texto).",
+   "«Economía»: la categoría del CIS «la crisis económica, los problemas de índole económica».",
+   "El CIS no hace barómetro en agosto. Faltan además: mayo de 2023, junio de 2023, septiembre de 2023, diciembre de 2024 (sin barómetro ese mes o con la tabla publicada en otro formato); la línea une los meses de alrededor.",
+   "Cada barómetro entrevista a entre 3.787 y 5.024 personas: diferencias de un mes a otro de uno o dos puntos pueden deberse al azar de la muestra."
+  ],
+  "en": [
+   "Spontaneous answer, up to three problems per respondent (see the text).",
+   "'Economy': the CIS category 'the economic crisis, economic problems'.",
+   "The CIS does not run a barometer in August. Also missing: May 2023, June 2023, September 2023, December 2024 (no barometer that month or the table published in another format); the line joins the months either side.",
+   "Each barometer interviews between 3,787 and 5,024 people: month-to-month differences of one or two points may be down to sampling chance."
+  ]
+ },
+ "retrieved": "2026-11-16",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "vivienda": {
+    "es": "Vivienda",
+    "en": "Housing"
+   },
+   "economia": {
+    "es": "Economía",
+    "en": "Economy"
+   },
+   "paro": {
+    "es": "Paro",
+    "en": "Unemployment"
+   },
+   "inmigracion": {
+    "es": "Inmigración",
+    "en": "Immigration"
+   }
+  }
+ },
+ "time_labels": {
+  "2023": {
+   "es": "Enero de 2023",
+   "en": "January 2023"
+  },
+  "2023.083": {
+   "es": "Febrero de 2023",
+   "en": "February 2023"
+  },
+  "2023.167": {
+   "es": "Marzo de 2023",
+   "en": "March 2023"
+  },
+  "2023.25": {
+   "es": "Abril de 2023",
+   "en": "April 2023"
+  },
+  "2023.5": {
+   "es": "Julio de 2023",
+   "en": "July 2023"
+  },
+  "2023.75": {
+   "es": "Octubre de 2023",
+   "en": "October 2023"
+  },
+  "2023.833": {
+   "es": "Noviembre de 2023",
+   "en": "November 2023"
+  },
+  "2023.917": {
+   "es": "Diciembre de 2023",
+   "en": "December 2023"
+  },
+  "2024": {
+   "es": "Enero de 2024",
+   "en": "January 2024"
+  },
+  "2024.083": {
+   "es": "Febrero de 2024",
+   "en": "February 2024"
+  },
+  "2024.167": {
+   "es": "Marzo de 2024",
+   "en": "March 2024"
+  },
+  "2024.25": {
+   "es": "Abril de 2024",
+   "en": "April 2024"
+  },
+  "2024.333": {
+   "es": "Mayo de 2024",
+   "en": "May 2024"
+  },
+  "2024.417": {
+   "es": "Junio de 2024",
+   "en": "June 2024"
+  },
+  "2024.5": {
+   "es": "Julio de 2024",
+   "en": "July 2024"
+  },
+  "2024.667": {
+   "es": "Septiembre de 2024",
+   "en": "September 2024"
+  },
+  "2024.75": {
+   "es": "Octubre de 2024",
+   "en": "October 2024"
+  },
+  "2024.833": {
+   "es": "Noviembre de 2024",
+   "en": "November 2024"
+  },
+  "2025": {
+   "es": "Enero de 2025",
+   "en": "January 2025"
+  },
+  "2025.083": {
+   "es": "Febrero de 2025",
+   "en": "February 2025"
+  },
+  "2025.167": {
+   "es": "Marzo de 2025",
+   "en": "March 2025"
+  },
+  "2025.25": {
+   "es": "Abril de 2025",
+   "en": "April 2025"
+  },
+  "2025.333": {
+   "es": "Mayo de 2025",
+   "en": "May 2025"
+  },
+  "2025.417": {
+   "es": "Junio de 2025",
+   "en": "June 2025"
+  },
+  "2025.5": {
+   "es": "Julio de 2025",
+   "en": "July 2025"
+  },
+  "2025.667": {
+   "es": "Septiembre de 2025",
+   "en": "September 2025"
+  },
+  "2025.75": {
+   "es": "Octubre de 2025",
+   "en": "October 2025"
+  },
+  "2025.833": {
+   "es": "Noviembre de 2025",
+   "en": "November 2025"
+  },
+  "2025.917": {
+   "es": "Diciembre de 2025",
+   "en": "December 2025"
+  },
+  "2026": {
+   "es": "Enero de 2026",
+   "en": "January 2026"
+  },
+  "2026.083": {
+   "es": "Febrero de 2026",
+   "en": "February 2026"
+  },
+  "2026.167": {
+   "es": "Marzo de 2026",
+   "en": "March 2026"
+  },
+  "2026.25": {
+   "es": "Abril de 2026",
+   "en": "April 2026"
+  },
+  "2026.333": {
+   "es": "Mayo de 2026",
+   "en": "May 2026"
+  },
+  "2026.417": {
+   "es": "Junio de 2026",
+   "en": "June 2026"
+  },
+  "2026.5": {
+   "es": "Julio de 2026",
+   "en": "July 2026"
+  },
+  "2026.667": {
+   "es": "Septiembre de 2026",
+   "en": "September 2026"
+  },
+  "2026.75": {
+   "es": "Octubre de 2026",
+   "en": "October 2026"
+  }
+ },
+ "rows": [
+  {
+   "time": "2023",
+   "series": "vivienda",
+   "value": 3.4,
+   "month": "2023-01"
+  },
+  {
+   "time": "2023.083",
+   "series": "vivienda",
+   "value": 4.1,
+   "month": "2023-02"
+  },
+  {
+   "time": "2023.167",
+   "series": "vivienda",
+   "value": 4.7,
+   "month": "2023-03"
+  },
+  {
+   "time": "2023.25",
+   "series": "vivienda",
+   "value": 6.7,
+   "month": "2023-04"
+  },
+  {
+   "time": "2023.5",
+   "series": "vivienda",
+   "value": 10.0,
+   "month": "2023-07"
+  },
+  {
+   "time": "2023.75",
+   "series": "vivienda",
+   "value": 7.5,
+   "month": "2023-10"
+  },
+  {
+   "time": "2023.833",
+   "series": "vivienda",
+   "value": 5.6,
+   "month": "2023-11"
+  },
+  {
+   "time": "2023.917",
+   "series": "vivienda",
+   "value": 7.8,
+   "month": "2023-12"
+  },
+  {
+   "time": "2024",
+   "series": "vivienda",
+   "value": 7.3,
+   "month": "2024-01"
+  },
+  {
+   "time": "2024.083",
+   "series": "vivienda",
+   "value": 7.9,
+   "month": "2024-02"
+  },
+  {
+   "time": "2024.167",
+   "series": "vivienda",
+   "value": 9.0,
+   "month": "2024-03"
+  },
+  {
+   "time": "2024.25",
+   "series": "vivienda",
+   "value": 9.5,
+   "month": "2024-04"
+  },
+  {
+   "time": "2024.333",
+   "series": "vivienda",
+   "value": 12.0,
+   "month": "2024-05"
+  },
+  {
+   "time": "2024.417",
+   "series": "vivienda",
+   "value": 21.2,
+   "month": "2024-06"
+  },
+  {
+   "time": "2024.5",
+   "series": "vivienda",
+   "value": 13.1,
+   "month": "2024-07"
+  },
+  {
+   "time": "2024.667",
+   "series": "vivienda",
+   "value": 15.4,
+   "month": "2024-09"
+  },
+  {
+   "time": "2024.75",
+   "series": "vivienda",
+   "value": 22.6,
+   "month": "2024-10"
+  },
+  {
+   "time": "2024.833",
+   "series": "vivienda",
+   "value": 22.5,
+   "month": "2024-11"
+  },
+  {
+   "time": "2025",
+   "series": "vivienda",
+   "value": 28.3,
+   "month": "2025-01"
+  },
+  {
+   "time": "2025.083",
+   "series": "vivienda",
+   "value": 34.1,
+   "month": "2025-02"
+  },
+  {
+   "time": "2025.167",
+   "series": "vivienda",
+   "value": 28.4,
+   "month": "2025-03"
+  },
+  {
+   "time": "2025.25",
+   "series": "vivienda",
+   "value": 28.8,
+   "month": "2025-04"
+  },
+  {
+   "time": "2025.333",
+   "series": "vivienda",
+   "value": 25.6,
+   "month": "2025-05"
+  },
+  {
+   "time": "2025.417",
+   "series": "vivienda",
+   "value": 32.4,
+   "month": "2025-06"
+  },
+  {
+   "time": "2025.5",
+   "series": "vivienda",
+   "value": 30.0,
+   "month": "2025-07"
+  },
+  {
+   "time": "2025.667",
+   "series": "vivienda",
+   "value": 30.4,
+   "month": "2025-09"
+  },
+  {
+   "time": "2025.75",
+   "series": "vivienda",
+   "value": 37.1,
+   "month": "2025-10"
+  },
+  {
+   "time": "2025.833",
+   "series": "vivienda",
+   "value": 39.9,
+   "month": "2025-11"
+  },
+  {
+   "time": "2025.917",
+   "series": "vivienda",
+   "value": 39.9,
+   "month": "2025-12"
+  },
+  {
+   "time": "2026",
+   "series": "vivienda",
+   "value": 42.6,
+   "month": "2026-01"
+  },
+  {
+   "time": "2026.083",
+   "series": "vivienda",
+   "value": 42.8,
+   "month": "2026-02"
+  },
+  {
+   "time": "2026.167",
+   "series": "vivienda",
+   "value": 43.5,
+   "month": "2026-03"
+  },
+  {
+   "time": "2026.25",
+   "series": "vivienda",
+   "value": 41.3,
+   "month": "2026-04"
+  },
+  {
+   "time": "2026.333",
+   "series": "vivienda",
+   "value": 48.9,
+   "month": "2026-05"
+  },
+  {
+   "time": "2026.417",
+   "series": "vivienda",
+   "value": 41.5,
+   "month": "2026-06"
+  },
+  {
+   "time": "2026.5",
+   "series": "vivienda",
+   "value": 43.0,
+   "month": "2026-07"
+  },
+  {
+   "time": "2026.667",
+   "series": "vivienda",
+   "value": 37.5,
+   "month": "2026-09"
+  },
+  {
+   "time": "2026.75",
+   "series": "vivienda",
+   "value": 55.7,
+   "month": "2026-10"
+  },
+  {
+   "time": "2023",
+   "series": "economia",
+   "value": 45.2,
+   "month": "2023-01"
+  },
+  {
+   "time": "2023.083",
+   "series": "economia",
+   "value": 42.2,
+   "month": "2023-02"
+  },
+  {
+   "time": "2023.167",
+   "series": "economia",
+   "value": 43.7,
+   "month": "2023-03"
+  },
+  {
+   "time": "2023.25",
+   "series": "economia",
+   "value": 43.5,
+   "month": "2023-04"
+  },
+  {
+   "time": "2023.5",
+   "series": "economia",
+   "value": 36.6,
+   "month": "2023-07"
+  },
+  {
+   "time": "2023.75",
+   "series": "economia",
+   "value": 37.3,
+   "month": "2023-10"
+  },
+  {
+   "time": "2023.833",
+   "series": "economia",
+   "value": 26.3,
+   "month": "2023-11"
+  },
+  {
+   "time": "2023.917",
+   "series": "economia",
+   "value": 31.2,
+   "month": "2023-12"
+  },
+  {
+   "time": "2024",
+   "series": "economia",
+   "value": 37.3,
+   "month": "2024-01"
+  },
+  {
+   "time": "2024.083",
+   "series": "economia",
+   "value": 27.4,
+   "month": "2024-02"
+  },
+  {
+   "time": "2024.167",
+   "series": "economia",
+   "value": 29.0,
+   "month": "2024-03"
+  },
+  {
+   "time": "2024.25",
+   "series": "economia",
+   "value": 28.3,
+   "month": "2024-04"
+  },
+  {
+   "time": "2024.333",
+   "series": "economia",
+   "value": 24.8,
+   "month": "2024-05"
+  },
+  {
+   "time": "2024.417",
+   "series": "economia",
+   "value": 17.8,
+   "month": "2024-06"
+  },
+  {
+   "time": "2024.5",
+   "series": "economia",
+   "value": 19.8,
+   "month": "2024-07"
+  },
+  {
+   "time": "2024.667",
+   "series": "economia",
+   "value": 19.8,
+   "month": "2024-09"
+  },
+  {
+   "time": "2024.75",
+   "series": "economia",
+   "value": 23.8,
+   "month": "2024-10"
+  },
+  {
+   "time": "2024.833",
+   "series": "economia",
+   "value": 21.9,
+   "month": "2024-11"
+  },
+  {
+   "time": "2025",
+   "series": "economia",
+   "value": 22.1,
+   "month": "2025-01"
+  },
+  {
+   "time": "2025.083",
+   "series": "economia",
+   "value": 20.0,
+   "month": "2025-02"
+  },
+  {
+   "time": "2025.167",
+   "series": "economia",
+   "value": 20.4,
+   "month": "2025-03"
+  },
+  {
+   "time": "2025.25",
+   "series": "economia",
+   "value": 20.2,
+   "month": "2025-04"
+  },
+  {
+   "time": "2025.333",
+   "series": "economia",
+   "value": 19.1,
+   "month": "2025-05"
+  },
+  {
+   "time": "2025.417",
+   "series": "economia",
+   "value": 17.9,
+   "month": "2025-06"
+  },
+  {
+   "time": "2025.5",
+   "series": "economia",
+   "value": 16.7,
+   "month": "2025-07"
+  },
+  {
+   "time": "2025.667",
+   "series": "economia",
+   "value": 14.9,
+   "month": "2025-09"
+  },
+  {
+   "time": "2025.75",
+   "series": "economia",
+   "value": 15.7,
+   "month": "2025-10"
+  },
+  {
+   "time": "2025.833",
+   "series": "economia",
+   "value": 18.9,
+   "month": "2025-11"
+  },
+  {
+   "time": "2025.917",
+   "series": "economia",
+   "value": 21.8,
+   "month": "2025-12"
+  },
+  {
+   "time": "2026",
+   "series": "economia",
+   "value": 21.2,
+   "month": "2026-01"
+  },
+  {
+   "time": "2026.083",
+   "series": "economia",
+   "value": 18.1,
+   "month": "2026-02"
+  },
+  {
+   "time": "2026.167",
+   "series": "economia",
+   "value": 22.5,
+   "month": "2026-03"
+  },
+  {
+   "time": "2026.25",
+   "series": "economia",
+   "value": 24.9,
+   "month": "2026-04"
+  },
+  {
+   "time": "2026.333",
+   "series": "economia",
+   "value": 20.6,
+   "month": "2026-05"
+  },
+  {
+   "time": "2026.417",
+   "series": "economia",
+   "value": 19.3,
+   "month": "2026-06"
+  },
+  {
+   "time": "2026.5",
+   "series": "economia",
+   "value": 17.3,
+   "month": "2026-07"
+  },
+  {
+   "time": "2026.667",
+   "series": "economia",
+   "value": 21.6,
+   "month": "2026-09"
+  },
+  {
+   "time": "2026.75",
+   "series": "economia",
+   "value": 20.3,
+   "month": "2026-10"
+  },
+  {
+   "time": "2023",
+   "series": "paro",
+   "value": 27.4,
+   "month": "2023-01"
+  },
+  {
+   "time": "2023.083",
+   "series": "paro",
+   "value": 29.2,
+   "month": "2023-02"
+  },
+  {
+   "time": "2023.167",
+   "series": "paro",
+   "value": 29.1,
+   "month": "2023-03"
+  },
+  {
+   "time": "2023.25",
+   "series": "paro",
+   "value": 34.8,
+   "month": "2023-04"
+  },
+  {
+   "time": "2023.5",
+   "series": "paro",
+   "value": 30.9,
+   "month": "2023-07"
+  },
+  {
+   "time": "2023.75",
+   "series": "paro",
+   "value": 25.6,
+   "month": "2023-10"
+  },
+  {
+   "time": "2023.833",
+   "series": "paro",
+   "value": 23.8,
+   "month": "2023-11"
+  },
+  {
+   "time": "2023.917",
+   "series": "paro",
+   "value": 28.1,
+   "month": "2023-12"
+  },
+  {
+   "time": "2024",
+   "series": "paro",
+   "value": 23.0,
+   "month": "2024-01"
+  },
+  {
+   "time": "2024.083",
+   "series": "paro",
+   "value": 22.3,
+   "month": "2024-02"
+  },
+  {
+   "time": "2024.167",
+   "series": "paro",
+   "value": 18.0,
+   "month": "2024-03"
+  },
+  {
+   "time": "2024.25",
+   "series": "paro",
+   "value": 25.4,
+   "month": "2024-04"
+  },
+  {
+   "time": "2024.333",
+   "series": "paro",
+   "value": 26.0,
+   "month": "2024-05"
+  },
+  {
+   "time": "2024.417",
+   "series": "paro",
+   "value": 19.6,
+   "month": "2024-06"
+  },
+  {
+   "time": "2024.5",
+   "series": "paro",
+   "value": 26.5,
+   "month": "2024-07"
+  },
+  {
+   "time": "2024.667",
+   "series": "paro",
+   "value": 20.2,
+   "month": "2024-09"
+  },
+  {
+   "time": "2024.75",
+   "series": "paro",
+   "value": 22.0,
+   "month": "2024-10"
+  },
+  {
+   "time": "2024.833",
+   "series": "paro",
+   "value": 21.3,
+   "month": "2024-11"
+  },
+  {
+   "time": "2025",
+   "series": "paro",
+   "value": 18.8,
+   "month": "2025-01"
+  },
+  {
+   "time": "2025.083",
+   "series": "paro",
+   "value": 20.0,
+   "month": "2025-02"
+  },
+  {
+   "time": "2025.167",
+   "series": "paro",
+   "value": 20.4,
+   "month": "2025-03"
+  },
+  {
+   "time": "2025.25",
+   "series": "paro",
+   "value": 18.5,
+   "month": "2025-04"
+  },
+  {
+   "time": "2025.333",
+   "series": "paro",
+   "value": 19.2,
+   "month": "2025-05"
+  },
+  {
+   "time": "2025.417",
+   "series": "paro",
+   "value": 15.2,
+   "month": "2025-06"
+  },
+  {
+   "time": "2025.5",
+   "series": "paro",
+   "value": 15.1,
+   "month": "2025-07"
+  },
+  {
+   "time": "2025.667",
+   "series": "paro",
+   "value": 14.2,
+   "month": "2025-09"
+  },
+  {
+   "time": "2025.75",
+   "series": "paro",
+   "value": 16.9,
+   "month": "2025-10"
+  },
+  {
+   "time": "2025.833",
+   "series": "paro",
+   "value": 14.4,
+   "month": "2025-11"
+  },
+  {
+   "time": "2025.917",
+   "series": "paro",
+   "value": 13.4,
+   "month": "2025-12"
+  },
+  {
+   "time": "2026",
+   "series": "paro",
+   "value": 13.7,
+   "month": "2026-01"
+  },
+  {
+   "time": "2026.083",
+   "series": "paro",
+   "value": 10.3,
+   "month": "2026-02"
+  },
+  {
+   "time": "2026.167",
+   "series": "paro",
+   "value": 13.1,
+   "month": "2026-03"
+  },
+  {
+   "time": "2026.25",
+   "series": "paro",
+   "value": 14.3,
+   "month": "2026-04"
+  },
+  {
+   "time": "2026.333",
+   "series": "paro",
+   "value": 14.1,
+   "month": "2026-05"
+  },
+  {
+   "time": "2026.417",
+   "series": "paro",
+   "value": 11.0,
+   "month": "2026-06"
+  },
+  {
+   "time": "2026.5",
+   "series": "paro",
+   "value": 11.1,
+   "month": "2026-07"
+  },
+  {
+   "time": "2026.667",
+   "series": "paro",
+   "value": 11.5,
+   "month": "2026-09"
+  },
+  {
+   "time": "2026.75",
+   "series": "paro",
+   "value": 9.6,
+   "month": "2026-10"
+  },
+  {
+   "time": "2023",
+   "series": "inmigracion",
+   "value": 4.0,
+   "month": "2023-01"
+  },
+  {
+   "time": "2023.083",
+   "series": "inmigracion",
+   "value": 4.1,
+   "month": "2023-02"
+  },
+  {
+   "time": "2023.167",
+   "series": "inmigracion",
+   "value": 3.8,
+   "month": "2023-03"
+  },
+  {
+   "time": "2023.25",
+   "series": "inmigracion",
+   "value": 4.5,
+   "month": "2023-04"
+  },
+  {
+   "time": "2023.5",
+   "series": "inmigracion",
+   "value": 7.7,
+   "month": "2023-07"
+  },
+  {
+   "time": "2023.75",
+   "series": "inmigracion",
+   "value": 8.2,
+   "month": "2023-10"
+  },
+  {
+   "time": "2023.833",
+   "series": "inmigracion",
+   "value": 14.3,
+   "month": "2023-11"
+  },
+  {
+   "time": "2023.917",
+   "series": "inmigracion",
+   "value": 8.6,
+   "month": "2023-12"
+  },
+  {
+   "time": "2024",
+   "series": "inmigracion",
+   "value": 9.6,
+   "month": "2024-01"
+  },
+  {
+   "time": "2024.083",
+   "series": "inmigracion",
+   "value": 11.9,
+   "month": "2024-02"
+  },
+  {
+   "time": "2024.167",
+   "series": "inmigracion",
+   "value": 10.4,
+   "month": "2024-03"
+  },
+  {
+   "time": "2024.25",
+   "series": "inmigracion",
+   "value": 11.9,
+   "month": "2024-04"
+  },
+  {
+   "time": "2024.333",
+   "series": "inmigracion",
+   "value": 11.7,
+   "month": "2024-05"
+  },
+  {
+   "time": "2024.417",
+   "series": "inmigracion",
+   "value": 11.2,
+   "month": "2024-06"
+  },
+  {
+   "time": "2024.5",
+   "series": "inmigracion",
+   "value": 16.9,
+   "month": "2024-07"
+  },
+  {
+   "time": "2024.667",
+   "series": "inmigracion",
+   "value": 30.4,
+   "month": "2024-09"
+  },
+  {
+   "time": "2024.75",
+   "series": "inmigracion",
+   "value": 28.1,
+   "month": "2024-10"
+  },
+  {
+   "time": "2024.833",
+   "series": "inmigracion",
+   "value": 18.4,
+   "month": "2024-11"
+  },
+  {
+   "time": "2025",
+   "series": "inmigracion",
+   "value": 21.1,
+   "month": "2025-01"
+  },
+  {
+   "time": "2025.083",
+   "series": "inmigracion",
+   "value": 16.5,
+   "month": "2025-02"
+  },
+  {
+   "time": "2025.167",
+   "series": "inmigracion",
+   "value": 18.8,
+   "month": "2025-03"
+  },
+  {
+   "time": "2025.25",
+   "series": "inmigracion",
+   "value": 17.2,
+   "month": "2025-04"
+  },
+  {
+   "time": "2025.333",
+   "series": "inmigracion",
+   "value": 15.5,
+   "month": "2025-05"
+  },
+  {
+   "time": "2025.417",
+   "series": "inmigracion",
+   "value": 18.5,
+   "month": "2025-06"
+  },
+  {
+   "time": "2025.5",
+   "series": "inmigracion",
+   "value": 18.4,
+   "month": "2025-07"
+  },
+  {
+   "time": "2025.667",
+   "series": "inmigracion",
+   "value": 20.7,
+   "month": "2025-09"
+  },
+  {
+   "time": "2025.75",
+   "series": "inmigracion",
+   "value": 20.5,
+   "month": "2025-10"
+  },
+  {
+   "time": "2025.833",
+   "series": "inmigracion",
+   "value": 18.9,
+   "month": "2025-11"
+  },
+  {
+   "time": "2025.917",
+   "series": "inmigracion",
+   "value": 16.3,
+   "month": "2025-12"
+  },
+  {
+   "time": "2026",
+   "series": "inmigracion",
+   "value": 15.9,
+   "month": "2026-01"
+  },
+  {
+   "time": "2026.083",
+   "series": "inmigracion",
+   "value": 20.3,
+   "month": "2026-02"
+  },
+  {
+   "time": "2026.167",
+   "series": "inmigracion",
+   "value": 14.8,
+   "month": "2026-03"
+  },
+  {
+   "time": "2026.25",
+   "series": "inmigracion",
+   "value": 15.8,
+   "month": "2026-04"
+  },
+  {
+   "time": "2026.333",
+   "series": "inmigracion",
+   "value": 18.9,
+   "month": "2026-05"
+  },
+  {
+   "time": "2026.417",
+   "series": "inmigracion",
+   "value": 18.9,
+   "month": "2026-06"
+  },
+  {
+   "time": "2026.5",
+   "series": "inmigracion",
+   "value": 23.4,
+   "month": "2026-07"
+  },
+  {
+   "time": "2026.667",
+   "series": "inmigracion",
+   "value": 19.7,
+   "month": "2026-09"
+  },
+  {
+   "time": "2026.75",
+   "series": "inmigracion",
+   "value": 20.9,
+   "month": "2026-10"
+  }
+ ]
+}
