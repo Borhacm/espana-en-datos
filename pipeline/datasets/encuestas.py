@@ -83,11 +83,26 @@ def _value(cell: str) -> tuple[float | None, int | None]:
 def polls() -> list[dict]:
     text = sources.wikipedia(PAGE, lang="en")
     estimates = text[text.index("====Voting intention estimates===="): text.index("====Voting preferences====")]
-    out = []
     # Secciones por año; desde octubre de 2026, «2026 (after Broad Front)» y «2026 (before Broad Front)»
-    for section in re.split(r"\n=====(\d{4})[^=\n]*=====\n", estimates)[1:]:
+    return _sections(estimates, 5)
+
+
+def _sections(text: str, level: int) -> list[dict]:
+    """Encuestas de las secciones «=====2025=====» (con `level` signos =). Desde noviembre de 2026, 2023 y 2024 están en
+    una subpágina enlazada con {{Main|...}} y secciones «===2024===»: se lee esa subpágina."""
+    eq = "=" * level
+    out = []
+    year = 0
+    for section in re.split(rf"\n{eq}(\d{{4}})[^=\n]*{eq}\n", text)[1:]:
         if re.fullmatch(r"\d{4}", section):
             year = int(section)
+            continue
+        if "{|" not in section:
+            sub = re.search(r"\{\{Main\|([^}|]+)", section)
+            if sub:
+                page = sources.wikipedia(sub.group(1).strip(), lang="en")
+                page = page[page.index("==Polling=="):]
+                out += _sections(page.split("\n==Notes==")[0], 3)
             continue
         table = section[section.index("{|"):]
         head, _, body = table.partition("\n|-\n|")
