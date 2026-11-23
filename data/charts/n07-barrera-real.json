@@ -1,0 +1,720 @@
+{
+ "id": "n07-barrera-real",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "En las provincias que eligen 2 o 3 diputados, candidaturas con hasta el 19,1 % del voto se quedaron sin escaño; en Madrid y Barcelona, ninguna con más del 2,5 %",
+  "en": "In provinces that elect 2 or 3 deputies, lists with up to 19.1% of the vote won no seat; in Madrid and Barcelona, none with more than 2.5%"
+ },
+ "subtitle": {
+  "es": "Porcentaje del voto válido de la candidatura más votada que no obtuvo escaño en cada provincia, generales de julio de 2023",
+  "en": "Share of the valid vote of the most-voted list that won no seat in each province, July 2023 general election"
+ },
+ "unit": {
+  "es": "% del voto válido",
+  "en": "% of valid vote"
+ },
+ "source": {
+  "name": "Ministerio del Interior, Infoelectoral",
+  "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+ },
+ "notes": {
+  "es": [
+   "Voto válido: votos a candidaturas más voto en blanco. Votos agrupados por candidatura cabecera nacional, como en la nota sobre el coste de un escaño.",
+   "Ceuta y Melilla eligen un solo diputado: la segunda candidatura, con más de un cuarto del voto, se queda sin escaño."
+  ],
+  "en": [
+   "Valid vote: votes for lists plus blank ballots. Votes grouped by national head list, as in the note on the cost of a seat.",
+   "Ceuta and Melilla elect a single deputy: the runner-up, with more than a quarter of the vote, wins no seat."
+  ]
+ },
+ "retrieved": "2026-11-23",
+ "geos": {
+  "01": {
+   "es": "Álava",
+   "en": "Álava",
+   "rank": true
+  },
+  "02": {
+   "es": "Albacete",
+   "en": "Albacete",
+   "rank": true
+  },
+  "03": {
+   "es": "Alicante",
+   "en": "Alicante",
+   "rank": true
+  },
+  "04": {
+   "es": "Almería",
+   "en": "Almería",
+   "rank": true
+  },
+  "05": {
+   "es": "Ávila",
+   "en": "Ávila",
+   "rank": true
+  },
+  "06": {
+   "es": "Badajoz",
+   "en": "Badajoz",
+   "rank": true
+  },
+  "07": {
+   "es": "Baleares",
+   "en": "Balearic Is.",
+   "rank": true
+  },
+  "08": {
+   "es": "Barcelona",
+   "en": "Barcelona",
+   "rank": true
+  },
+  "09": {
+   "es": "Burgos",
+   "en": "Burgos",
+   "rank": true
+  },
+  "10": {
+   "es": "Cáceres",
+   "en": "Cáceres",
+   "rank": true
+  },
+  "11": {
+   "es": "Cádiz",
+   "en": "Cádiz",
+   "rank": true
+  },
+  "12": {
+   "es": "Castellón",
+   "en": "Castellón",
+   "rank": true
+  },
+  "13": {
+   "es": "Ciudad Real",
+   "en": "Ciudad Real",
+   "rank": true
+  },
+  "14": {
+   "es": "Córdoba",
+   "en": "Córdoba",
+   "rank": true
+  },
+  "15": {
+   "es": "A Coruña",
+   "en": "A Coruña",
+   "rank": true
+  },
+  "16": {
+   "es": "Cuenca",
+   "en": "Cuenca",
+   "rank": true
+  },
+  "17": {
+   "es": "Girona",
+   "en": "Girona",
+   "rank": true
+  },
+  "18": {
+   "es": "Granada",
+   "en": "Granada",
+   "rank": true
+  },
+  "19": {
+   "es": "Guadalajara",
+   "en": "Guadalajara",
+   "rank": true
+  },
+  "20": {
+   "es": "Gipuzkoa",
+   "en": "Gipuzkoa",
+   "rank": true
+  },
+  "21": {
+   "es": "Huelva",
+   "en": "Huelva",
+   "rank": true
+  },
+  "22": {
+   "es": "Huesca",
+   "en": "Huesca",
+   "rank": true
+  },
+  "23": {
+   "es": "Jaén",
+   "en": "Jaén",
+   "rank": true
+  },
+  "24": {
+   "es": "León",
+   "en": "León",
+   "rank": true
+  },
+  "25": {
+   "es": "Lleida",
+   "en": "Lleida",
+   "rank": true
+  },
+  "26": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "rank": true
+  },
+  "27": {
+   "es": "Lugo",
+   "en": "Lugo",
+   "rank": true
+  },
+  "28": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "rank": true
+  },
+  "29": {
+   "es": "Málaga",
+   "en": "Málaga",
+   "rank": true
+  },
+  "30": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "rank": true
+  },
+  "31": {
+   "es": "Navarra",
+   "en": "Navarra",
+   "rank": true
+  },
+  "32": {
+   "es": "Ourense",
+   "en": "Ourense",
+   "rank": true
+  },
+  "33": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "rank": true
+  },
+  "34": {
+   "es": "Palencia",
+   "en": "Palencia",
+   "rank": true
+  },
+  "35": {
+   "es": "Las Palmas",
+   "en": "Las Palmas",
+   "rank": true
+  },
+  "36": {
+   "es": "Pontevedra",
+   "en": "Pontevedra",
+   "rank": true
+  },
+  "37": {
+   "es": "Salamanca",
+   "en": "Salamanca",
+   "rank": true
+  },
+  "38": {
+   "es": "S.C. Tenerife",
+   "en": "S.C. Tenerife",
+   "rank": true
+  },
+  "39": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "rank": true
+  },
+  "40": {
+   "es": "Segovia",
+   "en": "Segovia",
+   "rank": true
+  },
+  "41": {
+   "es": "Sevilla",
+   "en": "Sevilla",
+   "rank": true
+  },
+  "42": {
+   "es": "Soria",
+   "en": "Soria",
+   "rank": true
+  },
+  "43": {
+   "es": "Tarragona",
+   "en": "Tarragona",
+   "rank": true
+  },
+  "44": {
+   "es": "Teruel",
+   "en": "Teruel",
+   "rank": true
+  },
+  "45": {
+   "es": "Toledo",
+   "en": "Toledo",
+   "rank": true
+  },
+  "46": {
+   "es": "Valencia",
+   "en": "Valencia",
+   "rank": true
+  },
+  "47": {
+   "es": "Valladolid",
+   "en": "Valladolid",
+   "rank": true
+  },
+  "48": {
+   "es": "Bizkaia",
+   "en": "Bizkaia",
+   "rank": true
+  },
+  "49": {
+   "es": "Zamora",
+   "en": "Zamora",
+   "rank": true
+  },
+  "50": {
+   "es": "Zaragoza",
+   "en": "Zaragoza",
+   "rank": true
+  },
+  "51": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "rank": true
+  },
+  "52": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "rank": true
+  }
+ },
+ "small_max": {
+  "province": "Soria",
+  "list": "SY",
+  "share": 19.1
+ },
+ "big_max": 2.5,
+ "threshold_changes": 0,
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2023",
+   "value": 12.7,
+   "list": "Sumar",
+   "seats": 4,
+   "min_won": 16.6
+  },
+  {
+   "geo": "02",
+   "time": "2023",
+   "value": 16.6,
+   "list": "Vox",
+   "seats": 4,
+   "min_won": 34.5
+  },
+  {
+   "geo": "03",
+   "time": "2023",
+   "value": 0.8,
+   "list": "PACMA",
+   "seats": 12,
+   "min_won": 12.9
+  },
+  {
+   "geo": "04",
+   "time": "2023",
+   "value": 6.7,
+   "list": "Sumar",
+   "seats": 6,
+   "min_won": 21.3
+  },
+  {
+   "geo": "05",
+   "time": "2023",
+   "value": 15.4,
+   "list": "Vox",
+   "seats": 3,
+   "min_won": 27.4
+  },
+  {
+   "geo": "06",
+   "time": "2023",
+   "value": 6.8,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 13.7
+  },
+  {
+   "geo": "07",
+   "time": "2023",
+   "value": 1.0,
+   "list": "PACMA",
+   "seats": 8,
+   "min_won": 15.2
+  },
+  {
+   "geo": "08",
+   "time": "2023",
+   "value": 2.5,
+   "list": "CUP",
+   "seats": 32,
+   "min_won": 7.6
+  },
+  {
+   "geo": "09",
+   "time": "2023",
+   "value": 12.8,
+   "list": "Vox",
+   "seats": 4,
+   "min_won": 34.4
+  },
+  {
+   "geo": "10",
+   "time": "2023",
+   "value": 13.6,
+   "list": "Vox",
+   "seats": 4,
+   "min_won": 38.0
+  },
+  {
+   "geo": "11",
+   "time": "2023",
+   "value": 1.4,
+   "list": "ADELANTE ANDALUCÍA",
+   "seats": 9,
+   "min_won": 12.9
+  },
+  {
+   "geo": "12",
+   "time": "2023",
+   "value": 14.3,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 15.9
+  },
+  {
+   "geo": "13",
+   "time": "2023",
+   "value": 6.2,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 16.3
+  },
+  {
+   "geo": "14",
+   "time": "2023",
+   "value": 0.6,
+   "list": "PACMA",
+   "seats": 6,
+   "min_won": 13.7
+  },
+  {
+   "geo": "15",
+   "time": "2023",
+   "value": 5.1,
+   "list": "Vox",
+   "seats": 8,
+   "min_won": 10.0
+  },
+  {
+   "geo": "16",
+   "time": "2023",
+   "value": 15.6,
+   "list": "Vox",
+   "seats": 3,
+   "min_won": 37.4
+  },
+  {
+   "geo": "17",
+   "time": "2023",
+   "value": 9.7,
+   "list": "PP",
+   "seats": 6,
+   "min_won": 10.9
+  },
+  {
+   "geo": "18",
+   "time": "2023",
+   "value": 0.6,
+   "list": "PACMA",
+   "seats": 7,
+   "min_won": 11.6
+  },
+  {
+   "geo": "19",
+   "time": "2023",
+   "value": 9.2,
+   "list": "Sumar",
+   "seats": 3,
+   "min_won": 19.3
+  },
+  {
+   "geo": "20",
+   "time": "2023",
+   "value": 10.6,
+   "list": "Sumar",
+   "seats": 6,
+   "min_won": 22.6
+  },
+  {
+   "geo": "21",
+   "time": "2023",
+   "value": 10.4,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 14.6
+  },
+  {
+   "geo": "22",
+   "time": "2023",
+   "value": 12.6,
+   "list": "Vox",
+   "seats": 3,
+   "min_won": 33.6
+  },
+  {
+   "geo": "23",
+   "time": "2023",
+   "value": 8.0,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 14.8
+  },
+  {
+   "geo": "24",
+   "time": "2023",
+   "value": 12.9,
+   "list": "Vox",
+   "seats": 4,
+   "min_won": 33.6
+  },
+  {
+   "geo": "25",
+   "time": "2023",
+   "value": 12.8,
+   "list": "PP",
+   "seats": 4,
+   "min_won": 18.0
+  },
+  {
+   "geo": "26",
+   "time": "2023",
+   "value": 9.8,
+   "list": "Vox",
+   "seats": 4,
+   "min_won": 35.7
+  },
+  {
+   "geo": "27",
+   "time": "2023",
+   "value": 8.7,
+   "list": "BNG",
+   "seats": 4,
+   "min_won": 30.3
+  },
+  {
+   "geo": "28",
+   "time": "2023",
+   "value": 0.6,
+   "list": "PACMA",
+   "seats": 37,
+   "min_won": 14.0
+  },
+  {
+   "geo": "29",
+   "time": "2023",
+   "value": 1.1,
+   "list": "PACMA",
+   "seats": 11,
+   "min_won": 12.3
+  },
+  {
+   "geo": "30",
+   "time": "2023",
+   "value": 0.7,
+   "list": "PACMA",
+   "seats": 10,
+   "min_won": 9.6
+  },
+  {
+   "geo": "31",
+   "time": "2023",
+   "value": 12.8,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 15.3
+  },
+  {
+   "geo": "32",
+   "time": "2023",
+   "value": 8.2,
+   "list": "BNG",
+   "seats": 4,
+   "min_won": 30.1
+  },
+  {
+   "geo": "33",
+   "time": "2023",
+   "value": 0.5,
+   "list": "PACMA",
+   "seats": 7,
+   "min_won": 12.5
+  },
+  {
+   "geo": "34",
+   "time": "2023",
+   "value": 12.9,
+   "list": "Vox",
+   "seats": 3,
+   "min_won": 34.7
+  },
+  {
+   "geo": "35",
+   "time": "2023",
+   "value": 8.0,
+   "list": "NC",
+   "seats": 8,
+   "min_won": 10.3
+  },
+  {
+   "geo": "36",
+   "time": "2023",
+   "value": 9.4,
+   "list": "BNG",
+   "seats": 7,
+   "min_won": 13.2
+  },
+  {
+   "geo": "37",
+   "time": "2023",
+   "value": 14.7,
+   "list": "Vox",
+   "seats": 4,
+   "min_won": 30.5
+  },
+  {
+   "geo": "38",
+   "time": "2023",
+   "value": 10.8,
+   "list": "Sumar",
+   "seats": 7,
+   "min_won": 16.7
+  },
+  {
+   "geo": "39",
+   "time": "2023",
+   "value": 8.5,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 14.1
+  },
+  {
+   "geo": "40",
+   "time": "2023",
+   "value": 14.1,
+   "list": "Vox",
+   "seats": 3,
+   "min_won": 30.6
+  },
+  {
+   "geo": "41",
+   "time": "2023",
+   "value": 0.9,
+   "list": "PACMA",
+   "seats": 12,
+   "min_won": 13.3
+  },
+  {
+   "geo": "42",
+   "time": "2023",
+   "value": 19.1,
+   "list": "SY",
+   "seats": 2,
+   "min_won": 29.5
+  },
+  {
+   "geo": "43",
+   "time": "2023",
+   "value": 10.3,
+   "list": "Vox",
+   "seats": 6,
+   "min_won": 11.1
+  },
+  {
+   "geo": "44",
+   "time": "2023",
+   "value": 14.9,
+   "list": "Existe",
+   "seats": 3,
+   "min_won": 29.3
+  },
+  {
+   "geo": "45",
+   "time": "2023",
+   "value": 8.2,
+   "list": "Sumar",
+   "seats": 6,
+   "min_won": 19.6
+  },
+  {
+   "geo": "46",
+   "time": "2023",
+   "value": 0.7,
+   "list": "PACMA",
+   "seats": 16,
+   "min_won": 15.2
+  },
+  {
+   "geo": "47",
+   "time": "2023",
+   "value": 8.9,
+   "list": "Sumar",
+   "seats": 5,
+   "min_won": 15.2
+  },
+  {
+   "geo": "48",
+   "time": "2023",
+   "value": 2.6,
+   "list": "Vox",
+   "seats": 8,
+   "min_won": 10.9
+  },
+  {
+   "geo": "49",
+   "time": "2023",
+   "value": 13.2,
+   "list": "Vox",
+   "seats": 3,
+   "min_won": 32.5
+  },
+  {
+   "geo": "50",
+   "time": "2023",
+   "value": 1.5,
+   "list": "Existe",
+   "seats": 7,
+   "min_won": 13.5
+  },
+  {
+   "geo": "51",
+   "time": "2023",
+   "value": 34.0,
+   "list": "PSOE",
+   "seats": 1,
+   "min_won": 38.8
+  },
+  {
+   "geo": "52",
+   "time": "2023",
+   "value": 25.4,
+   "list": "PSOE",
+   "seats": 1,
+   "min_won": 49.2
+  }
+ ]
+}

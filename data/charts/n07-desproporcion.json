@@ -1,0 +1,132 @@
+{
+ "id": "n07-desproporcion",
+ "lens": "dentro",
+ "theme": "elecciones",
+ "title": {
+  "es": "El reparto se aleja más de los votos cuantos menos diputados elige la provincia: índice de 17,7 con 2 o 3 escaños y de 2,3 en Madrid, Barcelona y Valencia",
+  "en": "The allocation strays further from the votes the fewer deputies a province elects: an index of 17.7 with 2 or 3 seats and 2.3 in Madrid, Barcelona and Valencia"
+ },
+ "subtitle": {
+  "es": "Índice de desproporcionalidad de Gallagher por grupos de provincias según los diputados que eligen, generales de julio de 2023 (0 = escaños en la misma proporción que los votos)",
+  "en": "Gallagher disproportionality index by groups of provinces according to the deputies they elect, July 2023 general election (0 = seats in the same proportion as votes)"
+ },
+ "unit": {
+  "es": "índice de Gallagher",
+  "en": "Gallagher index"
+ },
+ "source": {
+  "name": "Ministerio del Interior, Infoelectoral",
+  "url": "https://infoelectoral.interior.gob.es/opencms/es/elecciones-celebradas/area-de-descargas/",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+ },
+ "notes": {
+  "es": [
+   "Índice de Gallagher: raíz cuadrada de la mitad de la suma de los cuadrados de la diferencia, en puntos, entre el porcentaje de votos y el de escaños de cada candidatura, calculado sobre el conjunto de provincias de cada grupo.",
+   "El dato de España compara votos y escaños de cada candidatura en todo el país."
+  ],
+  "en": [
+   "Gallagher index: square root of half the sum of the squared differences, in points, between each list's share of votes and of seats, computed over all the provinces in each group.",
+   "The figure for Spain compares each list's votes and seats across the whole country."
+  ]
+ },
+ "retrieved": "2026-11-23",
+ "geos": {
+  "M1-1": {
+   "es": "1 escaño",
+   "en": "1 seat",
+   "rank": true
+  },
+  "M2-3": {
+   "es": "2 o 3 escaños",
+   "en": "2 or 3 seats",
+   "rank": true
+  },
+  "M4-4": {
+   "es": "4 escaños",
+   "en": "4 seats",
+   "rank": true
+  },
+  "M5-5": {
+   "es": "5 escaños",
+   "en": "5 seats",
+   "rank": true
+  },
+  "M6-7": {
+   "es": "6 o 7 escaños",
+   "en": "6 or 7 seats",
+   "rank": true
+  },
+  "M8-12": {
+   "es": "De 8 a 12 escaños",
+   "en": "8 to 12 seats",
+   "rank": true
+  },
+  "M16-37": {
+   "es": "De 16 a 37 escaños",
+   "en": "16 to 37 seats",
+   "rank": true
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "M1-1",
+   "time": "2023",
+   "value": 47.5,
+   "provinces": 2,
+   "seats": 2
+  },
+  {
+   "geo": "M2-3",
+   "time": "2023",
+   "value": 17.7,
+   "provinces": 9,
+   "seats": 26
+  },
+  {
+   "geo": "M4-4",
+   "time": "2023",
+   "value": 13.4,
+   "provinces": 10,
+   "seats": 40
+  },
+  {
+   "geo": "M5-5",
+   "time": "2023",
+   "value": 8.4,
+   "provinces": 8,
+   "seats": 40
+  },
+  {
+   "geo": "M6-7",
+   "time": "2023",
+   "value": 3.8,
+   "provinces": 11,
+   "seats": 71
+  },
+  {
+   "geo": "M8-12",
+   "time": "2023",
+   "value": 3.8,
+   "provinces": 9,
+   "seats": 86
+  },
+  {
+   "geo": "M16-37",
+   "time": "2023",
+   "value": 2.3,
+   "provinces": 3,
+   "seats": 85
+  },
+  {
+   "geo": "ES",
+   "time": "2023",
+   "value": 5.8,
+   "seats": 350
+  }
+ ]
+}
