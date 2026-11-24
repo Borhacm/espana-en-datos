@@ -235,3 +235,54 @@ piezas:
     tema: mayorias-29n
     titulo: "Las mayorías posibles en el nuevo Congreso"
     idea: aritmética de escaños, sin presentar ninguna combinación como probable.
+
+  # Nueva legislatura (diciembre): temas descritos con datos, sin atribuir causas a partidos
+  - id: n09
+    tipo: nota
+    fecha: 2026-12-07
+    tema: empleo
+    mirada: dentro
+    titulo: "Paro registrado y afiliación en noviembre, por comunidad"
+    idea: "paro registrado (SEPE) y afiliados a la Seguridad Social de noviembre de 2026 por comunidad, frente a noviembre de 2025 y a la serie desde 2019, con ajuste estacional si lo publica la fuente. Recordar que paro registrado y afiliación no son la EPA. Descriptivo: sin atribuir los cambios a ningún gobierno. Fuentes comprobadas el 24/11/2026: SEPE datos de avance de paro (sepe.es, mensual, 2025 y 2026) y Seguridad Social afiliación media (seg-social.es, estadísticas EST8, mensual)."
+    estado: pendiente
+
+  - id: a19
+    tipo: articulo
+    fecha: 2026-12-09
+    tema: turismo
+    titulo: "Turismo: cuánto pesa, de dónde llegan y dónde se concentra"
+    idea: "España frente a Europa: pernoctaciones y gasto turístico (Eurostat tour_occ_ninat y tour_dem_extot, hasta 2025). Comunidades: llegadas de turistas internacionales y gasto por comunidad de destino (INE FRONTUR y EGATUR, tablas 10822 y 10823, mensual hasta septiembre de 2026). En el tiempo: recuperación desde 2019 y estacionalidad. Explicativos: composición por país de residencia y relación entre turistas y población residente. Enlazar Vivienda si se habla de viviendas de uso turístico, sin repetir sus gráficos. Descriptivo."
+    estado: pendiente
+
+  - id: a20
+    tipo: articulo
+    fecha: 2026-12-11
+    tema: desigualdad
+    titulo: "Desigualdad y pobreza: España frente a Europa y entre comunidades"
+    idea: "España frente a Europa: Gini (Eurostat ilc_di12, hasta 2025), ratio S80/S20 (ilc_di11) y riesgo de pobreza o exclusión AROPE (ilc_peps01n, hasta 2025). Comunidades: tasa de riesgo de pobreza y AROPE por comunidad (INE Encuesta de Condiciones de Vida, tabla 9963, hasta 2025). En el tiempo: evolución desde 2008 y efecto de las transferencias sociales (antes y después, Eurostat ilc_li10 e ilc_li02). Ficha de política posible: el Ingreso Mínimo Vital (Ley 19/2021, BOE) con las evaluaciones de la AIReF. No repetir la emancipación de Jóvenes ni los salarios de la nota n02: enlazarlos. Descriptivo."
+    estado: pendiente
+
+  - id: n10
+    tipo: nota
+    fecha: 2026-12-14
+    tema: energia
+    mirada: tiempo
+    titulo: "Cuánta electricidad ha venido de renovables en 2026, mes a mes"
+    idea: "estructura de la generación eléctrica peninsular y nacional por tecnología, mes a mes, de enero a noviembre de 2026 frente a los mismos meses de 2023 a 2025 (REE, API REData apidatos.ree.es, estructura-generacion, mensual, comprobada el 24/11/2026 con datos hasta octubre de 2026). El tema Energía usa datos anuales de Eurostat: esta nota no repite sus titulares. Descriptivo: la eólica y la hidráulica dependen del tiempo de cada año, y hay que decirlo."
+    estado: pendiente
+
+  - id: a21
+    tipo: articulo
+    fecha: 2026-12-16
+    tema: justicia
+    titulo: "Justicia: cuántos jueces hay y cuánto tardan los asuntos"
+    idea: "España frente a Europa: jueces y personal de justicia por habitante (Eurostat crim_just_job, hasta 2024) y duración estimada de los procedimientos (Cuadro de Indicadores de la Justicia en la UE, Comisión Europea, edición 2026). Comunidades: tasas de resolución, pendencia y congestión por comunidad (CGPJ, Estadística Judicial, poderjudicial.es, anual hasta 2025 y trimestral en 2026). En el tiempo: asuntos ingresados y resueltos desde 2015. Ficha de política posible: la Ley Orgánica 1/2025 de eficiencia del Servicio Público de Justicia (BOE), sin juzgar su resultado si aún no hay datos suficientes. Descriptivo."
+    estado: pendiente
+
+  - id: a22
+    tipo: articulo
+    fecha: 2026-12-18
+    tema: industria
+    titulo: "Industria y exportaciones: qué fabrica y qué vende España"
+    idea: "España frente a Europa: peso de la industria manufacturera en el valor añadido (Eurostat nama_10_a10, hasta 2025) y producción industrial desde 2019 (sts_inpr_a, hasta 2025). Comunidades: peso de la industria por comunidad (INE Contabilidad Regional) y exportaciones por comunidad (DataComex, Ministerio de Economía). En el tiempo: exportaciones por grupo de productos y destino (Eurostat ext_lt_intertrd, hasta 2025). Explicativos: composición de las exportaciones y descomposición del cambio por sectores. No repetir la productividad del tema Productividad: enlazarlo. Descriptivo."
+    estado: pendiente
