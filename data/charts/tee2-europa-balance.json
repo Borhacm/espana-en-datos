@@ -1,0 +1,174 @@
+{
+ "id": "tee2-europa-balance",
+ "lens": "europa",
+ "theme": "territorio",
+ "title": {
+  "es": "En las provincias rurales de España mueren casi tres personas por cada una que nace: 14,4 defunciones y 5,1 nacimientos al año por cada 1.000 habitantes; en las regiones rurales de la UE, 1,6 defunciones por cada nacimiento",
+  "en": "In Spain's rural provinces almost three people die for every one born: 14.4 deaths and 5.1 births a year per 1,000 inhabitants; in the EU's rural regions, 1.6 deaths for every birth"
+ },
+ "subtitle": {
+  "es": "Nacimientos, defunciones y saldo migratorio en las regiones predominantemente rurales y urbanas, media 2022-2024, por cada 1.000 habitantes. Punto hueco: UE; punto lleno: España",
+  "en": "Births, deaths and net migration in predominantly rural and urban regions, 2022-2024 average, per 1,000 inhabitants. Hollow dot: EU; solid dot: Spain"
+ },
+ "unit": {
+  "es": "por cada 1.000 habitantes",
+  "en": "per 1,000 inhabitants"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "urt_gind3",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/urt_gind3/default/table"
+ },
+ "notes": {
+  "es": [
+   "Tipología urbano-rural de Eurostat: clasifica cada región NUTS 3 (en España, cada provincia) según la parte de su población que vive en zonas rurales. Las regiones intermedias no se muestran.",
+   "Como las provincias españolas son grandes, pocas cuentan como predominantemente rurales: en 2025 vivía en ellas el 2,6 % de la población, frente al 19,2 % en la UE.",
+   "Saldo migratorio: llegadas menos salidas, desde otras partes del país y desde el extranjero, más los ajustes estadísticos. Tasas calculadas sobre la población media de cada año."
+  ],
+  "en": [
+   "Eurostat urban-rural typology: it classifies each NUTS 3 region (in Spain, each province) by the share of its population living in rural areas. Intermediate regions are not shown.",
+   "Because Spanish provinces are large, few count as predominantly rural: in 2025 they were home to 2.6% of the population, against 19.2% in the EU.",
+   "Net migration: arrivals minus departures, from elsewhere in the country and from abroad, plus statistical adjustments. Rates calculated on each year's average population."
+  ]
+ },
+ "retrieved": "2026-11-25",
+ "geos": {
+  "RUR-LBIRTH": {
+   "es": "Rurales: nacimientos",
+   "en": "Rural: births",
+   "aggregate": true
+  },
+  "RUR-DEATH": {
+   "es": "Rurales: defunciones",
+   "en": "Rural: deaths",
+   "aggregate": true
+  },
+  "RUR-CNMIGRAT": {
+   "es": "Rurales: llegadas netas",
+   "en": "Rural: net arrivals",
+   "aggregate": true
+  },
+  "URB-LBIRTH": {
+   "es": "Urbanas: nacimientos",
+   "en": "Urban: births",
+   "aggregate": true
+  },
+  "URB-DEATH": {
+   "es": "Urbanas: defunciones",
+   "en": "Urban: deaths",
+   "aggregate": true
+  },
+  "URB-CNMIGRAT": {
+   "es": "Urbanas: llegadas netas",
+   "en": "Urban: net arrivals",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "period": "2022-2024",
+ "rates": {
+  "ESP-RUR-LBIRTH": 5.1,
+  "ESP-RUR-DEATH": 14.4,
+  "ESP-RUR-CNMIGRAT": 11.8,
+  "ESP-URB-LBIRTH": 6.9,
+  "ESP-URB-DEATH": 8.4,
+  "ESP-URB-CNMIGRAT": 15.4,
+  "EU27-RUR-LBIRTH": 7.8,
+  "EU27-RUR-DEATH": 12.5,
+  "EU27-RUR-CNMIGRAT": 5.1,
+  "EU27-URB-LBIRTH": 8.6,
+  "EU27-URB-DEATH": 9.8,
+  "EU27-URB-CNMIGRAT": 7.8
+ },
+ "natural_rural": {
+  "ESP": -9.3,
+  "EU27": -4.7
+ },
+ "eu_deaths_per_birth": 1.6,
+ "es_deaths_per_birth": 2.82,
+ "share_2025": {
+  "ESP": {
+   "RUR": 2.6,
+   "URB": 62.5
+  },
+  "EU27": {
+   "RUR": 19.2,
+   "URB": 41.7
+  }
+ },
+ "rural_population_2025": 1286497,
+ "rows": [
+  {
+   "geo": "RUR-LBIRTH",
+   "time": "0-ue",
+   "value": 7.8
+  },
+  {
+   "geo": "RUR-LBIRTH",
+   "time": "1-espana",
+   "value": 5.1
+  },
+  {
+   "geo": "RUR-DEATH",
+   "time": "0-ue",
+   "value": 12.5
+  },
+  {
+   "geo": "RUR-DEATH",
+   "time": "1-espana",
+   "value": 14.4
+  },
+  {
+   "geo": "RUR-CNMIGRAT",
+   "time": "0-ue",
+   "value": 5.1
+  },
+  {
+   "geo": "RUR-CNMIGRAT",
+   "time": "1-espana",
+   "value": 11.8
+  },
+  {
+   "geo": "URB-LBIRTH",
+   "time": "0-ue",
+   "value": 8.6
+  },
+  {
+   "geo": "URB-LBIRTH",
+   "time": "1-espana",
+   "value": 6.9
+  },
+  {
+   "geo": "URB-DEATH",
+   "time": "0-ue",
+   "value": 9.8
+  },
+  {
+   "geo": "URB-DEATH",
+   "time": "1-espana",
+   "value": 8.4
+  },
+  {
+   "geo": "URB-CNMIGRAT",
+   "time": "0-ue",
+   "value": 7.8
+  },
+  {
+   "geo": "URB-CNMIGRAT",
+   "time": "1-espana",
+   "value": 15.4
+  }
+ ]
+}

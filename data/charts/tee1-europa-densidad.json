@@ -1,0 +1,272 @@
+{
+ "id": "tee1-europa-densidad",
+ "lens": "europa",
+ "theme": "territorio",
+ "title": {
+  "es": "Solo 16 regiones de la UE tienen menos de 12,5 habitantes por km²; fuera de Suecia y Finlandia son 6, y 3 de ellas son Soria, Teruel y Cuenca",
+  "en": "Only 16 EU regions have fewer than 12.5 inhabitants per km²; outside Sweden and Finland there are 6, and 3 of them are Soria, Teruel and Cuenca"
+ },
+ "subtitle": {
+  "es": "Regiones de nivel provincial (NUTS 3) de la UE con menos de 12,5 habitantes por km², 2024, en habitantes por km²",
+  "en": "EU regions at provincial level (NUTS 3) with fewer than 12.5 inhabitants per km², 2024, in inhabitants per km²"
+ },
+ "unit": {
+  "es": "habitantes por km²",
+  "en": "inhabitants per km²"
+ },
+ "source": {
+  "name": "Eurostat",
+  "license": "CC BY 4.0",
+  "dataset": "demo_r_d3dens",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d3dens/default/table"
+ },
+ "notes": {
+  "es": [
+   "12,5 habitantes por km² es el umbral con el que las normas de ayudas regionales de la UE definen las zonas escasamente pobladas.",
+   "Las regiones NUTS 3 tienen tamaños muy distintos según el país: en España son las provincias; en Alemania, comarcas mucho más pequeñas. Una región grande puede esconder zonas casi vacías y una pequeña, no.",
+   "Guayana Francesa es una región ultraperiférica de Francia, en Sudamérica."
+  ],
+  "en": [
+   "12.5 inhabitants per km² is the threshold that EU regional aid rules use to define sparsely populated areas.",
+   "NUTS 3 regions vary greatly in size from country to country: in Spain they are the provinces; in Germany, much smaller districts. A large region can hide almost empty areas and a small one cannot.",
+   "French Guiana is an outermost region of France, in South America."
+  ]
+ },
+ "retrieved": "2026-11-25",
+ "geos": {
+  "FI1D7": {
+   "es": "Lappi (Finlandia)",
+   "en": "Lappi (Finland)",
+   "rank": true
+  },
+  "SE332": {
+   "es": "Norrbottens (Suecia)",
+   "en": "Norrbottens (Sweden)",
+   "rank": true
+  },
+  "SE322": {
+   "es": "Jämtlands (Suecia)",
+   "en": "Jämtlands (Sweden)",
+   "rank": true
+  },
+  "FI1D8": {
+   "es": "Kainuu (Finlandia)",
+   "en": "Kainuu (Finland)",
+   "rank": true
+  },
+  "FRY30": {
+   "es": "Guayana Francesa (Francia)",
+   "en": "French Guiana (France)",
+   "rank": true
+  },
+  "SE331": {
+   "es": "Västerbottens (Suecia)",
+   "en": "Västerbottens (Sweden)",
+   "rank": true
+  },
+  "HR032": {
+   "es": "Lika-Senj (Croacia)",
+   "en": "Lika-Senj (Croatia)",
+   "rank": true
+  },
+  "FI1DC": {
+   "es": "Pohjois-Karjala (Finlandia)",
+   "en": "Pohjois-Karjala (Finland)",
+   "rank": true
+  },
+  "ES417": {
+   "es": "Soria (España)",
+   "en": "Soria (Spain)",
+   "rank": true
+  },
+  "ES242": {
+   "es": "Teruel (España)",
+   "en": "Teruel (Spain)",
+   "rank": true
+  },
+  "EL643": {
+   "es": "Evrytania (Grecia)",
+   "en": "Evrytania (Greece)",
+   "rank": true
+  },
+  "SE312": {
+   "es": "Dalarnas (Suecia)",
+   "en": "Dalarnas (Sweden)",
+   "rank": true
+  },
+  "SE321": {
+   "es": "Västernorrlands (Suecia)",
+   "en": "Västernorrlands (Sweden)",
+   "rank": true
+  },
+  "FI1D9": {
+   "es": "Pohjois-Pohjanmaa (Finlandia)",
+   "en": "Pohjois-Pohjanmaa (Finland)",
+   "rank": true
+  },
+  "ES423": {
+   "es": "Cuenca (España)",
+   "en": "Cuenca (Spain)",
+   "rank": true
+  },
+  "FI1DA": {
+   "es": "Etelä-Savo (Finlandia)",
+   "en": "Etelä-Savo (Finland)",
+   "rank": true
+  }
+ },
+ "year": "2024",
+ "sparse": [
+  "FI1D7",
+  "SE332",
+  "SE322",
+  "FI1D8",
+  "FRY30",
+  "SE331",
+  "HR032",
+  "FI1DC",
+  "ES417",
+  "ES242",
+  "EL643",
+  "SE312",
+  "SE321",
+  "FI1D9",
+  "ES423",
+  "FI1DA"
+ ],
+ "nordic": 10,
+ "outside_nordic": [
+  "FRY30",
+  "HR032",
+  "ES417",
+  "ES242",
+  "EL643",
+  "ES423"
+ ],
+ "spain_lowest": [
+  {
+   "geo": "ES417",
+   "name": "Soria",
+   "value": 8.8
+  },
+  {
+   "geo": "ES242",
+   "name": "Teruel",
+   "value": 9.2
+  },
+  {
+   "geo": "ES423",
+   "name": "Cuenca",
+   "value": 11.7
+  },
+  {
+   "geo": "ES241",
+   "name": "Huesca",
+   "value": 14.8
+  },
+  {
+   "geo": "ES419",
+   "name": "Zamora",
+   "value": 15.9
+  },
+  {
+   "geo": "ES414",
+   "name": "Palencia",
+   "value": 19.7
+  },
+  {
+   "geo": "ES432",
+   "name": "Cáceres",
+   "value": 19.9
+  },
+  {
+   "geo": "ES411",
+   "name": "Ávila",
+   "value": 20.0
+  }
+ ],
+ "spain_total": 97.2,
+ "eu_total": 109.7,
+ "rows": [
+  {
+   "geo": "FI1D7",
+   "time": "2024",
+   "value": 1.9
+  },
+  {
+   "geo": "SE332",
+   "time": "2024",
+   "value": 2.6
+  },
+  {
+   "geo": "SE322",
+   "time": "2024",
+   "value": 2.7
+  },
+  {
+   "geo": "FI1D8",
+   "time": "2024",
+   "value": 3.4
+  },
+  {
+   "geo": "FRY30",
+   "time": "2024",
+   "value": 3.6
+  },
+  {
+   "geo": "SE331",
+   "time": "2024",
+   "value": 5.1
+  },
+  {
+   "geo": "HR032",
+   "time": "2024",
+   "value": 8.1
+  },
+  {
+   "geo": "FI1DC",
+   "time": "2024",
+   "value": 8.3
+  },
+  {
+   "geo": "ES417",
+   "time": "2024",
+   "value": 8.8
+  },
+  {
+   "geo": "ES242",
+   "time": "2024",
+   "value": 9.2
+  },
+  {
+   "geo": "EL643",
+   "time": "2024",
+   "value": 9.6
+  },
+  {
+   "geo": "SE312",
+   "time": "2024",
+   "value": 10.2
+  },
+  {
+   "geo": "SE321",
+   "time": "2024",
+   "value": 11.2
+  },
+  {
+   "geo": "FI1D9",
+   "time": "2024",
+   "value": 11.3
+  },
+  {
+   "geo": "ES423",
+   "time": "2024",
+   "value": 11.7
+  },
+  {
+   "geo": "FI1DA",
+   "time": "2024",
+   "value": 11.7
+  }
+ ]
+}

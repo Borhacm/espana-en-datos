@@ -1,0 +1,187 @@
+{
+ "id": "ted2-tamano-municipio",
+ "lens": "dentro",
+ "theme": "territorio",
+ "title": {
+  "es": "Desde 2001, los municipios de 20.001 a 50.000 habitantes han crecido un 32,2 %; los de 101 a 500 han perdido el 7,4 % y las ciudades de más de 100.000 solo han ganado un 12,9 %",
+  "en": "Since 2001, municipalities of 20,001 to 50,000 inhabitants have grown by 32.2%; those of 101 to 500 have lost 7.4% and cities of over 100,000 have grown by only 12.9%"
+ },
+ "subtitle": {
+  "es": "Variación de la población entre 2001 y 2025 según el tamaño del municipio en 2001, en %",
+  "en": "Population change between 2001 and 2025 by size of municipality in 2001, in %"
+ },
+ "unit": {
+  "es": "% de variación",
+  "en": "% change"
+ },
+ "source": {
+  "name": "INE, cifras oficiales de población (revisión del padrón)",
+  "dataset": "Tabla 29005",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=29005",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Cifras oficiales del padrón municipal a 1 de enero de cada año (no hay cifras de 1997). Cuenta a los empadronados, no a quien vive allí solo una parte del año.",
+   "Cada municipio se clasifica por su población en 2001 y se sigue hasta 2025, aunque haya cambiado de tamaño. Se excluyen los pocos municipios creados o fusionados en el periodo.",
+   "Los tramos agrupan municipios por su tamaño, no por su situación: no distinguen si están cerca de una ciudad, en la costa o en el interior."
+  ],
+  "en": [
+   "Official municipal register (padrón) figures at 1 January each year (there are no figures for 1997). It counts registered residents, not people who live there for only part of the year.",
+   "Each municipality is classified by its population in 2001 and followed to 2025, even if its size has changed. The few municipalities created or merged during the period are excluded.",
+   "The bands group municipalities by size, not by location: they do not distinguish whether they are near a city, on the coast or inland."
+  ]
+ },
+ "retrieved": "2026-11-25",
+ "geos": {
+  "s0": {
+   "es": "Hasta 100",
+   "en": "Up to 100",
+   "rank": true
+  },
+  "s101": {
+   "es": "101 a 500",
+   "en": "101 to 500",
+   "rank": true
+  },
+  "s501": {
+   "es": "501 a 1.000",
+   "en": "501 to 1,000",
+   "rank": true
+  },
+  "s1001": {
+   "es": "1.001 a 2.000",
+   "en": "1,001 to 2,000",
+   "rank": true
+  },
+  "s2001": {
+   "es": "2.001 a 5.000",
+   "en": "2,001 to 5,000",
+   "rank": true
+  },
+  "s5001": {
+   "es": "5.001 a 10.000",
+   "en": "5,001 to 10,000",
+   "rank": true
+  },
+  "s10001": {
+   "es": "10.001 a 20.000",
+   "en": "10,001 to 20,000",
+   "rank": true
+  },
+  "s20001": {
+   "es": "20.001 a 50.000",
+   "en": "20,001 to 50,000",
+   "rank": true
+  },
+  "s50001": {
+   "es": "50.001 a 100.000",
+   "en": "50,001 to 100,000",
+   "rank": true
+  },
+  "s100001": {
+   "es": "Más de 100.000",
+   "en": "Over 100,000",
+   "rank": true
+  }
+ },
+ "last": 2025,
+ "municipios": 8103,
+ "lost": 4956,
+ "lost_pct": 61.2,
+ "pop_in_lost": 8021119,
+ "pop_in_lost_pct": 16.4,
+ "total_change": 19.3,
+ "rows": [
+  {
+   "geo": "s0",
+   "time": "2001-2025",
+   "value": -16.4,
+   "municipios": 934,
+   "lost": 735,
+   "pop_base": 57678,
+   "pop_last": 48230
+  },
+  {
+   "geo": "s101",
+   "time": "2001-2025",
+   "value": -7.4,
+   "municipios": 2883,
+   "lost": 2177,
+   "pop_base": 723970,
+   "pop_last": 670037
+  },
+  {
+   "geo": "s501",
+   "time": "2001-2025",
+   "value": 1.8,
+   "municipios": 1127,
+   "lost": 753,
+   "pop_base": 801575,
+   "pop_last": 816076
+  },
+  {
+   "geo": "s1001",
+   "time": "2001-2025",
+   "value": 15.2,
+   "municipios": 1002,
+   "lost": 575,
+   "pop_base": 1441321,
+   "pop_last": 1660733
+  },
+  {
+   "geo": "s2001",
+   "time": "2001-2025",
+   "value": 23.1,
+   "municipios": 997,
+   "lost": 448,
+   "pop_base": 3132760,
+   "pop_last": 3855951
+  },
+  {
+   "geo": "s5001",
+   "time": "2001-2025",
+   "value": 23.2,
+   "municipios": 509,
+   "lost": 159,
+   "pop_base": 3494124,
+   "pop_last": 4305439
+  },
+  {
+   "geo": "s10001",
+   "time": "2001-2025",
+   "value": 27.0,
+   "municipios": 332,
+   "lost": 66,
+   "pop_base": 4638790,
+   "pop_last": 5891579
+  },
+  {
+   "geo": "s20001",
+   "time": "2001-2025",
+   "value": 32.2,
+   "municipios": 201,
+   "lost": 23,
+   "pop_base": 5972571,
+   "pop_last": 7897376
+  },
+  {
+   "geo": "s50001",
+   "time": "2001-2025",
+   "value": 21.9,
+   "municipios": 62,
+   "lost": 10,
+   "pop_base": 4213756,
+   "pop_last": 5135367
+  },
+  {
+   "geo": "s100001",
+   "time": "2001-2025",
+   "value": 12.9,
+   "municipios": 56,
+   "lost": 10,
+   "pop_base": 16627280,
+   "pop_last": 18773961
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "id": "tet1-micromunicipios",
+ "lens": "tiempo",
+ "theme": "territorio",
+ "title": {
+  "es": "Hay 1.426 municipios con 100 habitantes o menos, frente a 850 en 1996",
+  "en": "There are 1,426 municipalities with 100 inhabitants or fewer, against 850 in 1996"
+ },
+ "subtitle": {
+  "es": "Municipios con 100 habitantes o menos, 1996-2025",
+  "en": "Municipalities with 100 inhabitants or fewer, 1996-2025"
+ },
+ "unit": {
+  "es": "municipios",
+  "en": "municipalities"
+ },
+ "source": {
+  "name": "INE, cifras oficiales de población (revisión del padrón)",
+  "dataset": "Tabla 29005",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=29005",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Cifras oficiales del padrón municipal a 1 de enero de cada año (no hay cifras de 1997). Cuenta a los empadronados, no a quien vive allí solo una parte del año.",
+   "En 2025 hay 8.132 municipios; 4.981 tienen 1.000 habitantes o menos."
+  ],
+  "en": [
+   "Official municipal register (padrón) figures at 1 January each year (there are no figures for 1997). It counts registered residents, not people who live there for only part of the year.",
+   "In 2025 there are 8,132 municipalities; 4,981 have 1,000 inhabitants or fewer."
+  ]
+ },
+ "retrieved": "2026-11-25",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "micro": {
+    "es": "Municipios de 100 habitantes o menos",
+    "en": "Municipalities of 100 inhabitants or fewer"
+   }
+  }
+ },
+ "short_labels": {
+  "micro": {
+   "es": "Hasta 100 hab.",
+   "en": "Up to 100"
+  }
+ },
+ "count": {
+  "1996": 850,
+  "1998": 901,
+  "1999": 905,
+  "2000": 928,
+  "2001": 934,
+  "2002": 935,
+  "2003": 945,
+  "2004": 961,
+  "2005": 988,
+  "2006": 973,
+  "2007": 996,
+  "2008": 1036,
+  "2009": 1074,
+  "2010": 1058,
+  "2011": 1070,
+  "2012": 1135,
+  "2013": 1193,
+  "2014": 1220,
+  "2015": 1238,
+  "2016": 1286,
+  "2017": 1319,
+  "2018": 1360,
+  "2019": 1352,
+  "2020": 1399,
+  "2021": 1379,
+  "2022": 1371,
+  "2023": 1375,
+  "2024": 1412,
+  "2025": 1426
+ },
+ "upto1000": {
+  "1996": 4902,
+  "1998": 4922,
+  "1999": 4933,
+  "2000": 4955,
+  "2001": 4944,
+  "2002": 4939,
+  "2003": 4923,
+  "2004": 4921,
+  "2005": 4900,
+  "2006": 4893,
+  "2007": 4878,
+  "2008": 4861,
+  "2009": 4861,
+  "2010": 4862,
+  "2011": 4855,
+  "2012": 4873,
+  "2013": 4896,
+  "2014": 4914,
+  "2015": 4929,
+  "2016": 4955,
+  "2017": 4979,
+  "2018": 4995,
+  "2019": 5000,
+  "2020": 5005,
+  "2021": 4997,
+  "2022": 4986,
+  "2023": 4983,
+  "2024": 4984,
+  "2025": 4981
+ },
+ "total": {
+  "1996": 8096,
+  "1998": 8098,
+  "1999": 8101,
+  "2000": 8104,
+  "2001": 8107,
+  "2002": 8108,
+  "2003": 8108,
+  "2004": 8109,
+  "2005": 8109,
+  "2006": 8110,
+  "2007": 8111,
+  "2008": 8112,
+  "2009": 8112,
+  "2010": 8114,
+  "2011": 8116,
+  "2012": 8116,
+  "2013": 8117,
+  "2014": 8117,
+  "2015": 8119,
+  "2016": 8125,
+  "2017": 8124,
+  "2018": 8124,
+  "2019": 8131,
+  "2020": 8131,
+  "2021": 8131,
+  "2022": 8131,
+  "2023": 8131,
+  "2024": 8132,
+  "2025": 8132
+ },
+ "peak": 2025,
+ "top_provinces": [
+  {
+   "geo": "19",
+   "name": "Guadalajara",
+   "n": 177
+  },
+  {
+   "geo": "09",
+   "name": "Burgos",
+   "n": 171
+  },
+  {
+   "geo": "42",
+   "name": "Soria",
+   "n": 118
+  },
+  {
+   "geo": "05",
+   "name": "Ávila",
+   "n": 106
+  },
+  {
+   "geo": "37",
+   "name": "Salamanca",
+   "n": 99
+  },
+  {
+   "geo": "44",
+   "name": "Teruel",
+   "n": 97
+  }
+ ],
+ "rows": [
+  {
+   "time": "1996",
+   "series": "micro",
+   "value": 850
+  },
+  {
+   "time": "1998",
+   "series": "micro",
+   "value": 901
+  },
+  {
+   "time": "1999",
+   "series": "micro",
+   "value": 905
+  },
+  {
+   "time": "2000",
+   "series": "micro",
+   "value": 928
+  },
+  {
+   "time": "2001",
+   "series": "micro",
+   "value": 934
+  },
+  {
+   "time": "2002",
+   "series": "micro",
+   "value": 935
+  },
+  {
+   "time": "2003",
+   "series": "micro",
+   "value": 945
+  },
+  {
+   "time": "2004",
+   "series": "micro",
+   "value": 961
+  },
+  {
+   "time": "2005",
+   "series": "micro",
+   "value": 988
+  },
+  {
+   "time": "2006",
+   "series": "micro",
+   "value": 973
+  },
+  {
+   "time": "2007",
+   "series": "micro",
+   "value": 996
+  },
+  {
+   "time": "2008",
+   "series": "micro",
+   "value": 1036
+  },
+  {
+   "time": "2009",
+   "series": "micro",
+   "value": 1074
+  },
+  {
+   "time": "2010",
+   "series": "micro",
+   "value": 1058
+  },
+  {
+   "time": "2011",
+   "series": "micro",
+   "value": 1070
+  },
+  {
+   "time": "2012",
+   "series": "micro",
+   "value": 1135
+  },
+  {
+   "time": "2013",
+   "series": "micro",
+   "value": 1193
+  },
+  {
+   "time": "2014",
+   "series": "micro",
+   "value": 1220
+  },
+  {
+   "time": "2015",
+   "series": "micro",
+   "value": 1238
+  },
+  {
+   "time": "2016",
+   "series": "micro",
+   "value": 1286
+  },
+  {
+   "time": "2017",
+   "series": "micro",
+   "value": 1319
+  },
+  {
+   "time": "2018",
+   "series": "micro",
+   "value": 1360
+  },
+  {
+   "time": "2019",
+   "series": "micro",
+   "value": 1352
+  },
+  {
+   "time": "2020",
+   "series": "micro",
+   "value": 1399
+  },
+  {
+   "time": "2021",
+   "series": "micro",
+   "value": 1379
+  },
+  {
+   "time": "2022",
+   "series": "micro",
+   "value": 1371
+  },
+  {
+   "time": "2023",
+   "series": "micro",
+   "value": 1375
+  },
+  {
+   "time": "2024",
+   "series": "micro",
+   "value": 1412
+  },
+  {
+   "time": "2025",
+   "series": "micro",
+   "value": 1426
+  }
+ ]
+}

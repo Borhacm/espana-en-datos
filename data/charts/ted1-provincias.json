@@ -1,0 +1,750 @@
+{
+ "id": "ted1-provincias",
+ "lens": "dentro",
+ "theme": "territorio",
+ "title": {
+  "es": "14 de las 52 provincias tienen hoy menos habitantes que en 2001, mientras España ha ganado un 19,5 %; Zamora ha perdido el 18,3 %",
+  "en": "14 of the 52 provinces have fewer inhabitants today than in 2001, while Spain has grown by 19.5%; Zamora has lost 18.3%"
+ },
+ "subtitle": {
+  "es": "Variación de la población de cada provincia entre el 1 de enero de 2001 y el de 2025, en %",
+  "en": "Change in each province's population between 1 January 2001 and 1 January 2025, in %"
+ },
+ "unit": {
+  "es": "% de variación",
+  "en": "% change"
+ },
+ "source": {
+  "name": "INE, cifras oficiales de población (revisión del padrón)",
+  "dataset": "Tabla 29005",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=29005",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Cifras oficiales del padrón municipal a 1 de enero de cada año (no hay cifras de 1997). Cuenta a los empadronados, no a quien vive allí solo una parte del año.",
+   "Desde 2011, el último máximo de población antes de la crisis, han perdido habitantes 22 provincias."
+  ],
+  "en": [
+   "Official municipal register (padrón) figures at 1 January each year (there are no figures for 1997). It counts registered residents, not people who live there for only part of the year.",
+   "Since 2011, the last population peak before the crisis, 22 provinces have lost inhabitants."
+  ]
+ },
+ "retrieved": "2026-11-25",
+ "geos": {
+  "44": {
+   "es": "Teruel",
+   "en": "Teruel",
+   "rank": true
+  },
+  "40": {
+   "es": "Segovia",
+   "en": "Segovia",
+   "rank": true
+  },
+  "10": {
+   "es": "Cáceres",
+   "en": "Cáceres",
+   "rank": true
+  },
+  "27": {
+   "es": "Lugo",
+   "en": "Lugo",
+   "rank": true
+  },
+  "48": {
+   "es": "Bizkaia",
+   "en": "Bizkaia",
+   "rank": true
+  },
+  "31": {
+   "es": "Navarra",
+   "en": "Navarra",
+   "rank": true
+  },
+  "09": {
+   "es": "Burgos",
+   "en": "Burgos",
+   "rank": true
+  },
+  "26": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "rank": true
+  },
+  "20": {
+   "es": "Gipuzkoa",
+   "en": "Gipuzkoa",
+   "rank": true
+  },
+  "19": {
+   "es": "Guadalajara",
+   "en": "Guadalajara",
+   "rank": true
+  },
+  "30": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "rank": true
+  },
+  "50": {
+   "es": "Zaragoza",
+   "en": "Zaragoza",
+   "rank": true
+  },
+  "34": {
+   "es": "Palencia",
+   "en": "Palencia",
+   "rank": true
+  },
+  "15": {
+   "es": "A Coruña",
+   "en": "A Coruña",
+   "rank": true
+  },
+  "42": {
+   "es": "Soria",
+   "en": "Soria",
+   "rank": true
+  },
+  "25": {
+   "es": "Lleida",
+   "en": "Lleida",
+   "rank": true
+  },
+  "02": {
+   "es": "Albacete",
+   "en": "Albacete",
+   "rank": true
+  },
+  "13": {
+   "es": "Ciudad Real",
+   "en": "Ciudad Real",
+   "rank": true
+  },
+  "49": {
+   "es": "Zamora",
+   "en": "Zamora",
+   "rank": true
+  },
+  "16": {
+   "es": "Cuenca",
+   "en": "Cuenca",
+   "rank": true
+  },
+  "22": {
+   "es": "Huesca",
+   "en": "Huesca",
+   "rank": true
+  },
+  "04": {
+   "es": "Almería",
+   "en": "Almería",
+   "rank": true
+  },
+  "08": {
+   "es": "Barcelona",
+   "en": "Barcelona",
+   "rank": true
+  },
+  "37": {
+   "es": "Salamanca",
+   "en": "Salamanca",
+   "rank": true
+  },
+  "28": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "rank": true
+  },
+  "24": {
+   "es": "León",
+   "en": "León",
+   "rank": true
+  },
+  "06": {
+   "es": "Badajoz",
+   "en": "Badajoz",
+   "rank": true
+  },
+  "47": {
+   "es": "Valladolid",
+   "en": "Valladolid",
+   "rank": true
+  },
+  "14": {
+   "es": "Córdoba",
+   "en": "Córdoba",
+   "rank": true
+  },
+  "05": {
+   "es": "Ávila",
+   "en": "Ávila",
+   "rank": true
+  },
+  "38": {
+   "es": "Santa Cruz de Tenerife",
+   "en": "Santa Cruz de Tenerife",
+   "rank": true
+  },
+  "46": {
+   "es": "Valencia",
+   "en": "Valencia",
+   "rank": true
+  },
+  "35": {
+   "es": "Las Palmas",
+   "en": "Las Palmas",
+   "rank": true
+  },
+  "36": {
+   "es": "Pontevedra",
+   "en": "Pontevedra",
+   "rank": true
+  },
+  "03": {
+   "es": "Alicante",
+   "en": "Alicante",
+   "rank": true
+  },
+  "18": {
+   "es": "Granada",
+   "en": "Granada",
+   "rank": true
+  },
+  "41": {
+   "es": "Sevilla",
+   "en": "Sevilla",
+   "rank": true
+  },
+  "17": {
+   "es": "Girona",
+   "en": "Girona",
+   "rank": true
+  },
+  "01": {
+   "es": "Álava",
+   "en": "Álava",
+   "rank": true
+  },
+  "43": {
+   "es": "Tarragona",
+   "en": "Tarragona",
+   "rank": true
+  },
+  "12": {
+   "es": "Castellón",
+   "en": "Castellón",
+   "rank": true
+  },
+  "45": {
+   "es": "Toledo",
+   "en": "Toledo",
+   "rank": true
+  },
+  "07": {
+   "es": "Baleares",
+   "en": "Baleares",
+   "rank": true
+  },
+  "21": {
+   "es": "Huelva",
+   "en": "Huelva",
+   "rank": true
+  },
+  "29": {
+   "es": "Málaga",
+   "en": "Málaga",
+   "rank": true
+  },
+  "23": {
+   "es": "Jaén",
+   "en": "Jaén",
+   "rank": true
+  },
+  "11": {
+   "es": "Cádiz",
+   "en": "Cádiz",
+   "rank": true
+  },
+  "39": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "rank": true
+  },
+  "33": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "rank": true
+  },
+  "32": {
+   "es": "Ourense",
+   "en": "Ourense",
+   "rank": true
+  },
+  "51": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "rank": true
+  },
+  "52": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "rank": true
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "aggregate": true
+  }
+ },
+ "last": 2025,
+ "spain": 19.5,
+ "lost": [
+  "49",
+  "32",
+  "24",
+  "27",
+  "34",
+  "37",
+  "33",
+  "10",
+  "23",
+  "05",
+  "16",
+  "42",
+  "06",
+  "44"
+ ],
+ "lost_since_2011": [
+  "02",
+  "05",
+  "06",
+  "09",
+  "10",
+  "13",
+  "14",
+  "15",
+  "16",
+  "23",
+  "24",
+  "27",
+  "32",
+  "33",
+  "34",
+  "36",
+  "37",
+  "40",
+  "42",
+  "44",
+  "47",
+  "49"
+ ],
+ "top": [
+  [
+   "19",
+   66.4
+  ],
+  [
+   "04",
+   45.1
+  ],
+  [
+   "17",
+   43.5
+  ],
+  [
+   "43",
+   42.9
+  ],
+  [
+   "07",
+   40.8
+  ]
+ ],
+ "seats_lost_provinces": 54,
+ "pop_lost_provinces": 4998149,
+ "abs": {
+  "49": [
+   202356,
+   165275
+  ],
+  "32": [
+   344623,
+   305573
+  ],
+  "24": [
+   499517,
+   446771
+  ],
+  "27": [
+   364125,
+   325759
+  ],
+  "34": [
+   177345,
+   158687
+  ],
+  "37": [
+   350209,
+   328779
+  ],
+  "33": [
+   1075329,
+   1013529
+  ],
+  "10": [
+   409130,
+   387752
+  ],
+  "23": [
+   645781,
+   617604
+  ],
+  "05": [
+   163885,
+   159887
+  ],
+  "16": [
+   201526,
+   198216
+  ],
+  "42": [
+   91314,
+   90234
+  ],
+  "06": [
+   664251,
+   663886
+  ],
+  "44": [
+   136233,
+   136197
+  ]
+ },
+ "total": {
+  "2001": 41116842,
+  "2011": 47190493,
+  "2025": 49114494
+ },
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2001-2025",
+   "value": 18.5,
+   "pop": 342161
+  },
+  {
+   "geo": "02",
+   "time": "2001-2025",
+   "value": 6.3,
+   "pop": 390406
+  },
+  {
+   "geo": "03",
+   "time": "2001-2025",
+   "value": 36.2,
+   "pop": 2030037
+  },
+  {
+   "geo": "04",
+   "time": "2001-2025",
+   "value": 45.1,
+   "pop": 773577
+  },
+  {
+   "geo": "05",
+   "time": "2001-2025",
+   "value": -2.4,
+   "pop": 159887
+  },
+  {
+   "geo": "06",
+   "time": "2001-2025",
+   "value": -0.1,
+   "pop": 663886
+  },
+  {
+   "geo": "07",
+   "time": "2001-2025",
+   "value": 40.8,
+   "pop": 1237480
+  },
+  {
+   "geo": "08",
+   "time": "2001-2025",
+   "value": 24.5,
+   "pop": 5983325
+  },
+  {
+   "geo": "09",
+   "time": "2001-2025",
+   "value": 3.4,
+   "pop": 361556
+  },
+  {
+   "geo": "10",
+   "time": "2001-2025",
+   "value": -5.2,
+   "pop": 387752
+  },
+  {
+   "geo": "11",
+   "time": "2001-2025",
+   "value": 11.1,
+   "pop": 1257041
+  },
+  {
+   "geo": "12",
+   "time": "2001-2025",
+   "value": 29.3,
+   "pop": 627173
+  },
+  {
+   "geo": "13",
+   "time": "2001-2025",
+   "value": 3.3,
+   "pop": 494407
+  },
+  {
+   "geo": "14",
+   "time": "2001-2025",
+   "value": 0.3,
+   "pop": 772153
+  },
+  {
+   "geo": "15",
+   "time": "2001-2025",
+   "value": 2.5,
+   "pop": 1135612
+  },
+  {
+   "geo": "16",
+   "time": "2001-2025",
+   "value": -1.6,
+   "pop": 198216
+  },
+  {
+   "geo": "17",
+   "time": "2001-2025",
+   "value": 43.5,
+   "pop": 832026
+  },
+  {
+   "geo": "18",
+   "time": "2001-2025",
+   "value": 16.0,
+   "pop": 942618
+  },
+  {
+   "geo": "19",
+   "time": "2001-2025",
+   "value": 66.4,
+   "pop": 285390
+  },
+  {
+   "geo": "20",
+   "time": "2001-2025",
+   "value": 7.8,
+   "pop": 733365
+  },
+  {
+   "geo": "21",
+   "time": "2001-2025",
+   "value": 16.0,
+   "pop": 535703
+  },
+  {
+   "geo": "22",
+   "time": "2001-2025",
+   "value": 12.0,
+   "pop": 230624
+  },
+  {
+   "geo": "23",
+   "time": "2001-2025",
+   "value": -4.4,
+   "pop": 617604
+  },
+  {
+   "geo": "24",
+   "time": "2001-2025",
+   "value": -10.6,
+   "pop": 446771
+  },
+  {
+   "geo": "25",
+   "time": "2001-2025",
+   "value": 25.0,
+   "pop": 456106
+  },
+  {
+   "geo": "26",
+   "time": "2001-2025",
+   "value": 21.0,
+   "pop": 327286
+  },
+  {
+   "geo": "27",
+   "time": "2001-2025",
+   "value": -10.5,
+   "pop": 325759
+  },
+  {
+   "geo": "28",
+   "time": "2001-2025",
+   "value": 32.8,
+   "pop": 7137031
+  },
+  {
+   "geo": "29",
+   "time": "2001-2025",
+   "value": 37.5,
+   "pop": 1791092
+  },
+  {
+   "geo": "30",
+   "time": "2001-2025",
+   "value": 33.5,
+   "pop": 1589138
+  },
+  {
+   "geo": "31",
+   "time": "2001-2025",
+   "value": 22.9,
+   "pop": 683500
+  },
+  {
+   "geo": "32",
+   "time": "2001-2025",
+   "value": -11.3,
+   "pop": 305573
+  },
+  {
+   "geo": "33",
+   "time": "2001-2025",
+   "value": -5.7,
+   "pop": 1013529
+  },
+  {
+   "geo": "34",
+   "time": "2001-2025",
+   "value": -10.5,
+   "pop": 158687
+  },
+  {
+   "geo": "35",
+   "time": "2001-2025",
+   "value": 26.3,
+   "pop": 1167555
+  },
+  {
+   "geo": "36",
+   "time": "2001-2025",
+   "value": 3.3,
+   "pop": 946225
+  },
+  {
+   "geo": "37",
+   "time": "2001-2025",
+   "value": -6.1,
+   "pop": 328779
+  },
+  {
+   "geo": "38",
+   "time": "2001-2025",
+   "value": 26.3,
+   "pop": 1082421
+  },
+  {
+   "geo": "39",
+   "time": "2001-2025",
+   "value": 10.5,
+   "pop": 593964
+  },
+  {
+   "geo": "40",
+   "time": "2001-2025",
+   "value": 7.8,
+   "pop": 158470
+  },
+  {
+   "geo": "41",
+   "time": "2001-2025",
+   "value": 13.1,
+   "pop": 1976624
+  },
+  {
+   "geo": "42",
+   "time": "2001-2025",
+   "value": -1.2,
+   "pop": 90234
+  },
+  {
+   "geo": "43",
+   "time": "2001-2025",
+   "value": 42.9,
+   "pop": 874808
+  },
+  {
+   "geo": "44",
+   "time": "2001-2025",
+   "value": -0.0,
+   "pop": 136197
+  },
+  {
+   "geo": "45",
+   "time": "2001-2025",
+   "value": 40.0,
+   "pop": 750815
+  },
+  {
+   "geo": "46",
+   "time": "2001-2025",
+   "value": 23.9,
+   "pop": 2758633
+  },
+  {
+   "geo": "47",
+   "time": "2001-2025",
+   "value": 6.2,
+   "pop": 528841
+  },
+  {
+   "geo": "48",
+   "time": "2001-2025",
+   "value": 3.0,
+   "pop": 1166816
+  },
+  {
+   "geo": "49",
+   "time": "2001-2025",
+   "value": -18.3,
+   "pop": 165275
+  },
+  {
+   "geo": "50",
+   "time": "2001-2025",
+   "value": 15.7,
+   "pop": 991991
+  },
+  {
+   "geo": "51",
+   "time": "2001-2025",
+   "value": 10.4,
+   "pop": 83595
+  },
+  {
+   "geo": "52",
+   "time": "2001-2025",
+   "value": 26.2,
+   "pop": 86780
+  },
+  {
+   "geo": "ES",
+   "time": "2001-2025",
+   "value": 19.5,
+   "pop": 49114494
+  }
+ ]
+}

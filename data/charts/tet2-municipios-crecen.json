@@ -1,0 +1,327 @@
+{
+ "id": "tet2-municipios-crecen",
+ "lens": "tiempo",
+ "theme": "territorio",
+ "title": {
+  "es": "Desde 2020, cerca de la mitad de los municipios gana población cada año (el 49,0 % en 2024); entre 2012 y 2016, como mucho el 30,9 %",
+  "en": "Since 2020, around half of municipalities have gained population each year (49.0% in 2024); between 2012 and 2016, at most 30.9%"
+ },
+ "subtitle": {
+  "es": "Municipios cuya población aumenta durante el año, 1998-2024, en % del total",
+  "en": "Municipalities whose population increases during the year, 1998-2024, as % of the total"
+ },
+ "unit": {
+  "es": "% de los municipios",
+  "en": "% of municipalities"
+ },
+ "source": {
+  "name": "INE, cifras oficiales de población (revisión del padrón)",
+  "dataset": "Tabla 29005",
+  "url": "https://www.ine.es/jaxiT3/Tabla.htm?t=29005",
+  "license": "Reutilización libre citando la fuente"
+ },
+ "notes": {
+  "es": [
+   "Cifras oficiales del padrón municipal a 1 de enero de cada año (no hay cifras de 1997). Cuenta a los empadronados, no a quien vive allí solo una parte del año.",
+   "Cada año compara el padrón del 1 de enero con el del 1 de enero siguiente: «2024» es el cambio entre enero de 2024 y enero de 2025. En los municipios muy pequeños, unas pocas altas o bajas bastan para pasar de ganar a perder."
+  ],
+  "en": [
+   "Official municipal register (padrón) figures at 1 January each year (there are no figures for 1997). It counts registered residents, not people who live there for only part of the year.",
+   "Each year compares the register at 1 January with that at the following 1 January: «2024» is the change between January 2024 and January 2025. In very small municipalities, a handful of registrations or departures is enough to switch from gaining to losing."
+  ]
+ },
+ "retrieved": "2026-11-25",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "crecen": {
+    "es": "Municipios que ganan población",
+    "en": "Municipalities gaining population"
+   }
+  }
+ },
+ "short_labels": {
+  "crecen": {
+   "es": "Ganan",
+   "en": "Gaining"
+  }
+ },
+ "years": {
+  "1998": {
+   "up": 42.2,
+   "down": 46.5,
+   "n": 8098
+  },
+  "1999": {
+   "up": 39.5,
+   "down": 56.3,
+   "n": 8101
+  },
+  "2000": {
+   "up": 41.8,
+   "down": 54.0,
+   "n": 8104
+  },
+  "2001": {
+   "up": 44.2,
+   "down": 51.9,
+   "n": 8107
+  },
+  "2002": {
+   "up": 44.5,
+   "down": 52.5,
+   "n": 8108
+  },
+  "2003": {
+   "up": 48.8,
+   "down": 47.8,
+   "n": 8108
+  },
+  "2004": {
+   "up": 51.9,
+   "down": 44.0,
+   "n": 8109
+  },
+  "2005": {
+   "up": 48.0,
+   "down": 48.8,
+   "n": 8109
+  },
+  "2006": {
+   "up": 53.6,
+   "down": 43.1,
+   "n": 8110
+  },
+  "2007": {
+   "up": 53.7,
+   "down": 42.7,
+   "n": 8111
+  },
+  "2008": {
+   "up": 47.3,
+   "down": 48.8,
+   "n": 8112
+  },
+  "2009": {
+   "up": 43.9,
+   "down": 52.1,
+   "n": 8112
+  },
+  "2010": {
+   "up": 46.6,
+   "down": 49.4,
+   "n": 8114
+  },
+  "2011": {
+   "up": 35.1,
+   "down": 61.4,
+   "n": 8116
+  },
+  "2012": {
+   "up": 26.5,
+   "down": 70.7,
+   "n": 8116
+  },
+  "2013": {
+   "up": 26.0,
+   "down": 70.2,
+   "n": 8115
+  },
+  "2014": {
+   "up": 30.9,
+   "down": 65.0,
+   "n": 8117
+  },
+  "2015": {
+   "up": 25.4,
+   "down": 70.7,
+   "n": 8119
+  },
+  "2016": {
+   "up": 28.6,
+   "down": 67.5,
+   "n": 8123
+  },
+  "2017": {
+   "up": 33.1,
+   "down": 62.7,
+   "n": 8124
+  },
+  "2018": {
+   "up": 42.3,
+   "down": 53.2,
+   "n": 8124
+  },
+  "2019": {
+   "up": 42.5,
+   "down": 53.1,
+   "n": 8131
+  },
+  "2020": {
+   "up": 52.2,
+   "down": 43.5,
+   "n": 8131
+  },
+  "2021": {
+   "up": 47.9,
+   "down": 47.2,
+   "n": 8131
+  },
+  "2022": {
+   "up": 53.7,
+   "down": 42.0,
+   "n": 8131
+  },
+  "2023": {
+   "up": 48.5,
+   "down": 46.8,
+   "n": 8131
+  },
+  "2024": {
+   "up": 49.0,
+   "down": 46.8,
+   "n": 8132
+  }
+ },
+ "low": "2015",
+ "high": "2007",
+ "crisis_max": 30.9,
+ "recent_min": 47.9,
+ "rows": [
+  {
+   "time": "1998",
+   "series": "crecen",
+   "value": 42.2
+  },
+  {
+   "time": "1999",
+   "series": "crecen",
+   "value": 39.5
+  },
+  {
+   "time": "2000",
+   "series": "crecen",
+   "value": 41.8
+  },
+  {
+   "time": "2001",
+   "series": "crecen",
+   "value": 44.2
+  },
+  {
+   "time": "2002",
+   "series": "crecen",
+   "value": 44.5
+  },
+  {
+   "time": "2003",
+   "series": "crecen",
+   "value": 48.8
+  },
+  {
+   "time": "2004",
+   "series": "crecen",
+   "value": 51.9
+  },
+  {
+   "time": "2005",
+   "series": "crecen",
+   "value": 48.0
+  },
+  {
+   "time": "2006",
+   "series": "crecen",
+   "value": 53.6
+  },
+  {
+   "time": "2007",
+   "series": "crecen",
+   "value": 53.7
+  },
+  {
+   "time": "2008",
+   "series": "crecen",
+   "value": 47.3
+  },
+  {
+   "time": "2009",
+   "series": "crecen",
+   "value": 43.9
+  },
+  {
+   "time": "2010",
+   "series": "crecen",
+   "value": 46.6
+  },
+  {
+   "time": "2011",
+   "series": "crecen",
+   "value": 35.1
+  },
+  {
+   "time": "2012",
+   "series": "crecen",
+   "value": 26.5
+  },
+  {
+   "time": "2013",
+   "series": "crecen",
+   "value": 26.0
+  },
+  {
+   "time": "2014",
+   "series": "crecen",
+   "value": 30.9
+  },
+  {
+   "time": "2015",
+   "series": "crecen",
+   "value": 25.4
+  },
+  {
+   "time": "2016",
+   "series": "crecen",
+   "value": 28.6
+  },
+  {
+   "time": "2017",
+   "series": "crecen",
+   "value": 33.1
+  },
+  {
+   "time": "2018",
+   "series": "crecen",
+   "value": 42.3
+  },
+  {
+   "time": "2019",
+   "series": "crecen",
+   "value": 42.5
+  },
+  {
+   "time": "2020",
+   "series": "crecen",
+   "value": 52.2
+  },
+  {
+   "time": "2021",
+   "series": "crecen",
+   "value": 47.9
+  },
+  {
+   "time": "2022",
+   "series": "crecen",
+   "value": 53.7
+  },
+  {
+   "time": "2023",
+   "series": "crecen",
+   "value": 48.5
+  },
+  {
+   "time": "2024",
+   "series": "crecen",
+   "value": 49.0
+  }
+ ]
+}
