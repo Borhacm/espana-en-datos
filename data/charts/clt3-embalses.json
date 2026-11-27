@@ -1,0 +1,4470 @@
+{
+ "id": "clt3-embalses",
+ "lens": "tiempo",
+ "theme": "clima",
+ "title": {
+  "es": "Los embalses bajaron al 31,7 % en octubre de 2022, el mínimo desde la sequía de 1995; a 24 de noviembre de 2026 están al 58,6 %, lo más alto en esa semana desde 2014",
+  "en": "Reservoirs fell to 31.7% in October 2022, the lowest since the 1995 drought; on 24 November 2026 they stood at 58.6%, the highest for that week since 2014"
+ },
+ "subtitle": {
+  "es": "Agua embalsada en los embalses de la España peninsular, en % de su capacidad, media mensual, enero de 1988-noviembre de 2026. El último dato semanal, del 24 de noviembre, es del 58,6 %",
+  "en": "Water stored in mainland Spain's reservoirs, as % of capacity, monthly average, January 1988-November 2026. The latest weekly figure, for 24 November, is 58.6%"
+ },
+ "unit": {
+  "es": "% de la capacidad",
+  "en": "% of capacity"
+ },
+ "source": {
+  "name": "MITECO, Boletín Hidrológico: histórico de embalses",
+  "dataset": "BD-Embalses (reserva semanal de cada embalse)",
+  "url": "https://www.miteco.gob.es/es/agua/temas/evaluacion-de-los-recursos-hidricos/boletin-hidrologico.html",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)"
+ },
+ "notes": {
+  "es": [
+   "Reserva semanal que publica el Boletín Hidrológico para los embalses de más de 5 hm³, de uso consuntivo (abastecimiento y riego) e hidroeléctrico. El número de embalses y la capacidad total han cambiado con los años; el porcentaje se calcula sobre la capacidad de los que informan cada semana.",
+   "El último mes, noviembre de 2026, solo tiene datos hasta el 24.",
+   "El nivel de los embalses depende de la lluvia, pero también de cuánta agua se gasta y se desembalsa: no es una medida directa de la sequía meteorológica."
+  ],
+  "en": [
+   "Weekly reserve published by the Hydrological Bulletin for reservoirs over 5 hm³, used for consumption (supply and irrigation) and hydropower. The number of reservoirs and total capacity have changed over the years; the percentage is calculated on the capacity of those reporting each week.",
+   "The last month, November 2026, only has data up to the 24th.",
+   "Reservoir levels depend on rainfall, but also on how much water is used and released: they are not a direct measure of meteorological drought."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "reserva": {
+    "es": "Agua embalsada",
+    "en": "Water stored"
+   }
+  }
+ },
+ "short_labels": {
+  "reserva": {
+   "es": "Reserva",
+   "en": "Stored"
+  }
+ },
+ "time_labels": {
+  "1988": {
+   "es": "Enero de 1988",
+   "en": "January 1988"
+  },
+  "1988.083": {
+   "es": "Febrero de 1988",
+   "en": "February 1988"
+  },
+  "1988.167": {
+   "es": "Marzo de 1988",
+   "en": "March 1988"
+  },
+  "1988.25": {
+   "es": "Abril de 1988",
+   "en": "April 1988"
+  },
+  "1988.333": {
+   "es": "Mayo de 1988",
+   "en": "May 1988"
+  },
+  "1988.417": {
+   "es": "Junio de 1988",
+   "en": "June 1988"
+  },
+  "1988.5": {
+   "es": "Julio de 1988",
+   "en": "July 1988"
+  },
+  "1988.583": {
+   "es": "Agosto de 1988",
+   "en": "August 1988"
+  },
+  "1988.667": {
+   "es": "Septiembre de 1988",
+   "en": "September 1988"
+  },
+  "1988.75": {
+   "es": "Octubre de 1988",
+   "en": "October 1988"
+  },
+  "1988.833": {
+   "es": "Noviembre de 1988",
+   "en": "November 1988"
+  },
+  "1988.917": {
+   "es": "Diciembre de 1988",
+   "en": "December 1988"
+  },
+  "1989": {
+   "es": "Enero de 1989",
+   "en": "January 1989"
+  },
+  "1989.083": {
+   "es": "Febrero de 1989",
+   "en": "February 1989"
+  },
+  "1989.167": {
+   "es": "Marzo de 1989",
+   "en": "March 1989"
+  },
+  "1989.25": {
+   "es": "Abril de 1989",
+   "en": "April 1989"
+  },
+  "1989.333": {
+   "es": "Mayo de 1989",
+   "en": "May 1989"
+  },
+  "1989.417": {
+   "es": "Junio de 1989",
+   "en": "June 1989"
+  },
+  "1989.5": {
+   "es": "Julio de 1989",
+   "en": "July 1989"
+  },
+  "1989.583": {
+   "es": "Agosto de 1989",
+   "en": "August 1989"
+  },
+  "1989.667": {
+   "es": "Septiembre de 1989",
+   "en": "September 1989"
+  },
+  "1989.75": {
+   "es": "Octubre de 1989",
+   "en": "October 1989"
+  },
+  "1989.833": {
+   "es": "Noviembre de 1989",
+   "en": "November 1989"
+  },
+  "1989.917": {
+   "es": "Diciembre de 1989",
+   "en": "December 1989"
+  },
+  "1990": {
+   "es": "Enero de 1990",
+   "en": "January 1990"
+  },
+  "1990.083": {
+   "es": "Febrero de 1990",
+   "en": "February 1990"
+  },
+  "1990.167": {
+   "es": "Marzo de 1990",
+   "en": "March 1990"
+  },
+  "1990.25": {
+   "es": "Abril de 1990",
+   "en": "April 1990"
+  },
+  "1990.333": {
+   "es": "Mayo de 1990",
+   "en": "May 1990"
+  },
+  "1990.417": {
+   "es": "Junio de 1990",
+   "en": "June 1990"
+  },
+  "1990.5": {
+   "es": "Julio de 1990",
+   "en": "July 1990"
+  },
+  "1990.583": {
+   "es": "Agosto de 1990",
+   "en": "August 1990"
+  },
+  "1990.667": {
+   "es": "Septiembre de 1990",
+   "en": "September 1990"
+  },
+  "1990.75": {
+   "es": "Octubre de 1990",
+   "en": "October 1990"
+  },
+  "1990.833": {
+   "es": "Noviembre de 1990",
+   "en": "November 1990"
+  },
+  "1990.917": {
+   "es": "Diciembre de 1990",
+   "en": "December 1990"
+  },
+  "1991": {
+   "es": "Enero de 1991",
+   "en": "January 1991"
+  },
+  "1991.083": {
+   "es": "Febrero de 1991",
+   "en": "February 1991"
+  },
+  "1991.167": {
+   "es": "Marzo de 1991",
+   "en": "March 1991"
+  },
+  "1991.25": {
+   "es": "Abril de 1991",
+   "en": "April 1991"
+  },
+  "1991.333": {
+   "es": "Mayo de 1991",
+   "en": "May 1991"
+  },
+  "1991.417": {
+   "es": "Junio de 1991",
+   "en": "June 1991"
+  },
+  "1991.5": {
+   "es": "Julio de 1991",
+   "en": "July 1991"
+  },
+  "1991.583": {
+   "es": "Agosto de 1991",
+   "en": "August 1991"
+  },
+  "1991.667": {
+   "es": "Septiembre de 1991",
+   "en": "September 1991"
+  },
+  "1991.75": {
+   "es": "Octubre de 1991",
+   "en": "October 1991"
+  },
+  "1991.833": {
+   "es": "Noviembre de 1991",
+   "en": "November 1991"
+  },
+  "1991.917": {
+   "es": "Diciembre de 1991",
+   "en": "December 1991"
+  },
+  "1992": {
+   "es": "Enero de 1992",
+   "en": "January 1992"
+  },
+  "1992.083": {
+   "es": "Febrero de 1992",
+   "en": "February 1992"
+  },
+  "1992.167": {
+   "es": "Marzo de 1992",
+   "en": "March 1992"
+  },
+  "1992.25": {
+   "es": "Abril de 1992",
+   "en": "April 1992"
+  },
+  "1992.333": {
+   "es": "Mayo de 1992",
+   "en": "May 1992"
+  },
+  "1992.417": {
+   "es": "Junio de 1992",
+   "en": "June 1992"
+  },
+  "1992.5": {
+   "es": "Julio de 1992",
+   "en": "July 1992"
+  },
+  "1992.583": {
+   "es": "Agosto de 1992",
+   "en": "August 1992"
+  },
+  "1992.667": {
+   "es": "Septiembre de 1992",
+   "en": "September 1992"
+  },
+  "1992.75": {
+   "es": "Octubre de 1992",
+   "en": "October 1992"
+  },
+  "1992.833": {
+   "es": "Noviembre de 1992",
+   "en": "November 1992"
+  },
+  "1992.917": {
+   "es": "Diciembre de 1992",
+   "en": "December 1992"
+  },
+  "1993": {
+   "es": "Enero de 1993",
+   "en": "January 1993"
+  },
+  "1993.083": {
+   "es": "Febrero de 1993",
+   "en": "February 1993"
+  },
+  "1993.167": {
+   "es": "Marzo de 1993",
+   "en": "March 1993"
+  },
+  "1993.25": {
+   "es": "Abril de 1993",
+   "en": "April 1993"
+  },
+  "1993.333": {
+   "es": "Mayo de 1993",
+   "en": "May 1993"
+  },
+  "1993.417": {
+   "es": "Junio de 1993",
+   "en": "June 1993"
+  },
+  "1993.5": {
+   "es": "Julio de 1993",
+   "en": "July 1993"
+  },
+  "1993.583": {
+   "es": "Agosto de 1993",
+   "en": "August 1993"
+  },
+  "1993.667": {
+   "es": "Septiembre de 1993",
+   "en": "September 1993"
+  },
+  "1993.75": {
+   "es": "Octubre de 1993",
+   "en": "October 1993"
+  },
+  "1993.833": {
+   "es": "Noviembre de 1993",
+   "en": "November 1993"
+  },
+  "1993.917": {
+   "es": "Diciembre de 1993",
+   "en": "December 1993"
+  },
+  "1994": {
+   "es": "Enero de 1994",
+   "en": "January 1994"
+  },
+  "1994.083": {
+   "es": "Febrero de 1994",
+   "en": "February 1994"
+  },
+  "1994.167": {
+   "es": "Marzo de 1994",
+   "en": "March 1994"
+  },
+  "1994.25": {
+   "es": "Abril de 1994",
+   "en": "April 1994"
+  },
+  "1994.333": {
+   "es": "Mayo de 1994",
+   "en": "May 1994"
+  },
+  "1994.417": {
+   "es": "Junio de 1994",
+   "en": "June 1994"
+  },
+  "1994.5": {
+   "es": "Julio de 1994",
+   "en": "July 1994"
+  },
+  "1994.583": {
+   "es": "Agosto de 1994",
+   "en": "August 1994"
+  },
+  "1994.667": {
+   "es": "Septiembre de 1994",
+   "en": "September 1994"
+  },
+  "1994.75": {
+   "es": "Octubre de 1994",
+   "en": "October 1994"
+  },
+  "1994.833": {
+   "es": "Noviembre de 1994",
+   "en": "November 1994"
+  },
+  "1994.917": {
+   "es": "Diciembre de 1994",
+   "en": "December 1994"
+  },
+  "1995": {
+   "es": "Enero de 1995",
+   "en": "January 1995"
+  },
+  "1995.083": {
+   "es": "Febrero de 1995",
+   "en": "February 1995"
+  },
+  "1995.167": {
+   "es": "Marzo de 1995",
+   "en": "March 1995"
+  },
+  "1995.25": {
+   "es": "Abril de 1995",
+   "en": "April 1995"
+  },
+  "1995.333": {
+   "es": "Mayo de 1995",
+   "en": "May 1995"
+  },
+  "1995.417": {
+   "es": "Junio de 1995",
+   "en": "June 1995"
+  },
+  "1995.5": {
+   "es": "Julio de 1995",
+   "en": "July 1995"
+  },
+  "1995.583": {
+   "es": "Agosto de 1995",
+   "en": "August 1995"
+  },
+  "1995.667": {
+   "es": "Septiembre de 1995",
+   "en": "September 1995"
+  },
+  "1995.75": {
+   "es": "Octubre de 1995",
+   "en": "October 1995"
+  },
+  "1995.833": {
+   "es": "Noviembre de 1995",
+   "en": "November 1995"
+  },
+  "1995.917": {
+   "es": "Diciembre de 1995",
+   "en": "December 1995"
+  },
+  "1996": {
+   "es": "Enero de 1996",
+   "en": "January 1996"
+  },
+  "1996.083": {
+   "es": "Febrero de 1996",
+   "en": "February 1996"
+  },
+  "1996.167": {
+   "es": "Marzo de 1996",
+   "en": "March 1996"
+  },
+  "1996.25": {
+   "es": "Abril de 1996",
+   "en": "April 1996"
+  },
+  "1996.333": {
+   "es": "Mayo de 1996",
+   "en": "May 1996"
+  },
+  "1996.417": {
+   "es": "Junio de 1996",
+   "en": "June 1996"
+  },
+  "1996.5": {
+   "es": "Julio de 1996",
+   "en": "July 1996"
+  },
+  "1996.583": {
+   "es": "Agosto de 1996",
+   "en": "August 1996"
+  },
+  "1996.667": {
+   "es": "Septiembre de 1996",
+   "en": "September 1996"
+  },
+  "1996.75": {
+   "es": "Octubre de 1996",
+   "en": "October 1996"
+  },
+  "1996.833": {
+   "es": "Noviembre de 1996",
+   "en": "November 1996"
+  },
+  "1996.917": {
+   "es": "Diciembre de 1996",
+   "en": "December 1996"
+  },
+  "1997": {
+   "es": "Enero de 1997",
+   "en": "January 1997"
+  },
+  "1997.083": {
+   "es": "Febrero de 1997",
+   "en": "February 1997"
+  },
+  "1997.167": {
+   "es": "Marzo de 1997",
+   "en": "March 1997"
+  },
+  "1997.25": {
+   "es": "Abril de 1997",
+   "en": "April 1997"
+  },
+  "1997.333": {
+   "es": "Mayo de 1997",
+   "en": "May 1997"
+  },
+  "1997.417": {
+   "es": "Junio de 1997",
+   "en": "June 1997"
+  },
+  "1997.5": {
+   "es": "Julio de 1997",
+   "en": "July 1997"
+  },
+  "1997.583": {
+   "es": "Agosto de 1997",
+   "en": "August 1997"
+  },
+  "1997.667": {
+   "es": "Septiembre de 1997",
+   "en": "September 1997"
+  },
+  "1997.75": {
+   "es": "Octubre de 1997",
+   "en": "October 1997"
+  },
+  "1997.833": {
+   "es": "Noviembre de 1997",
+   "en": "November 1997"
+  },
+  "1997.917": {
+   "es": "Diciembre de 1997",
+   "en": "December 1997"
+  },
+  "1998": {
+   "es": "Enero de 1998",
+   "en": "January 1998"
+  },
+  "1998.083": {
+   "es": "Febrero de 1998",
+   "en": "February 1998"
+  },
+  "1998.167": {
+   "es": "Marzo de 1998",
+   "en": "March 1998"
+  },
+  "1998.25": {
+   "es": "Abril de 1998",
+   "en": "April 1998"
+  },
+  "1998.333": {
+   "es": "Mayo de 1998",
+   "en": "May 1998"
+  },
+  "1998.417": {
+   "es": "Junio de 1998",
+   "en": "June 1998"
+  },
+  "1998.5": {
+   "es": "Julio de 1998",
+   "en": "July 1998"
+  },
+  "1998.583": {
+   "es": "Agosto de 1998",
+   "en": "August 1998"
+  },
+  "1998.667": {
+   "es": "Septiembre de 1998",
+   "en": "September 1998"
+  },
+  "1998.75": {
+   "es": "Octubre de 1998",
+   "en": "October 1998"
+  },
+  "1998.833": {
+   "es": "Noviembre de 1998",
+   "en": "November 1998"
+  },
+  "1998.917": {
+   "es": "Diciembre de 1998",
+   "en": "December 1998"
+  },
+  "1999": {
+   "es": "Enero de 1999",
+   "en": "January 1999"
+  },
+  "1999.083": {
+   "es": "Febrero de 1999",
+   "en": "February 1999"
+  },
+  "1999.167": {
+   "es": "Marzo de 1999",
+   "en": "March 1999"
+  },
+  "1999.25": {
+   "es": "Abril de 1999",
+   "en": "April 1999"
+  },
+  "1999.333": {
+   "es": "Mayo de 1999",
+   "en": "May 1999"
+  },
+  "1999.417": {
+   "es": "Junio de 1999",
+   "en": "June 1999"
+  },
+  "1999.5": {
+   "es": "Julio de 1999",
+   "en": "July 1999"
+  },
+  "1999.583": {
+   "es": "Agosto de 1999",
+   "en": "August 1999"
+  },
+  "1999.667": {
+   "es": "Septiembre de 1999",
+   "en": "September 1999"
+  },
+  "1999.75": {
+   "es": "Octubre de 1999",
+   "en": "October 1999"
+  },
+  "1999.833": {
+   "es": "Noviembre de 1999",
+   "en": "November 1999"
+  },
+  "1999.917": {
+   "es": "Diciembre de 1999",
+   "en": "December 1999"
+  },
+  "2000": {
+   "es": "Enero de 2000",
+   "en": "January 2000"
+  },
+  "2000.083": {
+   "es": "Febrero de 2000",
+   "en": "February 2000"
+  },
+  "2000.167": {
+   "es": "Marzo de 2000",
+   "en": "March 2000"
+  },
+  "2000.25": {
+   "es": "Abril de 2000",
+   "en": "April 2000"
+  },
+  "2000.333": {
+   "es": "Mayo de 2000",
+   "en": "May 2000"
+  },
+  "2000.417": {
+   "es": "Junio de 2000",
+   "en": "June 2000"
+  },
+  "2000.5": {
+   "es": "Julio de 2000",
+   "en": "July 2000"
+  },
+  "2000.583": {
+   "es": "Agosto de 2000",
+   "en": "August 2000"
+  },
+  "2000.667": {
+   "es": "Septiembre de 2000",
+   "en": "September 2000"
+  },
+  "2000.75": {
+   "es": "Octubre de 2000",
+   "en": "October 2000"
+  },
+  "2000.833": {
+   "es": "Noviembre de 2000",
+   "en": "November 2000"
+  },
+  "2000.917": {
+   "es": "Diciembre de 2000",
+   "en": "December 2000"
+  },
+  "2001": {
+   "es": "Enero de 2001",
+   "en": "January 2001"
+  },
+  "2001.083": {
+   "es": "Febrero de 2001",
+   "en": "February 2001"
+  },
+  "2001.167": {
+   "es": "Marzo de 2001",
+   "en": "March 2001"
+  },
+  "2001.25": {
+   "es": "Abril de 2001",
+   "en": "April 2001"
+  },
+  "2001.333": {
+   "es": "Mayo de 2001",
+   "en": "May 2001"
+  },
+  "2001.417": {
+   "es": "Junio de 2001",
+   "en": "June 2001"
+  },
+  "2001.5": {
+   "es": "Julio de 2001",
+   "en": "July 2001"
+  },
+  "2001.583": {
+   "es": "Agosto de 2001",
+   "en": "August 2001"
+  },
+  "2001.667": {
+   "es": "Septiembre de 2001",
+   "en": "September 2001"
+  },
+  "2001.75": {
+   "es": "Octubre de 2001",
+   "en": "October 2001"
+  },
+  "2001.833": {
+   "es": "Noviembre de 2001",
+   "en": "November 2001"
+  },
+  "2001.917": {
+   "es": "Diciembre de 2001",
+   "en": "December 2001"
+  },
+  "2002": {
+   "es": "Enero de 2002",
+   "en": "January 2002"
+  },
+  "2002.083": {
+   "es": "Febrero de 2002",
+   "en": "February 2002"
+  },
+  "2002.167": {
+   "es": "Marzo de 2002",
+   "en": "March 2002"
+  },
+  "2002.25": {
+   "es": "Abril de 2002",
+   "en": "April 2002"
+  },
+  "2002.333": {
+   "es": "Mayo de 2002",
+   "en": "May 2002"
+  },
+  "2002.417": {
+   "es": "Junio de 2002",
+   "en": "June 2002"
+  },
+  "2002.5": {
+   "es": "Julio de 2002",
+   "en": "July 2002"
+  },
+  "2002.583": {
+   "es": "Agosto de 2002",
+   "en": "August 2002"
+  },
+  "2002.667": {
+   "es": "Septiembre de 2002",
+   "en": "September 2002"
+  },
+  "2002.75": {
+   "es": "Octubre de 2002",
+   "en": "October 2002"
+  },
+  "2002.833": {
+   "es": "Noviembre de 2002",
+   "en": "November 2002"
+  },
+  "2002.917": {
+   "es": "Diciembre de 2002",
+   "en": "December 2002"
+  },
+  "2003": {
+   "es": "Enero de 2003",
+   "en": "January 2003"
+  },
+  "2003.083": {
+   "es": "Febrero de 2003",
+   "en": "February 2003"
+  },
+  "2003.167": {
+   "es": "Marzo de 2003",
+   "en": "March 2003"
+  },
+  "2003.25": {
+   "es": "Abril de 2003",
+   "en": "April 2003"
+  },
+  "2003.333": {
+   "es": "Mayo de 2003",
+   "en": "May 2003"
+  },
+  "2003.417": {
+   "es": "Junio de 2003",
+   "en": "June 2003"
+  },
+  "2003.5": {
+   "es": "Julio de 2003",
+   "en": "July 2003"
+  },
+  "2003.583": {
+   "es": "Agosto de 2003",
+   "en": "August 2003"
+  },
+  "2003.667": {
+   "es": "Septiembre de 2003",
+   "en": "September 2003"
+  },
+  "2003.75": {
+   "es": "Octubre de 2003",
+   "en": "October 2003"
+  },
+  "2003.833": {
+   "es": "Noviembre de 2003",
+   "en": "November 2003"
+  },
+  "2003.917": {
+   "es": "Diciembre de 2003",
+   "en": "December 2003"
+  },
+  "2004": {
+   "es": "Enero de 2004",
+   "en": "January 2004"
+  },
+  "2004.083": {
+   "es": "Febrero de 2004",
+   "en": "February 2004"
+  },
+  "2004.167": {
+   "es": "Marzo de 2004",
+   "en": "March 2004"
+  },
+  "2004.25": {
+   "es": "Abril de 2004",
+   "en": "April 2004"
+  },
+  "2004.333": {
+   "es": "Mayo de 2004",
+   "en": "May 2004"
+  },
+  "2004.417": {
+   "es": "Junio de 2004",
+   "en": "June 2004"
+  },
+  "2004.5": {
+   "es": "Julio de 2004",
+   "en": "July 2004"
+  },
+  "2004.583": {
+   "es": "Agosto de 2004",
+   "en": "August 2004"
+  },
+  "2004.667": {
+   "es": "Septiembre de 2004",
+   "en": "September 2004"
+  },
+  "2004.75": {
+   "es": "Octubre de 2004",
+   "en": "October 2004"
+  },
+  "2004.833": {
+   "es": "Noviembre de 2004",
+   "en": "November 2004"
+  },
+  "2004.917": {
+   "es": "Diciembre de 2004",
+   "en": "December 2004"
+  },
+  "2005": {
+   "es": "Enero de 2005",
+   "en": "January 2005"
+  },
+  "2005.083": {
+   "es": "Febrero de 2005",
+   "en": "February 2005"
+  },
+  "2005.167": {
+   "es": "Marzo de 2005",
+   "en": "March 2005"
+  },
+  "2005.25": {
+   "es": "Abril de 2005",
+   "en": "April 2005"
+  },
+  "2005.333": {
+   "es": "Mayo de 2005",
+   "en": "May 2005"
+  },
+  "2005.417": {
+   "es": "Junio de 2005",
+   "en": "June 2005"
+  },
+  "2005.5": {
+   "es": "Julio de 2005",
+   "en": "July 2005"
+  },
+  "2005.583": {
+   "es": "Agosto de 2005",
+   "en": "August 2005"
+  },
+  "2005.667": {
+   "es": "Septiembre de 2005",
+   "en": "September 2005"
+  },
+  "2005.75": {
+   "es": "Octubre de 2005",
+   "en": "October 2005"
+  },
+  "2005.833": {
+   "es": "Noviembre de 2005",
+   "en": "November 2005"
+  },
+  "2005.917": {
+   "es": "Diciembre de 2005",
+   "en": "December 2005"
+  },
+  "2006": {
+   "es": "Enero de 2006",
+   "en": "January 2006"
+  },
+  "2006.083": {
+   "es": "Febrero de 2006",
+   "en": "February 2006"
+  },
+  "2006.167": {
+   "es": "Marzo de 2006",
+   "en": "March 2006"
+  },
+  "2006.25": {
+   "es": "Abril de 2006",
+   "en": "April 2006"
+  },
+  "2006.333": {
+   "es": "Mayo de 2006",
+   "en": "May 2006"
+  },
+  "2006.417": {
+   "es": "Junio de 2006",
+   "en": "June 2006"
+  },
+  "2006.5": {
+   "es": "Julio de 2006",
+   "en": "July 2006"
+  },
+  "2006.583": {
+   "es": "Agosto de 2006",
+   "en": "August 2006"
+  },
+  "2006.667": {
+   "es": "Septiembre de 2006",
+   "en": "September 2006"
+  },
+  "2006.75": {
+   "es": "Octubre de 2006",
+   "en": "October 2006"
+  },
+  "2006.833": {
+   "es": "Noviembre de 2006",
+   "en": "November 2006"
+  },
+  "2006.917": {
+   "es": "Diciembre de 2006",
+   "en": "December 2006"
+  },
+  "2007": {
+   "es": "Enero de 2007",
+   "en": "January 2007"
+  },
+  "2007.083": {
+   "es": "Febrero de 2007",
+   "en": "February 2007"
+  },
+  "2007.167": {
+   "es": "Marzo de 2007",
+   "en": "March 2007"
+  },
+  "2007.25": {
+   "es": "Abril de 2007",
+   "en": "April 2007"
+  },
+  "2007.333": {
+   "es": "Mayo de 2007",
+   "en": "May 2007"
+  },
+  "2007.417": {
+   "es": "Junio de 2007",
+   "en": "June 2007"
+  },
+  "2007.5": {
+   "es": "Julio de 2007",
+   "en": "July 2007"
+  },
+  "2007.583": {
+   "es": "Agosto de 2007",
+   "en": "August 2007"
+  },
+  "2007.667": {
+   "es": "Septiembre de 2007",
+   "en": "September 2007"
+  },
+  "2007.75": {
+   "es": "Octubre de 2007",
+   "en": "October 2007"
+  },
+  "2007.833": {
+   "es": "Noviembre de 2007",
+   "en": "November 2007"
+  },
+  "2007.917": {
+   "es": "Diciembre de 2007",
+   "en": "December 2007"
+  },
+  "2008": {
+   "es": "Enero de 2008",
+   "en": "January 2008"
+  },
+  "2008.083": {
+   "es": "Febrero de 2008",
+   "en": "February 2008"
+  },
+  "2008.167": {
+   "es": "Marzo de 2008",
+   "en": "March 2008"
+  },
+  "2008.25": {
+   "es": "Abril de 2008",
+   "en": "April 2008"
+  },
+  "2008.333": {
+   "es": "Mayo de 2008",
+   "en": "May 2008"
+  },
+  "2008.417": {
+   "es": "Junio de 2008",
+   "en": "June 2008"
+  },
+  "2008.5": {
+   "es": "Julio de 2008",
+   "en": "July 2008"
+  },
+  "2008.583": {
+   "es": "Agosto de 2008",
+   "en": "August 2008"
+  },
+  "2008.667": {
+   "es": "Septiembre de 2008",
+   "en": "September 2008"
+  },
+  "2008.75": {
+   "es": "Octubre de 2008",
+   "en": "October 2008"
+  },
+  "2008.833": {
+   "es": "Noviembre de 2008",
+   "en": "November 2008"
+  },
+  "2008.917": {
+   "es": "Diciembre de 2008",
+   "en": "December 2008"
+  },
+  "2009": {
+   "es": "Enero de 2009",
+   "en": "January 2009"
+  },
+  "2009.083": {
+   "es": "Febrero de 2009",
+   "en": "February 2009"
+  },
+  "2009.167": {
+   "es": "Marzo de 2009",
+   "en": "March 2009"
+  },
+  "2009.25": {
+   "es": "Abril de 2009",
+   "en": "April 2009"
+  },
+  "2009.333": {
+   "es": "Mayo de 2009",
+   "en": "May 2009"
+  },
+  "2009.417": {
+   "es": "Junio de 2009",
+   "en": "June 2009"
+  },
+  "2009.5": {
+   "es": "Julio de 2009",
+   "en": "July 2009"
+  },
+  "2009.583": {
+   "es": "Agosto de 2009",
+   "en": "August 2009"
+  },
+  "2009.667": {
+   "es": "Septiembre de 2009",
+   "en": "September 2009"
+  },
+  "2009.75": {
+   "es": "Octubre de 2009",
+   "en": "October 2009"
+  },
+  "2009.833": {
+   "es": "Noviembre de 2009",
+   "en": "November 2009"
+  },
+  "2009.917": {
+   "es": "Diciembre de 2009",
+   "en": "December 2009"
+  },
+  "2010": {
+   "es": "Enero de 2010",
+   "en": "January 2010"
+  },
+  "2010.083": {
+   "es": "Febrero de 2010",
+   "en": "February 2010"
+  },
+  "2010.167": {
+   "es": "Marzo de 2010",
+   "en": "March 2010"
+  },
+  "2010.25": {
+   "es": "Abril de 2010",
+   "en": "April 2010"
+  },
+  "2010.333": {
+   "es": "Mayo de 2010",
+   "en": "May 2010"
+  },
+  "2010.417": {
+   "es": "Junio de 2010",
+   "en": "June 2010"
+  },
+  "2010.5": {
+   "es": "Julio de 2010",
+   "en": "July 2010"
+  },
+  "2010.583": {
+   "es": "Agosto de 2010",
+   "en": "August 2010"
+  },
+  "2010.667": {
+   "es": "Septiembre de 2010",
+   "en": "September 2010"
+  },
+  "2010.75": {
+   "es": "Octubre de 2010",
+   "en": "October 2010"
+  },
+  "2010.833": {
+   "es": "Noviembre de 2010",
+   "en": "November 2010"
+  },
+  "2010.917": {
+   "es": "Diciembre de 2010",
+   "en": "December 2010"
+  },
+  "2011": {
+   "es": "Enero de 2011",
+   "en": "January 2011"
+  },
+  "2011.083": {
+   "es": "Febrero de 2011",
+   "en": "February 2011"
+  },
+  "2011.167": {
+   "es": "Marzo de 2011",
+   "en": "March 2011"
+  },
+  "2011.25": {
+   "es": "Abril de 2011",
+   "en": "April 2011"
+  },
+  "2011.333": {
+   "es": "Mayo de 2011",
+   "en": "May 2011"
+  },
+  "2011.417": {
+   "es": "Junio de 2011",
+   "en": "June 2011"
+  },
+  "2011.5": {
+   "es": "Julio de 2011",
+   "en": "July 2011"
+  },
+  "2011.583": {
+   "es": "Agosto de 2011",
+   "en": "August 2011"
+  },
+  "2011.667": {
+   "es": "Septiembre de 2011",
+   "en": "September 2011"
+  },
+  "2011.75": {
+   "es": "Octubre de 2011",
+   "en": "October 2011"
+  },
+  "2011.833": {
+   "es": "Noviembre de 2011",
+   "en": "November 2011"
+  },
+  "2011.917": {
+   "es": "Diciembre de 2011",
+   "en": "December 2011"
+  },
+  "2012": {
+   "es": "Enero de 2012",
+   "en": "January 2012"
+  },
+  "2012.083": {
+   "es": "Febrero de 2012",
+   "en": "February 2012"
+  },
+  "2012.167": {
+   "es": "Marzo de 2012",
+   "en": "March 2012"
+  },
+  "2012.25": {
+   "es": "Abril de 2012",
+   "en": "April 2012"
+  },
+  "2012.333": {
+   "es": "Mayo de 2012",
+   "en": "May 2012"
+  },
+  "2012.417": {
+   "es": "Junio de 2012",
+   "en": "June 2012"
+  },
+  "2012.5": {
+   "es": "Julio de 2012",
+   "en": "July 2012"
+  },
+  "2012.583": {
+   "es": "Agosto de 2012",
+   "en": "August 2012"
+  },
+  "2012.667": {
+   "es": "Septiembre de 2012",
+   "en": "September 2012"
+  },
+  "2012.75": {
+   "es": "Octubre de 2012",
+   "en": "October 2012"
+  },
+  "2012.833": {
+   "es": "Noviembre de 2012",
+   "en": "November 2012"
+  },
+  "2012.917": {
+   "es": "Diciembre de 2012",
+   "en": "December 2012"
+  },
+  "2013": {
+   "es": "Enero de 2013",
+   "en": "January 2013"
+  },
+  "2013.083": {
+   "es": "Febrero de 2013",
+   "en": "February 2013"
+  },
+  "2013.167": {
+   "es": "Marzo de 2013",
+   "en": "March 2013"
+  },
+  "2013.25": {
+   "es": "Abril de 2013",
+   "en": "April 2013"
+  },
+  "2013.333": {
+   "es": "Mayo de 2013",
+   "en": "May 2013"
+  },
+  "2013.417": {
+   "es": "Junio de 2013",
+   "en": "June 2013"
+  },
+  "2013.5": {
+   "es": "Julio de 2013",
+   "en": "July 2013"
+  },
+  "2013.583": {
+   "es": "Agosto de 2013",
+   "en": "August 2013"
+  },
+  "2013.667": {
+   "es": "Septiembre de 2013",
+   "en": "September 2013"
+  },
+  "2013.75": {
+   "es": "Octubre de 2013",
+   "en": "October 2013"
+  },
+  "2013.833": {
+   "es": "Noviembre de 2013",
+   "en": "November 2013"
+  },
+  "2013.917": {
+   "es": "Diciembre de 2013",
+   "en": "December 2013"
+  },
+  "2014": {
+   "es": "Enero de 2014",
+   "en": "January 2014"
+  },
+  "2014.083": {
+   "es": "Febrero de 2014",
+   "en": "February 2014"
+  },
+  "2014.167": {
+   "es": "Marzo de 2014",
+   "en": "March 2014"
+  },
+  "2014.25": {
+   "es": "Abril de 2014",
+   "en": "April 2014"
+  },
+  "2014.333": {
+   "es": "Mayo de 2014",
+   "en": "May 2014"
+  },
+  "2014.417": {
+   "es": "Junio de 2014",
+   "en": "June 2014"
+  },
+  "2014.5": {
+   "es": "Julio de 2014",
+   "en": "July 2014"
+  },
+  "2014.583": {
+   "es": "Agosto de 2014",
+   "en": "August 2014"
+  },
+  "2014.667": {
+   "es": "Septiembre de 2014",
+   "en": "September 2014"
+  },
+  "2014.75": {
+   "es": "Octubre de 2014",
+   "en": "October 2014"
+  },
+  "2014.833": {
+   "es": "Noviembre de 2014",
+   "en": "November 2014"
+  },
+  "2014.917": {
+   "es": "Diciembre de 2014",
+   "en": "December 2014"
+  },
+  "2015": {
+   "es": "Enero de 2015",
+   "en": "January 2015"
+  },
+  "2015.083": {
+   "es": "Febrero de 2015",
+   "en": "February 2015"
+  },
+  "2015.167": {
+   "es": "Marzo de 2015",
+   "en": "March 2015"
+  },
+  "2015.25": {
+   "es": "Abril de 2015",
+   "en": "April 2015"
+  },
+  "2015.333": {
+   "es": "Mayo de 2015",
+   "en": "May 2015"
+  },
+  "2015.417": {
+   "es": "Junio de 2015",
+   "en": "June 2015"
+  },
+  "2015.5": {
+   "es": "Julio de 2015",
+   "en": "July 2015"
+  },
+  "2015.583": {
+   "es": "Agosto de 2015",
+   "en": "August 2015"
+  },
+  "2015.667": {
+   "es": "Septiembre de 2015",
+   "en": "September 2015"
+  },
+  "2015.75": {
+   "es": "Octubre de 2015",
+   "en": "October 2015"
+  },
+  "2015.833": {
+   "es": "Noviembre de 2015",
+   "en": "November 2015"
+  },
+  "2015.917": {
+   "es": "Diciembre de 2015",
+   "en": "December 2015"
+  },
+  "2016": {
+   "es": "Enero de 2016",
+   "en": "January 2016"
+  },
+  "2016.083": {
+   "es": "Febrero de 2016",
+   "en": "February 2016"
+  },
+  "2016.167": {
+   "es": "Marzo de 2016",
+   "en": "March 2016"
+  },
+  "2016.25": {
+   "es": "Abril de 2016",
+   "en": "April 2016"
+  },
+  "2016.333": {
+   "es": "Mayo de 2016",
+   "en": "May 2016"
+  },
+  "2016.417": {
+   "es": "Junio de 2016",
+   "en": "June 2016"
+  },
+  "2016.5": {
+   "es": "Julio de 2016",
+   "en": "July 2016"
+  },
+  "2016.583": {
+   "es": "Agosto de 2016",
+   "en": "August 2016"
+  },
+  "2016.667": {
+   "es": "Septiembre de 2016",
+   "en": "September 2016"
+  },
+  "2016.75": {
+   "es": "Octubre de 2016",
+   "en": "October 2016"
+  },
+  "2016.833": {
+   "es": "Noviembre de 2016",
+   "en": "November 2016"
+  },
+  "2016.917": {
+   "es": "Diciembre de 2016",
+   "en": "December 2016"
+  },
+  "2017": {
+   "es": "Enero de 2017",
+   "en": "January 2017"
+  },
+  "2017.083": {
+   "es": "Febrero de 2017",
+   "en": "February 2017"
+  },
+  "2017.167": {
+   "es": "Marzo de 2017",
+   "en": "March 2017"
+  },
+  "2017.25": {
+   "es": "Abril de 2017",
+   "en": "April 2017"
+  },
+  "2017.333": {
+   "es": "Mayo de 2017",
+   "en": "May 2017"
+  },
+  "2017.417": {
+   "es": "Junio de 2017",
+   "en": "June 2017"
+  },
+  "2017.5": {
+   "es": "Julio de 2017",
+   "en": "July 2017"
+  },
+  "2017.583": {
+   "es": "Agosto de 2017",
+   "en": "August 2017"
+  },
+  "2017.667": {
+   "es": "Septiembre de 2017",
+   "en": "September 2017"
+  },
+  "2017.75": {
+   "es": "Octubre de 2017",
+   "en": "October 2017"
+  },
+  "2017.833": {
+   "es": "Noviembre de 2017",
+   "en": "November 2017"
+  },
+  "2017.917": {
+   "es": "Diciembre de 2017",
+   "en": "December 2017"
+  },
+  "2018": {
+   "es": "Enero de 2018",
+   "en": "January 2018"
+  },
+  "2018.083": {
+   "es": "Febrero de 2018",
+   "en": "February 2018"
+  },
+  "2018.167": {
+   "es": "Marzo de 2018",
+   "en": "March 2018"
+  },
+  "2018.25": {
+   "es": "Abril de 2018",
+   "en": "April 2018"
+  },
+  "2018.333": {
+   "es": "Mayo de 2018",
+   "en": "May 2018"
+  },
+  "2018.417": {
+   "es": "Junio de 2018",
+   "en": "June 2018"
+  },
+  "2018.5": {
+   "es": "Julio de 2018",
+   "en": "July 2018"
+  },
+  "2018.583": {
+   "es": "Agosto de 2018",
+   "en": "August 2018"
+  },
+  "2018.667": {
+   "es": "Septiembre de 2018",
+   "en": "September 2018"
+  },
+  "2018.75": {
+   "es": "Octubre de 2018",
+   "en": "October 2018"
+  },
+  "2018.833": {
+   "es": "Noviembre de 2018",
+   "en": "November 2018"
+  },
+  "2018.917": {
+   "es": "Diciembre de 2018",
+   "en": "December 2018"
+  },
+  "2019": {
+   "es": "Enero de 2019",
+   "en": "January 2019"
+  },
+  "2019.083": {
+   "es": "Febrero de 2019",
+   "en": "February 2019"
+  },
+  "2019.167": {
+   "es": "Marzo de 2019",
+   "en": "March 2019"
+  },
+  "2019.25": {
+   "es": "Abril de 2019",
+   "en": "April 2019"
+  },
+  "2019.333": {
+   "es": "Mayo de 2019",
+   "en": "May 2019"
+  },
+  "2019.417": {
+   "es": "Junio de 2019",
+   "en": "June 2019"
+  },
+  "2019.5": {
+   "es": "Julio de 2019",
+   "en": "July 2019"
+  },
+  "2019.583": {
+   "es": "Agosto de 2019",
+   "en": "August 2019"
+  },
+  "2019.667": {
+   "es": "Septiembre de 2019",
+   "en": "September 2019"
+  },
+  "2019.75": {
+   "es": "Octubre de 2019",
+   "en": "October 2019"
+  },
+  "2019.833": {
+   "es": "Noviembre de 2019",
+   "en": "November 2019"
+  },
+  "2019.917": {
+   "es": "Diciembre de 2019",
+   "en": "December 2019"
+  },
+  "2020": {
+   "es": "Enero de 2020",
+   "en": "January 2020"
+  },
+  "2020.083": {
+   "es": "Febrero de 2020",
+   "en": "February 2020"
+  },
+  "2020.167": {
+   "es": "Marzo de 2020",
+   "en": "March 2020"
+  },
+  "2020.25": {
+   "es": "Abril de 2020",
+   "en": "April 2020"
+  },
+  "2020.333": {
+   "es": "Mayo de 2020",
+   "en": "May 2020"
+  },
+  "2020.417": {
+   "es": "Junio de 2020",
+   "en": "June 2020"
+  },
+  "2020.5": {
+   "es": "Julio de 2020",
+   "en": "July 2020"
+  },
+  "2020.583": {
+   "es": "Agosto de 2020",
+   "en": "August 2020"
+  },
+  "2020.667": {
+   "es": "Septiembre de 2020",
+   "en": "September 2020"
+  },
+  "2020.75": {
+   "es": "Octubre de 2020",
+   "en": "October 2020"
+  },
+  "2020.833": {
+   "es": "Noviembre de 2020",
+   "en": "November 2020"
+  },
+  "2020.917": {
+   "es": "Diciembre de 2020",
+   "en": "December 2020"
+  },
+  "2021": {
+   "es": "Enero de 2021",
+   "en": "January 2021"
+  },
+  "2021.083": {
+   "es": "Febrero de 2021",
+   "en": "February 2021"
+  },
+  "2021.167": {
+   "es": "Marzo de 2021",
+   "en": "March 2021"
+  },
+  "2021.25": {
+   "es": "Abril de 2021",
+   "en": "April 2021"
+  },
+  "2021.333": {
+   "es": "Mayo de 2021",
+   "en": "May 2021"
+  },
+  "2021.417": {
+   "es": "Junio de 2021",
+   "en": "June 2021"
+  },
+  "2021.5": {
+   "es": "Julio de 2021",
+   "en": "July 2021"
+  },
+  "2021.583": {
+   "es": "Agosto de 2021",
+   "en": "August 2021"
+  },
+  "2021.667": {
+   "es": "Septiembre de 2021",
+   "en": "September 2021"
+  },
+  "2021.75": {
+   "es": "Octubre de 2021",
+   "en": "October 2021"
+  },
+  "2021.833": {
+   "es": "Noviembre de 2021",
+   "en": "November 2021"
+  },
+  "2021.917": {
+   "es": "Diciembre de 2021",
+   "en": "December 2021"
+  },
+  "2022": {
+   "es": "Enero de 2022",
+   "en": "January 2022"
+  },
+  "2022.083": {
+   "es": "Febrero de 2022",
+   "en": "February 2022"
+  },
+  "2022.167": {
+   "es": "Marzo de 2022",
+   "en": "March 2022"
+  },
+  "2022.25": {
+   "es": "Abril de 2022",
+   "en": "April 2022"
+  },
+  "2022.333": {
+   "es": "Mayo de 2022",
+   "en": "May 2022"
+  },
+  "2022.417": {
+   "es": "Junio de 2022",
+   "en": "June 2022"
+  },
+  "2022.5": {
+   "es": "Julio de 2022",
+   "en": "July 2022"
+  },
+  "2022.583": {
+   "es": "Agosto de 2022",
+   "en": "August 2022"
+  },
+  "2022.667": {
+   "es": "Septiembre de 2022",
+   "en": "September 2022"
+  },
+  "2022.75": {
+   "es": "Octubre de 2022",
+   "en": "October 2022"
+  },
+  "2022.833": {
+   "es": "Noviembre de 2022",
+   "en": "November 2022"
+  },
+  "2022.917": {
+   "es": "Diciembre de 2022",
+   "en": "December 2022"
+  },
+  "2023": {
+   "es": "Enero de 2023",
+   "en": "January 2023"
+  },
+  "2023.083": {
+   "es": "Febrero de 2023",
+   "en": "February 2023"
+  },
+  "2023.167": {
+   "es": "Marzo de 2023",
+   "en": "March 2023"
+  },
+  "2023.25": {
+   "es": "Abril de 2023",
+   "en": "April 2023"
+  },
+  "2023.333": {
+   "es": "Mayo de 2023",
+   "en": "May 2023"
+  },
+  "2023.417": {
+   "es": "Junio de 2023",
+   "en": "June 2023"
+  },
+  "2023.5": {
+   "es": "Julio de 2023",
+   "en": "July 2023"
+  },
+  "2023.583": {
+   "es": "Agosto de 2023",
+   "en": "August 2023"
+  },
+  "2023.667": {
+   "es": "Septiembre de 2023",
+   "en": "September 2023"
+  },
+  "2023.75": {
+   "es": "Octubre de 2023",
+   "en": "October 2023"
+  },
+  "2023.833": {
+   "es": "Noviembre de 2023",
+   "en": "November 2023"
+  },
+  "2023.917": {
+   "es": "Diciembre de 2023",
+   "en": "December 2023"
+  },
+  "2024": {
+   "es": "Enero de 2024",
+   "en": "January 2024"
+  },
+  "2024.083": {
+   "es": "Febrero de 2024",
+   "en": "February 2024"
+  },
+  "2024.167": {
+   "es": "Marzo de 2024",
+   "en": "March 2024"
+  },
+  "2024.25": {
+   "es": "Abril de 2024",
+   "en": "April 2024"
+  },
+  "2024.333": {
+   "es": "Mayo de 2024",
+   "en": "May 2024"
+  },
+  "2024.417": {
+   "es": "Junio de 2024",
+   "en": "June 2024"
+  },
+  "2024.5": {
+   "es": "Julio de 2024",
+   "en": "July 2024"
+  },
+  "2024.583": {
+   "es": "Agosto de 2024",
+   "en": "August 2024"
+  },
+  "2024.667": {
+   "es": "Septiembre de 2024",
+   "en": "September 2024"
+  },
+  "2024.75": {
+   "es": "Octubre de 2024",
+   "en": "October 2024"
+  },
+  "2024.833": {
+   "es": "Noviembre de 2024",
+   "en": "November 2024"
+  },
+  "2024.917": {
+   "es": "Diciembre de 2024",
+   "en": "December 2024"
+  },
+  "2025": {
+   "es": "Enero de 2025",
+   "en": "January 2025"
+  },
+  "2025.083": {
+   "es": "Febrero de 2025",
+   "en": "February 2025"
+  },
+  "2025.167": {
+   "es": "Marzo de 2025",
+   "en": "March 2025"
+  },
+  "2025.25": {
+   "es": "Abril de 2025",
+   "en": "April 2025"
+  },
+  "2025.333": {
+   "es": "Mayo de 2025",
+   "en": "May 2025"
+  },
+  "2025.417": {
+   "es": "Junio de 2025",
+   "en": "June 2025"
+  },
+  "2025.5": {
+   "es": "Julio de 2025",
+   "en": "July 2025"
+  },
+  "2025.583": {
+   "es": "Agosto de 2025",
+   "en": "August 2025"
+  },
+  "2025.667": {
+   "es": "Septiembre de 2025",
+   "en": "September 2025"
+  },
+  "2025.75": {
+   "es": "Octubre de 2025",
+   "en": "October 2025"
+  },
+  "2025.833": {
+   "es": "Noviembre de 2025",
+   "en": "November 2025"
+  },
+  "2025.917": {
+   "es": "Diciembre de 2025",
+   "en": "December 2025"
+  },
+  "2026": {
+   "es": "Enero de 2026",
+   "en": "January 2026"
+  },
+  "2026.083": {
+   "es": "Febrero de 2026",
+   "en": "February 2026"
+  },
+  "2026.167": {
+   "es": "Marzo de 2026",
+   "en": "March 2026"
+  },
+  "2026.25": {
+   "es": "Abril de 2026",
+   "en": "April 2026"
+  },
+  "2026.333": {
+   "es": "Mayo de 2026",
+   "en": "May 2026"
+  },
+  "2026.417": {
+   "es": "Junio de 2026",
+   "en": "June 2026"
+  },
+  "2026.5": {
+   "es": "Julio de 2026",
+   "en": "July 2026"
+  },
+  "2026.583": {
+   "es": "Agosto de 2026",
+   "en": "August 2026"
+  },
+  "2026.667": {
+   "es": "Septiembre de 2026",
+   "en": "September 2026"
+  },
+  "2026.75": {
+   "es": "Octubre de 2026",
+   "en": "October 2026"
+  },
+  "2026.833": {
+   "es": "Noviembre de 2026",
+   "en": "November 2026"
+  }
+ },
+ "last_day": "2026-11-24",
+ "last_week_pct": 58.6,
+ "same_week": {
+  "1988": 45.6,
+  "1989": 36.8,
+  "1990": 43.0,
+  "1991": 40.0,
+  "1992": 40.2,
+  "1993": 44.2,
+  "1994": 36.4,
+  "1995": 26.8,
+  "1996": 51.3,
+  "1997": 65.6,
+  "1998": 57.4,
+  "1999": 50.9,
+  "2000": 44.6,
+  "2001": 53.0,
+  "2002": 52.4,
+  "2003": 63.0,
+  "2004": 57.3,
+  "2005": 43.2,
+  "2006": 49.2,
+  "2007": 42.2,
+  "2008": 44.0,
+  "2009": 42.9,
+  "2010": 66.6,
+  "2011": 62.3,
+  "2012": 51.8,
+  "2013": 66.4,
+  "2014": 66.3,
+  "2015": 55.9,
+  "2016": 48.1,
+  "2017": 37.0,
+  "2018": 54.2,
+  "2019": 45.1,
+  "2020": 47.2,
+  "2021": 39.1,
+  "2022": 32.9,
+  "2023": 43.7,
+  "2024": 51.1,
+  "2025": 53.8,
+  "2026": 58.6
+ },
+ "higher_since": 2014,
+ "low_after_1995": [
+  "2022-10",
+  31.7
+ ],
+ "low_1995": [
+  "1995-10",
+  25.5
+ ],
+ "lowest_months": [
+  [
+   "1995-10",
+   25.5
+  ],
+  [
+   "1995-11",
+   26.2
+  ],
+  [
+   "1995-09",
+   27.0
+  ],
+  [
+   "1995-08",
+   30.2
+  ],
+  [
+   "1995-12",
+   30.8
+  ],
+  [
+   "2022-10",
+   31.7
+  ],
+  [
+   "2022-11",
+   32.9
+  ],
+  [
+   "1994-10",
+   33.7
+  ]
+ ],
+ "end_hydrological_year": {
+  "1988": 52.5,
+  "1989": 38.5,
+  "1990": 42.3,
+  "1991": 41.2,
+  "1992": 38.3,
+  "1993": 36.4,
+  "1994": 34.7,
+  "1995": 27.0,
+  "1996": 55.0,
+  "1997": 60.4,
+  "1998": 61.0,
+  "1999": 43.9,
+  "2000": 46.0,
+  "2001": 56.3,
+  "2002": 47.2,
+  "2003": 57.9,
+  "2004": 58.2,
+  "2005": 40.7,
+  "2006": 39.6,
+  "2007": 47.3,
+  "2008": 44.9,
+  "2009": 43.8,
+  "2010": 67.4,
+  "2011": 63.6,
+  "2012": 46.9,
+  "2013": 69.4,
+  "2014": 64.1,
+  "2015": 57.3,
+  "2016": 53.8,
+  "2017": 40.7,
+  "2018": 55.9,
+  "2019": 43.0,
+  "2020": 48.5,
+  "2021": 40.9,
+  "2022": 33.8,
+  "2023": 36.8,
+  "2024": 48.8,
+  "2025": 57.1,
+  "2026": 61.5
+ },
+ "capacity_hm3_last": 56049,
+ "stored_hm3_last": 32819,
+ "reservoirs_last": 375,
+ "basins": {
+  "Cantábrico Occidental": {
+   "now": 49.7,
+   "avg10": 64.7,
+   "capacity_hm3": 485
+  },
+  "Cantábrico Oriental": {
+   "now": 47.9,
+   "avg10": 74.0,
+   "capacity_hm3": 73
+  },
+  "Cuenca Mediterránea Andaluza": {
+   "now": 62.1,
+   "avg10": 37.8,
+   "capacity_hm3": 1174
+  },
+  "Cuencas Internas de Cataluña": {
+   "now": 78.1,
+   "avg10": 55.9,
+   "capacity_hm3": 677
+  },
+  "Cuencas Internas del País Vasco": {
+   "now": 61.9,
+   "avg10": 71.4,
+   "capacity_hm3": 21
+  },
+  "Duero": {
+   "now": 44.9,
+   "avg10": 49.1,
+   "capacity_hm3": 7602
+  },
+  "Ebro": {
+   "now": 47.3,
+   "avg10": 54.9,
+   "capacity_hm3": 7813
+  },
+  "Galicia Costa": {
+   "now": 48.5,
+   "avg10": 63.5,
+   "capacity_hm3": 684
+  },
+  "Guadalete-Barbate": {
+   "now": 74.5,
+   "avg10": 37.5,
+   "capacity_hm3": 1651
+  },
+  "Guadalquivir": {
+   "now": 69.2,
+   "avg10": 34.1,
+   "capacity_hm3": 8030
+  },
+  "Guadiana": {
+   "now": 73.0,
+   "avg10": 40.1,
+   "capacity_hm3": 9538
+  },
+  "Júcar": {
+   "now": 52.5,
+   "avg10": 41.5,
+   "capacity_hm3": 2846
+  },
+  "Miño - Sil": {
+   "now": 49.7,
+   "avg10": 54.4,
+   "capacity_hm3": 3030
+  },
+  "Segura": {
+   "now": 45.8,
+   "avg10": 24.5,
+   "capacity_hm3": 1140
+  },
+  "Tajo": {
+   "now": 58.0,
+   "avg10": 47.6,
+   "capacity_hm3": 11056
+  },
+  "Tinto, Odiel y Piedras": {
+   "now": 62.4,
+   "avg10": 70.1,
+   "capacity_hm3": 229
+  }
+ },
+ "rows": [
+  {
+   "time": "1988",
+   "series": "reserva",
+   "value": 57.5
+  },
+  {
+   "time": "1988.083",
+   "series": "reserva",
+   "value": 66.6
+  },
+  {
+   "time": "1988.167",
+   "series": "reserva",
+   "value": 64.1
+  },
+  {
+   "time": "1988.25",
+   "series": "reserva",
+   "value": 64.8
+  },
+  {
+   "time": "1988.333",
+   "series": "reserva",
+   "value": 69.5
+  },
+  {
+   "time": "1988.417",
+   "series": "reserva",
+   "value": 70.6
+  },
+  {
+   "time": "1988.5",
+   "series": "reserva",
+   "value": 69.7
+  },
+  {
+   "time": "1988.583",
+   "series": "reserva",
+   "value": 61.7
+  },
+  {
+   "time": "1988.667",
+   "series": "reserva",
+   "value": 52.5
+  },
+  {
+   "time": "1988.75",
+   "series": "reserva",
+   "value": 47.4
+  },
+  {
+   "time": "1988.833",
+   "series": "reserva",
+   "value": 45.5
+  },
+  {
+   "time": "1988.917",
+   "series": "reserva",
+   "value": 44.1
+  },
+  {
+   "time": "1989",
+   "series": "reserva",
+   "value": 42.9
+  },
+  {
+   "time": "1989.083",
+   "series": "reserva",
+   "value": 42.6
+  },
+  {
+   "time": "1989.167",
+   "series": "reserva",
+   "value": 46.5
+  },
+  {
+   "time": "1989.25",
+   "series": "reserva",
+   "value": 49.9
+  },
+  {
+   "time": "1989.333",
+   "series": "reserva",
+   "value": 53.8
+  },
+  {
+   "time": "1989.417",
+   "series": "reserva",
+   "value": 54.3
+  },
+  {
+   "time": "1989.5",
+   "series": "reserva",
+   "value": 49.2
+  },
+  {
+   "time": "1989.583",
+   "series": "reserva",
+   "value": 42.6
+  },
+  {
+   "time": "1989.667",
+   "series": "reserva",
+   "value": 38.5
+  },
+  {
+   "time": "1989.75",
+   "series": "reserva",
+   "value": 36.1
+  },
+  {
+   "time": "1989.833",
+   "series": "reserva",
+   "value": 37.1
+  },
+  {
+   "time": "1989.917",
+   "series": "reserva",
+   "value": 51.2
+  },
+  {
+   "time": "1990",
+   "series": "reserva",
+   "value": 63.0
+  },
+  {
+   "time": "1990.083",
+   "series": "reserva",
+   "value": 62.0
+  },
+  {
+   "time": "1990.167",
+   "series": "reserva",
+   "value": 60.6
+  },
+  {
+   "time": "1990.25",
+   "series": "reserva",
+   "value": 59.7
+  },
+  {
+   "time": "1990.333",
+   "series": "reserva",
+   "value": 60.8
+  },
+  {
+   "time": "1990.417",
+   "series": "reserva",
+   "value": 59.5
+  },
+  {
+   "time": "1990.5",
+   "series": "reserva",
+   "value": 54.0
+  },
+  {
+   "time": "1990.583",
+   "series": "reserva",
+   "value": 46.7
+  },
+  {
+   "time": "1990.667",
+   "series": "reserva",
+   "value": 42.3
+  },
+  {
+   "time": "1990.75",
+   "series": "reserva",
+   "value": 40.4
+  },
+  {
+   "time": "1990.833",
+   "series": "reserva",
+   "value": 42.7
+  },
+  {
+   "time": "1990.917",
+   "series": "reserva",
+   "value": 43.1
+  },
+  {
+   "time": "1991",
+   "series": "reserva",
+   "value": 46.7
+  },
+  {
+   "time": "1991.083",
+   "series": "reserva",
+   "value": 48.6
+  },
+  {
+   "time": "1991.167",
+   "series": "reserva",
+   "value": 57.8
+  },
+  {
+   "time": "1991.25",
+   "series": "reserva",
+   "value": 62.1
+  },
+  {
+   "time": "1991.333",
+   "series": "reserva",
+   "value": 61.2
+  },
+  {
+   "time": "1991.417",
+   "series": "reserva",
+   "value": 58.7
+  },
+  {
+   "time": "1991.5",
+   "series": "reserva",
+   "value": 52.8
+  },
+  {
+   "time": "1991.583",
+   "series": "reserva",
+   "value": 46.0
+  },
+  {
+   "time": "1991.667",
+   "series": "reserva",
+   "value": 41.2
+  },
+  {
+   "time": "1991.75",
+   "series": "reserva",
+   "value": 38.7
+  },
+  {
+   "time": "1991.833",
+   "series": "reserva",
+   "value": 38.9
+  },
+  {
+   "time": "1991.917",
+   "series": "reserva",
+   "value": 40.3
+  },
+  {
+   "time": "1992",
+   "series": "reserva",
+   "value": 39.9
+  },
+  {
+   "time": "1992.083",
+   "series": "reserva",
+   "value": 40.0
+  },
+  {
+   "time": "1992.167",
+   "series": "reserva",
+   "value": 40.4
+  },
+  {
+   "time": "1992.25",
+   "series": "reserva",
+   "value": 44.7
+  },
+  {
+   "time": "1992.333",
+   "series": "reserva",
+   "value": 46.2
+  },
+  {
+   "time": "1992.417",
+   "series": "reserva",
+   "value": 47.0
+  },
+  {
+   "time": "1992.5",
+   "series": "reserva",
+   "value": 45.9
+  },
+  {
+   "time": "1992.583",
+   "series": "reserva",
+   "value": 41.7
+  },
+  {
+   "time": "1992.667",
+   "series": "reserva",
+   "value": 38.3
+  },
+  {
+   "time": "1992.75",
+   "series": "reserva",
+   "value": 37.9
+  },
+  {
+   "time": "1992.833",
+   "series": "reserva",
+   "value": 39.7
+  },
+  {
+   "time": "1992.917",
+   "series": "reserva",
+   "value": 41.7
+  },
+  {
+   "time": "1993",
+   "series": "reserva",
+   "value": 41.9
+  },
+  {
+   "time": "1993.083",
+   "series": "reserva",
+   "value": 41.3
+  },
+  {
+   "time": "1993.167",
+   "series": "reserva",
+   "value": 41.2
+  },
+  {
+   "time": "1993.25",
+   "series": "reserva",
+   "value": 42.2
+  },
+  {
+   "time": "1993.333",
+   "series": "reserva",
+   "value": 45.0
+  },
+  {
+   "time": "1993.417",
+   "series": "reserva",
+   "value": 48.5
+  },
+  {
+   "time": "1993.5",
+   "series": "reserva",
+   "value": 45.8
+  },
+  {
+   "time": "1993.583",
+   "series": "reserva",
+   "value": 40.0
+  },
+  {
+   "time": "1993.667",
+   "series": "reserva",
+   "value": 36.4
+  },
+  {
+   "time": "1993.75",
+   "series": "reserva",
+   "value": 39.3
+  },
+  {
+   "time": "1993.833",
+   "series": "reserva",
+   "value": 44.1
+  },
+  {
+   "time": "1993.917",
+   "series": "reserva",
+   "value": 42.8
+  },
+  {
+   "time": "1994",
+   "series": "reserva",
+   "value": 47.6
+  },
+  {
+   "time": "1994.083",
+   "series": "reserva",
+   "value": 47.8
+  },
+  {
+   "time": "1994.167",
+   "series": "reserva",
+   "value": 49.7
+  },
+  {
+   "time": "1994.25",
+   "series": "reserva",
+   "value": 49.5
+  },
+  {
+   "time": "1994.333",
+   "series": "reserva",
+   "value": 49.6
+  },
+  {
+   "time": "1994.417",
+   "series": "reserva",
+   "value": 50.6
+  },
+  {
+   "time": "1994.5",
+   "series": "reserva",
+   "value": 45.6
+  },
+  {
+   "time": "1994.583",
+   "series": "reserva",
+   "value": 39.4
+  },
+  {
+   "time": "1994.667",
+   "series": "reserva",
+   "value": 34.7
+  },
+  {
+   "time": "1994.75",
+   "series": "reserva",
+   "value": 33.7
+  },
+  {
+   "time": "1994.833",
+   "series": "reserva",
+   "value": 35.7
+  },
+  {
+   "time": "1994.917",
+   "series": "reserva",
+   "value": 35.7
+  },
+  {
+   "time": "1995",
+   "series": "reserva",
+   "value": 38.4
+  },
+  {
+   "time": "1995.083",
+   "series": "reserva",
+   "value": 41.6
+  },
+  {
+   "time": "1995.167",
+   "series": "reserva",
+   "value": 43.8
+  },
+  {
+   "time": "1995.25",
+   "series": "reserva",
+   "value": 42.1
+  },
+  {
+   "time": "1995.333",
+   "series": "reserva",
+   "value": 40.2
+  },
+  {
+   "time": "1995.417",
+   "series": "reserva",
+   "value": 38.0
+  },
+  {
+   "time": "1995.5",
+   "series": "reserva",
+   "value": 34.8
+  },
+  {
+   "time": "1995.583",
+   "series": "reserva",
+   "value": 30.2
+  },
+  {
+   "time": "1995.667",
+   "series": "reserva",
+   "value": 27.0
+  },
+  {
+   "time": "1995.75",
+   "series": "reserva",
+   "value": 25.5
+  },
+  {
+   "time": "1995.833",
+   "series": "reserva",
+   "value": 26.2
+  },
+  {
+   "time": "1995.917",
+   "series": "reserva",
+   "value": 30.8
+  },
+  {
+   "time": "1996",
+   "series": "reserva",
+   "value": 54.2
+  },
+  {
+   "time": "1996.083",
+   "series": "reserva",
+   "value": 66.6
+  },
+  {
+   "time": "1996.167",
+   "series": "reserva",
+   "value": 66.9
+  },
+  {
+   "time": "1996.25",
+   "series": "reserva",
+   "value": 69.5
+  },
+  {
+   "time": "1996.333",
+   "series": "reserva",
+   "value": 71.4
+  },
+  {
+   "time": "1996.417",
+   "series": "reserva",
+   "value": 70.6
+  },
+  {
+   "time": "1996.5",
+   "series": "reserva",
+   "value": 65.1
+  },
+  {
+   "time": "1996.583",
+   "series": "reserva",
+   "value": 59.3
+  },
+  {
+   "time": "1996.667",
+   "series": "reserva",
+   "value": 55.0
+  },
+  {
+   "time": "1996.75",
+   "series": "reserva",
+   "value": 51.8
+  },
+  {
+   "time": "1996.833",
+   "series": "reserva",
+   "value": 50.2
+  },
+  {
+   "time": "1996.917",
+   "series": "reserva",
+   "value": 57.6
+  },
+  {
+   "time": "1997",
+   "series": "reserva",
+   "value": 72.0
+  },
+  {
+   "time": "1997.083",
+   "series": "reserva",
+   "value": 75.3
+  },
+  {
+   "time": "1997.167",
+   "series": "reserva",
+   "value": 75.4
+  },
+  {
+   "time": "1997.25",
+   "series": "reserva",
+   "value": 73.4
+  },
+  {
+   "time": "1997.333",
+   "series": "reserva",
+   "value": 71.8
+  },
+  {
+   "time": "1997.417",
+   "series": "reserva",
+   "value": 72.6
+  },
+  {
+   "time": "1997.5",
+   "series": "reserva",
+   "value": 70.2
+  },
+  {
+   "time": "1997.583",
+   "series": "reserva",
+   "value": 65.1
+  },
+  {
+   "time": "1997.667",
+   "series": "reserva",
+   "value": 60.4
+  },
+  {
+   "time": "1997.75",
+   "series": "reserva",
+   "value": 58.0
+  },
+  {
+   "time": "1997.833",
+   "series": "reserva",
+   "value": 62.5
+  },
+  {
+   "time": "1997.917",
+   "series": "reserva",
+   "value": 72.9
+  },
+  {
+   "time": "1998",
+   "series": "reserva",
+   "value": 79.2
+  },
+  {
+   "time": "1998.083",
+   "series": "reserva",
+   "value": 78.9
+  },
+  {
+   "time": "1998.167",
+   "series": "reserva",
+   "value": 77.8
+  },
+  {
+   "time": "1998.25",
+   "series": "reserva",
+   "value": 79.0
+  },
+  {
+   "time": "1998.333",
+   "series": "reserva",
+   "value": 81.0
+  },
+  {
+   "time": "1998.417",
+   "series": "reserva",
+   "value": 81.1
+  },
+  {
+   "time": "1998.5",
+   "series": "reserva",
+   "value": 74.9
+  },
+  {
+   "time": "1998.583",
+   "series": "reserva",
+   "value": 67.4
+  },
+  {
+   "time": "1998.667",
+   "series": "reserva",
+   "value": 61.0
+  },
+  {
+   "time": "1998.75",
+   "series": "reserva",
+   "value": 59.2
+  },
+  {
+   "time": "1998.833",
+   "series": "reserva",
+   "value": 57.8
+  },
+  {
+   "time": "1998.917",
+   "series": "reserva",
+   "value": 57.0
+  },
+  {
+   "time": "1999",
+   "series": "reserva",
+   "value": 58.3
+  },
+  {
+   "time": "1999.083",
+   "series": "reserva",
+   "value": 60.1
+  },
+  {
+   "time": "1999.167",
+   "series": "reserva",
+   "value": 61.2
+  },
+  {
+   "time": "1999.25",
+   "series": "reserva",
+   "value": 61.8
+  },
+  {
+   "time": "1999.333",
+   "series": "reserva",
+   "value": 62.6
+  },
+  {
+   "time": "1999.417",
+   "series": "reserva",
+   "value": 60.3
+  },
+  {
+   "time": "1999.5",
+   "series": "reserva",
+   "value": 53.6
+  },
+  {
+   "time": "1999.583",
+   "series": "reserva",
+   "value": 47.8
+  },
+  {
+   "time": "1999.667",
+   "series": "reserva",
+   "value": 43.9
+  },
+  {
+   "time": "1999.75",
+   "series": "reserva",
+   "value": 44.6
+  },
+  {
+   "time": "1999.833",
+   "series": "reserva",
+   "value": 50.6
+  },
+  {
+   "time": "1999.917",
+   "series": "reserva",
+   "value": 50.6
+  },
+  {
+   "time": "2000",
+   "series": "reserva",
+   "value": 52.1
+  },
+  {
+   "time": "2000.083",
+   "series": "reserva",
+   "value": 51.8
+  },
+  {
+   "time": "2000.167",
+   "series": "reserva",
+   "value": 51.4
+  },
+  {
+   "time": "2000.25",
+   "series": "reserva",
+   "value": 54.3
+  },
+  {
+   "time": "2000.333",
+   "series": "reserva",
+   "value": 63.8
+  },
+  {
+   "time": "2000.417",
+   "series": "reserva",
+   "value": 64.3
+  },
+  {
+   "time": "2000.5",
+   "series": "reserva",
+   "value": 59.4
+  },
+  {
+   "time": "2000.583",
+   "series": "reserva",
+   "value": 52.8
+  },
+  {
+   "time": "2000.667",
+   "series": "reserva",
+   "value": 46.0
+  },
+  {
+   "time": "2000.75",
+   "series": "reserva",
+   "value": 42.0
+  },
+  {
+   "time": "2000.833",
+   "series": "reserva",
+   "value": 44.6
+  },
+  {
+   "time": "2000.917",
+   "series": "reserva",
+   "value": 53.0
+  },
+  {
+   "time": "2001",
+   "series": "reserva",
+   "value": 66.2
+  },
+  {
+   "time": "2001.083",
+   "series": "reserva",
+   "value": 72.3
+  },
+  {
+   "time": "2001.167",
+   "series": "reserva",
+   "value": 77.5
+  },
+  {
+   "time": "2001.25",
+   "series": "reserva",
+   "value": 78.5
+  },
+  {
+   "time": "2001.333",
+   "series": "reserva",
+   "value": 77.4
+  },
+  {
+   "time": "2001.417",
+   "series": "reserva",
+   "value": 75.1
+  },
+  {
+   "time": "2001.5",
+   "series": "reserva",
+   "value": 68.8
+  },
+  {
+   "time": "2001.583",
+   "series": "reserva",
+   "value": 62.0
+  },
+  {
+   "time": "2001.667",
+   "series": "reserva",
+   "value": 56.3
+  },
+  {
+   "time": "2001.75",
+   "series": "reserva",
+   "value": 54.3
+  },
+  {
+   "time": "2001.833",
+   "series": "reserva",
+   "value": 53.8
+  },
+  {
+   "time": "2001.917",
+   "series": "reserva",
+   "value": 51.9
+  },
+  {
+   "time": "2002",
+   "series": "reserva",
+   "value": 51.8
+  },
+  {
+   "time": "2002.083",
+   "series": "reserva",
+   "value": 54.6
+  },
+  {
+   "time": "2002.167",
+   "series": "reserva",
+   "value": 57.0
+  },
+  {
+   "time": "2002.25",
+   "series": "reserva",
+   "value": 60.8
+  },
+  {
+   "time": "2002.333",
+   "series": "reserva",
+   "value": 62.4
+  },
+  {
+   "time": "2002.417",
+   "series": "reserva",
+   "value": 61.1
+  },
+  {
+   "time": "2002.5",
+   "series": "reserva",
+   "value": 56.0
+  },
+  {
+   "time": "2002.583",
+   "series": "reserva",
+   "value": 50.2
+  },
+  {
+   "time": "2002.667",
+   "series": "reserva",
+   "value": 47.2
+  },
+  {
+   "time": "2002.75",
+   "series": "reserva",
+   "value": 47.2
+  },
+  {
+   "time": "2002.833",
+   "series": "reserva",
+   "value": 49.8
+  },
+  {
+   "time": "2002.917",
+   "series": "reserva",
+   "value": 58.3
+  },
+  {
+   "time": "2003",
+   "series": "reserva",
+   "value": 67.1
+  },
+  {
+   "time": "2003.083",
+   "series": "reserva",
+   "value": 69.7
+  },
+  {
+   "time": "2003.167",
+   "series": "reserva",
+   "value": 74.4
+  },
+  {
+   "time": "2003.25",
+   "series": "reserva",
+   "value": 76.6
+  },
+  {
+   "time": "2003.333",
+   "series": "reserva",
+   "value": 78.3
+  },
+  {
+   "time": "2003.417",
+   "series": "reserva",
+   "value": 76.1
+  },
+  {
+   "time": "2003.5",
+   "series": "reserva",
+   "value": 69.8
+  },
+  {
+   "time": "2003.583",
+   "series": "reserva",
+   "value": 62.5
+  },
+  {
+   "time": "2003.667",
+   "series": "reserva",
+   "value": 57.9
+  },
+  {
+   "time": "2003.75",
+   "series": "reserva",
+   "value": 56.3
+  },
+  {
+   "time": "2003.833",
+   "series": "reserva",
+   "value": 61.0
+  },
+  {
+   "time": "2003.917",
+   "series": "reserva",
+   "value": 66.7
+  },
+  {
+   "time": "2004",
+   "series": "reserva",
+   "value": 68.5
+  },
+  {
+   "time": "2004.083",
+   "series": "reserva",
+   "value": 69.5
+  },
+  {
+   "time": "2004.167",
+   "series": "reserva",
+   "value": 72.1
+  },
+  {
+   "time": "2004.25",
+   "series": "reserva",
+   "value": 75.5
+  },
+  {
+   "time": "2004.333",
+   "series": "reserva",
+   "value": 76.6
+  },
+  {
+   "time": "2004.417",
+   "series": "reserva",
+   "value": 75.7
+  },
+  {
+   "time": "2004.5",
+   "series": "reserva",
+   "value": 70.0
+  },
+  {
+   "time": "2004.583",
+   "series": "reserva",
+   "value": 63.4
+  },
+  {
+   "time": "2004.667",
+   "series": "reserva",
+   "value": 58.2
+  },
+  {
+   "time": "2004.75",
+   "series": "reserva",
+   "value": 55.2
+  },
+  {
+   "time": "2004.833",
+   "series": "reserva",
+   "value": 57.1
+  },
+  {
+   "time": "2004.917",
+   "series": "reserva",
+   "value": 56.3
+  },
+  {
+   "time": "2005",
+   "series": "reserva",
+   "value": 57.4
+  },
+  {
+   "time": "2005.083",
+   "series": "reserva",
+   "value": 57.9
+  },
+  {
+   "time": "2005.167",
+   "series": "reserva",
+   "value": 57.6
+  },
+  {
+   "time": "2005.25",
+   "series": "reserva",
+   "value": 59.8
+  },
+  {
+   "time": "2005.333",
+   "series": "reserva",
+   "value": 59.7
+  },
+  {
+   "time": "2005.417",
+   "series": "reserva",
+   "value": 56.5
+  },
+  {
+   "time": "2005.5",
+   "series": "reserva",
+   "value": 51.0
+  },
+  {
+   "time": "2005.583",
+   "series": "reserva",
+   "value": 44.9
+  },
+  {
+   "time": "2005.667",
+   "series": "reserva",
+   "value": 40.7
+  },
+  {
+   "time": "2005.75",
+   "series": "reserva",
+   "value": 39.3
+  },
+  {
+   "time": "2005.833",
+   "series": "reserva",
+   "value": 42.3
+  },
+  {
+   "time": "2005.917",
+   "series": "reserva",
+   "value": 45.2
+  },
+  {
+   "time": "2006",
+   "series": "reserva",
+   "value": 47.0
+  },
+  {
+   "time": "2006.083",
+   "series": "reserva",
+   "value": 48.5
+  },
+  {
+   "time": "2006.167",
+   "series": "reserva",
+   "value": 53.5
+  },
+  {
+   "time": "2006.25",
+   "series": "reserva",
+   "value": 58.4
+  },
+  {
+   "time": "2006.333",
+   "series": "reserva",
+   "value": 58.6
+  },
+  {
+   "time": "2006.417",
+   "series": "reserva",
+   "value": 54.9
+  },
+  {
+   "time": "2006.5",
+   "series": "reserva",
+   "value": 50.4
+  },
+  {
+   "time": "2006.583",
+   "series": "reserva",
+   "value": 44.1
+  },
+  {
+   "time": "2006.667",
+   "series": "reserva",
+   "value": 39.6
+  },
+  {
+   "time": "2006.75",
+   "series": "reserva",
+   "value": 40.2
+  },
+  {
+   "time": "2006.833",
+   "series": "reserva",
+   "value": 49.0
+  },
+  {
+   "time": "2006.917",
+   "series": "reserva",
+   "value": 56.3
+  },
+  {
+   "time": "2007",
+   "series": "reserva",
+   "value": 55.1
+  },
+  {
+   "time": "2007.083",
+   "series": "reserva",
+   "value": 58.2
+  },
+  {
+   "time": "2007.167",
+   "series": "reserva",
+   "value": 60.4
+  },
+  {
+   "time": "2007.25",
+   "series": "reserva",
+   "value": 61.6
+  },
+  {
+   "time": "2007.333",
+   "series": "reserva",
+   "value": 64.5
+  },
+  {
+   "time": "2007.417",
+   "series": "reserva",
+   "value": 64.9
+  },
+  {
+   "time": "2007.5",
+   "series": "reserva",
+   "value": 60.1
+  },
+  {
+   "time": "2007.583",
+   "series": "reserva",
+   "value": 52.1
+  },
+  {
+   "time": "2007.667",
+   "series": "reserva",
+   "value": 47.3
+  },
+  {
+   "time": "2007.75",
+   "series": "reserva",
+   "value": 44.7
+  },
+  {
+   "time": "2007.833",
+   "series": "reserva",
+   "value": 42.2
+  },
+  {
+   "time": "2007.917",
+   "series": "reserva",
+   "value": 41.7
+  },
+  {
+   "time": "2008",
+   "series": "reserva",
+   "value": 42.6
+  },
+  {
+   "time": "2008.083",
+   "series": "reserva",
+   "value": 44.2
+  },
+  {
+   "time": "2008.167",
+   "series": "reserva",
+   "value": 45.2
+  },
+  {
+   "time": "2008.25",
+   "series": "reserva",
+   "value": 50.6
+  },
+  {
+   "time": "2008.333",
+   "series": "reserva",
+   "value": 57.0
+  },
+  {
+   "time": "2008.417",
+   "series": "reserva",
+   "value": 59.8
+  },
+  {
+   "time": "2008.5",
+   "series": "reserva",
+   "value": 56.6
+  },
+  {
+   "time": "2008.583",
+   "series": "reserva",
+   "value": 50.1
+  },
+  {
+   "time": "2008.667",
+   "series": "reserva",
+   "value": 44.9
+  },
+  {
+   "time": "2008.75",
+   "series": "reserva",
+   "value": 42.3
+  },
+  {
+   "time": "2008.833",
+   "series": "reserva",
+   "value": 43.6
+  },
+  {
+   "time": "2008.917",
+   "series": "reserva",
+   "value": 46.3
+  },
+  {
+   "time": "2009",
+   "series": "reserva",
+   "value": 48.8
+  },
+  {
+   "time": "2009.083",
+   "series": "reserva",
+   "value": 56.7
+  },
+  {
+   "time": "2009.167",
+   "series": "reserva",
+   "value": 59.6
+  },
+  {
+   "time": "2009.25",
+   "series": "reserva",
+   "value": 60.9
+  },
+  {
+   "time": "2009.333",
+   "series": "reserva",
+   "value": 61.3
+  },
+  {
+   "time": "2009.417",
+   "series": "reserva",
+   "value": 59.5
+  },
+  {
+   "time": "2009.5",
+   "series": "reserva",
+   "value": 54.3
+  },
+  {
+   "time": "2009.583",
+   "series": "reserva",
+   "value": 48.7
+  },
+  {
+   "time": "2009.667",
+   "series": "reserva",
+   "value": 43.8
+  },
+  {
+   "time": "2009.75",
+   "series": "reserva",
+   "value": 41.8
+  },
+  {
+   "time": "2009.833",
+   "series": "reserva",
+   "value": 42.0
+  },
+  {
+   "time": "2009.917",
+   "series": "reserva",
+   "value": 45.2
+  },
+  {
+   "time": "2010",
+   "series": "reserva",
+   "value": 63.7
+  },
+  {
+   "time": "2010.083",
+   "series": "reserva",
+   "value": 69.7
+  },
+  {
+   "time": "2010.167",
+   "series": "reserva",
+   "value": 79.6
+  },
+  {
+   "time": "2010.25",
+   "series": "reserva",
+   "value": 82.3
+  },
+  {
+   "time": "2010.333",
+   "series": "reserva",
+   "value": 83.7
+  },
+  {
+   "time": "2010.417",
+   "series": "reserva",
+   "value": 83.3
+  },
+  {
+   "time": "2010.5",
+   "series": "reserva",
+   "value": 79.6
+  },
+  {
+   "time": "2010.583",
+   "series": "reserva",
+   "value": 73.0
+  },
+  {
+   "time": "2010.667",
+   "series": "reserva",
+   "value": 67.4
+  },
+  {
+   "time": "2010.75",
+   "series": "reserva",
+   "value": 65.4
+  },
+  {
+   "time": "2010.833",
+   "series": "reserva",
+   "value": 65.8
+  },
+  {
+   "time": "2010.917",
+   "series": "reserva",
+   "value": 71.9
+  },
+  {
+   "time": "2011",
+   "series": "reserva",
+   "value": 76.8
+  },
+  {
+   "time": "2011.083",
+   "series": "reserva",
+   "value": 76.4
+  },
+  {
+   "time": "2011.167",
+   "series": "reserva",
+   "value": 80.4
+  },
+  {
+   "time": "2011.25",
+   "series": "reserva",
+   "value": 82.1
+  },
+  {
+   "time": "2011.333",
+   "series": "reserva",
+   "value": 82.2
+  },
+  {
+   "time": "2011.417",
+   "series": "reserva",
+   "value": 80.1
+  },
+  {
+   "time": "2011.5",
+   "series": "reserva",
+   "value": 75.0
+  },
+  {
+   "time": "2011.583",
+   "series": "reserva",
+   "value": 68.7
+  },
+  {
+   "time": "2011.667",
+   "series": "reserva",
+   "value": 63.6
+  },
+  {
+   "time": "2011.75",
+   "series": "reserva",
+   "value": 60.3
+  },
+  {
+   "time": "2011.833",
+   "series": "reserva",
+   "value": 61.3
+  },
+  {
+   "time": "2011.917",
+   "series": "reserva",
+   "value": 62.0
+  },
+  {
+   "time": "2012",
+   "series": "reserva",
+   "value": 62.0
+  },
+  {
+   "time": "2012.083",
+   "series": "reserva",
+   "value": 62.2
+  },
+  {
+   "time": "2012.167",
+   "series": "reserva",
+   "value": 62.3
+  },
+  {
+   "time": "2012.25",
+   "series": "reserva",
+   "value": 62.1
+  },
+  {
+   "time": "2012.333",
+   "series": "reserva",
+   "value": 65.9
+  },
+  {
+   "time": "2012.417",
+   "series": "reserva",
+   "value": 64.7
+  },
+  {
+   "time": "2012.5",
+   "series": "reserva",
+   "value": 58.5
+  },
+  {
+   "time": "2012.583",
+   "series": "reserva",
+   "value": 51.7
+  },
+  {
+   "time": "2012.667",
+   "series": "reserva",
+   "value": 46.9
+  },
+  {
+   "time": "2012.75",
+   "series": "reserva",
+   "value": 45.5
+  },
+  {
+   "time": "2012.833",
+   "series": "reserva",
+   "value": 50.4
+  },
+  {
+   "time": "2012.917",
+   "series": "reserva",
+   "value": 53.8
+  },
+  {
+   "time": "2013",
+   "series": "reserva",
+   "value": 57.8
+  },
+  {
+   "time": "2013.083",
+   "series": "reserva",
+   "value": 65.8
+  },
+  {
+   "time": "2013.167",
+   "series": "reserva",
+   "value": 74.0
+  },
+  {
+   "time": "2013.25",
+   "series": "reserva",
+   "value": 84.1
+  },
+  {
+   "time": "2013.333",
+   "series": "reserva",
+   "value": 85.7
+  },
+  {
+   "time": "2013.417",
+   "series": "reserva",
+   "value": 84.9
+  },
+  {
+   "time": "2013.5",
+   "series": "reserva",
+   "value": 80.9
+  },
+  {
+   "time": "2013.583",
+   "series": "reserva",
+   "value": 74.5
+  },
+  {
+   "time": "2013.667",
+   "series": "reserva",
+   "value": 69.4
+  },
+  {
+   "time": "2013.75",
+   "series": "reserva",
+   "value": 66.3
+  },
+  {
+   "time": "2013.833",
+   "series": "reserva",
+   "value": 66.5
+  },
+  {
+   "time": "2013.917",
+   "series": "reserva",
+   "value": 65.2
+  },
+  {
+   "time": "2014",
+   "series": "reserva",
+   "value": 73.3
+  },
+  {
+   "time": "2014.083",
+   "series": "reserva",
+   "value": 80.3
+  },
+  {
+   "time": "2014.167",
+   "series": "reserva",
+   "value": 82.7
+  },
+  {
+   "time": "2014.25",
+   "series": "reserva",
+   "value": 83.4
+  },
+  {
+   "time": "2014.333",
+   "series": "reserva",
+   "value": 83.1
+  },
+  {
+   "time": "2014.417",
+   "series": "reserva",
+   "value": 81.5
+  },
+  {
+   "time": "2014.5",
+   "series": "reserva",
+   "value": 76.9
+  },
+  {
+   "time": "2014.583",
+   "series": "reserva",
+   "value": 69.9
+  },
+  {
+   "time": "2014.667",
+   "series": "reserva",
+   "value": 64.1
+  },
+  {
+   "time": "2014.75",
+   "series": "reserva",
+   "value": 63.3
+  },
+  {
+   "time": "2014.833",
+   "series": "reserva",
+   "value": 64.6
+  },
+  {
+   "time": "2014.917",
+   "series": "reserva",
+   "value": 69.4
+  },
+  {
+   "time": "2015",
+   "series": "reserva",
+   "value": 70.4
+  },
+  {
+   "time": "2015.083",
+   "series": "reserva",
+   "value": 73.7
+  },
+  {
+   "time": "2015.167",
+   "series": "reserva",
+   "value": 76.5
+  },
+  {
+   "time": "2015.25",
+   "series": "reserva",
+   "value": 78.1
+  },
+  {
+   "time": "2015.333",
+   "series": "reserva",
+   "value": 78.2
+  },
+  {
+   "time": "2015.417",
+   "series": "reserva",
+   "value": 74.0
+  },
+  {
+   "time": "2015.5",
+   "series": "reserva",
+   "value": 67.7
+  },
+  {
+   "time": "2015.583",
+   "series": "reserva",
+   "value": 61.7
+  },
+  {
+   "time": "2015.667",
+   "series": "reserva",
+   "value": 57.3
+  },
+  {
+   "time": "2015.75",
+   "series": "reserva",
+   "value": 55.0
+  },
+  {
+   "time": "2015.833",
+   "series": "reserva",
+   "value": 56.1
+  },
+  {
+   "time": "2015.917",
+   "series": "reserva",
+   "value": 55.8
+  },
+  {
+   "time": "2016",
+   "series": "reserva",
+   "value": 60.6
+  },
+  {
+   "time": "2016.083",
+   "series": "reserva",
+   "value": 64.9
+  },
+  {
+   "time": "2016.167",
+   "series": "reserva",
+   "value": 67.8
+  },
+  {
+   "time": "2016.25",
+   "series": "reserva",
+   "value": 70.6
+  },
+  {
+   "time": "2016.333",
+   "series": "reserva",
+   "value": 74.2
+  },
+  {
+   "time": "2016.417",
+   "series": "reserva",
+   "value": 73.2
+  },
+  {
+   "time": "2016.5",
+   "series": "reserva",
+   "value": 68.2
+  },
+  {
+   "time": "2016.583",
+   "series": "reserva",
+   "value": 60.8
+  },
+  {
+   "time": "2016.667",
+   "series": "reserva",
+   "value": 53.8
+  },
+  {
+   "time": "2016.75",
+   "series": "reserva",
+   "value": 50.0
+  },
+  {
+   "time": "2016.833",
+   "series": "reserva",
+   "value": 48.7
+  },
+  {
+   "time": "2016.917",
+   "series": "reserva",
+   "value": 51.2
+  },
+  {
+   "time": "2017",
+   "series": "reserva",
+   "value": 50.6
+  },
+  {
+   "time": "2017.083",
+   "series": "reserva",
+   "value": 55.4
+  },
+  {
+   "time": "2017.167",
+   "series": "reserva",
+   "value": 59.0
+  },
+  {
+   "time": "2017.25",
+   "series": "reserva",
+   "value": 59.2
+  },
+  {
+   "time": "2017.333",
+   "series": "reserva",
+   "value": 57.7
+  },
+  {
+   "time": "2017.417",
+   "series": "reserva",
+   "value": 55.2
+  },
+  {
+   "time": "2017.5",
+   "series": "reserva",
+   "value": 50.9
+  },
+  {
+   "time": "2017.583",
+   "series": "reserva",
+   "value": 45.2
+  },
+  {
+   "time": "2017.667",
+   "series": "reserva",
+   "value": 40.7
+  },
+  {
+   "time": "2017.75",
+   "series": "reserva",
+   "value": 38.1
+  },
+  {
+   "time": "2017.833",
+   "series": "reserva",
+   "value": 37.1
+  },
+  {
+   "time": "2017.917",
+   "series": "reserva",
+   "value": 37.2
+  },
+  {
+   "time": "2018",
+   "series": "reserva",
+   "value": 40.8
+  },
+  {
+   "time": "2018.083",
+   "series": "reserva",
+   "value": 42.6
+  },
+  {
+   "time": "2018.167",
+   "series": "reserva",
+   "value": 55.8
+  },
+  {
+   "time": "2018.25",
+   "series": "reserva",
+   "value": 67.1
+  },
+  {
+   "time": "2018.333",
+   "series": "reserva",
+   "value": 71.6
+  },
+  {
+   "time": "2018.417",
+   "series": "reserva",
+   "value": 72.5
+  },
+  {
+   "time": "2018.5",
+   "series": "reserva",
+   "value": 68.0
+  },
+  {
+   "time": "2018.583",
+   "series": "reserva",
+   "value": 61.4
+  },
+  {
+   "time": "2018.667",
+   "series": "reserva",
+   "value": 55.9
+  },
+  {
+   "time": "2018.75",
+   "series": "reserva",
+   "value": 51.9
+  },
+  {
+   "time": "2018.833",
+   "series": "reserva",
+   "value": 53.3
+  },
+  {
+   "time": "2018.917",
+   "series": "reserva",
+   "value": 55.0
+  },
+  {
+   "time": "2019",
+   "series": "reserva",
+   "value": 54.6
+  },
+  {
+   "time": "2019.083",
+   "series": "reserva",
+   "value": 58.0
+  },
+  {
+   "time": "2019.167",
+   "series": "reserva",
+   "value": 58.3
+  },
+  {
+   "time": "2019.25",
+   "series": "reserva",
+   "value": 58.2
+  },
+  {
+   "time": "2019.333",
+   "series": "reserva",
+   "value": 60.5
+  },
+  {
+   "time": "2019.417",
+   "series": "reserva",
+   "value": 58.8
+  },
+  {
+   "time": "2019.5",
+   "series": "reserva",
+   "value": 53.6
+  },
+  {
+   "time": "2019.583",
+   "series": "reserva",
+   "value": 47.5
+  },
+  {
+   "time": "2019.667",
+   "series": "reserva",
+   "value": 43.0
+  },
+  {
+   "time": "2019.75",
+   "series": "reserva",
+   "value": 40.3
+  },
+  {
+   "time": "2019.833",
+   "series": "reserva",
+   "value": 42.7
+  },
+  {
+   "time": "2019.917",
+   "series": "reserva",
+   "value": 51.2
+  },
+  {
+   "time": "2020",
+   "series": "reserva",
+   "value": 56.9
+  },
+  {
+   "time": "2020.083",
+   "series": "reserva",
+   "value": 59.1
+  },
+  {
+   "time": "2020.167",
+   "series": "reserva",
+   "value": 60.0
+  },
+  {
+   "time": "2020.25",
+   "series": "reserva",
+   "value": 63.6
+  },
+  {
+   "time": "2020.333",
+   "series": "reserva",
+   "value": 66.8
+  },
+  {
+   "time": "2020.417",
+   "series": "reserva",
+   "value": 65.6
+  },
+  {
+   "time": "2020.5",
+   "series": "reserva",
+   "value": 60.8
+  },
+  {
+   "time": "2020.583",
+   "series": "reserva",
+   "value": 54.5
+  },
+  {
+   "time": "2020.667",
+   "series": "reserva",
+   "value": 48.5
+  },
+  {
+   "time": "2020.75",
+   "series": "reserva",
+   "value": 45.9
+  },
+  {
+   "time": "2020.833",
+   "series": "reserva",
+   "value": 47.1
+  },
+  {
+   "time": "2020.917",
+   "series": "reserva",
+   "value": 48.8
+  },
+  {
+   "time": "2021",
+   "series": "reserva",
+   "value": 51.1
+  },
+  {
+   "time": "2021.083",
+   "series": "reserva",
+   "value": 59.9
+  },
+  {
+   "time": "2021.167",
+   "series": "reserva",
+   "value": 64.1
+  },
+  {
+   "time": "2021.25",
+   "series": "reserva",
+   "value": 62.0
+  },
+  {
+   "time": "2021.333",
+   "series": "reserva",
+   "value": 60.8
+  },
+  {
+   "time": "2021.417",
+   "series": "reserva",
+   "value": 58.4
+  },
+  {
+   "time": "2021.5",
+   "series": "reserva",
+   "value": 52.6
+  },
+  {
+   "time": "2021.583",
+   "series": "reserva",
+   "value": 45.5
+  },
+  {
+   "time": "2021.667",
+   "series": "reserva",
+   "value": 40.9
+  },
+  {
+   "time": "2021.75",
+   "series": "reserva",
+   "value": 39.4
+  },
+  {
+   "time": "2021.833",
+   "series": "reserva",
+   "value": 39.2
+  },
+  {
+   "time": "2021.917",
+   "series": "reserva",
+   "value": 41.7
+  },
+  {
+   "time": "2022",
+   "series": "reserva",
+   "value": 44.6
+  },
+  {
+   "time": "2022.083",
+   "series": "reserva",
+   "value": 44.5
+  },
+  {
+   "time": "2022.167",
+   "series": "reserva",
+   "value": 44.7
+  },
+  {
+   "time": "2022.25",
+   "series": "reserva",
+   "value": 48.3
+  },
+  {
+   "time": "2022.333",
+   "series": "reserva",
+   "value": 50.3
+  },
+  {
+   "time": "2022.417",
+   "series": "reserva",
+   "value": 47.6
+  },
+  {
+   "time": "2022.5",
+   "series": "reserva",
+   "value": 43.7
+  },
+  {
+   "time": "2022.583",
+   "series": "reserva",
+   "value": 38.1
+  },
+  {
+   "time": "2022.667",
+   "series": "reserva",
+   "value": 33.8
+  },
+  {
+   "time": "2022.75",
+   "series": "reserva",
+   "value": 31.7
+  },
+  {
+   "time": "2022.833",
+   "series": "reserva",
+   "value": 32.9
+  },
+  {
+   "time": "2022.917",
+   "series": "reserva",
+   "value": 39.1
+  },
+  {
+   "time": "2023",
+   "series": "reserva",
+   "value": 48.9
+  },
+  {
+   "time": "2023.083",
+   "series": "reserva",
+   "value": 50.7
+  },
+  {
+   "time": "2023.167",
+   "series": "reserva",
+   "value": 51.3
+  },
+  {
+   "time": "2023.25",
+   "series": "reserva",
+   "value": 50.8
+  },
+  {
+   "time": "2023.333",
+   "series": "reserva",
+   "value": 48.4
+  },
+  {
+   "time": "2023.417",
+   "series": "reserva",
+   "value": 47.4
+  },
+  {
+   "time": "2023.5",
+   "series": "reserva",
+   "value": 45.1
+  },
+  {
+   "time": "2023.583",
+   "series": "reserva",
+   "value": 39.9
+  },
+  {
+   "time": "2023.667",
+   "series": "reserva",
+   "value": 36.8
+  },
+  {
+   "time": "2023.75",
+   "series": "reserva",
+   "value": 35.8
+  },
+  {
+   "time": "2023.833",
+   "series": "reserva",
+   "value": 43.1
+  },
+  {
+   "time": "2023.917",
+   "series": "reserva",
+   "value": 45.7
+  },
+  {
+   "time": "2024",
+   "series": "reserva",
+   "value": 47.6
+  },
+  {
+   "time": "2024.083",
+   "series": "reserva",
+   "value": 51.6
+  },
+  {
+   "time": "2024.167",
+   "series": "reserva",
+   "value": 56.8
+  },
+  {
+   "time": "2024.25",
+   "series": "reserva",
+   "value": 65.7
+  },
+  {
+   "time": "2024.333",
+   "series": "reserva",
+   "value": 66.3
+  },
+  {
+   "time": "2024.417",
+   "series": "reserva",
+   "value": 64.6
+  },
+  {
+   "time": "2024.5",
+   "series": "reserva",
+   "value": 60.2
+  },
+  {
+   "time": "2024.583",
+   "series": "reserva",
+   "value": 53.1
+  },
+  {
+   "time": "2024.667",
+   "series": "reserva",
+   "value": 48.8
+  },
+  {
+   "time": "2024.75",
+   "series": "reserva",
+   "value": 48.8
+  },
+  {
+   "time": "2024.833",
+   "series": "reserva",
+   "value": 51.3
+  },
+  {
+   "time": "2024.917",
+   "series": "reserva",
+   "value": 51.5
+  },
+  {
+   "time": "2025",
+   "series": "reserva",
+   "value": 52.6
+  },
+  {
+   "time": "2025.083",
+   "series": "reserva",
+   "value": 58.1
+  },
+  {
+   "time": "2025.167",
+   "series": "reserva",
+   "value": 64.0
+  },
+  {
+   "time": "2025.25",
+   "series": "reserva",
+   "value": 74.5
+  },
+  {
+   "time": "2025.333",
+   "series": "reserva",
+   "value": 77.3
+  },
+  {
+   "time": "2025.417",
+   "series": "reserva",
+   "value": 75.8
+  },
+  {
+   "time": "2025.5",
+   "series": "reserva",
+   "value": 69.8
+  },
+  {
+   "time": "2025.583",
+   "series": "reserva",
+   "value": 63.1
+  },
+  {
+   "time": "2025.667",
+   "series": "reserva",
+   "value": 57.1
+  },
+  {
+   "time": "2025.75",
+   "series": "reserva",
+   "value": 52.7
+  },
+  {
+   "time": "2025.833",
+   "series": "reserva",
+   "value": 52.5
+  },
+  {
+   "time": "2025.917",
+   "series": "reserva",
+   "value": 55.0
+  },
+  {
+   "time": "2026",
+   "series": "reserva",
+   "value": 57.5
+  },
+  {
+   "time": "2026.083",
+   "series": "reserva",
+   "value": 77.5
+  },
+  {
+   "time": "2026.167",
+   "series": "reserva",
+   "value": 83.1
+  },
+  {
+   "time": "2026.25",
+   "series": "reserva",
+   "value": 83.6
+  },
+  {
+   "time": "2026.333",
+   "series": "reserva",
+   "value": 83.9
+  },
+  {
+   "time": "2026.417",
+   "series": "reserva",
+   "value": 81.1
+  },
+  {
+   "time": "2026.5",
+   "series": "reserva",
+   "value": 74.3
+  },
+  {
+   "time": "2026.583",
+   "series": "reserva",
+   "value": 67.2
+  },
+  {
+   "time": "2026.667",
+   "series": "reserva",
+   "value": 61.5
+  },
+  {
+   "time": "2026.75",
+   "series": "reserva",
+   "value": 57.5
+  },
+  {
+   "time": "2026.833",
+   "series": "reserva",
+   "value": 56.7
+  }
+ ]
+}

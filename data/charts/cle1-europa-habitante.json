@@ -1,0 +1,374 @@
+{
+ "id": "cle1-europa-habitante",
+ "lens": "europa",
+ "theme": "clima",
+ "title": {
+  "es": "Cada habitante de España emite 5,5 toneladas de gases de efecto invernadero al año, frente a 6,7 en la UE; solo 6 países emiten menos",
+  "en": "Each person in Spain emits 5.5 tonnes of greenhouse gases a year, against 6.7 in the EU; only 6 countries emit less"
+ },
+ "subtitle": {
+  "es": "Emisiones de gases de efecto invernadero por habitante, 2024, en toneladas de CO₂ equivalente",
+  "en": "Greenhouse gas emissions per inhabitant, 2024, in tonnes of CO₂ equivalent"
+ },
+ "unit": {
+  "es": "toneladas por habitante",
+  "en": "tonnes per inhabitant"
+ },
+ "source": {
+  "name": "Eurostat, inventario de gases de efecto invernadero (AEMA)",
+  "license": "CC BY 4.0",
+  "dataset": "env_air_gge",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table",
+  "also": [
+   {
+    "name": "Eurostat, estadísticas de población",
+    "license": "CC BY 4.0",
+    "dataset": "demo_gind",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Emisiones dentro de cada país según su inventario oficial, sin contar las absorciones de los bosques y los suelos (LULUCF) ni la aviación y la navegación internacionales. No incluye las emisiones de lo que se importa.",
+   "CO₂ equivalente: el metano, el óxido nitroso y los gases fluorados se suman al CO₂ según su efecto sobre el calentamiento a cien años.",
+   "Población media del año."
+  ],
+  "en": [
+   "Emissions within each country according to its official inventory, excluding removals by forests and soils (LULUCF) and international aviation and shipping. Emissions embodied in imports are not included.",
+   "CO₂ equivalent: methane, nitrous oxide and fluorinated gases are added to CO₂ according to their warming effect over a hundred years.",
+   "Average population for the year."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "year": 2024,
+ "position_from_lowest": 7,
+ "lower": [
+  "MLT",
+  "SWE",
+  "PRT",
+  "ROU",
+  "LVA",
+  "FRA"
+ ],
+ "big": {
+  "DEU": 7.8,
+  "FRA": 5.3,
+  "ITA": 6.2,
+  "POL": 9.3
+ },
+ "max": "LUX",
+ "min": "MLT",
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 7.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 8.3
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 6.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 6.5
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 9.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 8.9
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 6.1
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 7.5
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 7.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 5.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 7.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 7.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 5.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 10.0
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 6.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 5.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 6.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 11.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 3.8
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 7.8
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 9.3
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 4.6
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 5.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 6.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 7.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 5.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 4.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 6.7
+  }
+ ]
+}

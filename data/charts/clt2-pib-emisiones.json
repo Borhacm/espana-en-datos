@@ -1,0 +1,541 @@
+{
+ "id": "clt2-pib-emisiones",
+ "lens": "tiempo",
+ "theme": "clima",
+ "title": {
+  "es": "Hasta 2007, las emisiones crecían con la economía; desde entonces, el PIB ha crecido un 15,7 % y las emisiones han bajado un 39,7 %",
+  "en": "Until 2007, emissions grew with the economy; since then, GDP has grown by 15.7% and emissions have fallen by 39.7%"
+ },
+ "subtitle": {
+  "es": "PIB en volumen, emisiones de gases de efecto invernadero y emisiones por euro de PIB, índice 1995 = 100, 1995-2024",
+  "en": "GDP in volume, greenhouse gas emissions and emissions per euro of GDP, index 1995 = 100, 1995-2024"
+ },
+ "unit": {
+  "es": "índice, 1995 = 100",
+  "en": "index, 1995 = 100"
+ },
+ "source": {
+  "name": "Eurostat, inventario de gases de efecto invernadero (AEMA)",
+  "license": "CC BY 4.0",
+  "dataset": "env_air_gge",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table",
+  "also": [
+   {
+    "name": "Eurostat, cuentas nacionales",
+    "license": "CC BY 4.0",
+    "dataset": "nama_10_gdp",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "PIB a precios constantes (volumen encadenado, referencia 2010). La serie de Eurostat empieza en 1995.",
+   "Emisiones por euro de PIB: emisiones divididas por el PIB en volumen. Sin LULUCF ni aviación y navegación internacionales."
+  ],
+  "en": [
+   "GDP at constant prices (chain-linked volumes, reference year 2010). Eurostat's series starts in 1995.",
+   "Emissions per euro of GDP: emissions divided by GDP in volume. Excluding LULUCF and international aviation and shipping."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {},
+ "dimensions": {
+  "series": {
+   "pib": {
+    "es": "PIB en volumen",
+    "en": "GDP in volume"
+   },
+   "emisiones": {
+    "es": "Emisiones",
+    "en": "Emissions"
+   },
+   "intensidad": {
+    "es": "Emisiones por euro de PIB",
+    "en": "Emissions per euro of GDP"
+   }
+  }
+ },
+ "short_labels": {
+  "pib": {
+   "es": "PIB",
+   "en": "GDP"
+  },
+  "emisiones": {
+   "es": "Emisiones",
+   "en": "Emissions"
+  },
+  "intensidad": {
+   "es": "Por euro",
+   "en": "Per euro"
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "Nivel de 1995",
+   "en": "1995 level"
+  }
+ },
+ "first": 1995,
+ "year": 2024,
+ "peak": 2007,
+ "gdp_change_since_peak": 15.7,
+ "emissions_change_since_peak": -39.7,
+ "intensity_change_since_first": -53.6,
+ "per_capita_change_since_peak": -44.2,
+ "gdp_change_first_peak": 54.0,
+ "emissions_change_first_peak": 36.9,
+ "rows": [
+  {
+   "time": "1995",
+   "series": "pib",
+   "value": 100.0
+  },
+  {
+   "time": "1996",
+   "series": "pib",
+   "value": 102.6
+  },
+  {
+   "time": "1997",
+   "series": "pib",
+   "value": 106.3
+  },
+  {
+   "time": "1998",
+   "series": "pib",
+   "value": 110.9
+  },
+  {
+   "time": "1999",
+   "series": "pib",
+   "value": 115.7
+  },
+  {
+   "time": "2000",
+   "series": "pib",
+   "value": 121.8
+  },
+  {
+   "time": "2001",
+   "series": "pib",
+   "value": 126.5
+  },
+  {
+   "time": "2002",
+   "series": "pib",
+   "value": 130.0
+  },
+  {
+   "time": "2003",
+   "series": "pib",
+   "value": 133.8
+  },
+  {
+   "time": "2004",
+   "series": "pib",
+   "value": 138.0
+  },
+  {
+   "time": "2005",
+   "series": "pib",
+   "value": 142.9
+  },
+  {
+   "time": "2006",
+   "series": "pib",
+   "value": 148.7
+  },
+  {
+   "time": "2007",
+   "series": "pib",
+   "value": 154.0
+  },
+  {
+   "time": "2008",
+   "series": "pib",
+   "value": 155.1
+  },
+  {
+   "time": "2009",
+   "series": "pib",
+   "value": 149.3
+  },
+  {
+   "time": "2010",
+   "series": "pib",
+   "value": 149.4
+  },
+  {
+   "time": "2011",
+   "series": "pib",
+   "value": 148.5
+  },
+  {
+   "time": "2012",
+   "series": "pib",
+   "value": 144.2
+  },
+  {
+   "time": "2013",
+   "series": "pib",
+   "value": 142.2
+  },
+  {
+   "time": "2014",
+   "series": "pib",
+   "value": 144.3
+  },
+  {
+   "time": "2015",
+   "series": "pib",
+   "value": 150.2
+  },
+  {
+   "time": "2016",
+   "series": "pib",
+   "value": 154.6
+  },
+  {
+   "time": "2017",
+   "series": "pib",
+   "value": 159.0
+  },
+  {
+   "time": "2018",
+   "series": "pib",
+   "value": 162.8
+  },
+  {
+   "time": "2019",
+   "series": "pib",
+   "value": 166.0
+  },
+  {
+   "time": "2020",
+   "series": "pib",
+   "value": 147.9
+  },
+  {
+   "time": "2021",
+   "series": "pib",
+   "value": 157.8
+  },
+  {
+   "time": "2022",
+   "series": "pib",
+   "value": 167.8
+  },
+  {
+   "time": "2023",
+   "series": "pib",
+   "value": 171.8
+  },
+  {
+   "time": "2024",
+   "series": "pib",
+   "value": 178.1
+  },
+  {
+   "time": "1995",
+   "series": "emisiones",
+   "value": 100.0
+  },
+  {
+   "time": "1996",
+   "series": "emisiones",
+   "value": 97.7
+  },
+  {
+   "time": "1997",
+   "series": "emisiones",
+   "value": 102.3
+  },
+  {
+   "time": "1998",
+   "series": "emisiones",
+   "value": 105.3
+  },
+  {
+   "time": "1999",
+   "series": "emisiones",
+   "value": 113.6
+  },
+  {
+   "time": "2000",
+   "series": "emisiones",
+   "value": 118.4
+  },
+  {
+   "time": "2001",
+   "series": "emisiones",
+   "value": 118.1
+  },
+  {
+   "time": "2002",
+   "series": "emisiones",
+   "value": 123.8
+  },
+  {
+   "time": "2003",
+   "series": "emisiones",
+   "value": 126.1
+  },
+  {
+   "time": "2004",
+   "series": "emisiones",
+   "value": 131.0
+  },
+  {
+   "time": "2005",
+   "series": "emisiones",
+   "value": 135.6
+  },
+  {
+   "time": "2006",
+   "series": "emisiones",
+   "value": 133.8
+  },
+  {
+   "time": "2007",
+   "series": "emisiones",
+   "value": 136.9
+  },
+  {
+   "time": "2008",
+   "series": "emisiones",
+   "value": 126.7
+  },
+  {
+   "time": "2009",
+   "series": "emisiones",
+   "value": 114.8
+  },
+  {
+   "time": "2010",
+   "series": "emisiones",
+   "value": 110.2
+  },
+  {
+   "time": "2011",
+   "series": "emisiones",
+   "value": 109.7
+  },
+  {
+   "time": "2012",
+   "series": "emisiones",
+   "value": 107.2
+  },
+  {
+   "time": "2013",
+   "series": "emisiones",
+   "value": 99.0
+  },
+  {
+   "time": "2014",
+   "series": "emisiones",
+   "value": 99.0
+  },
+  {
+   "time": "2015",
+   "series": "emisiones",
+   "value": 102.4
+  },
+  {
+   "time": "2016",
+   "series": "emisiones",
+   "value": 99.0
+  },
+  {
+   "time": "2017",
+   "series": "emisiones",
+   "value": 103.0
+  },
+  {
+   "time": "2018",
+   "series": "emisiones",
+   "value": 101.4
+  },
+  {
+   "time": "2019",
+   "series": "emisiones",
+   "value": 95.7
+  },
+  {
+   "time": "2020",
+   "series": "emisiones",
+   "value": 83.8
+  },
+  {
+   "time": "2021",
+   "series": "emisiones",
+   "value": 89.0
+  },
+  {
+   "time": "2022",
+   "series": "emisiones",
+   "value": 90.1
+  },
+  {
+   "time": "2023",
+   "series": "emisiones",
+   "value": 83.2
+  },
+  {
+   "time": "2024",
+   "series": "emisiones",
+   "value": 82.5
+  },
+  {
+   "time": "1995",
+   "series": "intensidad",
+   "value": 100.0
+  },
+  {
+   "time": "1996",
+   "series": "intensidad",
+   "value": 95.2
+  },
+  {
+   "time": "1997",
+   "series": "intensidad",
+   "value": 96.2
+  },
+  {
+   "time": "1998",
+   "series": "intensidad",
+   "value": 95.0
+  },
+  {
+   "time": "1999",
+   "series": "intensidad",
+   "value": 98.2
+  },
+  {
+   "time": "2000",
+   "series": "intensidad",
+   "value": 97.2
+  },
+  {
+   "time": "2001",
+   "series": "intensidad",
+   "value": 93.3
+  },
+  {
+   "time": "2002",
+   "series": "intensidad",
+   "value": 95.2
+  },
+  {
+   "time": "2003",
+   "series": "intensidad",
+   "value": 94.2
+  },
+  {
+   "time": "2004",
+   "series": "intensidad",
+   "value": 94.9
+  },
+  {
+   "time": "2005",
+   "series": "intensidad",
+   "value": 94.9
+  },
+  {
+   "time": "2006",
+   "series": "intensidad",
+   "value": 90.0
+  },
+  {
+   "time": "2007",
+   "series": "intensidad",
+   "value": 88.9
+  },
+  {
+   "time": "2008",
+   "series": "intensidad",
+   "value": 81.7
+  },
+  {
+   "time": "2009",
+   "series": "intensidad",
+   "value": 76.9
+  },
+  {
+   "time": "2010",
+   "series": "intensidad",
+   "value": 73.8
+  },
+  {
+   "time": "2011",
+   "series": "intensidad",
+   "value": 73.9
+  },
+  {
+   "time": "2012",
+   "series": "intensidad",
+   "value": 74.3
+  },
+  {
+   "time": "2013",
+   "series": "intensidad",
+   "value": 69.7
+  },
+  {
+   "time": "2014",
+   "series": "intensidad",
+   "value": 68.6
+  },
+  {
+   "time": "2015",
+   "series": "intensidad",
+   "value": 68.2
+  },
+  {
+   "time": "2016",
+   "series": "intensidad",
+   "value": 64.0
+  },
+  {
+   "time": "2017",
+   "series": "intensidad",
+   "value": 64.8
+  },
+  {
+   "time": "2018",
+   "series": "intensidad",
+   "value": 62.2
+  },
+  {
+   "time": "2019",
+   "series": "intensidad",
+   "value": 57.6
+  },
+  {
+   "time": "2020",
+   "series": "intensidad",
+   "value": 56.7
+  },
+  {
+   "time": "2021",
+   "series": "intensidad",
+   "value": 56.4
+  },
+  {
+   "time": "2022",
+   "series": "intensidad",
+   "value": 53.7
+  },
+  {
+   "time": "2023",
+   "series": "intensidad",
+   "value": 48.5
+  },
+  {
+   "time": "2024",
+   "series": "intensidad",
+   "value": 46.4
+  }
+ ]
+}

@@ -1,0 +1,433 @@
+{
+ "id": "clt1-emisiones-1990",
+ "lens": "tiempo",
+ "theme": "clima",
+ "title": {
+  "es": "España emitió en 2024 un 5,9 % menos que en 1990, tras subir un 56,1 % hasta 2007; la UE, un 38,0 % menos",
+  "en": "Spain emitted 5.9% less in 2024 than in 1990, after rising by 56.1% up to 2007; the EU, 38.0% less"
+ },
+ "subtitle": {
+  "es": "Emisiones de gases de efecto invernadero, índice 1990 = 100, 1990-2024",
+  "en": "Greenhouse gas emissions, index 1990 = 100, 1990-2024"
+ },
+ "unit": {
+  "es": "índice, 1990 = 100",
+  "en": "index, 1990 = 100"
+ },
+ "source": {
+  "name": "Eurostat, inventario de gases de efecto invernadero (AEMA)",
+  "license": "CC BY 4.0",
+  "dataset": "env_air_gge",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table"
+ },
+ "notes": {
+  "es": [
+   "Sin LULUCF ni aviación y navegación internacionales, como en el objetivo de la ley española.",
+   "La línea horizontal marca el objetivo de la Ley 7/2021 para 2030 en España: al menos un 23 % menos que en 1990. El de la UE es distinto (un 55 % menos de emisiones netas, con LULUCF) y no se dibuja."
+  ],
+  "en": [
+   "Excluding LULUCF and international aviation and shipping, as in the Spanish law's target.",
+   "The horizontal line marks Spain's 2030 target under Law 7/2021: at least 23% below 1990. The EU's target is different (55% lower net emissions, including LULUCF) and is not drawn."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "ref_line": {
+  "value": 77,
+  "label": {
+   "es": "Objetivo de la ley para 2030: 77",
+   "en": "Law's 2030 target: 77"
+  }
+ },
+ "short_labels": {
+  "ESP": {
+   "es": "España",
+   "en": "Spain"
+  },
+  "EU27": {
+   "es": "UE",
+   "en": "EU"
+  }
+ },
+ "year": 2024,
+ "peak": 2007,
+ "peak_value": 156.1,
+ "eu_peak": [
+  100.0,
+  1990
+ ],
+ "spain_mt": {
+  "1990": 284.4,
+  "2007": 444.1,
+  "2024": 267.7
+ },
+ "law_target_mt": 219.0,
+ "pniec_target_mt": 193.4,
+ "pace_2019_year": -3.0,
+ "index_2019": 109.1,
+ "rows": [
+  {
+   "geo": "ESP",
+   "time": "1990",
+   "value": 100.0
+  },
+  {
+   "geo": "ESP",
+   "time": "1991",
+   "value": 102.8
+  },
+  {
+   "geo": "ESP",
+   "time": "1992",
+   "value": 105.9
+  },
+  {
+   "geo": "ESP",
+   "time": "1993",
+   "value": 102.5
+  },
+  {
+   "geo": "ESP",
+   "time": "1994",
+   "value": 108.3
+  },
+  {
+   "geo": "ESP",
+   "time": "1995",
+   "value": 114.0
+  },
+  {
+   "geo": "ESP",
+   "time": "1996",
+   "value": 111.4
+  },
+  {
+   "geo": "ESP",
+   "time": "1997",
+   "value": 116.6
+  },
+  {
+   "geo": "ESP",
+   "time": "1998",
+   "value": 120.1
+  },
+  {
+   "geo": "ESP",
+   "time": "1999",
+   "value": 129.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2000",
+   "value": 135.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2001",
+   "value": 134.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2002",
+   "value": 141.2
+  },
+  {
+   "geo": "ESP",
+   "time": "2003",
+   "value": 143.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2004",
+   "value": 149.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2005",
+   "value": 154.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2006",
+   "value": 152.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2007",
+   "value": 156.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2008",
+   "value": 144.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2009",
+   "value": 131.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2010",
+   "value": 125.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2011",
+   "value": 125.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2012",
+   "value": 122.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2013",
+   "value": 112.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2014",
+   "value": 112.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2015",
+   "value": 116.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2016",
+   "value": 112.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2017",
+   "value": 117.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2018",
+   "value": 115.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2019",
+   "value": 109.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2020",
+   "value": 95.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "value": 101.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "value": 102.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2023",
+   "value": 94.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 94.1
+  },
+  {
+   "geo": "EU27",
+   "time": "1990",
+   "value": 100.0
+  },
+  {
+   "geo": "EU27",
+   "time": "1991",
+   "value": 97.8
+  },
+  {
+   "geo": "EU27",
+   "time": "1992",
+   "value": 94.7
+  },
+  {
+   "geo": "EU27",
+   "time": "1993",
+   "value": 93.1
+  },
+  {
+   "geo": "EU27",
+   "time": "1994",
+   "value": 92.6
+  },
+  {
+   "geo": "EU27",
+   "time": "1995",
+   "value": 93.7
+  },
+  {
+   "geo": "EU27",
+   "time": "1996",
+   "value": 95.6
+  },
+  {
+   "geo": "EU27",
+   "time": "1997",
+   "value": 94.0
+  },
+  {
+   "geo": "EU27",
+   "time": "1998",
+   "value": 93.2
+  },
+  {
+   "geo": "EU27",
+   "time": "1999",
+   "value": 91.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 91.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 92.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 92.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 93.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 93.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 93.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 93.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 92.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 90.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 84.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 85.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 83.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 81.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 80.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 77.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 78.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 78.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 78.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 76.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 73.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 67.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 70.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 69.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 63.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 62.0
+  }
+ ]
+}

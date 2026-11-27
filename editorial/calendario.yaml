@@ -213,6 +213,7 @@ piezas:
     tema: clima
     titulo: "Clima: temperaturas, sequía y emisiones"
     idea: temperaturas y precipitación (AEMET), emisiones frente a la UE (Eurostat), por comunidades. SIN encuestas (veda).
+    estado: hecha
 
   # Después de las elecciones
   - id: n08

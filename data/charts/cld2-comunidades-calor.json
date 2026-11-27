@@ -1,0 +1,611 @@
+{
+ "id": "cld2-comunidades-calor",
+ "lens": "dentro",
+ "theme": "clima",
+ "title": {
+  "es": "Las necesidades de refrigeración han crecido en todas las comunidades: en España, de 156 grados-día al año en los años ochenta a 301 en la última década; donde más, en Murcia, Baleares y Andalucía",
+  "en": "Cooling needs have grown in every region: in Spain, from 156 degree days a year in the 1980s to 301 in the last decade; most in Murcia, the Balearic Islands and Andalusia"
+ },
+ "subtitle": {
+  "es": "Grados-día de refrigeración, media anual de 1980-1989 y de 2016-2025. Punto hueco: 1980-1989; punto lleno: 2016-2025",
+  "en": "Cooling degree days, annual average for 1980-1989 and 2016-2025. Hollow dot: 1980-1989; solid dot: 2016-2025"
+ },
+ "unit": {
+  "es": "grados-día al año",
+  "en": "degree days a year"
+ },
+ "source": {
+  "name": "Eurostat, grados-día de calefacción y refrigeración",
+  "license": "CC BY 4.0",
+  "dataset": "nrg_chddr2_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_chddr2_a/default/table"
+ },
+ "notes": {
+  "es": [
+   "Grados-día de refrigeración: cada día con una temperatura media de 24 °C o más suma los grados que supera los 21 °C. Miden cuánto calor hay que combatir, no cuánta refrigeración se usa.",
+   "Eurostat los calcula con datos meteorológicos del Centro Común de Investigación de la Comisión Europea para cada región y los pondera por población, no por superficie.",
+   "Ceuta y Melilla son territorios muy pequeños, con clima marítimo; su serie es menos precisa."
+  ],
+  "en": [
+   "Cooling degree days: each day with a mean temperature of 24°C or more adds the degrees by which it exceeds 21°C. They measure how much heat has to be countered, not how much cooling is used.",
+   "Eurostat calculates them with meteorological data from the European Commission's Joint Research Centre for each region and weights them by population, not by area.",
+   "Ceuta and Melilla are very small territories with a maritime climate; their series is less precise."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-1980-1989": {
+    "es": "1980-1989",
+    "en": "1980-1989"
+   },
+   "1-2016-2025": {
+    "es": "2016-2025",
+    "en": "2016-2025"
+   }
+  }
+ },
+ "periods": [
+  "1980-1989",
+  "2016-2025"
+ ],
+ "cdd": {
+  "01": [
+   281,
+   517
+  ],
+  "02": [
+   115,
+   227
+  ],
+  "03": [
+   3,
+   13
+  ],
+  "04": [
+   203,
+   451
+  ],
+  "05": [
+   120,
+   180
+  ],
+  "06": [
+   7,
+   22
+  ],
+  "07": [
+   43,
+   103
+  ],
+  "08": [
+   196,
+   387
+  ],
+  "09": [
+   74,
+   246
+  ],
+  "10": [
+   161,
+   370
+  ],
+  "11": [
+   370,
+   538
+  ],
+  "12": [
+   14,
+   43
+  ],
+  "13": [
+   215,
+   404
+  ],
+  "14": [
+   207,
+   489
+  ],
+  "15": [
+   59,
+   158
+  ],
+  "16": [
+   21,
+   59
+  ],
+  "17": [
+   30,
+   99
+  ],
+  "18": [
+   183,
+   384
+  ],
+  "19": [
+   269,
+   416
+  ],
+  "ES": [
+   156,
+   301
+  ]
+ },
+ "eu_cdd": [
+  47,
+  112
+ ],
+ "hdd": {
+  "01": [
+   1404,
+   1065
+  ],
+  "02": [
+   2389,
+   2002
+  ],
+  "03": [
+   2167,
+   1746
+  ],
+  "04": [
+   1181,
+   769
+  ],
+  "05": [
+   105,
+   52
+  ],
+  "06": [
+   2173,
+   1880
+  ],
+  "07": [
+   2623,
+   2294
+  ],
+  "08": [
+   2121,
+   1764
+  ],
+  "09": [
+   2538,
+   1819
+  ],
+  "10": [
+   1516,
+   1225
+  ],
+  "11": [
+   1385,
+   1200
+  ],
+  "12": [
+   2018,
+   1682
+  ],
+  "13": [
+   2088,
+   1753
+  ],
+  "14": [
+   1348,
+   1007
+  ],
+  "15": [
+   2300,
+   1899
+  ],
+  "16": [
+   2079,
+   1720
+  ],
+  "17": [
+   2751,
+   2176
+  ],
+  "18": [
+   600,
+   245
+  ],
+  "19": [
+   626,
+   409
+  ],
+  "ES": [
+   2015,
+   1657
+  ],
+  "EU27": [
+   3477,
+   2932
+  ]
+ },
+ "top_increase": [
+  "14",
+  "04",
+  "01",
+  "10"
+ ],
+ "spain_series": {
+  "1980": 145,
+  "1981": 148,
+  "1982": 144,
+  "1983": 133,
+  "1984": 112,
+  "1985": 174,
+  "1986": 141,
+  "1987": 185,
+  "1988": 163,
+  "1989": 213,
+  "1990": 203,
+  "1991": 249,
+  "1992": 173,
+  "1993": 154,
+  "1994": 229,
+  "1995": 182,
+  "1996": 135,
+  "1997": 124,
+  "1998": 206,
+  "1999": 194,
+  "2000": 175,
+  "2001": 202,
+  "2002": 146,
+  "2003": 277,
+  "2004": 212,
+  "2005": 236,
+  "2006": 256,
+  "2007": 154,
+  "2008": 176,
+  "2009": 259,
+  "2010": 248,
+  "2011": 219,
+  "2012": 267,
+  "2013": 211,
+  "2014": 173,
+  "2015": 291,
+  "2016": 286,
+  "2017": 311,
+  "2018": 240,
+  "2019": 249,
+  "2020": 278,
+  "2021": 236,
+  "2022": 383,
+  "2023": 337,
+  "2024": 304,
+  "2025": 387
+ },
+ "spain_top_years": [
+  2025,
+  2022,
+  2023,
+  2017,
+  2024
+ ],
+ "spain_ratio": 1.93,
+ "eu_ratio": 2.38,
+ "rows": [
+  {
+   "geo": "01",
+   "time": "0-1980-1989",
+   "value": 281
+  },
+  {
+   "geo": "01",
+   "time": "1-2016-2025",
+   "value": 517
+  },
+  {
+   "geo": "02",
+   "time": "0-1980-1989",
+   "value": 115
+  },
+  {
+   "geo": "02",
+   "time": "1-2016-2025",
+   "value": 227
+  },
+  {
+   "geo": "03",
+   "time": "0-1980-1989",
+   "value": 3
+  },
+  {
+   "geo": "03",
+   "time": "1-2016-2025",
+   "value": 13
+  },
+  {
+   "geo": "04",
+   "time": "0-1980-1989",
+   "value": 203
+  },
+  {
+   "geo": "04",
+   "time": "1-2016-2025",
+   "value": 451
+  },
+  {
+   "geo": "05",
+   "time": "0-1980-1989",
+   "value": 120
+  },
+  {
+   "geo": "05",
+   "time": "1-2016-2025",
+   "value": 180
+  },
+  {
+   "geo": "06",
+   "time": "0-1980-1989",
+   "value": 7
+  },
+  {
+   "geo": "06",
+   "time": "1-2016-2025",
+   "value": 22
+  },
+  {
+   "geo": "07",
+   "time": "0-1980-1989",
+   "value": 43
+  },
+  {
+   "geo": "07",
+   "time": "1-2016-2025",
+   "value": 103
+  },
+  {
+   "geo": "08",
+   "time": "0-1980-1989",
+   "value": 196
+  },
+  {
+   "geo": "08",
+   "time": "1-2016-2025",
+   "value": 387
+  },
+  {
+   "geo": "09",
+   "time": "0-1980-1989",
+   "value": 74
+  },
+  {
+   "geo": "09",
+   "time": "1-2016-2025",
+   "value": 246
+  },
+  {
+   "geo": "10",
+   "time": "0-1980-1989",
+   "value": 161
+  },
+  {
+   "geo": "10",
+   "time": "1-2016-2025",
+   "value": 370
+  },
+  {
+   "geo": "11",
+   "time": "0-1980-1989",
+   "value": 370
+  },
+  {
+   "geo": "11",
+   "time": "1-2016-2025",
+   "value": 538
+  },
+  {
+   "geo": "12",
+   "time": "0-1980-1989",
+   "value": 14
+  },
+  {
+   "geo": "12",
+   "time": "1-2016-2025",
+   "value": 43
+  },
+  {
+   "geo": "13",
+   "time": "0-1980-1989",
+   "value": 215
+  },
+  {
+   "geo": "13",
+   "time": "1-2016-2025",
+   "value": 404
+  },
+  {
+   "geo": "14",
+   "time": "0-1980-1989",
+   "value": 207
+  },
+  {
+   "geo": "14",
+   "time": "1-2016-2025",
+   "value": 489
+  },
+  {
+   "geo": "15",
+   "time": "0-1980-1989",
+   "value": 59
+  },
+  {
+   "geo": "15",
+   "time": "1-2016-2025",
+   "value": 158
+  },
+  {
+   "geo": "16",
+   "time": "0-1980-1989",
+   "value": 21
+  },
+  {
+   "geo": "16",
+   "time": "1-2016-2025",
+   "value": 59
+  },
+  {
+   "geo": "17",
+   "time": "0-1980-1989",
+   "value": 30
+  },
+  {
+   "geo": "17",
+   "time": "1-2016-2025",
+   "value": 99
+  },
+  {
+   "geo": "18",
+   "time": "0-1980-1989",
+   "value": 183
+  },
+  {
+   "geo": "18",
+   "time": "1-2016-2025",
+   "value": 384
+  },
+  {
+   "geo": "19",
+   "time": "0-1980-1989",
+   "value": 269
+  },
+  {
+   "geo": "19",
+   "time": "1-2016-2025",
+   "value": 416
+  },
+  {
+   "geo": "ES",
+   "time": "0-1980-1989",
+   "value": 156
+  },
+  {
+   "geo": "ES",
+   "time": "1-2016-2025",
+   "value": 301
+  }
+ ]
+}

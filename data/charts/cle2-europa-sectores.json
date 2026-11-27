@@ -1,0 +1,197 @@
+{
+ "id": "cle2-europa-sectores",
+ "lens": "europa",
+ "theme": "clima",
+ "title": {
+  "es": "Las centrales eléctricas y las refinerías emiten menos de la mitad que en 1990, en España y en la UE; pero el transporte español emite un 54,1 % más, y también suben los edificios, la agricultura y los residuos",
+  "en": "Power stations and refineries emit less than half as much as in 1990, in Spain and in the EU; but Spanish transport emits 54.1% more, and buildings, agriculture and waste are also up"
+ },
+ "subtitle": {
+  "es": "Emisiones de gases de efecto invernadero de cada sector en 2024, índice 1990 = 100. Punto hueco: UE; punto lleno: España",
+  "en": "Greenhouse gas emissions of each sector in 2024, index 1990 = 100. Hollow dot: EU; solid dot: Spain"
+ },
+ "unit": {
+  "es": "índice, 1990 = 100",
+  "en": "index, 1990 = 100"
+ },
+ "source": {
+  "name": "Eurostat, inventario de gases de efecto invernadero (AEMA)",
+  "license": "CC BY 4.0",
+  "dataset": "env_air_gge",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table"
+ },
+ "notes": {
+  "es": [
+   "Por debajo de 100, el sector emite menos que en 1990; por encima, más.",
+   "Centrales y refinerías: centrales eléctricas, refinerías y otras instalaciones energéticas. Edificios: calefacción, agua caliente y cocina de hogares, comercios y oficinas.",
+   "Industria: combustibles quemados en fábricas y obras y emisiones de los propios procesos (cemento, química, metal) y de los gases fluorados. Agricultura: ganado, abonos y combustible de tractores y barcos de pesca. No se muestran las emisiones fugitivas de combustibles y otras menores.",
+   "Sin LULUCF ni aviación y navegación internacionales."
+  ],
+  "en": [
+   "Below 100, the sector emits less than in 1990; above it, more.",
+   "Power and refineries: power stations, refineries and other energy installations. Buildings: heating, hot water and cooking in homes, shops and offices.",
+   "Industry: fuel burned in factories and construction and emissions from the processes themselves (cement, chemicals, metals) and from fluorinated gases. Agriculture: livestock, fertilisers and fuel for tractors and fishing boats. Fugitive emissions from fuels and other minor sources are not shown.",
+   "Excluding LULUCF and international aviation and shipping."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {
+  "energia": {
+   "es": "Centrales y refinerías",
+   "en": "Power and refineries",
+   "aggregate": true
+  },
+  "industria": {
+   "es": "Industria",
+   "en": "Industry",
+   "aggregate": true
+  },
+  "transporte": {
+   "es": "Transporte",
+   "en": "Transport",
+   "aggregate": true
+  },
+  "edificios": {
+   "es": "Edificios",
+   "en": "Buildings",
+   "aggregate": true
+  },
+  "agricultura": {
+   "es": "Agricultura",
+   "en": "Agriculture",
+   "aggregate": true
+  },
+  "residuos": {
+   "es": "Residuos",
+   "en": "Waste",
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "time": {
+   "0-ue": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "1-espana": {
+    "es": "España",
+    "en": "Spain"
+   }
+  }
+ },
+ "year": 2024,
+ "index": {
+  "ES-energia": 47.2,
+  "ES-industria": 73.2,
+  "ES-transporte": 154.1,
+  "ES-edificios": 133.3,
+  "ES-agricultura": 106.3,
+  "ES-residuos": 130.3,
+  "EU27_2020-energia": 44.6,
+  "EU27_2020-industria": 52.2,
+  "EU27_2020-transporte": 119.3,
+  "EU27_2020-edificios": 57.8,
+  "EU27_2020-agricultura": 74.5,
+  "EU27_2020-residuos": 60.1
+ },
+ "share": {
+  "ES-energia": 13.8,
+  "ES-industria": 19.9,
+  "ES-transporte": 33.8,
+  "ES-edificios": 8.8,
+  "ES-agricultura": 15.8,
+  "ES-residuos": 6.5,
+  "EU27_2020-energia": 21.3,
+  "EU27_2020-industria": 20.3,
+  "EU27_2020-transporte": 26.7,
+  "EU27_2020-edificios": 11.9,
+  "EU27_2020-agricultura": 14.3,
+  "EU27_2020-residuos": 3.7
+ },
+ "contribution_points": {
+  "ES-energia": -14.5,
+  "ES-industria": -6.9,
+  "ES-transporte": 11.2,
+  "ES-edificios": 2.1,
+  "ES-agricultura": 0.9,
+  "ES-residuos": 1.4,
+  "EU27_2020-energia": -16.4,
+  "EU27_2020-industria": -11.5,
+  "EU27_2020-transporte": 2.7,
+  "EU27_2020-edificios": -5.4,
+  "EU27_2020-agricultura": -3.0,
+  "EU27_2020-residuos": -1.5
+ },
+ "total_change": {
+  "ES": -5.9,
+  "EU27_2020": -38.0
+ },
+ "up_es": [
+  "transporte",
+  "edificios",
+  "agricultura",
+  "residuos"
+ ],
+ "rows": [
+  {
+   "geo": "energia",
+   "time": "0-ue",
+   "value": 44.6
+  },
+  {
+   "geo": "energia",
+   "time": "1-espana",
+   "value": 47.2
+  },
+  {
+   "geo": "industria",
+   "time": "0-ue",
+   "value": 52.2
+  },
+  {
+   "geo": "industria",
+   "time": "1-espana",
+   "value": 73.2
+  },
+  {
+   "geo": "transporte",
+   "time": "0-ue",
+   "value": 119.3
+  },
+  {
+   "geo": "transporte",
+   "time": "1-espana",
+   "value": 154.1
+  },
+  {
+   "geo": "edificios",
+   "time": "0-ue",
+   "value": 57.8
+  },
+  {
+   "geo": "edificios",
+   "time": "1-espana",
+   "value": 133.3
+  },
+  {
+   "geo": "agricultura",
+   "time": "0-ue",
+   "value": 74.5
+  },
+  {
+   "geo": "agricultura",
+   "time": "1-espana",
+   "value": 106.3
+  },
+  {
+   "geo": "residuos",
+   "time": "0-ue",
+   "value": 60.1
+  },
+  {
+   "geo": "residuos",
+   "time": "1-espana",
+   "value": 130.3
+  }
+ ]
+}

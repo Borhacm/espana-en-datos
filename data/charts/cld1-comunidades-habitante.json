@@ -1,0 +1,535 @@
+{
+ "id": "cld1-comunidades-habitante",
+ "lens": "dentro",
+ "theme": "clima",
+ "title": {
+  "es": "En Asturias se emiten 15,9 toneladas por habitante, casi cinco veces más que en Madrid (3,2): más de dos tercios de lo que emite Asturias sale de sus centrales eléctricas y su industria",
+  "en": "In Asturias 15.9 tonnes are emitted per inhabitant, almost five times as much as in Madrid (3.2): more than two thirds of Asturias's emissions come from its power stations and its industry"
+ },
+ "subtitle": {
+  "es": "Emisiones de gases de efecto invernadero producidas en cada comunidad por habitante, 2024, en toneladas de CO₂ equivalente",
+  "en": "Greenhouse gas emissions produced in each region per inhabitant, 2024, in tonnes of CO₂ equivalent"
+ },
+ "unit": {
+  "es": "toneladas por habitante",
+  "en": "tonnes per inhabitant"
+ },
+ "source": {
+  "name": "MITECO, Inventario Nacional de Emisiones de GEI desagregado por comunidades autónomas",
+  "dataset": "Edición 2026, serie 1990-2024",
+  "url": "https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/sistema-espanol-de-inventario-sei-/otra-informacion/inv-gei-ccaa.html",
+  "license": "Reutilización libre citando la fuente (Ley 37/2007)",
+  "also": [
+   {
+    "name": "Eurostat, estadísticas de población",
+    "license": "CC BY 4.0",
+    "dataset": "demo_r_d2jan",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d2jan/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Las emisiones se asignan a la comunidad donde se producen, no a la que consume: la electricidad de una central o el acero de una acería cuentan donde están, aunque se usen en otra parte.",
+   "Centrales eléctricas: incluye refinerías y otras instalaciones energéticas. Industria: combustión en fábricas y obras y emisiones de los procesos industriales y del uso de gases fluorados.",
+   "Sin LULUCF. Población media del año (media del 1 de enero de ese año y del siguiente).",
+   "Ceuta y Melilla tienen muy poca población; su dato depende de unas pocas instalaciones."
+  ],
+  "en": [
+   "Emissions are assigned to the region where they are produced, not where the output is consumed: electricity from a power station or steel from a steelworks counts where the plant is, even if it is used elsewhere.",
+   "Power stations: includes refineries and other energy installations. Industry: combustion in factories and construction and emissions from industrial processes and the use of fluorinated gases.",
+   "Excluding LULUCF. Average population for the year (mean of 1 January of that year and the next).",
+   "Ceuta and Melilla have very small populations; their figure depends on a handful of installations."
+  ]
+ },
+ "retrieved": "2026-11-27",
+ "geos": {
+  "01": {
+   "es": "Andalucía",
+   "en": "Andalusia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "02": {
+   "es": "Aragón",
+   "en": "Aragon",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "03": {
+   "es": "Asturias",
+   "en": "Asturias",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "04": {
+   "es": "Baleares",
+   "en": "Balearic Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "05": {
+   "es": "Canarias",
+   "en": "Canary Islands",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "06": {
+   "es": "Cantabria",
+   "en": "Cantabria",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "07": {
+   "es": "Castilla y León",
+   "en": "Castile and León",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "08": {
+   "es": "Castilla-La Mancha",
+   "en": "Castile-La Mancha",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "09": {
+   "es": "Cataluña",
+   "en": "Catalonia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "10": {
+   "es": "Comunidad Valenciana",
+   "en": "Valencian Community",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "11": {
+   "es": "Extremadura",
+   "en": "Extremadura",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "12": {
+   "es": "Galicia",
+   "en": "Galicia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "13": {
+   "es": "Madrid",
+   "en": "Madrid",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "14": {
+   "es": "Murcia",
+   "en": "Murcia",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "15": {
+   "es": "Navarra",
+   "en": "Navarre",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "16": {
+   "es": "País Vasco",
+   "en": "Basque Country",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "17": {
+   "es": "La Rioja",
+   "en": "La Rioja",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "18": {
+   "es": "Ceuta",
+   "en": "Ceuta",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "19": {
+   "es": "Melilla",
+   "en": "Melilla",
+   "ccaa": true,
+   "aggregate": false
+  },
+  "ES": {
+   "es": "España",
+   "en": "Spain",
+   "ccaa": false,
+   "aggregate": true
+  }
+ },
+ "year": 2024,
+ "ratio_hi_lo": 4.99,
+ "shares": {
+  "01": {
+   "energia": 15.5,
+   "industria": 15.9,
+   "transporte": 37.9,
+   "otros": 30.7
+  },
+  "02": {
+   "energia": 3.9,
+   "industria": 17.6,
+   "transporte": 26.3,
+   "otros": 52.3
+  },
+  "03": {
+   "energia": 32.7,
+   "industria": 37.5,
+   "transporte": 11.9,
+   "otros": 17.9
+  },
+  "04": {
+   "energia": 31.1,
+   "industria": 3.6,
+   "transporte": 50.0,
+   "otros": 15.3
+  },
+  "05": {
+   "energia": 37.1,
+   "industria": 2.4,
+   "transporte": 45.8,
+   "otros": 14.8
+  },
+  "06": {
+   "energia": 3.3,
+   "industria": 42.6,
+   "transporte": 23.3,
+   "otros": 30.8
+  },
+  "07": {
+   "energia": 0.2,
+   "industria": 18.0,
+   "transporte": 29.7,
+   "otros": 52.1
+  },
+  "08": {
+   "energia": 10.4,
+   "industria": 19.5,
+   "transporte": 32.4,
+   "otros": 37.7
+  },
+  "09": {
+   "energia": 11.6,
+   "industria": 25.5,
+   "transporte": 35.1,
+   "otros": 27.8
+  },
+  "10": {
+   "energia": 9.8,
+   "industria": 31.2,
+   "transporte": 37.2,
+   "otros": 21.8
+  },
+  "11": {
+   "energia": 0.6,
+   "industria": 12.7,
+   "transporte": 24.3,
+   "otros": 62.3
+  },
+  "12": {
+   "energia": 11.1,
+   "industria": 14.7,
+   "transporte": 30.5,
+   "otros": 43.6
+  },
+  "13": {
+   "energia": 1.9,
+   "industria": 13.3,
+   "transporte": 49.7,
+   "otros": 35.2
+  },
+  "14": {
+   "energia": 28.4,
+   "industria": 6.4,
+   "transporte": 29.8,
+   "otros": 35.4
+  },
+  "15": {
+   "energia": 10.5,
+   "industria": 28.6,
+   "transporte": 23.2,
+   "otros": 37.7
+  },
+  "16": {
+   "energia": 20.7,
+   "industria": 28.1,
+   "transporte": 26.1,
+   "otros": 25.1
+  },
+  "17": {
+   "energia": 20.8,
+   "industria": 12.5,
+   "transporte": 31.0,
+   "otros": 35.7
+  },
+  "18": {
+   "energia": 32.5,
+   "industria": 3.2,
+   "transporte": 58.9,
+   "otros": 5.5
+  },
+  "19": {
+   "energia": 45.1,
+   "industria": 3.4,
+   "transporte": 46.0,
+   "otros": 5.5
+  }
+ },
+ "hi_power_industry": 70.2,
+ "hi": "03",
+ "lo": "13",
+ "change_since_2005": {
+  "01": -44.0,
+  "02": -45.1,
+  "03": -54.4,
+  "04": -28.1,
+  "05": -33.7,
+  "06": -33.9,
+  "07": -53.7,
+  "08": -36.9,
+  "09": -32.6,
+  "10": -32.0,
+  "11": -4.2,
+  "12": -53.4,
+  "13": -25.9,
+  "14": 16.5,
+  "15": -26.8,
+  "16": -41.0,
+  "17": -45.4,
+  "18": -38.6,
+  "19": -2.2
+ },
+ "spain_change_since_2005": -39.1,
+ "energy_share_of_drop_since_2005": 51.1,
+ "energy_kt": {
+  "01": [
+   23099,
+   5782
+  ],
+  "02": [
+   8233,
+   445
+  ],
+  "03": [
+   19652,
+   5266
+  ],
+  "04": [
+   5010,
+   2354
+  ],
+  "05": [
+   7326,
+   4906
+  ],
+  "06": [
+   0,
+   156
+  ],
+  "07": [
+   17388,
+   36
+  ],
+  "08": [
+   5297,
+   1644
+  ],
+  "09": [
+   8629,
+   4498
+  ],
+  "10": [
+   2924,
+   2187
+  ],
+  "11": [
+   1,
+   49
+  ],
+  "12": [
+   15381,
+   1850
+  ],
+  "13": [
+   159,
+   417
+  ],
+  "14": [
+   1455,
+   2808
+  ],
+  "15": [
+   1360,
+   609
+  ],
+  "16": [
+   7152,
+   3147
+  ],
+  "17": [
+   1478,
+   439
+  ],
+  "18": [
+   133,
+   129
+  ],
+  "19": [
+   125,
+   161
+  ]
+ },
+ "share_emissions": {
+  "01": 13.9,
+  "02": 4.3,
+  "03": 6.0,
+  "04": 2.8,
+  "05": 4.9,
+  "06": 1.8,
+  "07": 7.4,
+  "08": 5.9,
+  "09": 14.5,
+  "10": 8.3,
+  "11": 2.9,
+  "12": 6.2,
+  "13": 8.4,
+  "14": 3.7,
+  "15": 2.2,
+  "16": 5.7,
+  "17": 0.8,
+  "18": 0.1,
+  "19": 0.1
+ },
+ "share_population": {
+  "01": 17.7,
+  "02": 2.8,
+  "03": 2.1,
+  "04": 2.5,
+  "05": 4.6,
+  "06": 1.2,
+  "07": 4.9,
+  "08": 4.3,
+  "09": 16.5,
+  "10": 11.0,
+  "11": 2.2,
+  "12": 5.5,
+  "13": 14.4,
+  "14": 3.2,
+  "15": 1.4,
+  "16": 4.6,
+  "17": 0.7,
+  "18": 0.2,
+  "19": 0.2
+ },
+ "spain_total_mt": 267.7,
+ "rows": [
+  {
+   "geo": "01",
+   "time": "2024",
+   "value": 4.3
+  },
+  {
+   "geo": "02",
+   "time": "2024",
+   "value": 8.5
+  },
+  {
+   "geo": "03",
+   "time": "2024",
+   "value": 15.9
+  },
+  {
+   "geo": "04",
+   "time": "2024",
+   "value": 6.1
+  },
+  {
+   "geo": "05",
+   "time": "2024",
+   "value": 5.9
+  },
+  {
+   "geo": "06",
+   "time": "2024",
+   "value": 8.0
+  },
+  {
+   "geo": "07",
+   "time": "2024",
+   "value": 8.3
+  },
+  {
+   "geo": "08",
+   "time": "2024",
+   "value": 7.5
+  },
+  {
+   "geo": "09",
+   "time": "2024",
+   "value": 4.8
+  },
+  {
+   "geo": "10",
+   "time": "2024",
+   "value": 4.1
+  },
+  {
+   "geo": "11",
+   "time": "2024",
+   "value": 7.4
+  },
+  {
+   "geo": "12",
+   "time": "2024",
+   "value": 6.1
+  },
+  {
+   "geo": "13",
+   "time": "2024",
+   "value": 3.2
+  },
+  {
+   "geo": "14",
+   "time": "2024",
+   "value": 6.3
+  },
+  {
+   "geo": "15",
+   "time": "2024",
+   "value": 8.5
+  },
+  {
+   "geo": "16",
+   "time": "2024",
+   "value": 6.8
+  },
+  {
+   "geo": "17",
+   "time": "2024",
+   "value": 6.5
+  },
+  {
+   "geo": "18",
+   "time": "2024",
+   "value": 4.8
+  },
+  {
+   "geo": "19",
+   "time": "2024",
+   "value": 4.1
+  },
+  {
+   "geo": "ES",
+   "time": "2024",
+   "value": 5.5
+  }
+ ]
+}
